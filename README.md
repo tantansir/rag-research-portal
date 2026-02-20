@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ### 2 · Set environment variables
 ```powershell
 # Windows PowerShell
-$env:GEMINI_API_KEY    = "your_key_here"      # You can use my key to test: "AIzaSyARvZKKn5HLdTxRLF0mdIzBYGcsVnGkBCw"
+$env:GEMINI_API_KEY    = "your_key_here" 
 $env:GEMINI_MODEL      = "gemini-2.5-flash"   # You can switch to other models such as gemini-2.5-pro, gemini-3-pro-preview
 $env:GEMINI_EVAL_MODEL = "gemini-2.5-flash"
 ```
