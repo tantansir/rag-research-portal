@@ -1,0 +1,1018 @@
+[
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_01",
+    "text": "Making (common) sense of Urban Digital Twins with Q methodology Nick van Apeldoorna, Igor Mayera, b,*, Qiqi Zhoua a Breda University of Applied Sciences, Academy for AI, Games and Media, the Netherlands b Tilburg University, School of Social and Behavioural Sciences, Department of Organization Studies, the Netherlands A R T I C L E I N F O Keywords: Boundary object Boundary spanning Regional innovation Spatial development Social construction of technology Urban Digital Twin Q methodology A B S T R A C T Urban Digital Twins (UDTs) serve as boundary objects, facilitating interactions among diverse actor-networks within an innovation ecosystem. The concept of UDTs exhibits ‘interpretative flexibility’, allowing policymakers, technologists, urban planners and citizens to impose their values, n",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_02",
+    "text": "bility’, allowing policymakers, technologists, urban planners and citizens to impose their values, needs and expectations onto the technology while sustaining a shared understanding of its potential. A key question arises: how can perspectives on UDTs within these actor-networks be identified and guide future innovation? Using the Q methodology for ‘boundary spanning’, the authors investigated the range of perspectives on UDTs and their influence on shaping regional innovation strategies. The research included some intervention-oriented aims and engaged 29 participants from governmental, industrial, and academic sectors involved in UDT initiatives in a regional urban network in the Netherlands. In interviews, participants completed a card-sorting task, ranking 41 statements that addressed",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_03",
+    "text": "ds. In interviews, participants completed a card-sorting task, ranking 41 statements that addressed five critical dimensions: Terminology, Values, Impact, Innovation and Strategy. The analysis revealed three dominant perspectives: (1) Strategic Confidence in UDTs; (2) Cautious Critique of UDTs; and (3) Technological Pragmatism for UDTs. The findings from this Q study fostered a better understanding of the UDT perspectives and cross-sector collaboration in the urban network, leading to more dynamic and adaptive UDT strategies. 1. Introduction Initially developed for applications in manufacturing and aerospace, the Digital Twin (DT) concept has expanded over recent decades to encompass spatial development, where it supports data-driven decisionmaking (Batty, 2018; Dhar et al., 2022; Geertman",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_04",
+    "text": "development, where it supports data-driven decisionmaking (Batty, 2018; Dhar et al., 2022; Geertman & Witte, 2024; Tomko & Winter, 2019). In spatial development and urban planning, DTs typically function as ‘Virtual Twins’ (VTs), employing 3D computer graphics and increasingly incorporating Immersive Reality technologies (e. g., Virtual and Augmented Reality) (Dani & Supangkat, 2022; Ssin et al., 2021). Gametech companies, such as EPIC Unreal, are active on the (U) DT market (Naserentin et al., 2022; Rantanen et al., 2023). These advancements represent the ongoing evolution of digital infrastructure, propelled by technologies such as Data Science (DS), Artificial Intelligence (AI), Machine Learning (ML) and the Internet of Things (Io T). They converge within the broader ‘smart cities’ fra",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_05",
+    "text": "Learning (ML) and the Internet of Things (Io T). They converge within the broader ‘smart cities’ framework (Deren et al., 2021; Xia et al., 2022) and Industry 4.0 or 5.0 (Klingenberg et al., 2022; Liao et al., 2017). The traditional engineering conceptualisation of DTs is characterised by a set of virtual information constructs that fully describe a potential or actual physical manufactured product from the micro-atomic level to the macro-geometrical level (Barricelli et al., 2019; Grieves, 2016). However, DTs are increasingly promoted as tools for managing complex Multi-Actor Systems (MASs) (Enserink et al., 2022) and Socio Ecological-Technological Systems (SETs) (Sharifi, 2023), such as cities, forests and oceans (Oti-Sarpong et al., 2022; Tagarakis et al., 2024; Tzachor et al., 2023). T",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_06",
+    "text": "ties, forests and oceans (Oti-Sarpong et al., 2022; Tagarakis et al., 2024; Tzachor et al., 2023). This broadening of scope has significant ramifications for DTs' societal and ethical implications and how they are conceptualized, engineered and utilised (Saltelli et al., 2024), primarily because the data and knowledge necessary for managing MAS and SET systems are often unavailable, unreliable or under debate; furthermore, stakeholder consensus on underlying values is low (Tekinerdogan & Verdouw, 2020). Like other advanced Planning Support Systems (PSSs), DTs operate at an intricate Science-Policy Interface (SPI), but how they do so is insufficiently understood (Korenhof et al., 2021; Mayer, 2022; Oti-Sarpong et al., 2022). Recent reports and academic studies aim to provide clarity by offe",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_07",
+    "text": "2022; Oti-Sarpong et al., 2022). Recent reports and academic studies aim to provide clarity by offering conceptual frameworks and theoretical models to better understand the role and potential of UDTs (Ortt & Tiihonen, 2022). The development of UDTs lacks a clear, definitive roadmap. * Corresponding author at: Breda University of Applied Sciences, Academy for AI, Games and Media, the Netherlands. E-mail addresses: mayer. i@buas. nl, i. s. mayer@tilburguniversity. edu (I. Mayer). Contents lists available at Science Direct Cities journal homepage: www. elsevier. com/locate/cities https://doi. org/10.1016/j. cities.2025.106123 Received 31 October 2024; Received in revised form 27 March 2025; Accepted 27 May 2025 Cities 165 (2025) 106123 Available online 4 June 2025 0264-2751/© 2025 The Autho",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_08",
+    "text": "ccepted 27 May 2025 Cities 165 (2025) 106123 Available online 4 June 2025 0264-2751/© 2025 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY license ( http://creativecommons. org/licenses/by/4.0/ ).\n\nInnovation in this field is mainly evolutionary; there is a complex interplay of competition and collaboration among UDT platforms, each striving to demonstrate their value in pilot projects. Fragmented use cases contribute to uncertainty, confusion and undetermined social impact. Furthermore, the governance perspective underneath the development of UDT technologies – e. g., who controls it? – is not welladdressed (Lei et al., 2023). UDTs are a sociotechnical innovation, and this requires examining the interactions, including meaning-making, among actors in",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_09",
+    "text": "innovation, and this requires examining the interactions, including meaning-making, among actors in regional actor-networks around spatial development through digital innovations (Nochta et al., 2021). Reconstructing the discourse surrounding UDTs is crucial: Which actors in the innovation network hold what beliefs about UDTs? Which actors in the network have similar or divergent beliefs? What are the specific issues in and between these belief systems? Moreover, how does this influence the UDTs' future path? The leading research question, therefore, is: How can perspectives on UDTs within these actor-networks be identified and guide future innovation? Drawing on the Social Construction of Technology (SCOT) framework, this study explores the stakeholder discourse surrounding UDTs, viewing",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_10",
+    "text": "Technology (SCOT) framework, this study explores the stakeholder discourse surrounding UDTs, viewing them as ‘boundary objects’ that offer ‘interpretative flexibility’ across communities while maintaining a ‘cohesive identity’ to drive technological advancement (Oti-Sarpong et al., 2022; Pinch & Bijker, 1984). We used Q methodology, a distinctive mixed set of quantitative and qualitative methods, principles and procedures, to explore and frame the intersubjective viewpoints. We used case studies of UDTs, a systematic literature review based on keyword co-occurrence analysis and in-depth real-time online and offline interviews with the Q-methodology card sorting technique to systematically uncover the discourse surrounding UDTs. We also draw upon Actor–Network Theory (ANT), which describes",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_11",
+    "text": "cover the discourse surrounding UDTs. We also draw upon Actor–Network Theory (ANT), which describes dynamic associations between human and non-human actors (e. g., technologies, institutions, regulations) that co-shape innovation, planning and policy outcomes (Baron & Gomez, 2016). The Qstudy and its results were also designed as action or intervention research to facilitate meaningful interactions among the actors in an urban network in a Dutch province and the UDT innovation system in that region. Therefore, this study's participants were purposefully selected from local and regional governments, DT companies, and research institutes in that network, and the Q study results were used to support their regional DT innovation strategy. 2. Theory and concepts 2.1. Perspectives on digital twi",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_12",
+    "text": "pport their regional DT innovation strategy. 2. Theory and concepts 2.1. Perspectives on digital twins and urban development Making sense of DTs by reviewing the enormous amount of information in academics, industry, consultancy and media is challenging and needs to be clarified. For example, a quick search for ‘Digital Twin’ on a search engine yields nearly half a million recent results. When ‘urban’ is added, the results remain comparable, reflecting the growing relevance and widespread interest in DTs for Urban Development. The number of academic publications discussing Urban Digital Twins (UDTs) has also increased dramatically in recent years. A Scopus search for the keyword ‘Urban + Digital Twin’ yielded over a thousand academic articles. Only a few were published in 2018, followed by",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_13",
+    "text": "ital Twin’ yielded over a thousand academic articles. Only a few were published in 2018, followed by a notable rise to around 100 in 2021, and nearly 400 academic articles published in 2024 were included in the search results. The majority of publications (>70 %) focus on the development of foundational and relevant technologies within the fields of computer science, engineering and mathematics. More recently, publications exploring the social-political aspects surrounding UDTs have been on the rise (Ketzler et al., 2020; Lei et al., 2023; Weil et al., 2023). Despite the extensive body of literature aimed at defining UDTs, there remains little consensus regarding the composition and precise definition of the concept (Boyes & Watson, 2022; Singh et al., 2021; Van Der Horn & Mahadevan, 2021)",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_14",
+    "text": "definition of the concept (Boyes & Watson, 2022; Singh et al., 2021; Van Der Horn & Mahadevan, 2021). Boyes and Watson (2022) offer one of the more widely referenced definitions, describing a DT as ‘a live digital coupling of the state of a physical asset or process to a virtual representation with a functional output’ (Scott, 2020). The term ‘live coupling’ (e. g., through real-time data feeds) is problematic and contested in the context of UDTs, as it is often difficult to achieve for MAS, SET systems and s. a. cities, and, for many applications – such as longterm scenario planning – it is unnecessary. Furthermore, there are many classifications of ‘types’ of (U)DTs based on what they can do or how they are built (Ortt & Tiihonen, 2022). Tekinerdogan and Verdouw (2020), for example, clas",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_15",
+    "text": "do or how they are built (Ortt & Tiihonen, 2022). Tekinerdogan and Verdouw (2020), for example, classify DTs into four types: 1) Digital models: there is only a manual translation or interpretation between the digital and physical objects; 2) Digital generators: a digital model is used to automatically generate or enhance a physical object; 3) Digital shadows: systems incorporating automated real-time data input with manual interpretation; 4) Autonomous digital twins: the digital object and physical object are causally connected and synchronised via autonomous dataflows. These and other classifications trigger critical debate regarding the extent to which a Digital Twin application can be considered a Digital Twin. Some experts argue that without nearly autonomous real-time synchronization",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_16",
+    "text": "nsidered a Digital Twin. Some experts argue that without nearly autonomous real-time synchronization between the Reference Twin (RT) and the Digital Twin (DT), a Digital Twin (DT) is not truly a Digital Twin. As part of the preparation for designing the Q study, we examined a range of UDT applications in the Netherlands and assessed their alignment with established DT definitions and types (see also ´ Avila Eça de Matos et al., 2022). We identified and analysed 21 UDT use cases (sufficiently documented before 2024), with five UDT platforms emerging as more frequently utilised in the Netherlands (see Table 7 in Annex). While these platforms share commonalities, they exhibit distinctive features on dimensions such as visualisation, data integration, interconnection with models and simulation",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_17",
+    "text": "es on dimensions such as visualisation, data integration, interconnection with models and simulations and user interaction. Our analysis revealed that 13 UDTs are like the digital models that focus on visualising buildings, roads, vegetation, and subsurface elements in 3D. Two UDTs are best classified as digital generators, addressing issues such as noise and pollution, while seven leverage real-time data, primarily for traffic and crowds, classifying them as digital shadows. Importantly, no fully autonomous UDTs, as defined above, were identified. The findings highlight the limitations of typologies and both the constraints and opportunities for future innovation. Are autonomous UDTs feasible, necessary, or even desirable in urban planning? Most actors in the investigated Urban Network ar",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_18",
+    "text": "le, necessary, or even desirable in urban planning? Most actors in the investigated Urban Network argued that they are not. Still, some planners envisioned future UDTs of the autonomous type for crowd management, leveraging real-time monitoring of crowd movements, predictive risk analysis, and semi-automated crowd control measures, such as dynamically closing or opening specific passages. It illustrates how different perspectives on UDT may influence future innovation paths. As noted, UDTs can focus on specific city subsystems, such as urban mobility, crowds, water, pollution or neighbourhood development. They may try to integrate many or all of these dimensions into one DT platform. UDTs can serve various forms of decision-making, including real-time monitoring, design and planning, optim",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_19",
+    "text": "n serve various forms of decision-making, including real-time monitoring, design and planning, optimisation, maintenance and remote access (Sharma et al., 2022; Singh et al., 2021). However, they are also increasingly advocated to address social dimensions of spatial development, such as citizen participation, stakeholder engagement and long-term scenario planning. In addition, they are used as instruments in legislation, environmental impact assessments and permitting. This reflects the flexibility and evolving nature of UDT applications as socio-technical systems in real-world urban environments (Nochta et al., 2021). Van der Horn and Mahadevan highlight the ambiguity surrounding DTs, noting that this lack of clarity undermines the concept and hampers its potential benefits. Jeddoub et a",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_20",
+    "text": "ng that this lack of clarity undermines the concept and hampers its potential benefits. Jeddoub et al. (2023) state that the academic discourse struggles to define DTs precisely (Shahzad et al., 2022), often leading to terminological ambiguity (Ketzler et al., 2020), different forms and outputs (Ferr´e-Bigorra et al., 2022), domain-specific approaches (Lehtola et al., 2022) and various technical and non-technical N. van Apeldoorn et al. Cities 165 (2025) 106123 2\n\nchallenges that hinder its full deployment (Lei et al., 2023). Batty (2018) criticises the validity of the DT metaphor for cities, and Tomko and Winter (2019)propose replacing the UDT metaphor with something like a ‘cyber-physical–social system with coupled properties’. These divergent interpretations among practitioners can resu",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_21",
+    "text": "social system with coupled properties’. These divergent interpretations among practitioners can result in conflicting expectations and miscommunications, for instance, between clients and developers (Agrawal et al., 2022; Jeddoub et al., 2023). Al Sehrawy et al., 2023 argue that DT builders rarely disclose their worldviews or motivations, complicating evaluation and comparison of DTs. Based on a theoretical paradigm for grounding pluralistic DTs, they define four DT approaches: Tech-driven, Disruptive, Cognitive and Humanistic. These underlying worldviews and approaches produce different kinds of coexisting DTs. To further analyse the existing discourse on UDTs, we conducted a literature review supported by keyword co-occurrence analysis. This literature review was not only intended to map",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_22",
+    "text": "iew supported by keyword co-occurrence analysis. This literature review was not only intended to map the existing discourse but was also a crucial step in developing the Q study statements, ensuring a representative set of perspectives on UDTs (see below). We used the Scopus database with a keyword string [Urban + Digital Twin], searching between 2018 and 2024 (September), resulting in a dataset of 1.138 articles. The database extract, in RIS format, included abstracts and authors' keywords, which were imported into VOSviewer (www. vosviewer. com) to construct and visualise keyword networks. This approach helped map the interconnected concepts across UDT-related publications, as illustrated in Fig. 1. Only keywords with a minimum of 5 occurrences (88 keywords met the threshold) are include",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_23",
+    "text": "in Fig. 1. Only keywords with a minimum of 5 occurrences (88 keywords met the threshold) are included in the network visualisation. The result shows that, derived from DTs, UDTs are close to the concepts of smart cities, urban planning and 3D-city models. They are driven by technologies like machine learning, artificial intelligence and remote sensing for 3D modelling and architectural design, with sustainable development and decision-making in urban planning as goals. However, no single dominant topic or technology stands out and thoroughly explains the concept, signalling the complexity and multidimensional nature of UDT discussions (see Fig. 1). Despite the significant societal and political implications of UDTs, discussions surrounding their development and deployment often focus on te",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_24",
+    "text": "cal implications of UDTs, discussions surrounding their development and deployment often focus on technical engineering aspects, such as architectures and interoperability. Helbing and Argota S´ anchez-Vaquerizo (2022) highlight the limited attention paid to human rights and dignity issues. This oversight is evident in our keyword co-occurrence analyses, where terms such as ‘ethics’ and ‘safety’ are notably absent. Other authors, including Haraguchi et al. (2024), point to concerns regarding privacy and the lack of robust public regulation, both issues that accompany the opportunities offered by DTs. They argue that instead of striving to create a ‘perfect’ DT that exerts total control, the goal should be to employ computer simulation technologies to benefit all levels of society. In short",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_25",
+    "text": "goal should be to employ computer simulation technologies to benefit all levels of society. In short, UDTs are a new branch on a decade-old tree of PSSs, existing alongside earlier branches such as (Urban) System Dynamics (SD), agent-based-modelling (ABM) and geo-information systems (GISs) (Batty, 2021; Geertman & Witte, 2024). Therefore, a reflective and critical discussion on the role of UDTs in the Science and Policy Interface (SPI) is equally relevant but does not stand out as a topic of study and debate (Te Br¨ ommelstroet et al., 2014). In contrast, technocratic approaches prioritise innovation and technological advancements, often placing efficiency and progress above societal-ethical considerations. It highlights the need for responsible governance and a balanced approach to UDT de",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_26",
+    "text": "considerations. It highlights the need for responsible governance and a balanced approach to UDT deployment. Fig. 1. Network visualisation of UDTs, (1138 Scopus articles, ‘18–’24, threshold 5). N. van Apeldoorn et al. Cities 165 (2025) 106123 3\n\nThese (and other) topics together constitute the discourse around UDT among actors – planners, academics, businesses, politicians etc. – in an innovation network. How can this discourse be investigated to guide UDT innovation strategies? 2.2. The social construction of UDTs The understanding of how UDT function as a multi-interpretable innovation concept in networks of innovation, as described above, is based on several loosely connected theoretical and conceptual frameworks about the management of innovation. The Social Construction of Technology",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_27",
+    "text": "and conceptual frameworks about the management of innovation. The Social Construction of Technology (SCOT) (Klein & Kleinman, 2002; Pinch & Bijker, 1984, 2012) posits that technology can only be fully understood within its social context, with the subjective perspectives of social actors playing a central role. These perspectives are shaped by influential social factors, including economic conditions, regulatory frameworks and cultural norms. In SCOT theory, ‘interpretative flexibility’ refers to the idea that various social groups can understand and use a single technology, such as UDT, in different ways. It explains why multiple UDT platforms and applications coexist, fostering innovation along varied trajectories. The theory of ‘Boundary Objects’ (BO) provides a more nuanced treatment",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_28",
+    "text": "along varied trajectories. The theory of ‘Boundary Objects’ (BO) provides a more nuanced treatment of the interpretative flexibility concept, stating that particular objects or ideas can be interpreted in varying ways across communities (i. e., ‘plasticity’) while maintaining a sufficient ‘common identity’ (i. e., integrity) to foster interaction, establish common ground, resolve problems and conflicts and strive towards consensus (Benitez et al., 2023; Star & Griesemer, 1989). BO can be any kind of artifact, such as things, technologies, ideas, and processes. Concrete examples of BO are field notes, maps, geo-information systems, technical standards (e. g., Building Information Models (BIM) in Construction), and also innovation concepts, such as Serious Games, the Metaverse and Digital T",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_29",
+    "text": ") in Construction), and also innovation concepts, such as Serious Games, the Metaverse and Digital Twins. An important consideration behind the UDT Q-study, is how BO function in an innovation network, and if and how they can be used for intervention and change. Within the SCOT-related Actor-Network Theory (ANT), social actors are seen as components of broader networks that encompass both human and non-human entities, including technological artifacts themselves. In this framework, technology is not merely a reflection of social forces but is actively shaped through interactions among various actors (Baron & Gomez, 2016). The theory suggests that innovation processes can be influenced by shaping interactions—for example, by creating new interactions among actors, but also by constructing s",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_30",
+    "text": "ping interactions—for example, by creating new interactions among actors, but also by constructing shared ‘meanings’ among actors. In ANT terms, the success of BO hinges on their ability to stabilise networks of actors, aligning diverse interests without collapsing into a singular, rigid interpretation. If the ‘integrity’ of a BO falters, the network of actors that support it may become unstable, causing the BO to lose its appeal as an innovation concept and creating an opportunity for another idea to emerge. Whereas ambiguity of concepts is sometimes seen as a problem for innovation, SCOT, ANT and BO theories argue that innovation benefits from a certain level of interpretative flexibility and plasticity. The idea of ‘Boundary Spanning’ plays a crucial role in facilitating interactions ac",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_31",
+    "text": "and plasticity. The idea of ‘Boundary Spanning’ plays a crucial role in facilitating interactions across different actor-networks (Benitez et al., 2023). It involves individuals or entities that bridge gaps between diverse communities, allowing for the translation and negotiation of meanings, resources, and goals. Boundary spanners, which can be persons, objects, or ideas, enable communication and collaboration by interpreting and adapting the boundary object's meaning for different stakeholders, helping to stabilise the network of actors involved. One of the key challenges in innovation networks is designing effective ‘boundary spanning,’ for example, through action and intervention research. Q methodology can support boundary-spanning (Langston et al., 2024) by examining how BO are inter",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_32",
+    "text": "h. Q methodology can support boundary-spanning (Langston et al., 2024) by examining how BO are interpreted differently across stakeholder groups. When actors in a network better understand why and how they have similar-different perspectives, this can enable change. Unlike interviews, focus groups, or questionnaires, which focus on individual or aggregated opinions, Q methodology clusters a few prevailing perspectives in the actor-network. While participatory observation captures direct interactions, Q methodology systematically compares structured viewpoints across diverse actor-networks, revealing underlying interpretative differences. These perspectives, in turn, shape interactions within the broader UDT innovation network, which may influence the innovation strategies. 2.3. Q methodolo",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_33",
+    "text": "the broader UDT innovation network, which may influence the innovation strategies. 2.3. Q methodology as boundary spanning Introduced by William Stephenson, Q methodology systematically analyses subjective viewpoints by ranking statements in a quasi-normal distribution (Stephenson, 1936). The method combines qualitative and quantitative elements with manual card-sorting exercises, followed by interviews and factor analysis to identify shared perspectives (Ramlo, 2016; Watts & Stenner, 2012). Consequently, Q methodology has garnered increased attention in fields ranging from psychology to political science, marketing research and all sociology studies related to understanding human behaviour. In the study of social constructivism of technology, for example, it has been applied to topics in",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_34",
+    "text": ". In the study of social constructivism of technology, for example, it has been applied to topics including geoengineering (Cairns & Stirling, 2014), cybersecurity (Ramlo & Nicholas, 2021) and the Metaverse (Zhou et al., 2024). We therefore applied Q methodology within an urban network comprising the five largest cities in a Dutch province. The actors in this network are actively involved in shaping innovation strategies for UDTs at both the city and regional levels and hold key positions within the region's UDT value chain and innovation networks. They face strategic challenges, such as determining which developments to pursue independently or collaboratively, allocating limited resources effectively, and politically justifying UDT initiatives. Given the conceptual ambiguity surrounding U",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_35",
+    "text": "ffectively, and politically justifying UDT initiatives. Given the conceptual ambiguity surrounding UDTs and the need for clearer strategic direction, Q methodology was identified by the researchers and two initiating actors in the network, as a structured approach to uncovering shared and divergent perspectives within this innovation ecosystem. 3. Materials and methods 3.1. Overview To develop the Q methodology, we conducted a comprehensive scan of UDTs at various development and deployment stages within the regional network (see above and Table 7) (Lee, 2017). We recruited the actors involved in these regional UDTs as respondents. To operationalise the social construction of the UDTs, we began with a keyword cooccurrence analysis to define the scope of the study and critical arguments (se",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_36",
+    "text": "gan with a keyword cooccurrence analysis to define the scope of the study and critical arguments (see Fig. 1 above). The Q sample is based on the keyword cooccurrence analysis and systematic literature review from document databases and included questions related to values to counter the current lack of emphasis in academic literature. This approach is necessary to collect the most representative statements from the significant volume of information related to UDTs. We clustered the statements into five categories, loosely based on innovation drivers in SCOT and ANT: Terminology, Values, Innovation, Impact and Strategy (see Tables 2 and 3). We employed online Q study software for card ranking exercises and real-time online and offline interviews. Leveraging the Q study online allows effici",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_37",
+    "text": "g exercises and real-time online and offline interviews. Leveraging the Q study online allows efficient production of quantitative data and speech-to-text notes for subsequent factor analysis and interpretation. The mathematical component is key in structuring the data analysis but remains relatively subdued and flexible (Akhtar-Danesh, 2023; Newman & Ramlo, 2010). In the next section, we elaborate on the steps of our study's systematic online Q methodology. 3.2. Research questions Based on the previous theoretical and conceptual analysis, the N. van Apeldoorn et al. Cities 165 (2025) 106123 4\n\nresearch objectives and related empirical Research Questions (RQ) of the Q methodology study are: Research objective 1: Understanding UDT as a Boundary Object and its interpretative flexibility, in",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_38",
+    "text": "Research objective 1: Understanding UDT as a Boundary Object and its interpretative flexibility, in an actor-network. RQ 1: What are the socially constructed perspectives on UDTs among the actors in the regional urban network in the Netherlands? RQ2: What are the similarities and differences between these actor perspectives? Research objective 2: Understanding the Q-method as a form of Boundary Spanning in an actor-network. RQ 3: To what extent can a Q study be used to support a UDT innovation in the regional urban network in the Netherlands? 3.3. General procedures In this study, the Q methodology's digitalised processes and online procedures include the following stages as indicated in Fig. 2 (Zhou et al., 2024): 1. Use clustered keywords to search for academic publications and various c",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_39",
+    "text": ". 2 (Zhou et al., 2024): 1. Use clustered keywords to search for academic publications and various communicative texts, such as essays, discussions, online news, books and personal opinions to identify prominent arguments. 2. Construct the Q sample for UDTs, which consists of a collection of statements (typically between 30 and 50) that capture the most significant arguments and opinions. 3. Select respondents through regional networks (P set, generally between 25 and 40) to ensure boundary spanning in a regional innovation ecosystem. 4. Conduct the Q sorting exercise in real-time using an online platform, where each respondent arranges the statements (Q sort) on a forced quasi-normal distribution grid (Q scale, ranging from (cid:0) 3 to +3, from strongly disagree to strongly agree). 5. Pe",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_40",
+    "text": "bution grid (Q scale, ranging from (cid:0) 3 to +3, from strongly disagree to strongly agree). 5. Perform personal interviews with each respondent to clarify the reasoning behind their selection of the statements. Respondents give detailed explanations, which are recorded, and automatic transcripts are generated for further analysis. 6. Conduct Q factor analysis and verify the statistical findings by crossreferencing the interview notes from the respondents' Q sorts to determine the final outcomes of the analysis. 7. Reconstruct a concise set of perspectives, each interpreted by aligning the key statements with the labelled interview notes. 3.4. The Q sample of the UDTs In step 1, we conducted a co-occurrence network analysis to identify the relevant themes around UDTs, such as smart citie",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_41",
+    "text": "ed a co-occurrence network analysis to identify the relevant themes around UDTs, such as smart cities, remote sensing, etc. (see above). The keywords are clustered based on the frequency of co-occurrence and were used to search for representative information within the clusters. This step was primarily intended to ensure a balanced representation of publications, and the other literature used to find and select Q sample statements. In Step 2, a systematic document review was conducted using the themes from Step 1. The Scopus database was used to identify relevant references, and a Google search tracked the latest discourse on UDTs in journals, professional magazines and newspapers. In addition, commentaries from research seminars, blogs, books and book reviews were also included. A prelimi",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_42",
+    "text": "on, commentaries from research seminars, blogs, books and book reviews were also included. A preliminary collection of approximately 130 items from the keywords-based search of various databases were abstracted. In Step 3, we applied the SCOT/ANT theory to structure the items in the Q sample into six categories: Terminology, Values, Innovation, Impact and Strategy. These items were condensed and rephrased into approximately 80 short and clear statements to ensure that they presented clear information and were expressed in natural language. In Step 4, we reduced the number of statements in each category to make the total statement count manageable. We user-tested the 41 statements and procedures with persons in our inner circle. The final number of Q sample statements in each category are:",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_43",
+    "text": "res with persons in our inner circle. The final number of Q sample statements in each category are: Terminology (T) = 5, Values (V) = 11 positively and 8 negatively formulated statements; Innovation (In) = 5, Impact (Im) = 5, and Strategy (S) = 7. In Table 1, one or two example statements in each category are provided alongside the cluster of keywords on which they are based. The complete list of statements and categories is given in Table 3. With this design, the Q sample is comprehensively composed with a stronger focus on the Values and Strategy categories regarded as highly influential in government entity reports but limited in academic literature. 3.5. Participants and the Q Sort procedure The design of the participant sample (P-set) focused on selecting individuals actively involved",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_44",
+    "text": "dure The design of the participant sample (P-set) focused on selecting individuals actively involved in UDTs in the Urban Network in a Dutch province. Participants were chosen based on two criteria: a) their professional involvement in UDT-related sectors, including urban planning, public policy and digital innovation; and b) their active engagement in discussions and activities surrounding UDTs, such as research projects, public forums, and strategic planning sessions in the urban digitalisation space. Twenty-nine participants, aged between 27 and 62, took part in the Q sorting exercise and in-depth interviews (see Table 2). The sample was composed of individuals from both the public and private sectors, with a majority (23 participants) being civil servants from municipalities, the provi",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_45",
+    "text": "ivate sectors, with a majority (23 participants) being civil servants from municipalities, the province and regional authorities. The remaining participants included representatives from private organisations (3) and knowledge institutions (3). Participants self-reported their knowledge of UDTs: two claimed to have expert-level understanding, sixteen had substantial knowledge, nine had moderate familiarity and one participant had basic knowledge. The Q-sort process was conducted via physical and online meetings, using digital Q-sorting software. Participants were given a link to the online platform and were instructed to pre-sort statements into agreement, disagreement and neutrality categories. The sorting interface utilised a scale from +3 (strong agreement) to (cid:0) 3 (strong disagree",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_46",
+    "text": "ies. The sorting interface utilised a scale from +3 (strong agreement) to (cid:0) 3 (strong disagreement). Each Q-sort session lasted approximately 1 h, with about half the time for the card sorting task followed by explanation and reflection. Data collection and analysis were conducted using Q methodology software, with all interviews recorded and transcribed through speech-to-text technology. The resulting data were analysed to provide quantitative and qualitative insights into participants' perceptions of UDTs. 3.6. Analysis and interpretation In Q methodology, data analysis often involves applying factor analysis using software tools like the PQ method.1 However, identifying significant factors requires more than statistical measures; additional theoretical insights and qualitative con",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_47",
+    "text": "factors requires more than statistical measures; additional theoretical insights and qualitative considerations must be determined to align with the Q design and dataset (Mc Keown & Thomas, 1988). For this study, we conducted data analysis using the embedded statistical features of the online QMethod Software. Standard procedures in Q methodology, such as Pearson correlation, Principal Component Analysis (PCA) and Varimax rotation, were applied for factor extraction and rotation. Pearson correlation generated a matrix of correlations between individual Q sorts (by-person correlation), while PCA identified eight factors with eigenvalues greater than one. Factor loadings of ±0.40 were 1 The embedded analytical function of the online QMethod Software is regarded as equivalent to the freely di",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_48",
+    "text": "bedded analytical function of the online QMethod Software is regarded as equivalent to the freely distributed PQMethod tool as the standard analysis for Q methodology. N. van Apeldoorn et al. Cities 165 (2025) 106123 5\n\nconsidered significant. These extracted factors were refined and rotated to achieve the desired factor structure (Akhtar-Danesh, 2023). In Q methodology, the choice of factor rotation methods and criteria varies depending on the study's objectives and is often shaped by the researcher's specific focus. We rotated factor solutions representing between 50 % and 80 % of cumulative variance to compare different factor structures. We employed Varimax rotation, which optimises the variance explained by the extracted factors, aiming to capture the broadest range of perspectives (A",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_49",
+    "text": "variance explained by the extracted factors, aiming to capture the broadest range of perspectives (Akhtar-Danesh, 2023). We compared solutions involving three to eight factors to assess significant factor loadings and their corresponding arrays. Interview notes were incorporated into the analysis to support and validate these decisions. We also applied a more rigorous standard for identifying significant factor loadings to maximise the variance explained (Watts, 2012). Q sorts that showed significant loadings on more than one factor were excluded as ‘confounded’. The final factor solution was interpreted using the distinguishing statements for each factor and broader narratives derived from interview notes. To develop a comprehensive understanding of each perspective, relevant statements f",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_50",
+    "text": "interview notes. To develop a comprehensive understanding of each perspective, relevant statements from various SCOT categories were integrated, and the interview notes from participants associated with each factor were systematically coded for deeper insights. To explore the commonalities among the perspectives, we compared consensus statements to reveal shared viewpoints, or ‘common ground’. These statements reflected areas of agreement across different perspectives. Additionally, the content of the interview notes, including frequently used words and narrative themes, was analysed to further explain shared patterns and underlying perceptions. Preliminary interpretations of the perspectives were shared with participants to ensure the accuracy and reliability of the findings, and their fe",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_51",
+    "text": "s were shared with participants to ensure the accuracy and reliability of the findings, and their feedback helped enhance the rigour and validity of the study's conclusions. We examined whether the Q-factors correlated with participants' backgrounds (e. g., age, gender) or formal positions (e. g., municipal planner, academic, technology developer, public-private sector, UDT pilot). No strong associations were identified with any of the Q-factors. This is not uncommon in Q methodology studies, where individuals from different professional backgrounds may share similar perspectives, while those in comparable roles may hold distinct views. The limited number of participants with varying backgrounds and positions may have contributed to this outcome. Furthermore, the study was conducted within",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_52",
+    "text": "unds and positions may have contributed to this outcome. Furthermore, the study was conducted within a relatively cohesive urban network, which could have influenced the results. Future research could explore how findings differ when the Q set is extended to a broader and more diverse participant pool. 4. Results The factor analysis, performed using PQMethod software, identified three factors as the most suitable to represent the varying perspectives within the UDT discourse. These factors explained 53 % of the variance across participant responses. The full factor array and significant factor loadings appear in Annex Tables 4–7. After interpreting each factor, we discuss the similarities and differences between the factors. 4.1. Factor 1: strategic confidence in urban digital twins With 1",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_53",
+    "text": "d differences between the factors. 4.1. Factor 1: strategic confidence in urban digital twins With 15 participants loaded significantly on Factor 1, they form a prevalent perspective based on 15 distinguishing statements and two consensus statements (see Tables 3 and 5). Respondents demonstrate a strategic, forward-looking attitude towards UDTs. According to the respondents, UDTs' ability to predict and calculate the consequences of Fig. 2. Constructing a Q sample. Table 1 Q sample with example statements. Categories Number Example The essential elements of UDT discourse Terminology (T) = what UDT essentially means 5 e. g., A digital twin is a digital copy of a physical object or artifact that exists in the real world; A digital twin is nothing more than an advanced simulation model. Value",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_54",
+    "text": "at exists in the real world; A digital twin is nothing more than an advanced simulation model. Values (Vp, n) =what UDTs can potentially deliver to society 11 pos. and 8 neg. e. g., Urban Digital Twins have the potential to make decision-making more based on facts; Urban digital twin is an inflated concept because it cannot deliver on what it claims. Innovation (In) = what UDTs can innovatively do 5 e. g., One of the most important functions of an urban digital twin is realtime measurement and monitoring; One of the most important functions of an urban digital twin is the ability to calculate and predict the future consequences of decisions. Impact (Im) =where UDTs can be used and what they deliver 5 e. g., Urban Digital Twins can improve the resilience of urban areas against, for example,",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_55",
+    "text": "deliver 5 e. g., Urban Digital Twins can improve the resilience of urban areas against, for example, natural disasters and pandemics; Urban Digital Twins can improve citizen participation. Strategy (S) =how UDT development and use can be managed 7 e. g., The development and use of Urban Digital Twins should be left to the market and depend on supply and demand; It is important that local and regional authorities actively support the development of a technical and organizational infrastructure for urban digital twins. Table 2 Sectors with which the participants are associated. Sector Number Public sector (civil servants) 23 Private sector 3 Academia 3 N. van Apeldoorn et al. Cities 165 (2025) 106123 6\n\nurban decisions is one of their most essential functions (In3, +3), as it is crucial for",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_56",
+    "text": "106123 6\n\nurban decisions is one of their most essential functions (In3, +3), as it is crucial for future urban planning and governance. This predictive function is seen as a vital tool for making more informed, data-driven policies that support long-term urban development. Respondents also emphasise UDTs' capacity to enhance stakeholder engagement (Vp9, +3). By providing comprehensive real-time data, UDTs can help diverse groups, from policymakers to citizens, contribute to urban decision-making processes. Respondents believe that UDTs offer a way to balance competing urban priorities, such as safety, sustainability and accessibility (Vp3, +2). This balancing act is essential for creating urban environments that meet various needs while maintaining long-term resilience. There is consensu",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_57",
+    "text": "urban environments that meet various needs while maintaining long-term resilience. There is consensus that local and regional authorities should actively support the development of UDT infrastructure (S6, +2). Respondents highlight the importance of public–private collaboration, stressing that governments, businesses and knowledge institutions need to coordinate their efforts (S5, +2). Moreover, they emphasise the need to raise awareness among policymakers about UDTs' potential benefits, particularly in improving urban resilience against disasters and pandemics (Vp5, +1). However, despite their optimism, respondents acknowledge certain limitations. While they agree that UDTs can improve urban resilience (Vp5, +1), they do not strongly believe UDTs should serve as a central control hub for",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_58",
+    "text": "n resilience (Vp5, +1), they do not strongly believe UDTs should serve as a central control hub for cities (Vp1, +1). Instead, they see UDTs as one part of a broader urban planning toolkit that requires further development in areas like stakeholder coordination and communication. Respondents also value UDTs as tools for scenario testing, enabling decision-makers to explore various potential outcomes (Vp2, +2). They view this exploratory function as crucial for fostering collaborative learning processes among different stakeholders. In the future, respondents believe that decision-makers and stakeholders will work together within the same UDT ecosystem to enhance collaboration and governance (Im4, +0). In terms of disagreement, respondents reject the notion that UDTs are biased or non-trans",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_59",
+    "text": "(Im4, +0). In terms of disagreement, respondents reject the notion that UDTs are biased or non-transparent (Vn1, (cid:0) 1). They also disagree with the idea that UDTs are merely advanced simulation models (T1, (cid:0) 3). Instead, UDTs are seen as promising tools with the potential to deliver meaningful insights if they are implemented and used effectively. In summary, the respondents in this factor hold a forward-looking and optimistic view of UDTs, recognising UDTs' potential to improve decision-making, foster stakeholder collaboration and balance vital urban priorities. They see UDTs as tools that can help cities become more resilient and better managed, provided local authorities and stakeholders have adequate support and awareness. 4.2. Cautious critique of Urban Digital Twins Five p",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_60",
+    "text": "akeholders have adequate support and awareness. 4.2. Cautious critique of Urban Digital Twins Five participants significantly loaded on Factor 2, reflecting a more sceptical perspective shaped by eight distinguishing statements and three consensus statements (see Tables 3 and 5). Respondents in this factor adopt a critical stance towards UDTs, focusing on the risks, limitations and challenges they perceive. The lack of high-quality, reliable data is a primary concern (Vn3, +3). Without addressing data quality issues, respondents believe that UDTs will fall short of their promises, as accurate and comprehensive data are fundamental to effective urban decision-making. Another major concern is the insufficient training of decision-makers in using UDTs (S4, +3). Respondents argue that proper t",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_61",
+    "text": "the insufficient training of decision-makers in using UDTs (S4, +3). Respondents argue that proper training is essential for decision-makers to fully grasp the impact of UDTs on governance and planning. They fear that without sufficient training, UDTs will be underutilised, preventing them from making a meaningful contribution to urban planning efforts. Respondents also call for more research into the ethical, social and political implications of UDTs (S3, +3). They are particularly concerned about the potential for bias in UDT interfaces, worrying that these systems could filter or distort data (Vn1, +3), leading to unbalanced decision-making. This reflects a broader scepticism about the objectivity of UDTs, with respondents questioning whether the technology can be trusted to provide unb",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_62",
+    "text": "jectivity of UDTs, with respondents questioning whether the technology can be trusted to provide unbiased insights. In addition to these concerns, respondents highlight the complexity of UDTs and their dependence on the availability of high-quality data (Vn3, +3). They argue that without improving data quality and transparency, UDTs may not offer accurate or reliable information, which could undermine their use in critical decision-making processes. Furthermore, respondents stress that decision-makers need more training (S4, +3) before UDTs can be fully integrated into urban governance systems. They are also cautious about the high expectations placed on UDTs (Vn2, +2). They note that UDTs have not yet proven their ability to meet the ambitious claims associated with them, particularly due",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_63",
+    "text": "ave not yet proven their ability to meet the ambitious claims associated with them, particularly due to unreliable simulation models (Vn5, +2). Respondents also point to the lack of transparency and accessibility for non-experts (Vn7, +1) as further evidence of UDTs' limitations, making it difficult for a broad range of stakeholders to engage with the technology. Despite these criticisms, respondents in Factor 2 do not dismiss UDTs entirely. They acknowledge that with sufficient improvement in data quality and training, UDTs could provide valuable insights into urban management. However, they caution against over-reliance on the technology, stressing that it should complement, not replace, human decision-making processes. While respondents agree that local and regional authorities should s",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_64",
+    "text": "uman decision-making processes. While respondents agree that local and regional authorities should support UDT infrastructure (S6, +1), they do not believe UDTs will fundamentally change spatial planning (Im2, (cid:0) 1) or become a central control hub (Vp1, (cid:0) 3). Their scepticism is rooted in a belief that UDTs are not yet ready for large-scale adoption and still require significant development. In summary, respondents in this factor maintain a cautious and critical view of UDTs. While they recognise the potential for future development, they are not convinced that UDTs are ready to play a central role in urban planning. Concerns about data quality, transparency and ethical issues suggest a need for more comprehensive evaluation before UDTs can be more widely adopted. 4.3. Technolog",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_65",
+    "text": "gest a need for more comprehensive evaluation before UDTs can be more widely adopted. 4.3. Technological pragmatism for Urban Digital Twins Seven participants significantly loaded on Factor 3, representing a pragmatic and grounded perspective on UDTs. This group views UDTs as valuable practical tools that can assist in improving visualisation, citizen participation and data integration, focusing primarily on what UDTs can do now rather than their future potential to transform urban governance. These respondents' perspective is defined by 10 distinguishing statements and 2 consensus statements (see Tables 3 and 5). One of the central views of this group is that a UDT genuinely is a digital copy of a physical object or artifact that exists in the real world (T2, +3). This group highlights th",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_66",
+    "text": "py of a physical object or artifact that exists in the real world (T2, +3). This group highlights the practical role of UDTs in integrating large amounts of geodata (In5, +3), helping decision-makers and stakeholders visualise and understand complex urban landscapes. They believe that UDTs can enhance public participation (Vp7, +3) by making urban planning processes more transparent and accessible through 3D visualisation (In1, +2). These visual tools are seen as critical for engaging non-experts, ensuring that citizens can meaningfully contribute to urban development decisions. This group also holds a relatively optimistic view regarding UDTs' potential to improve spatial planning (Im2, +1), though their focus remains on current, practical applications. They believe that UDTs can calculat",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_67",
+    "text": ", though their focus remains on current, practical applications. They believe that UDTs can calculate and predict the future consequences of decisions (In3, +2), helping policymakers explore different scenarios. However, unlike participants who loaded on Factor 1, who view UDTs as potentially transformative for governance, this group emphasises user-friendly, immediate applications, such as allowing interaction with UDTs to be as easy as using a computer game (In4, +1). While pragmatic, respondents are cautious about the technical N. van Apeldoorn et al. Cities 165 (2025) 106123 7\n\nlimitations of UDTs; they do not see UDTs as comprehensive solutions for all urban challenges, particularly when it comes to modelling complex socio-economic and political behaviours (T4, (cid:0) 3). They also r",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_68",
+    "text": "n it comes to modelling complex socio-economic and political behaviours (T4, (cid:0) 3). They also recognise the lack of coordination between public and private organisations as a hindrance to effective UDT implementation (Vn6, (cid:0) 2), highlighting the need for better collaboration to unlock the full potential of UDTs. Although they see UDTs as valuable tools for enhancing participation and visualising cities, they are aware that these technologies are still in development and face challenges that need to be addressed. Notably, this group does not seem to reject the idea of a single UDT for the whole of the Netherlands (S7, 0), reflecting their belief that largescale UDT integration could further facilitate planning and data sharing across regions. However, they reject the notion that",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_69",
+    "text": "d further facilitate planning and data sharing across regions. However, they reject the notion that UDT development should be left entirely to market forces (S1, (cid:0) 3), stressing the need for oversight and coordination among stakeholders to ensure that the technology serves public interests. In summary, Factor 3 sees UDTs as pragmatic tools for visualisation and participation, focusing on UDTs' current applications rather than future transformations. This group calls for balanced development, recognising UDTs' limitations while valuing their ability to engage citizens and improve urban planning in the short term. 4.4. Similarity and differences Table 6 (Annex) provides correlation scores that highlight areas of agreement and divergence. For instance, Factor 1: Strategic Confidence and",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_70",
+    "text": "s that highlight areas of agreement and divergence. For instance, Factor 1: Strategic Confidence and Factor 2: Cautious Critique share minimal alignment, with a correlation score of just 0.18, indicating <18 % overlap. The gap between Factor 2 and Factor 3: Technological Pragmatism is even more pronounced (0.08). However, Factor 1 and Factor 3 show stronger agreement, correlating at 0.60, which suggests that these perspectives share similarities in approximately 60 % of the cases. But what do these figures imply for understanding the perspectives? In short, the three perspectives – Strategic Confidence, Cautious Critique and Technological Pragmatism – provide distinct views on how UDTs should be developed, governed and applied. Although there are areas of overlap, the key differences revol",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_71",
+    "text": "d be developed, governed and applied. Although there are areas of overlap, the key differences revolve around the scope and approach to UDTs: Factor 1 focuses on their transformative future potential, Factor 2 highlights the risks and limitations and Factor 3 emphasises UDTs' practical, current applications. 4.4.1. Strategic Confidence versus Cautious Critique Factor 1 and Factor 2 represent two ends of the spectrum. Strategic Confidence respondents (Factor 1) are highly optimistic about UDTs' potential to transform urban governance. They believe UDTs can significantly improve decision-making by predicting and calculating the consequences of policies (In3, +3), and they see governments playing a crucial role in supporting UDT infrastructure. This group emphasises the long-term potential of",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_72",
+    "text": "ng a crucial role in supporting UDT infrastructure. This group emphasises the long-term potential of UDTs as strategic tools for enhancing urban resilience, fostering stakeholder engagement and addressing complex challenges. In contrast, Cautious Critique respondents (Factor 2) are far more sceptical. They emphasise that UDTs cannot be trusted as neutral or reliable decision-making tools due to inherent biases in how data are presented (Vn1, +3) and limitations in data quality (Vn3, +3). These critics do not share Factor 1's confidence that UDTs can significantly improve fact-based decision-making (Vp 10, (cid:0) 2). They highlight the risks of relying on UDTs without addressing these issues and argue that more research is needed into the ethical, social and political implications of the t",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_73",
+    "text": "and argue that more research is needed into the ethical, social and political implications of the technology. This group warns against the ‘techno-fixation’ often associated with UDTs and the dangers of positioning them as control hubs for cities (Vp1, (cid:0) 3). 4.4.2. Strategic Confidence versus Technological Pragmatism While Strategic Confidence (Factor 1) and Technological Pragmatism (Factor 3) share more in common, particularly their belief in the potential of UDTs to improve urban governance (correlation 0.60), they differ in their approach to the technology's application. Strategic Confidence respondents focus on the long-term potential of UDTs as transformative tools, seeing them as essential for strategic urban planning and decision-making. These respondents are more visionary i",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_74",
+    "text": "s essential for strategic urban planning and decision-making. These respondents are more visionary in their outlook, believing that UDTs will fundamentally reshape how cities are managed. By contrast, Technological Pragmatism respondents take a more practical and grounded approach, emphasising UDTs' current, realworld applications (T2, +3). This group focuses on the technology's immediate utility for visualisation, citizen engagement and incremental progress in urban planning rather than expecting UDTs to revolutionise urban governance. They see UDTs as valuable tools for integrating geodata and facilitating participation through 3D modelling (In1, +2), but they acknowledge the limitations of UDTs in modelling complex socio-economic behaviour (T4, (cid:0) 3). Unlike Factor 1, they are scep",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_75",
+    "text": "f UDTs in modelling complex socio-economic behaviour (T4, (cid:0) 3). Unlike Factor 1, they are sceptical of positioning UDTs as central tools for long-term governance and instead advocate for their use in specific, tangible projects. These respondents also reject a purely market-driven approach to UDT development (S1, (cid:0) 3), advocating for public oversight and collaboration with municipalities. 4.4.3. Cautious Critique versus Technological Pragmatism The Cautious Critique (Factor 2) and Technological Pragmatism (Factor 3) perspectives have minimal overlap (correlation 0.08). However, both groups share some scepticism about certain UDT functions. For example, both agree that UDTs are not well-suited for modelling complex socio-economic behaviour (T4, (cid:0) 3) and that the quality of",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_76",
+    "text": "t well-suited for modelling complex socio-economic behaviour (T4, (cid:0) 3) and that the quality of UDT data needs improvement. However, their overall views on UDTs are starkly different. Where Cautious Critique respondents see UDTs as fraught with ethical and transparency issues, Technological Pragmatism respondents take a more optimistic view, focusing on UDTs' ability to address practical urban challenges through visualisation and data integration. While Cautious Critique respondents argue for more research and training to mitigate the risks of UDTs (S4, +3), Technological Pragmatism respondents believe the technology is already useful in its current form and can gradually improve over time. 5. Conclusion 5.1. Answering the empirical research questions RQ 1: What are the socially const",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_77",
+    "text": "ime. 5. Conclusion 5.1. Answering the empirical research questions RQ 1: What are the socially constructed perspectives on UDTs among the actors in the regional urban network in the Netherlands? Our study identified three distinct perspectives on UDTs: Strategic Confidence, Cautious Critique and Technological Pragmatism. These perspectives illustrate varying emphasis on Terminology, Values, Societal Impact, Innovation and Strategy. Rather than merely debating the definitions or technology of UDTs, the participants focused on the cultural values and societal impacts associated with their implementation. For instance, the Strategic Confidence perspective highlighted the potential of UDTs to promote data-driven policies and enhance urban resilience, while the Cautious Critique participants ex",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_78",
+    "text": "omote data-driven policies and enhance urban resilience, while the Cautious Critique participants expressed concerns about data quality and ethics in decision-making. This demonstrates that the definitions and essential features of effective UDTs are less important than the political, social and economic implications surrounding their adoption. RQ2: What are the similarities and differences between these actor perspectives? The three perspectives reflect varying degrees of confidence, pragmatism, and concern regarding the role of UDTs in urban governance. The key differences lie in how UDTs should be applied and their perceived potential. Factor 1 is visionary, focusing on strategic and transformative uses for the future; Factor 2 is cautious, emphasising risks and the need for further res",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_79",
+    "text": "sformative uses for the future; Factor 2 is cautious, emphasising risks and the need for further research; and Factor 3 is pragmatic, N. van Apeldoorn et al. Cities 165 (2025) 106123 8\n\nfocusing on practical, current applications and incremental improvements. Differences also emerge in attitudes towards the societal impact of UDTs—particularly in levels of confidence in UDTs as systemic technological innovations, degrees of optimism or scepticism about their usefulness, and views on who should lead innovation (government, market, or society). Despite these differences, all three perspectives recognise the potential value of UDTs for urban governance, provided they are implemented thoughtfully and responsibly. A common understanding exists around the role of UDTs in enhancing stakeholder en",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_80",
+    "text": "y and responsibly. A common understanding exists around the role of UDTs in enhancing stakeholder engagement and supporting decision-making processes. A recurring theme across the perspectives is the need to ensure broad and fair access to UDTs for all stakeholders. These shared and divergent views contribute to a more nuanced understanding of how UDTs are perceived within the urban governance context. RQ3: To what extent can a Q study be used to support a UDT innovation in the regional urban network in the Netherlands? The Q method interviews were engaging and sparked curiosity among participants. Study findings were presented at regional meetings, bringing together UDT stakeholders, interviewees, and others from various sectors. Stakeholders showed great interest in the Q method and resu",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_81",
+    "text": "iewees, and others from various sectors. Stakeholders showed great interest in the Q method and results, recognising its value in capturing diverse perspectives and highlighting opportunities in the regional innovation ecosystem. The Q method facilitated cross-sectoral dialogue, helping to identify common goals and challenges, which we conceptualized as boundary spanning. Discussions within the urban network led to concrete innovation and R&D proposals, advancing UDT implementation. Stakeholders emphasized the need to break down institutional silos and enhance collaboration to accelerate UDT adoption. They highlighted the importance of an integrated regional approach to tackling challenges such as housing, mobility, climate, and the energy transition. UDTs were seen as powerful tools for h",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_82",
+    "text": "uch as housing, mobility, climate, and the energy transition. UDTs were seen as powerful tools for harmonizing data, enabling more coordinated decision-making, and improving citizen participation through enhanced data visualisation. Many respondents noted that UDTs remain in their early stages, with limited knowledge-sharing, inconsistent practices, and gaps in technical expertise among policymakers and professionals. This highlights the need for best practices, increased awareness, and the creation of joint data spaces to improve collaboration and integration. Stakeholders also stressed the importance of interdisciplinary research to bridge gaps between technology development and policy implementation. The Q study and subsequent discussions inspired several initiatives, including the coor",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_83",
+    "text": "lementation. The Q study and subsequent discussions inspired several initiatives, including the coordinated application of three different UDT platforms in an urban reconstruction project and the development of joint R&D proposals to refine their use. Ultimately, the Q study proved to be an effective tool for fostering collaboration and aligning stakeholders around shared goals. It demonstrated UDTs' potential to bridge gaps between governments, businesses, and citizens, supporting co-creation and long-term urban planning. 5.2. Discussion 5.2.1. Limitations This study, which included 29 participants from various sectors involved in UDTs, provides valuable insights into how UDTs are perceived by policymakers, researchers and industry professionals. However, several limitations that affect t",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_84",
+    "text": "by policymakers, researchers and industry professionals. However, several limitations that affect the broader applicability and depth of the findings must be acknowledged. Given the specific context and action orientation of the (commissioned) study, participants were selected from within the same regional innovation ecosystem. i. e., an urban network in the Netherlands; most participants worked in government or the public sector, and many were familiar with one another, introducing potential bias. In that sense, the P (articipant)-set reached a point of saturation and within time and availability conditions, all relevant actors in the region were interviewed. Although this allowed for a focused examination of UDTs within a specific community, the homogeneity of professional backgrounds m",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_85",
+    "text": "cused examination of UDTs within a specific community, the homogeneity of professional backgrounds may have limited the diversity of viewpoints, particularly those from less connected stakeholders, critical academics, or pioneering technology developers. This limits generalizability of the findings to other regions in the Netherlands, or internationally. The factors did not appear radically different, and factors 2 and 3, have significant less respondents than factor 1. This is not uncommon in Q-study findings, since discourses often consist of one or two dominant actor-network perspectives, with several, partially overlapping, diffuse perspectives around it. Future research would benefit from including a more heterogeneous group of participants to better capture the multiplicity of perspe",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_86",
+    "text": "om including a more heterogeneous group of participants to better capture the multiplicity of perspectives on UDTs, such as participants from other regions or countries, from social sciences, humanities, ethics, and digital technology firms. Expanding the P-set with a broader range of participants could provide further insights into whether an individual's background, formal position, or involvement in UDT use-cases influence their perspective on UDTs. A Q study relies on the quality of its statements, the Q-sort, and while we aimed for a balanced and meaningful set within the context of this regional urban network, there may be latent or emerging perspectives on UDT that were not captured in the Q-sort and P-set. Future Q-studies could incorporate more provocative, futuristic, or critical",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_87",
+    "text": "n the Q-sort and P-set. Future Q-studies could incorporate more provocative, futuristic, or critical statements to explore whether such perspectives on UDT exist. 5.2.2. Implications to theory and practice This study contributes to both the theoretical discourse on urban digitalization and the practical development of Urban Digital Twins (UDTs) as sociotechnical systems. By applying Q methodology within a regional actor-network, we provide conceptual and empirical insights into how diverse stakeholder perspectives shape UDT innovation. The findings highlight the dual nature of interpretative flexibility in UDTs, reinforcing the relevance of Social Construction of Technology (SCOT) and Boundary Object (BO) theories. While too much ambiguity can lead to fragmentation and misalignment, too li",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_88",
+    "text": "ry Object (BO) theories. While too much ambiguity can lead to fragmentation and misalignment, too little can stifle innovation by imposing rigid definitions that exclude alternative perspectives. A productive middle ground is essential—UDTs must be flexible enough to accommodate different interpretations while structured enough to support collaboration. An important direction for future research is identifying where this balance should be struck in practice. Actor-Network Theory (ANT) further clarifies that UDTs do not evolve in isolation but through dynamic interactions among policymakers, technologists, urban planners, and citizens. However, these interactions are only effective if actors recognise where and how their perspectives differ. This study demonstrates that Q methodology serves",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_89",
+    "text": "recognise where and how their perspectives differ. This study demonstrates that Q methodology serves as a boundary-spanning tool by structuring these differences into recognizable patterns, helping actors engage in the construction of meaning, rather than simply exchanging opinions. By structuring discourse around UDTs, Q methodology helps stabilise innovation networks, preventing both conceptual stagnation and fragmentation. This approach can be applied beyond UDTs to other sociotechnical innovations, including the broader smart city concept, where balancing interpretative flexibility with structured coordination is equally critical. From a practical standpoint, the three identified perspectives—- Strategic Confidence, Cautious Critique, and Technological Pragmatism—demonstrate that UDT a",
+    "section": "unknown",
+    "char_start": 61600,
+    "char_end": 62400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_90",
+    "text": "tives—- Strategic Confidence, Cautious Critique, and Technological Pragmatism—demonstrate that UDT adoption depends on how different actors assess its risks and benefits. Strategic Confidence respondents support government-led expansion and long-term investment. Cautious Critique respondents call for stronger oversight, ethical safeguards, and data transparency. Technological Pragmatists stress incremental, application-driven improvements. These differences imply that a uniform strategy for UDTs is unlikely to succeed. Instead, policymakers should adapt UDT governance models N. van Apeldoorn et al. Cities 165 (2025) 106123 9\n\nto specific needs, balancing long-term investment with near-term usability, while remaining critical about limitations and consequences. This differentiation is key t",
+    "section": "unknown",
+    "char_start": 62300,
+    "char_end": 63100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_91",
+    "text": "sability, while remaining critical about limitations and consequences. This differentiation is key to avoiding both over-regulation and underutilization. For policymakers and urban practitioners, these findings emphasise the need for targeted stakeholder engagement and structured decision-making processes. Rather than imposing rigid implementation models, a modular and adjustable governance approach—which allows UDT applications to evolve based on local priorities—may be more effective in supporting adoption. Funder The study is part of the Digireal program (BUas, 2022-2029, www. digireal. nl/) funded by NWO-SIA-SPRONG (SVB / SPR. ALG.01.012). CRedi T authorship contribution statement Nick van Apeldoorn: Conceptualization, Investigation, Writing – original draft, Writing – review & editing",
+    "section": "unknown",
+    "char_start": 63000,
+    "char_end": 63800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_92",
+    "text": "an Apeldoorn: Conceptualization, Investigation, Writing – original draft, Writing – review & editing, Formal analysis, Visualization, Project administration, Funding acquisition. Igor Mayer: Conceptualization, Supervision, Funding acquisition, Methodology, Writing – original draft, Writing – review & editing. Qiqi Zhou: Software, Methodology, Formal analysis, Data curation, Writing – original draft. Declaration of competing interest The authors declare no conflict of interest. Acknowledgments The authors acknowledge the contributions of Jelle van Lamoen, as a graduate student and research assistant. Our utmost gratitude goes to all the participants who generously shared their time and valuable insights into our study, which pertains to a highly relevant and complex topic. Annex Table 3 Fac",
+    "section": "unknown",
+    "char_start": 63700,
+    "char_end": 64500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_93",
+    "text": "le insights into our study, which pertains to a highly relevant and complex topic. Annex Table 3 Factor array with distinguishing statements of each factor. Cat No Statement Ideal Rank Factor 1 2 3 In3 1 One of the most important functions of an urban digital twin is the ability to calculate and predict the future consequences of decisions. 3 0 2 Vp8 2 Urban Digital Twins can be used to communicate how the city or region may develop in the future. 3 0 2 Vp7 3 Urban Digital Twins can improve citizen participation. 2 1 3 Vp2 4 Urban Digital Twins are a tool for learning from different scenarios. 2 2 2 Im3 5 Urban Digital Twins will change the way stakeholders help shape their city or region. 1 2 3 Vp 10 6 Urban Digital Twins have the potential to make decision-making more based on facts. 3 (",
+    "section": "unknown",
+    "char_start": 64400,
+    "char_end": 65200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_94",
+    "text": "2 3 Vp 10 6 Urban Digital Twins have the potential to make decision-making more based on facts. 3 (cid:0) 2 2 Vp9 7 Urban Digital Twins can significantly improve stakeholder engagement. 3 0 1 S5 8 Public-private organisations and knowledge institutions must coordinate collaboration and development in the use of urban digital twins. 2 1 0 Vp3 9 An urban digital twin helps find a balance between different values, such as safety, sustainability, and accessibility, within spatial planning. 2 0 1 S6 10 It is important that local and regional authorities actively support the development of a technical and organizational infrastructure for urban digital twins. 2 1 (cid:0) 1 S3 11 More research is needed into the ethical, social, and political consequences of urban digital twins. 0 3 0 S2 12 Poli",
+    "section": "unknown",
+    "char_start": 65100,
+    "char_end": 65900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_95",
+    "text": "needed into the ethical, social, and political consequences of urban digital twins. 0 3 0 S2 12 Policymakers and stakeholders need to be more aware and informed about urban digital twins. 1 2 (cid:0) 1 S4 13 Decision-makers need more training in using Urban Digital Twins before this technology can be widely adopted. 0 3 0 In5 14 One of the most important functions of an urban digital twin is to integrate and harmonize large amounts of geodata. (cid:0) 1 (cid:0) 1 3 Vp6 15 Urban Digital Twins can integrate the plans of different stakeholders into one integrated urban design. 1 0 1 T3 16 A digital twin can capture ideas, concepts, and designs that do not (yet) exist. 1 0 1 Vp 11 17 Urban Digital Twins can be used to mediate spatial conflicts. 0 (cid:0) 1 1 Vn3 18 Urban Digital Twins are hamp",
+    "section": "unknown",
+    "char_start": 65800,
+    "char_end": 66600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_96",
+    "text": "al Twins can be used to mediate spatial conflicts. 0 (cid:0) 1 1 Vn3 18 Urban Digital Twins are hampered by a lack of availability and quality of data. 0 3 (cid:0) 1 Im2 19 Urban Digital Twins will fundamentally change spatial planning. 0 (cid:0) 1 1 Vp4 20 Urban Digital Twins have great potential for local and/or regional economic development. 0 1 0 Im1 21 An urban digital twin is a “must-have” for smart cities and regions. 1 (cid:0) 3 0 Im4 22 In the future, decision-makers and stakeholders will work together in one and the same urban digital twin. 0 1 0 Vn1 23 Urban Digital Twins are not neutral or objective because interfaces filter and colour what we see. (cid:0) 1 3 (cid:0) 2 Vp5 24 Urban Digital Twins can improve the resilience of urban areas against, for example, natural disasters",
+    "section": "unknown",
+    "char_start": 66500,
+    "char_end": 67300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_97",
+    "text": "ban Digital Twins can improve the resilience of urban areas against, for example, natural disasters and pandemics. 1 0 (cid:0) 2 In1 25 One of the most important functions of an urban digital twin is a 3-Dimensional visualisation of the city or region. (cid:0) 1 0 2 In4 26 One of the most important characteristics of an urban digital twin is that user interaction is as easy as in a computer game. (cid:0) 1 0 1 T2 27 A digital twin is a digital copy of a physical object or artifact that exists in the real world. (cid:0) 2 (cid:0) 2 3 Vn6 28 Urban Digital Twins are hampered by a lack of coordination between public and private organisations. 0 1 (cid:0) 2 Vn7 29 Urban Digital Twins are hampered by a lack of transparency and openness to non-experts. (cid:0) 1 1 0 Vp1 30 Urban Digital Twins bec",
+    "section": "unknown",
+    "char_start": 67200,
+    "char_end": 68000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_98",
+    "text": "by a lack of transparency and openness to non-experts. (cid:0) 1 1 0 Vp1 30 Urban Digital Twins become the control room for a city or region. 1 (cid:0) 3 0 In2 31 One of the most important functions of an urban digital twin is real-time measurement and monitoring. 0 (cid:0) 2 (cid:0) 1 Vn4 32 Urban Digital Twins are hampered by the lack of digital security. (cid:0) 2 (cid:0) 1 (cid:0) 1 Vn8 33 Urban Digital Twins are hampered by the lack of interconnected urban sensors. (cid:0) 1 (cid:0) 1 (cid:0) 2 Vn2 34 Urban digital twin is an inflated concept because it cannot deliver on what it claims. (cid:0) 3 2 (cid:0) 2 S7 35 It would be a good idea to have one digital twin for the whole of the Netherlands. (cid:0) 2 (cid:0) 3 0 Vn5 36 Digital twins are not useful for decision-making because dat",
+    "section": "unknown",
+    "char_start": 67900,
+    "char_end": 68700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_99",
+    "text": "therlands. (cid:0) 2 (cid:0) 3 0 Vn5 36 Digital twins are not useful for decision-making because data and simulation models are still unreliable. (cid:0) 3 2 (cid:0) 3 T1 37 A digital twin is nothing more than an advanced simulation model. (cid:0) 3 (cid:0) 1 (cid:0) 1 T4 38 A digital twin is able to model complex socio-economic and political behaviour. (cid:0) 1 (cid:0) 1 (cid:0) 3 Im5 39 In the (near) future, the output of a digital twin will have more authority in decision-making than the knowledge of an expert. (cid:0) 2 (cid:0) 2 (cid:0) 1 S1 40 The development and use of Urban Digital Twins should be left to the market and depend on supply and demand. (cid:0) 2 (cid:0) 3 (cid:0) 3 T5 41 Digital twins are a technological monstrosity in the hands of Big Tech. (cid:0) 3 (cid:0) 2 (cid:0",
+    "section": "unknown",
+    "char_start": 68600,
+    "char_end": 69400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_100",
+    "text": "1 Digital twins are a technological monstrosity in the hands of Big Tech. (cid:0) 3 (cid:0) 2 (cid:0) 3 T = Terminology / V=Values+/(cid:0) / SI = Societal Impact / I = Innovation / S=Strategy. N. van Apeldoorn et al. Cities 165 (2025) 106123 10\n\nTable 4 Significant loadings of each factor. Participants (in each factor loading) Degree of significant correlation of Q sort with each factor (* =flagged as statistically relevant and robust respondent/statement loading). Part. No Part. code Factor 1 Factor 2 Factor 3 1 0W 58 0.80 * 0.17 0.17 2 2MWS 0.56 0.22 0.57 3 2YKH 0.15 0.30 0.45 * 4 4SID 0.71 * 0.04 0.26 5 71 PP 0.67 * 0.01 0.35 6 7A 14 0.47 (cid:0) 0.20 0.46 7 8JOV (cid:0) 0.10 0.58 * 0.42 8 9PC6 0.42 * (cid:0) 0.11 0.35 9 BG8C 0.44 * 0.00 0.35 10 BU1D 0.22 (cid:0) 0.24 0.79 * 11 CKJM 0.",
+    "section": "unknown",
+    "char_start": 69300,
+    "char_end": 70100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_101",
+    "text": "8 9PC6 0.42 * (cid:0) 0.11 0.35 9 BG8C 0.44 * 0.00 0.35 10 BU1D 0.22 (cid:0) 0.24 0.79 * 11 CKJM 0.06 0.82 * 0.14 12 D 29 P 0.30 0.03 0.63 * 13 D4FM 0.06 0.52 * (cid:0) 0.10 14 G 45 H 0.31 0.17 0.60 * 15 HC9B 0.52 * 0.07 0.47 16 HCLA 0.51 * 0.16 0.07 17 I 75 Y 0.59 * (cid:0) 0.05 0.09 18 IOTV 0.00 0.72 * 0.19 19 M3KG 0.61 * 0.28 0.26 20 PK1J 0.64 * 0.15 0.38 21 PZ6E (cid:0) 0.04 0.23 0.63 * 22 QY 56 0.38 (cid:0) 0.21 0.77 * 23 SPYE 0.56 * 0.24 0.39 24 TZHY 0.62 * 0.32 (cid:0) 0.04 25 UT 35 0.56 * 0.28 0.46 26 UXAE 0.23 0.31 0.44 * 27 WATE 0.24 0.73 * (cid:0) 0.18 28 XOIF 0.70 * (cid:0) 0.18 0.48 29 ZRT8 0.85 * (cid:0) 0.11 0.04 Table 5 Factor descriptives. Factor 1 Factor 2 Factor 3 No. of defining variables 15 5 7 Avg. Rel. Coef. 0.8 0.8 0.8 Composite reliability 0.98361 0.95238 0.96552",
+    "section": "unknown",
+    "char_start": 70000,
+    "char_end": 70800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_102",
+    "text": "defining variables 15 5 7 Avg. Rel. Coef. 0.8 0.8 0.8 Composite reliability 0.98361 0.95238 0.96552 S. E of factor Z-scores 0.12804 0.21822 0.1857 Table 6 Correlation between factors. Factor 1 Factor 2 Factor 3 Factor 1 1 0.18471 0.6011 Factor 2 0.18471 1 0.08164 Factor 3 0.6011 0.08164 1 Table 7 Case studies with UDT in the region (simplified table, cases until July ‘23). Project Organization(s) Focus DT level 1 Smart City Alkmaar Analysis and Municipality of Alkmaar Urban planning, housing stock monitoring Digital model 2 Almere Digital Twin Municipality of Almere 3D model for permits Digital model 3 3D Amsterdam Municipality of Amsterdam/Unity City planning: 3D map buildings, roads, vegetation, subsurface Digital model 4 3D Digital City Municipality of Groningen/Arc Gis City planning: 3",
+    "section": "unknown",
+    "char_start": 70700,
+    "char_end": 71500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_103",
+    "text": "ation, subsurface Digital model 4 3D Digital City Municipality of Groningen/Arc Gis City planning: 3D map buildings, roads, vegetation, subsurface Digital model 5 Brainport Smart District Digital Twin Municipality of Helmond/Geodan Visualising future homes for residents Digital model 6 Lekdijk Digital Twin De Stichtse Rijnlanden Water Board/Geodan Above and below the Lekdijk Digital model 7 Netherlands in 3D Future Insight, Sweco, Avineon, Nelen & Schuurmans, Cobra, Kavel 10 3D Visualisation Digital model 8 3DNL Hexagon and Cyclomedia Mesh measurements, asset management, shadow analysis, solar capacity calculations and building cross-sections Digital model (continued on next page) N. van Apeldoorn et al. Cities 165 (2025) 106123 11\n\nTable 7 (continued) Project Organization(s) Focus DT leve",
+    "section": "unknown",
+    "char_start": 71400,
+    "char_end": 72200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_104",
+    "text": "ldoorn et al. Cities 165 (2025) 106123 11\n\nTable 7 (continued) Project Organization(s) Focus DT level 9 Atlas liveable city LCB, Argaleo and BUAS Economic development of industrial estates, accessibility of top economic centres or logistics functions and use of buildings Digital model 10 Virtual Zeeland Province of Zeeland Provides insight into land use and flood risk Digital model 11 Rotterdam 3D Municipality of Rotterdam/Tygron City planning: 3D map buildings, roads, vegetation, subsurface Digital model 12 3D Utrecht Municipality of Utrecht/Unity City planning: 3D map buildings, roads, vegetation, subsurface Digital model 13 Zwolle Digital Twin Land registry City planning: 3D map buildings, roads, vegetation, subsurface Digital model 14 3D City Model Municipality of Eindhoven/ESRI Intera",
+    "section": "unknown",
+    "char_start": 72100,
+    "char_end": 72900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_105",
+    "text": ", roads, vegetation, subsurface Digital model 14 3D City Model Municipality of Eindhoven/ESRI Interactive digital twin to calculate and visualise policy choices Digital generator 15 Geoenvironment Geodan Calculate noise pollution Digital generator 16 Breda & Den Bosch Smart city monitor Municipality of Breda, 's-Hertogenbosch Argaleo, Geodan, JADS, BUAS Crowd and traffic management for bicycle traffic with real-time information Digital shadow 17 Den Bosch Crowd Management Dashboard Municipality of ‘s-Hertogenbosch and Argaleo Real-time crowd management Digital shadow 18 The Hague Digital Twin Municipality of The Hague and Argaleo Monitoring flows of pedestrians and cyclists Digital shadow 19 Digital twin Deventer by Tauw Municipality of Deventer, Tygron, Tauw, Esri Free drawing, heat stres",
+    "section": "unknown",
+    "char_start": 72800,
+    "char_end": 73600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_106",
+    "text": "Digital twin Deventer by Tauw Municipality of Deventer, Tygron, Tauw, Esri Free drawing, heat stress Digital shadow 20 Nijmegen 3D Twin City Nijmegen, Police, Safety Region, Four-day celebrations, Esri Event permits, crowd management for events, preparation of security services Digital shadow 21 Tygron Platform Tygron Urban planning platform with features such as environmental impact assessments, traffic analysis and scenario analysis Digital shadow Data availability Data will be made available on request. References Agrawal, A., Fischer, M., & Singh, V. (2022). Digital twin: From concept to practice. Journal of Management in Engineering, 38(3). https://doi. org/10.1061/(asce) me.1943-5479.0001034 Akhtar-Danesh, N. (2023). Impact of factor rotation on Q-methodology analysis. PLo S One, 18",
+    "section": "unknown",
+    "char_start": 73500,
+    "char_end": 74300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_107",
+    "text": "0001034 Akhtar-Danesh, N. (2023). Impact of factor rotation on Q-methodology analysis. PLo S One, 18(9), Article e 0290728. https://doi. org/10.1371/journal. pone.0290728 Al-Sehrawy, R., Kumar, B., & Watson, R. (2023). The pluralism of digital twins for urban management: Bridging theory and practice. Journal of Urban Management, 12(1), 16–32. https://doi. org/10.1016/j. jum.2023.01.002 ´ Avila Eça de Matos, B., Dane, G. Z., Van Tilburg, T., Verstappen, J., & de Vries, B. (2022). State-of-the-art of the urban digital twin ecosystem in the Netherlands. In M. Jalonen (Ed.), Smart cities in smart regions (issue 2022, pp. 1–116). LAB University of Applied Sciences. Baron, L. F., & Gomez, R. (2016). The associations between technologies and societies: The utility of actor-network theory. Science",
+    "section": "unknown",
+    "char_start": 74200,
+    "char_end": 75000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_108",
+    "text": "). The associations between technologies and societies: The utility of actor-network theory. Science, Technology and Society, 21(2), 129–148. https://doi. org/10.1177/0971721816640615 Barricelli, B. R., Casiraghi, E., & Fogli, D. (2019). A survey on digital twin: Definitions, characteristics, applications, and design implications. IEEE Access, 7(Ml), 167653–167671. https://doi. org/10.1109/ACCESS.2019.2953499 Batty, M. (2018). Digital twins. Environment and Planning B: Urban Analytics and City Science, 45(5), 817–820. https://doi. org/10.1177/2399808318796416 Batty, M. (2021). The digital transformation of planning. Environment and Planning B: Urban Analytics and City Science, 48(4), 593–597. https://doi. org/10.1177/ 23998083211016122 Benitez, G. B., Ghezzi, A., & Frank, A. G. (2023). Whe",
+    "section": "unknown",
+    "char_start": 74900,
+    "char_end": 75700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_109",
+    "text": ". https://doi. org/10.1177/ 23998083211016122 Benitez, G. B., Ghezzi, A., & Frank, A. G. (2023). When technologies become industry 4.0 platforms: Defining the role of digital technologies through a boundary-spanning perspective. International Journal of Production Economics, 260, Article 108858. https://doi. org/10.1016/j. ijpe.2023.108858 Boyes, H., & Watson, T. (2022). Digital twins: An analysis framework and open issues. Computers in Industry, 143(August), Article 103763. https://doi. org/10.1016/j. compind.2022.103763 Cairns, R., & Stirling, A. (2014). “Maintaining planetary systems” or “concentrating global power?” high stakes in contending framings of climate geoengineering. Global Environmental Change, 28(1), 25–38. https://doi. org/10.1016/j. gloenvcha.2014.04.005 Dani, A. A. H., &",
+    "section": "unknown",
+    "char_start": 75600,
+    "char_end": 76400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_110",
+    "text": "ironmental Change, 28(1), 25–38. https://doi. org/10.1016/j. gloenvcha.2014.04.005 Dani, A. A. H., & Supangkat, S. H. (2022). Combination of digital twin and augmented reality: A literature review. International Conference on ICT for Smart Society (ICISS), 2022, 1–6. https://doi. org/10.1109/ICISS 55894.2022.9915160 Deren, L., Wenbo, Y., & Zhenfeng, S. (2021). Smart city based on digital twins. Computational Urban Science, 1(1), 4. https://doi. org/10.1007/s 43762-021-00005-y Dhar, S., Tarafdar, P., & Bose, I. (2022). Understanding the evolution of an emerging technological paradigm and its impact: The case of Digital Twin. Technological Forecasting and Social Change, 185, Article 122098. https://doi. org/10.1016/j. techfore.2022.122098 Enserink, B., Bots, P. W. G., Van Daalen, C., Hermans",
+    "section": "unknown",
+    "char_start": 76300,
+    "char_end": 77100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_111",
+    "text": "tps://doi. org/10.1016/j. techfore.2022.122098 Enserink, B., Bots, P. W. G., Van Daalen, C., Hermans, L. M., Kortmann, L. J., Koppenjan, J., … Thissen, J. (2022). Policy analysis of multi-actor systems. Policy Analysis of Multi-Actor Systems.. https://doi. org/10.5074/T.2022.004 Ferr´e-Bigorra, J., Casals, M., & Gangolells, M. (2022). The adoption of urban digital twins. Cities, 131. https://doi. org/10.1016/j. cities.2022.103905 Geertman, S., & Witte, P. (2024). From PSScience to digital planning: Steps towards an integrated research and practice agenda for digital planning. Computers, Environment and Urban Systems, 114, Article 102183. https://doi. org/10.1016/j. compenvurbsys.2024.102183 Grieves, M. (2016). Origins of the digital twin concept. Florida Institute of Technology, 8, 3–20. h",
+    "section": "unknown",
+    "char_start": 77000,
+    "char_end": 77800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_112",
+    "text": "Grieves, M. (2016). Origins of the digital twin concept. Florida Institute of Technology, 8, 3–20. https://doi. org/10.13140/RG.2.2.26367.61609 Haraguchi, M., Funahashi, T., & Biljecki, F. (2024). Assessing governance implications of city digital twin technology: A maturity model approach. Technological Forecasting and Social Change, 204. https://doi. org/10.1016/j. techfore.2024.123409 Helbing, D., & Argota S´anchez-Vaquerizo, J. (2022). Digital twins: Potentials, limitations, and ethical issues. Preprint version 0.17, 325–346. https://doi. org/10.1140/epjst/ e 2012-01697-8 Jeddoub, I., Nys, G. A., Hajji, R., & Billen, R. (2023). Digital twins for cities: Analyzing the gap between concepts and current implementations with a specific focus on data integration. International Journal of Appl",
+    "section": "unknown",
+    "char_start": 77700,
+    "char_end": 78500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_113",
+    "text": "and current implementations with a specific focus on data integration. International Journal of Applied Earth Observation and Geoinformation, 122. https://doi. org/10.1016/j. jag.2023.103440 Ketzler, B., Naserentin, V., Latino, F., Zangelidis, C., Thuvander, L., & Logg, A. (2020). Digital twins for cities: A state of the art review. Built Environment, 46(4), 547–573. https://doi. org/10.2148/benv.46.4.547 Klein, H. K., & Kleinman, D. L. (2002). The social construction of technology: Structural considerations. Science, Technology, & Human Values, 27(1), 28–52. https://doi. org/ 10.1177/016224390202700102 Klingenberg, C. O., Borges, M. A. V., & Antunes, J. A. d. V. (2022). Industry 4.0: What makes it a revolution? A historical framework to understand the phenomenon. Technology in Society, 70",
+    "section": "unknown",
+    "char_start": 78400,
+    "char_end": 79200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_114",
+    "text": "akes it a revolution? A historical framework to understand the phenomenon. Technology in Society, 70, Article 102009. https://doi. org/10.1016/j. techsoc.2022.102009 Korenhof, P., Blok, V., & Kloppenburg, S. (2021). Steering representations—Towards a critical understanding of digital twins. Philosophy & Technology, 34(4), 1751–1773. https://doi. org/10.1007/s 13347-021-00484-1 Langston, J. D., Ros-Tonen, M. A. F., & Reed, J. (2024). Making landscapes negotiable: Qmethodology as a boundary-spanning and empowering diagnostic. Environmental Management, 74(1), 4–12. https://doi. org/10.1007/s 00267-024-02004-1 Lee, B. S. (2017). The fundamentals of Q methodology. Journal of Research Methodology, 2(2), 57–95. https://doi. org/10.21487/jrm.2017.11.2.2.57 Lehtola, V. V., Koeva, M., Elberink, S. O",
+    "section": "unknown",
+    "char_start": 79100,
+    "char_end": 79900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_115",
+    "text": "2(2), 57–95. https://doi. org/10.21487/jrm.2017.11.2.2.57 Lehtola, V. V., Koeva, M., Elberink, S. O., Raposo, P., Virtanen, J. P., Vahdatikhaki, F., & Borsci, S. (2022). Digital twin of a city: Review of technology serving city needs. International Journal of Applied Earth Observation and Geoinformation, 114. https:// doi. org/10.1016/j. jag.2022.102915 Lei, B., Janssen, P., Stoter, J., & Biljecki, F. (2023). Challenges of urban digital twins: A systematic review and a Delphi expert survey. Automation in Construction, 147. https://doi. org/10.1016/j. autcon.2022.104716 Liao, Y., Deschamps, F., Loures, E. d. F. R., & Ramos, L. F. P. (2017). Past, present and future of industry 4.0 - A systematic literature review and research agenda proposal. International Journal of Production Research, 5",
+    "section": "unknown",
+    "char_start": 79800,
+    "char_end": 80600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_116",
+    "text": "atic literature review and research agenda proposal. International Journal of Production Research, 55(12), 3609–3629. https://doi. org/ 10.1080/00207543.2017.1308576 Mayer, I. S. (2022). Digital twins for the real world. Tilburg University.. https://doi. org/ 10.26116/fv8m-fq 41 Mc Keown, B., & Thomas, D. (1988). Q methodology. 66. SAGE Publications, Inc. https:// doi. org/10.4135/9781412985512 Naserentin, V., Somanath, S., Eleftheriou, O., & Logg, A. (2022). Combining open source and commercial tools in digital twin for cities generation. IFAC-Papers On Line, 55 (11), 185–189. https://doi. org/10.1016/j. ifacol.2022.08.070 N. van Apeldoorn et al. Cities 165 (2025) 106123 12\n\nNewman, I., & Ramlo, S. (2010). Using Q methodology and Q factor analysis in mixed methods research. In SAGE handbo",
+    "section": "unknown",
+    "char_start": 80500,
+    "char_end": 81300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_117",
+    "text": "amlo, S. (2010). Using Q methodology and Q factor analysis in mixed methods research. In SAGE handbook of mixed methods in social & behavioral research (pp. 505–530). SAGE Publications, Inc.. https://doi. org/10.4135/9781506335193. n 20 Nochta, T., Wan, L., Schooling, J. M., & Parlikad, A. K. (2021). A socio-technical perspective on urban analytics: The case of City-scale Digital Twins. Journal of Urban Technology, 28(1–2), 263–287. https://doi. org/10.1080/10630732.2020.1798177 Ortt, J. R., & Tiihonen, L. V. (2022). The technology monitor 2022 digital twins in an urban environment. Oti-Sarpong, K., Bastidas, V., Nochta, T., Wan, L., Tang, J., & Schooling, J. (2022). A social construction of technology view for understanding the delivery of city-scale digital twins. ISPRS Annals of the Pho",
+    "section": "unknown",
+    "char_start": 81200,
+    "char_end": 82000
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_118",
+    "text": "technology view for understanding the delivery of city-scale digital twins. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, X-4/W3-2022(4/W3-2022), 205–212. https://doi. org/10.5194/ isprs-annals-X-4-W3-2022-205-2022 Pinch, T. J., & Bijker, W. E. (1984). The social construction of facts and artefacts: Or how the sociology of science and the sociology of technology might benefit each other. Social Studies of Science, 14(3), 399–441. https://doi. org/10.1177/ 030631284014003004 Pinch, T. J., & Bijker, W. E. (2012). The social construction of facts and artifacts: Or how the sociology of science and the sociology of technology might benefit each other. In The social construction of technological systems: New directions in the sociology and history of techn",
+    "section": "unknown",
+    "char_start": 81900,
+    "char_end": 82700
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_119",
+    "text": "e social construction of technological systems: New directions in the sociology and history of technology: Anniversary edition (pp. 11–44). Ramlo, S. (2016). Mixed method lessons learned from 80 years of Q methodology. Journal of Mixed Methods Research, 10(1), 28–45. https://doi. org/10.1177/ 1558689815610998 Ramlo, S., & Nicholas, J. B. (2021). The human factor: Assessing individuals’ perceptions related to cybersecurity. Information & Computer Security, 29(2), 350–364. Rantanen, T., Julin, A., Virtanen, J.-P., Hyypp¨ a, H., & Vaaja, M. T. (2023). Open geospatial data integration in game engine for urban digital twin applications. ISPRS International Journal of Geo-Information, 12(8), 310. https://doi. org/10.3390/ ijgi 12080310 Saltelli, A., Gigerenzer, G., Hulme, M., Katsikopoulos, K. V",
+    "section": "unknown",
+    "char_start": 82600,
+    "char_end": 83400
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_120",
+    "text": "https://doi. org/10.3390/ ijgi 12080310 Saltelli, A., Gigerenzer, G., Hulme, M., Katsikopoulos, K. V., Melsen, L. A., Peters, G. P., … Puy, A. (2024). Bring digital twins back to earth. WIREs Climate Change. , Article e 915. https://doi. org/10.1002/wcc.915 Scott, R. (2020). Untangling the requirements of a digital twin. Chrome-extension://efai dnbmnnnibpcajpcglclefindmkaj/https://www. amrc. co. uk/files/document/406/1 605271035_1604658922_AMRC_Digital_Twin_AW. pdf. Shahzad, M., Shafiq, M. T., Douglas, D., & Kassem, M. (2022). Digital twins in built environments: An investigation of the characteristics, applications, and challenges. Buildings, 12(2). https://doi. org/10.3390/buildings 12020120 Sharifi, A. (2023). Resilience of urban social-ecological-technological systems (SETS): A review.",
+    "section": "unknown",
+    "char_start": 83300,
+    "char_end": 84100
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_121",
+    "text": "20 Sharifi, A. (2023). Resilience of urban social-ecological-technological systems (SETS): A review. Sustainable Cities and Society, 99, Article 104910. https://doi. org/10.1016/J. SCS.2023.104910 Sharma, A., Kosasih, E., Zhang, J., Brintrup, A., & Calinescu, A. (2022). Digital twins: State of the art theory and practice, challenges, and open research questions. journal of industrial information integration, 30. https://doi. org/10.1016/j. jii.2022.100383 Singh, M., Fuenmayor, E., Hinchy, E. P., Qiao, Y., Murray, N., & Devine, D. (2021). Digital twin: Origin to future. Applied System Innovation, 4(2). https://doi. org/ 10.3390/asi 4020036 Ssin, S., Cho, H., & Woo, W. (2021). A-UDT: Augmented urban digital twin for visualization of virtual and real Io T data (pp. 221–236). Cham: Springer. h",
+    "section": "unknown",
+    "char_start": 84000,
+    "char_end": 84800
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_122",
+    "text": "urban digital twin for visualization of virtual and real Io T data (pp. 221–236). Cham: Springer. https://doi. org/10.1007/ 978-3-030-68086-2_17 Star, S. L., & Griesemer, J. R. (1989). Institutional ecology, `translations’ and boundary objects: Amateurs and professionals in Berkeley’s Museum of Vertebrate Zoology, 1907-39. Social Studies of Science, 19(3), 387–420. https://doi. org/10.1177/ 030631289019003001 Stephenson, W. (1936). The inverted factor technique. British Journal of Psychology, 26 (4), 344–362. https://www. proquest. com/openview/97052 d3bac7afd 03 f7fcbbb 34 f 7bdf1b/1?pq-origsite=gscholar&cbl=1818401. Tagarakis, A. C., Benos, L., Kyriakarakos, G., Pearson, S., Sørensen, C. G., & Bochtis, D. (2024). Digital twins in agriculture and forestry: A review. Sensors, 24(10), 3117",
+    "section": "unknown",
+    "char_start": 84700,
+    "char_end": 85500
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_123",
+    "text": "G., & Bochtis, D. (2024). Digital twins in agriculture and forestry: A review. Sensors, 24(10), 3117. https://doi. org/10.3390/s 24103117 Te Br¨ ommelstroet, M., Pelzer, P., & Geertman, S. (2014). Forty years after Lee’s requiem: Are we beyond the seven sins? Environment and Planning B: Planning and Design, 41 (3), 381–387. https://doi. org/10.1068/b 4103 c Tekinerdogan, B., & Verdouw, C. (2020). Systems architecture design pattern catalog for developing digital twins. Sensors (Basel), 20(18), 5103. https://doi. org/10.3390/ s 20185103 Tomko, M., & Winter, S. (2019). Beyond digital twins – A commentary. Environment and Planning B: Urban Analytics and City Science, 46(2), 395–399. https://doi. org/ 10.1177/2399808318816992 Tzachor, A., Hendel, O., & Richards, C. E. (2023). Digital twins: A",
+    "section": "unknown",
+    "char_start": 85400,
+    "char_end": 86200
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_124",
+    "text": ". org/ 10.1177/2399808318816992 Tzachor, A., Hendel, O., & Richards, C. E. (2023). Digital twins: A stepping stone to achieve ocean sustainability? npj Ocean Sustainability, 2(1), 16. https://doi. org/ 10.1038/s 44183-023-00023-9 Van Der Horn, E., & Mahadevan, S. (2021). Digital twin: Generalization, characterization and implementation. Decision Support Systems, 145. https://doi. org/10.1016/j. dss.2021.113524 Watts, S. (2012). Doing Q methodological research: Theory, method & interpretation. Sage. Watts, S., & Stenner, P. (2012). Doing Q methodological research: Theory, method and interpretation. In Doing Q methodological research: Theory, method and interpretation. SAGE Publications Ltd. https://doi. org/10.4135/9781446251911. Weil, C., Bibri, S. E., Longchamp, R., Golay, F., & Alahi, A.",
+    "section": "unknown",
+    "char_start": 86100,
+    "char_end": 86900
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_125",
+    "text": "ttps://doi. org/10.4135/9781446251911. Weil, C., Bibri, S. E., Longchamp, R., Golay, F., & Alahi, A. (2023). Urban digital twin challenges: A systematic review and perspectives for sustainable smart cities. Sustainable Cities and Society, 99, Article 104862. https://doi. org/10.1016/j. scs.2023.104862 Xia, H., Liu, Z., Efremochkina, M., Liu, X., & Lin, C. (2022). Study on city digital twin technologies for sustainable smart city design: A review and bibliometric analysis of geographic information system and building information modeling integration. Sustainable Cities and Society, 84, Article 104009. https://doi. org/10.1016/J. SCS.2022.104009 Zhou, Q., Wang, B., & Mayer, I. (2024). Understanding the social construction of the metaverse with Q methodology. Technological Forecasting and Soc",
+    "section": "unknown",
+    "char_start": 86800,
+    "char_end": 87600
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_126",
+    "text": "nding the social construction of the metaverse with Q methodology. Technological Forecasting and Social Change, 208, Article 123716. https://doi. org/10.1016/j. techfore.2024.123716 Nick van Apeldoorn (Msci Urban Geography) is a senior researcher and program manager Digital Realities in the Academy for AI, Games and Media, at Breda University of Applied Sciences, Breda, the Netherlands. His research focuses on Digital Twins and Virtual Humans. Igor Mayer is a professor of playful organisations and learning systems at the Academy for AI, Games and Media, Breda University of Applied Sciences, Breda, the Netherlands. He is also a professor at the Department of Organization Studies, Tilburg School of Social and Behavioural Sciences, Tilburg, The Netherlands. His research focuses on Serious Gam",
+    "section": "unknown",
+    "char_start": 87500,
+    "char_end": 88300
+  },
+  {
+    "source_id": "Apeldoorn2025",
+    "chunk_id": "chunk_127",
+    "text": "ol of Social and Behavioural Sciences, Tilburg, The Netherlands. His research focuses on Serious Games, Simulations, Digital Twins, and Virtual Humans for complex policy-making. Qiqi Zhou is a senior researcher and lecturer in the Academy for AI, Games and Media, Breda University of Applied Sciences, Breda, the Netherlands. Her research focuses on immersive media, AI, and Q methodology. N. van Apeldoorn et al. Cities 165 (2025) 106123 13",
+    "section": "unknown",
+    "char_start": 88200,
+    "char_end": 89000
+  }
+]

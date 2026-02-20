@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Streamlit
+.streamlit/
+
+# Data and outputs (keep structure, ignore large files)
+outputs/threads/*.json
+outputs/exports/*
+!outputs/exports/.gitkeep
+outputs/eval/*.csv
+outputs/eval/*.jsonl
+outputs/eval/*.md
+!outputs/eval/.gitkeep
+
+# Logs
+logs/*.jsonl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

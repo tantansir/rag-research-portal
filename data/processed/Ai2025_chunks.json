@@ -1,0 +1,1154 @@
+[
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_01",
+    "text": "Foundations of Gen IR Qingyao Ai1†, Jingtao Zhan1†, Yiqun Liu1 1Dept. of Computer Science and Technology, Tsinghua University, Beijing, China. Contributing authors: aiqy@tsinghua. edu. cn; zhanjt 20@mails. tsinghua. edu. cn; yiqunliu@tsinghua. edu. cn; †These authors contributed equally to this work. Abstract The chapter discusses the foundational impact of modern generative AI models on information access (IA) systems. In contrast to traditional AI, the large-scale training and superior data modeling of generative AI models enable them to produce high-quality, human-like responses, which brings brand new opportunities for the development of IA paradigms. In this chapter, we identify and introduce two of them in details, i. e., information generation and information synthesis. Information",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_02",
+    "text": "roduce two of them in details, i. e., information generation and information synthesis. Information generation allows AI to create tailored content addressing user needs directly, enhancing user experience with immediate, relevant outputs. Information synthesis leverages the ability of generative AI to integrate and reorganize existing information, providing grounded responses and mitigating issues like model hallucination, which is particularly valuable in scenarios requiring precision and external knowledge. This chapter delves into the foundational aspects of generative models, including architecture, scaling, and training, and discusses their applications in multi-modal scenarios. Additionally, it examines the retrievalaugmented generation paradigm and other methods for corpus modeling",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_03",
+    "text": "onally, it examines the retrievalaugmented generation paradigm and other methods for corpus modeling and understanding, demonstrating how generative AI can enhance information access systems. It also summarizes potential challenges and fruitful directions for future studies. The primary distinction between modern generative models and traditional AI techniques lies in their capability to generate complicated and high-quality output based on human instructions. As shown by many studies [1–3], modern generative AI models possess remarkable abilities to generate responses that closely mimic human interaction. General speaking, such impressive performance comes from their large-scale 1 a r X i v : 2 5 0 1 . 0 2 8 4 2 v 1 [ c s . I R ] 6 J a n 2 0 2 5\n\ntraining collections and their advanced da",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_04",
+    "text": ": 2 5 0 1 . 0 2 8 4 2 v 1 [ c s . I R ] 6 J a n 2 0 2 5\n\ntraining collections and their advanced data modeling algorithms. Their superior data understanding ability can benefit almost every components of existing information access systems, from document encoding and index construction, to query processing and relevance analysis, etc. However, when talking about new opportunities or paradigms that are uniquely brought by the generative AI to information access, they can be broadly categorized in two directions. The first one is to create content that directly addresses user’s information needs. By understanding and taking user queries as input instructions, generative AI models are able to generate specific answers or products tailored to the individual’s request. This direct approach to",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_05",
+    "text": "generate specific answers or products tailored to the individual’s request. This direct approach to information generation can significantly enhance user experience by providing immediate and relevant responses. The second direction is to leverage the advanced instruction-following capabilities of generative AI models to synthesize and recombine existing information in innovative ways. Generative AI such as large language models (LLMs) can take existing data and transform it into new, coherent pieces of information that may not have been explicitly outlined before. This ability to reinterpret and organize information opens up new possibilities for retrieval system design and applications. Therefore, in this chapter, we discuss how generative AI models could help information access from two",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_06",
+    "text": "erefore, in this chapter, we discuss how generative AI models could help information access from two perspectives, namely information generation and information synthesis. 1 Information Generation Information need is diverse and typically long-tail. Traditional information retrieval systems, such as search engines and recommendation platforms, are designed to present information that already exists. However, these systems often fall short when it comes to fulfilling the less common information needs. This is particularly evident in scenarios requiring creative creation, where users seek not just information but inspiration and novel ideas. The limitations of traditional information systems in addressing these unique demands have paved the way for the emergence of generative models, which h",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_07",
+    "text": "n addressing these unique demands have paved the way for the emergence of generative models, which hold the promise of creating new information that aligns closely with the long-tail information needs. In recent years, generative models have made significant developments. For instance, Chat GPT can respond to user questions, Bing enhances its responses with retrieval-augmented generation, and Midjourney generate images based on user prompts, and recommendation systems generate personal contents for different users. The development is mainly driven by the capable model architectures, computational resources, and the large-scale internet data. These elements have facilitated the performance of generative models to new heights. With the continuous efforts on scaling up these elements, the mod",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_08",
+    "text": "generative models to new heights. With the continuous efforts on scaling up these elements, the model performance is still rapidly improving. Nowadays, generative models have gradually been integrated into various workflows and everyday life activities. In this section, we present the foundation of generative models. This section is organized as follows. Section 1.1 shows the efforts on designing the model architectures for large language models. Section 1.2 discusses how scaling facilitates the development of generative models and its potential future. Section 1.3 presents the different training stages of large language models. Finally, Section 1.4 introduces how large language models are used in multi-modal scenarios. 2\n\n1.1 Model Architecture In different generation scenarios like Chat",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_09",
+    "text": "used in multi-modal scenarios. 2\n\n1.1 Model Architecture In different generation scenarios like Chat GPT or So RA, Transformer [4] has emerged as the predominant model structure. It starts with an embedding layer, followed by multiple neural layers. Within each layer, an attention mechanism models the interactions between words, creating contextualized embeddings. The final decision on word generation probabilities is derived by comparing the output embedding with the vocabulary embeddings. We illustrate the model architecture in Figure 1. Unlike traditional Recurrent Neural Networks [5], Transformers are capable of modeling long-distance interactions between words directly, which provides a more powerful representational capability. Numerous enhancements to the Transformer architecture ha",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_10",
+    "text": "more powerful representational capability. Numerous enhancements to the Transformer architecture have been proposed. In the following, we will explore various modifications to each component of the Transformer, highlighting the advancements that have further improved its efficacy and efficiency. Transformer 1 2 3 4 Output Tokens Positions Hidden States Attention Feed Forward Transformer Layer Fig. 1 Transformer architecture: the overview on the left and the illustration of one layer on the right [4]. 1.1.1 Word Embedding Word embedding module is at the bottom of the Transformer architecture. Initially, a tokenizer breaks down a sentence into tokens, which the Word embedding module then maps into embeddings. These are combined with position embeddings and fed into subsequent neural layers.",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_11",
+    "text": "into embeddings. These are combined with position embeddings and fed into subsequent neural layers. Recent research on large-scale language models has identified word embeddings as one of the main sources to training instability [6]. Particularly in the early stages of training, the gradients of word embeddings are often orders of magnitude larger than those of other parameters. To address this issue, Le Scao et al. [7] introduced a layer normalization immediately after the word embedding layer, stabilizing the distribution effectively. Besides, Zeng et al. [6] opted to scale down the gradients of the word embeddings by an order of magnitude to prevent substantial updates. Both approaches have been proven effective in stabilizing the training of language models at the 100 billion paramete",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_12",
+    "text": "ave been proven effective in stabilizing the training of language models at the 100 billion parameter scale. Yet, whether they are still effective for larger models remains to be investigated. 3\n\n1.1.2 Position Embedding Position embedding is essential for Transformer. Unlike RNNs that inherently process sequences in order, vanilla attention mechanism disregards the positional distances between words and Transformer has to rely on position embeddings for position modeling. Initially, Transformer [4] utilized Sinusoidal embeddings, a non-trainable form of position embedding that is added directly to word embeddings. Later, Devlin et al. [8] introduced trainable position embeddings, which is initialized randomly and are updated through gradient descent during training. Subsequently, Raffel e",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_13",
+    "text": "nitialized randomly and are updated through gradient descent during training. Subsequently, Raffel et al. [9] and Press et al. [10] proposed relative positioning, where the attention mechanism incorporates biases based on the relative positions of words to better model varying distances. Recently, Su et al. [11] introduced the concept of rope position embedding, based on the principle that the dot product of vectors correlates with their magnitudes and the angles between them. By rotating vectors in space proportionally to their positions, this method naturally integrates positional information into attention scores. Black et al. [12] has found that this approach outperforms trainable position embeddings. Yet, these approaches may not work well when extrapolated to long sequences and more",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_14",
+    "text": "on embeddings. Yet, these approaches may not work well when extrapolated to long sequences and more effective methods need to be explored. 1.1.3 Attention The attention mechanism models interactions between words and is a significant component of the Transformer architecture. Enhancements to the attention module have predominantly focused on two aspects: modeling long texts and optimizing the Key Value (KV) cache. (1) Modeling Long Texts: The vanilla attention mechanism has a complexity of O(n2), which significantly increases computational costs for long texts. To address this, Sparse Transformer [13] employs sparse attention, utilizing predesigned attention patterns to avoid the computation of attention over long sequences. Another approach, Reformer [14], uses Locality-Sensitive Hashing",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_15",
+    "text": "of attention over long sequences. Another approach, Reformer [14], uses Locality-Sensitive Hashing (LSH) to reduce computational complexity. Additionally, Munkhdalai et al. [15] compressed context information to shorten sequences, thereby reducing overhead. Others have explored retrieval-based methods [16, 17]. This area of research continues to hold considerable potential for future advancements. (2) Optimizing KV Cache: classic Transformers use multi-head attention (MHA), which requires storing extensive key-value caches during inference, slowing down model generation. To mitigate this, Shazeer [18] proposed multi-query attention, which employs multiple key heads but only a single value head, substantially reducing the key-value cache and enhancing computational speed. However, Ainslie",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_16",
+    "text": "ead, substantially reducing the key-value cache and enhancing computational speed. However, Ainslie et al. [19] found that this could degrade model performance, leading to the development of grouped query attention. This method allows multiple key heads to share a single value head, effectively serving as a hybrid between MQA and MHA, balancing computational complexity and performance more effectively. Recently, Deep Seek-AI [20] introduced multi-head latent attention, which compresses keys and values into a single latent space, thereby reducing the key-value cache while maintaining robust representational capacity. 4\n\n1.1.4 Layer normalization Layer normalization (Layer Norm) is important for stabilizing the distribution of hidden states, a key to train large language models. In the class",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_17",
+    "text": "or stabilizing the distribution of hidden states, a key to train large language models. In the classical Transformer architecture, Layer Norm is positioned between residual blocks, hence termed Post-LN. Researchers [21] observed that this configuration could lead to high gradients near the output layers and very small gradients near the input layers, resulting in unstable gradients and challenging training dynamics. To address this issue, the Pre-LN configuration was proposed [21], placing Layer Norm on the residual pathways before attention or feed-forward network (FFN) module. Experiments have shown that this adjustment leads to more uniform gradient distribution. Building upon Pre-LN, other researchers introduced Sandwich-LN [22], which adds an additional Layer Norm at the output of the",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_18",
+    "text": "er researchers introduced Sandwich-LN [22], which adds an additional Layer Norm at the output of the residual pathways, further enhancing the training stability. Beyond merely adjusting the position of Layer Norm, researchers have developed Deep Norm [23], which combines a tailored parameter initialization strategy with modified residual connections to stabilize training. This approach enables the training of Transformers with depths reaching up to 1000 layers. Nevertheless, there still lacks a theoretical understanding about how layer normalization affects the training stability and more work needs to be done for scaling the model even further. 1.2 Scaling Across different information generation scenarios, scaling has been a siginificant factor to the performance improvement. It is largel",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_19",
+    "text": "ation scenarios, scaling has been a siginificant factor to the performance improvement. It is largely attributed to the discovery of scaling laws [24]. Scaling laws describe how loss decreases in a log-linear manner as model size or training data volume increases. It can be formulated as follows: L(x) = L ∞ + k · x−α, (1) where L is the loss, x is model size or data size, and k and α are coefficients. This scaling formula has become a crucial theoretical guide in the era of large models, suggesting that performance can be enhanced at a log-linear rate simply by scaling up the model size or training data. Based on these scaling laws, researchers also derived optimal model sizes given fixed computational resources [25]. Their findings indicate that as computational capacity expands, it is be",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_20",
+    "text": "mputational resources [25]. Their findings indicate that as computational capacity expands, it is beneficial not only to increase the training step but also the model size. This insight has further facilitated the pursuit of large models. The correctness of scaling laws was first proposed in language modeling field and then validated in many other areas, including data mixture scaling laws [26], multimodal scaling laws [27], and scaling laws specific to information retrieval [28]. Despite wide recognition of scaling laws, there remains disagreement among researchers about whether scaling is the correct path to the future. This stems from two main concerns: the uncertain relationship between loss and practical metrics, and the inference costs associated with large models. • Loss vs. Metric",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_21",
+    "text": "loss and practical metrics, and the inference costs associated with large models. • Loss vs. Metric Improvement: The first arguing point is whether a linear reduction in loss can translate into super-linear improvements in actual metrics. If metrics could improve super-linearly with linear increases in computational effort, scaling 5\n\nup models would be highly advantageous. However, if the decrease in loss only results in linear or sublinear metric improvements, the diminishing improvements make scaling an inefficient option. The relationship between loss and metric performance remains an open question. Some researchers [29] believe that metrics can improve super-linearly, which is termed emergent abilities. This is further supported by Du et al. [30], who observed a jump in metrics when l",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_22",
+    "text": "ergent abilities. This is further supported by Du et al. [30], who observed a jump in metrics when loss reaches a certain threshold. Additionally, Power et al. [31] introduced the concept of “grokking” to explain emergence, showing that models might suddenly exhibit strong generalization capabilities when provided with sufficient computational resources. Nevertheless, some researchers [25] argued that such phenomena do not exist, showing that a welltrained smaller model can outperform a larger, undertrained one. Schaeffer et al. [32] demonstrated that emergent abilities are artifacts of discrete metric functions and found that continuous metric functions do not exhibit such behaviors. Mc Kenzie et al. [33] even found that scaling results in worse metric scores. The existence of specific em",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_23",
+    "text": "zie et al. [33] even found that scaling results in worse metric scores. The existence of specific emergent abilities remains unresolved and needs to be investigated in future work. • Inference Cost Considerations: Early studies on scaling laws did not account for the higher inference costs associated with larger models. Thus, the arguments that larger models are better [25] do not apply when the inference costs are considered. Instead, small models demonstrate potential to lower the inference costs. As shown by Fang et al. [28], the optimal model sizes become significantly smaller when accounting for inference costs. Besides, Mei et al. [34] show that smaller models can utilize more sampling steps during inference and thus perform better. Consequently, many recent studies focus on extensiv",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_24",
+    "text": "steps during inference and thus perform better. Consequently, many recent studies focus on extensively training small models. For example, Llama [3] and Mini CPM [35] are trained with data and steps that far exceed the guidance suggested by scaling laws. In the future, the models may be used on a phone to build up intelligent interaction with users. Thus, it is important to develop highperforming small models. 1.3 Training Generative models in different scenarios are similar in training. For example, they usually use autoregressive training objectives, pretraining-sft-rlhf training stages, and prompt tuning procedure. In this section, we focus on the text generation scenario. We first discuss the training objectives and then show the three training stages. Finally, we discuss how to desig",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_25",
+    "text": "ss the training objectives and then show the three training stages. Finally, we discuss how to design the prompts after the model is trained. 1.3.1 Training Objectives For generative language models, the training objective is usually next token prediction. However, this was not widely used when Transformers first appeared. Initially, masked language modeling was the prevalent training objective during the BERT era [8]. It masks 15% of the words in a text randomly, and the model is tasked with predicting these masked words. This approach allows the model to utilize bidirectional attention, enhancing its representational capabilities. Even today, BERT models perform better than autoregressive models on tasks requiring bidirectional attention. However, a 6\n\nsignificant drawback of this method",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_26",
+    "text": "models on tasks requiring bidirectional attention. However, a 6\n\nsignificant drawback of this method is the gap between its training setup and downstream tasks, necessitating a fine-tuning phase for adaptation to various applications. Thus, its zero-shot generalization capabilities are very limited. Next token prediction was developed to address the inability of masked language modeling to generalize zero-shot to downstream tasks. The authors of GPT-2 [36] proposed that all natural language processing tasks could be reformulated as next token prediction tasks. By training models on this task, models could be directly applied to any downstream task without the need for specific fine-tuning. In fact, research nowadays demonstrates the effectiveness of this idea. Mathematically, next token pr",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_27",
+    "text": "n fact, research nowadays demonstrates the effectiveness of this idea. Mathematically, next token prediction can be represented with the following formula: P (x t+1 | x 1,..., x t), (2) which is to predict the probability of the next token x t+1 given the sequence of previous tokens. 1.3.2 Training Stages The training process of language models typically unfolds in three stages: pre-training, supervised fine-tuning (SFT), and reinforcement learning from human feedback (RLHF). Each phase presents unique challenges and methodologies. Pre-training is the most resource-intensive stage. It is training a randomly initialized model on a large dataset to develop a robust linguistic capability. Several challenges arise during this stage: (1) Large models are especially difficult to train from rando",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_28",
+    "text": "al challenges arise during this stage: (1) Large models are especially difficult to train from random initialization. During training, there are often spikes in training loss or difficulty in converging [6, 23, 37]. We discussed various architectural improvements in Section 1.1 to address these instabilities, yet a definitive solution remains an open issue. (2) The computational demand is substantial. Pre-training requires stable and efficient use of computational resources [1]. It often involves parallel processing across multiple machines, which can lead to low utilization rates of computing resources [38]. Zeng et al. [6] reported numerous hardware failures during pre-training. (3) The quality of pre-training data is crucial [39]. Given the vast amount of data needed, efficiently filter",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_29",
+    "text": "ality of pre-training data is crucial [39]. Given the vast amount of data needed, efficiently filtering out low-quality data is essential. The filtering methods usually employ neural scoring models and based on the credibility of the site [40, 41]. Supervised Fine-Tuning (SFT) is to train the model on instruction-response pairs [42]. The model can thus learns to follow instructions or engage in dialogue [3]. To enhance dataset diversity, researchers often leverage different types of NLP tasks. The quality of the dataset is significant and requires a skilled annotation team. Besides, it is also important to label safety-related data, which helps instruct the models to learn to reject inappropriate requests [3]. Reinforcement Learning from Human Feedback (RLHF) focuses on aligning the model",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_30",
+    "text": "riate requests [3]. Reinforcement Learning from Human Feedback (RLHF) focuses on aligning the model with human preferences based on human feedback [43, 44]. The process starts by sampling real human prompts to which the model generates multiple responses. These responses are then compared by users or third-party annotators. A reward model is trained based on these human preferences. Subsequently, reinforcement learning 7\n\ntechniques utilize the reward model to guide the model updates. This approach significantly enhances the quality of model outputs, especially in creative writing tasks. However, a major challenge is the generalizability of the reward model; as the model evolves, the reward model may no longer accurately assess the quality of outputs. Continuous iterations of this process",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_31",
+    "text": "model may no longer accurately assess the quality of outputs. Continuous iterations of this process are necessary to mitigate this issue [3]. Recently, there are also some offline reinforcement learning algorithms that do not necessaite training a reward model, such as DPO [45]. Yet studies [46] show that such offline learning methods still underperform the online learning methods. 1.3.3 Prompt Optimization Generative models are highly sensitive to the input prompts; an effective prompt can significantly enhance the quality of the model’s output [47]. Therefore, optimizing prompts for a generative model is a crucial area of research. Here are three main directions: • Designing Prompt Templates: Researchers often design prompts that mimic human thought processes to guide the model effective",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_32",
+    "text": "es: Researchers often design prompts that mimic human thought processes to guide the model effectively. This includes using structured thought patterns like chain-of-thought [48], tree-of-thought [49], and selfconsistency [50], which help the model organize and process information in a logical manner. • Iterative Optimization of Prompt Templates: like reinforcement learning, this method continuously iterate and refine the prompt templates based on the generation feedback. Given that prompt templates are typically discrete, researchers usually employ large language models to conduct prompt updates [51, 52]. • Training Prompt Rewriting Models Using User Interaction Logs: This approach harnesses the rich feedback contained within user interaction logs to tap into user insights. By analyzing h",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_33",
+    "text": "s the rich feedback contained within user interaction logs to tap into user insights. By analyzing how users interact with the model, researchers can train an automated model to rewrite prompts more effectively. This method leverages realworld data to better align the prompts with user intentions and improve the model’s responses [53, 54]. 1.4 Multi-modal Applications The rapid advancement of language models has significantly helped progress in the multimodal domain. Language models facilitate the understanding of multimodal data and developments in multimodal generation. We will discuss these two aspects separately. 1.4.1 Multi-modal Understanding Multimodal Understanding involves models processing inputs from multiple modalities to produce relevant textual responses. For example, GPT-4o",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_34",
+    "text": "ocessing inputs from multiple modalities to produce relevant textual responses. For example, GPT-4o can process textual, visual, and auditory input. The challenges in this area include designing model structures that can handle multimodal inputs and crafting appropriate training objectives. Here, we focus on how visual signals are integrated into large language models: In terms of aligning multimodal inputs, there are mainly three approaches: 8\n\n• Object Detection-Based Input: This method involves detecting objects within an image, extracting their features and associated spatial information, and then feeding this data into the language model [55, 56]. While this approach is effective, it tends to be slow due to the processing time required for object detection. • Visual Encoding: Another",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_35",
+    "text": "nds to be slow due to the processing time required for object detection. • Visual Encoding: Another method encodes images directly using a visual encoder, which converts images into a latent vector representation before integration with the model [57–61]. This method can sometimes result in the loss of detail. • Patch-Based Input: The most efficient approach involves dividing images into several patches, transforming them with a simple linear layer, and directly inputting them into the model without the need for a complex visual encoder [62]. In terms of training methods, there are mainly four types of training objectives: • Contrastive Learning or Image-Text matching: These tasks require the model to correctly categorize images and their corresponding textual descriptions, aligning the re",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_36",
+    "text": "e model to correctly categorize images and their corresponding textual descriptions, aligning the representations of text and images [61, 63, 64]. • Image Captioning: The model generates captions based on images, which helps it learn to understand the visual content [58–61]. • Fine-Grained Image Understanding: The model is tasked to describe specific areas of an image or locate particular objects within an image. This helps enhance the model’s detailed comprehension of visual elements [58, 65]. • Image Generation: This task is reconstructing the original pixels of an image that has been blurred or corrupted [58, 66]. These methodologies and training objectives are crucial for advancing models’ capabilities to process and interpret complex multimodal information effectively. This facilitate",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_37",
+    "text": "s’ capabilities to process and interpret complex multimodal information effectively. This facilitate a more natural interaction with users. 1.4.2 Multi-modal Generation Multi-modal generation models, such as text-to-image generation, have substantially revolutionized the field of art creation. Traditionally, GAN [67] and autoregressive methods [68] are mainstream methods. However, they are computationally expensive and can not produce high-quality results. Recently, diffusion [69, 70] emerges as a new state-of-the-art method in multimodal generation. It perturbs the data with noise and learns to reconstruct the original data. Language models are increasingly applied in the multimodal generation domain, such as in image [71, 72] and video generation [73, 74]. Language models are primarily u",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_38",
+    "text": "ion domain, such as in image [71, 72] and video generation [73, 74]. Language models are primarily utilized for processing training data and reformulating prompts. In terms of training data, the titles associated with real-world images or videos often contain significant noise. If generative models are trained directly on these noisy titles, it could lead to inaccurate semantic understanding. To address this, language models can be used to filter and regenerate text descriptions within the training data [75, 76]. For instance, a multimodal understanding model could first be trained, then used to relabel videos or images to obtain more precise and detailed text descriptions. Experimental results have shown that this method significantly improves the fidelity of model generations to prompts.",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_39",
+    "text": "lts have shown that this method significantly improves the fidelity of model generations to prompts. 9\n\nDuring inference, multimodal generation models are highly sensitive to the input prompts. Many users do not know how to craft effective prompts and thus get unsatisfying responses [77]. As a result, it is common to train a language model to rewrite user-provided prompts to enhance the quality of the generated images [75]. One of the challenges here is the difficulty in annotating such rewriting training data, as even system developers may not always know the optimal prompts, let alone crowd-sourced workers [78]. To overcome this, some researchers collect a large number of user-shared effective prompts as training data [79]. Others build prompt-rewriting models based on user log data, cap",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_40",
+    "text": "tive prompts as training data [79]. Others build prompt-rewriting models based on user log data, capturing preferences and feedback for training [53]. 2 Information Synthesis Other than generating information directly, another important research and application direction is to use the power of generative AI models, particularly LLMs, to integrate existing information and generate grounded responses accordingly. For simplicity, we refer to this paradigm as information synthesis. The key difference between information generation and information synthesis is the source of information. Information generation relies on the internal knowledge and information gathered through the training of generative AI models to create the model outputs, while information synthesis requires external sources to",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_41",
+    "text": "tive AI models to create the model outputs, while information synthesis requires external sources to provide information to the models, and the models serve more as a integrator than a creator. There are multiple reasons why information synthesis is considered more reliable than generation in several IA scenarios. Here we discuss two of the most significant ones, i. e., model hallucination and external knowledge. Hallucinating, which refers to the behavior of generative AI models that create responses and outputs that are not grounded by facts or existing supporting materials, is rooted in the foundation of most existing generative AI systems. For instance, LLMs create responses based on the next token prediction task, which formulates the generation of language as a probabilistic process",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_42",
+    "text": "next token prediction task, which formulates the generation of language as a probabilistic process and generates the next token in the output based on a probabilistic distribution (over the vocabulary) predicted by neural networks [1, 3]. The probabilistic model of LLMs allows them to capture knowledge in large scale data efficiently and effectively, but it also introduces inevitable variance in their generation process. In other words, it is well acknowledged that it’s theoretically impossible to prevent LLMs from generate data that are not seen in their training process [80]. While the ability of hallucinating is the source of creativity for LLMs (and for human as well), it’s not always desirable in practice, particularly for tasks with high requirements on result precision, reliability",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_43",
+    "text": "esirable in practice, particularly for tasks with high requirements on result precision, reliability, and explanability. Therefore, asking the generative AI models to integrate human created or factually grounded materials instead of generating information on their own is often considered more effective and robust to hallucination-sensitive applications. The need of external knowledge is another key reason why we may prefer information synthesis over information generation. Despite the fact that modern generative AI models are trained with incredibly large amount of data gathered from the Web, there are many cases where we still need to retrieve and find supports from external 10\n\nknowledge collections to finish certain tasks. Examples including the use of private datasets, vertical domain",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_44",
+    "text": "collections to finish certain tasks. Examples including the use of private datasets, vertical domain applications that require special knowledge, tasks that involve time-sensitive data, etc. It is usually inefficient or prohibitive to update largescale generative AI models such as LLMs with task-oriented external data through model pre-training or supervised fine-tuning (SFT) [81–83]. Even if possible, such paradigm is not preferred because the internal knowledge structures of most generative AI models are still mystery (at least of today), and there is no guarantee that the models could behavior and use the external information as we expect. In contrast, using generative AI models as information synthesizer gives us not only more flexibility, but also more transparency and control over sy",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_45",
+    "text": "ation synthesizer gives us not only more flexibility, but also more transparency and control over system outputs. In this section, we discuss how generative AI models, particularly LLMs, can serve as effective information synthesizers for IA. We start with introducing one of the most popular information synthesis paradigm, i. e., retrieval augmented generation (RAG), and then discuss several other directions that utilize LLMs for corpus modeling and understanding. 2.1 Retrieval Augmented Generation Retrieval Augmented Generation, or RAG, refers to the process of augmenting LLMs with data retrieved from external collections or synthesizing multiple retrieval results with LLMs for downstream applications [84, 85]. While the popularity of RAG rose after the release of large-scale pre-trained",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_46",
+    "text": "pplications [84, 85]. While the popularity of RAG rose after the release of large-scale pre-trained language models such as GPT [1] and BART [86], relevant topics and techniques have already been studied for at least more than two decades in both IR and NLP communities, e. g., extractive and abstractive summarization that generates summary based on retrieved sentences [87, 88] or answer extraction from top retrieved document [89]. A major reason why RAG-like techniques were not as attractive as they are today is the limited performance of generative models before the era of LLMs. After Chat GPT [1] demonstrated superior ability text generation at the end of 2022, there have been many studies and surveys on RAG and its applications in LLMs [84, 90, 91]. As the intent of this chapter is not",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_47",
+    "text": "and surveys on RAG and its applications in LLMs [84, 90, 91]. As the intent of this chapter is not to provide yet another survey on existing RAG papers, we focus the following discussions on several present and future directions for RAG and their relations underneath. 2.1.1 Naive RAG Naive RAG refers to the paradigm that directly feeds documents or other types of information retrieved by a retrieval system to the input (e. g., prompts) of a generative AI model and hope that the model can generate better output with or without a specific target task [92]. It is also referred to as the “Retrieve-then-Read” framework that has been used in reading comprehension and text summarization before LLMs hit the world [93]. Given an input (could be a query or a specific task instruction), we first ret",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_48",
+    "text": "s hit the world [93]. Given an input (could be a query or a specific task instruction), we first retrieve relevant information (usually entities, passages, or documents) from an external corpus or previous inputs (e. g., the memory of an agent [94, 95]) with a retrieval system. Then, we craft a input prompt with the retrieval results and feed it to the LLM. The LLM will generate the final response based on the input request and 11\n\nthe retrieved information. This paradigm has already been proven to be effective in multiple IA tasks such as question answering [85]. Because LLMs are purely used as black-box tools to process the retrieved documents and input request in naive RAG, existing studies on this direction mainly focus on the development of better retrieval systems and prompt design f",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_49",
+    "text": "es on this direction mainly focus on the development of better retrieval systems and prompt design for RAG. The studies on retrieval systems, unsurprisingly, are highly similar to those in IR, which involve indexing, query processing, first-stage retrieval, re-ranking, etc. These topics and system components have already been studied in the IR community for more than five decades. Perhaps the most notable difference is that recent studies on naive RAG often prefer the use of neural retrieval models (e. g., dense retrieval models [96]) over traditional term-matching models (e. g., BM 25 [97]). An important reason behind this is that neural retrieval models share similar theoretical background and model structures with LLMs. This makes joint optimization possible in modern RAG systems, which",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_50",
+    "text": "and model structures with LLMs. This makes joint optimization possible in modern RAG systems, which we discuss in Section 2.1.3. The design of input prompts with retrieval results, on the other hand, is relatively more under-explored before the rise of LLMs. It has been well recognized that prompt formats, even when the contents are same, could significantly affect the performance of LLMs. How to feed retrieval results effectively into the prompts of LLMs for RAG has thus attracted a lot of attention recently [93, 98, 99]. Studies have found that LLMs exhibit significant position bias over the input result sequences [100, 101], and has different perspectives on relevance with human experts [102]. Since prompts are the main interaction interface between retrieval and generation, their desi",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_51",
+    "text": "[102]. Since prompts are the main interaction interface between retrieval and generation, their design principles and downstream effects on naive RAG are of great value both in research and real-world applications. Particularly, how to craft effective RAG prompts automatically could be a fruitful direction to explore. Existing studies have shown that high-quality prompt writers can be automatically learned based on downstream task performance and user logs in image generation [53], and it is widely believed that similar techniques have also been used in popular LLM chatbots [103]. Yet, how to do this for RAG remains to be a question to be answered. 2.1.2 Modular RAG In contrast to naive RAG methods, modular RAG treats retrieval systems as functional modules to support LLMs [104]. While som",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_52",
+    "text": "methods, modular RAG treats retrieval systems as functional modules to support LLMs [104]. While some works view this retrieval module as one type of many tools that can be learned and used by LLMs [105], it is widely acknowledged that retrieval systems possesses a irreplaceable position in modern LLM applications due to its diverse nature and significant importance [84]. Broadly speaking, existing studies on using retrieval systems as functional modules for LLM generation mainly focus on the three “W” questions, namely when to retrieve, what to retrieve, and where to retrieve. The question of when to retrieve refers to the timing of functional call for retrieval systems. In contrast to LLMs that directly create responses based on their internal parameter space without explicit evidence gr",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_53",
+    "text": "that directly create responses based on their internal parameter space without explicit evidence grounding, retrieval systems produces reliable and explainable information directly by searching external corpus. From this perspective, the best timing to call the retrieval system is when LLMs start to hallucinate or produce wrong results. Yet, identifying such timing is difficult because we 12\n\nneither know the correct answers in advance or understand the internal mechanism of LLMs (at least of today) [106]. One naive yet effective method is to retrieve supporting evidence for LLM inference with a fixed time interval, such as every fixed number of generated tokens[107, 108] or every sentence [109]. More advanced paradigms involve the analyze of knowledge boundary [110] and the estimation of",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_54",
+    "text": "[109]. More advanced paradigms involve the analyze of knowledge boundary [110] and the estimation of prediction uncertainty in LLMs [106, 111]. Theoretically speaking, since the study of when to retrieve shares similar motivations and foundations with the study of hallucination detection, existing studies on LLM hallucination [112, 113] could provide important inspiration for research on this topic. Promising directions including better fact checking systems for LLMs [114] and more investigations on how to characterize the confidence and uncertainty of LLM predictions based on both external behavior and internal state analysis [111]. The question of what to retrieve focuses on analysis the intents and information needs of LLMs in inference. LLMs often need the help of different tools and s",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_55",
+    "text": "ntents and information needs of LLMs in inference. LLMs often need the help of different tools and systems to finish different tasks [105]. However, in contrast to other tools widely studied in tool learning, retrieval itself is a complicated systems with dynamic and free-form inputs, data collections, and outputs. Therefore, understanding what exactly is needed by LLMs and how to formulate it in the language of retrieval systems is an important problem. Most existing studies on RAG naively use the whole or local context of LLM inference as the queries to retrieval systems and assume that these context contain enough information to guide retrieval [90]. A slightly better solution is to use the terms that LLMs have low confidence to formulate queries since uncertain tokens represent cases w",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_56",
+    "text": "he terms that LLMs have low confidence to formulate queries since uncertain tokens represent cases where LLMs have limited knowledge to generate responses and thus need more information [106]. As long studied in the IR community, the formulation of an effective query requires deep understanding of the user’s intent, and many of the important context information behind a user intent is not explicitly expressed in the words they wrote [115]. Therefore, a more theoretically principled method to answer what to retrieve in RAG is to analyze the internal state of LLMs and infer their information needs directly. For example, Su et al. [111] directly formulate queries based on the internal attention distribution of LLMs (Figure 2) and improve the performance of RAG for nearly 20% on several benchm",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_57",
+    "text": "distribution of LLMs (Figure 2) and improve the performance of RAG for nearly 20% on several benchmark datasets without changing the retrieval system. This demonstrates the potential of future studies on this direction. Where to retrieve refers to the question of how to identify the correct information sources for RAG. Studies on this direction is particularly related to the research on multi-source retrieval [116] and tool learning [105]. To answer different requests related to the use of information collected from different databases or data collections, LLMs need to learn how to interact with each information sources effectively and efficiently. The studies of tool learning focus on teaching LLMs to use tools according to the context, and retrieval systems are usually considered as one",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_58",
+    "text": "hing LLMs to use tools according to the context, and retrieval systems are usually considered as one type of tools to use. However, retrieval itself could be a complicated problem when we possess multiple data collections with different characteristics. In search engines, information sources are broadly categorized based on their modality, and we usually build separate systems for each of them (e. g., the “Images”, “News”, “Videos” tabs on Google). While commercial search engines may aggregate results from different sources into a single page, the ultimate search engine result page (SERP) shown to users are just a list of results and 13\n\nFig. 2 Su et al. [111] generate queries for RAG based on the internal attention distribution of LLMs. it’s up to the users to decide which they want to se",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_59",
+    "text": "on the internal attention distribution of LLMs. it’s up to the users to decide which they want to see and how to use these results for downstream applications. In contrast, when using LLMs, users often request LLMs to directly answer their question instead of listing a couple of candidates [117, 118], so it’s the job of LLMs to decide where to retrieve the information given the current context. While the studies of how to navigate user queries to search indexes built from different information sources have been widely studied in the IR community [119– 122], how to do it for RAG with modern generative AI models is, to the best of our knowledge, still underexplored. Existing literature on RAG mostly works on a single retrieval collection (usually a text corpus), but it’s obvious that no sing",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_60",
+    "text": "mostly works on a single retrieval collection (usually a text corpus), but it’s obvious that no single collection can satisfy the needs of LLMs in different tasks. For instance, when writing a legal 14\n\ncase document, the judge needs to collect and organize information from evidences, complaints, counterclaims, court records, as well as legal articles and previous cases. How to navigate the generation model to retrieve and integrate information from different sources jointly for downstream applications is a practical and potentially fruitful research question for RAG. 2.1.3 Optimization of Retrieval and Generation As discussed in several RAG surveys [84, 90], the optimization of RAG systems usually involves the optimization of three components, i. e., the retriever, the generator, and the",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_61",
+    "text": "usually involves the optimization of three components, i. e., the retriever, the generator, and the augmentation method. If we further step back and look at the high-level goals of RAG optimization, we could also categorize it based on how we evaluate the RAG system, namely the evaluation from the perspectives of retrievers, generators, or the joint systems. The evaluation from the retriever perspectives is not particularly different from existing studies on ranking evaluation. The underlining assumption of this is that, once the LLMs are fed with the passages or documents that contain the correct information, they should be able to produce the correct answers directly. Therefore, the evaluation and optimization of a RAG system could downgrade to the evaluation and optimization of a classi",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_62",
+    "text": "tion and optimization of a RAG system could downgrade to the evaluation and optimization of a classic retrieval/ranking systems, to where most existing works on dense retrieval and LTR could be applied [123, 124]. Yet, there are still differences between RAG and traditional retrieval tasks as the queries are no long issued by users. How to formulate queries efficiently and effectively from LLMs for the retriever is worthy research question, and studies on this direction has already shown potentials in improving the overall quality of RAG systems [111]. From the perspective of generators, RAG evaluation and optimization focus more on improving the robustness and effectiveness of LLM generation based on a fixed set of retrieval results [108]. This often means extra training or fine-tuning on",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_63",
+    "text": "n based on a fixed set of retrieval results [108]. This often means extra training or fine-tuning on LLMs to improve their fundamental ability in information processing. For example, retrieved documents could be lengthy, and LLMs are usually not good at processing long input context [101]. Therefore, how to design efficient LLMs that can take long context inputs efficiently and effectively has been a popular research problem that have been widely studied by researchers from both academia and industry [100]. We have seen many companies show off their models based on how many input tokens they can process in one request. In addition, since retrieval results are fed as a part of the LLM inputs, whether the LLMs can generate the response based on the retrieved documents instead of their intern",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_64",
+    "text": "whether the LLMs can generate the response based on the retrieved documents instead of their internal knowledge could be seen as a special type of instruction-following ability. Studies have been conducted to teach LLMs to utilize retrieval results faithfully and constantly in RAG systems [125] On the other hand, factors such as irrelevant results and ranking perturbations are well acknowledged to be harmful for the performance of generators in RAG, so there are also studies that try to improve the robustness of LLMs from the perspective of RAG. For example, Zhang et al. [126] proposes to fine tune LLMs with the presence of retrieval results (i. e., retrieval augmented fine tuning) so that LLMs can learn the domain-specific knowledge introduced by the retriever and improve their robustnes",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_65",
+    "text": "LLMs can learn the domain-specific knowledge introduced by the retriever and improve their robustness against potential distracting information from retrieval. 15\n\nFrom the perspective of augmentation methods, existing research mostly focuses on the joint optimization of RAG system as a whole. In other words, the loss functions of RAG optimization should be built from the performance metrics of downstream tasks directly. While this paradigm is appealing, it often has strict requirements on the design of RAG systems. Particularly, it’s difficult to apply such joint optimization algorithms on a RAG system in which retrievers and generators are loosely connected through prompts constructed from discrete retrieval results. While reinforcement learning could solve the problem in theory, its emp",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_66",
+    "text": "discrete retrieval results. While reinforcement learning could solve the problem in theory, its empirical performance when being used as the solo optimization algorithms for ranking systems is still not satisfying at this point [127]. If you already have a good retriever and only conduct fine-tuning with a fixed LLM, then it may work [128], but this still doesn’t look like a perfect solution because reinforcement learning usually subject to large variance in practice. To the best of our knowledge, how to directly connect the training of retrievers with the auto-regressive loss of the generators in RAG is still an open question. Answering this question requires us to go deep into the structure of generative AI models and retrieval models, and develop new model structures that can take adva",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_67",
+    "text": "re of generative AI models and retrieval models, and develop new model structures that can take advantages from studies on both sides. 2.1.4 Retrieval Planning and Composite Information Needs As discussed above, the initial motivation behind the studies of RAG mostly focuses on using the power of retrieval systems to improve the quality of responses generated by LLMs in terms of reliability and informativeness. While it is widely acknowledged that problems such as hallucination and high computation cost in supervised finetuning will continue to be significant for generative AI models in a short period of time, there are also concerns, especially from the IR community, that retrieval could become less important with the rapid evolution of LLMs [129]. In fact, Chat GPT has already shown simi",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_68",
+    "text": "come less important with the rapid evolution of LLMs [129]. In fact, Chat GPT has already shown similar accuracy and better user satisfaction on factoid question answering than traditional web search engines [1]. However, the rise of generative AI models also brings brand new opportunities for IR. One of them is the possibility of moving from SERPs that simply list result candidates to a real information agent that solve complicated tasks with composite information needs. Today, most people treat IR systems as unit information solvers. Despite of their actual task characteristics, users first decompose their goals into a couple of unit information need (usually expressed with separate queries), and then issue them one by one to search engines or recommendation systems to find the correspon",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_69",
+    "text": "s), and then issue them one by one to search engines or recommendation systems to find the corresponding answers. An important reason behind the popularity of this paradigm is that, at least of today, IR systems are not capable of doing complicated information tasks with composite needs and multi-step planning. For example, we can use a search engine to find a survey on RAG by searching ”survey of RAG”, but cannot write such a survey directly by retrieving and analyzing papers from publication collections. The job of information need decomposition and retrieval planning has always been human’s. Fortunately, with the help of generative AI models like LLMs, it is now possible to push the boundary of IR systems and tackle such advanced information tasks for users. Composite retrieval is not a",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_70",
+    "text": "ary of IR systems and tackle such advanced information tasks for users. Composite retrieval is not a new concept in IR [130], but previous studies refer to the phrase as retrieval paradigms that cluster results from multiple sources 16\n\nand show them in groups for specific user queries [131]. While this represents one type of composite needs, it is relatively simple as the target user queries usually are mostly topic-specific and keyword-based. Complicated information tasks such as survey generation and professional document writing often involve multi-step planning and multi-round interactions between the retrieval results and response generation. To build powerful IR systems or agents that can solve such composite information tasks, we need to construct collaborative systems that deeply",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_71",
+    "text": "can solve such composite information tasks, we need to construct collaborative systems that deeply connect the retrieval, planning, and generation. For instance, we need to conduct generation-oriented retrieval optimization to build retrieval framework and model interfaces for downstream task planner and response generators; we also need to design retrieval-oriented generation models that can decompose information needs, navigate the retrieval process, gather information from multiple sources to generate the final results. Research on these directions could be fruitful and significantly extend the scope of IR in the era of generative AI. 2.2 Corpus Modeling and Understanding In contrast to using RAG, another line of studies try to use generative AI models to replace traditional retrieval",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_72",
+    "text": "using RAG, another line of studies try to use generative AI models to replace traditional retrieval systems. Directly answering user’s information need instead of showing ten blue links has long been an important goal for the development of intelligent IR systems [132]. With the rise of LLMs, such vision is now achievable in a significant extent. For example, LLM-based chatbots like Chat GPT can answer multiple types of user queries with direct answers [118]. Metzler et al. [133] has discussed several paradigms in which pre-trained language models can help IR systems answer user’s information needs directly without listing references. The intuition is to use neural network based language models to store the corpus knowledge in parameter space and pull relevant answers or information direct",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_73",
+    "text": "els to store the corpus knowledge in parameter space and pull relevant answers or information directly from it based on user’s queries. Depending on how the problem is formulated, several research directions have emerged. Specifically, in this section, we discuss two of them, namely generative retrieval and domain-specific modeling. 2.2.1 Generative Retrieval The idea of Generative Retrieval comes from the idea of differentiable index proposed by Metzler et al. [133]. The original name used in the paper was Model-based IR, but after the rise of generative AI models, some researchers start to refer to studies on this direction as generative retrieval (GR). The core idea of GR is two-fold, i. e., the differentiable index and the generation of doc IDs. Inspired by the superior performance of",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_74",
+    "text": "e., the differentiable index and the generation of doc IDs. Inspired by the superior performance of pre-trained language models, particularly BERT [8] and GPT [1], generative retrieval wants to explore the possibility of replacing traditional term-based index (e. g., inverted index) in retrieval systems with largescale neural networks. In contrast to dense retrieval models that build neural encoders to project documents to latent semantic spaces and build explicit indexes based on document vectors, GR tries to build implicit indexes in the parameter space of neural networks. For instance, DSI and its variations [134–137] have tried to train pretrained language models on the target corpus directly and then treat the model’s parameter 17\n\nas a “index” of the corpus. Studies on this direction",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_75",
+    "text": "ectly and then treat the model’s parameter 17\n\nas a “index” of the corpus. Studies on this direction argue that, by training the neural models to encode the whole corpus, documents and information would be implicitly stored in the parameters of the models, and this parameter-based indexes have better storage efficiency than traditional term-based or vector-based indexes [135]. They also argue that such paradigm can unify the multi-stage retrieval pipeline so that indexes can be trained directly for the final retrieval objectives. However, storing raw document content directly in limited parameter spaces often lead to significant information loss (which is reflected in the suboptimal retrieval performance of GR models [138]), and using model parameters as indexes make the whole system uncon",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_76",
+    "text": "l performance of GR models [138]), and using model parameters as indexes make the whole system uncontrollable by both system developers and users. While the former could be alleviated by using large-scale models, the later is still an unresolved problem for GR. For example, it’s difficult, if not impossible, to remove or update a document indexed in the parameter space when we don’t know what exactly each parameter do in the neural models. Considering that dense retrieval models built with product quantization and inverted file systems can achieve state-of-the-art retrieval performance with similar latency and less storage than term-based models with inverted indexes [139], whether the idea of differentiable indexes in GR worth its price is still a controversial question. Another important",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_77",
+    "text": "of differentiable indexes in GR worth its price is still a controversial question. Another important characteristic of GR models is to retrieve documents by generating sequences of doc IDs through auto-regression. Because documents are stored implicitly in model parameters, to actually retrieve a real document, GR models use user’s queries as prompts to generate document IDs, which usually consist of a couple of special tokens, that exclusively identify each relevant document. Since the birth of GR, a variety types of document IDs have been proposed, which can be broadly categorized as IDs with explicit tokens [134–136] and IDs with implicit tokens [137, 140, 141]. GR models with explicit ID tokens try to label each document with sequences of real terms that have semantic or numerical mean",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_78",
+    "text": "tokens try to label each document with sequences of real terms that have semantic or numerical meanings. Examples including keyword-based doc IDs and tree-based doc IDs [135]. Compared to vectors in dense retrieval, these methods have less flexibility and capability in document modeling as they discretize document semantic meanings with limited number of tokens, and their retrieval performance is usually poor [140]. However, they have better explanability than other neural retrieval models because their doc ID tokens are constructed from real words or document clusters. To avoid the theoretical limitation of explicit token IDs and grant GR models with the same modeling capacity of dense retrieval models, several studies have proposed to build implicit token IDs with latent vectors [137, 1",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_79",
+    "text": "rieval models, several studies have proposed to build implicit token IDs with latent vectors [137, 140, 141]. The idea is to represent each document with a sequence of latent vectors so that finegrained semantic information would not be lost. These types of GR models are highly similar to existing dense retrieval models since both of them represent each document with latent vectors. The major difference is that the former uses a sequence of vectors from a learned codebook constructed in training, while the later builds separate vectors for each document directly from their raw content. Wu et al. [142] have proved that the GR models with implicit tokens are equal to a multi-vector dense retrieval models in theory. Also, the use of a learned codebook for implicit token vectors is theoretical",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_80",
+    "text": "eval models in theory. Also, the use of a learned codebook for implicit token vectors is theoretically the same with a dense retrieval system that uses cluster-based product quantization [139, 143]. Therefore, the performance upper bound of GR (with implicit tokens) and dense retrieval is the same in theory. While some believe that GR models 18\n\ncould have lower latency as they don’t need to search among millions of documents on the fly, this is a questionable argument because the inference of a large-scale neural model is usually much slower than a vector-based search on distributed systems. Also, the maintenance of information in a neural model is much more difficult than a vector-based database. Perhaps the future potential of GR does not lay in retrieval effectiveness or efficiency, bu",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_81",
+    "text": "tabase. Perhaps the future potential of GR does not lay in retrieval effectiveness or efficiency, but some other perspectives such as explainability. 2.2.2 Domain-specific Modeling LLMs, particularly those with instruction tuning, can response to user’s queries directly. This exactly matches the initiative of a long-standing vision of IR systems to directly answer user’s need without listing a couple of documents [133]. Therefore, ever since the rise of Chat GPT, there has been serious discussion on whether LLMs are future seach engines in practice [129]. Yet, apart from the hallucination problem discussed in previous sections, there are other challenges that prevent generative AI models like LLMs to serve as a major information accessing tool for modern users. One of them is how to teach",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_82",
+    "text": "e LLMs to serve as a major information accessing tool for modern users. One of them is how to teach LLMs to understand and use knowledge from external corpus not included in their initial training process. If we treat each external corpus as a domain-specific dataset, then the studies on this direction is essentially the same with the construction of domain-specific LLMs. While RAG can help LLMs adapt to new domains quickly, their performance is limited when the understanding of input documents from the external corpus requires domain knowledge that the LLMs do not possess in advance [83]. To solve the above problem and build usable IA systems with LLMs on domainspecific data, one of the most popular method is to conduct continue pre-training or supervised fine-tuning of LLMs on the target",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_83",
+    "text": "t popular method is to conduct continue pre-training or supervised fine-tuning of LLMs on the target domain corpus. The idea is to apply similar training strategies used in model pre-training on the new corpus so that LLMs can better capture knowledge in the new domain. Example studies on this direction include techniques on data selection [82] and tokenizers adaptation [144] that directly use the target corpus to train LLMs. Many domain-specific LLMs have been developed, include legal LLMs, financial LLMs, etc. [145–147] The continue pre-training of LLMs on external corpus has been shown to be effective on many domain-specific tasks such as domain QA and text generation. However, modeling external corpus through this method may not be preferred in practice when we don’t have enough comput",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_84",
+    "text": "xternal corpus through this method may not be preferred in practice when we don’t have enough computation resources to train LLMs or can’t access the parameters of them. Also, till the end of the today, the internal knowledge structure and learning mechanism of LLMs are still unknown, and applying naive continue pre-training algorithms on external corpus could hurt the performance of LLMs in unexpected way. Therefore, researchers have designed several knowledge editing techniques on LLMs to explore the possibility of injecting knowledge with no or low cost on the general effectiveness of LLMs [148, 149]. Studies on this direction is still in an early stage as most existing methods only work on fixed and limited updating rules and knowledge entity triples [150], but it could be fruitful in",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_85",
+    "text": "on fixed and limited updating rules and knowledge entity triples [150], but it could be fruitful in future since domain adaption and external corpus modeling is a wide need of LLM applications in practice. Besides continue pre-training, another paradigm to model external corpus and domain knowledge is to build separate language models for each corpus and combine 19\n\nthem with the large general LLMs to form a collaborative system. The intuition behind this is relevant to the idea of LLM agents where each LLM could serve as different roles in the system to accomplish tasks together. It is widely acknowledged that the phenomenon of emergent abilities only present in large-scale models [29], but the training cost of such models (e. g., GPT-4 [1]) is usually prohibitive to research institutes a",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_86",
+    "text": "the training cost of such models (e. g., GPT-4 [1]) is usually prohibitive to research institutes and small companies, even with parameter efficient algorithms [151] Inspired by the superior instruction following ability of LLMs, researchers have explored the possibility of building small models for external corpus modeling and use them to communicate domain-specific knowledge to large general LMs [83]. In other words, the small models can serve as domain knowledge “ consultants” and the large general models can serve as the decision makers that finish domain-specific tasks based on the guidance of the small models. Experiments have shown that such paradigm can improve blackbox LLMs’ performance on domain-specific tasks with low cost and high flexibility. While the overall idea of prompt",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_87",
+    "text": "mance on domain-specific tasks with low cost and high flexibility. While the overall idea of prompt general LLMs with domain-specific prompts is similar to the framework of RAG, building an actual LM for corpus modeling enable us to capture implicit domain knowledge (e. g., the fine-grained differences between law articles [152]) and potentially save tokens in prompts. There are concerns on whether this paradigm is still worthy when we have more powerful LLMs that include more domain-specific data in training. However, since many users prefer to keep their data private to themselves due to multiple safety and privacy concerns, this paradigm and RAG could continue to be appealing in practice. 3 Summary and Future Directions In this chapter, we introduce the foundations and applications of g",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_88",
+    "text": "3 Summary and Future Directions In this chapter, we introduce the foundations and applications of generative AI models in information accessing. Instead of analyzing how generative AI models like LLMs could improve the existing modules of search engines and recommendation systems, we focus on how the they could revolutionize information access with new methodologies and system design. Particularly, we discuss two new paradigms brought by generaive AI models, namely information generation and information synthesis. Information generation refers to the scenarios where users can use generative AI models to create information that directly satisfies their information needs. Here, we delved into the core components of generative models, including model architectures (with a focus on Transforme",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_89",
+    "text": "the core components of generative models, including model architectures (with a focus on Transformers and their improvements), scaling laws, and training methodologies. We examined the debates surrounding continual model scaling, the importance of prompt optimization, and the extension of these models to multi-modal applications for information access. Information synthesis refers to the paradigm that utilizes the superior instructionfollowing and logic-reasoning ability of LLMs to aggregate and synthesize existing information. We extensively discuss one of the most representative techniques, i. e., Retrieval Augmented Generation (RAG), on this direction, and introduce various approaches from naive implementations to more sophisticated modular systems. We describe the challenges and oppor",
+    "section": "unknown",
+    "char_start": 61600,
+    "char_end": 62400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_90",
+    "text": "om naive implementations to more sophisticated modular systems. We describe the challenges and opportunities in optimizing RAG systems, highlighting the need for joint retrieval-generation optimization and the potential of several relevant research directions such as composite retrieval with planning. Besides RAG, we 20\n\nalso discuss some alternative paradigms that use generative AI models to model corpus knowledge directly, such as generative retrieval, which aims to replace traditional indexing methods with neural network-based approaches, and domain-specific model training, which conducts continue pre-training or fine-tuning on LLMs with the target corpus. We discussed the potential and limitations of these approaches, including issues of system controllability and cost efficiency. Over",
+    "section": "unknown",
+    "char_start": 62300,
+    "char_end": 63100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_91",
+    "text": "imitations of these approaches, including issues of system controllability and cost efficiency. Overall, research on how generative AI models could reshape modern information access systems is still at an early stage today. As discussed above, existing studies on information generation and information synthesis either focus on simple information tasks (such as writing a poem, answering a factoid question, etc.) or reply on simple system design (e. g., feeding all documents to LLMs as prompts) that obviously cannot fully exploit the power of modern retrieval and generation models. Therefore, we believe that there are two major directions worth exploring in the next couple of years (at least). The first one is to move from simple and unit information retrieval tasks (e. g., factoid QA) to mo",
+    "section": "unknown",
+    "char_start": 63000,
+    "char_end": 63800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_92",
+    "text": "The first one is to move from simple and unit information retrieval tasks (e. g., factoid QA) to more complicated information tasks that used to be “impossible” for modern IR systems. Examples include retrieval with composite needs (e. g., ”help me plan a wedding in Amherst, MA”) or tasks that requires planning and multiple rounds of retrieval and generations (e. g., ”write a survey on RAG”). These tasks used to require human experts to decompose the needs and conduct retrieval, analysis, and result aggregations. With the help of generative AI, accomplishing them automatically with machines is now possible. The second direction is to explore better techniques to communicate, collaborate, or even unify retrieval and generation systems for information accessing. While the studies of RAG hav",
+    "section": "unknown",
+    "char_start": 63700,
+    "char_end": 64500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_93",
+    "text": "even unify retrieval and generation systems for information accessing. While the studies of RAG have attracted considerable attention, existing works mostly use retrieval systems as plug-in tools for LLMs without digging into their internal connections and differences. Examples such as how to understand the information needs of LLMs, how to communicate the retrieved results to LLMs, and how to optimize generators for retrieval and retriever for generation are all important yet underexplored research topics. There are many questions related to each of these topics that worth detailed investigation, including the design of new training paradigms, the development of agent-like system frameworks, potential problems and bias introduced by off-policy and on-policy training for the joint system,",
+    "section": "unknown",
+    "char_start": 64400,
+    "char_end": 65200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_94",
+    "text": "s, potential problems and bias introduced by off-policy and on-policy training for the joint system, etc. When Chat GPT first arrives, there are people from the IR community worried that such generative AI models could overthrow all existing IR systems and crush everything in the field [129], as it has almost happened in NLP. Interestingly, in simulated social experiments on human-AI competitions, Yao et al. [153] find that, if human producers don’t extend their capacities with the help of generative AI, they will eventually be “replaced” by AI. From this perspective, the future of IR research in the era of generative AI lies in how to extend the scope of IR with generative AI models to finish more complicated information tasks and develop more general system architectures that not just re",
+    "section": "unknown",
+    "char_start": 65100,
+    "char_end": 65900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_95",
+    "text": "sh more complicated information tasks and develop more general system architectures that not just retrieve a list of document, but perform more sophisticated information processing and planning. References [1] Open AI: GPT-4 technical report. Co RR abs/2303.08774 (2023) https://doi. 21\n\norg/10.48550/ARXIV.2303.08774 2303.08774 [2] Zhao, W. X., Zhou, K., Li, J., Tang, T., Wang, X., Hou, Y., Min, Y., Zhang, B., Zhang, J., Dong, Z., Du, Y., Yang, C., Chen, Y., Chen, Z., Jiang, J., Ren, R., Li, Y., Tang, X., Liu, Z., Liu, P., Nie, J., Wen, J.: A survey of large language models. Co RR abs/2303.18223 (2023) https://doi. org/10.48550/ARXIV.2303. 18223 2303.18223 [3] Touvron, H., Lavril, T., Izacard, G., Martinet, X., Lachaux, M.-A., Lacroix, T., Rozi`ere, B., Goyal, N., Hambro, E., Azhar, F., et",
+    "section": "unknown",
+    "char_start": 65800,
+    "char_end": 66600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_96",
+    "text": ", G., Martinet, X., Lachaux, M.-A., Lacroix, T., Rozi`ere, B., Goyal, N., Hambro, E., Azhar, F., et al.: Llama: Open and efficient foundation language models. ar Xiv preprint ar Xiv:2302.13971 (2023) [4] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L. u., Polosukhin, I.: Attention is all you need. In: Guyon, I., Luxburg, U. V., Bengio, S., Wallach, H., Fergus, R., Vishwanathan, S., Garnett, R. (eds.) Advances in Neural Information Processing Systems, vol. 30. Curran Associates, Inc., ??? (2017) [5] Schuster, M., Paliwal, K. K.: Bidirectional recurrent neural networks. IEEE transactions on Signal Processing 45(11), 2673–2681 (1997) [6] Zeng, A., Liu, X., Du, Z., Wang, Z., Lai, H., Ding, M., Yang, Z., Xu, Y., Zheng, W., Xia, X., et al.: Glm-130 b: An",
+    "section": "unknown",
+    "char_start": 66500,
+    "char_end": 67300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_97",
+    "text": "., Du, Z., Wang, Z., Lai, H., Ding, M., Yang, Z., Xu, Y., Zheng, W., Xia, X., et al.: Glm-130 b: An open bilingual pre-trained model. ar Xiv preprint ar Xiv:2210.02414 (2022) [7] Le Scao, T., Fan, A., Akiki, C., Pavlick, E., Ili´c, S., Hesslow, D., Castagn´e, R., Luccioni, A. S., Yvon, F., Gall´e, M., et al.: Bloom: A 176 b-parameter open-access multilingual language model (2023) [8] Devlin, J., Chang, M., Lee, K., Toutanova, K.: BERT: pre-training of deep bidirectional transformers for language understanding. In: NAACL-HLT (1), pp. 4171–4186. Association for Computational Linguistics, ??? (2019) [9] Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., Liu, P. J.: Exploring the limits of transfer learning with a unified text-to-text transformer. J. Mach.",
+    "section": "unknown",
+    "char_start": 67200,
+    "char_end": 68000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_98",
+    "text": ", P. J.: Exploring the limits of transfer learning with a unified text-to-text transformer. J. Mach. Learn. Res. 21, 140–114067 (2020) [10] Press, O., Smith, N. A., Lewis, M.: Train short, test long: Attention with linear biases enables input length extrapolation. ar Xiv preprint ar Xiv:2108.12409 (2021) [11] Su, J., Lu, Y., Pan, S., Wen, B., Ro Former, Y. L.: Enhanced transformer with rotary position embedding., 2021. DOI: https://doi. org/10.1016/j. neucom (2023) [12] Black, S., Biderman, S., Hallahan, E., Anthony, Q., Gao, L., Golding, L., He, H., Leahy, C., Mc Donell, K., Phang, J., et al.: Gpt-neox-20 b: An open-source 22\n\nautoregressive language model. ar Xiv preprint ar Xiv:2204.06745 (2022) [13] Child, R., Gray, S., Radford, A., Sutskever, I.: Generating long sequences with sparse",
+    "section": "unknown",
+    "char_start": 67900,
+    "char_end": 68700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_99",
+    "text": "(2022) [13] Child, R., Gray, S., Radford, A., Sutskever, I.: Generating long sequences with sparse transformers. ar Xiv preprint ar Xiv:1904.10509 (2019) [14] Kitaev, N., Kaiser, (cid:32) L., Levskaya, A.: Reformer: The efficient transformer. ar Xiv preprint ar Xiv:2001.04451 (2020) [15] Munkhdalai, T., Faruqui, M., Gopal, S.: Leave no context behind: Efficient infinite context transformers with infini-attention. ar Xiv preprint ar Xiv:2404.07143 (2024) [16] Grave, E., Joulin, A., Usunier, N.: Improving neural language models with a continuous cache. ar Xiv preprint ar Xiv:1612.04426 (2016) [17] Izacard, G., Grave, E.: Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering. ar Xiv (2020). https://arxiv. org/abs/2007. 0128 [18] Shazeer, N.: Fast transformer",
+    "section": "unknown",
+    "char_start": 68600,
+    "char_end": 69400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_100",
+    "text": "tion Answering. ar Xiv (2020). https://arxiv. org/abs/2007. 0128 [18] Shazeer, N.: Fast transformer decoding: One write-head is all you need. ar Xiv preprint ar Xiv:1911.02150 (2019) [19] Ainslie, J., Lee-Thorp, J., Jong, M., Zemlyanskiy, Y., Lebr´on, F., Sanghai, S.: Gqa: Training generalized multi-query transformer models from multi-head checkpoints. ar Xiv preprint ar Xiv:2305.13245 (2023) [20] Deep Seek-AI: Deep Seek-V2: A Strong, Economical, and Efficient Mixture-of Experts Language Model (2024) [21] Xiong, R., Yang, Y., He, D., Zheng, K., Zheng, S., Xing, C., Zhang, H., Lan, Y., Wang, L., Liu, T.: On layer normalization in the transformer architecture. In: International Conference on Machine Learning, pp. 10524–10533 (2020). PMLR [22] Ding, M., Yang, Z., Hong, W., Zheng, W., Zhou, C.",
+    "section": "unknown",
+    "char_start": 69300,
+    "char_end": 70100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_101",
+    "text": "achine Learning, pp. 10524–10533 (2020). PMLR [22] Ding, M., Yang, Z., Hong, W., Zheng, W., Zhou, C., Yin, D., Lin, J., Zou, X., Shao, Z., Yang, H., et al.: Cogview: Mastering text-to-image generation via transformers. Advances in Neural Information Processing Systems 34, 19822– 19835 (2021) [23] Wang, H., Ma, S., Dong, L., Huang, S., Zhang, D., Wei, F.: Deepnet: Scaling transformers to 1,000 layers. IEEE Transactions on Pattern Analysis and Machine Intelligence (2024) [24] Kaplan, J., Mc Candlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J., Amodei, D.: Scaling laws for neural language models. ar Xiv preprint ar Xiv:2001.08361 (2020) [25] Hoffmann, J., Borgeaud, S., Mensch, A., Buchatskaya, E., Cai, T., Rutherford, 23\n\nE., Casas, D. d. L., Hendricks",
+    "section": "unknown",
+    "char_start": 70000,
+    "char_end": 70800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_102",
+    "text": ", Borgeaud, S., Mensch, A., Buchatskaya, E., Cai, T., Rutherford, 23\n\nE., Casas, D. d. L., Hendricks, L. A., Welbl, J., Clark, A., et al.: Training computeoptimal large language models. ar Xiv preprint ar Xiv:2203.15556 (2022) [26] Ye, J., Liu, P., Sun, T., Zhou, Y., Zhan, J., Qiu, X.: Data mixing laws: Optimizing data mixtures by predicting language modeling performance. ar Xiv preprint ar Xiv:2403.16952 (2024) [27] Henighan, T., Kaplan, J., Katz, M., Chen, M., Hesse, C., Jackson, J., Jun, H., Brown, T. B., Dhariwal, P., Gray, S., et al.: Scaling laws for autoregressive generative modeling. ar Xiv preprint ar Xiv:2010.14701 (2020) [28] Fang, Y., Zhan, J., Ai, Q., Mao, J., Su, W., Chen, J., Liu, Y.: Scaling laws for dense retrieval. In: Proceedings of the 47 th International ACM SIGIR Conf",
+    "section": "unknown",
+    "char_start": 70700,
+    "char_end": 71500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_103",
+    "text": "Liu, Y.: Scaling laws for dense retrieval. In: Proceedings of the 47 th International ACM SIGIR Conference on Research and Development in Information Retrieval. SIGIR ’24, pp. 1339–1349. Association for Computing Machinery, New York, NY, USA (2024). https://doi. org/10.1145/3626772.3657743 . https://doi. org/10.1145/3626772.3657743 [29] Wei, J., Tay, Y., Bommasani, R., Raffel, C., Zoph, B., Borgeaud, S., Yogatama, D., Bosma, M., Zhou, D., Metzler, D., et al.: Emergent abilities of large language models. ar Xiv preprint ar Xiv:2206.07682 (2022) [30] Du, Z., Zeng, A., Dong, Y., Tang, J.: Understanding emergent abilities of language models from the loss perspective. ar Xiv preprint ar Xiv:2403.15796 (2024) [31] Power, A., Burda, Y., Edwards, H., Babuschkin, I., Misra, V.: Grokking: Generaliza",
+    "section": "unknown",
+    "char_start": 71400,
+    "char_end": 72200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_104",
+    "text": "15796 (2024) [31] Power, A., Burda, Y., Edwards, H., Babuschkin, I., Misra, V.: Grokking: Generalization beyond overfitting on small algorithmic datasets. ar Xiv preprint ar Xiv:2201.02177 (2022) [32] Schaeffer, R., Miranda, B., Koyejo, S.: Are emergent abilities of large language models a mirage? In: Proceedings of the 37 th International Conference on Neural Information Processing Systems. NIPS ’23, pp. 1–13. Curran Associates Inc., Red Hook, NY, USA (2024) [33] Mc Kenzie, I. R., Lyzhov, A., Pieler, M., Parrish, A., Mueller, A., Prabhu, A., Mc Lean, E., Kirtland, A., Ross, A., Liu, A., et al.: Inverse scaling: When bigger isn’t better. ar Xiv preprint ar Xiv:2306.09479 (2023) [34] Mei, K., Tu, Z., Delbracio, M., Talebi, H., Patel, V. M., Milanfar, P.: Bigger is not always better: Scaling",
+    "section": "unknown",
+    "char_start": 72100,
+    "char_end": 72900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_105",
+    "text": "Tu, Z., Delbracio, M., Talebi, H., Patel, V. M., Milanfar, P.: Bigger is not always better: Scaling properties of latent diffusion models. ar Xiv preprint ar Xiv:2404.01367 (2024) [35] Hu, S., Tu, Y., Han, X., He, C., Cui, G., Long, X., Zheng, Z., Fang, Y., Huang, Y., Zhao, W., et al.: Minicpm: Unveiling the potential of small language models with scalable training strategies. ar Xiv preprint ar Xiv:2404.06395 (2024) 24\n\n[36] Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., Sutskever, I., et al.: Language models are unsupervised multitask learners. Open AI blog 1(8), 9 (2019) [37] Zhang, S., Roller, S., Goyal, N., Artetxe, M., Chen, M., Chen, S., Dewan, C., Diab, M., Li, X., Lin, X. V., et al.: Opt: Open pre-trained transformer language models. ar Xiv preprint ar Xiv:2205.01068 (2022",
+    "section": "unknown",
+    "char_start": 72800,
+    "char_end": 73600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_106",
+    "text": ", et al.: Opt: Open pre-trained transformer language models. ar Xiv preprint ar Xiv:2205.01068 (2022) [38] Chowdhery, A., Narang, S., Devlin, J., Bosma, M., Mishra, G., Roberts, A., Barham, P., Chung, H. W., Sutton, C., Gehrmann, S., et al.: Palm: Scaling language modeling with pathways. Journal of Machine Learning Research 24(240), 1–113 (2023) [39] Gunasekar, S., Zhang, Y., Aneja, J., Mendes, C. C. T., Del Giorno, A., Gopi, S., Javaheripi, M., Kauffmann, P., Rosa, G., Saarikivi, O., et al.: Textbooks are all you need. ar Xiv preprint ar Xiv:2306.11644 (2023) [40] Yang, A., Xiao, B., Wang, B., Zhang, B., Bian, C., Yin, C., Lv, C., Pan, D., Wang, D., Yan, D., et al.: Baichuan 2: Open large-scale language models. ar Xiv preprint ar Xiv:2309.10305 (2023) [41] Bi, X., Chen, D., Chen, G., Chen",
+    "section": "unknown",
+    "char_start": 73500,
+    "char_end": 74300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_107",
+    "text": "cale language models. ar Xiv preprint ar Xiv:2309.10305 (2023) [41] Bi, X., Chen, D., Chen, G., Chen, S., Dai, D., Deng, C., Ding, H., Dong, K., Du, Q., Fu, Z., et al.: Deepseek llm: Scaling open-source language models with longtermism. ar Xiv preprint ar Xiv:2401.02954 (2024) [42] Chung, H. W., Hou, L., Longpre, S., Zoph, B., Tay, Y., Fedus, W., Li, E., Wang, X., Dehghani, M., Brahma, S., Webson, A., Gu, S. S., Dai, Z., Suzgun, M., Chen, X., Chowdhery, A., Valter, D., Narang, S., Mishra, G., Yu, A. W., Zhao, V., Huang, Y., Dai, A. M., Yu, H., Petrov, S., Chi, E. H.-h., Dean, J., Devlin, J., Roberts, A., Zhou, D., Le, Q. V., Wei, J.: Scaling instruction-finetuned language models. Ar Xiv abs/2210.11416 (2022) [43] Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C., Mishkin, P., Zhan",
+    "section": "unknown",
+    "char_start": 74200,
+    "char_end": 75000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_108",
+    "text": "2210.11416 (2022) [43] Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C., Mishkin, P., Zhang, C., Agarwal, S., Slama, K., Ray, A., et al.: Training language models to follow instructions with human feedback. Advances in neural information processing systems 35, 27730–27744 (2022) [44] Schulman, J., Wolski, F., Dhariwal, P., Radford, A., Klimov, O.: Proximal Policy Optimization Algorithms (2017) [45] Rafailov, R., Sharma, A., Mitchell, E., Manning, C. D., Ermon, S., Finn, C.: Direct preference optimization: Your language model is secretly a reward model. In: Oh, A., Neumann, T., Globerson, A., Saenko, K., Hardt, M., Levine, S. (eds.) Advances in Neural Information Processing Systems, vol. 36, pp. 53728–53741. Curran Associates, Inc., ??? (2023) [46] Xu, S., Fu, W., Gao, J., Ye, W.,",
+    "section": "unknown",
+    "char_start": 74900,
+    "char_end": 75700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_109",
+    "text": "vol. 36, pp. 53728–53741. Curran Associates, Inc., ??? (2023) [46] Xu, S., Fu, W., Gao, J., Ye, W., Liu, W., Mei, Z., Wang, G., Yu, C., Wu, Y.: Is 25\n\ndpo superior to ppo for llm alignment? a comprehensive study. ar Xiv preprint ar Xiv:2404.10719 (2024) [47] Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., Neubig, G.: Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing. ACM Computing Surveys 55(9), 1–35 (2023) [48] Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., Zhou, D., et al.: Chain-of-thought prompting elicits reasoning in large language models. Advances in neural information processing systems 35, 24824–24837 (2022) [49] Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., Narasimhan, K.: T",
+    "section": "unknown",
+    "char_start": 75600,
+    "char_end": 76400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_110",
+    "text": "837 (2022) [49] Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., Narasimhan, K.: Tree of thoughts: deliberate problem solving with large language models. In: Proceedings of the 37 th International Conference on Neural Information Processing Systems. NIPS ’23, pp. 1–14. Curran Associates Inc., Red Hook, NY, USA (2024) [50] Wang, X., Wei, J., Schuurmans, D., Le, Q., Chi, E., Zhou, D.: Self-consistency improves chain of thought reasoning in language models. In: 11 th International Conference on Learning Representations, ICLR 2023, pp. 1–15 (2023) [51] Zhou, Y., Muresanu, A. I., Han, Z., Paster, K., Pitis, S., Chan, H., Ba, J.: Large language models are human-level prompt engineers. ar Xiv preprint ar Xiv:2211.01910 (2022) [52] Yang, C., Wang, X., Lu, Y., Liu, H., Le, Q. V.,",
+    "section": "unknown",
+    "char_start": 76300,
+    "char_end": 77100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_111",
+    "text": "eers. ar Xiv preprint ar Xiv:2211.01910 (2022) [52] Yang, C., Wang, X., Lu, Y., Liu, H., Le, Q. V., Zhou, D., Chen, X.: Large language models as optimizers. ar Xiv preprint ar Xiv:2309.03409 (2023) [53] Zhan, J., Ai, Q., Liu, Y., Chen, J., Ma, S.: Capability-aware prompt reformulation learning for text-to-image generation. In: Proceedings of the 47 th International ACM SIGIR Conference on Research and Development in Information Retrieval. SIGIR ’24, pp. 2145–2155. Association for Computing Machinery, New York, NY, USA (2024). https://doi. org/10.1145/3626772.3657787 . https://doi. org/10.1145/3626772.3657787 [54] Zhan, J., Ai, Q., Liu, Y., Pan, Y., Yao, T., Mao, J., Ma, S., Mei, T.: Prompt refinement with image pivot for text-to-image generation. In: Ku, L.-W., Martins, A., Srikumar, V. (e",
+    "section": "unknown",
+    "char_start": 77000,
+    "char_end": 77800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_112",
+    "text": "efinement with image pivot for text-to-image generation. In: Ku, L.-W., Martins, A., Srikumar, V. (eds.) Proceedings of the 62 nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 941–954. Association for Computational Linguistics, Bangkok, Thailand (2024). https://doi. org/10.18653/v1/2024.acl-long.53 . https://aclanthology. org/2024.acl-long.53/ [55] Lu, J., Batra, D., Parikh, D., Lee, S.: Vilbert: Pretraining task-agnostic visiolinguistic representations for vision-and-language tasks. Advances in neural information processing systems 32 (2019) 26\n\n[56] Chen, Y.-C., Li, L., Yu, L., El Kholy, A., Ahmed, F., Gan, Z., Cheng, Y., Liu, J.: Uniter: Universal image-text representation learning. In: European Conference on Computer Vision, pp. 104–120 (2",
+    "section": "unknown",
+    "char_start": 77700,
+    "char_end": 78500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_113",
+    "text": "ersal image-text representation learning. In: European Conference on Computer Vision, pp. 104–120 (2020). Springer [57] Huang, Z., Zeng, Z., Liu, B., Fu, D., Fu, J.: Pixel-bert: Aligning image pixels with text by deep multi-modal transformers. ar Xiv preprint ar Xiv:2004.00849 (2020) [58] Wang, P., Yang, A., Men, R., Lin, J., Bai, S., Li, Z., Ma, J., Zhou, C., Zhou, J., Yang, H.: Ofa: Unifying architectures, tasks, and modalities through a simple sequence-to-sequence learning framework. In: International Conference on Machine Learning, pp. 23318–23340 (2022). PMLR [59] Alayrac, J.-B., Donahue, J., Luc, P., Miech, A., Barr, I., Hasson, Y., Lenc, K., Mensch, A., Millican, K., Reynolds, M., et al.: Flamingo: a visual language model for few-shot learning. Advances in neural information process",
+    "section": "unknown",
+    "char_start": 78400,
+    "char_end": 79200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_114",
+    "text": "al.: Flamingo: a visual language model for few-shot learning. Advances in neural information processing systems 35, 23716–23736 (2022) [60] Wang, W., Lv, Q., Yu, W., Hong, W., Qi, J., Wang, Y., Ji, J., Yang, Z., Zhao, L., Song, X., et al.: Cogvlm: Visual expert for pretrained language models. ar Xiv preprint ar Xiv:2311.03079 (2023) [61] Li, J., Li, D., Savarese, S., Hoi, S.: Blip-2: Bootstrapping language-image pretraining with frozen image encoders and large language models. In: International Conference on Machine Learning, pp. 19730–19742 (2023). PMLR [62] Kim, W., Son, B., Kim, I.: Vilt: Vision-and-language transformer without convolution or region supervision. In: International Conference on Machine Learning, pp. 5583–5594 (2021). PMLR [63] Li, J., Selvaraju, R., Gotmare, A., Joty, S.",
+    "section": "unknown",
+    "char_start": 79100,
+    "char_end": 79900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_115",
+    "text": "ce on Machine Learning, pp. 5583–5594 (2021). PMLR [63] Li, J., Selvaraju, R., Gotmare, A., Joty, S., Xiong, C., Hoi, S. C. H.: Align before fuse: Vision and language representation learning with momentum distillation. Advances in neural information processing systems 34, 9694–9705 (2021) [64] Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., et al.: Learning transferable visual models from natural language supervision. In: International Conference on Machine Learning, pp. 8748–8763 (2021). PMLR [65] Yu, T., Yao, Y., Zhang, H., He, T., Han, Y., Cui, G., Hu, J., Liu, Z., Zheng, H.- T., Sun, M., et al.: Rlhf-v: Towards trustworthy mllms via behavior alignment from fine-grained correctional human feedback. ar Xiv preprint a",
+    "section": "unknown",
+    "char_start": 79800,
+    "char_end": 80600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_116",
+    "text": "worthy mllms via behavior alignment from fine-grained correctional human feedback. ar Xiv preprint ar Xiv:2312.00849 (2023) [66] Bao, H., Dong, L., Piao, S., Wei, F.: Beit: Bert pre-training of image transformers. ar Xiv preprint ar Xiv:2106.08254 (2021) 27\n\n[67] Reed, S., Akata, Z., Yan, X., Logeswaran, L., Schiele, B., Lee, H.: Generative adversarial text to image synthesis. In: International Conference on Machine Learning, pp. 1060–1069 (2016). PMLR [68] Ramesh, A., Pavlov, M., Goh, G., Gray, S., Voss, C., Radford, A., Chen, M., Sutskever, I.: Zero-shot text-to-image generation. In: International Conference on Machine Learning, pp. 8821–8831 (2021). Pmlr [69] Nichol, A., Dhariwal, P., Ramesh, A., Shyam, P., Mishkin, P., Mc Grew, B., Sutskever, I., Chen, M.: Glide: Towards photorealistic",
+    "section": "unknown",
+    "char_start": 80500,
+    "char_end": 81300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_117",
+    "text": "esh, A., Shyam, P., Mishkin, P., Mc Grew, B., Sutskever, I., Chen, M.: Glide: Towards photorealistic image generation and editing with text-guided diffusion models. ar Xiv preprint ar Xiv:2112.10741 (2021) [70] Rombach, R., Blattmann, A., Lorenz, D., Esser, P., Ommer, B.: High-resolution image synthesis with latent diffusion models. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 10684–10695 (2022) [71] Ho, J., Jain, A., Abbeel, P.: Denoising diffusion probabilistic models. Advances in neural information processing systems 33, 6840–6851 (2020) [72] Zhang, C., Zhang, C., Zhang, M., Kweon, I. S.: Text-to-image diffusion model in generative ai: A survey. ar Xiv preprint ar Xiv:2303.07909 (2023) [73] Peebles, W., Xie, S.: Scalable diffusion models wit",
+    "section": "unknown",
+    "char_start": 81200,
+    "char_end": 82000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_118",
+    "text": "y. ar Xiv preprint ar Xiv:2303.07909 (2023) [73] Peebles, W., Xie, S.: Scalable diffusion models with transformers. In: Proceedings of the IEEE/CVF International Conference on Computer Vision, pp. 4195–4205 (2023) [74] Singh, A.: A survey of ai text-to-image and ai text-to-video generators. In: 2023 4th International Conference on Artificial Intelligence, Robotics and Control (AIRC), pp. 32–36 (2023). IEEE [75] Betker, J., Goh, G., Jing, L., Brooks, T., Wang, J., Li, L., Ouyang, L., Zhuang, J., Lee, J., Guo, Y., et al.: Improving image generation with better captions. Computer Science. https://cdn. openai. com/papers/dall-e-3. pdf 2(3), 8 (2023) [76] Brooks, T., Peebles, B., Holmes, C., De Pue, W., Guo, Y., Jing, L., Schnurr, D., Taylor, J., Luhman, T., Luhman, E., Ng, C., Wang, R., Ramesh",
+    "section": "unknown",
+    "char_start": 81900,
+    "char_end": 82700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_119",
+    "text": "ue, W., Guo, Y., Jing, L., Schnurr, D., Taylor, J., Luhman, T., Luhman, E., Ng, C., Wang, R., Ramesh, A.: Video generation models as world simulators (2024) [77] Oppenlaender, J.: A taxonomy of prompt modifiers for text-to-image generation. Behaviour & Information Technology, 1–14 (2023) [78] Liu, V., Chilton, L. B.: Design guidelines for prompt engineering text-to-image generative models. In: Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems, pp. 1–23 (2022) 28\n\n[79] Hao, Y., Chi, Z., Dong, L., Wei, F.: Optimizing prompts for text-to-image generation, pp. 1–17. Curran Associates Inc., Red Hook, NY, USA (2024) [80] Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A., Fung, P.: Survey of hallucination in natural language gener",
+    "section": "unknown",
+    "char_start": 82600,
+    "char_end": 83400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_120",
+    "text": "Y., Ishii, E., Bang, Y. J., Madotto, A., Fung, P.: Survey of hallucination in natural language generation. ACM Computing Surveys 55(12), 1–38 (2023) [81] Arefeen, M. A., Debnath, B., Chakradhar, S.: Leancontext: Cost-efficient domain-specific question answering using llms. Natural Language Processing Journal 7, 100065 (2024) [82] Aharoni, R., Goldberg, Y.: Unsupervised domain clusters in pretrained language models. ar Xiv preprint ar Xiv:2004.02105 (2020) [83] Li, H., Ai, Q., Chen, J., Dong, Q., Wu, Z., Liu, Y., Chen, C., Tian, Q.: Blade: Enhancing black-box large language models with small domain-specific models. ar Xiv preprint ar Xiv:2403.18365 (2024) [84] Gao, Y., Xiong, Y., Gao, X., Jia, K., Pan, J., Bi, Y., Dai, Y., Sun, J., Wang, H.: Retrieval-augmented generation for large language",
+    "section": "unknown",
+    "char_start": 83300,
+    "char_end": 84100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_121",
+    "text": ", K., Pan, J., Bi, Y., Dai, Y., Sun, J., Wang, H.: Retrieval-augmented generation for large language models: A survey. ar Xiv preprint ar Xiv:2312.10997 (2023) [85] Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., K¨ uttler, H., Lewis, M., Yih, W.-t., Rockt¨aschel, T., et al.: Retrieval-augmented generation for knowledge-intensive nlp tasks. Advances in Neural Information Processing Systems 33, 9459–9474 (2020) [86] Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mohamed, A., Levy, O., Stoyanov, V., Zettlemoyer, L.: Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. In: Proceedings of the 58 th Annual Meeting of the Association for Computational Linguistics, pp. 7871–7880 (2020) [87] Moratanch, N., Ch",
+    "section": "unknown",
+    "char_start": 84000,
+    "char_end": 84800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_122",
+    "text": "eeting of the Association for Computational Linguistics, pp. 7871–7880 (2020) [87] Moratanch, N., Chitrakala, S.: A survey on extractive text summarization. In: 2017 International Conference on Computer, Communication and Signal Processing (ICCCSP), pp. 1–6 (2017). IEEE [88] Lin, H., Ng, V.: Abstractive summarization: A survey of the state of the art. In: Proceedings of the AAAI Conference on Artificial Intelligence, vol. 33, pp. 9815–9822 (2019) [89] Bajaj, P., Campos, D., Craswell, N., Deng, L., Gao, J., Liu, X., Majumder, R., Mc Namara, A., Mitra, B., Nguyen, T., Rosenberg, M., Song, X., Stoica, A., Tiwary, S., Wang, T.: MS MARCO: A Human Generated MAchine Reading COmprehension Dataset (2018) [90] Zhao, P., Zhang, H., Yu, Q., Wang, Z., Geng, Y., Fu, F., Yang, L., Zhang, 29\n\nW., Cui, B.:",
+    "section": "unknown",
+    "char_start": 84700,
+    "char_end": 85500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_123",
+    "text": "018) [90] Zhao, P., Zhang, H., Yu, Q., Wang, Z., Geng, Y., Fu, F., Yang, L., Zhang, 29\n\nW., Cui, B.: Retrieval-augmented generation for ai-generated content: A survey. ar Xiv preprint ar Xiv:2402.19473 (2024) [91] Asai, A., Min, S., Zhong, Z., Chen, D.: Retrieval-based language models and applications. In: Proceedings of the 61 st Annual Meeting of the Association for Computational Linguistics (Volume 6: Tutorial Abstracts), pp. 41–46 (2023) [92] Guu, K., Lee, K., Tung, Z., Pasupat, P., Chang, M.: Retrieval augmented language model pre-training. In: International Conference on Machine Learning, pp. 3929–3938 (2020). PMLR [93] Ma, X., Gong, Y., He, P., Zhao, H., Duan, N.: Query rewriting for retrievalaugmented large language models. ar Xiv preprint ar Xiv:2305.14283 (2023) [94] Wang, L., Ma",
+    "section": "unknown",
+    "char_start": 85400,
+    "char_end": 86200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_124",
+    "text": "retrievalaugmented large language models. ar Xiv preprint ar Xiv:2305.14283 (2023) [94] Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., Chen, Z., Tang, J., Chen, X., Lin, Y., et al.: A survey on large language model based autonomous agents. Frontiers of Computer Science 18(6), 186345 (2024) [95] Zhang, Z., Bo, X., Ma, C., Li, R., Chen, X., Dai, Q., Zhu, J., Dong, Z., Wen, J.-R.: A Survey on the Memory Mechanism of Large Language Model based Agents (2024) [96] Zhan, J., Mao, J., Liu, Y., Guo, J., Zhang, M., Ma, S.: Optimizing dense retrieval model training with hard negatives. In: Proceedings of the 44 th International ACM SIGIR Conference on Research and Development in Information Retrieval, pp. 1503–1512 (2021) [97] Robertson, S., Zaragoza, H., et al.: The probabilistic releva",
+    "section": "unknown",
+    "char_start": 86100,
+    "char_end": 86900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_125",
+    "text": "n Retrieval, pp. 1503–1512 (2021) [97] Robertson, S., Zaragoza, H., et al.: The probabilistic relevance framework: Bm 25 and beyond. Foundations and Trends® in Information Retrieval 3(4), 333–389 (2009) [98] Mao, S., Jiang, Y., Chen, B., Li, X., Wang, P., Wang, X., Xie, P., Huang, F., Chen, H., Zhang, N.: Rafe: Ranking feedback improves query rewriting for rag. ar Xiv preprint ar Xiv:2405.14431 (2024) [99] Chan, C.-M., Xu, C., Yuan, R., Luo, H., Xue, W., Guo, Y., Fu, J.: Rq-rag: Learning to refine queries for retrieval augmented generation. ar Xiv preprint ar Xiv:2404.00610 (2024) [100] Li, T., Zhang, G., Do, Q. D., Yue, X., Chen, W.: Long-context llms struggle with long in-context learning. ar Xiv preprint ar Xiv:2404.02060 (2024) [101] Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevi",
+    "section": "unknown",
+    "char_start": 86800,
+    "char_end": 87600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_126",
+    "text": "ar Xiv preprint ar Xiv:2404.02060 (2024) [101] Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua, M., Petroni, F., Liang, P.: Lost in the middle: How language models use long contexts. Transactions of the Association for Computational Linguistics 12, 157–173 (2024) [102] Faggioli, G., Dietz, L., Clarke, C. L., Demartini, G., Hagen, M., Hauff, C., Kando, 30\n\nN., Kanoulas, E., Potthast, M., Stein, B., et al.: Perspectives on large language models for relevance judgment. In: Proceedings of the 2023 ACM SIGIR International Conference on Theory of Information Retrieval, pp. 39–50 (2023) [103] Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., Neubig, G.: Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing. ACM Comput. Surv. 55(9) (20",
+    "section": "unknown",
+    "char_start": 87500,
+    "char_end": 88300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_127",
+    "text": "A systematic survey of prompting methods in natural language processing. ACM Comput. Surv. 55(9) (2023) https://doi. org/10.1145/3560815 [104] Wang, X., Yang, Q., Qiu, Y., Liang, J., He, Q., Gu, Z., Xiao, Y., Wang, W.: Knowledgpt: Enhancing large language models with retrieval and storage access on knowledge bases. ar Xiv preprint ar Xiv:2308.11761 (2023) [105] Qin, Y., Hu, S., Lin, Y., Chen, W., Ding, N., Cui, G., Zeng, Z., Huang, Y., Xiao, C., Han, C., Fung, Y. R., Su, Y., Wang, H., Qian, C., Tian, R., Zhu, K., Liang, S., Shen, X., Xu, B., Zhang, Z., Ye, Y., Li, B., Tang, Z., Yi, J., Zhu, Y., Dai, Z., Yan, L., Cong, X., Lu, Y., Zhao, W., Huang, Y., Yan, J., Han, X., Sun, X., Li, D., Phang, J., Yang, C., Wu, T., Ji, H., Liu, Z., Sun, M.: Tool Learning with Foundation Models (2023) [106] J",
+    "section": "unknown",
+    "char_start": 88200,
+    "char_end": 89000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_128",
+    "text": "J., Yang, C., Wu, T., Ji, H., Liu, Z., Sun, M.: Tool Learning with Foundation Models (2023) [106] Jiang, Z., Xu, F., Gao, L., Sun, Z., Liu, Q., Dwivedi-Yu, J., Yang, Y., Callan, J., Neubig, G.: Active retrieval augmented generation. In: Bouamor, H., Pino, J., Bali, K. (eds.) Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pp. 7969–7992. Association for Computational Linguistics, Singapore (2023). https://doi. org/10.18653/v1/2023.emnlp-main. 495 . https://aclanthology. org/2023.emnlp-main.495 [107] Ram, O., Levine, Y., Dalmedigos, I., Muhlgay, D., Shashua, A., Leyton-Brown, K., Shoham, Y.: In-context retrieval-augmented language models. Transactions of the Association for Computational Linguistics 11, 1316–1331 (2023) [108] Borgeaud, S., Mensch, A.,",
+    "section": "unknown",
+    "char_start": 88900,
+    "char_end": 89700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_129",
+    "text": "f the Association for Computational Linguistics 11, 1316–1331 (2023) [108] Borgeaud, S., Mensch, A., Hoffmann, J., Cai, T., Rutherford, E., Millican, K., Van Den Driessche, G. B., Lespiau, J.-B., Damoc, B., Clark, A., et al.: Improving language models by retrieving from trillions of tokens. In: International Conference on Machine Learning, pp. 2206–2240 (2022). PMLR [109] Trivedi, H., Balasubramanian, N., Khot, T., Sabharwal, A.: Interleaving retrieval with chain-of-thought reasoning for knowledge-intensive multi-step questions. In: Rogers, A., Boyd-Graber, J., Okazaki, N. (eds.) Proceedings of the 61 st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 10014–10037. Association for Computational Linguistics, Toronto, Canada (2023). https://doi. or",
+    "section": "unknown",
+    "char_start": 89600,
+    "char_end": 90400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_130",
+    "text": "pp. 10014–10037. Association for Computational Linguistics, Toronto, Canada (2023). https://doi. org/10.18653/v1/2023.acl-long.557 . https://aclanthology. org/2023.acl-long.557 [110] Ni, S., Bi, K., Guo, J., Cheng, X.: When do llms need retrieval augmentation? mitigating llms’ overconfidence helps retrieval augmentation. ar Xiv preprint ar Xiv:2402.11457 (2024) 31\n\n[111] Su, W., Tang, Y., Ai, Q., Wu, Z., Liu, Y.: DRAGIN: Dynamic retrieval augmented generation based on the real-time information needs of large language models. In: Ku, L.-W., Martins, A., Srikumar, V. (eds.) Proceedings of the 62 nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 12991–13013. Association for Computational Linguistics, Bangkok, Thailand (2024). https://doi. org/10.",
+    "section": "unknown",
+    "char_start": 90300,
+    "char_end": 91100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_131",
+    "text": "991–13013. Association for Computational Linguistics, Bangkok, Thailand (2024). https://doi. org/10.18653/v1/2024.acl-long.702 . https://aclanthology. org/2024.acl-long.702/ [112] Su, W., Wang, C., Ai, Q., Hu, Y., Wu, Z., Zhou, Y., Liu, Y.: Unsupervised real-time hallucination detection based on the internal states of large language models. In: Ku, L.-W., Martins, A., Srikumar, V. (eds.) Findings of the Association for Computational Linguistics: ACL 2024, pp. 14379–14391. Association for Computational Linguistics, Bangkok, Thailand (2024). https://doi. org/10. 18653/v1/2024.findings-acl.854 . https://aclanthology. org/2024.findings-acl.854/ [113] Liu, T., Zhang, Y., Brockett, C., Mao, Y., Sui, Z., Chen, W., Dolan, B.: A token-level reference-free hallucination detection benchmark for free-",
+    "section": "unknown",
+    "char_start": 91000,
+    "char_end": 91800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_132",
+    "text": "i, Z., Chen, W., Dolan, B.: A token-level reference-free hallucination detection benchmark for free-form text generation. ar Xiv preprint ar Xiv:2104.08704 (2021) [114] Fadeeva, E., Rubashevskii, A., Shelmanov, A., Petrakov, S., Li, H., Mubarak, H., Tsymbalov, E., Kuzmin, G., Panchenko, A., Baldwin, T., et al.: Fact-checking the output of large language models via token-level uncertainty quantification. ar Xiv preprint ar Xiv:2403.04696 (2024) [115] Cronen-Townsend, S., Croft, W. B., et al.: Quantifying query ambiguity. In: Proceedings of HLT, vol. 2, pp. 94–98 (2002) [116] ARENS, Y., CHEE, C. Y., HSU, C.-N., KNOBLOCK, C. A.: Retrieving and integrating data from multiple information sources. International Journal of Cooperative Information Systems 02(02), 127–158 (1993) https://doi. org/10",
+    "section": "unknown",
+    "char_start": 91700,
+    "char_end": 92500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_133",
+    "text": "International Journal of Cooperative Information Systems 02(02), 127–158 (1993) https://doi. org/10. 1142/S 0218215793000071 https://doi. org/10.1142/S 0218215793000071 [117] Wang, J., Mo, F., Ma, W., Sun, P., Zhang, M., Nie, J.-Y.: A User-Centric Benchmark for Evaluating Large Language Models (2024) [118] Wang, J., Ma, W., Sun, P., Zhang, M., Nie, J.-Y.: Understanding User Experience in Large Language Model Interactions (2024) [119] Beitzel, S. M., Jensen, E. C., Chowdhury, A., Grossman, D., Frieder, O., Goharian, N.: Fusion of effective retrieval strategies in the same information retrieval system. Journal of the American Society for Information Science and Technology 55(10), 859–868 (2004) [120] Wu, S., Mc Clean, S.: Performance prediction of data fusion for information retrieval. Info",
+    "section": "unknown",
+    "char_start": 92400,
+    "char_end": 93200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_134",
+    "text": "4) [120] Wu, S., Mc Clean, S.: Performance prediction of data fusion for information retrieval. Information processing & management 42(4), 899–915 (2006) 32\n\n[121] Cormack, G. V., Clarke, C. L., Buettcher, S.: Reciprocal rank fusion outperforms condorcet and individual rank learning methods. In: Proceedings of the 32 nd International ACM SIGIR Conference on Research and Development in Information Retrieval, pp. 758–759 (2009) [122] Lee, C.-J., Ai, Q., Croft, W. B., Sheldon, D.: An optimization framework for merging multiple result lists. In: Proceedings of the 24 th ACM International on Conference on Information and Knowledge Management, pp. 303–312 (2015) [123] Liu, T.-Y., et al.: Learning to rank for information retrieval. Foundations and Trends® in Information Retrieval 3(3), 225–331 (2",
+    "section": "unknown",
+    "char_start": 93100,
+    "char_end": 93900
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_135",
+    "text": "to rank for information retrieval. Foundations and Trends® in Information Retrieval 3(3), 225–331 (2009) [124] Zhan, J., Mao, J., Liu, Y., Zhang, M., Ma, S.: Learning to retrieve: How to train a dense retrieval model effectively and efficiently. ar Xiv preprint ar Xiv:2010.10469 (2020) [125] Arora, D., Kini, A., Chowdhury, S. R., Natarajan, N., Sinha, G., Sharma, A.: Gar-meets-rag paradigm for zero-shot information retrieval. ar Xiv preprint ar Xiv:2310.20158 (2023) [126] Zhang, T., Patil, S. G., Jain, N., Shen, S., Zaharia, M., Stoica, I., Gonzalez, J. E.: RAFT: Adapting Language Model to Domain Specific RAG (2024) [127] Xu, Z., Tran, A., Yang, T., Ai, Q.: Reinforcement learning to rank with coarsegrained labels. ar Xiv preprint ar Xiv:2208.07563 (2022) [128] Shi, W., Min, S., Yasunaga, M",
+    "section": "unknown",
+    "char_start": 93800,
+    "char_end": 94600
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_136",
+    "text": "h coarsegrained labels. ar Xiv preprint ar Xiv:2208.07563 (2022) [128] Shi, W., Min, S., Yasunaga, M., Seo, M., James, R., Lewis, M., Zettlemoyer, L., Yih, W.-t.: Replug: Retrieval-augmented black-box language models. ar Xiv preprint ar Xiv:2301.12652 (2023) [129] Ai, Q., Bai, T., Cao, Z., Chang, Y., Chen, J., Chen, Z., Cheng, Z., Dong, S., Dou, Z., Feng, F., et al.: Information retrieval meets large language models: a strategic report from chinese ir community. AI Open 4, 80–90 (2023) [130] Bota, H., Zhou, K., Jose, J. M., Lalmas, M.: Composite retrieval of heterogeneous web search. In: Proceedings of the 23 rd International Conference on World Wide Web, pp. 119–130 (2014) [131] Amer-Yahia, S., Bonchi, F., Castillo, C., Feuerstein, E., Mendez-Diaz, I., Zabala, P.: Composite retrieval of d",
+    "section": "unknown",
+    "char_start": 94500,
+    "char_end": 95300
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_137",
+    "text": "S., Bonchi, F., Castillo, C., Feuerstein, E., Mendez-Diaz, I., Zabala, P.: Composite retrieval of diverse and complementary bundles. IEEE Transactions on Knowledge and Data Engineering 26(11), 2662–2675 (2014) [132] Kolomiyets, O., Moens, M.-F.: A survey on question answering technology from an information retrieval perspective. Information Sciences 181(24), 5412–5434 (2011) [133] Metzler, D., Tay, Y., Bahri, D., Najork, M.: Rethinking search: making domain 33\n\nexperts out of dilettantes. SIGIR Forum 55(1) (2021) https://doi. org/10.1145/ 3476415.3476428 [134] Zhuang, S., Ren, H., Shou, L., Pei, J., Gong, M., Zuccon, G., Jiang, D.: Bridging the Gap Between Indexing and Retrieval for Differentiable Search Index with Query Generation (2023). https://arxiv. org/abs/2206.10128 [135] Tay, Y.,",
+    "section": "unknown",
+    "char_start": 95200,
+    "char_end": 96000
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_138",
+    "text": "ntiable Search Index with Query Generation (2023). https://arxiv. org/abs/2206.10128 [135] Tay, Y., Tran, V., Dehghani, M., Ni, J., Bahri, D., Mehta, H., Qin, Z., Hui, K., Zhao, Z., Gupta, J., et al.: Transformer memory as a differentiable search index. Advances in Neural Information Processing Systems 35, 21831–21843 (2022) [136] Tang, Y., Zhang, R., Guo, J., Chen, J., Zhu, Z., Wang, S., Yin, D., Cheng, X.: Semantic-enhanced differentiable search index inspired by learning strategies. In: Proceedings of the 29 th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, pp. 4904–4913 (2023) [137] Sun, W., Yan, L., Chen, Z., Wang, S., Zhu, H., Ren, P., Chen, Z., Yin, D., Rijke, M., Ren, Z.: Learning to tokenize for generative retrieval. In: Proceedings of the 37 th International Confer",
+    "section": "unknown",
+    "char_start": 95900,
+    "char_end": 96700
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_139",
+    "text": "Z.: Learning to tokenize for generative retrieval. In: Proceedings of the 37 th International Conference on Neural Information Processing Systems. NIPS ’23, pp. 1–17. Curran Associates Inc., Red Hook, NY, USA (2024) [138] Nguyen, T., Yates, A.: Generative retrieval as dense retrieval. ar Xiv preprint ar Xiv:2306.11397 (2023) [139] Zhan, J., Mao, J., Liu, Y., Guo, J., Zhang, M., Ma, S.: Learning discrete representations via constrained clustering for effective and efficient dense retrieval. In: Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining. WSDM ’22, pp. 1328–1336. Association for Computing Machinery, New York, NY, USA (2022). https://doi. org/10.1145/3488560.3498443 . https://doi. org/10.1145/3488560.3498443 [140] Zeng, H., Luo, C., Jin, B., Sarwar",
+    "section": "unknown",
+    "char_start": 96600,
+    "char_end": 97400
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_140",
+    "text": "/3488560.3498443 . https://doi. org/10.1145/3488560.3498443 [140] Zeng, H., Luo, C., Jin, B., Sarwar, S. M., Wei, T., Zamani, H.: Scalable and effective generative information retrieval. In: Proceedings of the ACM on Web Conference 2024. WWW ’24, pp. 1441–1452. Association for Computing Machinery, New York, NY, USA (2024). https://doi. org/10.1145/3589334.3645477 . https://doi. org/10.1145/3589334.3645477 [141] Zeng, H., Luo, C., Zamani, H.: Planning Ahead in Generative Retrieval: Guiding Autoregressive Generation through Simultaneous Decoding (2024) [142] Wu, S., Wei, W., Zhang, M., Chen, Z., Ma, J., Ren, Z., Rijke, M., Ren, P.: Generative retrieval as multi-vector dense retrieval. In: Proceedings of the 47 th International ACM SIGIR Conference on Research and Development in Information R",
+    "section": "unknown",
+    "char_start": 97300,
+    "char_end": 98100
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_141",
+    "text": "eedings of the 47 th International ACM SIGIR Conference on Research and Development in Information Retrieval, pp. 1828–1838 (2024) [143] Zhan, J., Mao, J., Liu, Y., Guo, J., Zhang, M., Ma, S.: Jointly optimizing query 34\n\nencoder and product quantization to improve retrieval performance. In: Proceedings of the 30 th ACM International Conference on Information & Knowledge Management. CIKM ’21, pp. 2487–2496. Association for Computing Machinery, New York, NY, USA (2021). https://doi. org/10.1145/3459637.3482358 . https://doi. org/10.1145/3459637.3482358 [144] Sachidananda, V., Kessler, J. S., Lai, Y.-A.: Efficient domain adaptation of language models via adaptive tokenization. ar Xiv preprint ar Xiv:2109.07460 (2021) [145] Huang, Q., Tao, M., Zhang, C., An, Z., Jiang, C., Chen, Z., Wu, Z., F",
+    "section": "unknown",
+    "char_start": 98000,
+    "char_end": 98800
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_142",
+    "text": "ar Xiv:2109.07460 (2021) [145] Huang, Q., Tao, M., Zhang, C., An, Z., Jiang, C., Chen, Z., Wu, Z., Feng, Y.: Lawyer llama technical report. ar Xiv preprint ar Xiv:2305.15062 (2023) [146] Cui, J., Li, Z., Yan, Y., Chen, B., Yuan, L.: Chatlaw: Open-source legal large language model with integrated external knowledge bases. ar Xiv preprint ar Xiv:2306.16092 (2023) [147] Wu, S., Irsoy, O., Lu, S., Dabravolski, V., Dredze, M., Gehrmann, S., Kambadur, P., Rosenberg, D., Mann, G.: Bloomberggpt: A large language model for finance. ar Xiv preprint ar Xiv:2303.17564 (2023) [148] Dai, D., Dong, L., Hao, Y., Sui, Z., Chang, B., Wei, F.: Knowledge neurons in pretrained transformers. ar Xiv preprint ar Xiv:2104.08696 (2021) [149] Meng, K., Bau, D., Andonian, A., Belinkov, Y.: Locating and editing factua",
+    "section": "unknown",
+    "char_start": 98700,
+    "char_end": 99500
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_143",
+    "text": "v:2104.08696 (2021) [149] Meng, K., Bau, D., Andonian, A., Belinkov, Y.: Locating and editing factual associations in gpt. Advances in Neural Information Processing Systems 35, 17359–17372 (2022) [150] Liu, J., Yu, P., Zhang, Y., Li, S., Zhang, Z., Ji, H.: Evedit: Event-based knowledge editing with deductive editing boundaries. ar Xiv preprint ar Xiv:2402.11324 (2024) [151] Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., Chen, W.: Lora: Low-rank adaptation of large language models. ar Xiv preprint ar Xiv:2106.09685 (2021) [152] Li, H., Ai, Q., Chen, J., Dong, Q., Wu, Y., Liu, Y., Chen, C., Tian, Q.: Sailer: structure-aware pre-trained language model for legal case retrieval. In: Proceedings of the 46 th International ACM SIGIR Conference on Research and Developm",
+    "section": "unknown",
+    "char_start": 99400,
+    "char_end": 100200
+  },
+  {
+    "source_id": "Ai2025",
+    "chunk_id": "chunk_144",
+    "text": "retrieval. In: Proceedings of the 46 th International ACM SIGIR Conference on Research and Development in Information Retrieval, pp. 1035–1044 (2023) [153] Yao, F., Li, C., Nekipelov, D., Wang, H., Xu, H.: Human vs. Generative AI in Content Creation Competition: Symbiosis or Conflict? (2024) 35",
+    "section": "unknown",
+    "char_start": 100100,
+    "char_end": 100900
+  }
+]

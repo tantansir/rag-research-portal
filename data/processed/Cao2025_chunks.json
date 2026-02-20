@@ -1,0 +1,970 @@
+[
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_01",
+    "text": "Mapping Urban Villages in China: Progress and Challenges Rui Cao1*, Wei Tu2, Dongsheng Chen3, Wenyu Zhang1,4 1Thrust of Urban Governance and Design, Society Hub, The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China. 2MNR Key Laboratory for Geo-Environmental Monitoring of Great Bay Area, Guangdong Key Laboratory of Urban Informatics, Shenzhen Key Laboratory of Spatial Smart Sensing and Services, Department of Urban Informatics, Shenzhen University, Shenzhen, China. 3Chair of Cartography and Visual Analytics, Technical University of Munich, Munich, Germany. 4Department of Geography, National University of Singapore, Singapore, Singapore. *Corresponding author(s). E-mail(s): ruicao@hkust-gz. edu. cn; Abstract The shift toward high-quality urbanization has brought i",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_02",
+    "text": "mail(s): ruicao@hkust-gz. edu. cn; Abstract The shift toward high-quality urbanization has brought increased attention to the issue of “urban villages”, which has become a prominent social problem in China. However, there is a lack of available geospatial data on urban villages, making it crucial to prioritize urban village mapping. In order to assess the current progress in urban village mapping and identify challenges and future directions, we have conducted a comprehensive review, which to the best of our knowledge is the first of its kind in this field. Our review begins by providing a clear context for urban villages and elaborating the method for literature review, then summarizes the study areas, data sources, and approaches used for urban village mapping in China. We also address t",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_03",
+    "text": "study areas, data sources, and approaches used for urban village mapping in China. We also address the challenges and future directions for further research. Through thorough investigation, we find that current studies only cover very limited study areas and periods and lack sufficient investigation into the scalability, transferability, and interpretability of identification approaches due to the challenges in concept fuzziness and variances, spatial heterogeneity and variances of urban villages, and data availability. Future research can complement and further the current research in the following potential directions in order to achieve largearea mapping across the whole nation: 1) establish a unified standard of urban villages in China to accommodate significant variances and fuzzy con",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_04",
+    "text": "ish a unified standard of urban villages in China to accommodate significant variances and fuzzy concepts, 2) 1 a r X i v : 2 5 0 3 . 1 4 1 9 5 v 1 [ c s . D B ] 1 8 M a r 2 0 2 5\n\naddress the challenges of data availability via flexible use of available multisource data and explore potential use of data-driven image super-resolution approaches, 3) create public benchmarks to ensure fair comparison and focus on the scalability, transferability, and interpretability of urban village recognition approaches, 4) initiate a crowdsourcing program to enable effective and efficient data collection and validation as well as application. This review not only supports urban villagerelated research in China, but also contributes valuable knowledge from a Chinese perspective to global informal settleme",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_05",
+    "text": "hina, but also contributes valuable knowledge from a Chinese perspective to global informal settlements mapping research and the achievement of the United Nations’ Sustainable Development Goals (SDGs). (Updated review at https://github. com/rui-research/urban-village-review) Keywords: Urban villages, Informal settlements, Urban renewal/regeneration, Poverty, Sustainable development goals (SDGs), Urban informatics. 1 Introduction Over the past 40 years of rapid urbanization since the reform and opening up, a large number of urban villages have formed in large cities in China. The urban village, or “Cheng Zhong Cun” (literally means villages in cities) in Chinese, is an unplanned and densely populated area with relatively small scale, lagging infrastructure, and unsatisfactory sanitation in",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_06",
+    "text": "opulated area with relatively small scale, lagging infrastructure, and unsatisfactory sanitation in the city (Tong and Feng, 2009; Liu et al, 2010). The formation of urban villages in China is a complexity of rapid urbanization and unique institutional regulations. In China, the urban and rural areas and residents have been institutionally divided into two distinct groups, which is referred to as the urban-rural dual structure. In terms of property rights, urban villages have special legal form, as they fall outside urban administration, and building activities are managed by the village collective, which dictates how the land is transformed and utilized (Sa and Haila, 2023). This land management system leads to the formation of ‘islands’ or ‘vacuum’ within cities which lead to the high-de",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_07",
+    "text": "ement system leads to the formation of ‘islands’ or ‘vacuum’ within cities which lead to the high-density and unplanned developments of urban villages disrespecting urban regulation. Due to inadequate planning and management, urban villages have caused imbalances in urban infrastructure, challenges in social governance, and a negative urban image (Zheng et al, 2009; Tong and Feng, 2009; Liu et al, 2010; Gao et al, 2021). Despite the drawbacks, urban villages act as sanctuaries for a substantial number of migrant workers in cities. They represent the initial stepping stone for many young people making their way in urban areas, offering crucial housing and fundamental life support for the low-income population (Tong et al, 2020). Thus, while urban villages present significant social governan",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_08",
+    "text": "income population (Tong et al, 2020). Thus, while urban villages present significant social governance challenges and contribute to urban dysfunctions, they also serve as important hubs for providing basic living necessities to low-income groups and newcomers to the city. This dual role underscores the complexity of addressing issues related to urban villages and highlights the need for comprehensive strategies that balance social welfare concerns with urban development imperatives. In recent years, the Chinese government is putting significant emphasis on the redevelopment of urban villages which is a key component contributing to high-quality urban development (Ye et al, 2024). Comprehensive and detailed data on the spatial 2\n\ndistribution of urban villages are an important basis for urb",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_09",
+    "text": "ve and detailed data on the spatial 2\n\ndistribution of urban villages are an important basis for urban renewal and urban village transformation. However, there is a serious data shortage at present, especially for large-area mapping. The traditional data collection of urban villages relies on field survey and manual collection, which has the problems of long period, laborconsuming, and slow update (Zheng et al, 2009; Chen et al, 2022 b). Therefore, the study of automated algorithms for identifying urban villages is of great significance to the efficient acquisition of information on urban low utility land and urban renewal. In addition, despite of significant differences in terms of residential environment, spatial form, and spatial composition, urban villages can be regarded as a special",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_10",
+    "text": "ial environment, spatial form, and spatial composition, urban villages can be regarded as a special form of urban informal settlements in Chinese context (Huang et al, 2015; Taubenb¨ock et al, 2018). Compared to informal settlements in non-Chinese contexts, research on identifying urban villages in Chinese cities is limited and faces significant challenges, particularly with large-area mapping. This review aims to bridge this gap by consolidating current research on Chinese urban village mapping, summarizing both progress and challenges. Our primary goal is to assess the current state of research and identify major challenges in large-area urban village mapping. This effort will contribute to global informal settlement mapping and support the United Nations’ Sustainable Development Goals (",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_11",
+    "text": "o global informal settlement mapping and support the United Nations’ Sustainable Development Goals (SDGs) from a Chinese perspective. The major contributions of the article can be summarized as follows. • To the best of our knowledge, this is the first comprehensive review summarizing the current research progress on urban village mapping in China. This topic is a crucial component of global informal settlement mapping and SDG 11, which however have received limited attention in previous studies. • In this review, we clearly summarize and clarify key concepts and relevant terminology, which is a crucial step often overlooked in the literature. • We systematically summarize and critically review the study areas, data sources, and methodologies employed in urban village mapping research, est",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_12",
+    "text": "iew the study areas, data sources, and methodologies employed in urban village mapping research, establishing a solid foundation for understanding the current progress in this field. • Building on this comprehensive overview of existing research, we identify significant challenges and potential pathways for large-area urban village mapping, highlighting future research directions. The rest of the paper is organized as follows. Section 2 defines the context of urban villages surveyed in this review. Section 3 describes the methodology about how the systematic literature review has been carried out. Section 4 summarizes the study areas of current research as well as the data sources used. Section 5 reviews the approaches used for urban village mapping. Section 6 points out the current challe",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_13",
+    "text": "ion 5 reviews the approaches used for urban village mapping. Section 6 points out the current challenges and future opportunities for large-area urban village mapping. Section 7 concludes the paper. 2 Terminology and context of “urban villages” The term “urban village” per se has different connotations in different contexts, such as ethnic enclaves, new models of community development, and informal settlements 3\n\n(Wang, 2022). Particularly, in this review, we mainly focus on the concept of informal settlements within the rapid growing metropolises in the Chinese context. Broadly speaking, urban villages can be regarded as a special form of urban informal settlements in the context of China, as they both indicate urban residential areas which are out of the formal planning and associated wi",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_14",
+    "text": "as they both indicate urban residential areas which are out of the formal planning and associated with overcrowded, low-income residents; however, strictly speaking, urban villages are very different from the kind of informal settlements we usually refer to (such as slums) (Kuffer et al, 2016, 2018; Mahabir et al, 2018). Informal settlements grow as a consequence of cities, while urban villages existed before cities and have been engulfed in the spatial expansion process. Specifically, the formation of urban villages in China is a complexity resulting from the combination of the unique Chinese institutions and rapid urbanization (Tong et al, 2011). Urban villages are islands or vacuums of urban regions with special regulations and lax enforcement which eventually lead to the unique urban f",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_15",
+    "text": "ban regions with special regulations and lax enforcement which eventually lead to the unique urban fabric and spatial form distinguishing them from informal settlements in non-Chinese context (Huang et al, 2015; Taubenb¨ock et al, 2018). It should also be noted that, in addition to urban informal settlements (Fan et al, 2022 a), other relevant terms can also be found in literature from time to time to denote urban villages in China, such as migrant housing (D’Oleire-Oltmanns et al, 2011), unplanned areas (Crivellari et al, 2023), and deprived areas (Abascal et al, 2022). Although with subtle semantic differences and focuses, they usually refer to the same object. To facilitate discussion, we will use the term “urban village” throughout this review. In addition, in the Chinese context, ther",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_16",
+    "text": "will use the term “urban village” throughout this review. In addition, in the Chinese context, there are also terms with similar and confusing meanings, such as shantytown (He and He, 2018; Du et al, 2020). While urban villages are informal residential areas within cities, shantytowns emphasize the poverty and harsh living conditions of informal settlements. Urban villages may have more infrastructure and services compared to shantytowns and are typically more integrated with the urban fabric of the city. The similarity and differences further adds to the ambiguity and difficulty of urban village identification. Detailed comparison between these terminologies can be found in Table 1. China’s vast size and diverse geography, urban landscapes, history, and culture result in urban villages e",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_17",
+    "text": "s vast size and diverse geography, urban landscapes, history, and culture result in urban villages exhibiting complex, varied physical and geographic patterns, with significant differences across regions and cities, as illustrated in Figure 1. The satellite and street view imagery of urban villages in cities such as Shenzhen, Guangzhou, Beijing, and Xi’an vividly illustrates these differences. For example, Shenzhen and Guangzhou showcase densely packed buildings and narrow streets indicative of high population densities and limited space, while Beijing displays a more dispersed arrangement with low-rise buildings, typical of northern rural architectural styles, and wider, more open streets. In Xi’an, the urban villages are characterized by densely packed but orderly building layouts; howev",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_18",
+    "text": "In Xi’an, the urban villages are characterized by densely packed but orderly building layouts; however, the streets remain narrow and bustling with activity, posing potential fire safety and other hazards. This diversity in urban village forms and layouts across the country highlights the complexities and challenges involved in urban planning and management. The variation and diversity further pose great challenges for urban village detection, especially for large-area mapping. 4\n\nTable 1 Comparison of similar terminologies. Note that these terms are often ambiguous and may overlap in meaning, each emphasizing different aspects. Term Meaning Informal settlement Informal settlements lack adequate access to potable water, basic sanitation, electricity, and other essential infrastructure. Hou",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_19",
+    "text": "uate access to potable water, basic sanitation, electricity, and other essential infrastructure. Housing in these areas is often characterized by poor structural quality, high density, and insecure ownership (UN-Habitat, 2004). Slum Slums are defined as areas with insufficient access to safe water, inadequate sanitation, and other critical infrastructure. They are marked by overcrowded living conditions, poor housing quality, and insecure residential status. Moreover, slums are frequently overlooked by public authorities, failing to be recognized as integral parts of the city (UN-Habitat, 2004). Migrant housing Migrant housing refers to accommodations for the large number of rural migrants who move to cities in search of employment. In China, the household registration system restricts rur",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_20",
+    "text": "ho move to cities in search of employment. In China, the household registration system restricts rural migrants’ access to essential social welfare benefits, including housing. As a result, social housing tailored to the needs of this population is referred to as migrant housing (Wu, 2004). Unplanned areas Unplanned areas pertain to the planning context and are defined as regions that lack detailed plans or land subdivision guidelines, and do not comply with existing planning and building regulations (Khalifa, 2011). Deprived areas Deprived areas pose social, environmental, and ecological risks to health and well-being. They often lack legal access to land, essential social amenities such asschoolsandhealthcarecenters, andbasicinfrastructurelikeroadsandsewage systems (Thomson et al, 2020).",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_21",
+    "text": "schoolsandhealthcarecenters, andbasicinfrastructurelikeroadsandsewage systems (Thomson et al, 2020). Shantytown The term is associated with poor physical and socioeconomic conditions. In China, it is widely used in government policies to describe dilapidated housing or illegally constructed shanties found in older inner-city communities or rundown villages in (sub)urban and rural areas (Li et al, 2018). Fig. 1 Typical examples of urban villages in four mega-cities in China. Both the satellite and street view images are sourced from Baidu Maps (2023). Boundaries of the urban villages in these cities, identified based on government documents and field surveys, are marked with red dashed lines in the satellite images. 5\n\n3 Review Methodology Based on the context of urban villages, we conducte",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_22",
+    "text": "in the satellite images. 5\n\n3 Review Methodology Based on the context of urban villages, we conducted a systematic search and review of the literature related to urban village mapping in China. We used keywords (both in English and Chinese) including “urban village” (or related terms listed in Table 1); “identification”, “detection”, or “mapping”; “China”; “remote sensing” or “geographic information science/system (GIS)” to retrieve articles from academic databases including Web of Science, China National Knowledge Infrastructure (CNKI), and Google Scholar, covering literature published up to May 2024. Given our goal to understand the methods for mapping and identifying urban villages, we excluded purely theoretical or case studies that do not focus on the identification of urban villages.",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_23",
+    "text": "cluded purely theoretical or case studies that do not focus on the identification of urban villages. Additionally, to clarify the current research areas and data sources for mapping urban villages, we excluded articles that did not explicitly indicate the study area, or presented doubtful data quality and experiment results. By adopting this approach, our study provides a comprehensive overview of the progress in urban village mapping in China. We conducted two rounds of relevance screening: an initial abstract screening, followed by a full-text screening to remove papers not relevant to our review scope. Through these two rounds, we identified a final corpus of 28 papers for inclusion in our review and synthesis, comprising 22 in English and 6 in Chinese. The earliest urban village identi",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_24",
+    "text": "r review and synthesis, comprising 22 in English and 6 in Chinese. The earliest urban village identification work in our search results dates back to 2011. According to the publication venues, we categorized these studies into four research fields: Urban Studies, GIS and Remote Sensing, Artificial Intelligence (AI) and Big Data, and Agricultural Studies. The current status and trend of publication is shown in Figure 2. As can be seen, there are very limited research of urban village mapping in China before 2020. Starting from 2020, there has been a noticeable uptrend in the volume of research publications, culminating in a peak in 2022. This surge is predominantly observed in the field of GIS and Remote Sensing, highlighting an escalating academic and technological dedication to urban vill",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_25",
+    "text": "S and Remote Sensing, highlighting an escalating academic and technological dedication to urban village mapping. This focus is crucial given the complex and varied physical spaces and geographic landscapes of urban villages across different regions, as previously discussed. Furthermore, contributions from Computer Science conferences, particularly in the domains of AI and Big Data, have consistently been made over the years, reflecting an enduring interest of the community in themes that intersect with Urban Studies. However, despite this overall growth in research output, publications addressing fields like Agricultural Studies and particular aspects of Urban Studies continue to be intermittent, pointing to a persistent gap in targeted research efforts. This gap underscores the necessity",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_26",
+    "text": "tent, pointing to a persistent gap in targeted research efforts. This gap underscores the necessity for a more focused approach in understanding and addressing the unique challenges presented by urban villages, enhancing the efficacy of large-area mapping initiatives. 4 Study areas and data for urban village mapping 4.1 Studied cities According to the reviewed publications, the research areas only cover 11 cities (as shown in Figure 3), and the vast majority of research is concentrated in a few limited 6\n\nFig. 2 Number of publications per year related to urban village mapping in China. The publication venues have been categorized into four classes according to research fields, i. e., Urban Studies, GIS and Remote Sensing, AI and Big Data, and Agricultural Studies. (The annual number of pub",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_27",
+    "text": "tudies, GIS and Remote Sensing, AI and Big Data, and Agricultural Studies. (The annual number of publications reflects data collected up to May 2024.) cities, as shown in Figure 3(b), such as Shenzhen (Huang et al, 2015; Li et al, 2017; Liu et al, 2017; Mast et al, 2020; Chen et al, 2022 b; Fan et al, 2022 b; Huang et al, 2023; Chen et al, 2023), Guangzhou (D’Oleire-Oltmanns et al, 2011; Shi et al, 2020 a; Pan et al, 2020; Cui et al, 2022; Zhang et al, 2021; Feng et al, 2021 a), and Beijing (Chen et al, 2022 a; Wei et al, 2023 a; Xiao et al, 2023; Feng et al, 2021 b). In comparison, as shown in Figure 3(a), there are 20 mega-cities in China with resident population of urban areas over 5 millions (Ministry of Housing and Urban-Rural Development of the People’s Republic of China, 2023). This",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_28",
+    "text": "ions (Ministry of Housing and Urban-Rural Development of the People’s Republic of China, 2023). This research status quo that focuses on a very few mega-cities and large cities is understandable mainly due to two reasons. First, there is a general bias of urban studies to focus on large cities due to the significance of urban challenges as well as resources and policy inclination (Tjarks, 2024). Second, as urban villages formed as a consequence of rapid urbanization and unique institutional background, they usually concentrate in these dense urban areas. However, it should be noted that China has over 100 large cities with a resident population of urban areas more than 1 million (Ministry of Housing and Urban-Rural Development of the People’s Republic of China, 2023). This shows that the c",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_29",
+    "text": "Housing and Urban-Rural Development of the People’s Republic of China, 2023). This shows that the current research coverage area cannot meet the demand for spatial data on urban villages over a large area. In addition, research on the entire city is relatively scarce in the cities studied (Chen et al, 2022 b; Fan et al, 2022 b; Huang et al, 2023), and the majority of research only covers limited areas of the city, such as part of the administrative region or the area covered by remote sensing image scenes. 4.2 Data sources Due to the inherent complexity of urban villages, a variety of data sources have been exploited for urban village mapping in China, which have been summarized in Table 2. 7\n\nFig. 3 Statistics of publications from geographic perspective. (a) Spatial distribution of studi",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_30",
+    "text": "7\n\nFig. 3 Statistics of publications from geographic perspective. (a) Spatial distribution of studied cities and top 20 most populous mega-cities in China. (Note: Mega-cities are divided according to the resident population of urban areas, and the data comes from the 2022 Urban Construction Statistics Yearbook of the Ministry of Housing and Urban-Rural Development in China). (b) Number of publications for studied cities. (Note: Research may encompass either entire cities or specific areas within cities.) 8\n\nTable 2 Data types and sources for urban village identification. Category Data Source Spatial Form Remote sensing Optical / Multispectral imagery Gaofen-1/2 (Crivellari et al, 2023; Wei et al, 2023 a, b; Cui et al, 2022; Feng et al, 2021 a), Quick Bird (Huang et al, 2015; Li et al, 201",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_31",
+    "text": "et al, 2023 a, b; Cui et al, 2022; Feng et al, 2021 a), Quick Bird (Huang et al, 2015; Li et al, 2017; Liu et al, 2017; D’Oleire-Oltmanns et al, 2011), World View-2 (Huang et al, 2015; Liu et al, 2017; Pan et al, 2020), Geo Eye-1 (Huang et al, 2015; Liu et al, 2017), SPOT-5 (D’Oleire-Oltmanns et al, 2011; Chen et al, 2023, 2022 b); Google Earth (Chen et al, 2019; Shi et al, 2020 a; Mast et al, 2020; Huang et al, 2023; Chen et al, 2022 a; Feng et al, 2021 b; Fan et al, 2022 b, a, c), Arc GIS (Zhang et al, 2024), Tianditu (Zhang et al, 2021), Baidu Map (Xiao etal,2023); Sentinel-2(Crivellari et al, 2023), Landsat (D’Oleire Oltmanns et al, 2011) Raster grids SAR imagery Terra SAR-X (Wei et al, 2015) Raster grids GIS & Geospatial big data Street view images Baidu Map (Cui et al, 2022; Fan et a",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_32",
+    "text": "2015) Raster grids GIS & Geospatial big data Street view images Baidu Map (Cui et al, 2022; Fan et al, 2022 b), Tencent Map (Huang et al, 2023; Chen et al, 2022 a; Fan et al, 2022 b) Points POI Baidu Map (Niu and Jin, 2020; Xiao et al, 2023; Zhao et al, 2018), Gaode Map (Li et al, 2023; Chen et al, 2023) Points Road networks Open Street Map (Chen et al, 2021; Wei et al, 2023 b; Zhang et al, 2021; Feng et al, 2021 a) Polylines Building footprint Baidu Map (Fan et al, 2022 a; Zhao et al, 2018) Polygons Mobility data Taxi trajectories Government (Chen et al, 2021; Huang et al, 2023; Chen et al, 2023) Spatio-temporal points Shared bike trajectories Mobike (Chen et al, 2021; Niu and Jin, 2020) Spatio-temporal points Mobile phone positioning data Tencent user density map (Zhao et al, 2018; Fan e",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_33",
+    "text": "atio-temporal points Mobile phone positioning data Tencent user density map (Zhao et al, 2018; Fan et al, 2022 c) Raster grids Similar to slum mapping in non-Chinese context, current research on the identification of urban villages mainly focuses on intelligent interpretation of very-highresolution (VHR) remote sensing images, which are usually with spatial resolution lower than 3 m. Specifically, the data are from optical or multi-spectral remote sensing imagery, and there are mainly two kinds of sources. The first data source is VHR satellite imagery including Gaofen-1 (Wei et al, 2023 b, 2015; Feng et al, 2021 a) (2 m), Gaofen-2 (Wei et al, 2023 a; Cui et al, 2022) (1 m), Quick Bird (Huang et al, 2015; Li et al, 2017; Liu et al, 2017) (2.4 m), World View-2 (Huang et al, 2015; Liu et al,",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_34",
+    "text": "g et al, 2015; Li et al, 2017; Liu et al, 2017) (2.4 m), World View-2 (Huang et al, 2015; Liu et al, 2017) (2 m), Geo Eye-1 (Huang et al, 2015; Liu et al, 2017) (2 m), SPOT-5 (Chen et al, 2022 b; D’Oleire-Oltmanns et al, 2011; Chen et al, 2023) (2.5 m). The advantage of 9\n\nVHR satellite imagery is the high quality, and rich information of multi-spectral bands besides visible bands (RGB). In addition, time-series satellite images usually have better consistency and good for spatio-temporal detection and analysis (Huang et al, 2015; Liu et al, 2017). The other data source is online map services, such as Google Earth (Chen et al, 2019, 2021; Shi et al, 2020 a; Mast et al, 2020; Huang et al, 2023; Chen et al, 2022 a; Fan et al, 2022 a, b, c; Feng et al, 2021 b), Arc GIS online (Zhang et al, 20",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_35",
+    "text": "3; Chen et al, 2022 a; Fan et al, 2022 a, b, c; Feng et al, 2021 b), Arc GIS online (Zhang et al, 2024), Baidu Map (Xiao et al, 2023), and Tianditu (Zhang et al, 2021). For example, the Google Earth has high-resolution remote sensing imagery with global coverage and relatively reliable 2D positional accuracy, which can be used for a large number of applications including slum mapping (Potere, 2008; Yu and Gong, 2012; Kuffer et al, 2016). These online sources have both advantages and disadvantages. The advantage of online map services is the easy accessibility of the VHR remote sensing imagery, which often can be acquired free of charge. However, there are also disadvantages. The first disadvantage is the quality of the data, which suffer from distortion and inconsistent preprocessing. The",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_36",
+    "text": "antage is the quality of the data, which suffer from distortion and inconsistent preprocessing. The second disadvantage is that these images usually only include visible spectral bands of RGB, without other spectral information. In addition, there are usually only the latest imagery available and the time-series images are often more difficult to acquire from online map sources. In addition to VHR remote sensing images, there are also exploration of freely available multi-spectral Sentinel-2 imagery, with medium spatial resolution of 10 m, for slum mapping and urban village detection. Sentinel-2 imagery have been used for slum mapping in Mumbai, India (Wurm et al, 2017 b; Verma et al, 2019; Peng et al, 2023). It is also explored for urban village mapping after upscaling via image superreso",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_37",
+    "text": "Peng et al, 2023). It is also explored for urban village mapping after upscaling via image superresolution method (Crivellari et al, 2023). Landsat imagery with spatial resolution of 30 m is used as auxiliary source for urban village detection in coarse scale (D’Oleire Oltmanns et al, 2011). Apart from multispectral imagery, SAR imagery has also been used for slum mapping and urban village mapping. The polarimetric SAR imagery is demonstrated to be useful in slum mapping (Wurm et al, 2017 a). Following this line, SAR imagery such as Terra SAR-X is also tested for urban village monitoring combining with multi-spectral imagery (Wei et al, 2015). The intricate internal configurations and diverse spatial forms of urban villages present significant challenges for their identification through si",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_38",
+    "text": "e spatial forms of urban villages present significant challenges for their identification through single remote sensing imagery alone. Consequently, a variety of additional data sources are utilized to enhance urban village mapping, often in conjunction with remote sensing imagery. These include street view images (Chen et al, 2022 a; Fan et al, 2022 b; Huang et al, 2023; Cui et al, 2022), points-of-interest (POI) data (Chen et al, 2022 b; Xiao et al, 2023; Li et al, 2023; Feng et al, 2021 a), road networks (Chen et al, 2021), building footprints (Fan et al, 2022 a), vehicle trajectory data (Chen et al, 2021, 2022 b; Huang et al, 2023), and mobile positioning data (Fan et al, 2022 c). Each data source offers unique insights but also comes with its own set of limitations. Street view images",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_39",
+    "text": "ata source offers unique insights but also comes with its own set of limitations. Street view images provide detailed, ground-level perspectives absent in top-down remote sensing imagery, capturing vertical building information and the immediate environment. However, their coverage is limited to areas accessible via roads, and they are not universally available through mapping services, further constrained by spatiotemporal limitations (Cao et al, 2023 b). POI data, offering semantic details about locations, are more accessible 10\n\nand have broader spatial coverage but suffer from data quality issues and are typically restricted to the most current information (Chen et al, 2022 b). Road networks and building footprints contribute valuable constraints for mapping but vary in accessibility a",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_40",
+    "text": "orks and building footprints contribute valuable constraints for mapping but vary in accessibility and data quality from open sources like Open Street Map 1, particularly in less developed cities (Herfort et al, 2023). Spatiotemporal data sources like vehicle trajectories and mobile positioning data are valuable for understanding human mobility and activities and crucial for distinguishing urban villages (Chen et al, 2022 b). Yet, these data types are challenging to acquire due to privacy concerns, often available only at coarse resolutions and at a high cost. While integrating multiple data sources significantly improves identification accuracy, collecting them, particularly mobility and time-series data, is not straightforward (Chen et al, 2022 b; Fan et al, 2022 c; Huang et al, 2023). T",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_41",
+    "text": "me-series data, is not straightforward (Chen et al, 2022 b; Fan et al, 2022 c; Huang et al, 2023). This data integration can negatively impact the scalability of mapping methods across larger spatial areas or over extended time periods, due to difficulties in data collection and the limitations inherent to each data type. 4.2.1 Ground-truth data Ground-truth data of urban villages are crucial for effective data-driven model training and validation for urban village identification. In general, the public geospatial data of urban villages in China is lacking. Although few municipal governments have made the urban village map public in their urban planning documents, such as Shenzhen (Shenzhen Municipal Planning and Natural Resources Bureau, 2019) and Guangzhou (Guangzhou Municipal Planning a",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_42",
+    "text": "Municipal Planning and Natural Resources Bureau, 2019) and Guangzhou (Guangzhou Municipal Planning and Natural Resources Bureau, 2024), but without proper geospatial reference and scale, which are difficult to reproduce for practical use. Therefore, to create ground-truth data for model training and algorithms validation, normally, ground-truth data are annotated by researchers themselves or by volunteers they recruited through field surveys or remote sensing image interpretation. However, manually labeling data for model training and validation can be highly time-consuming and labor-intensive. Currently, there are very limited public available annotated urban village datasets. S2UV dataset (Chen et al, 2022 a) consists of paired satellite and street view images of urban villages as well a",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_43",
+    "text": "(Chen et al, 2022 a) consists of paired satellite and street view images of urban villages as well as their labels collected in Beijing, Tianjin, and Shijiazhuang. UV-SAM dataset (Zhang et al, 2024) is composed of satellite imagery and associated mask images (indicating the boundaries of urban villages) of Beijing and Xi’an. However, these datasets doesn’t include public available geospatial coordinates. In addition, there are over 2000 building footprints within urban villages annotated but without any geospatial reference as well (Liu et al, 2020). The lacking of geospatial data of urban villages further shows the need and urgency for urban village mapping research. 5 Approaches for urban village mapping In this section, we review and summarize the approaches for urban village mapping ba",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_44",
+    "text": "village mapping In this section, we review and summarize the approaches for urban village mapping based on two key dimensions: (1) the input data (i. e., remote sensing-based vs. multisource data-based) and (2) the underlying methodological philosophies (i. e., classification-oriented vs. segmentation-oriented). While ‘classification-oriented’ 1https://www. openstreetmap. org 11\n\nand ‘segmentation-oriented’ paradigms may exhibit technical overlaps, they embody fundamentally different perspectives in spatial pattern recognition: • Classification-oriented approaches are object-oriented, typically following a two-step workflow: first delineating basic study units (e. g., objects, parcels, grids) and then classifying them. In this paradigm, features of the study units are usually extracted and",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_45",
+    "text": ") and then classifying them. In this paradigm, features of the study units are usually extracted and classified independently, with limited consideration of spatial relationships between units. The delineation of study units is critical as it determines the effective spatial resolution of the analysis. These methods are particularly suitable for integrating multisource data with varying spatial resolutions and accuracies, as well as for scenarios involving predefined study units. • Segmentation-oriented approaches adopt a pixel-based perspective, referring to semantic/instance segmentation techniques that directly partition images at the pixel level while modeling spatial context through neighboring pixel relationships. These approaches leverage automatic feature learning via deep neural n",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_46",
+    "text": "ghboring pixel relationships. These approaches leverage automatic feature learning via deep neural networks in an end-to-end workflow, seamlessly integrating feature extraction and classification. This paradigm generates coherent regions rather than independent study units, making it suitable for applications that require fine-grained boundary delineation. In addition, we summarize the performance evaluation metrics for both types of approaches following the review of methods. 5.1 Remote sensing-based approaches Currently, most research on urban village mapping in China relies solely on remote sensing images, with a focus on intelligent interpretation using VHR remote sensing images. 5.1.1 Classification-oriented approaches Earlier research on urban village mapping has primarily relied on",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_47",
+    "text": "lassification-oriented approaches Earlier research on urban village mapping has primarily relied on remote sensing images and utilized classification-oriented approaches, with object-based and scenebased methods being the most prevalent. Object-Based Image Analysis (OBIA) (Blaschke et al, 2014) is commonly employed for mapping urban villages. For instance, D’Oleire-Oltmanns et al (2011) presents an OBIA-based method that utilizes various sources of satellite images for this purpose. In contrast, scene-based classification focuses on larger areas, typically encompassing several hundred meters. Huang et al (2015) introduces a scene-based semantic feature that outperforms traditional Bag of Visual Words (Bo VW) and Linear Discriminant Analysis (LDA) features, subsequently applying Support Vec",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_48",
+    "text": "ual Words (Bo VW) and Linear Discriminant Analysis (LDA) features, subsequently applying Support Vector Machines (SVM) and Random Forests (RF) for scene-level classification. Additionally, Li et al (2017) proposes an unsupervised deep feature learning method to extract deep features from scene-level images, using SVM for classification. Similarly, Liu et al (2017) employs landscape metrics and transfer learning for classifying scene images, again utilizing RF and SVM for the classification process. 12\n\n5.1.2 Segmentation-oriented approaches With the advancement of deep learning, end-to-end image segmentation has become more feasible and effective, leading to an increasing number of studies on urban village mapping that employ deep neural network-based segmentation models. These studies fra",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_49",
+    "text": "n urban village mapping that employ deep neural network-based segmentation models. These studies frame urban village mapping as an image segmentation challenge using remote sensing images, leveraging deep neural networks for both semantic and instance segmentation as well as boundary extraction. For example, Chen et al (2019) approaches urban village mapping as an instance segmentation problem, utilizing Mask R-CNN (He et al, 2017) to segment urban village areas on Xiamen Island using VHR Google Earth imagery. Similarly, Mast et al (2020) employs a fully convolutional network (FCN) (Long et al, 2015) to map urban village areas in Shenzhen based on Google Earth imagery. Further advancing this field, Wei et al (2023 a) compares various fully convolutional neural networks, including FCN (Long",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_50",
+    "text": "field, Wei et al (2023 a) compares various fully convolutional neural networks, including FCN (Long et al, 2015), UNet (Ronneberger et al, 2015), and Res UNet (Zhang et al, 2018), to segment urban village areas from Gaofen-2 satellite imagery. Additionally, Pan et al (2020) utilizes UNet (Ronneberger et al, 2015) to analyze World View-2 satellite imagery for detecting and classifying buildings within urban villages in Guangzhou. Beyond fully convolutional neural networks, Zhang et al (2024) adapts the latest Segment Anything Model (SAM) (Kirillov et al, 2023) for specialized urban village segmentation. Some research explicitly addresses the transferability of methods; for instance, Shi et al (2020 a) considers urban village mapping as a semantic segmentation problem and employs deep adver",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_51",
+    "text": "l (2020 a) considers urban village mapping as a semantic segmentation problem and employs deep adversarial domain adaptation techniques to enhance segmentation results across Shenzhen and Guangzhou. Emerging studies are also beginning to explore the use of freely available, lower-resolution satellite imagery. Notably, Crivellari et al (2023) employs super-resolution generative adversarial networks (SR-GANs) to upscale Sentinel-2 imagery, subsequently addressing it as a semantic segmentation problem using Res UNet. 5.1.3 Summary The process of urban village detection using remote sensing images has evolved significantly. Initially, it relied on handcrafted features and traditional machine learning algorithms for image classification. These early methods required the delineation of study uni",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_52",
+    "text": "rning algorithms for image classification. These early methods required the delineation of study units first, which limited the resolution of the results and often resulted in lower accuracy. In contrast, modern deep learning approaches automate feature extraction, enabling the handling of complex images and scenes, thereby improving segmentation and classification accuracy. However, these advanced models face challenges, particularly regarding explainability and potential overfitting in limited areas. Future research should focus on enhancing the interpretability as well as the scalability and transferability of these models. Additionally, urban village detection results often suffer from fragmentation, necessitating further post-processing steps, such as image morphology operations (Chen",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_53",
+    "text": "ragmentation, necessitating further post-processing steps, such as image morphology operations (Chen et al, 2022 b). Furthermore, super-resolution methods show promise for utilizing lower-resolution yet accessible remote sensing imagery for large-area and long-period urban village mapping (Crivellari et al, 2023). 13\n\n5.2 Multisource data-based approaches Due to the complex internal structure of urban villages and significant differences in spatial form and external landscape, a single remote sensing image often cannot effectively identify them. Therefore, research on the identification of urban villages based on multisource data fusion (including street view images (Chen et al, 2022 a; Fan et al, 2022 b; Huang et al, 2023), POI data (Chen et al, 2022 b; Xiao et al, 2023), road network dat",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_54",
+    "text": "et al, 2022 b; Huang et al, 2023), POI data (Chen et al, 2022 b; Xiao et al, 2023), road network data (Chen et al, 2021), building footprint data (Fan et al, 2022 a), vehicle trajectory data (Chen et al, 2021, 2022 b; Huang et al, 2023), mobile positioning data (Fan et al, 2022 c), etc.) has gradually attracted attention recently. 5.2.1 Classification-oriented approaches For data sources beyond remote sensing images, classification-based approaches are often preferred due to the typically coarser spatial resolutions and varying levels of accuracy. This makes it more natural to integrate these data sources into study units with coarser resolutions. Various scales of study units have been explored, including pixel (Chen et al, 2022 b), object (D’Oleire-Oltmanns et al, 2011), building (Niu an",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_55",
+    "text": "ored, including pixel (Chen et al, 2022 b), object (D’Oleire-Oltmanns et al, 2011), building (Niu and Jin, 2020), grid (Huang et al, 2023), land parcel (Fan et al, 2022 a), and scene (Huang et al, 2015). For instance, Chen et al (2022 b) introduces a coarse-to-fine hierarchical recognition method for pixel-level urban village classification, utilizing SPOT-5 satellite imagery, POI, and taxi trajectories. The method first segments the satellite imagery using an OBIA approach to identify potential urban village objects, followed by pixel-level classification based on these identified objects. Both pixel and object classifications extract handcrafted features and deep features from the satellite imagery, along with handcrafted features derived from POI and taxi trajectories. At the grid level",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_56",
+    "text": "e imagery, along with handcrafted features derived from POI and taxi trajectories. At the grid level, Huang et al (2023) proposes a deep learning-based approach that integrates satellite imagery, street view images, and taxi GPS trajectories to identify urban villages. Similarly, Chen et al (2022 a) presents a dual-branch deep neural network that integrates remote sensing and street view images at the grid level. Several studies focus on land parcel-level analysis as well, exploring deep neural network-based fusion methods to integrate satellite images with street view images (Fan et al, 2022 b), time-series human activity data (Fan et al, 2022 c), and building footprint data (Fan et al, 2022 a) for urban village mapping. Wei et al (2023 b) maps urban villages in Beijing using Gaofen-1 sat",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_57",
+    "text": "2 a) for urban village mapping. Wei et al (2023 b) maps urban villages in Beijing using Gaofen-1 satellite imagery, OSM road networks, and a random forest classifier, focusing on block-level analysis, which is similar to land parcel studies. While most studies treat study units as independent entities, some research seeks to enhance classification performance by leveraging the inter-correlation among study units. For instance, Xiao et al (2023) proposes a graph neural network-based approach to integrate remote sensing imagery and POI data for urban village detection at the grid level. Furthermore, in addition to integrating remote sensing images with other data sources, some studies explore methods that do not rely on remote sensing imagery at all. Li et al (2023) proposes using deep neura",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_58",
+    "text": "methods that do not rely on remote sensing imagery at all. Li et al (2023) proposes using deep neural networks and POI data alone to map urban villages at the grid level. 14\n\n5.2.2 Segmentation-oriented approaches While classification-based approaches are commonly used, they are not the only option. Some research focuses on integrating multiple data sources for urban village mapping using segmentation-oriented methods. For instance, Chen et al (2021) combines remote sensing imagery, road networks, and shared bike trajectories to define urban village boundaries and subsequently predict population distribution in Xiamen and Shanghai. This study employs a two-stage process for urban village mapping: the first stage delineates coarse land parcel boundaries using road networks and bike trajecto",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_59",
+    "text": "ping: the first stage delineates coarse land parcel boundaries using road networks and bike trajectories, while the second stage utilizes Mask R-CNN to segment remote sensing imagery, guided by the initial land parcel boundaries. 5.2.3 Summary The identification of urban villages through the fusion of multisource data typically employs a classification-based approach. This process usually begins with the division of spatial units to accommodate data with varying spatial resolutions. The subsequent steps closely resemble those of classification methods based on remote sensing images, with the added requirement of extracting and fusing features from the multisource data. Alternatively, one can view the additional data as a prior constraint, allowing for semantic segmentation of remote sensin",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_60",
+    "text": "view the additional data as a prior constraint, allowing for semantic segmentation of remote sensing images within that framework. While the former approach is limited by the resolution of the study units, the latter assumes that the additional data is sufficiently accurate. Generally, multisource data fusion approaches face transferability challenges due to the difficulties in obtaining diverse datasets, particularly mobility data that raises privacy concerns. This issue becomes more pronounced when analyzing large areas over extended time periods. Future research may focus on leveraging multisource data for coarse detection or targeting particularly challenging areas (Chen et al, 2022 b). 5.3 Performance evaluation For performance evaluation of urban village mapping, the evaluation metr",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_61",
+    "text": "5.3 Performance evaluation For performance evaluation of urban village mapping, the evaluation metrics can be categorized into two types, i. e., classification-based and segmentation-based. For classification-oriented approaches, the classification metrics are used for performance evaluation, such as overall classification accuracy (CA), detection accuracy (precision, recall, F1-score), Kappa coefficient (κ). CA = |TP| + |TN| |TP| + |TN| + |FP| + |FN| (1) precision = |TP| |TP| + |FP|, recall = |TP| |TP| + |FN|, F1-score = 2 · precision · recall precision + recall (2) κ = p o − p e 1 − p e (3) 15\n\nwhere |TP| and |TN| are the numbers of urban villages and non-urban villages that are correctly classified respectively, while |FP| and |FN| are the numbers of wrongly classified urban villages a",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_62",
+    "text": "classified respectively, while |FP| and |FN| are the numbers of wrongly classified urban villages and non-urban villages respectively. In Kappa coefficient, p o is the relative observed agreement among raters (the same as the classification accuracy CA), which is the proportion of agreement between the classification results and the ground truth data; p e is the hypothetical probability of chance agreement, which is calculated based on the marginal totals of the confusion matrix. The Kappa coefficient ranges from -1 to 1. A higher Kappa coefficient indicates better agreement between classification results and ground truth data, while a lower coefficient suggests poorer agreement. For segmentation-oriented approaches, segmentation accuracy is often used, such as intersection over union (Io",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_63",
+    "text": "tation-oriented approaches, segmentation accuracy is often used, such as intersection over union (Io U). Io U = |{ground-truth pixels} ∩ {detected pixels}| |{ground-truth pixels} ∪ {detected pixels}| (4) As current research is conducted in different study areas and with various study units, and even with different evaluation metrics, the urban village mapping performances often cannot be directly compared across studies. For instance, taking Shenzhen and Beijing as examples, there is significant variation in the performance of urban village detection. In studies using remote sensing imagery alone, reported classification accuracies of classification-oriented approaches in Shenzhen range from 79% (Huang et al, 2015) to over 98% (Li et al, 2017; Chen et al, 2023), while in Beijing the report",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_64",
+    "text": "79% (Huang et al, 2015) to over 98% (Li et al, 2017; Chen et al, 2023), while in Beijing the reported results range from 82% (Li et al, 2023) to 95% (Wei et al, 2023 b). For segmentation-oriented approaches using Io U as an evaluation metric, the reported performances in Shenzhen range from 68% (Shi et al, 2020 a) to over 85% (Fan et al, 2022 a). In contrast, in Beijing, the Io U is reported at around 72% (Zhang et al, 2024). Additionally, within the same city, different areas or different study units can lead to significant variations in detection performance. This on the one hand highlights the complexity of urban village monitoring and the challenge of adapting detection methods to varied urban landscapes and data conditions, on the other hand also accentuates the current need for rese",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_65",
+    "text": "d urban landscapes and data conditions, on the other hand also accentuates the current need for research of large-area mapping. For methods that integrate multiple sources of data, reported performances generally are improved noticeably. For example, in Shenzhen, combining street view image data with high-resolution remote sensing imagery has increased classification accuracy by over 4% compared using remote sensing imagery alone (Fan et al, 2022 b). Furthermore, integrating Tencent population density data with high-resolution remote sensing imagery has increased the overall accuracy by 10% (Fan et al, 2022 c). This indicates that multisource data fusion can significantly enhance the recognition performance of urban villages. It is also of note that current evaluation metrics all take the",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_66",
+    "text": "tion performance of urban villages. It is also of note that current evaluation metrics all take the identification task as hard boundary detection, which ignores the ambiguity and fuzziness of the boundaries of urban villages (as discussed in Section 6.1). It is worth to evaluate the performance taking the uncertainty into consideration in the future regarding the inherent ambiguity of the task. 16\n\n6 Challenges and future directions for large-area urban village mapping Overall, compared to informal settlements mapping in non-Chinese context, current research on the identification of urban villages in Chinese cities is relatively scarce. To facilitate future research, we identify the challenges and point out the future directions for large-area urban village mapping. 6.1 Contextual ambigui",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_67",
+    "text": "ges and point out the future directions for large-area urban village mapping. 6.1 Contextual ambiguity and fuzzy boundaries As mentioned in Section 2, “urban villages” have different connotations in various contexts, and they exhibit diverse landscapes and morphology. Current research targets are varied and lack a unified definition for “urban villages”, which poses a significant challenge for large-area urban village mapping in China. A detailed comparison of “urban village” and terms with similar contextual meanings is presented in Table 1, which helps to alleviate contextual ambiguity issues. The ambiguity in definition and context also results in unclear boundaries for urban villages. Under the current task settings, hard boundaries need to be established, which do not accurately refle",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_68",
+    "text": "der the current task settings, hard boundaries need to be established, which do not accurately reflect the fuzziness of the semantic connotation of urban villages. This characteristic is also shared by slums (Kohli et al, 2016; Pratomo et al, 2017). In addition, this fuzziness also reflect on the choice of basic study units. Actually, there is a lack of uniformity in the basic spatial units and identification tasks of research. Due to differences in understanding of urban villages, research areas, available data, etc., the basic spatial units for urban village identification research are not uniform, and there are various studies based on pixel (Chen et al, 2022 b), object (D’Oleire-Oltmanns et al, 2011), building (Niu and Jin, 2020), grid (Huang et al, 2023), land parcel (Fan et al, 2022",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_69",
+    "text": "et al, 2011), building (Niu and Jin, 2020), grid (Huang et al, 2023), land parcel (Fan et al, 2022 a), or scene (Huang et al, 2015), and other different scales, and the urban village identification tasks are correspondingly defined as segmentation or classification problems. Different spatial units offer distinct advantages and disadvantages. Pixel-based classification provides high resolution and detail but may be limited by computational demands and sensitivity to noise. Object-based classification enhances accuracy by incorporating spatial relationships and reducing noise but is more complex and dependent on segmentation quality. Building-based classification excels in urban areas by accurately identifying structures, though it is less useful in rural settings and requires high-resolut",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_70",
+    "text": "urately identifying structures, though it is less useful in rural settings and requires high-resolution data. Grid-based classification offers a balanced approach by organizing data into regular cells, but it may lose detail and is sensitive to grid size. Parcel-based classification is effective for land use analysis based on predefined boundaries but can be constrained by the accuracy of these boundaries. Scene-based classification provides a broad view of large areas, suitable for large-area patterns but may sacrifice detail and demand significant computational resources. In general, selecting the right spatial unit depends on the classification objectives, data characteristics, and the needed detail and accuracy. Consequently, directly comparing methods and results across various studie",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_71",
+    "text": "eded detail and accuracy. Consequently, directly comparing methods and results across various studies of urban village mapping presents significant challenges. These difficulties stem from the need to address the variance and ambiguity inherent in the contexts, boundaries, and study units of urban villages. To facilitate comprehensive mapping of urban villages 17\n\nover large areas, it is imperative for future research to precisely define what constitutes an urban village. Additionally, there should be a clear documentation of the methodologies used for delineating boundaries and selecting study units. This approach will ensure that benchmarking, comparison, and reproducibility are conducted fairly and effectively. 6.2 Data availability Although remote sensing imagery can cover large areas,",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_72",
+    "text": "fairly and effectively. 6.2 Data availability Although remote sensing imagery can cover large areas, it is not easy to acquire highquality VHR remote sensing images, especially for large cities. Covering an entire metropolis requires multiple scenes of costly VHR imagery, making it expensive to obtain. This issue is even more pronounced for time-series analysis of urban villages, which requires multi-temporal imagery. This is also part of the reason why many research only focus on part of the regions within a city (Huang et al, 2015). There are several cost-effective alternative data sources for VHR satellite imagery. The first choice is using online map services such as Google Earth, which has very-highresolution remote sensing imagery with almost global coverage and relatively reliable 2",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_73",
+    "text": "has very-highresolution remote sensing imagery with almost global coverage and relatively reliable 2D positional accuracy and has been extensively used for applications such as slum mapping (Potere, 2008; Yu and Gong, 2012; Kuffer et al, 2016). However, these data sources also suffer from data quality issues, such as distortion and inconsistent preprocessing. Another choice is trying to exploit freely available satellite imagery with relatively lower spatial resolution. For example, although Sentinel-2 imagery data are with the spatial resolution of 10 m, they have been explored and used for slum mapping in Mumbai, India (Wurm et al, 2017 b; Verma et al, 2019; Peng et al, 2023). In addition, the Sentinel-2 imagery has also been tested with super-resolution methods to enhance its spatial re",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_74",
+    "text": "the Sentinel-2 imagery has also been tested with super-resolution methods to enhance its spatial resolution for urban village mapping, which has been demonstrated to be effective (Crivellari et al, 2023). As the data-driven image super-resolution methods advance, it becomes increasingly promising (Wang et al, 2020, 2022). Other sources of data, such as POIs, street view images, vehicle trajectories, mobile phone positioning data, often provide social and economic attribute information and human activity information on the basis of geographical landscape information provided by remote sensing images, helping to enhance the identification ability of urban villages. However, these kinds of data usually are more difficult to acquire than remote sensing images, and they usually suffer from dat",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_75",
+    "text": "a usually are more difficult to acquire than remote sensing images, and they usually suffer from data sparsity and quality issues. In addition, time-series data are even more difficult to acquire. To accommodate the sparsity of the data sources, one way is to use hierarchical methods (Chen et al, 2022 b). To address the data missing issues, data imputation for multisource data fusion might be a viable way (Cao et al, 2020). While the limitations of the various data sources have been discussed in Section 4, there are more issues in the context of large-area mapping. Street view images provide invaluable visual context but are costly and have uneven coverage across different areas, with updates not always keeping pace with urban development. Their use is often restricted by licensing agreeme",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_76",
+    "text": "s not always keeping pace with urban development. Their use is often restricted by licensing agreements, making broad-scale access and up-todate imagery a challenge. POIs and road networks are critical for understanding the functional layout of urban villages. They are generally accessible through open-source 18\n\nplatforms, offering a cost-effective solution with reasonable quality. However, the accuracy of POIs can vary, and while road networks usually offer comprehensive coverage, the frequency of updates might not fully capture rapidly evolving urban landscapes. Building footprints are essential for spatial analysis in urban village mapping, providing moderate to high-quality data depending on source imagery. The main challenges lie in the variable coverage and the infrequency of update",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_77",
+    "text": "ng on source imagery. The main challenges lie in the variable coverage and the infrequency of updates, which may not reflect recent developments, though they are moderately accessible from both open-source and proprietary sources. Vehicle trajectories and mobile positioning data deliver highquality, granular insights into mobility patterns, crucial for urban planning and traffic management. Despite their value, the high cost, variable coverage, and significant privacy concerns limit their accessibility, making them less feasible for widespread use in large-scale urban village mapping projects. In consolidating data for large-area urban village mapping, the balance between availability, cost, quality, coverage, and granularity becomes pivotal. Each data type’s characteristics must be carefu",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_78",
+    "text": "quality, coverage, and granularity becomes pivotal. Each data type’s characteristics must be carefully considered to effectively capture the complex nature of urban village environments. While integrating diverse data sources for urban village mapping across all the study areas can be challenging and oftentimes infeasible, especially in the context of large-area mapping; one promising future direction is to leverage these sources to identify urban villages in difficult-to-map regions, which could enhance model performance. Additionally, these data sources can serve as reference for cross-checking information in more typical areas, helping to label high-quality urban village data for training and validation purposes. 6.3 Scalability and transferability of approaches Currently, there is ins",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_79",
+    "text": "g and validation purposes. 6.3 Scalability and transferability of approaches Currently, there is insufficient attention paid to the scalability and transferability of urban village mapping methods both in space and time dimensions in order to expand the proposed approaches to cover larger areas and longer time periods. In the context of urban village detection algorithms, scalability refers to the algorithm’s ability to handle growing data volumes and complexity efficiently, while transferability denotes its capacity to be adapted effectively to different geographic regions or urban environments. Together, these qualities ensure that the algorithm remains both robust and versatile across various contexts and data scales. As mentioned in Section 4, due to the limitations of current research",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_80",
+    "text": "ious contexts and data scales. As mentioned in Section 4, due to the limitations of current research within a single city or a few cities, the performance evaluation of identification methods often cannot well reflect the transferability across regions. On the other hand, as the identification of urban villages is still in a relatively early stage, there is relatively limited research beyond accuracy evaluation to account for transferability explicitly (Shi et al, 2020 a). There are also rare research about the various landscape and morphology of urban villages (Liu et al, 2017), which is highly likely to be connected to model transferability according to the patterns exhibited by slums (Taubenb¨ock et al, 2018). Furthermore, in the context of multisource data-based approaches, it is essen",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_81",
+    "text": "benb¨ock et al, 2018). Furthermore, in the context of multisource data-based approaches, it is essential to consider additional data sources beyond remote sensing images; however, acquiring these additional data sources can be even more challenging, posing a barrier to the scalability and 19\n\ntransferability of these approaches. As a result, it becomes difficult to compare current methods on an equal and direct basis, highlighting the necessity for benchmarks to facilitate fair comparisons. Besides in space, there is also limited research extended in temporal dimension. For remote sensing-based approaches, the spatial-temporal analysis of urban villages requires for time-series satellite imagery data and also demands for transferable methods across data of different time periods (Huang et",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_82",
+    "text": "gery data and also demands for transferable methods across data of different time periods (Huang et al, 2015; Liu et al, 2017; Wei et al, 2023 b). In addition, it is challenging to detect changes through time-series data per se (Shi et al, 2020 b; Wen et al, 2021), the situation is even more pronounced for urban village mapping since there are consensus issues regarding the boundaries. As for multisource data-based approaches, data sources such as street view images, mobility data, and building information, are not applicable to all cities, and acquiring multi-temporal data is even more challenging, which further limits their scalability and transferability for temporal analysis. 6.4 Potential applications and associated challenges Timely and accurate urban village maps are crucial for und",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_83",
+    "text": "al applications and associated challenges Timely and accurate urban village maps are crucial for understanding the social dynamics of cities and promoting sustainable urban development. These maps can be analyzed independently or alongside other spatial data, such as population density and infrastructure provision. This combined analysis reveals the spatio-temporal profiles of urban villages from multiple perspectives. On the spatial dimension, examining the spatial distribution of urban villages reveals various patterns across different regions. For instance, analyzing rank-size distributions or landscape indices can highlight the regional heterogeneity in the spatial patterns of urban villages (Friesen et al, 2018). On the temporal dimension, analyzing dynamic maps of urban villages to r",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_84",
+    "text": "ages (Friesen et al, 2018). On the temporal dimension, analyzing dynamic maps of urban villages to reveal the trends of urban village growth is helpful for understanding the urban dynamic mechanism in the context of urbanization. These analyses allow urban designers and planners to have a better understanding of urban villages and formulate a holistic strategy to transform urban villages, thereby improving the living conditions of urban populations experiencing poverty. Demographic profiles of urban villages represent another valuable application of these maps. By integrating spatial demographic data with urban village maps, planners and policymakers can gain deeper insights into the socioeconomic characteristics of urban village residents. This combined analysis can reveal disparities in",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_85",
+    "text": "onomic characteristics of urban village residents. This combined analysis can reveal disparities in demographic profiles such as age, gender, income, education, and employment, which in turn can inform targeted interventions to address inequality and promote inclusive urban development. The advancement of information and communication technologies has led to the growing availability of extensive spatial demographic data, including open data sources (e. g., World Pop (Tatem, 2017), Land Scan (Dobson et al, 2000)), mobile phone positioning data (Deville et al, 2014), government official census data, etc. However, these existing datasets generally lack specific background information on urban villages. Urban village maps can help enrich these datasets, enhancing the analysis of demographic pr",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_86",
+    "text": "illages. Urban village maps can help enrich these datasets, enhancing the analysis of demographic profiles within urban villages and supporting more informed and effective urban planning. 20\n\nThe main challenges in applying urban village maps primarily involve issues of compatibility. Compatibility can be influenced by two key factors: ambiguity and spatial resolution. Firstly, ambiguity in definition and context, as discussed in Section 6.1, can lead to the misuse of urban village maps across various domains. For example, some urban village redevelopment projects in urban planning focus solely on buildings, while others consider urban villages as communities, including surrounding public spaces and infrastructure. Users of urban village maps must ensure that the data’s definition aligns w",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_87",
+    "text": "aces and infrastructure. Users of urban village maps must ensure that the data’s definition aligns with their project’s needs and carefully select the appropriate spatial units. Secondly, adequate spatial resolution is crucial for effective application. Urban villages typically encompass neighborhood-scale spaces, requiring detailed spatial information for urban planning case studies. Additionally, spatial resolution affects the compatibility with other spatial data. A high-resolution urban village map can be easily downsampled to match other datasets with any spatial scales. However, excessively detailed spatial information can raise ethical concerns, which will be discussed in the next section (Section 6.5). 6.5 Ethical issues Urban villages normally reflect the places where migrant urba",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_88",
+    "text": "tion (Section 6.5). 6.5 Ethical issues Urban villages normally reflect the places where migrant urban residents with relatively low income gathered (Zheng et al, 2009; Gao et al, 2018). Thus, there is a risk of ethical issues of revealing the precise locations of urban villages, and it may lead to privacy issues, stigmatization, security issues, and even evictions of migrants (Kuffer et al, 2016). Therefore, cautiousness is needed to publish the urban village map data to the public. There are several strategies to navigate the potential risks. The first is to add certain constraints to the data accessibility, such as providing data on request and only with the consent of certain promise of no violation of data abuse. Another strategy is to deliberately decrease the accuracy of published da",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_89",
+    "text": "o violation of data abuse. Another strategy is to deliberately decrease the accuracy of published data by techniques such as aggregation to coarse scales, for example, using grids of spatial resolution of several hundred meters or aggregating to county-level administrative regions. The strategies can also be combined, with coarse data publicly available and fine-grained data on request. In a word, we need to handle these urban village map data carefully to prevent good intentions from leading to negative outcomes. 6.6 Summary In the context of large-area urban village mapping, the aforementioned challenges in contextual definition, available data, identification approaches, downstream applications, as well as ethical issues take on specific dimensions and importance that are specific to th",
+    "section": "unknown",
+    "char_start": 61600,
+    "char_end": 62400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_90",
+    "text": "ations, as well as ethical issues take on specific dimensions and importance that are specific to the task and require considerable efforts to address them in the future work. In addition to these specific challenges and associated research directions, there are also general challenges highly relevant with the task. The cost and processing time become significant considerations given the vast areas to be covered and the detailed analysis required. The validation of model outcomes is crucial in this setting, as inaccuracies can lead to misrepresentation of communities, potentially affecting urban planning and policy decisions. Fieldwork, although challenging, becomes indispensable for validating the results obtained through remote sensing and AI models. Initiating a 21\n\ncrowdsourcing progra",
+    "section": "unknown",
+    "char_start": 62300,
+    "char_end": 63100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_91",
+    "text": "ing the results obtained through remote sensing and AI models. Initiating a 21\n\ncrowdsourcing program to enable effective and efficient data collection and validation can be a promising direction. Moreover, the uncertainties and interpretation of models also pose a particular challenge in the context of urban village mapping. Urban villages are complex socio-economic entities, and their representation through models requires careful consideration of various factors and indicators. Communicating these model results to end-users or stakeholders, including urban planners, local governments, and the residents of the urban villages themselves, is vital. On the other hand, the opportunities provided by recent advancements in cloud computing, deep learning, geospatial processing software, and exp",
+    "section": "unknown",
+    "char_start": 63000,
+    "char_end": 63800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_92",
+    "text": "ed by recent advancements in cloud computing, deep learning, geospatial processing software, and explainable AI algorithms (Cao et al, 2023 a) are particularly relevant in tackling the complexities of mapping large-area urban villages. These technological advancements can help in accurately identifying and delineating urban village boundaries, understanding their spatial patterns, and monitoring their change over time. The success of large-area urban village mapping projects depends not only on the accuracy of the maps produced but also on how these maps are used to inform urban development and improve the lives of urban village residents. Thus, addressing these challenges and leveraging the available opportunities is crucial for the advancement of large-area urban village mapping endeavor",
+    "section": "unknown",
+    "char_start": 63700,
+    "char_end": 64500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_93",
+    "text": "available opportunities is crucial for the advancement of large-area urban village mapping endeavors. 7 Conclusion With the shift to high-quality urbanization, “urban villages” have become an increasingly prominent social problem. Despite the significance of studying urban villages, there are scarce spatial urban village data available. Thus, it is of high importance for urban village mapping. To investigate the latest progress made in urban village mapping and point out challenges and future directions, we make a comprehensive review, which to the best of our knowledge is the first in this field. Our thorough investigation reveals that current studies on urban village mapping are limited in terms of study areas and periods, and they insufficiently address the scalability, transferability",
+    "section": "unknown",
+    "char_start": 64400,
+    "char_end": 65200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_94",
+    "text": "n terms of study areas and periods, and they insufficiently address the scalability, transferability, and interpretability of identification approaches. This shortfall arises from challenges such as concept fuzziness, spatial heterogeneity, and data availability. To advance research and facilitate large-area urban village mapping nationwide, future efforts can focus on the following potential directions: 1) establishing a unified standard for urban villages in China to accommodate significant variances and fuzzy concepts; 2) tackling data availability challenges by flexibly utilizing available multisource data and exploring the potential of data-driven image super-resolution techniques; 3) creating public benchmarks to ensure fair comparisons while emphasizing the scalability, transferabil",
+    "section": "unknown",
+    "char_start": 65100,
+    "char_end": 65900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_95",
+    "text": "reating public benchmarks to ensure fair comparisons while emphasizing the scalability, transferability, and interpretability of urban village recognition methods; and 4) initiating a crowdsourcing program to enhance data collection, validation, and application efficiency. The review not only facilitates urban village-related research in China, but also benefits the global informal settlements mapping research and the realization of the United Nations’ Sustainable Development Goals by contributing knowledge from a Chinese perspective. Acknowledgments. This work is supported by the Guangzhou-HKUST(GZ) Joint Funding Program (No. 2025 A 03 J 3639), the Guangdong provincial project (No. 22\n\n2023 QN 10 H 717), the National Natural Science Foundation of China (No. 42101472), Shenzhen Science and",
+    "section": "unknown",
+    "char_start": 65800,
+    "char_end": 66600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_96",
+    "text": "QN 10 H 717), the National Natural Science Foundation of China (No. 42101472), Shenzhen Science and Technology Program (No. JCYJ 20220818100200001), the Innovation Team of the Department of Education of Guangdong Province (No. 2024 KCXTD 013), and the Center for Scientific Research and Development in Higher Education Institutes, MOE, China (No. 2024 HT 013). References Abascal A, Rothwell N, Shonowo A, et al (2022) “Domains of deprivation framework” for mapping slums, informal settlements, and other deprived areas in LMICs to improve urban planning and policy: A scoping review. Computers, Environment and Urban Systems 93:101770. https://doi. org/10.1016/j. compenvurbsys.2022.101770 Blaschke T, Hay GJ, Kelly M, et al (2014) Geographic Object-Based Image Analysis – Towards a new paradigm. I",
+    "section": "unknown",
+    "char_start": 66500,
+    "char_end": 67300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_97",
+    "text": "T, Hay GJ, Kelly M, et al (2014) Geographic Object-Based Image Analysis – Towards a new paradigm. ISPRS Journal of Photogrammetry and Remote Sensing 87:180–191. https://doi. org/10.1016/j. isprsjprs.2013.09.014 Cao R, Tu W, Yang C, et al (2020) Deep learning-based remote and social sensing data fusion for urban region function recognition. ISPRS Journal of Photogrammetry and Remote Sensing 163:82–97 Cao R, Gao QL, Qiu G (2023 a) Responsible Urban Intelligence: Towards a Research Agenda. In: Spatial Data Science Symposium 2023 Short Paper Proceedings Cao R, Liao C, Li Q, et al (2023 b) Integrating satellite and street-level images for local climate zone mapping. International Journal of Applied Earth Observation and Geoinformation 119:103323. https://doi. org/10.1016/j. jag.2023.103323 Che",
+    "section": "unknown",
+    "char_start": 67200,
+    "char_end": 68000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_98",
+    "text": "ied Earth Observation and Geoinformation 119:103323. https://doi. org/10.1016/j. jag.2023.103323 Chen B, Feng Q, Niu B, et al (2022 a) Multi-modal fusion of satellite and streetview images for urban village classification based on a dual-branch deep neural network. International Journal of Applied Earth Observation and Geoinformation 109:102794. https://doi. org/10.1016/j. jag.2022.102794 Chen D, Tu W, Cao R, et al (2022 b) A hierarchical approach for fine-grained urban villages recognition fusing remote and social sensing data. International Journal of Applied Earth Observation and Geoinformation 106:102661. https://doi. org/10. 1016/j. jag.2021.102661 Chen D, Li Q, Tu W, et al (2023) Hierarchical Spatial Recognition Method for Urban Villages by Integrating Multi-source Geospatial Data. G",
+    "section": "unknown",
+    "char_start": 67900,
+    "char_end": 68700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_99",
+    "text": "rchical Spatial Recognition Method for Urban Villages by Integrating Multi-source Geospatial Data. Geomatics and Information Science of Wuhan University 48(5):784–792. https://doi. org/10.13203/j. whugis 20200691 Chen L, Xie T, Wang X, et al (2019) Identifying urban villages from city-wide satellite imagery leveraging mask R-CNN. In: Adjunct Proceedings of the 2019 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2019 ACM International Symposium on Wearable Computers. Association 23\n\nfor Computing Machinery, London, United Kingdom, Ubi Comp/ISWC ’19 Adjunct, pp 29–32, https://doi. org/10.1145/3341162.3355269 Chen L, Lu C, Yuan F, et al (2021) UVLens: Urban Village Boundary Identification and Population Estimation Leveraging Open Government Dat",
+    "section": "unknown",
+    "char_start": 68600,
+    "char_end": 69400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_100",
+    "text": "Lens: Urban Village Boundary Identification and Population Estimation Leveraging Open Government Data. In: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, pp 57:1– 57:26, https://doi. org/10.1145/3463495 Crivellari A, Wei H, Wei C, et al (2023) Super-resolution GANs for upscaling unplanned urban settlements from remote sensing satellite imagery – the case of Chinese urban village detection. International Journal of Digital Earth 16(1):2623–2643. https://doi. org/10.1080/17538947.2023.2230956 Cui C, Zhao L, Ren H, et al (2022) Integrating high-resolution remote sensing and street view images to identify urban villages: A case study in Yuexiu District, Guangzhou City. National Remote Sensing Bulletin 26(9):1802–1813 Deville P, Linard C, Martin S, et al (2",
+    "section": "unknown",
+    "char_start": 69300,
+    "char_end": 70100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_101",
+    "text": "gzhou City. National Remote Sensing Bulletin 26(9):1802–1813 Deville P, Linard C, Martin S, et al (2014) Dynamic population mapping using mobile phone data. Proceedings of the National Academy of Sciences 111(45):15888–15893 Dobson JE, Bright EA, Coleman PR, et al (2000) Landscan: a global population database for estimating populations at risk. Photogrammetric engineering and remote sensing 66(7):849–857 D’Oleire-Oltmanns S, Coenradie B, Kleinschmit B (2011) An Object-Based Classification Approach for Mapping Migrant Housing in the Mega-Urban Area of the Pearl River Delta (China). Remote Sensing 3(8):1710–1723. https://doi. org/10. 3390/rs 3081710 Du S, Du S, Liu B, et al (2020) Large-scale urban functional zone mapping by integrating remote sensing images and open social data. GIScience &",
+    "section": "unknown",
+    "char_start": 70000,
+    "char_end": 70800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_102",
+    "text": "urban functional zone mapping by integrating remote sensing images and open social data. GIScience & Remote Sensing 57(3):411–430 Fan R, Li F, Han W, et al (2022 a) Fine-Scale Urban Informal Settlements Mapping by Fusing Remote Sensing Images and Building Data via a Transformer-Based Multimodal Fusion Network. IEEE Transactions on Geoscience and Remote Sensing 60:1–16. https://doi. org/10.1109/TGRS.2022.3204345 Fan R, Li J, Li F, et al (2022 b) Multilevel Spatial-Channel Feature Fusion Network for Urban Village Classification by Fusing Satellite and Streetview Images. IEEE Transactions on Geoscience and Remote Sensing 60:1–13. https://doi. org/10.1109/ TGRS.2022.3208166 Fan R, Li J, Song W, et al (2022 c) Urban informal settlements classification via a transformer-based spatial-temporal fu",
+    "section": "unknown",
+    "char_start": 70700,
+    "char_end": 71500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_103",
+    "text": "et al (2022 c) Urban informal settlements classification via a transformer-based spatial-temporal fusion network using multimodal remote sensing and time-series human activity data. International Journal of Applied Earth Observation and Geoinformation 111:102831. https://doi. org/10.1016/j. jag.2022. 24\n\n102831 Feng D, Zhang Z, Shi H (2021 a) Fine extraction of urban villages in provincial capitals based on multivariate data. Remote Sensing for Natural Resources 33(3):272–278 Feng Q, Chen B, Niu B, et al (2021 b) Identification of Urban Villages from Remote Sensing Image Based on Multi-scale Dilated Convolutional Neural Network. Transactions of the Chinese Society for Agricultural Machinery 52(11):181–189+218 Friesen J, Taubenb¨ock H, Wurm M, et al (2018) The similar size of slums. Habitat",
+    "section": "unknown",
+    "char_start": 71400,
+    "char_end": 72200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_104",
+    "text": "52(11):181–189+218 Friesen J, Taubenb¨ock H, Wurm M, et al (2018) The similar size of slums. Habitat International 73:79–88. https://doi. org/10.1016/j. habitatint.2018.02.002 Gao QL, Li QQ, Yue Y, et al (2018) Exploring changes in the spatial distribution of the low-to-moderate income group using transit smart card data. Computers, Environment and Urban Systems 72:68–77 Gao QL, Yue Y, Tu W, et al (2021) Segregation or integration? exploring activity disparities between migrants and settled urban residents using human mobility data. Transactions in GIS 25(6):2791–2820 Guangzhou Municipal Planning and Natural Resources Bureau (2024) Special plan for the transformation of urban villages in guangzhou city (2021-2035) He K, Gkioxari G, Doll´ar P, et al (2017) Mask r-cnn. In: Proceedings of the",
+    "section": "unknown",
+    "char_start": 72100,
+    "char_end": 72900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_105",
+    "text": "ngzhou city (2021-2035) He K, Gkioxari G, Doll´ar P, et al (2017) Mask r-cnn. In: Proceedings of the IEEE international conference on computer vision, pp 2961–2969 He Y, He Y (2018) Urban shanty town recognition based on high-resolution remote sensing images and national geographical monitoring features – A case study of Nanning City. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences XLII-3:517–522. https://doi. org/10.5194/ isprs-archives-XLII-3-517-2018 Herfort B, Lautenbach S, Porto de Albuquerque J, et al (2023) A spatio-temporal analysis investigating completeness and inequalities of global urban building data in Open Street Map. Nature Communications 14(1):3985. https://doi. org/10.1038/ s 41467-023-39698-6 Huang X, Liu H, Zhang L (2015",
+    "section": "unknown",
+    "char_start": 72800,
+    "char_end": 73600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_106",
+    "text": "mmunications 14(1):3985. https://doi. org/10.1038/ s 41467-023-39698-6 Huang X, Liu H, Zhang L (2015) Spatiotemporal Detection and Analysis of Urban Villages in Mega City Regions of China Using High-Resolution Remotely Sensed Imagery. IEEE Transactions on Geoscience and Remote Sensing 53(7):3639–3657. https://doi. org/10.1109/TGRS.2014.2380779 Huang Y, Zhang F, Gao Y, et al (2023) Comprehensive urban space representation with varying numbers of street-level images. Computers, Environment and Urban Systems 106:102043. https://doi. org/10.1016/j. compenvurbsys.2023.102043 25\n\nKhalifa MA (2011) Redefining slums in egypt: Unplanned versus unsafe areas. Habitat international 35(1):40–49 Kirillov A, Mintun E, Ravi N, et al (2023) Segment anything. In: Proceedings of the IEEE/CVF International Co",
+    "section": "unknown",
+    "char_start": 73500,
+    "char_end": 74300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_107",
+    "text": "A, Mintun E, Ravi N, et al (2023) Segment anything. In: Proceedings of the IEEE/CVF International Conference on Computer Vision, pp 4015–4026 Kohli D, Stein A, Sliuzas R (2016) Uncertainty analysis for image interpretations of urban slums. Computers, Environment and Urban Systems 60:37–49. https://doi. org/10.1016/j. compenvurbsys.2016.07.010 Kuffer M, Pfeffer K, Sliuzas R (2016) Slums from space—15 years of slum mapping using remote sensing. Remote Sensing 8(6):455 Kuffer M, Wang J, Nagenborg M, et al (2018) The Scope of Earth-Observation to Improve the Consistency of the SDG Slum Indicator. ISPRS International Journal of Geo-Information 7(11):428. https://doi. org/10.3390/ijgi 7110428 Li T, Feng Q, Niu B, et al (2023) Mapping Urban Villages from Point-of-Interest Data Using a Novel Deep",
+    "section": "unknown",
+    "char_start": 74200,
+    "char_end": 75000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_108",
+    "text": ", Feng Q, Niu B, et al (2023) Mapping Urban Villages from Point-of-Interest Data Using a Novel Deep Neural Network. https://doi. org/10.2139/ssrn.4510566 Li X, Kleinhans R, van Ham M (2018) Shantytown redevelopment projects: State-led redevelopment of declining neighbourhoods under market transition in shenyang, china. Cities 73:106–116 Li Y, Huang X, Liu H (2017) Unsupervised Deep Feature Learning for Urban Village Detection from High-Resolution Remote Sensing Images. Photogrammetric Engineering & Remote Sensing 83(8):567–579. https://doi. org/10.14358/PERS.83. 8.567 Liu H, Huang X, Wen D, et al (2017) The Use of Landscape Metrics and Transfer Learning to Explore Urban Villages in China. Remote Sensing 9(4):365. https:// doi. org/10.3390/rs 9040365 Liu Y, He S, Wu F, et al (2010) Urban vi",
+    "section": "unknown",
+    "char_start": 74900,
+    "char_end": 75700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_109",
+    "text": "mote Sensing 9(4):365. https:// doi. org/10.3390/rs 9040365 Liu Y, He S, Wu F, et al (2010) Urban villages under China’s rapid urbanization: Unregulated assets and transitional neighbourhoods. Habitat International 34(2):135–144 Liu Y, Lv B, Peng L, et al (2020) Training samples dataset for building identification in urban village. Journal of Global Change Data & Discovery 2:181–187 Long J, Shelhamer E, Darrell T (2015) Fully convolutional networks for semantic segmentation. In: Proceedings of the IEEE conference on computer vision and pattern recognition, pp 3431–3440 Mahabir R, Croitoru A, Crooks AT, et al (2018) A Critical Review of High and Very High-Resolution Remote Sensing Approaches for Detecting and Mapping Slums: Trends, Challenges and Emerging Opportunities. Urban Science 2(1):8",
+    "section": "unknown",
+    "char_start": 75600,
+    "char_end": 76400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_110",
+    "text": "for Detecting and Mapping Slums: Trends, Challenges and Emerging Opportunities. Urban Science 2(1):8. https://doi. 26\n\norg/10.3390/urbansci 2010008 Mast J, Wei C, Wurm M (2020) Mapping urban villages using fully convolutional neural networks. Remote Sensing Letters 11(7):630–639. https://doi. org/10.1080/ 2150704 X.2020.1746857 Ministry of Housing and Urban-Rural Development of the People’s Republic of China (2023) China Urban Construction Statistical Yearbook Niu N, Jin H (2020) Integrating multiple data to identify building functions in China’s urban villages. Environment and Planning B: Urban Analytics and City Science https://doi. org/10.1177/2399808320938796 Pan Z, Xu J, Guo Y, et al (2020) Deep Learning Segmentation and Classification for Urban Village Using a Worldview Satellite Ima",
+    "section": "unknown",
+    "char_start": 76300,
+    "char_end": 77100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_111",
+    "text": "020) Deep Learning Segmentation and Classification for Urban Village Using a Worldview Satellite Image Based on U-Net. Remote Sensing 12(10):1574. https://doi. org/10.3390/rs 12101574 Peng F, Lu W, Hu Y, et al (2023) Mapping Slums in Mumbai, India, Using Sentinel2 Imagery: Evaluating Composite Slum Spectral Indices (CSSIs). Remote Sensing 15(19):4671. https://doi. org/10.3390/rs 15194671 Potere D (2008) Horizontal Positional Accuracy of Google Earth’s High-Resolution Imagery Archive. Sensors (Basel, Switzerland) 8(12):7973–7981. https://doi. org/10. 3390/s 8127973 Pratomo J, Kuffer M, Martinez J, et al (2017) Coupling Uncertainties with Accuracy Assessment in Object-Based Slum Detections, Case Study: Jakarta, Indonesia. Remote Sensing 9(11):1164. https://doi. org/10.3390/rs 9111164 Ronnebe",
+    "section": "unknown",
+    "char_start": 77000,
+    "char_end": 77800
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_112",
+    "text": "se Study: Jakarta, Indonesia. Remote Sensing 9(11):1164. https://doi. org/10.3390/rs 9111164 Ronneberger O, Fischer P, Brox T (2015) U-net: Convolutional networks for biomedical image segmentation. In: Medical image computing and computer-assisted intervention–MICCAI 2015: 18 th international conference, Munich, Germany, October 5-9, 2015, proceedings, part III 18, Springer, pp 234–241 Sa H, Haila A (2023) Urban villagers as real estate developers: embracing property mind through ‘planting’housing in north-east china. Housing Studies 38(3):423–443 Shenzhen Municipal Planning and Natural Resources Bureau (2019) Overall plan for the comprehensive renovation of urban villages (old villages) in shenzhen city (20192025) Shi Q, Liu M, Liu X, et al (2020 a) Domain Adaption for Fine-Grained Urban",
+    "section": "unknown",
+    "char_start": 77700,
+    "char_end": 78500
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_113",
+    "text": "shenzhen city (20192025) Shi Q, Liu M, Liu X, et al (2020 a) Domain Adaption for Fine-Grained Urban Village Extraction From Satellite Images. IEEE Geoscience and Remote Sensing Letters 17(8):1430–1434. https://doi. org/10.1109/LGRS.2019.2947473 Shi W, Zhang M, Zhang R, et al (2020 b) Change detection based on artificial intelligence: State-of-the-art and challenges. Remote Sensing 12(10):1688 27\n\nTatem AJ (2017) Worldpop, open data for spatial demography. Scientific data 4(1):1–4 Taubenb¨ock H, Kraff NJ, Wurm M (2018) The morphology of the Arrival City - A global categorization based on literature surveys and remotely sensed data. Applied Geography 92:150–167. https://doi. org/10.1016/j. apgeog.2018.02.002 Thomson DR, Kuffer M, Boo G, et al (2020) Need for an integrated deprived area “slum",
+    "section": "unknown",
+    "char_start": 78400,
+    "char_end": 79200
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_114",
+    "text": "eog.2018.02.002 Thomson DR, Kuffer M, Boo G, et al (2020) Need for an integrated deprived area “slum” mapping system (ideamaps) in low-and middle-income countries (lmics). Social Sciences 9(5):80 Tjarks D (2024) Seeing beyond the metropolis: metropolitan bias and the angolan system of cities. Space and Polity pp 1–21 Tong D, Feng C (2009) Review and progress of the research on urban villages. Human Geography 24(6):29–35. https://doi. org/10.13959/j. issn.1003-2398.2009.06.009 Tong D, Feng C, Deng J (2011) Spatial evolution and cause analysis of urban villages: A case study of Shenzhen Special Economic Zone. Geographical Research 30(3):437– 446 Tong D, Zhang Y, Mac Lachlan I, et al (2020) Migrant housing choices from a social capital perspective: The case of shenzhen, china. Habitat Interna",
+    "section": "unknown",
+    "char_start": 79100,
+    "char_end": 79900
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_115",
+    "text": "rant housing choices from a social capital perspective: The case of shenzhen, china. Habitat International 96:102082 UN-Habitat (2004) The Challenge of Slums: Global Report on Human Settlements 2003 Verma D, Jana A, Ramamritham K (2019) Transfer learning approach to map urban slums using high and medium resolution satellite imagery. Habitat International 88:101981. https://doi. org/10.1016/j. habitatint.2019.04.008 Wang C (2022) Urban village on a global scale: Diverse interpretations of one label. Urban Geography 43(2):184–205. https://doi. org/10.1080/02723638.2020.1842097 Wang P, Bayram B, Sertel E (2022) A comprehensive review on deep learning based remote sensing image super-resolution methods. Earth-Science Reviews 232:104110 Wang Z, Chen J, Hoi SC (2020) Deep learning for image supe",
+    "section": "unknown",
+    "char_start": 79800,
+    "char_end": 80600
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_116",
+    "text": "methods. Earth-Science Reviews 232:104110 Wang Z, Chen J, Hoi SC (2020) Deep learning for image super-resolution: A survey. IEEE transactions on pattern analysis and machine intelligence 43(10):3365–3387 Wei C, Blaschke T, Taubenb¨ock H (2015) Monitoring of “urban villages” in Shenzhen, China from high-resolution GF-1 and Terra SAR-X data. In: SAR Image Analysis, Modeling, and Techniques XV, vol 9642. SPIE, pp 183–190, https://doi. org/10. 1117/12.2194877 Wei C, Wei H, Crivellari A, et al (2023 a) Gaofen-2 satellite image-based characterization of urban villages using multiple convolutional neural networks. International Journal of Remote Sensing 44(24):7808–7826. https://doi. org/10.1080/01431161. 2023.2288948 28\n\nWei H, Cao Y, Qi W (2023 b) The Vanishing and Renewal Landscape of Urban Vi",
+    "section": "unknown",
+    "char_start": 80500,
+    "char_end": 81300
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_117",
+    "text": "431161. 2023.2288948 28\n\nWei H, Cao Y, Qi W (2023 b) The Vanishing and Renewal Landscape of Urban Villages Using High-Resolution Remote Sensing: The Case of Haidian District in Beijing. Remote Sensing 15(7):1835. https://doi. org/10.3390/rs 15071835 Wen D, Huang X, Bovolo F, et al (2021) Change detection from very-highspatial-resolution optical remote sensing images: Methods, applications, and future directions. IEEE Geoscience and Remote Sensing Magazine 9(4):68–101 Wu W (2004) Sources of migrant housing disadvantage in urban china. Environment and planning A 36(7):1285–1304 Wurm M, Taubenb¨ock H, Weigand M, et al (2017 a) Slum mapping in polarimetric SAR data using spatial features. Remote Sensing of Environment 194:190–204. https: //doi. org/10.1016/j. rse.2017.03.030 Wurm M, Weigand M,",
+    "section": "unknown",
+    "char_start": 81200,
+    "char_end": 82000
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_118",
+    "text": "Sensing of Environment 194:190–204. https: //doi. org/10.1016/j. rse.2017.03.030 Wurm M, Weigand M, Schmitt A, et al (2017 b) Exploitation of textural and morphological image features in Sentinel-2A data for slum mapping. In: 2017 Joint Urban Remote Sensing Event (JURSE), pp 1–4, https://doi. org/10.1109/JURSE. 2017.7924586 Xiao C, Zhou J, Huang J, et al (2023) A Contextual Master-Slave Framework on Urban Region Graph for Urban Village Detection. In: 2023 IEEE 39 th International Conference on Data Engineering (ICDE), pp 736–748, https://doi. org/10. 1109/ICDE 55515.2023.00062 Ye Y, Tong D, Li J, et al (2024) Modernization with chinese characteristics and urban village renovation. City Planning Review 48(12):47–52 Yu L, Gong P (2012) Google Earth as a virtual globe tool for Earth science",
+    "section": "unknown",
+    "char_start": 81900,
+    "char_end": 82700
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_119",
+    "text": "ning Review 48(12):47–52 Yu L, Gong P (2012) Google Earth as a virtual globe tool for Earth science applications at the global scale: Progress and perspectives. International Journal of Remote Sensing 33(12):3966–3986. https://doi. org/10.1080/01431161.2011.636081 Zhang T, Ding L, Shi F (2021) Urban villages extraction from high-resolution remote sensing imagery based on landscape semantic metrics. Acta Geodaetica et Cartographica Sinica 50(1):97–104 Zhang X, Liu Y, Lin Y, et al (2024) UV-SAM: Adapting Segment Anything Model for Urban Village Identification. https://doi. org/10.48550/ar Xiv.2401.08083, 2401. 08083 Zhang Z, Liu Q, Wang Y (2018) Road extraction by deep residual u-net. IEEE Geoscience and Remote Sensing Letters 15(5):749–753 Zhao Y, Chen G, Chen G, et al (2018) Integrating Mu",
+    "section": "unknown",
+    "char_start": 82600,
+    "char_end": 83400
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_120",
+    "text": "science and Remote Sensing Letters 15(5):749–753 Zhao Y, Chen G, Chen G, et al (2018) Integrating Multi-source Big Data to Extract Buildings of Urban Villages: A Case Study of Tianhe District, Guangzhou. Geography and Geo-Information Science 34(5):7–13 29\n\nZheng S, Long F, Fan CC, et al (2009) Urban Villages in China: A 2008 Survey of Migrant Settlements in Beijing. Eurasian Geography and Economics 50(4):425–446. https://doi. org/10.2747/1539-7216.50.4.425 Appendix A Abbreviations Abbreviation Full Term AI Artificial Intelligence Bo VW Bag of Visual Words CA Classification Accuracy FN False Negative FP False Positive GIS Geographic Information Science/System GPS Global Positioning System Io U Intersection over Union LDA Latent Dirichlet Allocation Mask R-CNN Mask Region-Based Convolutional",
+    "section": "unknown",
+    "char_start": 83300,
+    "char_end": 84100
+  },
+  {
+    "source_id": "Cao2025",
+    "chunk_id": "chunk_121",
+    "text": "U Intersection over Union LDA Latent Dirichlet Allocation Mask R-CNN Mask Region-Based Convolutional Neural Network OBIA Object-Based Image Analysis OSM Open Street Map POI Point of Interest RF Random Forest SAM Segment Anything Model SDGs Sustainable Development Goals SR-GANs Super-Resolution Generative Adversarial Networks SVM Support Vector Machine TN True Negative TP True Positive VHR Very-High-Resolution 30",
+    "section": "unknown",
+    "char_start": 84000,
+    "char_end": 84800
+  }
+]

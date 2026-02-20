@@ -1,0 +1,1570 @@
+[
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_01",
+    "text": "International Journal of Applied Earth Observation and Geoinformation 122 (2023) 103440 Available online 5 August 2023 1569-8432/© 2023 The Authors. Published by Elsevier B. V. This is an open access article under the CC BY license (http://creativecommons. org/licenses/by/4.0/). Digital Twins for cities: Analyzing the gap between concepts and current implementations with a specific focus on data integration Imane Jeddouba,*, Gilles-Antoine Nysa, Rafika Hajjib, Roland Billena a Geomatics Unit, UR SPHERES, University of Li`ege (ULi`ege), All´ee du six Août, 19, 4000 Li`ege, Belgium b College of Geomatic Sciences and Surveying Engineering, Hassan II Institute of Agronomy and Veterinary Medicine, Rabat 10101, Morocco A R T I C L E I N F O Keywords: Digital twins 3D city model City information",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_02",
+    "text": ", Rabat 10101, Morocco A R T I C L E I N F O Keywords: Digital twins 3D city model City information model Spatial data infrastructure Data integration A B S T R A C T Digital Twins for cities represent a new trend for urban and geospatial fields. Currently, some DTs implementations are taking place. Nevertheless, the whole concept remains ambiguous and presents some differences that need to be addressed. The aim of this article is to bridge the gap between DTs definitions and current implementations. This review was conducted through a scientific literature review and an online survey. The study collects Digital Twins for cities definitions and compares them with related concepts used jointly in the literature. It puts them together through an in-depth analysis since they express similarit",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_03",
+    "text": "y in the literature. It puts them together through an in-depth analysis since they express similarities and various discrepancies. As our study highlights the most documented DTs initiatives for cities according to 9 comprehensive categories, a new approach assessing the initiatives is proposed to evaluate the data integration methods used in the current realizations. Three levels are suggested: a conceptual schema model-based level (the data are integrated into the top level of the DT, i. e., extending the schema model to cover new features or themes); a databasebased level (data are integrated in order to feed or update specific attributes or classes); and an application-based level (the data are integrated into the application generally at the viewer level). 1. Introduction Digital Twin",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_04",
+    "text": "ata are integrated into the application generally at the viewer level). 1. Introduction Digital Twins (DTs) lie unanimously to three major components: a physical (entity, system, process), its digital representation and seamless data connections that bind the digital and real counterparts together (Grieves, 2016; Van Der Horn and Mahadevan, 2021). While the concept of a DT is a quite old term in several industries (Ammar et al., 2022; Mylonas et al., 2021; Tao et al., 2019; Xiong and Wang, 2022), it is starting to gain a significant interest in the urban and geospatial context from 2016 and onward (Ketzler et al. 2020; Stoter et al. 2021). Their evolution in the urban setting results in a continually increasing variety of terms (see Fig. 1) and different fit for purpose definitions. Hence,",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_05",
+    "text": "ntinually increasing variety of terms (see Fig. 1) and different fit for purpose definitions. Hence, the original concept of DTs has been adjusted (Alva et al., 2022 a) to meet several urban requirements. This initiative led to an ineffective implementation of the concept and a huge ambitious of the added value of DTs for cities that could be unachievable. DTs for cities come from the willingness of the Smart Cities (SCs) initiatives to introduce digital technologies, to implicate various players (governments, private parties, citizens) and to generate insights for better decision-making through a range set of simulations and urban analysis. Furthermore, due to advances in technology, availability of spatial and non-spatial data and the global evolution of the virtual simulation technologi",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_06",
+    "text": "bility of spatial and non-spatial data and the global evolution of the virtual simulation technologies, more and more complex physical and dynamic systems, including cities, could be handled using DTs technologies (Grieves, 2022; Ketzler et al., 2020; Tomko and Winter, 2019). Nevertheless, the process of replicating this concept of other industries in the urban environment is not straightforward due to the complexity, the spatial and temporal urban scale. Narrowing DTs for cities scope to the geospatial domain and the Architecture Engineering Construction (AEC) field, such cities complexities were already approached 20 years ago, namely with 3D City Models (3DCM) (Billen et al., 2014), Building Information Models (BIM) (Hagedorn, 2007), Virtual City Models (VCM) (Batty and Hudson-Smith, 20",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_07",
+    "text": "ing Information Models (BIM) (Hagedorn, 2007), Virtual City Models (VCM) (Batty and Hudson-Smith, 2006) and recently City Information Models (CIM) (Omrany et al., 2022). Which lead us to the following questions: What is exactly a DT for cities? There is an active debate regarding DTs for SCs, since DTs, face challenges as revealed in the review by (Biljecki et al., 2015), including no consensus on the exact definition (Saeed et al., 2022; Shahzad et al., 2022), vagueness on the characteristics (Sepasgozar, 2021), terminological ambiguity (Ketzler et al., 2020), different forms and outputs (Ferr´e-Bigorra et al., 2022), plenty of technical approaches that are domain specific (Lehtola et al., 2022) and various technical and non- * Corresponding author. E-mail addresses: i. jeddoub@uliege. be",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_08",
+    "text": "2022) and various technical and non- * Corresponding author. E-mail addresses: i. jeddoub@uliege. be (I. Jeddoub), ganys@uliege. be (G.-A. Nys), r. hajji@iav. ac. ma (R. Hajji), rbillen@uliege. be (R. Billen). Contents lists available at Science Direct International Journal of Applied Earth Observation and Geoinformation journal homepage: www. elsevier. com/locate/jag https://doi. org/10.1016/j. jag.2023.103440 Received 23 February 2023; Received in revised form 26 April 2023; Accepted 31 July 2023\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 2 technical challenges that hinder its full deployment (Lei et al., 2023 a). Moreover, there is still a gap related to a complete model and data interaction between the two-counterparts. Another challenge that h",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_09",
+    "text": "ated to a complete model and data interaction between the two-counterparts. Another challenge that hinders the full deployment of DT for cities is the lack of a generic data integration framework (Shahat et al., 2021). It is important to highlight the motivation towards the implementation of the DT for cities, which is breaking the silo-based approach to integrate the data and the models in an open, harmonized, interoperable ecosystem (Bauer et al., 2021 a; Nochta et al., 2019, 2021; Petrova-Antonova and Ilieva, 2021). Hence, data integration is one of the relevant themes that can be proposed to evaluate the potentials of DTs for cities (Botín-Sanabria et al., 2022; Papyshev and Yarime, 2021; Shahat et al., 2021; Xia et al., 2022). However, up to date an in-depth review of how the data is",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_10",
+    "text": "; Shahat et al., 2021; Xia et al., 2022). However, up to date an in-depth review of how the data is integrated in DTs for cities has not been discussed from a geospatial perspective. The contributions of this article are as follows: (1) reviewing DTs for cities definitions and refining the terminology by extracting the key features and comparing the DT for cities with other concepts, namely 3D City Models (3DCM), City Information Model (CIM) and Spatial Data Infrastructure (SDI). (2) analyzing the gap between the theoretical findings of concepts and what have been implemented in practice. It is done by assessing current DTs initiatives in general and according to 9 criteria (scale, data sources, city modelling, level of detail, purposes, visualizations platforms, simulations experiences, f",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_11",
+    "text": "ces, city modelling, level of detail, purposes, visualizations platforms, simulations experiences, frequency and update methods, and status). (3) introducing a new approach to classify DT for cities initiatives according to their level of maturity and their level of data integration. To reach the goals of this work, our study followed three main steps: (1) a systematic literature review on DTs for cities conducted in scientific databases i. e., Scopus, (2) a review of grey literature (e. g., reports, and DT initiatives web pages) and (3) an exploratory online survey. Setting the survey is motivated by some differences in the current deployment of the DT concept noticed between different DT initiatives. Furthermore, the research regarding DTs for cities are at an early stage, which explains",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_12",
+    "text": "nitiatives. Furthermore, the research regarding DTs for cities are at an early stage, which explains the small, related papers presented in the scientific literature. Hence, the survey is thus of great interest to bridge some information gaps in relation to certain initiatives that are poorly documented. The review is structured as follows. Section 2 briefly introduces the background of DT concept for cities in general and from a data integration perspective. Section 3 explains the research method conducted in this article, including a systematic review, an overview of grey literature and an online exploratory survey. Section 4 studies the definitions of DTs for cities according to the literature and analyses the DTs for cities concept with other related concepts 3DCM, CIM and SDI. A surve",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_13",
+    "text": "ature and analyses the DTs for cities concept with other related concepts 3DCM, CIM and SDI. A survey analysis is conducted as well to provide the findings of the questionnaire. Section 5 compares the current DTs for cities initiatives from a technical standpoint according to various criteria and classifies the current implementations according to their maturity level and data integration level proposed in the scope of this work. Section 6 highlights the findings and discusses the results. Section 7 concludes this work and gives an outlook for future studies. 2. Background research and related work While DT has many challenges, we focus only on two major aspects: definition and data integration. This enables us to discuss the differences between the theoretical concept and what is being de",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_14",
+    "text": "ion. This enables us to discuss the differences between the theoretical concept and what is being developed in practice. For this purpose, we split the related work into two sections. Section 2.1 presents the concept of DT and explains challenges related to its definition. While Section 2.2 focuses on data integration and explains how the data has been historically embedded in a virtual city replica. 2.1. Common definitions of DTs The concept of DT for cities is generally perceived as a main driver of digital transition across various disciplines, including urban and geospatial fields. To facilitate consensus and avoid the mishandling of the concept of DTs for cities across various stakeholders and domains, a refinement of the definitions is a good starting point. (Van Der Horn and Mahadev",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_15",
+    "text": "ers and domains, a refinement of the definitions is a good starting point. (Van Der Horn and Mahadevan, 2021) attempted to develop a unified definition and characteristics of DTs. After reviewing 46 DTs definitions derived from the literature, the authors adopted broadly the following definition: a “Digital Twin is a virtual representation of a physical system (and its associated environment and processes) that is updated through the exchange of information between the physical and virtual systems.” The definition can be projected into any specific domain. So, how about defining a DTs for cities? Recently, some studies on DT for cities were conducted to help overcoming the challenges that DT for cities is tackling. In their work, (Ellul et al., 2022), motivated by the growing interest in t",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_16",
+    "text": "for cities is tackling. In their work, (Ellul et al., 2022), motivated by the growing interest in the topic of DTs and its relevance to the European Spatial Data Research network (Euro SDR1) and geospatial communities, workshop sessions2 were conducted followed by a questionnaire3 to better understand how DT is defined and used in practice among different stakeholders and to provide insights to the National Mapping and Cadastral Agencies (NMCA). A considerable number of participants share their thoughts regarding the challenges and opportunities offered by DTs from NMCAs and non NMCAs. One of the main goals is to analyze the responses that define DT for cities and list the predominant components. Hence, most of the responders agreed that DT is “a realistic digital representation of physic",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_17",
+    "text": "nents. Hence, most of the responders agreed that DT is “a realistic digital representation of physical assets, processes and systems.” (Lei et al., 2023 a) present another larger related work that addresses DT challenges for cities. The authors identified a list of challenges and classified them into 14 technical and 9 nontechnical perspectives derived from academia and practice. A mapping of the challenges is presented according to the DT’s lifecycle as defined in their work. Their findings were based on a multidimensional method: a systematic literature review and a Delphi survey across experts. Thus, creating a DTs for cities is much more than just creating a virtual replica of city objects. It aims to construct a digital, living, interconnected ecosystem that interfaces with the real-w",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_18",
+    "text": "ts. It aims to construct a digital, living, interconnected ecosystem that interfaces with the real-world through continuous enrichment between the physical world and its digital replica. In contrast, with the knowledge gained from the SCs initiatives, often focused on static 3D modeling and the increasing number of DT implementations in other industries, the construction of city DT requires a Fig. 1. Labels of Digital Twin for cities in the literature and in practice. 1 https://www. eurosdr. net/about. 2 https://www. eurosdr. net/workshops/digital-twins-nmcas. 3 https://www. eurosdr. net/workshops/follow-workshop-digital-twins. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 3 data foundation and a technical framework (Deren et al., 20",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_19",
+    "text": "tionand Geoinformation 122(2023)103440 3 data foundation and a technical framework (Deren et al., 2021). In practice, DT for cities is currently deployed to characterize different digital models and tools. (Adeline et al., 2022) propose an exploratory study of DTs for cities definitions and technical implementations. The authors present a comparative analysis between DT and CIM concepts since both terms are used interchangeably. The study’s findings were based on the literature review of definitions and applications of the concepts as well as an exploratory survey of 13 practitioners about the potential of DT in the urban environment. To exemplify their findings, the authors shed light on some developed projects, either named CIM or DT. These related works motivate us to list all the defin",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_20",
+    "text": "me developed projects, either named CIM or DT. These related works motivate us to list all the definitions of DT for cities and to conduct an in-depth study of definitions and related concepts, both from academia and practice. 2.2. Data integration challenges To build a DT for cities, data integration methods are crucial (Lei et al., 2023 a; Shahat et al., 2021), especially since data are derived from disparate and heterogeneous sources and span different time and spatial scales. This is exemplified in the DTs implemented in practice, which integrate data from different sources such as data acquisition methods, existing geodatabases, real-time sensor data, actuators, crowdsourcing, etc. Many authors focus on the geometric aspects of data integration. They propose various methods for combin",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_21",
+    "text": "authors focus on the geometric aspects of data integration. They propose various methods for combining geometric information derived from various sources, whether related to 3D city models (Deng et al., 2021) or DTs for cities as the input layer of the urban DTs (Bacher, 2022; D¨ ollner, 2020; Lehner and Dorffner, 2020). The effective integration of heterogenous data in DTs is not limited to the geometric part but also takes into consideration the semantics, the structure and the storage methods (Noardo, 2022). DTs need to integrate multi-source data within common system, and, for each use case (mobility, flooding, air pollution, etc.), the data from DTs must fit the specific requirements. In the field of geoinformatics, the topic of data integration was approached by extending the existi",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_22",
+    "text": "In the field of geoinformatics, the topic of data integration was approached by extending the existing standard City GML. It is considered as the most popular standard for integrating urban geodata for a variety of applications in the context of SCs and, more recently, urban DTs, with new properties. For common applications, the City GML 2.0 model is augmented using the Application Domain Extensions, namely Noise ADE (Kumar et al., 2017) and Energy ADE (Rossknecht and Airaksinen, 2020). Another example of the data integration model is a study established by (Chaturvedi, 2021) that introduced the concept of “Dynamizers” to model, store and exchange the dynamic variations of properties and time-series data implemented as ADEs for City GML 2.0. Further work was carried out in the new City GML",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_23",
+    "text": "e-series data implemented as ADEs for City GML 2.0. Further work was carried out in the new City GML 3.0 core module to consider the “Dynamizer” concept (Kutzner et al., 2020). The “Dynamizer” module is developed to enhance the usability and the integration of highly dynamic variations of properties whether provided from simulations or derived from sensors or Io T devices. The new “Dynamizer” module allows the creation of an explicit link between sensor/observation data and the respective city object properties within a 3DCM that they measure. In this sense, the “Dynamizer” concept provides a method to handle the dynamic properties of city objects with respect to the application requirements. In addition to the “Dynamizer” concept, the new version 3.0 of City GML4 introduces various new fe",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_24",
+    "text": ". In addition to the “Dynamizer” concept, the new version 3.0 of City GML4 introduces various new features and improvements of existing modules that open up new applications (e. g., supporting point cloud, enhancing building and construction modeling, managing various cities versions to name few) (Kutzner et al., 2020). Thus, facilitating data integration for SCs and DTs for cities. Furthermore, (Santhanavanich and Coors, 2021) proposed the concept of City Things. Their approach explains how to handle sensor data stored in separate databases and associated to a 3DCM using Sensor Things API and City GML standards. The virtual model can be updated according to real-time updates based on Internet of Things (Io T) technologies. Nevertheless, the integration of sensor data in the DTs applicatio",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_25",
+    "text": "et of Things (Io T) technologies. Nevertheless, the integration of sensor data in the DTs applications is part of the vast amounts of datasets (from Geographic Information System(GIS), BIM, organization databases, etc.) that can bring the virtual replica of the city closer to its physical counterpart. Furthermore, most of the data integration initiatives focus primarily on a specific domain application. For example, many cities around the world are showing an increasing interest in managing their building energy consumption and achieving energy reduction goals in the energy domain (Santhanavanich et al., 2022; Zhang et al., 2021). Up to now, various initiatives address data interoperability and data integration challenges in the urban environment and SCs domains. For example, the FIWARE sm",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_26",
+    "text": "and data integration challenges in the urban environment and SCs domains. For example, the FIWARE smart data model has shown its capabilities in harmonizing SCs data, namely sensor streams, for more than 200 cities worldwide (Bauer et al., 2021 a). The FIWARE open-source components use the NGSI-LD standard, which unifies and integrates the running platforms under the same standard data format (Cirillo et al., 2019). Accordingly, using FIWARE components provides a backbone for SCs data infrastructure. Furthermore, the study from (Bauer et al., 2021 a) shows that the NGSI-LD information model is used to create a DT infrastructure that represents the reactive and predictive DTs functionalities. The NGSI-LD information model allows the modeling of an Urban Digital Twin as entities. These entit",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_27",
+    "text": "The NGSI-LD information model allows the modeling of an Urban Digital Twin as entities. These entities have properties that should be modeled as well. Thus, using a property-graph-based model where entities are considered as nodes and relationships as edges. In addition, assessing and managing relevant data from DTs is also enabled using the NGSI-LD API. Data interoperability is the core challenge of the OGC community, which focuses on ensuring clear semantics, fostering data modeling, and developing APIs to support application web development and facilitate data access and exchange. Thus, an overall reference architecture is defined, based on the review of OGC initiatives and standards5 to create an open and interoperable system of systems to make SCs and DTs a concrete reality (Atkinson",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_28",
+    "text": "create an open and interoperable system of systems to make SCs and DTs a concrete reality (Atkinson et al., 2022). By analyzing DTs for city implementations, different approaches are used forthe integration of the data derived from different sensors and delivered from multiple services, mainly through databases that communicate with each other. For example, Vienna is linking databases to form a CIM that will be a basis for DTs as well as creating a central planning database; furthermore, relationships between linked databases and simulation results are expected (Lehner and Dorffner, 2020); at the level of the City GML Shema (the extension of the conceptual model); or at the level of applications that disseminate several datasets in an integrated platform. DTs for cities allow the reuse of",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_29",
+    "text": "tions that disseminate several datasets in an integrated platform. DTs for cities allow the reuse of existing datasets through data integration. Up to date, a related work presented by (Lei et al., 2022) develops an holistic and comprehensive multi-level approach to assess and benchmark the open and accessible 3D city models, taking into consideration four categories (data portals, basic information, thematic content and attribute content), compromising 47 criteria. The study allows us to extend the framework with the data integration aspects that are relevant for implementing the DT for cities. In practice, there has been no related work that classifies the DTs for city initiatives from the data integration perspective. 3. Methodology To meet our research goals, we start by gathering pape",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_30",
+    "text": "data integration perspective. 3. Methodology To meet our research goals, we start by gathering papers related to the DT for city definitions using various search terms (“City Digital Twin”, “Urban Digital Twin”, “Geospatial Digital Twin” and “Spatial Digital Twin”) conducted in Scopus. An initial corpus of 92 papers covering a wide range of fields is obtained. By refining the results and narrowing the scope to our field of expertise, namely computer science, 4 https://docs. ogc. org/guides/20–066.html. 5 https://www. ogc. org/standards/. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 4 urban planning and geospatial-related fields, 87 articles are collected. By performing more boolean operators to refine our results, eliminating the d",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_31",
+    "text": "rticles are collected. By performing more boolean operators to refine our results, eliminating the duplicate results from the list and examining the paper title, abstract and keywords, we gathered 29 articles. A specific inclusion criterion used in the scope of this work is that articles related to DTs need to be at the city-scale level (e. g., the entire city or district). As a result, 26 articles are maintained for in-depth analysis. To compare DT for cities with other concepts, we performed three specific queries for each analysis. The methodology deployed in Section 4 and the resulting number of papers are summarized, in see Fig. 2. To document the current DTs for city implementations and inspect the data integration method, we collect scientific articles and reports related to each in",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_32",
+    "text": "d inspect the data integration method, we collect scientific articles and reports related to each initiative to get an overview of the data, the methods and the technical frameworks. Further analysis is carried out using the survey results to obtain an overview from scientists and practitioners about their definitions of DT for cities and its potential in their field of expertise, as well as to specifically measure how faithful the practice is to the literature. The survey is organized as illustrated in, see Fig. 3. Sections 2, 3 and 4 of the survey are used in the scope of the first results of this article. Section 5 is designed to collect information about DT projects for cities and to complement the various initiatives with the missing data regarding the technical implementations. We as",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_33",
+    "text": "plement the various initiatives with the missing data regarding the technical implementations. We ask different participants from different sectors (e. g., academia, industry and government) to fill out the survey. The survey was sent to more than 30 members. As a result, 17 responses were collected and analyzed. The results are presented in this work in section 4.3. 4. Digital twins for cities: Analysis of definitions and study of concepts The term “DT” has been predominant in the literature in a transdisciplinary way. Many authors initiate their research by defining DTs for cities; however, these definitions present some differences that need to be studied. So, the questions that arise are: How to define a DTs for cities? What is different from what was done in earlier studies in the 3D",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_34",
+    "text": ": How to define a DTs for cities? What is different from what was done in earlier studies in the 3D modelling? Is it only limited to the interaction between real and digital models using real-time data? In this section, we first start by refining the theoretical-conceptual definitions of DT for cities presented in the literature, even if the research on implementing DTs for cities is still in its early beginning. We then explore similarities and discrepancies between some of the concepts, since many previously discussed concepts are reused as the backbone of DT (Boje et al., 2020) and are sometimes renamed “DTs”. Some authors have reviewed the concept of DTs for cities with other approaches, likewise 3D city models (Ketzler et al., 2020) and city information models (Adeline et al., 2022).",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_35",
+    "text": "likewise 3D city models (Ketzler et al., 2020) and city information models (Adeline et al., 2022). We then analyze the survey results following the same structure of section 4.1. 4.1. Digital twins for cities: Systematic literature review of definitions and concepts 4.1.1. DTs for cities: Analysis of current definitions It is unclear and ambiguous in the scientific literature how DTs for cities are conceptualized (Adeline et al., 2022; (Alva et al., 2022 a); Batty, 2018; Shahat et al., 2021). This observation is made since some authors focus on city entities (buildings, roads, vegetations), some on urban infrastructure systems (transportation, water networks, electric power networks) and some on processes and services. This leads to many definitions coupled with specific characteristics t",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_36",
+    "text": "me on processes and services. This leads to many definitions coupled with specific characteristics that are adjusted for each city system. The lack of a common and universal definition means clearly that we are far from having a single shape of DTs for cities. To contextualize the concept of DTs for cities, we initially adopt a broad definition borrowed from the purposes of using the DTs in the urban settings and SCs. Indeed, DTs for cities are considered as a dynamic digital solution designed throughout its lifecycle to achieve sustainability and facing the increasing cities challenges (H¨ am¨ al¨ainen, 2020): population growth, limited resources and climate changes, etc. Reviewing the literature, we establish a list of the recent definitions mainly published between 2020 and 2022 for mor",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_37",
+    "text": "rature, we establish a list of the recent definitions mainly published between 2020 and 2022 for more mature understanding of the term (City/Urban) DTs. The definitions are presented in Git Hub (https://github. com/JEDDOUB/DTs_for_Cities_Definitions) and are classified according to their document type, the year and their associated labels to name DTs. A systematic analysis of the definitions allows us to identify three parallel tracks: one track emphasizing that the core of DTs is a 3D city model (Ketzler et al., 2020; Lehner and Dorffner, 2020; Dembski et al., 2020; Schrotter and Hürzeler, 2020; Dimitrov and Petrova-Antonova, 2021; Bacher, 2022; Lehtola et al., 2022; Ferr´e-Bigorra et al., 2022; (Alva et al., 2022 a); Lee et al., 2022; Bacher, 2022; Würstle et al., 2022). Another track pr",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_38",
+    "text": "2022; (Alva et al., 2022 a); Lee et al., 2022; Bacher, 2022; Würstle et al., 2022). Another track prefers to use DTs for cities as a natural convergence of BIM and GIS (Cureton and Dunn, 2021; Lehtola et al., 2022; Xia et al., 2022). The third one prefers the term DT to broadly describe a realistic digital representation of the city elements that function as a system of systems without narrowing the scope to the 3D component (Mohammadi and Taylor, 2017; Lu et al., 2019; Ivanov et al., 2020; Papyshev and Yarime, 2021; Raes et al., 2021; Nochta et al., 2021; Agostinelli et al., 2021; Deng et al., 2021; Saeed et al., 2022; Caprari, 2022; Adeline et al., 2022; Nguyen and Kolbe, 2022; Lee et al., 2022; Hristov et al., 2022; Scalas et al., 2022). All tracks highlight that data, models, simulatio",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_39",
+    "text": "2022; Hristov et al., 2022; Scalas et al., 2022). All tracks highlight that data, models, simulations and visualization technologies are the main components. The existence of these parallel tracks is justified by the involvement of different fields in the urban settings. Based on the definitions analysis, the three parallel tracks motivate us to put the DTs for cities into a more advanced analysis with the 3DCM, CIMs and SDIs to bring them meaningfully together. These concepts are used together in the scientific literature and sometimes encompass similar conceptual and technical implementations. A simple analysis of the definitions shows that most of the researches led to a tacit agreement of what constitute a DT for cities in the geospatial domain and the SCs initiatives previously annou",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_40",
+    "text": "of what constitute a DT for cities in the geospatial domain and the SCs initiatives previously announced by (Stoter et al. 2021). Indeed, the majority of the definitions clearly emphasizes the extending use of the (1) 3D city models enriched with semantic information, (2) often coupled with historical and sensor data in near or real time (depending on an appropriate rate of synchronization), thus enabling (3) a connection (e. g., data flow between the real counterpart and the virtual twin and vice versa), (4) allowing updates and analysis through a variety of simulations, predictions and visualization tools (web applications or game engines platforms) and offering (5) an integrated view of the multiple datasets, models through its life cycle allowing to understand and adapt city current an",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_41",
+    "text": "he multiple datasets, models through its life cycle allowing to understand and adapt city current and future states. This analysis enables us to evaluate some of DT’s characteristics for cities along with other features which will be used to evaluate their degree of importance among practitioners through the survey. 4.1.2. DTs for cities: Key features and characteristics As mentioned earlier, data is the main pillar of the DTs for cities. By unpacking the definitions used in this work, all authors mentioned the integration of heterogenous data namely Io T and sensors data that allow a real-time bi-directional link between the two worlds (physical and virtual). Furthermore, some authors state that the historical data are also useful to implement a DTs (Lehtola et al., 2022; Mohammadi and Ta",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_42",
+    "text": "that the historical data are also useful to implement a DTs (Lehtola et al., 2022; Mohammadi and Taylor, 2017). In addition, some authors have highlighted the relevance of the geospatial technologies and reality capture in the creation of DTs for cities. Indeed, replicating the static city objects needs a geospatial data as input layer. Hence, some works are carried out to properly build a form of geospatial DT providing one of the promising foundation: the 3D static digital model of the city (Bacher, 2022; Lee et al., 2022; Lehner and Dorffner, 2020). Some authors point out that a DT for cities requires a unique and I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 5 generic digital platform. This characteristic of DTs is a little equi",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_43",
+    "text": "oinformation 122(2023)103440 5 generic digital platform. This characteristic of DTs is a little equivocal: few authors argue that a DT, as an exact real-time mirror of city, is unachievable since the DTs in SCs should consider the socio-economic components (Batty, 2018). Instead, many suggestions were discussed such as “cyber–physical–social system with coupled properties” (Charitonidou, 2022; Tomko and Winter, 2019), “Social Urban Digital Twin” (Yossef Ravid and Aharon - Gutman, 2022), or “digital multiples”, just to name a few. The “digital multiples”6 label proposed by Prof. Stoter comes from the point that an adapted “twin” is developed for specific applications and for different purposes. Each implemented twin in the best case would be systematically aggregated together, providing an",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_44",
+    "text": "s. Each implemented twin in the best case would be systematically aggregated together, providing an ecosystem of twin systems. Another particularity of DT, that is as well questionable, is the bidirectional connection between physical and virtual worlds. Based on the classification suggested by (Kritzinger et al., 2018) in the manufacturing field, three terms need to be defined: DT might be misuse as a digital model or digital shadow. Based on the level of data integration from both digital and virtual worlds, (see Fig. 4), a digital model (DM) is a simple abstraction of the physical object, any change in real world needs to be feed manually in the digital copy and vice versa. A digital shadow (DS) is when the data flow automatically from the physical object to the digital copy, but manual",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_45",
+    "text": "ow (DS) is when the data flow automatically from the physical object to the digital copy, but manually from the digital world to the physical entity. In contrast, a DT is an automatic data updates in both directions without human interventions. Accordingly, the data flow from the virtual copy to the physical world using artificial intelligence and actuators. Fig. 2. Steps and search queries to identify research articles about Digital Twin for cities in the urban and geospatial domain. Fig. 3. Survey sections conducted to complement the scientific literature. 6 https://www. intergeo. de/en/news/was-digitale-zwillinge-koennen-und-was-nicht. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 6 4.1.3. DT for cities: Terminology Regarding the",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_46",
+    "text": "rth Observationand Geoinformation 122(2023)103440 6 4.1.3. DT for cities: Terminology Regarding the terminology issues, the City Digital Twin (CDT) and the Urban Digital Twin (UDT) are jointly the most common terms used in the literature. However, a terminological distinction is noteworthy. According to our analysis mentioned above, many authors use the term City Digital Twin to describe the 3D city model itself, e. g. a static replica of the city mainly focusing on buildings (Scalas et al., 2022; Hristov et al., 2022; Lehtola et al., 2022; Agostinelli et al., 2021; Nochta et al., 2021; Dimitrov and Petrova-Antonova, 2021; Ketzler et al., 2020; Schrotter and Hürzeler, 2020). Other authors use the CDT or DTC (Digital Twin Cities) to represent a dynamic representation of the city objects (e.",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_47",
+    "text": "e the CDT or DTC (Digital Twin Cities) to represent a dynamic representation of the city objects (e. g. a digital copy augmented with near real time data mainly traffic or air quality data) (Adeline et al., 2022; Caprari, 2022; Ivanov et al., 2020; Lehner and Dorffner, 2020; Lu et al., 2019; Mohammadi and Taylor, 2017; (Raes et al., 2021); Saeed et al., 2022). Others use the term Urban Digital Twin as a structure that can model multiple systems that could be potentially associated with the CDT as explained earlier (Dembski et al., 2020; Lee et al., 2022; Lehtola et al., 2022; Nguyen and Kolbe, 2022; Scalas et al., 2022). Hence, the UDT is a platform that uses the CDT as input and other modules (infrastructures, services and systems) can be added to extend the usability and the applications",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_48",
+    "text": "es (infrastructures, services and systems) can be added to extend the usability and the applications. The concept of system of systems introduced by the Centre for Digital Built Britain7, is the building block of the Urban Digital Twin that merge several twins in one common urban information model (Bolton et al., 2018). Geospatial Digital Twin or Spatial Digital Twin, they are used to emphasize the potential of existing geospatial data to meet the DT requirements. Thus, Spatial Digital Twin provides a spatial context of the objects, the infrastructures and the systems. In the following part, a comparison with related concepts e. g., 3DCM, CIM and SDI is conducted to study the similarities and the differences with DTs for cities. 4.2. A comparative literature review with related concepts: 3",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_49",
+    "text": "d the differences with DTs for cities. 4.2. A comparative literature review with related concepts: 3DCM, CIM, SDI Analyzing the three tracks of DTs definitions, DTs for cities have many overlaps and differences with other related concepts (3DCM, CIM, SDI) that need to be studied. This section presents the results. 4.2.1. DTs for cities and 3DCM 3D city models gained a significant interest in the past years and for a range of purposes. Historically, 3D city models helped to overcome the limitations of 2D objects representations (Herbert and Chen, 2015; Lehner and Dorffner, 2020). They were in many cases focused on the 3D detailed buildings modelling, considering buildings as the main features of cities (Corongiu et al., 2018; D¨ ollner and Buchholz, 2005; Virtanen et al., 2021; Zhu et al.,",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_50",
+    "text": "of cities (Corongiu et al., 2018; D¨ ollner and Buchholz, 2005; Virtanen et al., 2021; Zhu et al., 2009). Theygained high interest in 3D modelling field for several purposes (Chen, 2011; Kolbe and Donaubauer, 2021): energy consumption, city management, indoor navigation and many more. Traditionally, 3D city models are usually created from existing 2D and 3D geodata sets generally acquired by aerial images (oblique photogrammetry) and Li DAR point clouds (Xue et al., 2020). To support the process of producing 3D city models, many geodata workflows are in practice that allow the public administrations and organizations upgrading to 3D their geodata ((Ledoux et al., 2021); Lehner and Dorffner, 2020). As a result, two models are in common use: photorealistic mesh models for visualization purp",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_51",
+    "text": "2020). As a result, two models are in common use: photorealistic mesh models for visualization purposes. Such models require a full picture of the real scene with high geometry and texture (Adreani et al., 2022). Or in the case where the resulting model should serve as a basis for spatial analysis, a continuous semantic enrichment is recommended to extend the spatial and temporal scale. Thus, the application and the usability of the 3D city model are important (Billen et al., 2014). 3D city modeling is not only about data acquisition and processing, it is also inextricably linked to the data management, storage and exchange. Hence, open standardized data model and exchange format for 3D city models are used. The City GML and its lighter encoding City JSON (Ledoux et al., 2019): are the mo",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_52",
+    "text": "y models are used. The City GML and its lighter encoding City JSON (Ledoux et al., 2019): are the most established data formats for 3D city models starting from simple representations to more rich and detailed information model according to the level of detail (Lo D) required. To better understand the interrelations between entities, infrastructures, processes and services in a city’s dynamic ecosystem, silobased models are no longer enough. Hence moving towards an integrated and maintained one stop-platform fed with heterogeneous data (Katal et al., 2022). This explains the shift from 3D static city modelling to more dynamic and alive representations. This paradigm shift along with the opportunities offered by the available digital tools gives the concept of DT something to approve its po",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_53",
+    "text": "rtunities offered by the available digital tools gives the concept of DT something to approve its potentials namely in the data storage and data management (Nys and Billen, 2022). An initial strong focus is on 3D city models and its applications (Biljecki et al., 2015). Historically, (Ketzler et al., 2020) mentioned that the literature review used predominately 3D city models and only recently with the maturity of the digital technologies and the recognized value of the DT in other fields that the term DT for cities was gradually introduced from smart manufacturing to SCs. The most popular manifestations of the DTs in the context of the geospatial field resides in the building or reuse of 3DCMs. With the help of visualization technologies, experts and non-experts could have a basis for com",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_54",
+    "text": "CMs. With the help of visualization technologies, experts and non-experts could have a basis for communication and collaborative decision-making tools. However, a considerable number of articles focuses mainly on the geometric and semantic layer to implement the City Digital Twin (Diakite et al., 2022; Khawte et al., 2022; Scalas et al., 2022). 4.2.2. DTs for cities and CIM Similarly to the previous analysis regarding 3DCM and DTs, the Fig. 4. Digital Twin concept: Maturity levels according to the level of data integration. 7 https://www. cdbb. cam. ac. uk/. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 7 literature brings together CIM and DTs for Cities considering them as emerging technologies used to help designing future SCs (Omr",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_55",
+    "text": "and DTs for Cities considering them as emerging technologies used to help designing future SCs (Omrany et al., 2022). Both concepts are used interchangeably to address the sustainability of cities. In the SCs scope, CIMs as long as DTs are conceived as a practice that takes advantage of digital technologies to assist urban planning and city management, to enhance collaboration between different stakeholders and to address the number of challenges that contemporary cities are experiencing with respect to the Sustainable Development Goals (SDGs) (Schaufler and Schwimmer, 2020; Tzachor et al., 2022). CIM has appeared a decade ago to naturally extend the BIM and Computer-Aided Design (CAD) concept at the city scale (Xu et al., 2021). In the literature, various approaches are commonly used to",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_56",
+    "text": "ept at the city scale (Xu et al., 2021). In the literature, various approaches are commonly used to describe CIM depending on their field of expertise, same as DT. Authors considered the CIM as an evolution of the traditional 3DCMs that go beyond visualization: a semantically enriched urban information model as a basis for a design and planning platform. Others focus on the BIM-GIS integration (Souza and Bueno, 2022) approaches widely discussed in the conversion framework from IFC to City GML and its challenges regarding the full conversion (Zhu and Wu, 2022). Technically, BIM and GIS can be fused to enrich 3D city models. Furthermore, BIM offers the possibility to locally update 3D city models geometrically and semantically and, to increase their level of detail (Noardo, 2022). Looking at",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_57",
+    "text": "els geometrically and semantically and, to increase their level of detail (Noardo, 2022). Looking at the grey literature and starting from the mapping of the disciplines and the technologies that enhance the implementation of the conceptual framework of CIM proposed in the technology report8 produced by IEC Sy C Smart Cities9 and ISO/IEC JTC1/SC 41 Internet of Things and Digital Twin 10, it is apparent that the DT is a digital tool which is deployed to contribute to achieve the goals of the CIM along with various technologies and concepts (BIM, GIS, Planning Support System PSS). In the literature, we can identify three main approaches, (see Fig. 5) (1) CIM and DT encompass similar conceptual and technical realities (Adeline et al., 2022); (2) CIM is the first input layer for the developmen",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_58",
+    "text": "and technical realities (Adeline et al., 2022); (2) CIM is the first input layer for the development of a DT providing an integrated foundation for semantically enriched models build by gathering heterogeneous data from various sources: organizations and public administration databases, companies, citizens etc. (Cureton and Dunn, 2021; Ferr´e-Bigorra et al., 2022; Ketzler et al., 2020; Lehner and Dorffner, 2020; Petrova-Antonova and Ilieva, 2021); and (3) DT is a specialization of CIM and a support technology for implementing the conceptual framework of CIM (Shahat et al., 2021). As in the literature, there are different approaches that broadly identify the differences between the CIM and DT (Adeline et al., 2022; Omrany et al., 2022; Schaufler and Schwimmer, 2020). Since they are both th",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_59",
+    "text": "T (Adeline et al., 2022; Omrany et al., 2022; Schaufler and Schwimmer, 2020). Since they are both theoretically and technically under the same umbrella (similar applications, technologies and objectives), a review of the SCs projects indicates that most of the implemented solutions of DTs are initiatives based on a minimum amount of CIMs that is more multi thematic, multiscale, multi-temporal datasets and multi-actor approaches of cities. 4.2.3. DTs for cities and SDI Considering city as a system of systems, huge amount of data is generated, especially geospatial data, from various sources. Data are the core of creating and maintaining DTs for cities. Therefore, everything comes to the data integration. The integration is not limited to the scope of linking heterogeneous data, but also to",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_60",
+    "text": "integration. The integration is not limited to the scope of linking heterogeneous data, but also to process, to store and to exchange them. Naturally, the Spatial Data Infrastructure (SDI) was built as a common basis to increase the availability and to foster interoperable access to geospatial data provided by multiple agencies and to allow the exchange of the data through harmonized and standardized spatial interfaces (Hu, 2017). The European INSPIRE 11 directive is one of the promising initiatives to implement an international spatial data infrastructure that addresses the technical and non-technical challenges of geospatial information across various levels. Thus, spatial data infrastructures for DTs may form a framework in establishing interoperability between systems and platforms in",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_61",
+    "text": "ures for DTs may form a framework in establishing interoperability between systems and platforms in a standardized way (Chaturvedi et al., 2019; Chatzinikolaou et al., 2020; Santhanavanich et al., 2022). The approaches based on SDIs have been discussed in the development of the DT of Zurich (Schrotter and Hürzeler, 2020) and in a recent work established in the energy domain (Santhanavanich et al., 2022). To manage the building energy data, the authors propose an SDI of an UDT platform using OGC standards, namely, OGC Sensor Things API, OGC API 3D Geo Volumes, OGC City GML, OGC API features and Web Map services. The conceptual SDI for energy domain UDT consisted of four major layers: data source, data processing, web services and client application. The proposed SDI framework is an illustra",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_62",
+    "text": "rce, data processing, web services and client application. The proposed SDI framework is an illustrative instance that might be applicable to any domain. As a backbone framework to build a DT for cities, SDI will provide seamless access to data repositories (multi-scales, multi formats and multi-sources). Furthermore, a well-established SDI based on standards will facilitate the integration, the maintenance and the update of the various datasets to serve many applications. 4.3. Digital twins for cities: survey analysis of concepts and key features To enhance our finding from the literature review, we conceived an exploratory survey to: (1) refine the definition of DTs for cities and their maturity levels, (2) fill the gap between the theoretical concept and what has been developed so far,",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_63",
+    "text": "turity levels, (2) fill the gap between the theoretical concept and what has been developed so far, (3) investigate the evolution of the DTs initiatives that are implemented by scientists and practitioners and deployed for a wide range of applications and (4) discuss one of the omnipresent challenges that the topic is facing. We have designed the survey (of five sections) in a logical succession of questions starting from a general definition of DTs and then narrowing the scope to the urban settings and implementations to give the participants the possibility to answer, independently and according to their expertise and eventual involvement in some practical initiatives, the questions related to the theoretical part (section 1 to 4) and the one related to the practical part (section 5). Th",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_64",
+    "text": "d to the theoretical part (section 1 to 4) and the one related to the practical part (section 5). The questions are typically derived from the main issues reported in the scientific literature and the challenges that the DTs for cities are facing. We designed the survey to confirm the results of the scientific review with the practice. To reach the survey objectives, we established a list of potential participants and a short introduction explaining the aim of the survey. Moreover, the selection of participants was not made randomly, it was based on their interest in implementing DTs for cities. They are identified as proficient in the field of DTs for cities and close-up domains. Fig. 5. DT and CIM approaches: (a) CIM and DT overlap the same conceptual and technical realities; (b) CIM is",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_65",
+    "text": "and CIM approaches: (a) CIM and DT overlap the same conceptual and technical realities; (b) CIM is the input layer for implementing DT for cities; (c) DT is a specialization of CIM and a support technology for developing the conceptual framework. 8 https://www. iec. ch/basecamp/city-information-modelling-and-urban-digital-twins. 9 https://www. iec. ch/dyn/www/f?p=103:186::::: FSP_ORG_ID:13073. 10 https://www. iso. org/committee/6483279.html. 11 https://inspire. ec. europa. eu/. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 8 Indeed, we sent the questionnaire to more than 30 persons via emails and Linked In. Regarding the profile of participants, we asked participants about their background, their field of expertise and their degree",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_66",
+    "text": "rticipants, we asked participants about their background, their field of expertise and their degree of familiarity with the concept of DTs (Refer to section 4.3.1). Given the goals of our questionnaire, we expected from the participants that fill the form to get alignment about how they define DTs and its applications in the urban context and how they implemented in practice by (1) defining the DTs according to them, (2) listing their applications of DTs and their city needs, (3) understanding their vision regarding DTs comparing to other concepts that they use jointly in their definitions and their implementations, (4) documenting their own initiatives following the questions designed in the survey and, (5) fostering participants reflections while answering the survey to review the way in",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_67",
+    "text": "e survey and, (5) fostering participants reflections while answering the survey to review the way in which they have defined and developed the concept. 4.3.1. Profile of participants The survey was conducted with 17 international practitioners about their views and experiences on DTs for cities regarding the definitions and the characteristics, the applications, the commonalities and differences with close approaches. We asked participants about their backgrounds, fields of expertise and degree of familiarity with the concept of DTs. A total of 14 international practitioners completed all the sections survey and for whom the resulting responses are analyzed. The profile of the participants is summarized in Fig. 6. Participants are mainly from academia (universities or research institutes)",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_68",
+    "text": "s summarized in Fig. 6. Participants are mainly from academia (universities or research institutes) and from different fields of expertise, namely, urban modelling, geoinformatics, building and city analysis, GIS, etc. 4.3.2. Digital twins for cities: definitions, characteristics and applications Given the analysis of the definitions derived from the literature and to understand how practitioners conceive the DTs for cities, the first section of the survey was about the DT definitions, applications and purposes. Most of the participants consider DT for cities as a living (digital/virtual) (representations/models) of the city existing real-world objects, infrastructures, systems, processes. A DT has a two-way data flow from the “virtual” (V) and the “physical” (P): data going from P to V an",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_69",
+    "text": "DT has a two-way data flow from the “virtual” (V) and the “physical” (P): data going from P to V and information going from V to P to fit the purpose in some specific use cases. The data flow allows the convergence between the two counterparts at an appropriate rate of synchronization (generally near realtime) through an ongoing process of enrichment with dynamic data collected from sensors and Io T devices. DTs for cities take advantages of reality capture, mapping and surveying technologies to build a virtual copy of the city. It is considered as a system of data, models and algorithms that continuously refines the digital representations. To highlight the characteristics of DTs for cities, we asked the participants about the level of importance of the following DT features for cities.",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_70",
+    "text": "s, we asked the participants about the level of importance of the following DT features for cities. (See Fig. 7). The results show strong interest in the connection between both physical and digital worlds and consider that the integration aspect is one of the promising characteristics of a DT. Furthermore, the necessity of predictions and simulations is one of the main motivations towards DT for cities. DT for cities needs to be scalable as well. The realistic representations of the real world are crucial for visualizations purposes. However, relevant real-world abstractions are more important than having a realistic copy, so analysis and simulations could be conducted on the top of the virtual model. During the survey, participants were also asked to provide some DT applications and uses",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_71",
+    "text": "tual model. During the survey, participants were also asked to provide some DT applications and uses cases for cities, since DT for cities implementations are always related to the application. Most of them name urban planning, environmental management, traffic monitoring and urban mobility, disaster risk management, noise and air analysis and simulation, energy demand analysis. Three practitioners from academia: (1) ICT, (2) urban modelling and geoinformation and (3) architectural design backgrounds identify respectively some specific applications to support their city needs, namely: 15-minute walkable cities, real estate, heritage conservation and documentation. 4.3.3. DTs for cities and 3DCM Recently, it has been largely noted that 3DCMs and DTs for cities go hand in hand in the scienti",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_72",
+    "text": "DCM Recently, it has been largely noted that 3DCMs and DTs for cities go hand in hand in the scientific literature and in different worldwide SCs projects. The main question is: how much this term DT is starting to replace 3DCMs as the predominant term in the 3D city modeling and SCs following the work presented by (Ketzler et al., 2020). 10 participants from different backgrounds found that the DT did not replace yet the term 3DCMs (see Fig. 8). They argue that the 3D city models are not yet a mature version of DTs that takes on board all the previously mentioned features. In addition, they brought to light the spatial and temporal scale of the DTs (e. g., DTs are more towards a general spatial and temporal scale than the 3D city models). They also emphasize the smartness, the dynamicity",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_73",
+    "text": "tial and temporal scale than the 3D city models). They also emphasize the smartness, the dynamicity and multipurpose usage features of the DTs. Two participants from both academia and industry elaborate their answers by explaining that the DTs can be based on 2D data and that are several applications of 3DCMs which do not fit the theoretical definition of the DT but still could be useful for traditional visualizations purposes. Reviewing the literature and taking into consideration the answers collected from the survey, considering the 3D city models as the basis to build a DTs for cities is commonly accepted by practitioners to implement their DTs for cities initiatives from a geospatial point of view. First because of the availability of the 3D data and models. Second, thanks to the hist",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_74",
+    "text": "int of view. First because of the availability of the 3D data and models. Second, thanks to the historically achievements of 3D semantic models in performing a wide range of simulations and analysis. Finally, the other motivation is the fact that DTs enhance the collaboration between different stakeholders and tend to engage the citizens as end-users in the loop. This demonstrates the value of the 3DCMs for the visualization purposes as well and the communication with non-expert users. To sum up, DTs and 3DCMs have a lot of similarities if we retain the idea that 3D city models are the building blocks of DTs. The latter should be connected, integrated, predictive, simulated and scalable. Moreover, DTs could learn from the technical challenges that the 3D city models have experienced in the",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_75",
+    "text": "eover, DTs could learn from the technical challenges that the 3D city models have experienced in the decades of research in 3D GIS. 4.3.4. DTs for cities and CIM To meet the literature statements, we wanted to have an overview from different participants about the similarities and the divergences between these concepts. Participants argued that a DT uses data that are collected and organized in the framework of the CIM. They also almost agreed on the statement that the use of CIM appears to be a starting point to build a City Digital Twin. 6 participants (4 from academia, one from industry and one from government) totally agreed that DTs for cities are a specialization of CIM. 7 participants (4 from academia, 2 from industry and one from city government) disapprove of the idea of consideri",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_76",
+    "text": "(4 from academia, 2 from industry and one from city government) disapprove of the idea of considering CDT as a full integration of GIS and BIM, they consider that it could be a part of building and maintaining the city DT, but it is not the main core of conceiving DT for cities (see Fig. 9). Almost, all participants explain that the Io T and real-time coupling properties and the two-way link (data-information) from both worlds are better handled and more comprehensively described in the literature when working with DT than CIM. CIM covers the standards that could be useful for the CDTs and may simply be a static representation of city objects that does not change continuously. In addition, DTs encapsulate more algorithms for analysis and simulations and use different standards and structu",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_77",
+    "text": "DTs encapsulate more algorithms for analysis and simulations and use different standards and structures. To conclude, we can state that DT and CIM have both something to bring to the urban environment. Both need to have well established architecture, clear semantics, so future research can be based on, to deal with complexity of cities and understand the overlapping between the technologies. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 9 4.3.5. DTs for cities and SDI By looking at the survey response, almost all the participants agreed that solid spatial data infrastructure is the foundation for an UDT built on standards and interoperability, enabling effective usage and sharing of spatial information. However, 8 participants (7 fro",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_78",
+    "text": "ability, enabling effective usage and sharing of spatial information. However, 8 participants (7 from academia and one from industry) disagreed with the statement that DT is a spatial, digital model that extends the existing spatial data infrastructure with 3D spatial data, additional attributes and properties (see Fig. 10). In short, UDT is a spatially enabled platform that incorporates intrinsically the concepts involved in the SDI (policies, organizations, technologies, data and people). SDI gives an overview of how data are acquired and represented. The simulations, the predictions, the analysis and the linkage between the real and digital worlds are not covered in the SDI. The dynamic aspect is lacking as well, in contrast with DT. However, SDI is a foundation enabling the effective u",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_79",
+    "text": "spect is lacking as well, in contrast with DT. However, SDI is a foundation enabling the effective usage and sharing of spatial information. Fig. 6. Participant’s profile. Fig. 7. The level of importance of DT characteristics according to the survey. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 10 Fig. 8. Differentiation of the levels of consent according to the participants’ profiles about the concepts of 3DCM and DTs. Fig. 9. The level of agreement regarding the statements related to CIM and DTs. Fig. 10. The level of agreement regarding the statements related to SDI and DTs. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 11 4.4. Summary and discussion of the DTs definitions",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_80",
+    "text": "Observationand Geoinformation 122(2023)103440 11 4.4. Summary and discussion of the DTs definitions and concepts According to the state of the art, there is no common definition for what DT for cities looks like. The insights generated from this first section provide a more in-depth understanding of the concept of DTs for cities. Thus, the DTs concept for cities is diluted to take the 3D digital city models from static models to more dynamic representations, from individual or blocks of city entities (e. g., buildings or roads, vegetation) to large-scale coverage (the entire city and its interdependencies synchronized at specific frequencies with respect to an appropriate level of fidelity), from a silo-based approach to a participatory-based approach. This definition summarizes the three",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_81",
+    "text": "from a silo-based approach to a participatory-based approach. This definition summarizes the three major tracks identified in the literature. The different tracks motivated us to conduct an in-depth analysis of DTs and related concepts. Study of concepts enables us to clearly discern terms and concepts that are used jointly in the literature as well as in practice. The results will help us understand how practitioners use DTs and under what umbrella (3DCM, CIM, SDI). Concerning the potential of city-scale DTs, many authors discuss deeply the key drivers and the advantages of the DT for cities (Shahat et al., 2021; (H¨ am¨ al¨ ainen, 2021); Mohammadi and Taylor, 2017; Ivanov et al. 2020; Saeed et al. 2022), although this is done mostly to focus on demonstrating the technical applicability",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_82",
+    "text": "ed et al. 2022), although this is done mostly to focus on demonstrating the technical applicability of the concept without having a clear definition in mind. This digital replica of the city has many features and characteristics that set it apart from other digital models, specifically the connectivity and integration aspects. The connection feature of DT is defined by the mutual interaction between the digital copy and the real world. On the basis of this bi-directional data connection, we can identify 3 concepts: DM, DS, and DT. To tackle the second major contribution of this article, we will take advantage of the definitions and characteristics taken from the first section and classify the initiatives according to their level of maturity and the level of data integration. We aim to not",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_83",
+    "text": "e initiatives according to their level of maturity and the level of data integration. We aim to not only list the relevant initiatives according to some explanatory categories but also provide a critical and comparative approach to evaluate the DT initiatives. The main goal is to outline the different levels of data integration. These differences are justified by the diversity of the available data, the methods, and the use cases. In the following sections, the results are presented from a technical perspective and according to some specific inclusion criteria. 5. Digital Twin for cities: description, analysis and classification of current implementations The concept of DTs for cities has continued to be appealing in numerous cities around the world and attract considerable attention among",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_84",
+    "text": "ntinued to be appealing in numerous cities around the world and attract considerable attention among both academia and practice (i. e., industry, governments and public administrations). The term is applied to a specific district or the entire city-state. Indeed, most of the initiatives are largely driven by purpose (i. e., to support the administration to solve a specific phenomenon and to help in the climate and energy transition more specifically). The development of the DT started with a proof of concept according to the available data. Hence, 3D city modeling gained significant interest in the framework of DTs for cities as one of the building blocks. Therefore, we are far from having a single form or output of DTs for cities. The heterogeneity of the technical frameworks is the resul",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_85",
+    "text": "single form or output of DTs for cities. The heterogeneity of the technical frameworks is the result, firstly, of the lack of a common definition, as discussed in the previous sections. Secondly, the motivations towards creating DTs are different from one city to another. Finally, not all cities have the same data open or available to create DT, hence the availability and the quality of data are one of the prominent challenges that DT for cities is facing. Reviewing the-state-of-the art of DTs for cities, the most relevant city-scale DTs are built in a similar way (3D city models). It leads to this question: how close are the theoretical definitions of the DTs to the technical perspectives? The main objective of this section is to study the current DT implementations and to get an overvie",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_86",
+    "text": "The main objective of this section is to study the current DT implementations and to get an overview of the ongoing work for DTs for cities since different cities have particular needs and various requirements. For this purpose, we include recent papers and links to various projects, prototypes and proof of concepts. We also used the survey results derived from section 5 of the questionnaire. To facilitate the analysis conducted in this paper, we first start with general information about the DT initiatives (see Table 1). We then classify the DT initiatives according to their level of data integration (see Table 2). In this sense, we propose three levels of data integration from a geospatial perspective (see Table 3). We conclude by summarizing the findings. 5.1. Digital twins for cities",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_87",
+    "text": "l perspective (see Table 3). We conclude by summarizing the findings. 5.1. Digital twins for cities initiatives: study of realizations The state-of-the-art is not well-developed regarding how the DTs are implemented in practice and does not provide an in-depth analysis of the technical requirements. Only a few scientific papers cover and present the recent DT initiatives. Hence, in the scope of this section, the selected digital cities’ replicas are presented, under the condition that they are well documented on their online websites or reported in one or more scientific articles. In this section, we define some inclusion criteria to filter the DTs for city initiatives that will be analyzed in this work. First, the scale should be at the city or district level. Second, the DT has a 3D city",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_88",
+    "text": "in this work. First, the scale should be at the city or district level. Second, the DT has a 3D city model as input data. Third, the DTs are conceptualized to apply further analysis and simulations on top of visualizations. While it is outside the scope of this article to list all existing DTs since some initiatives could be confidential and the data collection from the grey literature could be overwhelming. An overview of some of the most ongoing projects around the world is discussed in more detail and for which the necessary information is available. To better present different projects, we proposed the following categories (see Table 1). Below is a summarizing table of the DT initiatives realized through multidisciplinary work between universities, research institutes and public and pr",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_89",
+    "text": "realized through multidisciplinary work between universities, research institutes and public and private organizations according to the categories listed previously. Table 1 Description of categories to document the DT for city initiatives. Categories Description Scale Coverage of the city project. The initiatives are implemented in several spatial scales. We take into consideration, the city, the district and the precinct scales. Data sources Summary of data acquisition, sensors and methods. City models Indicating the input layer of implementing DT (i. e., 3D city model, mesh model, hybrid model, or point cloud model). In this category, we specify the modeled city objects and the standards. Lo D The level of detail of the city objects Purposes Explaining the purposes of creating DT for c",
+    "section": "unknown",
+    "char_start": 61600,
+    "char_end": 62400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_90",
+    "text": ". Lo D The level of detail of the city objects Purposes Explaining the purposes of creating DT for cities. The purposes are strategic and operational to meet the city’s needs. Visualizations platforms Several platforms are deployed to disseminate the DT contents namely, web user interfaces and game engines. Simulations experiences To list the simulations and the analysis performed using the DT for cities. Updating method and frequency of updates Maintaining and updating the DT for cities is one of the promising steps in the lifecycle of DT. Hence, some initiatives have their own methods of updates and define a framework for maintaining their data and models. The update frequency is also relevant in our research to have an idea about the age of the 3DCMs. Status The maturity level of develo",
+    "section": "unknown",
+    "char_start": 62300,
+    "char_end": 63100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_91",
+    "text": "vant in our research to have an idea about the age of the 3DCMs. Status The maturity level of development of the DT project: proof of concept/prototype- operationalunder improvement (new features). I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 12 Table 2 Basic information of Digital Twin initiatives whether it is called (City-Urban-spatial) Digital Twin: scale, data sources, city models, level of details, purposes, visualizations platforms, simulations use cases, method, frequency of updates and maturity level. CDT Scale Data sources City models Lo D Purposes Visualizations platforms Simulations experiences Update method and frequency Status Helsinki 3D+ Kalasatama City District Oblique photogrammetry Aerial Li DAR Point cloud City I",
+    "section": "unknown",
+    "char_start": 63000,
+    "char_end": 63800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_92",
+    "text": "Status Helsinki 3D+ Kalasatama City District Oblique photogrammetry Aerial Li DAR Point cloud City Information Model-3D City GML model (Buildings flat-roofed and with differentiated roof structures Bridges, tunnels, waterbodies, terrain) Mesh model Lo D1Lo D2 3D design, urban planning for climate change and development Energy consumption Virtual tourism Life cycle processes and planning, testing, application and services Semantic 3D city model: Virtual City Systems Cesium Mesh model: Web and VR interfaces Semantic 3D city model: Urban planning and Helsinki Energy Atlas, solar power analysis, flood assessments, noise calculations. Mesh model: Tourism Method: Opensource BIM models Operational Espoo City 3D city model database 3D City GML Model (Textured building, generics, city furnitures, w",
+    "section": "unknown",
+    "char_start": 63700,
+    "char_end": 64500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_93",
+    "text": "Espoo City 3D city model database 3D City GML Model (Textured building, generics, city furnitures, water body, transportation, vegetation, land use and relief) 3D city model with point cloud Hybrid model Underground infrastructure (Generic objects) From Lo D0L0D3 Urban construction, planning Visualization of city objects from above and under ground Espoo Map Service Method: Unique attribute (release date) shows a date when an object has been updated in interface services. 3DCM is maintained in Trimble Locus. Frequency: 3 months Operational Vienna (Lehner and Dorffner, 2020) City GIS geodata inventory and data from specialized applications from departments Digital Geo Twin Semantics 3D geoobjects a living virtual city replica allowing the monitoring of city existing processes, the generatio",
+    "section": "unknown",
+    "char_start": 64400,
+    "char_end": 65200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_94",
+    "text": "ects a living virtual city replica allowing the monitoring of city existing processes, the generation of new information, the scenarios simulations of planning Allow a better data driven decision support Virtual City Map Linking the DT with further information (census, economic, energy consumption, maintenance management data) 3D planning data Simulations (solar potential, flood scenarios, disruptive event) . Under development Towards a local urban digital twin Rotterdam 3D City LIDAR BAG & BGT Aerial photo BGT (Basic Registration Large-scale Topography) BAG (Basic Registration Addresses and Buildings) BOR (Basic Registration Above and underground infrastructures BIM models and 3D city models. Buildings –Terrain – Trees (roots) – Lampposts – Cables and pipelines Storage tanks as a theme to",
+    "section": "unknown",
+    "char_start": 65100,
+    "char_end": 65900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_95",
+    "text": "s. Buildings –Terrain – Trees (roots) – Lampposts – Cables and pipelines Storage tanks as a theme to the 3D city model Lo D1Lo D2 Climate adaptation, viewsheds and energy performance of buildings Integration of the hydrodynamic city model with the 3D DT Virtual City Systems, ESRI, IMAGEM and UNITY use the model as input for analytics and visualizations. Generic scalable data sources: energy savings & solar potential asset management of the subsurface infrastructure, urban flooding applications GIS analyses Saving potential, green roof potential, solar potential Buildings are updated annually/ biennially. Objects in the public space and the pipes are updated monthly from the management system. Operational (continued on next page) I. Jeddoub et al.\n\nInternational Journalof Applied Earth Obse",
+    "section": "unknown",
+    "char_start": 65800,
+    "char_end": 66600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_96",
+    "text": ". Operational (continued on next page) I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 13 Table 2 (continued) CDT Scale Data sources City models Lo D Purposes Visualizations platforms Simulations experiences Update method and frequency Status Public Space)LVZK (Pipe Collector Card) Terrain model is updated every two years. Zurich 3-4D (Schrotter and Hürzeler, 2020) City Spatial data infrastructure, geodata portal Buildings, trees, forests and bridges Over 50,000 buildings in various Lo D Walls, bridges. Lo D0Lo D1Lo D2 Urban planning in climate change. Urban spatial data infrastructure. Web application, geoportal Virtual Zurich Zurich 4D. Visualization air pollution, and construction projects. Visibility, solar potential analyses, nois",
+    "section": "unknown",
+    "char_start": 66500,
+    "char_end": 67300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_97",
+    "text": ". Visualization air pollution, and construction projects. Visibility, solar potential analyses, noise propagation, flood simulations, shadow calculations mobile phone radiation Different model version, historical models using a time slider Operational Virtual Singapore City-Scale GIS data, Aerial mapping, mobile street mapping of all public roads Li DAR and imagery data. Orthophotos City GML used for vector models and surfaces Core datasets: digital terrain model, 3D city models (buildings, roads, coastline, airspace, underground asset and 3D geology), vegetation, cadaster, land use, waterbodies, point cloud, reality mesh, BIM. Several Lo Ds Virtual experimentation and test-bedding planning. urban planning, efficient energy consumption climate, population dynamics. 3DEXPERIENCity Dassault",
+    "section": "unknown",
+    "char_start": 67200,
+    "char_end": 68000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_98",
+    "text": "urban planning, efficient energy consumption climate, population dynamics. 3DEXPERIENCity Dassault Syst`emes Solar energy production demographics, climate and traffic data. Installing green roofs Simulation scenarios to adapt the regional temperature Operational Amsterdam 3D (Eça et al., 2022) City 3D BAG Buildings; roads; vegetation; underground parts (pipelines, cables); City planning Unity3D Still manually updated Operational Digital twin Munich (Hijazi et al., 2022) City Aerial surveys of the entire urban area, 3D point cloud mobile mapping campaigns supplemented by GPS measurements and drone recordings 3D City GML model Climate neutral smart cities. Urban data platform based on the OGC standards Traffic and Urban expansion simulation based on urban dynamics, 3D city models. Under imp",
+    "section": "unknown",
+    "char_start": 67900,
+    "char_end": 68700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_99",
+    "text": "standards Traffic and Urban expansion simulation based on urban dynamics, 3D city models. Under improvement Rennes 3D City District 3D model demographic data relating to mobility, health, energy, vegetation Tackling city complexities by involving all parties through a systemic approach. Dassault Syst`emes 3DEXPERIENCE platform Platform on the cloud Subway planning Building energy map based on demographic, land and energy data, Solar map, to fit photovoltaic panels Consultation on a tram/ bus project an interface on 5G which gathers information on equipment and on Operational (continued on next page) I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 14 Table 2 (continued) CDT Scale Data sources City models Lo D Purposes Visualizations pl",
+    "section": "unknown",
+    "char_start": 68600,
+    "char_end": 69400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_100",
+    "text": "023)103440 14 Table 2 (continued) CDT Scale Data sources City models Lo D Purposes Visualizations platforms Simulations experiences Update method and frequency Status exposure in measured values. Virtual Gothenburg City Parametric, or procedural modeling Buildings, streets, lampposts and trees plantations and forests, information describing the city and its objects must also be added. Materials and textures are added Urban planning Urbanization growth Segregation of the city into ten districts with varying socioeconomic conditions Climate change affecting the sea level and posing risk of flooding. Unreal engine Visualization (v4.27) with several datasets from Gothenburg’s open data portal City Engine Scenarios for future projects and traffic simulations Self-driving vehicles Sun and shadow",
+    "section": "unknown",
+    "char_start": 69300,
+    "char_end": 70100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_101",
+    "text": "ty Engine Scenarios for future projects and traffic simulations Self-driving vehicles Sun and shadow studies Noise and sound and air quality Challenges with torrential rain and segregation . Operational Herrenberg ( Dembski et al., 2020) City Existing geographic data and information and 3D laser scanning data. Data from mobile app and space syntax) Movement traces of bicycles (From GPS data) Movement traces of pedestrian (From GPS data Mobile app) 3D city model. Easily accessible routes for elderly people Potential for solar energy production Suitable routes for drivers. Effects of new constructions and installations by analyzing ambient temperatures and sunlight. COVISE (Collaborative Visualization and Simulation Environment) Mobility, transport and air quality Co-creation Pedestrian move",
+    "section": "unknown",
+    "char_start": 70000,
+    "char_end": 70800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_102",
+    "text": "lization and Simulation Environment) Mobility, transport and air quality Co-creation Pedestrian movement and stationary activities Spatial network analysis Air pollution sensors Prototype Operational Sofia- Bulgaria GATE (Dimitrov and Petrova Antonova, 2021; Hristov et al., 2022) District Sofia Municipality Footprints of buildings, floors number, function, Addresses points and locality DTM-DSM Buildings and vegetations, City GML2.0.Attributes (address information) . Integrating buildings and terrain model Lo D1 Create a CDT platform for urban management, experimentation. Enhancement of urban processes throughout the entire lifecycle of the urban environment. Web application. Shadowing buildings according to their attributes. Cesium ion (hosting of the 2D model) and Cesium JS (visualization",
+    "section": "unknown",
+    "char_start": 70700,
+    "char_end": 71500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_103",
+    "text": "ngs according to their attributes. Cesium ion (hosting of the 2D model) and Cesium JS (visualization) QGIS for analysis Parametric urban planning Air pollution analysis and simulation 15-minutes walkable cities Operational Proof of concept/ Prototype DUET (Raes et al., 2021) Cities Athens, Pilsen, Flanders Municipal GIS data (terrain, trees location, 3D building models etc.), public transport data, including positions of stops and moving vehicles, wider traffic data, pollution data and noise data. City data (street networks, elevation models, Io T sensor data local 3D city model Lo D2 Virtual city replicas to address the complex interrelation between systems (traffic, noise, air quality). Understand effects of potential change. Policy-Ready-Data-asa-Service. Virtual City Systems Traffic da",
+    "section": "unknown",
+    "char_start": 71400,
+    "char_end": 72200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_104",
+    "text": "derstand effects of potential change. Policy-Ready-Data-asa-Service. Virtual City Systems Traffic data with data on air and noise pollution used to create scenarios for green routing and traffic monitoring within the city. Operational Proof of concept (continued on next page) I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 15 Table 2 (continued) CDT Scale Data sources City models Lo D Purposes Visualizations platforms Simulations experiences Update method and frequency Status Fishermans Bend Digital Twin (Chehrehbargh, 2022) Districtmulti-scale from building to city Massive 3D datasets 2D and 3D data3D data formats (City GML, BIM, 3DTiles, DEM) Buildings; Roads; Underground parts (pipelines, cables). High resolution photo mesh 3D City",
+    "section": "unknown",
+    "char_start": 72100,
+    "char_end": 72900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_105",
+    "text": "s, DEM) Buildings; Roads; Underground parts (pipelines, cables). High resolution photo mesh 3D City GML model Test the innovation and emerging technologies for better planning and land administration. Planning analysis tool ( Ped Design tool enables analysis of pedestrian movement. BIM based 3D Cadaster query and visualization. a composable, customizable and community-oriented system architecture. Built on a web-GIS and use Cesium and other mediums (e. g., Matterport) for visualization quantitative shadow analysis, sky view factor Precision planning Shadow analysis Precinct structure plan height constraints 4D historic imagery Live travel information 3D cadaster. Planning application: Planning Support System based building envelope control, viewshed analysis, 360◦visualzation, integration",
+    "section": "unknown",
+    "char_start": 72800,
+    "char_end": 73600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_106",
+    "text": "ng Support System based building envelope control, viewshed analysis, 360◦visualzation, integration with public health analysis, urban skyline current future. Real time indoor positioning Web services Operational Proof of concept/ Prototype New South Wales (NSW) City Buildings 3DRoad Segments 3D (lines)Road Segments 2D (polygons)Railway 3D (lines)Hydroplanes 3D (lines)Terrain (grid)Trees 3D (point)Vegetation coverage 2D (polygon)Footpath 2D (lines)4D model (3D model and time) Data from telco, water and energy utilities real time data Buildings; Roads; Vegetation. 3D City Models (LOD2, no semantics, surfaces) 3D analysis urban liveability and climate adaptability use cases. Virtual environment (commonly Cesium) Shared data management delivery platform Data 61 Data federation approach. Open",
+    "section": "unknown",
+    "char_start": 73500,
+    "char_end": 74300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_107",
+    "text": "t (commonly Cesium) Shared data management delivery platform Data 61 Data federation approach. Open sourced Terria JS Depends on the data sets between 1 and 4 years Operational Under improvement (new features) Digital Twin Victoria (DTV) City an extensive catalogue of open data from across local, state and federal government, more than 4,000 datasets Buildings; Roads; Vegetation Visualize a DT model of Victoria. Collection of 3D spatial data. Virtual environment (commonly Cesium) Shared data management delivery platform Data 61 Data federation approach. Open sourced Terria JS Visualizations of renewable energy capacity flooding data Scenario modelling for infrastructure development Real-time data for emergency management Depends on the data sets between 1 and 4 years Operational Under impr",
+    "section": "unknown",
+    "char_start": 74200,
+    "char_end": 75000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_108",
+    "text": "data for emergency management Depends on the data sets between 1 and 4 years Operational Under improvement (new features) Liveable City Digital Twin (Diakite et al., 2022) Liverpool precinct in Western Sydney Buildings, terrain, transportation, water Semantic 3D city model Lo D2 Create a City Digital Twin through data integration of Cesium For visualizations 3D shadow analysis. Sun exposure and tree coverage. Update of the DT using Io T data (real time Operational and under development (continued on next page) I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 16 Analyzing the findings, DTs for cities are spatially enabled platforms. They are based on various datasets and predominately tend to use the hybrid method from different sensors",
+    "section": "unknown",
+    "char_start": 74900,
+    "char_end": 75700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_109",
+    "text": "are based on various datasets and predominately tend to use the hybrid method from different sensors data (aerial acquisition, laser scanning). Most of the initiatives are not build from scratch, they are based on a minimum core of CIMs or implemented based on existing SDIs. Table 2 serves as foundational information for how the data are acquired, how they are modelled and how data are visualized. An overview analysis shows that DTs for cities are developed in various spatial scales. It gives the possibility to go from small proof of concepts to large scale implementations. The most common use cases are related to energy domain, mobility and environment issues. We can also see that the use cases are generally created using the same data input, which ex- plains the interest of having a full",
+    "section": "unknown",
+    "char_start": 75600,
+    "char_end": 76400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_110",
+    "text": "ases are generally created using the same data input, which ex- plains the interest of having a full image of the city with all its objects, processes and systems. The more the model is rich semantically and valid geometrically, the more use cases can be conducted. For the level of details, some DT projects combine different level of details to serve multiple uses cases. However, for buildings generally, the DT initiatives use the Lo D 1.x and the Lo D 2.x as a simple model to manipulate with the respect of the data available. The viewer generally provides the textured and untextured buildings. More detailed building can be integrated if BIM (as built) models are provided from CAD industry. As mentioned earlier, buildings are the most omnipresent themes that are modelled, since they repres",
+    "section": "unknown",
+    "char_start": 76300,
+    "char_end": 77100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_111",
+    "text": "As mentioned earlier, buildings are the most omnipresent themes that are modelled, since they represent the identity of cities. Many ini- tiatives express the need to incorporate other themes in the context of the DT to cover all the city objects and replicate all the systems. The visualization platform is commonly built on web-based application using Cesium ion 12, for dissemination of several datasets. Moreover, Virtual City Systems 13 provide innovative solutions that render 2D and 3D geodata using web-based applications based on Cesium (i. e., VC Maps 14). Other initiatives explore game engines capability, mainly T a b l e 2 ( c o n t i n u e d ) C D T S c a l e D a t a s o u r c e s C i t y m o d e l s L o D P u r p o s e s V i s u a l i z a t i o n s p l a t f o r m s S i m u l a t i",
+    "section": "unknown",
+    "char_start": 77000,
+    "char_end": 77800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_112",
+    "text": "t y m o d e l s L o D P u r p o s e s V i s u a l i z a t i o n s p l a t f o r m s S i m u l a t i o n s e x p e r i e n c e s U p d a t e m e t h o d a n d f r e q u e n c y S t a t u s d i f f e r e n t i n p u t g e o m e t r i c a l a n d t h e m a t i c d a t a . ( M a n i p u l a t i o n a n d a n a l y s i s Q G I S ) C o n n e c t i o n b e t w e e n C e s i u m a n d d a t a b a s e u s i n g A P I . C o n n e c t i o n o f P o s t g r e S Q L a n d C e s i u m w i t h t h e h e l p o f p y t h o n l i b r a r y F l a s k . D T d a t a u p d a t e f r o m t h e f r o n t - e n d . C a n o p y m a n a g e m e n t u s i n g e x i s t i n g t r e e s ’ s h a d o w s . V i s u a l i z a t i o n o f s e n s o r f e e d s . P e d e s t r i a n fl o w s . i n t e r a c t i o n ) N U S",
+    "section": "unknown",
+    "char_start": 77700,
+    "char_end": 78500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_113",
+    "text": "a t i o n o f s e n s o r f e e d s . P e d e s t r i a n fl o w s . i n t e r a c t i o n ) N U S - F R S ( A l v a e t a l . , 2 0 2 2 b ) D i s t r i c t s c a l e u n i v e r s i t y c a m p u s C i t y E n e r g y A n a l y s t ( C E A ) B u i l d i n g d a t a ( f o o t p r i n t , h e i g h t i n f o r m a t i o n f r o m O S M ) R e a l - t i m e d a t a E n e r g y d e m a n d s i m u l a t i o n r e s u l t s . O c c u p a n c y r a t e s f r o m W i F i d a t a 3 D c a m p u s m o d e l B I M m o d e l ( I f c 2 C i t y G M L ) L o D 1 E n e r g y s y s t e m s m a n a g e m e n t o n a d i s t r i c t s c a l e . D i g i t a l T w i n D a s h b o a r d b a s e d c e s i u m w e b m a p a p p l i c a t i o n p o s t - p a n d e m i c a n d c l i m a t e c h a n g e s c e n a r",
+    "section": "unknown",
+    "char_start": 78400,
+    "char_end": 79200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_114",
+    "text": "b m a p a p p l i c a t i o n p o s t - p a n d e m i c a n d c l i m a t e c h a n g e s c e n a r i o s O p e r a t i o n a l E n S y s L E p r o j e c t ( S a n t h a n a v a n i c h e t a l . , 2 0 2 2 ) G e r m a n y c o u n t i e s : D i t h m a r s c h e n , I l m - K r e i s a n d L u d w i g s b u r g . 2 D a n d 3 D g e o s p a t i a l d a t a C i t y G M L 3 D c i t y m o d e l s B u i l d i n g s a t t r i b u t e s S D I t o h a n d l e b u i l d i n g e n e r g y b a s e d o n a n U D T a p p l i c a t i o n u s i n g ( O G C ) s t a n d a r d s . 3 D w e b a p p l i c a t i o n u s i n g C e s i u m E n e r g y s i m u l a t i o n s , h e a t i n g a n d e l e c t r i c d e m a n d s , r o o f t o p s o l a r p o t e n t i a l . O p e r a t i o n a l , l i m i t e d a c c e",
+    "section": "unknown",
+    "char_start": 79100,
+    "char_end": 79900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_115",
+    "text": "a n d s , r o o f t o p s o l a r p o t e n t i a l . O p e r a t i o n a l , l i m i t e d a c c e s s t o s o m e d a t a Table 3 DT initiatives classification according to the data type and the maturity level of integration. CDT Type of DT Maturity level of integration Helsinki 3D + Kalasatama Static Digital model Espoo Static Digital model Vienna Static Digital model Rotterdam 3D Dynamic (near real time data, real time data) Digital shadow Zurich 3-4D Static Digital model Virtual Singapore Dynamic (real time data) Digital Twin Amsterdam3D Static Digital model Digital Twin Munich Dynamic Digital shadow Rennes 3D Dynamic Digital shadow Virtual Gothenburg Dynamic Digital shadow Herrenberg Dynamic (near real time data) Digital shadow Sofia- Bulgaria Dynamic (Near real time data) Digital sh",
+    "section": "unknown",
+    "char_start": 79800,
+    "char_end": 80600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_116",
+    "text": "ynamic (near real time data) Digital shadow Sofia- Bulgaria Dynamic (Near real time data) Digital shadow DUET Dynamic Digital Twin Fishermans Bend Digital Twin Dynamic (Near real time data) Digital Twin NSW New South Wales Dynamic (Near real time data) Digital shadow DTV Digital Twin Victoria Dynamic (Near real time data) Digital shadow Liveable City Digital Twin Dynamic (real time sensor feeds visualizations) Digital shadow NUS-FRS Dynamic (real time data) Digital shadow En Sys LE project Dynamic Digital shadow 12 https://cesium. com/platform/cesium-ion/. 13 https://vc. systems/en/. 14 https://vc. systems/en/products/vc-map/. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 17 Unity 15 and Unreal Engine 16, as a platform for visualizat",
+    "section": "unknown",
+    "char_start": 80500,
+    "char_end": 81300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_117",
+    "text": "ionand Geoinformation 122(2023)103440 17 Unity 15 and Unreal Engine 16, as a platform for visualization and interactions. From an academic point of view, Cesium has shown growing popularity in the DT context through its intuitive development and visualization functionalities. However, from practice, ESRI software packages 17 namely Arc GIS Online, Arc GIS Urban, Java Script for Arc GIS (using I3S) and Arc GIS Maps SDK for Unity and Unreal Engine are widely deployed as a foundation for DTs. Given the complexity of creating DTs for cities, some considerations are identified in the Arc GIS requirements namely, time scale, stakeholder diversity, systems complexity, data ownership and data security. Generally, simulations can be conducted as well using the game engines (i. e., traffic and rainf",
+    "section": "unknown",
+    "char_start": 81200,
+    "char_end": 82000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_118",
+    "text": "ty. Generally, simulations can be conducted as well using the game engines (i. e., traffic and rainfall simulations in the Virtual Gothenburg). The DTs for cities are conceived based on open data standards (i. e., basis GIS data standards, OGC standards, ISO standard for metadata). The most common 3D city data model is City GML model. For the moment, there is no active initiative that relies on the City JSON format, which defines itself as more “developers friendly”. All attempts to build DT are based on City GML 2.0, which explains the differences noticed in the data integration frameworks (integration of dynamic data and versioning). These issues should be answered with the latest version 3.0 of City GML as long as better integration (BIM-GIS) that is one of the update methods for DT for",
+    "section": "unknown",
+    "char_start": 81900,
+    "char_end": 82700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_119",
+    "text": "3.0 of City GML as long as better integration (BIM-GIS) that is one of the update methods for DT for cities context. Some initiatives offer the possibilities to render different format of 3D models in the same viewer (mesh model, 3D point cloud, hybrid model, etc.). It is also worth mentioning that most of the simulations are performed with a separate software and the results are integrated using different approaches (refer to section 5.3). Some of the projects specify their methods and the frequency of updates. Many initiatives are operational. They tend to provide a collaborative digital platform to understand the efficiency of current systems and to design and test future scenarios. The list of DTs initiatives is not exhaustive and further projects could be documented for future article",
+    "section": "unknown",
+    "char_start": 82600,
+    "char_end": 83400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_120",
+    "text": "ist of DTs initiatives is not exhaustive and further projects could be documented for future articles. 5.2. Level of data integration between both worlds Taking insights from the Table 2 and considering the definitions of the DM, DS and DT described in section 4.1.2, we classify DT initiatives of cities according to the type of digital replica (static or dynamic i. e., include the sensors or Io T data) and the level of data integration (data connection between two worlds). Table 3 summarizes the fundings. All initiatives use the term “DT” in practice. However, according to the analysis of concepts and implementations, we are far from a complete implementation of the concept as it is defined in the theory. Table 3 presents the different initiatives that are generally dynamic copies of the r",
+    "section": "unknown",
+    "char_start": 83300,
+    "char_end": 84100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_121",
+    "text": "in the theory. Table 3 presents the different initiatives that are generally dynamic copies of the real world using the near real-time data collected from sensors. Based on the findings achieved in the section 4, we can conclude that almost all initiatives are digital shadows because the data connection from the real world to the digital copy is automatic. Still, the other way is generally done in a manual process (human interventions adapting the physical world). Such a bidirectional connection needs to be explored in the future. The mutual connection developed up to now has not been achieved in any implemented city-scale DT. Since it will be costly and timeconsuming to install an unlimited number of sensors and Io T devices in large-scale coverage. However, some works are carried out on",
+    "section": "unknown",
+    "char_start": 84000,
+    "char_end": 84800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_122",
+    "text": "number of sensors and Io T devices in large-scale coverage. However, some works are carried out on a neighborhood scale to test the design of the DT through actuators and using artificial intelligence by giving feedback to the physical world. Thus, it would be preferable to name the current realizations City Digital Shadow instead of the City Digital Twin which is considered as a longterm perspective and that is not an end in itself, since new digital technologies will emerge in the future. 5.3. Data integration methods-based use cases In this section, we intend to explore how data is integrated into an UDT and assess the different data integration levels. We have classified the initiatives according to their use cases. The data can either be static data, dynamic data, or simulation resul",
+    "section": "unknown",
+    "char_start": 84700,
+    "char_end": 85500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_123",
+    "text": "according to their use cases. The data can either be static data, dynamic data, or simulation results. To facilitate the understanding of the different levels of data integration involved in this work, we have defined the following schema (see Fig. 11). From a general point of view, we define three levels of data integration: a conceptual schema model level (the data are integrated into the top level of the DT, i. e., extending the schema model to cover new features or themes), which will allow a direct feed of the database; a database level (data are integrated in order to feed or update specific attributes or classes; a conversion process is to be considered, particularly when data are in various formats); and an application level (the data are integrated into the application generally",
+    "section": "unknown",
+    "char_start": 85400,
+    "char_end": 86200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_124",
+    "text": "various formats); and an application level (the data are integrated into the application generally at the viewer level). The levels proposed in this work are inspired by how data has been integrated into 3D city models, especially those based on City GML 2.0. However, we have attempted to cover initiatives that use different standards without being limited to any particular standard. Indeed, there are many standards deployed to implement DT for cities, namely City GML and building SMART IFC. These standards are recognized as the cornerstone of City DTs. However, they address different applications and serve heterogeneous purposes as they have different and complex geometries, semantics, and structures and target different spatial scales. City GML represents the semantic 3DCM according to",
+    "section": "unknown",
+    "char_start": 86100,
+    "char_end": 86900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_125",
+    "text": "structures and target different spatial scales. City GML represents the semantic 3DCM according to a hierarchical decomposition of the city elements into relevant classes with respect to the level of detail. However, BIM as a natural evolution of CAD industry aimed to create 3D digital models of buildings or infrastructure by supporting their entire life cycle, ranging in different levels of representation, and enhancing collaboration between various disciplines. BIM models are generally more detailed representations incorporating semantics that are relevant for some specific applications (i. e., refurbishment). In parallel, 3D semantic models have higher-level semantics that allows performing various applications on a city-scale. It is worth mentioning as well that 3D city models are ini",
+    "section": "unknown",
+    "char_start": 86800,
+    "char_end": 87600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_126",
+    "text": "ing various applications on a city-scale. It is worth mentioning as well that 3D city models are initiatives that are dominated by research institutes and government, while BIM models are built and maintained mainly by industry. Thus, fostering the involvement of different stakeholders towards the use of both models in the city’s scope. 3D city models and BIM models have both a great input to enhance the 3D city modeling and analysis within different applications from small scale to large-scale urban environments. However, the integration of both models is still challenging when it comes to the full conversion between both systems due to their geometry complexities and semantic heterogeneities. Hence, many methods and projects are carried out to perform uniform and standardized conversion",
+    "section": "unknown",
+    "char_start": 87500,
+    "char_end": 88300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_127",
+    "text": "es. Hence, many methods and projects are carried out to perform uniform and standardized conversion of BIM data to GIS data and vice versa (Geo BIM initiative). Accordingly, Geo BIM 18 is widely acknowledged as an open initiative that addresses the data integration issues of both systems from specific use cases and from leading experiences. Furthermore, the new version 3.0 of City GML brings new opportunities by refining constructions and buildings modules and creating new feature types to facilitate direct mapping from BIM data sets onto City GML. Moreover, the introduction of the new space concept that already exists in BIM model can enhance conversion between the two systems. All these improvements contribute to implementing a DTs for cities and reducing data integration and interoperab",
+    "section": "unknown",
+    "char_start": 88200,
+    "char_end": 89000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_128",
+    "text": "provements contribute to implementing a DTs for cities and reducing data integration and interoperability issues while providing a convergence of the two worlds and connecting them in an efficient and interoperable way. Up to date, there are no official standards that are established to handle DTs for cities from a technical point of view. However, we should take advantage of the existing standards by ensuring convergence between them in a meaningful way with respect to the differences. In this work, the BIM models are used to typically update the semantic 3D city models and to increase their Lo Ds. 15 https://unity. com/solutions/digital-twins. 16 https://www. unrealengine. com/en-US/digital-twins. 17 https://www. esri. com/arcgis-blog/products/arcgis/aec/gis-foundation-for-digital-twins/",
+    "section": "unknown",
+    "char_start": 88900,
+    "char_end": 89700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_129",
+    "text": "l-twins. 17 https://www. esri. com/arcgis-blog/products/arcgis/aec/gis-foundation-for-digital-twins/. 18 https://3d. bk. tudelft. nl/projects/eurosdr-geobim/. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 18 These standards are useful to build DT for cities, but it is a restrictive view since DTs for cities are not limited to the static modelling but also take into consideration the dynamic objects properties and the city objects relationships. Thus, other standards are deployed, for example, Io T and sensor standards, web standards, OGC standards such as Sensor Things API, 3D tiles, and i3s to name few. The use of standards helps to overcome the cost of data integration from various sources and increase the usability. For example, i",
+    "section": "unknown",
+    "char_start": 89600,
+    "char_end": 90400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_130",
+    "text": "vercome the cost of data integration from various sources and increase the usability. For example, in Germany, standardization efforts for DTs for cities are taking place to specify the main components of UDTs for municipalities. The consortium for DIM SPEC 9160719, “Digital TWIN for Cities and Municipalities,” has been established in the framework of a joint project 20 between the cities of Hamburg, Leipzig and Munchen, known as “Connected Urban Twins”. The project’s aim is to define common standards that identify the technical guidelines and non-technical aspects required to create DTs for cities. Regarding the defined levels of data integration, for example, in the context of a DT project for a city, it appears that roads are required and the DT as it is initially designed is not consid",
+    "section": "unknown",
+    "char_start": 90300,
+    "char_end": 91100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_131",
+    "text": "for a city, it appears that roads are required and the DT as it is initially designed is not considering this kind of city object. So, how to integrate or feed the DT when you have a specific requirement? And which level will be the most efficient to integrate this data? Three scenarios are possible. We can modify the DT conceptual schema model and add the required schema. Or, if we assume that the conceptual schema of the DT supports the theme road and we would like to update an attribute from an external database, in such a case, level 2 is the most appropriate level. Supposing that the roads are available Fig. 11. Levels of data integration: Level 1- Conceptual Data Model, Level 2- Database, Level 3- Application. 19 https://www. din. de/de/forschung-und-innovation/themen/ smart-cities/",
+    "section": "unknown",
+    "char_start": 91000,
+    "char_end": 91800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_132",
+    "text": "ase, Level 3- Application. 19 https://www. din. de/de/forschung-und-innovation/themen/ smart-cities/aktuelles/der-digitale-zwilling-fuer-staedte-und -kommunen-kommt–859000. 20 https://www. connectedurbantwins. de/. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 19 through an intranet solution or stored in an administration database, in this case, the city objects will be visualized at the level of the viewer. In this sense, we are talking about level 3. From a geospatial point of view, BIM and GIS integration is another example that could fit the different levels of data integration proposed in the scope of this work. Indeed, to update the DT for cities, an integration of BIM and GIS is relevant. To achieve integration between these t",
+    "section": "unknown",
+    "char_start": 91700,
+    "char_end": 92500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_133",
+    "text": "the DT for cities, an integration of BIM and GIS is relevant. To achieve integration between these two models, different approaches are feasible. Some examples use the Application Domain Extensions (ADEs) to extend the City GML standard, allowing additional features to be mapped from IFC. Such an integration corresponds to a level 1 integration. Level 2 is when a connection is established between classes in City GML and IFC, including mapping of the elements and attributes. For level 3, City Engine is one of the software that allows exporting 3D city models and BIM models, but without any semantic mapping. In this sense, the integration is performed at the application level and nothing remains when the application is switched off. Applying the different levels of data integration explained",
+    "section": "unknown",
+    "char_start": 92400,
+    "char_end": 93200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_134",
+    "text": "ns when the application is switched off. Applying the different levels of data integration explained above, we classified DT for city initiatives according to their use cases. We have excluded some cities from this classification because currently no integration of dynamic data or simulation results is made and there is no available information about how the process of data integration is performed. Table 4 presents the results. The results show that different integration methods can be used for the same initiative. This depends strongly on the use cases. For example, the initiatives that use the semantic 3D city models integrate the data in similar ways. In fact, for the simulation results, level 1 and 2 are widely used by extending the schema model through ADEs and updating the Table 4 D",
+    "section": "unknown",
+    "char_start": 93100,
+    "char_end": 93900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_135",
+    "text": "level 1 and 2 are widely used by extending the schema model through ADEs and updating the Table 4 Data integration approach-based use cases and platforms. CDT Data integration approach MCD - Level 1 BD - Level 2 Application - Level 3 Helsinki 3D Energy ADE, Energy demand Heating demand and CO2 emissions Solar potential Wind simulations Espoo Generic objects in City GML Generic attributes Rotterdam 3D Energy demand BIM models Io T and sensors data Zurich 3-4D Urban planning, construction projects, street space in 3D via intranet solution, trees, archaeological objects, underground, power lines, BIM model, bridges. historical 3D spatial data, forests, open data catalogue Virtual Singapore 3DEXPERIENCity Digital Twin Munich a conceptual model, combining a system dynamics model with a semanti",
+    "section": "unknown",
+    "char_start": 93800,
+    "char_end": 94600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_136",
+    "text": "XPERIENCity Digital Twin Munich a conceptual model, combining a system dynamics model with a semantic 3DCM through a bidirectional data flow between the two models. Thus, an automatic change of the 3DCM is implemented for an urban densification use case based on the system dynamics model outputs. Rennes 3D 3DEXPERIENCity, subway planning and construction in Maurepas District of Rennes on traffic lights, bus station crowds, commuting times and neighborhood buildings, measurements from sensors for energy usage, traffic, pollution, and other metrics for early detection of anomalies Virtual Gothenburg Unreal Engine (simulations of traffic data), City Engine (parameters and attributes) Herrenberg COVISE- sensor network data-air flow simulation-urban mobility simulation3D city model Sofia- Bulga",
+    "section": "unknown",
+    "char_start": 94500,
+    "char_end": 95300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_137",
+    "text": "COVISE- sensor network data-air flow simulation-urban mobility simulation3D city model Sofia- Bulgaria Integration of address information, intersection of buildings and terrain Computational pedestrian wind comfort- Wind flow simulations a digital twin using Computational Fluid Dynamics (CFD) Indoor air quality and thermal comfort and thermal comfort using CFD DUET 3D model and urban data (Io T data, Geodata services), decoupled services that interact using central data broker. FIWARE smart data models Trusted urban data repository of city information Fishermans Bend Digital Twin Developing modules to convert different data formats and integrate, georeferenced and visualize. NSW Spatial Digital Twin Open data catalogue Data federation approach Accessing the data is done directly from its",
+    "section": "unknown",
+    "char_start": 95200,
+    "char_end": 96000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_138",
+    "text": "ital Twin Open data catalogue Data federation approach Accessing the data is done directly from its custodian (state government and agencies) Open framework of geospatial data services Terria JS software. The platform does not store the data. Instead, it connects to the data service via the platform. Digital Twin Victoria Liveable City Digital Twin Generic City Object class, for sensors data (stored the physical location of the sensors) Generic attributes for several themes (buildings, roads and railways, water bodies) Update of the height values of the sensors shadow analysis heat map of the trees visualization interface for the Io T data feeds directly via API NUS-FRS Ifc2City GML Integration of 3D campus, real-time data from sensors, energy demand simulation results from the City Energy",
+    "section": "unknown",
+    "char_start": 95900,
+    "char_end": 96700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_139",
+    "text": "ion of 3D campus, real-time data from sensors, energy demand simulation results from the City Energy Analyst tool, and occupancy rates from Wi Fi data. En Sys LE project Connection between the 3D city models and OGC web services to optimize the performance of the 3D urban energy visualization platform I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 20 attributes. Furthermore, most initiatives implement the DT by creating a 3DCM using the City GML 2.0 standard. Hence, data integration is more explored in the City GML schema that enables the extension and interoperability of 3D models in various applications. Future developments for several initiatives consider including additional objects such as underground infrastructures and open spa",
+    "section": "unknown",
+    "char_start": 96600,
+    "char_end": 97400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_140",
+    "text": "l initiatives consider including additional objects such as underground infrastructures and open spaces to name a few. These implementations will probably use the generic objects and attributes of the City GML standard. It is also important to consider that levels 1 and 2 are usually interrelated. Indeed, if we extend the conceptual schema, we will necessarily need to feed the classes with the required information. Level 3 (application-based data integration) is also used in different initiatives, particularly the Australian initiatives that are built in similar ways, which explains their interest in building a National Digital Twin. The application-based approach is the most encountered kind of platform since it can be challenging to take into consideration a general and unified conceptua",
+    "section": "unknown",
+    "char_start": 97300,
+    "char_end": 98100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_141",
+    "text": "d of platform since it can be challenging to take into consideration a general and unified conceptual model in the conception phase of the creation of DT for cities. To conclude, we can state that the integration of data in a DT for cities is one of the main issues that need to be tackled (different sources, semantics and structures). For this reason, the integration needs to be designed according to the level of maturity. Furthermore, the data integration is guided by the type of data, the simulation and the application requirements. In the DT initiatives, there is usually a need for visualizations that consider multiple end-users. Furthermore, the DT initiatives currently implemented in practice tend to focus on the development of DT-based use cases. Which explains the different levels o",
+    "section": "unknown",
+    "char_start": 98000,
+    "char_end": 98800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_142",
+    "text": "actice tend to focus on the development of DT-based use cases. Which explains the different levels of data integration derived from the scope of this work. In the future, further integration levels can be conceived, or we can design a generic DT that includes the relevant city objects, services, or processes, and on the basis of which DTs applications can be performed later. 6. Discussion of findings The results obtained from our scientific literature review and survey analysis enhance other related works that address the challenges of DTs for cities, namely the lack of a common definition and data integration. Indeed, our findings give an in-depth analysis of how the DTs are defined and implemented in practice, which helps us understand the current realizations and document them. By clari",
+    "section": "unknown",
+    "char_start": 98700,
+    "char_end": 99500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_143",
+    "text": "lemented in practice, which helps us understand the current realizations and document them. By clarifying the DT’s definitions and extracting the key features and components, we can easily relate what the maturity level of the 3D digital model is. Thus, conducting a systematic review of DTs with related modeling concepts and putting them into perspective to define their convergences and divergences. Reviewing related works used in this paper, our findings extended the study established by (Adeline et al., 2022) that pinpoints the conceptual and technical aspects of both DTs and CIM. In addition, a review conducted by (Ketzler et al., 2020) examines historically the DT definitions and identifies similarities and possible variations with 3D city models. However, currently, there is no study",
+    "section": "unknown",
+    "char_start": 99400,
+    "char_end": 100200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_144",
+    "text": "ies similarities and possible variations with 3D city models. However, currently, there is no study that compares and discusses, from a theoretical and practical point of view, DTs with 3DCM and CIM as modeling approaches. Furthermore, no related work considers SDI as an approach that can be applied in the given context where a DT consists of a system of systems at multiple levels of scale and complexity. One of the key findings is that it is important to clearly define the concepts and approaches, thus understanding the input layer of a DTs for cities from practice. Indeed, current implementations confuse the concept of DTs with other notions and sometimes consider it as a technological evolution of what has been achieved in 3D urban modeling. Through listing the current DTs definitions f",
+    "section": "unknown",
+    "char_start": 100100,
+    "char_end": 100900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_145",
+    "text": "lution of what has been achieved in 3D urban modeling. Through listing the current DTs definitions from the literature review, we intend to study the differences and extract the common features that characterize the DTs. The aim of this section is not to provide a complete and unique definition of DTs for cities but rather to identify and discuss in length the various definition tracks reviewed in this work. Hence, considering DTs for cities as systems of systems is the most highlighted track, e. g., 15 papers have defined DTs for cities as a digital representation of the city elements that function as an ecosystem of twin systems without narrowing the scope to the 3D components. The analysis of the definitions reflects the key features and main components of DTs for cities. We primarily f",
+    "section": "unknown",
+    "char_start": 100800,
+    "char_end": 101600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_146",
+    "text": "s of the definitions reflects the key features and main components of DTs for cities. We primarily focus on the heterogeneity of the data since DTs for cities can be conceived as data containers. In addition, the data link between the virtual and real worlds and the data integration on unique and generic platforms are highlighted as the most questionable characteristics of DTs that need to be addressed in future work. Following the systematic literature review of definitions and concepts, the DTs for cities terminology is also a fundamental challenge that needs to be addressed at an early stage. Specially, DTs for cities enhance the general collaboration between different stakeholders who are from various backgrounds. Such terminology ambiguity may lead to different expectations as for the",
+    "section": "unknown",
+    "char_start": 101500,
+    "char_end": 102300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_147",
+    "text": "e from various backgrounds. Such terminology ambiguity may lead to different expectations as for the DTs definitions. Hence, our findings indicate that there are several terms deployed in practice to label DTs as cities. Thus, Urban Digital Twins and City Digital Twins are the most common labels between academic and practical fields. Another consideration that is identified in the scope of this work, while analyzing the three parallel tracks, is that DTs for cities can be misused not only in a terminological sense but also as regards other concepts and approaches. Therefore, we discuss the overlaps and the differences between DTs for cities and related approaches, namely 3DCM, CIM and SDI. Our findings indicate that the 3DCM is a good starting point for creating DTs for cities since histor",
+    "section": "unknown",
+    "char_start": 102200,
+    "char_end": 103000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_148",
+    "text": "ur findings indicate that the 3DCM is a good starting point for creating DTs for cities since historically, the literature review used 3DCMs to perform various urban applications. However, continuous enrichment of the semantic 3DCMs is mandatory to meet the DT’s specifications. On the other hand, when comparing DTs for cities with CIM, we intend to identify which concept belongs to the other since CIM and DT are under the same umbrella (similar conceptual and technical realities). However, the review analysis shows that the CIM is mainly considered as the input layer of DTs for cities. Another reflection that gains perspective in the context of DTs for cities is the setting of SDIs as the cornerstone of creating a solid geospatial DT. Indeed, SDI will facilitate seamless access to the data",
+    "section": "unknown",
+    "char_start": 102900,
+    "char_end": 103700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_149",
+    "text": "rnerstone of creating a solid geospatial DT. Indeed, SDI will facilitate seamless access to the data hub as well as efficient and standardized data integration. The results from the comparative analysis show that the state of the art is more developed working with the 3D city models and CIM than the SDIs, only a few papers identify the necessity of having an SDI in the context of geospatial DTs. Regarding the survey results, the findings are in line with the most frequently discussed issues regarding the definition of the concepts and the main approaches revealed in the systematic literature review. Furthermore, the exploratory survey depends highly on the results of the literature review since almost all questions are derived from it. Thus, the literature review highly facilitates the int",
+    "section": "unknown",
+    "char_start": 103600,
+    "char_end": 104400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_150",
+    "text": "nce almost all questions are derived from it. Thus, the literature review highly facilitates the interpretation of the results, especially since 11 responders are from academia and DTs for urban settings are one of their research hotspots. Our first contribution from the systematic review and survey analysis is to enhance the existing related works, mainly the work of (Ellul et al., 2022; Lei et al., 2023 a), for which authors identified and discussed the technical and nontechnical challenges that hinder the full implementation of the UDT. Our study supports their results by providing a more in-depth analysis of the approaches related to the DTs rather than merely focusing on defining the concept and highlighting the challenges. The second major contribution of this paper is to get an over",
+    "section": "unknown",
+    "char_start": 104300,
+    "char_end": 105100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_151",
+    "text": "ncept and highlighting the challenges. The second major contribution of this paper is to get an overview of some ongoing projects and analyze the technical DTs implementations according to 9 criteria. The list of current realizations is not exhaustive, since we do not intend to document all the initiatives, however, we aim to identify the technical requirements to create DTs for cities. Such findings enable us to extend the work conducted by (Lei et al., 2022) to assess and benchmark 3D city models according to 47 criteria. Similar reflection is applied in the context of the DTs initiatives, as we are far from having a single shape and application of DTs for cities. The results allow us to bridge the gap between the theoretical findings and the technical perspectives and gain insights from",
+    "section": "unknown",
+    "char_start": 105000,
+    "char_end": 105800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_152",
+    "text": "ridge the gap between the theoretical findings and the technical perspectives and gain insights from both fields. While the work provides comprehensive insights, we attempt to dig deeper into these initiatives. For this, we first compare the different I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 21 initiatives according to the maturity level of integration with respect to the nomenclature that defines a digital model, a digital shadow and a digital twin. According to the results collected, all the initiatives deploy the term DTs in their projects; however, the current implementation does not really meet the conceptual definition of DTs, which consists in ensuring the automatic connection between the real world and the virtual copy.",
+    "section": "unknown",
+    "char_start": 105700,
+    "char_end": 106500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_153",
+    "text": "s, which consists in ensuring the automatic connection between the real world and the virtual copy. Then to address the level and the approach of data integration, we focus from a technical perspective on how the data are integrated in a DTs for cities. To reach the third contribution of this work, we analyze the DTs initiatives according to the use cases. Since, the data are incorporated in DTs for cities according to the application and the data type. From a general standpoint and based on the initiatives discussed in this paper, the application-based approach is the most popularly implementations in the context of DTs, it consists of a decentralized approach where accessing the data is done directly from its repositories and integrated at the viewer level. The initiatives focused on lev",
+    "section": "unknown",
+    "char_start": 106400,
+    "char_end": 107200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_154",
+    "text": "ne directly from its repositories and integrated at the viewer level. The initiatives focused on level 1 and 2 can be challenging as defining a conceptual model and managing urban databases are complicated by the fact that all city elements and their interdependencies must be included, modelled and stored in an efficient way. This remains the objective of creating a generic DT. However, this must be done fully independent of technologies, systems, standards and software. Which cannot be applied to the practice that uses existing data models and standards and works on fostering the data interoperability between different systems. 7. Conclusion Digital Twins have captured high interest in the urban and geospatial domains at a city-scale level. Digital Twins for cities face many challenges th",
+    "section": "unknown",
+    "char_start": 107100,
+    "char_end": 107900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_155",
+    "text": "urban and geospatial domains at a city-scale level. Digital Twins for cities face many challenges that hinder the full deployment of the concept, namely the lack of a common definition, which leads to several frameworks and implementations in practice. Some research has defined DT for cities, which generates multiple, and sometimes very broad definitions. Such definition diversity leads to ambiguities among practitioners, which motivated us to conduct this work to bridge the gap between the concepts and current realizations of DT for cities. Our findings are based on the literature review and an in-depth analysis of the results collected from the online survey. According to the scientific literature, we refine the DT for city definitions and extract the common features. The survey results",
+    "section": "unknown",
+    "char_start": 107800,
+    "char_end": 108600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_156",
+    "text": "terature, we refine the DT for city definitions and extract the common features. The survey results were studied as well to measure how closely the practice matches the theoretical and conceptual definitions. A comparative analysis with related concepts was also conducted as DT was misused with other related terms in the literature (i. e., 3D City model, City Information Model and Spatial Data Infrastructure). A comprehensive study of the DT initiatives is provided according to nine categories that give various stakeholders the technical requirements to build a DT. This analysis of DT projects will assist future initiatives in learning from lessons and experiences gained in the framework of the projects’ development. This is a synthetic repository of DT initiatives acquired from various ar",
+    "section": "unknown",
+    "char_start": 108500,
+    "char_end": 109300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_157",
+    "text": "the projects’ development. This is a synthetic repository of DT initiatives acquired from various articles and websites of different projects. These results will facilitate the understanding of the DT’s current implementations. Further analysis is provided in this work regarding the maturity of different levels of integration. Thus, the initiatives are classified according to the data connection between the digital and virtual worlds. Furthermore, a new classification method to assess the DT implementations is given based on data integration methods. The aim is to understand at what level the data integration is performed. Hence, three levels are suggested: Level 1: conceptual data model; Level 2: database level; and Level 3: application level. The data integration assessment led to the co",
+    "section": "unknown",
+    "char_start": 109200,
+    "char_end": 110000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_158",
+    "text": "vel 2: database level; and Level 3: application level. The data integration assessment led to the conclusion that the differences among DTs implementations are significant. Each initiative has a specific framework to incorporate their data according to the city requirements. This review is the first general work that addresses the gap between the conceptual definitions and the technical development combining the results from the literature review and from the modest insights provided by the 14 international experts. However, some limitations should be revealed in the future work. Regarding the literature review, 26 articles are collected to study the DTs for cities definitions. Most of documents are conference papers rather than review articles. Which confirm the early stage of the DTs con",
+    "section": "unknown",
+    "char_start": 109900,
+    "char_end": 110700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_159",
+    "text": "ents are conference papers rather than review articles. Which confirm the early stage of the DTs concepts. Another limitation is to properly measure how the literature findings are faithful to the practice. Although, current implementations of DTs highlight the general interest given to the topic among urban and geospatial communities, however, the survey is based on few participants. Most of the responders are from research community, only 2 from industry and one from city government share with us the thoughts regarding the DTs for cities and give us insights about their work. The number of survey responses could be much higher to get valuable interpretations and generating correct insights. More inputs from industry and city government will certainly increase the findings and enhance the",
+    "section": "unknown",
+    "char_start": 110600,
+    "char_end": 111400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_160",
+    "text": ". More inputs from industry and city government will certainly increase the findings and enhance the synergy and the collaboration between the literature and the practice. Finally, our work does not provide a complete list of the DTs initiatives but rather, discussed them considering 9 comprehensive criteria that are relevant from a technical perspective. However, there are various criteria that should also be covered in future work, namely the organizational and the social aspects. To conclude, it is important to state that data integration is ubiquitous in the overall technological framework of building DT for cities, from data acquisition to data updates. Addressing the data integration issue will help cities achieve more mature versions of DTs. Indeed, plenty of data is available (i. e",
+    "section": "unknown",
+    "char_start": 111300,
+    "char_end": 112100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_161",
+    "text": "ssue will help cities achieve more mature versions of DTs. Indeed, plenty of data is available (i. e., Io T data, simulation results, prediction results, external databases, BIM models, system dynamic models, etc.) with different formats, data quality, and level of details. Each type of data will probably have an effective level of integration. For future perspective, this data integration classification can be projected to any DT project, especially since our questionnaire will remain open during our research to understand the technical requirements of implementing DTs in practice. However, the main question to answer is: at what level is it appropriate to integrate? In our future work, we intend to study the different level of data integration as explained in this work. We believe that a",
+    "section": "unknown",
+    "char_start": 112000,
+    "char_end": 112800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_162",
+    "text": "intend to study the different level of data integration as explained in this work. We believe that addressing the data integration issues and analyzing the effectiveness of the different levels will provide better understanding of the DTs for cities implementations with respect to the data heterogeneity and the complexity of the urban environment. Funding This research is part of the project GIS 3.0 that demonstrates the convergence of Geographic Information Systems and Web 3.0: Semantic Web techniques, object-oriented prototype languages (Java Script, JSON,) and document-oriented No SQL databases. The research project (PDR) is funded by the Belgian National Funds for Scientific Research FNRS_2019_SIG3.0_PDR/OL T.0024.20. CRedi T authorship contribution statement Imane Jeddoub: Conceptuali",
+    "section": "unknown",
+    "char_start": 112700,
+    "char_end": 113500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_163",
+    "text": "S_2019_SIG3.0_PDR/OL T.0024.20. CRedi T authorship contribution statement Imane Jeddoub: Conceptualization, Writing - original draft, Writing - review & editing. Gilles-Antoine Nys: Conceptualization, Writing - review & editing. Rafika Hajji: Supervision, Writing - review & editing. Roland Billen: Conceptualization, Supervision, Writing - review & editing. Declaration of Competing Interest The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. Data availability I have shared the link to the survey in Supplementary Materials. I I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 22 also put up a Github link to access the list",
+    "section": "unknown",
+    "char_start": 113400,
+    "char_end": 114200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_164",
+    "text": "Earth Observationand Geoinformation 122(2023)103440 22 also put up a Github link to access the list of definitions deployed in the analysis of the first sections of this work. Acknowledgments The authors sincerely appreciate the participation of all the experts in the survey designed in the scope of this work. We highly appreciate all the valuable insights provided for this work. Appendix A. Supplementary material Supplementary data to this article can be found online at https://doi. org/10.1016/j. jag.2023.103440. References Adeline, D., Jacquinod, F., Mielniczek, A., 2022. exploring digital twin adaptation to the urban environment: comparison with CIM to avoid silo-based approaches. ISPRS Ann. Photogramm. Remote Sens. Spat Inf. Sci. V-4–2022, 337–344. https://doi. org/ 10.5194/isprs-anna",
+    "section": "unknown",
+    "char_start": 114100,
+    "char_end": 114900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_165",
+    "text": "Ann. Photogramm. Remote Sens. Spat Inf. Sci. V-4–2022, 337–344. https://doi. org/ 10.5194/isprs-annals-V-4-2022-337-2022. Adreani, L., Colombo, C., Fanfani, M., Nesi, P., Pantaleo, G., Pisanu, R., 2022. A Photorealistic 3D City Modeling Framework for Smart City Digital Twin, in: 2022 IEEE International Conference on Smart Computing (SMARTCOMP). pp. 299–304. https://doi. org/10.1109/SMARTCOMP 55677.2022.00071. Agostinelli, S., Cumo, F., Guidi, G., Tomazzoli, C., 2021. Cyber-physical systems improving building energy management: digital twin and artificial intelligence. Energies 14, 2338. https://doi. org/10.3390/en 14082338. Alva, P., Biljecki, F., Stouffs, R., 2022 a. USE cases for district-scale urban digital twins. Int. Arch. Photogramm. Remote. Sens. Spat. Inf. Sci. XLVIII-4/W4-2022, 5–",
+    "section": "unknown",
+    "char_start": 114800,
+    "char_end": 115600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_166",
+    "text": "scale urban digital twins. Int. Arch. Photogramm. Remote. Sens. Spat. Inf. Sci. XLVIII-4/W4-2022, 5–12. https://doi. org/10.5194/isprs-archives-XLVIII-4-W4-2022-5-2022. Alva, Pradeep, Mosteiro Romero, M., Miller, C., Stouffs, R., 2022. Digital Twin-Based Resilience Evaluation of District-Scale Archetypes. pp. 525–534. https://doi. org/ 10.52842/conf. caadria.2022.1.525. Ammar, A., Nassereddine, H., Abdul Baky, N., Abou Kansour, A., Tannoury, J., Urban, H., Schranz, C., 2022. Digital twins in the construction industry: a perspective of practitioners and building authority. Front. Built Environ. 8, 834671 https://doi. org/10.3389/fbuil.2022.834671. Atkinson, R. A., Zaborowski, P., Noardo, F., Simonis, I., 2022. Smart cities – systems of systems interoperability and OGC enablers. ISPRS Ann. P",
+    "section": "unknown",
+    "char_start": 115500,
+    "char_end": 116300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_167",
+    "text": "Simonis, I., 2022. Smart cities – systems of systems interoperability and OGC enablers. ISPRS Ann. Photogramm. Remote Sens. Spat Inf. Sci. X-4/W3-2022, 19–26. https://doi. org/10.5194/isprs-annals-X-4-W 32022-19-2022. Bacher, U., 2022. Hybrid aerial sensor data as basis for a geospatial digital twin. ISPRS - Int. Arch. Photogramm. Remote Sens. Spat Inf. Sci. 43 B4, 653–659. https://doi. org/ 10.5194/isprs-archives-XLIII-B4-2022-653-2022. Batty, M., 2018. Digital twins. Environ. Plan. B Urban Anal. City Sci. 45, 817–820. https://doi. org/10.1177/2399808318796416. Batty, M., Hudson-Smith, A., 2006. Digital cornucopias: changing conceptions of the virtual city. Environ. Plan. B Plan. Des. 33, 799–802. https://doi. org/10.1068/ b 3306 ed. Bauer, M., Cirillo, F., Fürst, J., Solmaz, G., Kovacs,",
+    "section": "unknown",
+    "char_start": 116200,
+    "char_end": 117000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_168",
+    "text": "99–802. https://doi. org/10.1068/ b 3306 ed. Bauer, M., Cirillo, F., Fürst, J., Solmaz, G., Kovacs, E., 2021 a. Urban Digital Twins – A FIWARE-based model. - Autom 69, 1106–1115. https://doi. org/10.1515/auto-20210083. Biljecki, F., Stoter, J., Ledoux, H., Zlatanova, S., Ç¨ oltekin, A., 2015. Applications of 3D city models: state of the art review. ISPRS Int. J. Geo Inf. 4, 2842–2889. https://doi. org/10.3390/ijgi 4042842. Billen, R., Cutting-Decelle, A., Marina, O., Almeida, J.-P., Caglioni, M., Falquet, G., Leduc, T., M´etral, C., Moreau, G., Perret, J., Rabino, G., García, R., Yatskiv, I., Zlatanova, S., 2014. 3D City Models and urban information: Current issues and perspectives. https://doi. org/10.1051/TU 0801/201400001. Boje, C., Guerriero, A., Kubicki, S., Rezgui, Y., 2020. Towards",
+    "section": "unknown",
+    "char_start": 116900,
+    "char_end": 117700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_169",
+    "text": "doi. org/10.1051/TU 0801/201400001. Boje, C., Guerriero, A., Kubicki, S., Rezgui, Y., 2020. Towards a semantic construction digital twin: directions for future research. Autom. Constr. 114, 103179 https://doi. org/10.1016/j. autcon.2020.103179. Bolton, A., Butler, L., Dabson, I., Enzer, M., Evans, M., Fenemore, T., Harradence, F., Keaney, E., Kemp, A., Luck, A., Pawsey, N., Saville, S., Schooling, J., Sharp, M., Smith, T., Tennison, J., Whyte, J., Wilson, A., Makri, C., 2018. Gemini Principles (Report). CDBB. https://doi. org/10.17863/CAM.32260. Botín-Sanabria, D. M., Mihaita, A.-S., Peimbert-García, R. E., Ramírez-Moreno, M. A., Ramírez-Mendoza, R. A., de Lozoya-Santos, J. de. J., 2022. Digital twin technology challenges and applications: a comprehensive review. Remote Sens. 14, 1335. htt",
+    "section": "unknown",
+    "char_start": 117600,
+    "char_end": 118400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_170",
+    "text": "ital twin technology challenges and applications: a comprehensive review. Remote Sens. 14, 1335. https://doi. org/10.3390/rs 14061335. Caprari, G., Castelli, G., Montuori, M., Camardelli, M., Malvezzi, R., 2022. Digital twin for urban planning in the green deal era: a state of the art and future perspectives. Sustainability 14 (10), 6263. Charitonidou, M., 2022. Urban scale digital twins in data-driven society: challenging digital universalism in urban planning decision-making. Int. J. Archit. Comput. 20, 238–253. https://doi. org/10.1177/14780771211070005. Chaturvedi, K., Matheus, A., Nguyen, S. H., Kolbe, T. H., 2019. Securing spatial data infrastructures for distributed smart city applications and services. Future Gener. Comput. Syst. 101, 723–736. https://doi. org/10.1016/j. future.201",
+    "section": "unknown",
+    "char_start": 118300,
+    "char_end": 119100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_171",
+    "text": "tions and services. Future Gener. Comput. Syst. 101, 723–736. https://doi. org/10.1016/j. future.2019.07.002. Chaturvedi, K., 2021. Integration and Management of Time-dependent Properties with Semantic 3D City Models. Chatzinikolaou, E., Pispidikis, I., Dimopoulou, E., 2020. A SEMANTICALLY ENRICHED AND WEB-BASED 3D ENERGY MODEL VISUALIZATION AND RETRIEVAL FOR SMART BUILDING IMPLEMENTATION USING CITYGML AND DYNAMIZER ADE, in: ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences. Presented at the ISPRS TC IV<br>3rd BIM/GIS Integration Workshop and 15 th 3D Geo Info Conference 2020 (Volume VI-4/W1-2020) - 7&ndash;11 September 2020, London, UK, Copernicus Gmb H, pp. 53–60. https://doi. org/10.5194/isprsannals-VI-4-W1-2020-53-2020. Chehrehbargh, F. J., 2022. Fishe",
+    "section": "unknown",
+    "char_start": 119000,
+    "char_end": 119800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_172",
+    "text": ". 53–60. https://doi. org/10.5194/isprsannals-VI-4-W1-2020-53-2020. Chehrehbargh, F. J., 2022. Fishermans Bend Digital Twin: Centre for Spatial Data Infrastructures and Land Administration, The University of Melbourne [WWW Document]. CSDILA. URL https://eng. unimelb. edu. au/csdila/projects/digital-twin/ fishermans-bend (accessed 2.6.23). Chen, R., 2011. The development of 3D city model and its applications in urban planning, in: 2011 19 th International Conference on Geoinformatics. Presented at the 2011 19 th International Conference on Geoinformatics, pp. 1–5. https://doi. org/ 10.1109/Geo Informatics.2011.5981007. Cirillo, F., Solmaz, G., Berz, E. L., Bauer, M., Cheng, B., Kovacs, E., 2019. A standardbased open source Io T platform: FIWARE. IEEE Internet Things Mag. 2, 12–18. https://d",
+    "section": "unknown",
+    "char_start": 119700,
+    "char_end": 120500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_173",
+    "text": "19. A standardbased open source Io T platform: FIWARE. IEEE Internet Things Mag. 2, 12–18. https://doi. org/10.1109/IOTM.0001.1800022. Corongiu, M., Tucci, G., Santoro, E., Kourounioti, O., 2018. Data integration of different domains in geo-information management: A railway infrastructure case study. Presented at the International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences - ISPRS Archives, pp. 193–200. https://doi. org/ 10.5194/isprs-archives-XLII-4-121-2018. Cureton, P., Dunn, N., 2021. Chapter 14 - Digital twins of cities and evasive futures. In: Aurigi, A., Odendaal, N. (Eds.), Shaping Smart for Better Cities. Academic Press, pp. 267–282. https://doi. org/10.1016/B 978-0-12-818636-7.00017-2. Dembski, F., W¨ ossner, U., Letzgus, M., Ruddat, M., Yamu,",
+    "section": "unknown",
+    "char_start": 120400,
+    "char_end": 121200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_174",
+    "text": "org/10.1016/B 978-0-12-818636-7.00017-2. Dembski, F., W¨ ossner, U., Letzgus, M., Ruddat, M., Yamu, C., 2020. Urban digital twins for smart cities and citizens: the case study of herrenberg, Germany. Sustainability 12, 2307. https://doi. org/10.3390/su 12062307. Deng, T., Zhang, K., Shen (Max), Z.-J., 2021. A systematic review of a digital twin city: a new pattern of urban governance toward smart cities. J. Manag. Sci. Eng. 6, 125–134. https://doi. org/10.1016/j. jmse.2021.03.003. Deren, L., Wenbo, Y., Zhenfeng, S., 2021. Smart city based on digital twins. Comput. Urban Sci. 1, 4. https://doi. org/10.1007/s 43762-021-00005-y. Diakite, A. A., Ng, L., Barton, J., Rigby, M., Williams, K., Barr, S., Zlatanova, S., 2022. LIVEABLE CITY DIGITAL TWIN: A PILOT PROJECT FOR THE CITY OF LIVERPOOL (NS",
+    "section": "unknown",
+    "char_start": 121100,
+    "char_end": 121900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_175",
+    "text": ", S., Zlatanova, S., 2022. LIVEABLE CITY DIGITAL TWIN: A PILOT PROJECT FOR THE CITY OF LIVERPOOL (NSW, AUSTRALIA). ISPRS Ann. Photogramm. Remote Sens. Spat. Inf. Sci. X-4/W 22022, 45–52. 10.5194/isprs-annals-X-4-W2-2022-45-2022. Dimitrov, H., Petrova-Antonova, D., 2021. 3D CITY MODEL AS A FIRST STEP TOWARDS DIGITAL TWIN OF SOFIA CITY. Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci. XLIII-B4-2021, 23–30. https://doi. org/10.5194/isprs-archives-XLIII-B4-202123-2021. D¨ ollner, J., 2020. Geospatial artificial intelligence: potentials of machine learning for 3D point clouds and geospatial digital twins. PFG – J. Photogramm. Remote Sens. Geoinformation Sci. 88 (1), 15–24. https://doi. org/10.1007/s 41064-020-00102-3. D¨ ollner, J., Buchholz, H., 2005. Continuous level-of-detail modeling o",
+    "section": "unknown",
+    "char_start": 121800,
+    "char_end": 122600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_176",
+    "text": "0.1007/s 41064-020-00102-3. D¨ ollner, J., Buchholz, H., 2005. Continuous level-of-detail modeling of buildings in 3D city models, in: Proceedings of the 13 th Annual ACM International Workshop on Geographic Information Systems, GIS ’05. Association for Computing Machinery, New York, NY, USA, pp. 173–181. https://doi. org/10.1145/1097064.1097089. ´ Avila Eça de Matos, B., Dane, G. Z., Van Tilburg, T., Verstappen, J., de Vries, B., 2022. State-of-the-Art of the Urban Digital Twin Ecosystem in the Netherlands: 3rd International Smart Cities in Smart Regions Conference. Smart Cities Smart Reg. 2022 Conf. Proc. Ellul, C., Stoter, J., Bucher, B., 2022. LOCATION-ENABLED DIGITAL TWINS – UNDERSTANDING THE ROLE OF NMCAS IN A EUROPEAN CONTEXT. ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci. X-",
+    "section": "unknown",
+    "char_start": 122500,
+    "char_end": 123300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_177",
+    "text": "NG THE ROLE OF NMCAS IN A EUROPEAN CONTEXT. ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci. X-4/W2-2022, 53–60. https://doi. org/ 10.5194/isprs-annals-X-4-W2-2022-53-2022. Ferr´e-Bigorra, J., Casals, M., Gangolells, M., 2022. The adoption of urban digital twins. Cities 131, 103905. https://doi. org/10.1016/j. cities.2022.103905. Grieves, M., 2022. Intelligent digital twins and the development and management of complex systems. Digit. Twin 2, 8. https://doi. org/10.12688/digitaltwin.17574.1. Grieves, M., 2016. Origins of the Digital Twin Concept. https://doi. org/10.13140/ RG.2.2.26367.61609. Hagedorn, J. D. B., 2007. Integrating urban GIS, CAD, and BIM data by service-based virtual 3D city models. Urban and Regional Data Management. CRC Press. H¨am¨al¨ ainen, M., 2020. Smart city dve",
+    "section": "unknown",
+    "char_start": 123200,
+    "char_end": 124000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_178",
+    "text": "city models. Urban and Regional Data Management. CRC Press. H¨am¨al¨ ainen, M., 2020. Smart city dvelopment with digital twin technology. https://doi. org/10.18690/978-961-286-362-3.20. H¨am¨al¨ ainen, M., 2021. Urban development with dynamic digital twins in Helsinki city. IET Smart Cities 3, 201–210. https://doi. org/10.1049/smc2.12015. Herbert, G., Chen, X., 2015. A comparison of usefulness of 2D and 3D representations of urban planning. Cartogr. Geogr. Inf. Sci. 42, 22–32. https://doi. org/10.1080/ 15230406.2014.987694. Hijazi, I., Donaubauer, A., Hamm, A., Falkenstein, A., Kolbe, T. H., 2022. Urban growth simulation using urban dynamics and Citygml: a use case from the city of Munich. ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci. X-4/W2-2022, 97–104. https://doi. org/10.5194/i",
+    "section": "unknown",
+    "char_start": 123900,
+    "char_end": 124700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_179",
+    "text": "SPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci. X-4/W2-2022, 97–104. https://doi. org/10.5194/isprs-annals-X-4-W2-2022-97-2022. Hristov, P. O., Petrova-Antonova, D., Ilieva, S., Rizov, R., 2022. Enabling city digital twins through urban living labs. Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci. XLIII-B1-2022, 151–156. https://doi. org/10.5194/isprs-archives-XLIII-B1-2022151-2022. Hu, Y., 2017. Spatial Data Infrastructures. Geogr. Inf. Sci. Technol. Body Knowl. 2017. https://doi. org/10.22224/gistbok/2017.2.1. Ivanov, S., Nikolskaya, K., Radchenko, G., Sokolinsky, L., Zymbler, M., 2020. Digital Twin of City: Concept Overview, in: 2020 Global Smart Industry Conference (Glo SIC). pp. 178–186. https://doi. org/10.1109/Glo SIC 50886.2020.9267879. I. Jeddoub et al.\n\nInternational Jo",
+    "section": "unknown",
+    "char_start": 124600,
+    "char_end": 125400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_180",
+    "text": "p. 178–186. https://doi. org/10.1109/Glo SIC 50886.2020.9267879. I. Jeddoub et al.\n\nInternational Journalof Applied Earth Observationand Geoinformation 122(2023)103440 23 Katal, A., Mortezazadeh, M., Wang, L. (Leon), Yu, H., 2022. Urban building energy and microclimate modeling – from 3D city generation to dynamic simulations. Energy 251, 123817. https://doi. org/10.1016/j. energy.2022.123817. Ketzler, B., Naserentin, V., Latino, F., Zangelidis, C., Thuvander, L., Logg, A., 2020. Digital twins for cities: a state of the art review. Built Environ. 46, 547–573. https:// doi. org/10.2148/benv.46.4.547. Khawte, S. S., Koeva, M. N., Gevaert, C. M., Oude Elberink, S., Pedro, A. A., 2022. Digital twin creation for slums in Brazil based on UAV data. Int. Arch. Photogramm. Remote Sens. Spatial Inf.",
+    "section": "unknown",
+    "char_start": 125300,
+    "char_end": 126100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_181",
+    "text": "win creation for slums in Brazil based on UAV data. Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci. XLVIII-4/W4-2022, 75–81. https://doi. org/10.5194/isprsarchives-XLVIII-4-W4-2022-75-2022. Kolbe, T. H., Donaubauer, A., 2021. Semantic 3D City Modeling and BIM. In: Shi, W., Goodchild, M. F., Batty, M., Kwan, M.-P., Zhang, A. (Eds.), Urban Informatics, The Urban Book Series. Springer, Singapore, pp. 609–636. https://doi. org/10.1007/978981-15-8983-6_34. Kritzinger, W., Karner, M., Traar, G., Henjes, J., Sihn, W., 2018. Digital Twin in manufacturing: A categorical literature review and classification. IFAC-Pap., 16 th IFAC Symposium on Information Control Problems in Manufacturing INCOM 2018 51, 1016–1022. https://doi. org/10.1016/j. ifacol.2018.08.474. Kumar, K., Ledoux, H., Commandeur",
+    "section": "unknown",
+    "char_start": 126000,
+    "char_end": 126800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_182",
+    "text": "018 51, 1016–1022. https://doi. org/10.1016/j. ifacol.2018.08.474. Kumar, K., Ledoux, H., Commandeur, T., Stoter, J., 2017. Modelling urban noise in CITYGML ADE: case of The Netherlands. ISPRS Ann. Photogramm. Remote Sens. Spat. Inf. Sci. IV-4/W5, 73–81. https://doi. org/10.5194/isprs-annals-IV-4-W5-732017. Kutzner, T., Chaturvedi, K., Kolbe, T. H., 2020. City GML 3.0: new functions open up new applications. PFG – J. Photogramm. Remote Sens. Geoinformation Sci. 88, 43–61. https://doi. org/10.1007/s 41064-020-00095-z. Ledoux, H., Arroyo Ohori, K., Kumar, K., Dukai, B., Labetski, A., Vitalis, S., 2019. City JSON: a compact and easy-to-use encoding of the City GML data model. Open Geospatial Data Softw. Stand. 4, 4. https://doi. org/10.1186/s 40965-019-0064-0. Ledoux, H., Biljecki, F., Dukai,",
+    "section": "unknown",
+    "char_start": 126700,
+    "char_end": 127500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_183",
+    "text": "ta Softw. Stand. 4, 4. https://doi. org/10.1186/s 40965-019-0064-0. Ledoux, H., Biljecki, F., Dukai, B., Kumar, K., Peters, R., Stoter, J., Commandeur, T., 2021. 3dfier: automatic reconstruction of 3D city models. J. Open Source Softw. 6, 2866. https://doi. org/10.21105/joss.02866. Lee, A., Lee, K.-W., Kim, K.-H., Shin, S.-W., 2022. A geospatial platform to manage largescale individual mobility for an urban digital twin platform. Remote Sens. 14, 723. https://doi. org/10.3390/rs 14030723. Lehner, H., Dorffner, L., 2020. Digital geo Twin Vienna: towards a digital twin city as Geodata Hub. PFG –. J. Photogramm. Remote Sens. Geoinformation Sci. 88, 63–75. https://doi. org/10.1007/s 41064-020-00101-4. Lehtola, V. V., Koeva, M., Elberink, S. O., Raposo, P., Virtanen, J.-P., Vahdatikhaki, F., Bo",
+    "section": "unknown",
+    "char_start": 127400,
+    "char_end": 128200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_184",
+    "text": "101-4. Lehtola, V. V., Koeva, M., Elberink, S. O., Raposo, P., Virtanen, J.-P., Vahdatikhaki, F., Borsci, S., 2022. Digital twin of a city: Review of technology serving city needs. Int. J. Appl. Earth Obs. Geoinformation 114, 102915. Lei, B., Janssen, P., Stoter, J., Biljecki, F., 2023 a. Challenges of urban digital twins: A systematic review and a Delphi expert survey. Autom. Constr. 147, 104716 https:// doi. org/10.1016/j. autcon.2022.104716. Lei, B., Stouffs, R., Biljecki, F., 2022. Assessing and benchmarking 3D city models. Int. J. Geogr. Inf. Sci. https://doi. org/10.1080/13658816.2022.2140808. Lu, Q., Parlikad, A. K., Woodall, P., Xie, X., Liang, Z., Konstantinou, E., Heaton, J., Schooling, J., 2019. Developing a dynamic digital twin at building and city levels: a case study of the W",
+    "section": "unknown",
+    "char_start": 128100,
+    "char_end": 128900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_185",
+    "text": "ling, J., 2019. Developing a dynamic digital twin at building and city levels: a case study of the West Cambridge campus. J. Manage. Eng. 36 https://doi. org/ 10.1061/(ASCE)ME.1943-5479.0000763. Mohammadi, N., Taylor, J. E., 2017. Smart city digital twins, in: 2017 IEEE Symposium Series on Computational Intelligence (SSCI). pp. 1–5. https://doi. org/10.1109/ SSCI.2017.8285439. Mylonas, G., Kalogeras, A., Kalogeras, G., Anagnostopoulos, C., Alexakos, C., Munoz, L., 2021. Digital twins from smart manufacturing to smart cities: a survey. IEEE Access 9, 143222–143249. https://doi. org/10.1109/ACCESS.2021.3120843. Nguyen, S. H., Kolbe, T. H., 2022. Path-tracing semantic networks to interpret changes in semantic 3d city models. ISPRS Ann. Photogramm. Remote Sens. Spat Inf. Sci. X-4/ W2-2022, 217",
+    "section": "unknown",
+    "char_start": 128800,
+    "char_end": 129600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_186",
+    "text": "ges in semantic 3d city models. ISPRS Ann. Photogramm. Remote Sens. Spat Inf. Sci. X-4/ W2-2022, 217–224. https://doi. org/10.5194/isprs-annals-X-4-W2-2022-217-2022. Noardo, F., 2022. Multisource spatial data integration for use cases applications. Trans. GIS 26, 2874–2913. https://doi. org/10.1111/tgis.12987. Nochta, T., Parlikad, A., Schooling, J., Badstuber, N., Wahby, N., 2019. The local governance of digital technology – Implications for the city-scale digital twin (Report). CDBB. https://doi. org/10.17863/CAM.43321. Nochta, T., Wan, L., Schooling, J. M., Parlikad, A. K., 2021. A socio-technical perspective on urban analytics: the case of city-scale digital twins. J. Urban Technol. 28, 263–287. https://doi. org/10.1080/10630732.2020.1798177. Nys, G.-A., Billen, R., 2022. From consiste",
+    "section": "unknown",
+    "char_start": 129500,
+    "char_end": 130300
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_187",
+    "text": "263–287. https://doi. org/10.1080/10630732.2020.1798177. Nys, G.-A., Billen, R., 2022. From consistency to flexibility: Handling spatial information schema thanks to a middleware in a 3D city modeling context. Trans. GIS. https:// doi. org/10.1111/tgis.13014. Omrany, H., Ghaffarianhoseini, Amirhosein, Ghaffarianhoseini, Ali, Clements-Croome, D. J., 2022. The uptake of City Information Modelling (CIM): a comprehensive review of current implementations, challenges and future outlook. Smart Sustain. Built Environ. ahead-of-print. https://doi. org/10.1108/SASBE-06-2022-0116. Papyshev, G., Yarime, M., 2021. Exploring city digital twins as policy tools: a task-based approach to generating synthetic data on urban mobility. Data Policy 3. https://doi. org/10.1017/dap.2021.17. Petrova-Antonova, D.,",
+    "section": "unknown",
+    "char_start": 130200,
+    "char_end": 131000
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_188",
+    "text": "c data on urban mobility. Data Policy 3. https://doi. org/10.1017/dap.2021.17. Petrova-Antonova, D., Ilieva, S., 2021. Digital Twin Modeling of Smart Cities. In: Ahram, T., Taiar, R., Langlois, K., Choplin, A. (Eds.), Human Interaction, Emerging Technologies and Future Applications III, Advances in Intelligent Systems and Computing. Springer International Publishing, Cham, pp. 384–390. https://doi. org/ 10.1007/978-3-030-55307-4_58. Raes, L., Michiels, P., Adolphi, T., Tampere, C., Dalianis, T., Mcaleer, S., Kogut, P., 2021. DUET: A Framework for Building Interoperable and Trusted Digital Twins of Smart Cities. IEEE Internet Comput 1. https://doi. org/10.1109/MIC.2021.3060962. Rossknecht, M., Airaksinen, E., 2020. Concept and evaluation of heating demand prediction based on 3D city models",
+    "section": "unknown",
+    "char_start": 130900,
+    "char_end": 131700
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_189",
+    "text": ", Airaksinen, E., 2020. Concept and evaluation of heating demand prediction based on 3D city models and the City GML energy ADE—case study Helsinki. ISPRS Int. J. Geo Inf. 9, 602. https://doi. org/10.3390/ijgi 9100602. Saeed, Z. O., Mancini, F., Glusac, T., Izadpanahi, P., 2022. Future city, digital twinning and the urban realm: a systematic literature review. Buildings 12, 685. https://doi. org/10.3390/buildings 12050685. Santhanavanich, T., Coors, V., 2021. City Things: An integration of the dynamic sensor data to the 3D city model. Environ. Plan. B Urban Anal. City Sci. 48, 417–432. https://doi. org/10.1177/2399808320983000. Santhanavanich, T., Padsala, R., Würstle, P., Coors, V., 2022. THE Spatial data infrastructure of an urban digital twin in the building energy domain using ogc stan",
+    "section": "unknown",
+    "char_start": 131600,
+    "char_end": 132400
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_190",
+    "text": "HE Spatial data infrastructure of an urban digital twin in the building energy domain using ogc standards. ISPRS Ann. Photogramm. Remote Sens. Spat Inf. Sci. X-4/W2-2022, 249–256. https://doi. org/10.5194/isprs-annals-X-4-W2-2022-249-2022. Scalas, A., Cabiddu, D., Mortara, M., Spagnuolo, M., 2022. Potential of the geometric layer in urban digital twins. ISPRS Int. J. Geo Inf. 11, 343. https://doi. org/10.3390/ ijgi 11060343. Schaufler, C., Schwimmer, E., 2020. City information modeling – an expedient tool for developing sustainable, responsive and resilient cities? IOP Conf. Ser. Earth Environ. Sci. 588 (3), 032005. Schrotter, G., Hürzeler, C., 2020. The digital twin of the city of Zurich for urban planning. PFG – J. Photogramm. Remote Sens. Geoinformation Sci. 88 (1), 99–112. https://doi.",
+    "section": "unknown",
+    "char_start": 132300,
+    "char_end": 133100
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_191",
+    "text": "r urban planning. PFG – J. Photogramm. Remote Sens. Geoinformation Sci. 88 (1), 99–112. https://doi. org/10.1007/s 41064-020-00092-2. Sepasgozar, S. M. E., 2021. Differentiating digital twin from digital shadow: elucidating a paradigm shift to expedite a smart. Sustain. Built Environ. Build. 11, 151. https:// doi. org/10.3390/buildings 11040151. Shahat, E., Hyun, C. T., Yeom, C., 2021. City digital twin potentials: a review and research Agenda. Sustainability 13, 3386. https://doi. org/10.3390/su 13063386. Shahzad, M., Shafiq, M. T., Douglas, D., Kassem, M., 2022. Digital twins in built environments: an investigation of the characteristics, applications, and challenges. Buildings 12, 120. https://doi. org/10.3390/buildings 12020120. Souza, L., Bueno, C., 2022. City Information Modelling as",
+    "section": "unknown",
+    "char_start": 133000,
+    "char_end": 133800
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_192",
+    "text": "tps://doi. org/10.3390/buildings 12020120. Souza, L., Bueno, C., 2022. City Information Modelling as a support decision tool for planning and management of cities: a systematic literature review and bibliometric analysis. Build. Environ. 207, 108403 https://doi. org/10.1016/j. buildenv.2021.108403. Stoter, J. E., Arroyo Ohori, G. A. K., Noardo, F., 2021. Digital Twins: A Comprehensive Solution or Hopeful Vision? GIM Int. Worldw. Mag. Geomat. 2021. Tao, F., Zhang, H., Liu, A., Nee, A., 2019. Digital twin in industry: state-of-the-art. IEEE Trans. Ind. Inform. 15, 2405–2415. https://doi. org/10.1109/TII.2018.2873186. Tomko, M., Winter, S., 2019. Beyond digital twins – a commentary. Environ. Plan. B Urban Anal. City Sci. 46, 395–399. https://doi. org/10.1177/2399808318816992. Tzachor, A., Sab",
+    "section": "unknown",
+    "char_start": 133700,
+    "char_end": 134500
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_193",
+    "text": "an. B Urban Anal. City Sci. 46, 395–399. https://doi. org/10.1177/2399808318816992. Tzachor, A., Sabri, S., Richards, C. E., Rajabifard, A., Acuto, M., 2022. Potential and limitations of digital twins to achieve the Sustain. Dev. Goals. Nat. Sustain. 5, 822–829. https://doi. org/10.1038/s 41893-022-00923-7. Van Der Horn, E., Mahadevan, S., 2021. Digital Twin: generalization, characterization and implementation. Decis. Support Syst. 145, 113524 https://doi. org/10.1016/j. dss.2021.113524. Virtanen, J.-P., Jaalama, K., Puustinen, T., Julin, A., Hyypp¨a, J., Hyypp¨ a, H., 2021. Near real-time semantic view analysis of 3D city models in web browser. ISPRS Int. J. Geo Inf. 10, 138. https://doi. org/10.3390/ijgi 10030138. Würstle, P., Padsala, R., Santhanavanich, T., Coors, V., 2022. Viability t",
+    "section": "unknown",
+    "char_start": 134400,
+    "char_end": 135200
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_194",
+    "text": "rg/10.3390/ijgi 10030138. Würstle, P., Padsala, R., Santhanavanich, T., Coors, V., 2022. Viability testing of game engine usage for visualization of 3d geospatial data with OGC standards. ISPRS Ann. Photogramm. Remote Sens. Spat Inf. Sci. X-4/W2-2022, 281–288. https://doi. org/ 10.5194/isprs-annals-X-4-W2-2022-281-2022. Xia, H., Liu, Z., Efremochkina, M., Liu, X., Lin, C., 2022. Study on city digital twin technologies for sustainable smart city design: A review and bibliometric analysis of geographic information system and building information modeling integration. Sustain. Cities Soc. 84, 104009 https://doi. org/10.1016/j. scs.2022.104009. Xiong, M., Wang, H., 2022. Digital twin applications in aviation industry: a review. Int. J. Adv. Manuf. Technol. 121, 5677–5692. https://doi. org/10.1",
+    "section": "unknown",
+    "char_start": 135100,
+    "char_end": 135900
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_195",
+    "text": "s in aviation industry: a review. Int. J. Adv. Manuf. Technol. 121, 5677–5692. https://doi. org/10.1007/s 00170-02209717-9. Xu, Z., Qi, M., Wu, Y., Hao, X., Yang, Y., 2021. City information modeling: state of the art. Appl. Sci. 11, 9333. https://doi. org/10.3390/app 11199333. Xue, F., Lu, W., Chen, Z., Webster, C. J., 2020. From Li DAR point cloud towards digital twin city: clustering city objects based on Gestalt principles. ISPRS J. Photogramm. Remote Sens. 167, 418–431. https://doi. org/10.1016/j. isprsjprs.2020.07.020. Yossef Ravid, B., Aharon - Gutman, M., 2022. The social digital twin: the social turn in the field of smart cities. Environ. Plan. B Urban Anal. City Sci. 239980832211370 https://doi. org/10.1177/23998083221137079. Zhang, X., Shen, J., Saini, P. K., Lovati, M., Han, M.,",
+    "section": "unknown",
+    "char_start": 135800,
+    "char_end": 136600
+  },
+  {
+    "source_id": "Jeddoub2023",
+    "chunk_id": "chunk_196",
+    "text": "https://doi. org/10.1177/23998083221137079. Zhang, X., Shen, J., Saini, P. K., Lovati, M., Han, M., Huang, P., Huang, Z., 2021. Digital twin for accelerating sustainability in positive energy district: a review of simulation tools and applications. Front. Sustain Cities 3. Zhu, Q., Hu, M., Zhang, Y., Du, Z., 2009. Research and practice in three-dimensional city modeling. Geo-Spat. Inf. Sci. 12, 18–24. https://doi. org/10.1007/s 11806-009-0195 z. Zhu, J., Wu, P., 2022. BIM/GIS data integration from the perspective of information flow. Autom. Constr. 136, 104166 https://doi. org/10.1016/j. autcon.2022.104166. I. Jeddoub et al.",
+    "section": "unknown",
+    "char_start": 136500,
+    "char_end": 137300
+  }
+]

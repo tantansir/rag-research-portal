@@ -1,0 +1,834 @@
+[
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_01",
+    "text": "SPATIOTEMPORAL GENDER DIFFERENCES IN URBAN VIBRANCY Thomas Collins 1*, Riccardo Di Clemente 2,3, Mario Gutiérrez-Roig 4, and Federico Botta 1,2 1Department of Computer Science, University of Exeter, Exeter, EX4 4QF, United Kingdom. 2Complex Connections Lab, Network Science Institute„ Northeastern University London, London, E1W 1LP, United Kingdom. 3 The Alan Turing Institute, London, NW1 2DB, United Kingdom. 4Department of Mathematical Sciences, University of Essex, Colchester, CO4 3SQ, United Kingdom. *Corresponding author: trc 207@exeter. ac. uk Urban vibrancy is the dynamic activity of humans in urban locations. It can vary with urban features and the opportunities for human interactions, but it might also differ according to the underlying social conditions of city inhabitants across a",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_02",
+    "text": "but it might also differ according to the underlying social conditions of city inhabitants across and within social surroundings. Such heterogeneity in how different demographic groups may experience cities has the potential to cause gender segregation because of differences in the preferences of inhabitants, their accessibility and opportunities, and large-scale mobility behaviours. However, traditional studies have failed to capture fully a high-frequency understanding of how urban vibrancy is linked to urban features, how this might differ for different genders, and how this might affect segregation in cities. Our results show that (1) there are differences between males and females in terms of urban vibrancy, (2) the differences relate to ‘Points of Interest‘ as well as transportation",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_03",
+    "text": "erms of urban vibrancy, (2) the differences relate to ‘Points of Interest‘ as well as transportation networks, and (3) there are both positive and negative ‘spatial spillovers‘ existing across each city. To do this, we use a quantitative approach using Call Detail Record data–taking advantage of the near-ubiquitous use of mobile phones–to gain high-frequency observations of spatial behaviours across Italy’s seven most prominent cities. We use a spatial model comparison approach of the direct and ‘spillover‘ effects from urban features on male-female differences. Our results increase our understanding of inequality in cities and how we can make future cities fairer. Keywords urban vibrancy · urban gender segregation · mobile phone data · spatial data science 1 Introduction As the world cont",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_04",
+    "text": "urban gender segregation · mobile phone data · spatial data science 1 Introduction As the world continues to urbanize at an unprecedented rate, the lives of city inhabitants are transforming, with both unprecedented opportunities but also growing challenges and complexities that cannot be ignored. The United Nations reported that, by 2050, 68% of the world’s population will be living in cities [UN DESA, 2019] and that, while urban populations are increasing, rural populations are in decline. This trend toward urban life is thought to be related to economic development alongside changes in social organisation [Harris, 1990, Bettencourt et al., 2007], how humans use land [Liu et al., 2020], and the drastic changes in the patterns of collective human behaviour [Thomas, 2008, Bettencourt et al",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_05",
+    "text": "d the drastic changes in the patterns of collective human behaviour [Thomas, 2008, Bettencourt et al., 2007]. Rapid urban growth is thought to make cities more innovative and generate wealth but can cause large-scale social issues for people and communities. These include reduced housing affordability [Nelson et al., 2002], environmental degradation [El Araby, 2002], high crime rates with negative effects on economics, education, and health [Glaeser and Sacerdote, 1999], greater disease incidence [Connolly et al., 2021, Santana et al., 2023] and traffic congestion [Zheng et al., 2014, Bassolas et al., 2019, Kalila et al., 2018, Xu et al., 2021]. Tóth et al. (2021) reported that rapid city growth can increase segregation and inequality in urban areas [Tóth et al., 2021]. Indeed, in cities i",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_06",
+    "text": "owth can increase segregation and inequality in urban areas [Tóth et al., 2021]. Indeed, in cities in the United States, life expectancy has generally increased in the middle classes whereas, in poorer classes, it has remained the same [Bor et al., 2017]. Within the spatial structure of cities, some neighbourhoods have become differentially desirable. More expensive locations force lower-income inhabitants away, and in some cases, to the fringes of cities or areas with increased levels of criminality or poverty [Weller and van Hulten, 2012]. This can generate a powerful reinforcement loop thought to block those wishing to move to the area and hinder social mobility further. a r X i v : 2 3 0 4 . 1 2 8 4 0 v 2 [ p h y s i c s . s o c - p h ] 1 1 O c t 2 0 2 3\n\nSpatiotemporal gender differen",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_07",
+    "text": "4 . 1 2 8 4 0 v 2 [ p h y s i c s . s o c - p h ] 1 1 O c t 2 0 2 3\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT One way to understand and quantify socio-spatial segregation in cities has been to use traditional data, like a census. However, by being based only on where people live, such data only ever ‘scratch at the surface‘ regarding the quantification of the fascinating details of urban environments and the relationship to our social lives and our ‘qualityof-life‘ [Entwisle, 2007, King, 2013]. Thus, city planners increasingly look to new technologies to study collective human behaviour and, especially, to characterise mobility patterns [Steenbruggen et al., 2015]. Data on broad movement behaviours are now accessible due to widespread interaction with technological sys",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_08",
+    "text": "on broad movement behaviours are now accessible due to widespread interaction with technological systems [González et al., 2008] and computer technology can help to reveal patterns in human behaviour. The world’s near-ubiquitous uptake of mobile phone technology and social media generates huge amounts of data on our behaviour and mobility [Lazer et al., 2009, Vespignani, 2009, Salesses et al., 2013, Botta et al., 2015, Seresinhe et al., 2016, Preis et al., 2020]. From shopping habits [Di Clemente et al., 2018, Bannister and Botta, 2021, Xu et al., 2019] to transportation [Su et al., 2022], there is an unlimited array of uses afforded to us due to this new ability to track and record the movements of citizens. This new direction has provided an extraordinary new understanding of urban envir",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_09",
+    "text": "ments of citizens. This new direction has provided an extraordinary new understanding of urban environments and cities [Batty, 2013, Pan et al., 2013, Botta et al., 2015, Barthelemy, 2016, Botta et al., 2020]. Mobile phone data can support the study of urban vibrancy or urban vitality, which measures the activity of urban environments [Sulis et al., 2018, Botta and Gutiérrez-Roig, 2021, Wang et al., 2021]. Urban vibrancy is a concept that has been extensively theorised. Jane Jacobs was hugely influential in highlighting how urban design could encourage urban vibrancy and her arguments often focused on the maintenance and provision of social interactions in cities [Jacobs, 1961]. Her greatest addition to theory is an understanding that density and diversity in the physical structure of an u",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_10",
+    "text": "addition to theory is an understanding that density and diversity in the physical structure of an urban place might affect its functional use [Moroni, 2016] and that locations that are more diverse – or more concentrated, in terms of their street networks, buildings, or ‘Points of Interest‘ – may be the most vibrant locations. Thus, city planners should consider diversity and social accessibility because diversity provides social cohesion and supplies opportunities for spontaneous interactions, subsequently allowing high levels of creativity and activity that are accessible to the inhabitants and also maintain the community with a diverse socioeconomic background [Perrone, 2019]. We follow on from previous work by Botta and Gutiérrez-Roig [2021] that found that third places – i. e., place",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_11",
+    "text": "on from previous work by Botta and Gutiérrez-Roig [2021] that found that third places – i. e., places that humans use, that are neither home (first places) or work (second places) places and are specific in that they are used for social interactions – are important predictors of urban vibrancy levels across age groups. Here, we study gender segregation and urban inequality through the lens of urban vibrancy. We explore the link between urban features and urban vibrancy and whether this differs for different genders, resulting in spatial segregation. We use a large data set that contains the presence of males and females in urban spaces, as measured via mobile phone activity data, as well as Open Street Map geographical data, and residential census data. We use mobile phone activity data as",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_12",
+    "text": "Open Street Map geographical data, and residential census data. We use mobile phone activity data as a proxy measurement for urban vibrancy and analyse which urban features contribute to urban vibrancy for different social groups, particularly males and females. We find that there are differences between males and females in terms of urban vibrancy. Indeed, the differences relate to ‘Points of Interest‘ and transportation networks; however, there are both positive and negative spatial ‘spillovers‘ that exist across each city. We discuss how these differences could be accounted for in urban planning and design, and how human interaction with large technological systems provides a wealth of data that can complement that derived from more traditional methods of monitoring populations. This co",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_13",
+    "text": "ta that can complement that derived from more traditional methods of monitoring populations. This could allow social problems, such as spatial segregation, to be measured more accurately, and at faster rates, so that social problems might be solved more easily by policymakers and urban planners for the cities of the future. We aim to further the understanding of gender differences [Vaitla et al., 2017] and segregation in urban spaces. 2 Data We use three main data sources: (1) Italian census data that contains detailed information on where people live, (2) Call Detail Records data (CDR), derived from mobile phones, containing information on where people are at a high temporal granularity, and (3) Open Street Map [OSM, 2017]. We use OSM data because it provides measurable features of urban",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_14",
+    "text": "d (3) Open Street Map [OSM, 2017]. We use OSM data because it provides measurable features of urban environments. For each data type, we gather data for only the ‘metropolitan areas‘ of each city because these areas are the most densely populated areas of cities (see Supplementary Materials for summary statistics Table SI 1). Metropolitan cities are areas that are linked to the city in terms of its culture and economy as well as its geographic proximity. Data for the metropolitan area boundary were gathered from the Italian Office for National Statistics (‘ISTAT‘) [ISTAT, 2023]. Data can be made available on request. We outline the data sources below. 2.1 Italian census data The ISTAT census [ISTAT, 2023] is conducted every decade in Italy. Census sections are small, typically with 250 hou",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_15",
+    "text": "[ISTAT, 2023] is conducted every decade in Italy. Census sections are small, typically with 250 households, and provide total population and gender counts per section. We use 2011 census data downloaded from the ISTAT to confirm resident locations during key times of the day. 2\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT 2.2 Call Detail Record data We use mobile phone Call Detail Record (CDR) data from Gruppo TIM (formerly Telecom Italia) that was made available as part of their ‘Big Data Challenge 2015‘ (described in Gruppo TIM [2015]). The CDR data is available for seven different cities: Milan, Rome, Turin, Naples, Venice, Palermo, and Bari, covering approximately two months (from 23:00 GMT on 2015-02-28 to 21:45 GMT on 2015-04-30). Each CDR data set has a correspondi",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_16",
+    "text": "onths (from 23:00 GMT on 2015-02-28 to 21:45 GMT on 2015-04-30). Each CDR data set has a corresponding grid designed by Telecom Italia [Gruppo TIM, 2015]. Each grid takes into account the topology of each city and the potential communication load. Each spatial grid was also designed to maintain the privacy of the inhabitants of each city. Subsequently, the grid polygons change shape in relation to the underlying mobile cells: cells typically get smaller the closer they are to the centre of each city. The activity of the data has a granularity of fifteen-minute intervals; however, there are time points in the CDR data that contain no records; this may occur because the number of users drops below three, and no data is recorded to preserve privacy, but there may also be further issues such a",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_17",
+    "text": "elow three, and no data is recorded to preserve privacy, but there may also be further issues such as cutouts or problems in the collection of the data. The data contain the gender of the user who generated the CDR within the network (see CDR summary statistics Table SI 2). The data contain a value for each gender and the gender is derived from the registration of the SIM card of male and female mobile phone users. Therefore, the data shows male and female use across time. A related data set has already been used to understand how different age groups interact with cities [Botta and Gutiérrez Roig, 2021]. This is possible because this type of data allows us to analyse and investigate the existence of differences across social groups instead of aggregating across a population, where informa",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_18",
+    "text": "stence of differences across social groups instead of aggregating across a population, where information concerning the differences between social groups is neglected or reduced. We utilize the mobile phone CDR data set as a vector-based proxy for measuring urban vibrancy in the cities under investigation because prior research findings demonstrate consistent effectiveness in studying urban vibrancy [Sulis et al., 2018, Wang et al., 2021, Botta and Gutiérrez-Roig, 2021]. Though graph-based metrics are also used to measure urban vibrancy [Wang et al., 2018], we approximate urban vibrancy in a vector-based way because the method allows fine temporal and spatial granularity and because we can separate the data according to gender. We intend to use these data to understand differences between",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_19",
+    "text": "eparate the data according to gender. We intend to use these data to understand differences between social groups to understand how urban features contribute to a vibrant environment with respect to gender. We have aggregated the cell–user data across an array of time periods such that we get metrics pertaining to urban vibrancy in each grid cell. 2.3 Open Street Map data To understand cities, we must first create representations of their characteristics. Creating such representations has only recently been made easier thanks to collaborative projects such as Open Street Map [OSM, 2017]. OSM is an open-source data repository generated and collected by volunteer collaborators. The data that is formed consists of large-scale geographic data that is made freely available to users. It is possi",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_20",
+    "text": "s formed consists of large-scale geographic data that is made freely available to users. It is possible to download data on an array of city attributes including the networks, systems, and features of urban landscapes. Here, we retrieve data for each study area; however, it is important to note that the data that was downloaded was the most up-to-date version of the urban features. What we derive from these data is explained systematically in the next section. 3 Methods 3.1 A proxy for urban vibrancy: Call Detail Records As a proxy measure for urban vibrancy, we use CDR data as it indicates the presence of inhabitants throughout the day. We calculate gender differences by subtracting the male value from the female value: ∆ i = M i − F i (1) where ∆ i represents the vector of differences, M",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_21",
+    "text": "e value from the female value: ∆ i = M i − F i (1) where ∆ i represents the vector of differences, M i is the vector of male users, and F i is the female users. Gender identity was only available for users who disclosed it when acquiring their SIM cards. Users who did not disclose their gender were excluded from the analysis. As described in Section 2.2, gaps in the data occur when the number of users falls below three to protect their anonymity. To fill in these gaps, we assumed a value of zero for these time points. The grid consists of cells of varying sizes, so we normalized the raw data by the area of each grid cell to obtain a population density that accounts for the usage and topology of each cell in relation to the city. 3.2 Cities as networks: Independent variables We downloaded f",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_22",
+    "text": "of each cell in relation to the city. 3.2 Cities as networks: Independent variables We downloaded for each static grid cell of each city a range of features shown to be related to urban vibrancy by previous research [Sung et al., 2013, Botta and Gutiérrez-Roig, 2021, Yu et al., 2022, Chen et al., 2022]. We processed these features in two ways as outlined below. 3\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT 3.2.1 Density in urban features By Jacobs [Jacobs, 1961], increased feature density was a promoting factor in urban vibrancy because of the increased activity. The density of buildings, highways, networks, intersections, or ‘Points of Interest‘ in a place, all have the potential to provide more opportunities for activities because of the increased number of users of th",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_23",
+    "text": "otential to provide more opportunities for activities because of the increased number of users of those locations, or the increased vehicular or pedestrian access; however, importantly, these might differ across genders. Here, we define density as the concentration of a feature type within a given area. To arrive at the density value, we first download features from the free geographical database: Open Street Map (OSM; see Section 2). We construct feature collections of the buildings, transport networks, and ‘Points of Interest‘ found in each cell of each city. We took the total count per cell and divided it by the total area of that cell to give a value of the feature density. For the networks, we calculated the average length of transport networks or the average number of intersections,",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_24",
+    "text": "rks, we calculated the average length of transport networks or the average number of intersections, that are accessible for (1) pedestrians, (2) cyclists, and (3) drivers. We used the following calculation to determine feature density: ρ = N A (2) where ρ is the density, N is the total number of features in the geometry, and A is the area of the geometry. The values were added to the grid cells for each city (see Figure SI 2). 3.2.2 Diversity in urban features According to Jacobs, it is the diversity in features that increases and encourages a location’s vibrancy [Jacobs, 1961]. Similarly to above, in a place, the diversity of buildings, highways, or ‘Points of Interest‘ all have the potential to provide more opportunities for activities because of the increased usage of those locations; h",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_25",
+    "text": "al to provide more opportunities for activities because of the increased usage of those locations; however, these might differ across genders. To gather data on urban feature diversity we use the same downloaded OSM feature collections. We use the Shannon-Wiener diversity index [Shannon, 1948] to calculate the diversity of features. The diversity index is calculated as follows: H = − M (cid:88) i=1 P i log 2 P i (3) where H is the diversity index, M is the total number of categories in the geometry feature, and P i is the frequency of the ith category. The values were added to the grid cells for each city (see Figure SI 2). We detail the ‘Points of Interest‘ variables below. ‘Points of Interest‘: ‘Points of Interest‘ are important features that directly relate to urban vibrancy. We collect",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_26",
+    "text": "est‘: ‘Points of Interest‘ are important features that directly relate to urban vibrancy. We collected all ‘Points of Interest‘ from OSM found under the amenity, building, leisure, shop, and sport tags in the OSM database to construct a ‘Points of Interest‘ collection for each city. We manually labeled the points using the same label collection as Moro et al. [2021] and Fan et al. [2022], based on the Foursquare classification system, which includes 14 categories. This taxonomy of labels is as follows: (1) Arts / Museum, (2) City / Outdoors, (3) Coffee / Tea, (4) College, (5) Entertainment, (6) Food, (7) Grocery, (8) Health, (9) Residential, (10) Service, (11) Shopping, (12) Sports, (13) Transportation, and (14) Work. We considered these labels because they represent the most frequently vi",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_27",
+    "text": "nsportation, and (14) Work. We considered these labels because they represent the most frequently visited locations and are likely to be important for segregation [Moro et al., 2021]. ‘Third Places‘: We constructed a collection of ‘Third Places‘ [Oldenburg and Brissett, 1982]. Third Places are locations that are neither home nor workplaces and are considered to be vitally important in terms of urban vibrancy because they allow for impromptu everyday gatherings in urban locations that result in positive effects for communities [Jeffres et al., 2009, Botta and Gutiérrez-Roig, 2021] and because people spend a significant fraction of their free time in third places. For this analysis, we considered that there may be differences between genders in how they use amenities like shops, pubs, cafés,",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_28",
+    "text": "red that there may be differences between genders in how they use amenities like shops, pubs, cafés, or community centres. And that this was likely to be used differently depending on general discrepancies in urban mobility diversities and, amongst others, related to socioeconomic characteristics. Here, using the same ‘Points of Interest‘ tags used in OSM (i. e., ‘amenity‘, ‘building‘, ‘leisure‘, ‘shop‘, and ‘sport‘), we calculated density and diversity for third places (as defined in Section 3.2.1 and 3.2.2) across all grid cells and cities. We manually labeled third places based on Jeffres et al. [2009]’s categorization of (1) eating and drinking, (2) organized activities, (3) outdoor, and (4) commercial venues, and added a fifth label of commercial services. Commercial services are base",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_29",
+    "text": "(4) commercial venues, and added a fifth label of commercial services. Commercial services are based on the locations where people might receive a service or go with the intent of buying something, but where you may also have opportunities for social interactions that might be brief compared to the other groupings. We included this label to capture the potential for brief social interactions in locations like banks and pharmacies that would have otherwise been removed due to Jeffres et al. [2009] definition. Only those locations that fit within these categories were considered third places. 4\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT 3.3 Statistical approach In this analysis, the Call Detail Record (CDR) data and census data have different spatial grids. We use the geo",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_30",
+    "text": "ysis, the Call Detail Record (CDR) data and census data have different spatial grids. We use the geometry of CDR data as our main reference and extract OSM data for each cell. We interpolate census data to the same spatial grid using areal interpolation [Comber and Zeng, 2019, Bergroth et al., 2022] to enable correlation analysis and spatial linear regression at the grid cell level (for an overview of the methodology, see SI 1). We perform a correlation analysis to test the data’s representativeness by comparing the CDR data (we used the nighttime values only) with census counts that have been converted to density estimates, matching the CDR data in terms of spatial scale and intensive property. We compare both male and female nighttime CDR values with their respective interpolated census",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_31",
+    "text": "rty. We compare both male and female nighttime CDR values with their respective interpolated census data and use Kendall’s correlation coefficient as it is distribution-free and more suitable for spatial data [Hamed, 2011]. We carry out this analysis in all cities. We aim to model male-female differences for each city while also building an aggregated model to identify common trends. We refer to this aggregated model in many of the analyses below for clarity. To ensure comparability, we standardize all variables. We then construct an ordinary least squares (OLS) model as a baseline method for estimating the regression β coefficients and evaluating the importance of spatial extensions to OLS. We use the following linear function to explain male-female differences as a function of a set of s",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_32",
+    "text": "We use the following linear function to explain male-female differences as a function of a set of separate features denoted by X (See Section 3.1): Y = β i X i + ϵ (4) where Y represents the male-female differences as a response variable consisting of a value proportional to the users per gender used here as a proxy for activity and a measure of vibrancy (see Section 3.1), β i are the regression coefficients, X i is the independent variables, and ϵ is the error. Our data may have spatial autocorrelation, which violates some assumptions of a basic regression model. We address this issue in the following sections. We diagnosed spatial dependence by analyzing OLS model residuals. The error terms may not be independent due to a spatial relationship, so we checked for spatial structure and the",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_33",
+    "text": "ms may not be independent due to a spatial relationship, so we checked for spatial structure and the need for spatial models using Moran’s I analyses from Ward and Gleditsch [2019]. Spatial clustering implies spatial dependence, and so requires spatial models. We use maximum likelihood estimation to create spatial lag and spatial error models [Anselin et al., 2006, Ward and Gleditsch, 2019]. The Lagrange multiplier and AIC difference from OLS were calculated. We utilized Queen’s contiguity based on grid-cell geometry for spatial weights’ matrix, connecting centroids of observations to those with shared vertices [Rey and Anselin, 2010]. We used row transformation to normalize the weights’ values to achieve an average of variable values in each observation’s neighbourhood. We chose Queen’s c",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_34",
+    "text": "ues to achieve an average of variable values in each observation’s neighbourhood. We chose Queen’s contiguity due to the irregular grid size. To assess the sensitivity of the choice of spatial weights, we replicate the same analysis using both Rook’s contiguity and k-nearest neighbours’ distance as weighting schemes, and we find qualitatively similar results (see SI 3). We consider the spatial error model (SEM) as our first model, which incorporates spatial dependence using a spatially lagged error term: Y = X iβ i + u, u = ρWu + ϵ (5) where Y is the male-female differences as a response variable, X i represents the explanatory variables, β i are the regression coefficients, u is the first error term, ρ is a scalar of the spatial lag parameter, W is the weights’ matrix (Queen’s contiguity)",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_35",
+    "text": "rror term, ρ is a scalar of the spatial lag parameter, W is the weights’ matrix (Queen’s contiguity), and ϵ is the spatially independent error term. We also utilized spatial lag models (SAR) where dependent variables were spatially lagged, providing coefficients for both direct and indirect effects of independent variables on the response and mean activity of neighbouring grid cells [Lesage and Fischer, 2008]. The SAR model terms are as follows: Y = X iβ i + ρWY u + ϵ (6) where Y is the vector of the response variable, X represents the explanatory variables, β is the regression coefficients, ρ is a scalar of the spatial lag parameter, WY is the weights’ matrix (Queen’s contiguity), and ϵ is the spatially independent error term. For each model, we calculated the direct effect, indirect effe",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_36",
+    "text": "the spatially independent error term. For each model, we calculated the direct effect, indirect effects, and total effects due to the challenges associated with interpreting predictors unit change under ‘spillover’ effects [Anselin and Rey, 2014]. Spatial spillover effects are indirect effects and refer to secondary impacts that result from the direct effects. To compute these values, we first derived estimated coefficients for exogenous variables in the model, which yielded the direct effect that shows the influence of one spatial unit on another [Lesage and Fischer, 2008]. Direct effects are calculated as: DE = β (7) where DE are the direct effects, β are the coefficients of the SAR model without the spatial lag term. 5\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Contai",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_37",
+    "text": "without the spatial lag term. 5\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Contained within the direct effects are both the indirect effects and the total effects [Guo Meng et al., 2021]. To split these apart, we extract the spatial lag term from the coefficients and divide the coefficients by 1 minus the spatial lag term multiplied by the largest eigenvalue of the spatial weights’ matrix which effectively normalizes the coefficients [Lesage and Fischer, 2008, Bivand and Piras, 2015]. Total effects take into account the full range of impacts that a particular change may have on the spatial system as a whole [Lesage and Fischer, 2008]. Total effects are calculated as: TE = β/(1 − ρ ∗ λ) (8) where TE are the total effects, β are the coefficients of the exogenous variable i",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_38",
+    "text": "β/(1 − ρ ∗ λ) (8) where TE are the total effects, β are the coefficients of the exogenous variable in the spatial lag model, ρ is the spatial lag term, and λ is the maximum eigenvalue from the spatial weights’ matrix. Finally, we calculate the indirect effects. These refer to the secondary impacts that result from the direct effects. Indirect effects are a measure of any spillover effects that occur beyond the immediate spatial units [Lesage and Fischer, 2008]. Indirect effects are calculated as: IE = DE − TE (9) where IE are the indirect effects, DE are the direct effect and TE are the total effects. Using the above methods and data, we created a hierarchy of models that aggregated CDR data at different time periods. These included: (i) All daytime data (08:00-20:00), (ii) Weekdays (Monda",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_39",
+    "text": "at different time periods. These included: (i) All daytime data (08:00-20:00), (ii) Weekdays (Monday-Thursday) versus Weekends (Friday-Sunday) within the all-day time period, and (iii) Twenty-four-hour day data divided into Morning (06:00-12:00), Afternoon (12:00-18:00), Evening (18:00-00:00), and Night (00:00-06:00) categories. Models were run for individual cities and for all cities combined. This approach enabled us to study how vibrancy relates to gender and urban features at different times and investigate variations over time. 4 Results First, we use Kendall’s rank correlation coefficient [Kendall, 1938] to compare the census and the Call Detail Record (CDR) data to check representativeness. Across all cities, we find results were positive and significant at the 5% level (see Figure",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_40",
+    "text": "veness. Across all cities, we find results were positive and significant at the 5% level (see Figure SI 5). The lowest τ for females is 0.55 (Bari) whereas the highest τ for females is 0.72 (Torino). For males, the lowest τ is 0.56 (Bari) whereas the highest τ for males is 0.7 (Torino). These strong correlations between the CDR–when selecting only the nighttime values–and census data show that the CDR data are broadly representative of the census data. This suggests that the values of the daytime should also be representative of the movements of the general population. Next, we use Kendall’s rank correlation coefficient to compare each urban feature with the male-female differences. We adjust our results using false discovery-rated detection to correct for the rate of type I errors in the",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_41",
+    "text": "t our results using false discovery-rated detection to correct for the rate of type I errors in the null hypothesis. We found that, except for a few instances, all of our results were positive and were highly significant at the 5% level (P < 0.05). Also, between density and diversity metrics, diversity often had a smaller association contrasting with previous work on age groups [Botta and Gutiérrez-Roig, 2021], we found that smaller cities had larger associations with male-female differences. See Table 1 for the full correlation analysis results. We use Moran’s spatial autocorrelation analysis to determine the global Moran’s I of the data and to further understand the data in terms of its spatial dependence. We extract residuals of an ordinary least squares (OLS) model at each level of the",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_42",
+    "text": "atial dependence. We extract residuals of an ordinary least squares (OLS) model at each level of the model hierarchy. We calculate Moran’s I statistics for the male-female differences in each city. For clarity, we report only the minimum and maximum in the lowest level of the hierarchy (this does not include the aggregated model which is excluded from this analysis due to its obvious spatial clustering in different cities), i. e. the daytime data (08:00-20:00; see Section 3.3). The lowest value for Moran’s I was 0.013, the maximum was 0.8, and the mean was 0.2. Of the seven cities in the analysis, two were non-significant at the 5% level, these were Bari and Napoli; all the rest were significant (P < 0.05). These values confirm the presence of spatial clustering and spatial dependence; how",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_43",
+    "text": "cant (P < 0.05). These values confirm the presence of spatial clustering and spatial dependence; however, these values alone cannot provide a full account of the presence or absence of spatial clustering or fully understand the spatial structure of the data; this, however, provides evidence that spatial models may be more appropriate. See Supplementary Materials Figure SI 4 and Table SI 3 for full Moran’s I analysis results. To further test the presence of spatial clustering, we calculate the Lagrange multiplier test statistic (both non-robust and robust) for the OLS model of each city and at each level of the analysis. We did this to identify the type of model most suitable for the analysis. This provides a measure to inform us whether to use a simple linear model or use either the spatia",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_44",
+    "text": ". This provides a measure to inform us whether to use a simple linear model or use either the spatial lag models (SAR) or the spatial error models (SER) [Le Sage and Pace, 2009]. At the same time, we calculate the Akaike information criterion (AIC) of each of the models. We find that the SAR models most often contain the highest values (Minimum LMerr = 0.062, P is NS, Maximum LMerr = 410.104; Minimum LMlag = 9.56, P < 0.001, Maximum LMlag = 539.642). The same relationship is also found for the robust methods. The differences between the AIC of the OLS and the AIC of the spatial models were consistently greater for the SAR models. Because these 6\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Table 1: Correlation between male-female differences and all urban features. For eac",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_45",
+    "text": "brancy PREPRINT Table 1: Correlation between male-female differences and all urban features. For each city and the aggregation of all cities, we calculate the correlation coefficient and associated p-value. We have separated the variables into categories of density and diversity. We use Kendall’s tau (τ) rank correlation coefficient because of its particular suitability for spatial data [Hamed, 2011]. We can see both the associational strength and directionality of each correlation. We also calculated the average for each variable based on each city but not the aggregation of all cities. p-values are shown using their significance stars, where [0 - 0.001] is ’***’, [0.001 - 0.01] is ’**’, [0.01 - 0.05] is ’*’, [0.05 - 0.1] is ’.’, and [0.1 - 1.0] has no symbol. Cities are ordered by the nu",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_46",
+    "text": ".01 - 0.05] is ’*’, [0.05 - 0.1] is ’.’, and [0.1 - 1.0] has no symbol. Cities are ordered by the number of grid cells. Variable Aggregated Milano Roma Torino Napoli Venezia Palermo Bari Average τ p τ p τ p τ p τ p τ p τ p τ p Density Building 0.41 *** 0.25***0.49*** 0.42*** 0.40*** 0.60*** 0.64***0.62*** 0.53 Road network length 0.37 *** 0.19***0.46*** 0.48*** 0.41*** 0.51*** 0.58***0.51*** 0.49 Cycling network length 0.36 *** 0.21***0.52*** 0.47*** 0.43*** 0.53*** 0.53***0.46*** 0.49 Walking network length 0.36 *** 0.27***0.55*** 0.48*** 0.45*** 0.53*** 0.55***0.44*** 0.5 Highway 0.41 *** 0.34***0.65*** 0.57*** 0.65*** 0.74*** 0.71***0.62*** 0.66 Road network node 0.40 *** 0.20***0.51*** 0.52*** 0.51*** 0.54*** 0.62***0.55*** 0.54 Cycling network node 0.39 *** 0.25***0.55*** 0.52*** 0.53",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_47",
+    "text": ".52*** 0.51*** 0.54*** 0.62***0.55*** 0.54 Cycling network node 0.39 *** 0.25***0.55*** 0.52*** 0.53*** 0.56*** 0.62***0.54*** 0.56 Walking network node 0.38 *** 0.29***0.58*** 0.52*** 0.51*** 0.57*** 0.63***0.53*** 0.56 Point of interest 0.42 *** 0.29***0.58*** 0.50*** 0.13 * 0.65*** 0.61***0.66*** 0.52 Third place 0.36 *** 0.28***0.55*** 0.51*** 0.45*** 0.65*** 0.61***0.49*** 0.54 Diversity Building 0.08 *** 0.14***0.29*** 0.32***-0.04 -0.23 **-0.16 .0.42*** 0.1 Highway 0.00 -0.10 **0.19*** 0.02 0.01 0.04 -0.02 0.35*** 0.1 Point of interest 0.10 *** 0.11 **0.32*** 0.03 0.44*** 0.44*** 0.13 0.10 0.24 Third place 0.06 **-0.04 0.27***-0.04 0.06 0.22 ** 0.12 0.20 * 0.14 Commercial venue (third place) 0.30 *** 0.27***0.42*** 0.46*** 0.27*** 0.54*** 0.48***0.34*** 0.42 Organised activity (thir",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_48",
+    "text": "place) 0.30 *** 0.27***0.42*** 0.46*** 0.27*** 0.54*** 0.48***0.34*** 0.42 Organised activity (third place)0.20 *** 0.10 **0.40*** 0.15*** 0.20 ** 0.46*** 0.22 *0.46*** 0.31 Outdoor (third place) 0.26 *** 0.17***0.46*** 0.38*** 0.29*** 0.57*** 0.32***0.31*** 0.39 Eating drinking (third place) 0.31 *** 0.26***0.50*** 0.41*** 0.22*** 0.53*** 0.36***0.33*** 0.39 Commercial service (third place)0.27 *** 0.24***0.45*** 0.40*** 0.24*** 0.46*** 0.42***0.37*** 0.39 tests consistently pointed toward using the SAR models, and we observe spatial clustering, we continue the rest of our analysis with SAR models. We find fairly consistent results across this hierarchy. Firstly, we find that smaller cities had larger amounts of error in the estimates than larger cities and with more variation in the coe",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_49",
+    "text": "s had larger amounts of error in the estimates than larger cities and with more variation in the coefficients, most likely due to the size and number of cells in the smaller cities. Secondly, there are no strong gender differences between the night and day (see Figures 1, SI 6 and SI 7). In the larger cities, we find a significant positive indirect effect between male-female differences and third-place density (see Figure 1); this relationship is consistent across the three largest cities and the aggregated model. We also found a significant negative indirect effect between male-female differences and the density of ‘Points of Interest‘ (see Figure 1). The pattern was again similar across, this time, the four largest cities and the aggregated model. We also find a relationship between high",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_50",
+    "text": "his time, the four largest cities and the aggregated model. We also find a relationship between highway density and all three of the intersection variables; however, they did not share the direction. Both cycling and walking intersection density were significant with positive indirect effects; however, for road intersections, though there was a negative indirect effect, this was not significant. The highway density was only significant in the aggregate model (see Figure 1). We found that diversity metrics generally were not significant; however, we found that the ‘organised activity‘ and ‘outdoor‘ third place categories were significant; this was not the case for third places generally (see Figures SI 6 and SI 7). We find that the strongest effect, which was also the most consistent, was t",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_51",
+    "text": "Figures SI 6 and SI 7). We find that the strongest effect, which was also the most consistent, was the positive indirect effect of the third place density. We consider this an interesting finding when coupled with the significant negative indirect effect found in the ‘Points of Interest‘ variable because the directionality of the ‘Points of Interest‘ variable – without accounting for the social aspect of the third places – are opposing one another. This could suggest that locations that fall under our five categories for third places are not equally used by each gender whereas, the ‘Points of Interest‘ as a whole are used more equally. For each level of the nested hierarchy, we report the results of the pseudo-r-squared values from the models. The pseudo-r-squared is the squared correlatio",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_52",
+    "text": "sults of the pseudo-r-squared values from the models. The pseudo-r-squared is the squared correlation between the dependent variable and the predictions of the dependent variable [Anselin, 1988]. These values are a measure of goodness-of-fit and are used to understand the relationship between the model variables. Our models exhibited relatively high values consistently across cities and across the 7\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT -5e+03 0e+00 5e+03 1e+04 beta (indirect effect) -5e+03 0e+00 5e+03 beta (Indirect effect) PR2 = 0.866 A B C Morning Afternoon Evening Night -2.5e+03 0.0e+00 2.5e+03 5.0e+03 Week Weekend PR2 = 0.864 PR2 = 0.856 PR2 = 0.856 PR2 = 0.662 PR2 = 0.869 PR2 = 0.709 Third place Point of interest Walking network node Cycling network node Road",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_53",
+    "text": "R2 = 0.869 PR2 = 0.709 Third place Point of interest Walking network node Cycling network node Road network node Highway Walking network length Cycling network length Road network length Building P > 0.05 P < 0.05 beta (indirect effect) Figure 1: The relationship between density in features and male-female differences for the spatial model aggregating all cities. The plot shows the significance of the direct effect; however, the β coefficients represent the indirect effect (see 3.3 for definitions). The plot displays all density variables, with the y-axis showing the variables for each model and the colour representing each variable. Panel (A) shows all daytime data between 08:00 and 20:00; Panel (B) displays weekday (Monday-Thursday) versus weekend (Friday-Sunday) data within the same tim",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_54",
+    "text": "Panel (B) displays weekday (Monday-Thursday) versus weekend (Friday-Sunday) data within the same time period; Panel (C) shows data averaged into four categories: Morning (06:00-12:00), afternoon (12:00-18:00), Evening (18:00-00:00), and Night (00:00-06:00). To aid comparison, shapes denote categories in Panels (B) and (C). Significance is indicated by closed and open shapes (P < 0.05 and P > 0.05, respectively), and each shape shows the error bars as a horizontal line. The pseudo-r-squared is reported for each panel. hierarchy of models highlighting a good relationship between independent and dependent variables (see Figures 1, SI 6, and SI 7). 5 Discussion In this study, we have focused on modelling urban vibrancy–a measure of the dynamic activity of human beings in urban environments. Fo",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_55",
+    "text": "modelling urban vibrancy–a measure of the dynamic activity of human beings in urban environments. For this, we have considered seven of the largest cities in Italy. We asked how urban features might contribute to a vibrant environment and how they might vary across social groups, especially concerning gender. We hypothesised that there would be differences for different genders because, firstly, heterogeneity exists generally in how people interact with urban environments [De Palma and Papageorgiou, 1988] but, secondly, that similarities might correlate most closely with groups such as gender due to similarity in socioeconomic characteristics or general behaviours. We used a computational approach to reveal any potential socio-spatial segregation across our study areas, and we used a range",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_56",
+    "text": "proach to reveal any potential socio-spatial segregation across our study areas, and we used a range of relevant urban features taken from urban vibrancy theory [Sung et al., 2013, Botta and Gutiérrez-Roig, 2021, Yu et al., 2022, Chen et al., 2022]. To model urban vibrancy, we used data showing the presence of mobile phone users as a proxy–another established methodology [Jia et al., 2019, Botta and Gutiérrez-Roig, 2021]. We have uncovered a variety of findings. First, we have been able to study urban vibrancy–and potential segregation in urban vibrancy–by using high-frequency Call Detail Record (CDR) data and open-source geographical data. We show that it is possible to do this with high predictive power and goodness-of-fit, and we do this across a model hierarchy that accounts for moveme",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_57",
+    "text": "edictive power and goodness-of-fit, and we do this across a model hierarchy that accounts for movement behaviours in order to reflect the reality of life in cities. Second, we have furthered discussions from previous works that focused on the importance of third places in cities: we found significant evidence that an 8\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT increase in the density of third places in a given area is associated with larger male-female differences in urban vibrancy whereas an increase in the density of ‘Points of Interest‘ overall (i. e., without specifically considering third places) is associated with smaller male-female differences. The evidence that third places are associated with larger differences could suggest that locations that we have defined",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_58",
+    "text": "hird places are associated with larger differences could suggest that locations that we have defined as third places, i. e., locations that fall under our five-category system (see Section 3), are not equally used by each gender. This evidence does not necessarily mean that increases in the density of third places increase differences; however, it may be that certain types of third places are unequally used across genders. Reasons for this could be based on cultural differences or socioeconomic factors. Another part to consider is the clustered nature of third places in cities: a positive indirect effect indicates increases in male-female differences but also that the variable is positively correlated with the neighbouring values of male-female differences. It is important to consider that",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_59",
+    "text": "correlated with the neighbouring values of male-female differences. It is important to consider that third places are places that are likely to cluster geographically with other factors such as economic activity or environmental conditions. More evidence would be needed to uncover further details but a similar methodology could be used with extensions and additional analyses. One such methodological adaptation could be the use of a Geographically Weighted Regression. This would help to understand the predictive power across cities whilst exploring potential spatial biases in the data. Within our analysis, we can identify a number of limitations, and it is important to acknowledge these and discuss them here. Firstly, our CDR data is used as a proxy for urban vibrancy measurement; these dat",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_60",
+    "text": "iscuss them here. Firstly, our CDR data is used as a proxy for urban vibrancy measurement; these data are from Telecom Italia, just one provider. Though this is the largest provider in Italy, these data do not capture the entire population and so may contain unknown biases. A full account of the general population could be gained by using multiple providers and may improve our overall analysis. It is also the case that the data were only derived from phone calls; this clearly misses a breadth of other communication methods and could potentially hide biases in the data due to the myriad of different ways people communicate today. Furthermore, gender information is derived from SIM purchases, but this is likely to not be an exact representation of the gender of users. However, we also note t",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_61",
+    "text": "but this is likely to not be an exact representation of the gender of users. However, we also note that our validation with the census data shows a good correlation with the mobile phone data, suggesting that these issues may be relatively limited (see Figure SI 5). A second potential problem is that the data are from differing time periods: we have taken census data from 2011, CDR data from 2015, and Open Street Map data from 2022. This undoubtedly introduces some biases in the analysis; however, we expect them to be small and not affect the overall results. In this study, we have considered the modelling of urban vibrancy with respect to gender differences. We found that the density of different collections of ‘Points of Interest‘ are simultaneously associated with both decreases and inc",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_62",
+    "text": "ferent collections of ‘Points of Interest‘ are simultaneously associated with both decreases and increases in male-female differences. This was the case when we gave a broad-scale use-category (‘Points of Interest‘) and a fine-scale use-category that considers the social context of a place (third place). This adds further evidence for the importance of characterising third places when studying urban environments and urban vibrancy. This evidence also suggests that comparing different collections of ‘Points of Interest‘ could hold interesting avenues for further research relating to urban vibrancy. We have shown that this could also provide details on the potential segregation we find existing in cities today. To conclude, our analysis provides further evidence and support for the use of CD",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_63",
+    "text": "g in cities today. To conclude, our analysis provides further evidence and support for the use of CDR and crowdsourced data to understand large-scale movement behaviours and how we can use these data to understand the social fabric of urban life. In turn, this could provide evidence for the design of our future urban environments. References UN DESA. World Urbanization Prospects: The 2018 Revision. United Nations, August 2019. ISBN 978-92-1-004314-4. doi:10.18356/b9e 995 fe-en. Nigel Harris. Urbanisation, economic development and policy in developing countries. Habitat International, 14(4): 3–42, January 1990. ISSN 0197-3975. doi:10.1016/0197-3975(90)90002-I. Luís M. A. Bettencourt, José Lobo, Dirk Helbing, Christian Kühnert, and Geoffrey B. West. Growth, innovation, scaling, and the pace",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_64",
+    "text": "o, Dirk Helbing, Christian Kühnert, and Geoffrey B. West. Growth, innovation, scaling, and the pace of life in cities. Proceedings of the National Academy of Sciences, 104(17):7301–7306, April 2007. ISSN 0027-8424, 1091-6490. doi:10.1073/pnas.0610172104. Wei Liu, Wenjie Wu, Piyushimita Thakuriah, and Jianghao Wang. The geography of human activity and land use: A big data approach. Cities, 97:102523, February 2020. ISSN 0264-2751. doi:10.1016/j. cities.2019.102523. S. Thomas. Urbanisation as a driver of change. In SUSTAINABLE CITY 2008, pages 95–104, Skiathos, Greece, August 2008. doi:10.2495/SC 080101. A. Nelson, R. Pendall, Casey J. Dawkins, and G. Knaap. Thelinkbetweengrowthmanagementandhousingaffordability: The academic evidence. Technical report, The Brookings institution center on urb",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_65",
+    "text": "usingaffordability: The academic evidence. Technical report, The Brookings institution center on urban and metropolitan policy, February 2002. M El Araby. Urban growth and environmental degradation. Cities, 19(6):389–400, December 2002. ISSN 02642751. doi:10.1016/S 0264-2751(02)00069-0. 9\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Edward L. Glaeser and Bruce Sacerdote. Why is There More Crime in Cities? Journal of Political Economy, 107(S6): S 225–S 258, 1999. ISSN 0022-3808. doi:10.1086/250109. Creighton Connolly, Roger Keil, and S. Harris Ali. Extended urbanisation and the spatialities of infectious disease: Demographic change, infrastructure and governance. Urban Studies, 58(2):245–263, February 2021. ISSN 00420980, 1360-063 X. doi:10.1177/0042098020910873. Clodomir S",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_66",
+    "text": "s, 58(2):245–263, February 2021. ISSN 00420980, 1360-063 X. doi:10.1177/0042098020910873. Clodomir Santana, Federico Botta, Hugo Barbosa, Filippo Privitera, Ronaldo Menezes, and Riccardo Di Clemente. COVID-19 is linked to changes in the time–space dimension of human mobility. Nature Human Behaviour, jul 2023. ISSN 2397-3374. doi:10.1038/s 41562-023-01660-3. Yu Zheng, Licia Capra, Ouri Wolfson, and Hai Yang. Urban Computing: Concepts, Methodologies, and Applications. ACM Transactions on Intelligent Systems and Technology, 5(3):1–55, October 2014. ISSN 2157-6904, 2157-6912. doi:10.1145/2629592. Aleix Bassolas, Hugo Barbosa-Filho, Brian Dickinson, Xerxes Dotiwalla, Paul Eastham, Riccardo Gallotti, Gourab Ghoshal, Bryant Gipson, Surendra A. Hazarie, Henry Kautz, Onur Kucuktunc, Allison Lieber,",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_67",
+    "text": "ti, Gourab Ghoshal, Bryant Gipson, Surendra A. Hazarie, Henry Kautz, Onur Kucuktunc, Allison Lieber, Adam Sadilek, and José J. Ramasco. Hierarchical organization of urban mobility and its connection with city livability. Nature Communications, 10(1):4817, October 2019. ISSN 2041-1723. doi:10.1038/s 41467-019-12809-y. Adham Kalila, Zeyad Awwad, Riccardo Di Clemente, and Marta C. González. Big data fusion to estimate urban fuel consumption: A case study of riyadh. Transportation Research Record, 2672(24):49–59, dec 2018. ISSN 21694052. doi:10.1177/0361198118798461. Yanyan Xu, Riccardo Di Clemente, and Marta C. González. Understanding vehicular routing behavior with locationbased service data. EPJ Data Science, 10(1):12, dec 2021. ISSN 2193-1127. doi:10.1140/epjds/s 13688-021-00267-w. Gerg˝ o",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_68",
+    "text": "EPJ Data Science, 10(1):12, dec 2021. ISSN 2193-1127. doi:10.1140/epjds/s 13688-021-00267-w. Gerg˝ o Tóth, Johannes Wachs, Riccardo Di Clemente, Ákos Jakobi, Bence Ságvári, János Kertész, and Balázs Lengyel. Inequality is rising where social network segregation interacts with urban topology. Nature Communications, 12(1): 1143, February 2021. ISSN 2041-1723. doi:10.1038/s 41467-021-21465-0. Jacob Bor, Gregory H Cohen, and Sandro Galea. Population health in an era of rising income inequality: USA, 1980–2015. The Lancet, 389(10077):1475–1490, April 2017. ISSN 01406736. doi:10.1016/S 0140-6736(17)30571-8. Sally Weller and Andrew van Hulten. Gentrification and Displacement: The Effects of a Housing Crisis on Melbourne’s Low-Income Residents. Urban Policy and Research, 30(1):25–42, March 2012. I",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_69",
+    "text": "ng Crisis on Melbourne’s Low-Income Residents. Urban Policy and Research, 30(1):25–42, March 2012. ISSN 0811-1146. doi:10.1080/08111146.2011.635410. Barbara Entwisle. Putting people into place. Demography, 44(4):687–703, November 2007. ISSN 0070-3370. doi:10.1353/dem.2007.0045. Katherine King. Jane Jacobs and ‘The Need for Aged Buildings’: Neighbourhood Historical Development Pace and Community Social Relations. Urban Studies, 50(12):2407–2424, September 2013. ISSN 0042-0980. doi:10.1177/0042098013477698. John Steenbruggen, Emmanouil Tranos, and Peter Nijkamp. Data from mobile phone operators: A tool for smarter cities? Telecommunications Policy, 39(3):335–346, May 2015. ISSN 0308-5961. doi:10.1016/j. telpol.2014.04.001. Marta C. González, César A. Hidalgo, and Albert-László Barabási. Unde",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_70",
+    "text": "10.1016/j. telpol.2014.04.001. Marta C. González, César A. Hidalgo, and Albert-László Barabási. Understanding individual human mobility patterns. Nature, 453(7196):779–782, June 2008. ISSN 1476-4687. doi:10.1038/nature 06958. David Lazer, Alex (Sandy) Pentland, Lada Adamic, Sinan Aral, Albert Laszlo Barabasi, Devon Brewer, Nicholas Christakis, Noshir Contractor, James Fowler, Myron Gutmann, Tony Jebara, Gary King, Michael Macy, Deb Roy, and Marshall Van Alstyne. Life in the network: The coming age of computational social science. Science (New York, N. Y.), 323(5915):721–723, February 2009. ISSN 0036-8075. doi:10.1126/science.1167742. Alessandro Vespignani. Predicting the Behavior of Techno-Social Systems. Science, 325(5939):425–428, July 2009. doi:10.1126/science.1171990. Philip Salesses,",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_71",
+    "text": "ocial Systems. Science, 325(5939):425–428, July 2009. doi:10.1126/science.1171990. Philip Salesses, Katja Schechtner, and César A. Hidalgo. The Collaborative Image of The City: Mapping the Inequality of Urban Perception. PLOS ONE, 8(7): e 68400, July 2013. ISSN 1932-6203. doi:10.1371/journal. pone.0068400. Federico Botta, Helen Susannah Moat, and Tobias Preis. Quantifying crowd size with mobile phone and Twitter data. Royal Society Open Science, 2(5):150162, May 2015. ISSN 2054-5703. doi:10.1098/rsos.150162. Chanuki Illushka Seresinhe, Tobias Preis, and Helen Susannah Moat. Quantifying the link between art and property prices in urban neighbourhoods. Royal Society Open Science, 3(4):160146, April 2016. doi:10.1098/rsos.160146. Tobias Preis, Federico Botta, and Helen Susannah Moat. Sensing",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_72",
+    "text": "April 2016. doi:10.1098/rsos.160146. Tobias Preis, Federico Botta, and Helen Susannah Moat. Sensing global tourism numbers with millions of publicly shared online photographs. Environment and Planning A: Economy and Space, 52(3):471–477, May 2020. ISSN 0308-518 X. doi:10.1177/0308518 X 19872772. 10\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Riccardo Di Clemente, Miguel Luengo-Oroz, Matias Travizano, Sharon Xu, Bapu Vaitla, and Marta C. González. Sequences of purchases in credit card data reveal lifestyles in urban populations. Nature Communications, 9(1):3330, August 2018. ISSN 2041-1723. doi:10.1038/s 41467-018-05690-8. Adam Bannister and Federico Botta. Rapid indicators of deprivation using grocery shopping data. Royal Society Open Science, 8(12):211069, December 2021.",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_73",
+    "text": "of deprivation using grocery shopping data. Royal Society Open Science, 8(12):211069, December 2021. doi:10.1098/rsos.211069. Sharon Xu, Riccardo Di Clemente, and Marta C. González. Mining urban lifestyles: Urban computing, human behavior and recommender systems. In Big Data Recommender Systems: Application Paradigms, pages 71–81. Institution of Engineering and Technology, jul 2019. ISBN 9781785619779. doi:10.1049/PBPC 035 G_ch5. Tianyu Su, Maoran Sun, Zhuangyuan Fan, Ariel Noyman, Alex Pentland, and Esteban Moro. Rhythm of the streets: A street classification framework based on street activity patterns. EPJ Data Science, 11(1):43, December 2022. ISSN 2193-1127. doi:10.1140/epjds/s 13688-022-00355-5. Michael Batty. The New Science of Cities. The MIT Press, 2013. ISBN 978-0-262-01952-1. Wei",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_74",
+    "text": "-00355-5. Michael Batty. The New Science of Cities. The MIT Press, 2013. ISBN 978-0-262-01952-1. Wei Pan, Gourab Ghoshal, Coco Krumme, Manuel Cebrian, and Alex Pentland. Urban characteristics attributable to density-driven tie formation. Nature Communications, 4(1):1961, June 2013. ISSN 2041-1723. doi:10.1038/ncomms 2961. Marc Barthelemy. The Structure and Dynamics of Cities: Urban Data Analysis and Theoretical Modeling. Cambridge University Press, November 2016. ISBN 978-1-107-10917-9. doi:10.1017/9781316271377. Federico Botta, Tobias Preis, and Helen Susannah Moat. In search of art: Rapid estimates of gallery and museum visits using Google Trends. EPJ Data Science, 9(1):1–12, December 2020. ISSN 2193-1127. doi:10.1140/epjds/s 13688020-00232-z. Patrizia Sulis, Ed Manley, Chen Zhong, and M",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_75",
+    "text": ". ISSN 2193-1127. doi:10.1140/epjds/s 13688020-00232-z. Patrizia Sulis, Ed Manley, Chen Zhong, and Michael Batty. Using mobility data as proxy for measuring urban vitality. Journal of Spatial Information Science, (16):137–162, June 2018. ISSN 1948-660 X. Federico Botta and Mario Gutiérrez-Roig. Modelling urban vibrancy with mobile phone and Open Street Map data. PLo S ONE, 16(6 June):1–19, 2021. ISSN 19326203. doi:10.1371/journal. pone.0252015. Pengyang Wang, Kunpeng Liu, Dongjie Wang, and Yanjie Fu. Measuring Urban Vibrancy of Residential Communities Using Big Crowdsourced Geotagged Data. Frontiers in Big Data, 4, 2021. ISSN 2624-909 X. Jane Jacobs. The Death and Life of Great American Cities. Random House;, 1961. Stefano Moroni. Urban density after Jane Jacobs: The crucial role of divers",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_76",
+    "text": "es. Random House;, 1961. Stefano Moroni. Urban density after Jane Jacobs: The crucial role of diversity and emergence. City, Territory and Architecture, 3(1):13, September 2016. ISSN 2195-2701. doi:10.1186/s 40410-016-0041-1. Camilla Perrone. ‘Downtown Is for People’: The street-level approach in Jane Jacobs’ legacy and its resonance in the planning debate within the complexity theory of cities. Cities, 91:10–16, August 2019. ISSN 0264-2751. doi:10.1016/j. cities.2018.12.023. Bapu Vaitla, Claudio Bosco, Victor Alegana, Tom Bird, Carla Pezzulo, Graeme Hornby, Alessandro Sorichetta, Jessica Steele, Cori Ruktanonchai, Nick Ruktanonchai, Erik Wetter, Linus Bengtsson, Andrew J Tatem, Riccardo Di Clemente, Miguel Luengo-Oroz, and Marta C González. Big Data and the Well-Being of Women and Girls A",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_77",
+    "text": "Clemente, Miguel Luengo-Oroz, and Marta C González. Big Data and the Well-Being of Women and Girls Applications on the Social Scientific Frontier. Data2x, 2017. OSM. Open Street Map contributors. https://www. openstreetmap. org/, 2017. ISTAT. Borders of administrative units for statistical purposes as of 1 January 2023. https://www. istat. it/it/archivio/222527, February 2023. Gruppo TIM. Dataset Source: TIM Big Data Challenge, https://www. gruppotim. it/en. html. http://localhost:4000/cases/telecom-italias-big-data-challenge. html, 2015. Pengyang Wang, Yanjie Fu, Jiawei Zhang, Xiaolin Li, and Dan Lin. Learning urban community structures: A collective embedding perspective with periodic spatial-temporal mobility graphs. ACM Transactions on Intelligent Systems and Technology, 9(6):63:1–63:2",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_78",
+    "text": "ial-temporal mobility graphs. ACM Transactions on Intelligent Systems and Technology, 9(6):63:1–63:28, 2018. ISSN 2157-6904. doi:10.1145/3209686. URL https://dl. acm. org/doi/10. 1145/3209686. Hyun-Gun Sung, Doo-Hwan Go, and Chang Gyu Choi. Evidence of Jacobs’s street life in the great Seoul city: Identifying the association of physical environment with walking activity on streets. Cities, 35:164–173, December 2013. ISSN 0264-2751. doi:10.1016/j. cities.2013.07.010. Bingjie Yu, Xu Cui, Runze Liu, Pinyang Luo, Fangzhou Tian, and Tian Yang. Intergenerational differences in the urban vibrancy of TOD: Impacts of the built environment on the activities of different age groups. Frontiers in Public Health, 10, 2022. ISSN 2296-2565. 11\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_79",
+    "text": "Health, 10, 2022. ISSN 2296-2565. 11\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Long Chen, Lingyu Zhao, Yang Xiao, and Yi Lu. Investigating the spatiotemporal pattern between the built environment and urban vibrancy using big data in Shenzhen, China. Computers, Environment and Urban Systems, 95:101827, July 2022. ISSN 0198-9715. doi:10.1016/j. compenvurbsys.2022.101827. C. E. Shannon. A mathematical theory of communication. The Bell System Technical Journal, 27(3):379–423, July 1948. ISSN 0005-8580. doi:10.1002/j.1538-7305.1948.tb 01338.x. Esteban Moro, Dan Calacci, Xiaowen Dong, and Alex Pentland. Mobility patterns are associated with experienced income segregation in large US cities. Nature Communications, 12(1):4633, July 2021. ISSN 2041-1723. doi:10.1038/s 41467-021",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_80",
+    "text": "rge US cities. Nature Communications, 12(1):4633, July 2021. ISSN 2041-1723. doi:10.1038/s 41467-021-24899-8. Zhuangyuan Fan, Tianyu Su, Maoran Sun, Ariel Noyman, Fan Zhang, Alex Sandy Pentland, and Esteban Moro. Diversity beyond density: Experienced social mixing of urban streets, September 2022. Ramon Oldenburg and Dennis Brissett. The third place. Qualitative Sociology, 5(4):265–284, December 1982. ISSN 1573-7837. doi:10.1007/BF 00986754. Leo W. Jeffres, Cheryl C. Bracken, Guowei Jian, and Mary F. Casey. The Impact of Third Places on Community Quality of Life. Applied Research in Quality of Life, 4(4):333–345, December 2009. ISSN 1871-2584, 1871-2576. doi:10.1007/s 11482-009-9084-8. Alexis Comber and Wen Zeng. Spatial interpolation using areal features: A review of methods and opportuni",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_81",
+    "text": "s Comber and Wen Zeng. Spatial interpolation using areal features: A review of methods and opportunities using new forms of data with coded illustrations. Geography Compass, 13(10): e 12465, 2019. ISSN 1749-8198. doi:10.1111/gec3.12465. Claudia Bergroth, Olle Järv, Henrikki Tenkanen, Matti Manninen, and Tuuli Toivonen. A 24-hour population distribution dataset based on mobile phone data from Helsinki Metropolitan Area, Finland. Scientific Data, 9(1):39, February 2022. ISSN 2052-4463. doi:10.1038/s 41597-021-01113-4. K. H. Hamed. The distribution of Kendall’s tau for testing the significance of cross-correlation in persistent data. Hydrological Sciences Journal, 56(5):841–853, July 2011. ISSN 0262-6667, 2150-3435. doi:10.1080/02626667.2011.586948. Michael Don Ward and Kristian Skrede Gledit",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_82",
+    "text": "0262-6667, 2150-3435. doi:10.1080/02626667.2011.586948. Michael Don Ward and Kristian Skrede Gleditsch. Spatial Regression Models. Quantitative Applications in the Social Sciences. SAGE Publications, Thousand Oaks, California, second edition edition, 2019. ISBN 978-1-5443-2883-6. Luc Anselin, Ibnu Syabri, and Youngihn Kho. Geo Da : An Introduction to Spatial Data Analysis. Geographical Analysis, 38(1):5–22, 2006. ISSN 1538-4632. doi:10.1111/j.0016-7363.2005.00671.x. Sergio J. Rey and Luc Anselin. Py SAL: A Python Library of Spatial Analytical Methods. In Manfred M. Fischer and Arthur Getis, editors, Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, pages 175–193. Springer, Berlin, Heidelberg, 2010. ISBN 978-3-642-03647-7. doi:10.1007/978-3-642-03647-7_11. Jam",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_83",
+    "text": "3. Springer, Berlin, Heidelberg, 2010. ISBN 978-3-642-03647-7. doi:10.1007/978-3-642-03647-7_11. James P. Lesage and Manfred M. Fischer. Spatial Growth Regressions: Model Specification, Estimation and Interpretation. Spatial Economic Analysis, 3(3):275–304, November 2008. ISSN 1742-1772. doi:10.1080/17421770802353758. Luc Anselin and Sergio J. Rey. Modern Spatial Econometrics in Practice: A Guide to Geo Da, Geo Da Space and Py SAL. Geo Da Press LLC, Chicago, IL, 2014. ISBN 978-0-9863421-0-3. Guo Meng, Du Zhong cheng, and Cai Shukai. An analysis of the “direct effect” and “indirect effect” of urban housing prices on the upgrading of industrial structure——Based on data of 285 cities. Journal of Physics: Conference Series, 1792(1):012017, February 2021. ISSN 1742-6588, 1742-6596. doi:10.1088/",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_84",
+    "text": "f Physics: Conference Series, 1792(1):012017, February 2021. ISSN 1742-6588, 1742-6596. doi:10.1088/1742-6596/1792/1/012017. Roger Bivand and Gianfranco Piras. Comparing Implementations of Estimation Methods for Spatial Econometrics. Journal of statistical software, 63:1–36, February 2015. doi:10.18637/jss. v 063.i 18. M. G. Kendall. A new measure of rank correlation. Biometrika, 30(1):81–93, 1938. ISSN 0006-3444. doi:10.2307/2332226. URL https://www. jstor. org/stable/2332226. Publisher: [Oxford University Press, Biometrika Trust]. James Le Sage and Robert Kelley Pace. Introduction to Spatial Econometrics. Chapman and Hall/CRC, New York, January 2009. ISBN 978-0-429-13808-9. doi:10.1201/9781420064254. Luc Anselin. Spatial Econometrics: Methods and Models, volume 4 of Studies in Operationa",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_85",
+    "text": "1420064254. Luc Anselin. Spatial Econometrics: Methods and Models, volume 4 of Studies in Operational Regional Science. Springer Netherlands, Dordrecht, 1988. ISBN 978-90-481-8311-1 978-94-015-7799-1. doi:10.1007/978-94-0157799-1. André De Palma and Yorgos Y. Papageorgiou. Heterogeneity in states and urban structure. Regional Science and Urban Economics, 18(1):37–56, February 1988. ISSN 01660462. doi:10.1016/0166-0462(88)90004-X. Chen Jia, Yunyan Du, Siying Wang, Tianyang Bai, and Teng Fei. Measuring the vibrancy of urban neighborhoods using mobile phone data with an improved Page Rank algorithm. Transactions in GIS, 23(2):241–258, 2019. ISSN 1467-9671. doi:10.1111/tgis.12515. 12\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Supplemental material Table SI 1: Summary statist",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_86",
+    "text": "oral gender differences in urban vibrancy PREPRINT Supplemental material Table SI 1: Summary statistics for each metropolitan study area. The table shows (i) the total resident population for both males and females, (ii) the total area of each study area, and (iii) the total grid cells taken from Gruppo TIM [2015]. 2015 census data taken from ISTAT [2023]. City name Males Females Total Grid cell (thousands) (thousands) area (km2) count Milano 1218 1334 1128 794 Roma 1477 1636 3746 739 Torino 893 966 2850 494 Napoli 800 846 643 267 Venezia 231 251 1200 157 Palermo 293 317 2294 130 Bari 309 320 2363 110 Table SI 2: Mean activity across the day. Values are proportional to the number of males and females as an average (mean) across the day and each city. Values are derived from the Call Detail",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_87",
+    "text": "d females as an average (mean) across the day and each city. Values are derived from the Call Detail Record data taken for each metropolitan study area. The table shows the values for both males and females in each period of the day. The periods are (i) Morning (06:00-12:00), (ii) Afternoon (12:00-18:00), (iii) Evening (18:00-00:00), and (iv) Night (00:00-06:00). Data are taken from Gruppo TIM [2015]. Cities are ordered by the total number of grid cells. City name Gender Morning Afternoon Evening Night Milano F 9.509 10.460 1.991 0.644 M 12.464 12.942 2.221 0.880 Roma F 17.244 17.325 3.654 1.183 M 23.020 21.585 4.134 1.650 Torino F 9.373 10.091 1.941 0.610 M 12.190 12.558 2.106 0.834 Napoli F 51.808 51.584 18.483 4.382 M 78.761 73.633 22.874 7.067 Venezia F 3.503 3.783 0.498 0.196 M 6.562",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_88",
+    "text": "F 51.808 51.584 18.483 4.382 M 78.761 73.633 22.874 7.067 Venezia F 3.503 3.783 0.498 0.196 M 6.562 6.569 0.785 0.407 Palermo F 29.645 27.138 6.924 2.185 M 49.927 43.120 9.590 4.072 Bari F 21.804 20.271 5.867 1.878 M 38.773 33.843 8.408 3.745 13\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Process Steps 1. CDR data and census data have di (cid:1) erent spa (cid:2) al grids. 2. CDR data's geometry is used as the reference, and OSM data is extracted for each cell. 3. Census data is interpolated to match the spa (cid:2) al grid using areal interpola (cid:2) on. We also used a methodology to validate the representa (cid:2) veness of the CDR data to the census data. 1. The goal is to model male-female di (cid:1) erencesfor each city and create an aggregated model. 2. All variab",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_89",
+    "text": "s to model male-female di (cid:1) erencesfor each city and create an aggregated model. 2. All variables are standardized for comparability. 3. An Ordinary Least Squares (OLS) baseline model is constructed to es (cid:2) mate regression coe (cid:3) cients. 4. Linear func (cid:2) on is used to explain male-female di (cid:1) erences based on independent variables. 1. The data may have spa (cid:2) al autocorrela (cid:2) on, viola (cid:2) ng basic regression assump (cid:2) ons. 2. Spa (cid:2) al dependence is diagnosed by analyzing OLS model residuals. 3. Moran's I analyses are used to iden (cid:2) fy spa (cid:2) al structure and the need for spa (cid:2) al models. 1. Spa (cid:2) al lag and spa (cid:2) al error models are created using maximum likelihood es (cid:2) ma (cid:2) on. 2. Queen's con",
+    "section": "unknown",
+    "char_start": 61600,
+    "char_end": 62400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_90",
+    "text": "id:2) al error models are created using maximum likelihood es (cid:2) ma (cid:2) on. 2. Queen's con (cid:2) guityis used for spa (cid:2) al weights matrix. 3. Row transforma (cid:2) on is used to normalize weights' values. 4. The spa (cid:2) al error model (SEM) and spa (cid:2) al lag models (SAR) are described. 1. Direct, indirect, and total e (cid:1) ects are calculated for each model. 2. Direct e (cid:1) ects represent the in (cid:4) uence of one spa (cid:2) al unit on another. 3. Indirect e (cid:1) ects are secondary impacts beyond immediate spa (cid:2) al units. 4. Total e (cid:1) ects account for the full range of impacts on the spa (cid:2) al system. 1. Hierarchical models are created for di (cid:1) erent (cid:2) me periods and weekdays vs. weekends. 2. Models are run for individual",
+    "section": "unknown",
+    "char_start": 62300,
+    "char_end": 63100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_91",
+    "text": "for di (cid:1) erent (cid:2) me periods and weekdays vs. weekends. 2. Models are run for individual ci (cid:2) es and combined for all ci (cid:2) es. 3. The approach studies how vibrancy relates to gender and urban features at di (cid:1) erent (cid:2) mes and explores varia (cid:2) ons over (cid:2) me. Data Preprocessing and Spa (cid:2) al Interpola (cid:2) on Modeling Approach Addressing Spa (cid:2) al Autocorrela (cid:2) on E (cid:1) ects Analysis Spa (cid:2) al Modeling Hierarchical Modeling Figure SI 1: An overview of the steps of the analysis. 14\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT A B C Figure SI 2: Open Street Map (OSM) data types for Roma. OSM provides a range of different data types, from points to lines, and geometries. These features might be associate",
+    "section": "unknown",
+    "char_start": 63000,
+    "char_end": 63800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_92",
+    "text": "nge of different data types, from points to lines, and geometries. These features might be associated with male-female differences. In the image, we can see (A) ‘Points of Interest‘, (B) buildings’ locations and geometries, and (C) road lengths and intersections. Each of the data types contains detailed information regarding each location. Each of the data types has been used and converted to a density estimate in the above choropleth. OSM data are taken from OSM [2017] and are visualised on the Telecom Italia grid for Roma [Gruppo TIM, 2015]. Spatial Error Model (SER) Spatial Lag Model (SAR) Building density Building diversity Edge length density: Driving Edge length density: Cycling Edge length density: Walking Highway density Highway diversity Node density: Driving Node density: Cycling",
+    "section": "unknown",
+    "char_start": 63700,
+    "char_end": 64500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_93",
+    "text": "ength density: Walking Highway density Highway diversity Node density: Driving Node density: Cycling Node density: Walking POI density POI diversity Third place density Third place diversity Commercial venue Organised activity Outdoor Eating drinking talking Commercial service V 1 V 2 V 3 V 4 V 5 V 6 V 7 V 8 V 9 V 10 V 11 V 12 V 13 V 14 Third place separated: V 15 V 16 V 17 V 18 V 19 Figure SI 3: Comparison of the impact of the spatial weights matrix on the indirect effects of the spatial error model and spatial lag models for Roma. The image shows the indirect effects for all variables in the analysis (V 1 – V 19) when the spatial weights are either Queen’s (contiguity), Rook’s (contiguity), or k-nearest neighbours (distance) with k values of 2 and 10, respectively. 15\n\nSpatiotemporal gen",
+    "section": "unknown",
+    "char_start": 64400,
+    "char_end": 65200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_94",
+    "text": ", or k-nearest neighbours (distance) with k values of 2 and 10, respectively. 15\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Figure SI 4: Roma: Visual inspection suggests the presence of differences between males and females. Each map of Roma shows the male-female differences derived from the Call Detail Record (CDR) data. The data are split into four categories for the periods of (A) Morning (06:00-12:00), (B) Afternoon (12:00-18:00), (C) Evening (18:00-00:00), and (D) Night (00:00-06:00). CDR data taken from Gruppo TIM [2015] and Open Street Map data taken from OSM [2017]. 16\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Venezia Palermo Roma Torino Bari Milano Napoli 0.0 0.1 0.2 0.3 0.4 0.0 0.5 1.0 1.5 2.0 0 1 2 3 0.0 0.5 1.0 1.5 0.0 0.1 0.2 0 1 2 3 0 5",
+    "section": "unknown",
+    "char_start": 65100,
+    "char_end": 65900
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_95",
+    "text": "lano Napoli 0.0 0.1 0.2 0.3 0.4 0.0 0.5 1.0 1.5 2.0 0 1 2 3 0.0 0.5 1.0 1.5 0.0 0.1 0.2 0 1 2 3 0 5 10 15 20 02468 012345 0246 02468 0.0 0.5 1.0 1.5 01234 0.0 0.5 1.0 1.5 2.0 2.5 CDR C e n s u s ( i n t e r p o l a t i o n ) Figure SI 5: Correlation between Call Detail Record (CDR) data and census data. Orange circles represent females and green circles represent males. We test the correlation of the data sources following the process of areal interpolation using Kendall’s tau within a rank correlation analysis [Hamed, 2011]. This shows a positive relationship between CDR and census data. Cities are presented in alphabetical order. 17\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT Table SI 3: Moran’s I analysis of spatial dependence for each level of the model hierarchy. Mod",
+    "section": "unknown",
+    "char_start": 65800,
+    "char_end": 66600
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_96",
+    "text": "RINT Table SI 3: Moran’s I analysis of spatial dependence for each level of the model hierarchy. Model hierarchy City City Moran’s I Moran’s I (std) p-value Sig. star i Day Bari 0.0138 0.995 0.3197 ns Milano 0.3826 21.0432 0 (****) Napoli 0.0364 1.6846 0.0921 (ns) Palermo 0.236 5.4222 0 (****) Roma 0.3668 19.2587 0 (****) Torino 0.2483 11.3134 0 (****) Venezia 0.1171 2.8606 0.0042 (**) Night Bari 0.0312 1.3465 0.1781 (ns) Milano 0.2449 13.5969 0 (****) Napoli -0.0173 0.0219 0.9825 (ns) Palermo 0.1501 3.6517 0.0003 (***) Roma 0.3463 18.2038 0 (****) Torino 0.1526 7.1234 0 (****) Venezia 0.0931 2.3704 0.0178 (*) ii Week Bari 0.0373 1.4701 0.1415 (ns) Milano 0.3581 19.7161 0 (****) Napoli 0.0418 1.8497 0.0644 (ns) Palermo 0.2546 5.8043 0 (****) Roma 0.3418 17.9708 0 (****) Torino 0.2356 10.75",
+    "section": "unknown",
+    "char_start": 66500,
+    "char_end": 67300
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_97",
+    "text": "8 1.8497 0.0644 (ns) Palermo 0.2546 5.8043 0 (****) Roma 0.3418 17.9708 0 (****) Torino 0.2356 10.7562 0 (****) Venezia 0.1237 2.996 0.0027 (**) Weekend Bari -0.0064 0.5879 0.5566 (ns) Milano 0.3852 21.182 0 (****) Napoli 0.0135 0.9742 0.33 (ns) Palermo 0.1932 4.5393 0 (****) Roma 0.4012 21.0345 0 (****) Torino 0.2436 11.1083 0 (****) Venezia 0.1055 2.6224 0.0087 (**) iii Morning Bari 0.002 0.7578 0.4486 (ns) Milano 0.3749 20.6226 0 (****) Napoli 0.0641 2.5403 0.0111 (*) Palermo 0.2405 5.5141 0 (****) Roma 0.3435 18.0568 0 (****) Torino 0.2341 10.6906 0 (****) Venezia 0.09 2.3067 0.0211 (*) Afternoon Bari 0.034 1.4039 0.1604 (ns) Milano 0.3869 21.2759 0 (****) Napoli 0.0305 1.4994 0.1338 (ns) Palermo 0.2368 5.4373 0 (****) Roma 0.3852 20.2063 0 (****) Torino 0.2581 11.7389 0 (****) Venezia",
+    "section": "unknown",
+    "char_start": 67200,
+    "char_end": 68000
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_98",
+    "text": ") Palermo 0.2368 5.4373 0 (****) Roma 0.3852 20.2063 0 (****) Torino 0.2581 11.7389 0 (****) Venezia 0.1489 3.511 0.0004 (***) Evening Bari 0.046 1.6445 0.1001 (ns) Milano 0.2519 13.9744 0 (****) Napoli -0.0157 0.0721 0.9425 (ns) Palermo 0.0821 2.2483 0.0246 (*) Roma 0.3708 19.4634 0 (****) Torino 0.1599 7.4434 0 (****) Venezia 0.1313 3.1517 0.0016 (**) Night Bari 0.0343 1.4084 0.159 (ns) Milano 0.2862 15.8271 0 (****) Napoli 0.0444 1.9297 0.0536 (ns) Palermo 0.1683 4.0266 0.0001 (****) Roma 0.3702 19.433 0 (****) Torino 0.2085 9.5716 0 (****) Venezia 0.1145 2.8076 0.005 (**) 18\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT (PR2 = 0.866) -2e-01 0e+00 2e-01 4e-01 Third place Point of interest Highway Building beta (Indirect effect) Feature diversity A (PR2 = 0.864) (PR2 = 0.",
+    "section": "unknown",
+    "char_start": 67900,
+    "char_end": 68700
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_99",
+    "text": "oint of interest Highway Building beta (Indirect effect) Feature diversity A (PR2 = 0.864) (PR2 = 0.856) Week Weekend -1e-01 0e+00 1e-01 2e-01 Third place Point of interest Highway Building Third place Point of interest Highway Building beta (indirect effect) B (PR2 = 0.856) (PR2 = 0.662) (PR2 = 0.869) (PR2 = 0.709) Morning Afternoon Evening Night -2e-01 0e+00 2e-01 4e-01 Third place Point of interest Highway Building Third place Point of interest Highway Building Third place Point of interest Highway Building Third place Point of interest Highway Building beta (indirect effect) C Figure SI 6: The relationship between diversity in features excluding (‘third place‘ variables–see below) and malefemale differences for the spatial model aggregating all cities. The plot shows the significance o",
+    "section": "unknown",
+    "char_start": 68600,
+    "char_end": 69400
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_100",
+    "text": "lefemale differences for the spatial model aggregating all cities. The plot shows the significance of the direct effect; however, the β coefficients represent the indirect effect (see Section 3.3 for definitions). The plot displays all diversity variables, with the y-axis showing the variables for each model and the colour representing each variable. Panel (A) shows all daytime data between 08:00 and 20:00; Panel (B) displays weekday (Monday-Thursday) versus weekend (Friday-Sunday) data within the same time period; Panel (C) shows data averaged into four categories: morning (06:00-12:00), afternoon (12:00-18:00), evening (18:00-00:00), and night (00:00-06:00). To aid comparison, shapes denote categories in Panels (B) and (C). Significance is indicated by closed and open shapes (P < 0.05 an",
+    "section": "unknown",
+    "char_start": 69300,
+    "char_end": 70100
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_101",
+    "text": "e categories in Panels (B) and (C). Significance is indicated by closed and open shapes (P < 0.05 and P > 0.05, respectively), and each shape shows the error bars as a horizontal line. The pseudo-r-squared is reported for each panel. 19\n\nSpatiotemporal gender differences in urban vibrancy PREPRINT (PR2 = 0.866) -6e-01 -4e-01 -2e-01 0e+00 Commercial services Eating and drinking Outdoor Organised activity Commercial venue A (PR2 = 0.864) (PR2 = 0.856) Week Weekend -4e-01 -3e-01 -2e-01 -1e-01 0e+00 1e-01 Commercial services Eating and drinking Outdoor Organised activity Commercial venue Commercial services Eating and drinking Outdoor Organised activity Commercial venue beta (indirect effect) beta (indirect effect) B (PR2 = 0.856) (PR2 = 0.662) (PR2 = 0.709) Morning Afternoon Evening Night -6e",
+    "section": "unknown",
+    "char_start": 70000,
+    "char_end": 70800
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_102",
+    "text": "ta (indirect effect) B (PR2 = 0.856) (PR2 = 0.662) (PR2 = 0.709) Morning Afternoon Evening Night -6e-01 -3e-01 0e+00 Commercial services Eating and drinking Outdoor Organised activity Commercial venue Commercial services Eating and drinking Outdoor Organised activity Commercialvenue Commercial services Eating and drinking Outdoor Organised activity Commercial venue Commercial services Eating and drinking Outdoor Organised activity Commercial venue beta (indirect effect) C (PR2 = 0.869) Figure SI 7: The relationship between diversity in ‘third place‘ features and male-female differences for the spatial model aggregating all cities. The plot shows the significance of the direct effect; however, the β coefficients represent the indirect effect (see Section 3.3 for definitions). The plot displ",
+    "section": "unknown",
+    "char_start": 70700,
+    "char_end": 71500
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_103",
+    "text": ", the β coefficients represent the indirect effect (see Section 3.3 for definitions). The plot displays all diversity variables, with the y-axis showing the variables for each model and the colour representing each variable. Panel (A) shows all daytime data between 08:00 and 20:00; Panel (B) displays weekday (Monday-Thursday) versus weekend (Friday-Sunday) data within the same time period; Panel (C) shows data averaged into four categories: morning (06:00-12:00), afternoon (12:00-18:00), evening (18:00-00:00), and night (00:00-06:00). To aid comparison, shapes denote categories in Panels (B) and (C). Significance is indicated by closed and open shapes (P < 0.05 and P > 0.05, respectively), and each shape shows the error bars as a horizontal line. The pseudo-r-squared is reported for each p",
+    "section": "unknown",
+    "char_start": 71400,
+    "char_end": 72200
+  },
+  {
+    "source_id": "Collins2023",
+    "chunk_id": "chunk_104",
+    "text": "nd each shape shows the error bars as a horizontal line. The pseudo-r-squared is reported for each panel. 20",
+    "section": "unknown",
+    "char_start": 72100,
+    "char_end": 72900
+  }
+]

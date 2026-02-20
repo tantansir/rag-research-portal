@@ -1,0 +1,770 @@
+[
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_01",
+    "text": "A Digital Twin Framework for Decision-Support and Optimization of EV Charging Infrastructure in Localized Urban Systems Linh Do-Bui-Khanha, Thanh H. Nguyenb, Nghi Huynh Quanga, Doanh Nguyen-Ngoca, c,∗, Laurent El Ghaouia, c a Center for Environmental Intelligence, Vin University, Hanoi, Vietnam b Department of Civil and Environmental Engineering, University of Illinois Urbana-Champaign, Urbana, IL, United States c College of Engineering and Computer Science, Vin University, Hanoi, Vietnam Abstract As Electric Vehicle (EV) adoption accelerates in urban environments, optimizing charging infrastructure is vital for balancing user satisfaction, energy efficiency, and financial viability. This study advances beyond static models by proposing a digital twin framework that integrates agent-based",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_02",
+    "text": "udy advances beyond static models by proposing a digital twin framework that integrates agent-based decision support with embedded optimization to dynamically simulate EV charging behaviors, infrastructure layouts, and policy responses across scenarios. Applied to a localized urban site (a university campus) in Hanoi, Vietnam, the model evaluates operational policies, EV station configurations, and renewable energy sources. The interactive dashboard enables seasonal analysis, revealing a 20% drop in solar efficiency from October to March, with wind power contributing under 5% of demand—highlighting the need for adaptive energy management. Simulations show that real-time notifications of newly available charging slots improve user satisfaction, while gasoline bans and idle fees enhance slot",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_03",
+    "text": "y available charging slots improve user satisfaction, while gasoline bans and idle fees enhance slot turnover with minimal added complexity. Embedded metaheuristic optimization identifies near-optimal mixes of fast (30 k W) and standard (11 k W) solar-powered chargers, balancing energy performance, profitability, and demand with high computational efficiency. This digital twin provides a flexible, computation-driven platform for EV infrastructure planning, with a transferable, modular design that enables seamless scaling ∗Corresponding author. E-mail address: doanh. nn@vinuni. edu. vn (Nguyen-Ngoc, D.). a r X i v : 2 5 1 0 . 2 4 7 5 8 v 1 [ e e s s . S Y ] 2 1 O c t 2 0 2 5\n\nfrom localized to city-wide urban contexts. Keywords: Digital Twins, Agent-Based Modeling, Optimization Algorithms,",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_04",
+    "text": "o city-wide urban contexts. Keywords: Digital Twins, Agent-Based Modeling, Optimization Algorithms, Localized Urban Systems, EVs Infrastructure Planning, Renewable Energy Integration 1. Introduction As cities worldwide shift toward sustainable transportation, electric vehicles (EVs) and renewable energy integration have become essential in reducing carbon emissions and promoting environmental sustainability (Al-Thani et al., 2022; Cao et al., 2021). Global EV sales surged by 35% in 2023, reaching 17 million projected by 2024 (IEA, 2024). While growth is strongest in China, the U. S., and Europe, emerging economies like Vietnam also experience rapid adoption, rising from fewer than 100 units in 2021 to over 87,000 by 2024. This transition necessitates a well-planned charging infrastructure",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_05",
+    "text": "in 2021 to over 87,000 by 2024. This transition necessitates a well-planned charging infrastructure (Zhang et al., 2024; Yan and Liu, 2024), yet deployment faces challenges such as increasing demand, inefficient station layouts, and the need to balance user satisfaction with grid stability (Yu et al., 2021; Hussain et al., 2021). Hybrid renewable systems incorporating solar and wind can enhance grid performance (Gorbunova and Anisimov, 2020; Sa’adati et al., 2021) but require trade-offs between resilience, seasonal variability, and costs. Additionally, policies such as smart charging incentives and parking regulations influence EV adoption (Kam et al., 2019; Mouhy-Ud-Din et al., 2024), yet tools for policy evaluation remain scarce. The lack of integrated decisionsupport tools further limit",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_06",
+    "text": "ools for policy evaluation remain scarce. The lack of integrated decisionsupport tools further limits the ability to optimize station deployment and policy effectiveness. Existing studies rely heavily on static mathematical and optimization models that oversimplify EV behaviors and interactions with infrastructure (Asna et al., 2021; Xiao et al., 2023). Micro-level approaches, particularly agent-based modeling (ABM) using simulation software, have emerged to capture EV drivers’ daily travel patterns and charging behaviors (Rasca et al., 2024; Lopez et al., 2021; Marmaras et al., 2017; Novosel et al., 2015; Wang and Infield, 2018). However, most focus primarily on station placement and simple capacity sizing (Cui et al., 2021; Yi et al., 2023), often neglecting operational policies and ener",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_07",
+    "text": "capacity sizing (Cui et al., 2021; Yi et al., 2023), often neglecting operational policies and energy variability. Many simulation frameworks also lack interactive dashboards, limiting practical application for planners (Zeng et al., 2020). These gaps highlight the potential of digital twin (DT) tech2\n\nnology, which combines dynamic simulation with decision-support tools to optimize infrastructure under varying demand conditions. Marcucci et al. (2020) emphasized the need for integrating behavioral models within urban logistics DTs, while Belfadel et al. (2023) proposed a conceptual framework addressing key challenges in city logistics. However, the application of DTs for EV charging infrastructure planning remains largely unexplored. This study addresses the following questions: (i) how",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_08",
+    "text": "tructure planning remains largely unexplored. This study addresses the following questions: (i) how can a digital twin with real-time simulation and visualization support EV infrastructure and energy planning? (ii) how can dynamic simulations and optimization algorithms be combined to evaluate policies and station configurations? We extend our prior work (Ambrosino et al., 2025) by introducing a more comprehensive digital twin leveraging agent-based modeling and optimization algorithms for the optimal development of EV charging stations. This tool dynamically simulates EV-charging-energy interactions, offering real-time visualization, scenario-based evaluation, and infrastructure optimization. Acting as a virtual laboratory, it enables stakeholders to test strategies before implementation,",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_09",
+    "text": "n. Acting as a virtual laboratory, it enables stakeholders to test strategies before implementation, bridging the gap between simulation and real-world deployment. While public charging networks are expanding, university campuses are emerging as critical hubs for EV adoption (Caruso et al., 2017; Hovet et al., 2018). This study applies the model to a university campus in Hanoi, Vietnam, named Vin University, where rising EV incentives and demand present challenges related to operational and infrastructure constraints. Although this study demonstrates the framework in a campus-scale environment, the modular structure and logic of the proposed digital twin approach are designed to scale effectively for urban system planning at district or city levels. This scalability enables the methodology",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_10",
+    "text": "ively for urban system planning at district or city levels. This scalability enables the methodology and insights developed to support broader urban infrastructure planning, accommodating the complexities and dynamics of larger metropolitan areas. 2. Literature review 2.1. Evaluating policy impact on EV Charging Station Operation Policies play a critical role in optimizing EVCS utilization and reducing congestion. System dynamics models offer long-term insights into EV adoption and renewable energy incentives but often overlook short-term operational complexities. Agent-based simulations have evaluated policy effectiveness by modelling consumer behavior and competition between charging and fuel stations (Esmaeili et al., 2022; Rasca et al., 2024). Li et al. (2024 b) 3\n\ndemonstrated how age",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_11",
+    "text": "uel stations (Esmaeili et al., 2022; Rasca et al., 2024). Li et al. (2024 b) 3\n\ndemonstrated how agent-based simulation can assess urban policies such as access restrictions and shared mobility integration. However, most studies rely on predefined policies, limiting flexibility to combine or iteratively test strategies. Few decision-support tools assess how policies like smart charging incentives affect EV behavior and satisfaction (Kam et al., 2019). This highlights the need for a more flexible and comprehensive framework that integrates policy evaluation with infrastructure optimization, enabling datadriven decision-making in dynamic energy environments. 2.2. EV charging infrastructure capacity optimization Charging port numbers directly impact station throughput and user satisfaction. Q",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_12",
+    "text": "acity optimization Charging port numbers directly impact station throughput and user satisfaction. Queuing theory and heuristic algorithms, including Genetic Algorithms (GA), Particle Swarm Optimization (PSO), and Ant Colony Optimization (ACO), have been applied to solve complex location and sizing optimization problems, ensuring cost-effective and efficient EVCS deployment (Asna et al., 2021; Xiao et al., 2023; Alhasan et al., 2023; Liu et al., 2012; Sun et al., 2022). Agent-based modelling (ABM) has emerged as a dynamic alternative to static optimization approaches, providing a more detailed representation of user behavior and system interactions. While Li et al. (2021) revealed a lack of integrated agent-based simulations bridging urban mobility and logistics, and proposed a modular fra",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_13",
+    "text": "integrated agent-based simulations bridging urban mobility and logistics, and proposed a modular framework for future cross-sectoral modeling, Aliedani and Loke (2018) demonstrated the potential of real-time inter-agent communication through decentralized parking coordination, underscoring its value for improving urban mobility efficiency. ABMs simulate EV demand, charging station use, and grid impacts under varied conditions (Mudiyanselage et al., 2024; Pagani et al., 2019; Cui et al., 2021; Yi et al., 2023) but rarely integrate operational policy or renewable energy considerations, failing to provide holistic EVCS planning, especially under large-scale adoption and energy transition. 2.3. Planning renewable energy integration in EV charging stations Hybrid renewable energy systems—combin",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_14",
+    "text": "Planning renewable energy integration in EV charging stations Hybrid renewable energy systems—combining solar and wind energy with battery storage—offer a promising approach to reducing grid dependency and enhancing charging station sustainability (Gorbunova and Anisimov, 2020). Optimization models suggest that integrating renewable energy into EV charging stations can enhance grid stability and accommodate more EVs (Sa’adati et al., 2021). Several studies have emphasized renewable energy investment as cost-minimization strategies (Davidov and Pantoš, 2018; Li 4\n\net al., 2022) but most assume average energy availability, missing seasonal variability. To address uncertainties in renewable energy supply, various optimization techniques have been applied. Nonlinear stochastic programming mode",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_15",
+    "text": "rgy supply, various optimization techniques have been applied. Nonlinear stochastic programming models, bilevel programming optimize EV charging behavior to mitigate energy intermittency and minimize costs (Mehrjerdi and Rakhshani, 2019; Zeng et al., 2020). Beyond mathematical optimization, agent-based models are frequently employed to analyze the impact of energy policies and evaluate energy transition scenarios under uncertainty. Simulation tools such as MATLAB Simulink, HOMER, and GAMS are commonly used to optimize the performance of renewable energy-powered EV charging stations (Rai and Henry, 2016; Zeng et al., 2020; Diaz et al., 2024) but lack interactive dashboards, limiting their practicality for real-time decision-making by non-technical stakeholders. 2.4. Research gap and contrib",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_16",
+    "text": "cticality for real-time decision-making by non-technical stakeholders. 2.4. Research gap and contribution While significant progress has been made in EVCS optimization, key gaps remain. Static models oversimplify system dynamics and miss real-time user interactions. Simulation-based approaches, particularly ABM, focus mainly on station placement while overlooking sizing, operational policies, and seasonal renewable energy effects. Most models also lack interactive dashboards, limiting practicality for decision-makers. Renewable energy integration remains underexplored, with many studies neglecting seasonal variations affecting energy availability and system performance. Additionally, optimization algorithms in EVCS planning often target station placement and operate in isolated analytical",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_17",
+    "text": "ation algorithms in EVCS planning often target station placement and operate in isolated analytical platforms, failing to offer integrated optimization within simulated real-world environments. This study addresses these limitations by developing a simulation-based decision-support tool integrating EV behavior modelling, policy evaluation, infrastructure optimization, and renewable energy management. The framework uses ABM to simulate real-world interactions and incorporates an interactive dashboard for scenario analysis. Embedded optimization algorithms within the digital twin environment support dynamic decision-making and efficient evaluation of planning strategies under varying demand and policy conditions. Bridging static modeling and real-world implementation, this tool provides a sc",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_18",
+    "text": "d policy conditions. Bridging static modeling and real-world implementation, this tool provides a scalable, adaptable solution for optimizing EV charging networks. 5\n\n3. Methodology To support EV charging infrastructure planning and policy evaluation, this study develops an agent-based digital twin integrated with optimization and data analytics. Section 3.1 introduces the agent-based modeling framework, describing the design of agents, their interaction logic, as well as the input data and evaluation metrics. Section 3.2 outlines the setup for dynamic simulation experiments, statistical testing and the integration of optimization algorithms into the system. 3.1. Description of the Agent-Based Simulation Model The agent-based model is implemented using the GAMA platform, an agent-oriented",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_19",
+    "text": "ed Simulation Model The agent-based model is implemented using the GAMA platform, an agent-oriented simulation platform inspired by object-oriented programming, particularly Java (Taillandier et al., 2019; Lesquoy et al., 2024). GAMA was selected for its seamless integration of GIS data as the simulation environment and its ability to create interactive management dashboards with realtime agent movement and dynamic visualizations, including various charts. 3.1.1. Model environment In this study, we constructed the model environment using GIS layers from Open Street Map (OSM) and manually sketched building footprints from satellite imagery to represent roads, buildings, and infrastructure. The simulation incorporates spatial data to capture real-world layouts and support spatial allocation",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_20",
+    "text": "e simulation incorporates spatial data to capture real-world layouts and support spatial allocation of agents and activities. Within the agent-based paradigm, the environment—including roads, buildings, and charging stations—is conceptualized as an active agent layer interacting dynamically with vehicle and energy agents. The space-time dynamic system allows agent decisions and system states to evolve simultaneously. The spatial layer can be easily modified or replaced, making the model applicable to different study areas. While currently applied to a localized site, the structure provides a transferable template for scaling to district or city-wide implementations without redesigning the agent logic. Figure 1 illustrates the spatial data used, which primarily covers the Vin Uni campus (75",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_21",
+    "text": "ent logic. Figure 1 illustrates the spatial data used, which primarily covers the Vin Uni campus (754 m × 631 m) and extends to nearby residential areas (1174 m × 1131 m) for user modeling. Key features include residential buildings (cyan) as vehicle home locations, parking areas (dark grey and light grey), and caraccessible roads (black lines) where interactions with moving agents occur. Other features, such as pedestrian-only paths (gray lines), campus boundaries 6\n\n(beige), and other campus buildings (white), are mainly for visualization. Three gates (diamond shapes) mark the main entry/exit points. OSM data enhances the simulation with geometric attributes like lane count, speed limits, and traffic direction, ensuring a realistic road network model (Minh Duc et al., 2020). By integrati",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_22",
+    "text": "and traffic direction, ensuring a realistic road network model (Minh Duc et al., 2020). By integrating these elements, the model provides a comprehensive and realistic representation of the campus environment. Figure 1: The model environment replicates the campus, manages vehicle flow, parking, and charging, and distinguishes vehicle agents: gasoline (blue circle) & EVs (yellow circles). 3.1.2. Model entities The model consists of three interconnected sub-models: the charging station sub-model, the energy sub-model and the traffic sub-model. These components interact dynamically, reflecting the influence of EV charging behaviors, infrastructure configurations, and renewable energy conditions. The charging station sub-model represents the campus environment, including buildings, roads, and",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_23",
+    "text": ". The charging station sub-model represents the campus environment, including buildings, roads, and charging areas. Residential buildings serve as the initialization points for vehicles, and the road network simulates realworld traffic infrastructure. Charging areas replicate the setup of parking area at building C (C-Parking) and building J (J-Parking) (dark grey and 7\n\nlight grey rectangles in Figure 1), with variables defining the number and type of charging ports (11 k W and 30 k W) as shown in Table 1. Table 1: Variables defining the characteristics of charging areas agent, including the number and type of charging ports available at each location. Variable Name Description Type Value Range location_CS The location of the charging area string {\"C-Parking\", \"J-Parking\"} active CS_11 k",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_24",
+    "text": "ange location_CS The location of the charging area string {\"C-Parking\", \"J-Parking\"} active CS_11 k W Number of 11 k W CPs integer [0; 50] active CS_30 k W Number of 30 k W CPs integer [0; 10] num_CS Total number of CPs at each building integer [0; 100] The energy sub-model incorporates renewable energy sources into the charging infrastructure, consisting of three agents: BESS (Battery Energy Storage System), solar Energy, and wind Energy. These agents compute energy production and system costs based on environmental factors such as solar irradiation, air temperature, and wind speed. Table 2 outlines the model’s key attributes, which serve as the primary parameters for energy output calculations, as used in (Brihmat and Mekhtoub, 2014; Sun, 2020). Table 2: Key attributes of agents in the e",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_25",
+    "text": "ions, as used in (Brihmat and Mekhtoub, 2014; Sun, 2020). Table 2: Key attributes of agents in the energy sub-model, detailing parameters for energy output calculations based on renewable energy sources. Agent Name Variable Name Description Type Value Range bess bess_capacity BESS storage capacity float 80000 k W bess_So C Stored energy in BESS float [0, 80000] solar Energy solar_ghi Solar irradiation float [0; 1000] air_temp Air temperature float [0; 40] nb_solar Number of PV panels integer [0; 1000] unit_panel_area Area of a PV panel float 2.7 m2 total_panel_area Total PV area float [0; 2700] current_panel_tmp Actual PV temperature float [0; 40] solar_generated Solar energy generated float [0; +∞] solar_cost Total PV system cost float [0; +∞] wind Energy wind_speed Actual wind speed floa",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_26",
+    "text": "[0; +∞] solar_cost Total PV system cost float [0; +∞] wind Energy wind_speed Actual wind speed float [0; 10] nb_wind Number of turbines integer [0; 15] wind_generated Wind energy generated float [0; +∞] wind_cost Total wind system cost float [0; +∞] The traffic sub-model governs vehicle movements, determining parking and charging slot selection. It includes two types of vehicle agents: gasolinepowered cars and electric vehicles, represented as blue and yellow circles, respectively, in Figure 1. Table 3 shows EV agents’ attributes such as state of charge (So C), driver satisfaction, charging status, and station preferences 8\n\n(Kam et al., 2019). These agents make charging decisions based on station availability, energy demand, and individual priority, providing a realistic simulation of re",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_27",
+    "text": "station availability, energy demand, and individual priority, providing a realistic simulation of real-world constraints. Table 3: Attributes for electric vehicles agent, including state of charge, owner satisfaction, charging status, and station preferences. Variable Name Description Type Value Range nb_electrical Number of EVs per day. integer [30; 200] is_charging EV is charging or not. bool {true, false} satisfied EV can access a port when needed. bool {true, false} So C Battery level (%) assigned daily. float [20; 90] EV_model EV models at Vin Uni. string {\"VFe 34\",\"VF8\", \"VF9\"} priority_des Preference to stay in the current lot. bool {true, false} priority_fast Preference for fast/slow charging. bool {true, false} This structure allows for an integrated, dynamic representation of cam",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_28",
+    "text": "charging. bool {true, false} This structure allows for an integrated, dynamic representation of campus transportation, energy usage, and charging behaviors. 3.1.3. Model processes The simulation follows a time-stepped approach, with each step representing a five-minute interval to track vehicle movements and charging behaviors. If the charging infrastructure includes renewable energy, the energy sub-model is executed first to estimate daily energy generation. Then, the traffic and charging station sub-models are updated sequentially. Weather data, including solar irradiation, air temperature, and wind speed, is retrieved at five-minute intervals at the beginning of each day, specifically for Vin Uni’s parking locations. Solar power generation follows the model from (Brihmat and Mekhtoub,",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_29",
+    "text": "r Vin Uni’s parking locations. Solar power generation follows the model from (Brihmat and Mekhtoub, 2014), where the output depends on solar irradiation and temperature, as shown in equation (1). The photovoltaic (PV) power output P PV (t) is calculated by: P PV (t) = k · G(t) G ref P PV, STC · η PV · [1 − β T · (T c(t) − T c, STC)] (1) where: • k = 1.15: Bifacial PV panel absorption efficiency • G(t): Solar irradiance at time t, G ref = 800 W: Reference irradiance • P PV, STC = 610 W: Rated power of PV panel 9\n\n• η PV = 22.6%: Solar absorption efficiency • β T = 0.0028: Temperature-dependent power degradation coefficient. • T c, STC = 25: Panel temperature under standard conditions. • T c(t): Panel temperatures computed by air temperature at time t. Wind power generation P W(t) follows (S",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_30",
+    "text": "): Panel temperatures computed by air temperature at time t. Wind power generation P W(t) follows (Sun, 2020), calculated based on wind speed at the hub height, as shown in equation (2). P W(t) =       0, if v ≤ v cut−in or v ≥ v cut−out P rated · v3(t)−v3 cut−in v3 r−v3 cut−in , if v cut−in ≤ v ≤ v r P rated, if v r ≤ v ≤ v cut−out (2) where: • v(t): Actual wind speed at time t, calculated proportionally based on actual wind speed and reference wind speed & turbine height. • P rated = 3000 W: Rated power output • v cut−in = 3.5 m/s, v cut−out = 45 m/s: Cut-in and cut-out wind speeds • v r = 12 m/s: Rated wind speed The simulation is based on dynamic simulation, where agents evolve continuously over time according to predefined rules and events that influence their behavior and stat",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_31",
+    "text": "ntinuously over time according to predefined rules and events that influence their behavior and state changes. At the start of each cycle, global variables are initialized (Table 4), and agents (e. g., vehicles) are instantiated to represent initial conditions. Each vehicle’s behavior is determined by its state (e. g., parking, working, or leaving), with decision-making processes triggering transitions between states based on predefined conditions. 10\n\nTable 4: Common state variables for electric and gasoline vehicles, outlining their parking and movement behaviors. Variable Name Description Type Value Range parking_area Targeted parking lot charging Areas {\"C-Parking\", \"J-Parking\"} home Initial location residential one_of(residential_areas) start_work Start work time integer [8; 9] or [12",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_32",
+    "text": "tial location residential one_of(residential_areas) start_work Start work time integer [8; 9] or [12; 14] end_work End work time integer [17; 19] moving_obj Car’s movement state string {\"resting\", \"parking\", \"working\", \"leaving\"} parking_slot Parking slot type string {\"active_CS\", \"inactive_CS\"} in_parking Area Car in parking area? bool {true, false} Figure 2: Decision-making process of vehicle agents, expanded from (Kam et al., 2019; Lee et al., 2020). Each timestep follows the same loop for gasoline and EVs, except in \"Do Assign Slot,\" where EV parking depends on So C and station preferences. Figure 2, adapted and expanded from (Kam et al., 2019; Lee et al., 2020), illustrates the state transition process of the vehicle agent, detailing its decision-making in selecting parking and chargi",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_33",
+    "text": "ansition process of the vehicle agent, detailing its decision-making in selecting parking and charging slots. Similar to prior studies that limited simulations to home–work travel due to simplifications and data constraints (Novosel et al., 2015; Lopez et al., 2021), our model also focuses on these two primary activity types to represent typical 11\n\nurban mobility relevant to EV charging. Vehicles begin in a Resting State and proceed to the campus gate at the start time of their work. A key distinction between gasoline vehicles and EVs lies in the \"Do Assign Slot\" function, which determines parking or charging slots based on the state of charge (So C) and individual preferences. Vehicles with So C ≤ 35% prioritize charging while those with So C between 35% and 70% decide to charge based on",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_34",
+    "text": "h So C ≤ 35% prioritize charging while those with So C between 35% and 70% decide to charge based on a predefined probability. Vehicles with So C ≥ 70% are considered sufficiently charged and are randomly assigned to inactive charging ports instead. Charging and station preferences (priority_des and priority_fast) influence slot selection. The model continuously updates parameters like energy production, So C of EV and traffic flow. At the end of the day, key performance indicators are aggregated and visualized to evaluate system performance and identify opportunities for optimization. 3.1.4. Input Data A field study analyzed the charging infrastructure and vehicle usage patterns in parking areas. The number of EVs and gasoline vehicles, classified EV types, and recorded parking locations",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_35",
+    "text": "areas. The number of EVs and gasoline vehicles, classified EV types, and recorded parking locations during peak hours (9:00 AM & 2:00 PM) were tracked manually over a week. The university’s consistent schedule allowed generalization of vehicle movement patterns. An online survey and qualitative interviews gathered driver behavior insights, covering demographics, parking and charging habits, and system improvement suggestions. Energy consumption data for EV charging at C-Parking and J-Parking at Vin Uni’s total electricity usage (k Wh) in 2023 were provided by the operational team. Historical solar and wind data from Solcast, validated against 48 BSRN ground stations, comprising over 1 million valid hourly average measurements and nearly 3 million instantaneous measurements (Bright, 2019) w",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_36",
+    "text": "n valid hourly average measurements and nearly 3 million instantaneous measurements (Bright, 2019) were used for weather inputs in the simulation, ensuring accurate renewable energy integration. 3.1.5. Evaluation metrics and objective functions The effectiveness of an EV charging station setup is assessed using three main metrics: user satisfaction, renewable energy efficiency and financial performance. User satisfaction: This metric represents the percentage of EVs that successfully complete charging, referred to as the satisfaction score. It is analogous to Station Utilization Rates, which assess charging station efficiency 12\n\nbased on the number of charging requests served, as discussed in (Yi et al., 2023; Li et al., 2024 a). A higher satisfaction score indicates greater system effici",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_37",
+    "text": "in (Yi et al., 2023; Li et al., 2024 a). A higher satisfaction score indicates greater system efficiency, while lower values may signal issues such as energy shortages, congestion, or insufficient charging infrastructure. The satisfaction score is calculated as: Satisfaction Score = EV s that completed charging EV s that requested charging (3) Renewable energy efficiency: This evaluates the relationship between energy generation, storage, and consumption, aiming to maximize self-consumption and reduce dependency on external energy (Merei et al., 2016; Francisco et al., 2023; Aldossary et al., 2024). Key ratios include: Self − Sufficiency = Consumed Renewable Energy Total Energy Demand (4) Self − Consumption = Consumed Renewable Energy Total Generated Renewable Energy (5) Financial performa",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_38",
+    "text": "lf − Consumption = Consumed Renewable Energy Total Generated Renewable Energy (5) Financial performance: This is analyzed through cost savings from renewable energy use and the payback period for investments (Merei et al., 2016; Francisco et al., 2023). A shorter payback period indicates greater economic feasibility. The initial renewable energy investment payback is calculated as: Payback Period = Investment in Renewable System Monthly Profit (6) To ensure comparability, all values are normalized between 0 and 1. The payback period is normalized using the following function to prioritise profit return time within a predefined threshold of the payback period. This approach gives higher priority to payback periods within the acceptable range while reducing the weight of excessively long rec",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_39",
+    "text": "ity to payback periods within the acceptable range while reducing the weight of excessively long recovery times. f(x) = (cid:40) x threshold, x ≤ threshold ethreshold−x threshold , x > threshold (7) Finally, the optimization metric combines the previous indicators to balance user satisfaction, energy self-sufficiency, and financial viability: 13\n\nObjective Function = Satisfaction Score + Normalized Payback Period + 0.8 × Self Sufficiency (8) This linear function emphasizes maximizing user satisfaction and energy self-sufficiency while ensuring financial feasibility. The weight of 0.8 for selfsufficiency highlights the goal of integrating renewable energy as a supplementary, rather than exclusive, source. 3.2. Experimental and Optimization Setup Description 3.2.1. Dynamic Simulation Experim",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_40",
+    "text": "sive, source. 3.2. Experimental and Optimization Setup Description 3.2.1. Dynamic Simulation Experiment Configuration For Policy Evaluation: The digital twin uses a batch experiment framework to evaluate various policy applications and their impact on user satisfaction. A four-tiered policy framework is tested to improve EV charging station operations: • Policy 1: Ban gasoline vehicles from charging stations. • Policy 2: Impose 1,000 VND/min idle fee after 30 minutes of full charge. • Policy 3: Relocate fully charged EVs to inactive stations. • Policy 4: Real-time notification system of available charging ports. Table 5: Scenarios for implementing different operational policy combinations to evaluate their impact on EV charging station operations. Policy / Case Level Case 0 Case 1 Case 2 C",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_41",
+    "text": "evaluate their impact on EV charging station operations. Policy / Case Level Case 0 Case 1 Case 2 Case 3 Case 4 Case 5 Policy 1: Restrict gasoline vehicles X O O O O O Policy 2: Impose idle fee X X O O O O Policy 3: Relocate fully charged EVs X X X O X O Policy 4: Real-time notification system X X X X O O These policies are introduced incrementally across six scenarios (Table 5), with varying EV numbers (50, 100, 150, 200), a fixed charging station setup including C-Parking (20×11 k W, 4×30 k W), J-Parking (15×11 k W, 4×30 k W), and 30 gasoline vehicles across all cases. 14\n\nFor Infrastructure Planning: To determine the optimal configuration for each EV demand scenario, the model simulates all possible parameter combinations across 4 scenarios of EVs number (50, 100, 150, 200). Table 6 ou",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_42",
+    "text": "all possible parameter combinations across 4 scenarios of EVs number (50, 100, 150, 200). Table 6 outlines the charging station setups and solar panel options, with a fixed BESS and an annual average weather dataset. Due to the expanding number of parameters, C-Parking with solar panels alone has 280 possible configurations, and including J-Parking increases this to 6,720. For simplicity, initial simulations focus on C-Parking, with optimization algorithms extending the analysis to J-Parking. Table 6: Value ranges for various configurations of charging stations and solar panels, including options for C-Parking and J-Parking. Category Configuration Options C-Parking 11 k W Charging Ports: 20, 25, 30, 35, 40, 45, 50 30 k W Charging Ports: 2, 4, 6, 8, 10 J-Parking 11 k W Charging Ports: 15, 1",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_43",
+    "text": "25, 30, 35, 40, 45, 50 30 k W Charging Ports: 2, 4, 6, 8, 10 J-Parking 11 k W Charging Ports: 15, 18, 21, 24, 27, 30 30 k W Charging Ports: 2, 4, 6, 8 Solar Panels 200, 300, 400, 500, 600, 700, 800, 900 BESS capacity 80 k W Weather Data Annual average dataset 3.2.2. Statistical Testing for Dynamic Simulation with Wilcoxon Test The digital twin enables scenario-based simulations, producing time-series results that require statistical validation. Since these simulations often generate limited sample sizes and may involve non-normally distributed data, the Wilcoxon signed-rank test (Wilcoxon, 1945) is an appropriate choice for comparing two paired datasets. Unlike parametric tests such as the paired t-test, which assumes normality, the Wilcoxon test is non-parametric and remains effective in",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_44",
+    "text": "paired t-test, which assumes normality, the Wilcoxon test is non-parametric and remains effective in handling skewed data and outliers. The test evaluates the null hypothesis (H 0) that the median difference between paired observations is zero. It ranks the absolute differences between paired samples, assigns ranks, and then calculates the test statistic W based on the sum of ranks. W = min(R+, R−) (9) where R+ and R− are the sums of positive and negative ranks, respectively. The result is then compared to critical values from the Wilcoxon distribution or assessed using a p-value to determine statistical significance. 15\n\nIf p < 0.05, there is a statistically significant difference between the two scenarios, providing evidence to reject the null hypothesis H 0. Otherwise, if p ≥ 0.05, no c",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_45",
+    "text": "he two scenarios, providing evidence to reject the null hypothesis H 0. Otherwise, if p ≥ 0.05, no clear difference is detected between the two scenarios, meaning there is insufficient evidence to reject H 0. In this study, we employ the scipy. stats. wilcoxon function in Python, which automatically computes the test statistic and corresponding p-value for hypothesis testing. 3.2.3. Optimization Algorithm Integration Settings The digital twin supports efficient decision-making by integrating various optimization algorithms (described in Table 7), each employing a distinct approach to explore the solution space. Table 7: Summary of optimization algorithms embedded in the digital twin, describing their approaches and objectives in exploring the solution space. Algorithm Source Description Hi",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_46",
+    "text": "ing their approaches and objectives in exploring the solution space. Algorithm Source Description Hill Climbing (Pearl, 1984) A local search that iteratively improves the solution. Simulated Annealing (Kirkpatrick et al., 1983) A probabilistic technique that avoids local optima. Tabu Search (Glover, 1989, 1990) Uses memory structures to avoid revisiting solutions. Reactive Tabu Search (Battiti and Tecchiolli, 1994) Adjusts memory size for improved efficiency. Genetic Algorithm (Holland, 1975; Goldberg and Holland, 1988) A population-based algorithm inspired by evolution. Particle Swarm Optimization (Kennedy and Eberhart, 1995) A swarm intelligence method where particles adjust positions based on experience. These algorithms are assessed based on their accuracy relative to fullcase results",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_47",
+    "text": "d on experience. These algorithms are assessed based on their accuracy relative to fullcase results and runtime, using the Normalized Euclidean Distance (NED) as a comparative metric to quantify deviations from a reference solution, ensuring fair comparison across multiple parameters. Given two solutions x 1 = (x 1,1, x 1,2,..., x 1, n)⊤ and x 2 = (x 2,1, x 2,2,..., x 2, n)⊤, NED is computed as equation 10, where s j represents the feasible range of the j-th variable, ensuring consistency across different scales. D = (cid:118) (cid:117) (cid:117) (cid:116) n (cid:88) j=1 (cid:18) x 1, j − x 2, j s j (cid:19)2 (10) By applying NED, we obtain a standardized accuracy measure, enabling fair performance assessment across optimization approaches. In this study, 16\n\nNED thresholds are analyzed ba",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_48",
+    "text": "ormance assessment across optimization approaches. In this study, 16\n\nNED thresholds are analyzed based on realistic parameter ranges, such as solar panel deployment and charging infrastructure capacity. 4. Results 4.1. Digital Twin enables real-time description and monitoring of EV charging infrastructure This section describes the real-time interactive dashboard featured in our digital twin, highlighting a use case where the dashboard is utilized to evaluate seasonal solar energy fluctuations. 4.1.1. Dashboard provides real-time map and monitoring charts Figure 3: Digital Twin dashboard for real-time EV charging visualization, integrating (1) Interactive parameters control panel, (2) GIS-based interactive multi-agent simulation, and (3) Performance charts tracking user satisfaction, ener",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_49",
+    "text": "ased interactive multi-agent simulation, and (3) Performance charts tracking user satisfaction, energy efficiency, and financial viability. Our dashboard, shown in Figure 3, provides a real-time visualization of EV charging operations by integrating an interactive map and monitoring charts that allow users to dynamically explore charging scenarios, adjust station configurations, and evaluate policy impacts. The interface consists of 17\n\nthree main components: (1) an interactive control panel (left-hand side) for adjusting station parameters and operational policies, (2) a map-based view (center) displaying the real-time status of charging stations, and (3) a data analytics section presenting key performance indicators (KPIs) such as user satisfaction, energy efficiency, and financial viabi",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_50",
+    "text": "key performance indicators (KPIs) such as user satisfaction, energy efficiency, and financial viability. The system supports scenario-based decision-making, enabling users to simulate the effects of new policies or charging station configurations, observe real-time interactions and calculations, and assess their viability before implementation. This capability significantly enhances decision-making efficiency, allowing operators to proactively manage infrastructure, optimize resource allocation, and improve service reliability. Additionally, the data analytics module helps uncover hidden demand patterns, facilitating strategic planning for future charging infrastructure expansions. 4.1.2. Dashboard reveals seasonal solar fluctuations’ impact on energy efficiency and financial viability To",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_51",
+    "text": "ashboard reveals seasonal solar fluctuations’ impact on energy efficiency and financial viability To assess the impact of seasonal fluctuations on renewable energy efficiency, a one-month real-time simulation was conducted with 50 EVs and 500 solar panels, keeping other station configurations constant. Four distinct weather datasets, each representing a quarterly average, were used to simulate different seasonal conditions. Figure 4: Average one-month simulation results for Quarter 1 & Quarter 3, showing total energy consumption (k Wh), renewable energy usage (k Wh), and self-sufficiency (%) without wind energy integration. As shown in Figure 4, results indicate that solar energy output peaks from July to September (Quarter 3), covering 73% of daily electricity demand 18\n\n(1,078 k Wh/day).",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_52",
+    "text": "s from July to September (Quarter 3), covering 73% of daily electricity demand 18\n\n(1,078 k Wh/day). In contrast, from January to March (Quarter 1), solar output declined by 21%, meeting only 52% of demand (681 k Wh/day). This seasonal fluctuation significantly affects self-sufficiency and financial returns. During July to September, higher solar generation reduces reliance on grid electricity, leading to a monthly profit of 100 million VND—43% higher than in January to March, when lower solar availability increases grid dependency, limiting profit to 70 million VND despite similar demand conditions. Wind energy was assessed as a potential complement to solar power during October to March, when solar output was lower. A one-month simulation with 20 wind turbines at 100 m height (Figure 5)",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_53",
+    "text": "hen solar output was lower. A one-month simulation with 20 wind turbines at 100 m height (Figure 5) showed a marginal improvement in self-sufficiency, with the mean self-sufficiency ratio increasing slightly from 0.52 (SD = 0.09) to 0.54 (SD = 0.11). The Wilcoxon test (p = 0.2801) confirmed that this difference was statistically insignificant. Consequently, mean daily renewable energy consumption rose only modestly, from 681 k Wh to 718 k Wh. The limited effectiveness is attributed to peak wind generation occurring outside primary charging hours, specifically from 7:00 PM to 6:00 AM, reducing its direct usability. Despite requiring a 28% increase in initial investment, wind energy contributes under 5% to the total energy supply, but further extending the return-on-investment period. Figure",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_54",
+    "text": "s under 5% to the total energy supply, but further extending the return-on-investment period. Figure 5: Average one-month simulation results for Q1, comparing self-sufficiency (%) with (orange) and without (blue) wind energy integration using Wilcoxon Test. To better utilize solar energy, prioritizing BESS expansion over wind investment would be more effective, given the weak wind energy potential in Vietnam. While the simulation includes an 80 k W BESS, further optimiza 19\n\ntion strategies could enhance its efficiency, particularly in scenarios with dynamic electricity pricing and adaptive energy management. 4.2. Dynamic simulations systematically evaluate operational policies and infrastructure expansion Section 4.2 discusses dynamic simulations to explore the effects of operational poli",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_55",
+    "text": "cture expansion Section 4.2 discusses dynamic simulations to explore the effects of operational policies, evaluate charging configurations, and conduct a sensitivity analysis to identify key parameters for optimizing EV charging infrastructure. 4.2.1. Notification systems improve satisfaction, while idle fees increase slot availability with simple enforcement Figure 6: EV satisfaction scores for six combinations of four policy interventions, including gasoline bans, idle fees, EV relocation, and real-time notifications (defined in Table 5). Simulation results highlight the effectiveness of four key policy interventions, including banning gasoline vehicles, imposing idle fees, relocating fully charged EVs, and implementing a notification system, in improving EV user satisfaction (Figure 6).",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_56",
+    "text": "y charged EVs, and implementing a notification system, in improving EV user satisfaction (Figure 6). In the 50-EV scenario, without intervention, gasoline vehicles occupy charging slots, and unregulated EV parking reduces station turnover, keeping satisfaction below 90%. Introducing a gasoline vehicle ban (Case 1) increases station accessibility, while implementing an idle fee (Case 2) further optimizes utilization, raising satisfaction to 95%. However, enforcing EV relocation (Case 3) provides minimal additional benefit (less than 1% 20\n\nincrease), indicating that this measure has limited impact. The notification system (Case 4, 5) proves to be the most effective intervention, dynamically informing users of available slots and boosting satisfaction by 5% to nearly 100% in low-demand scena",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_57",
+    "text": "nforming users of available slots and boosting satisfaction by 5% to nearly 100% in low-demand scenarios (50 EVs). In high-demand cases (200 EVs), the overall trend remains consistent, and the notification system has an even greater effect, increasing satisfaction by over 10% compared to other policies, reaching 60%. However, deploying such a system introduces added complexity and costs, which must be carefully weighed against its benefits. Figure 7: EV satisfaction scores across six policy combination cases (defined in Table 5) as EV size increases from 50 to 200. Despite these improvements, policies alone cannot fully compensate for infrastructure limitations (Figure 7). Satisfaction drops sharply as EV numbers increase, declining from 87% at 50 EVs to just 43% at 200 EVs, even with mult",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_58",
+    "text": "sharply as EV numbers increase, declining from 87% at 50 EVs to just 43% at 200 EVs, even with multiple policies in place. These findings indicate that while policy interventions enhance station efficiency, they must be complemented by infrastructure expansion to sustain long-term EV adoption. The most effective approach involves banning gasoline vehicles and imposing idle fees to enhance slot turnover, implementing a real-time notification system for slot allocation despite its complexity, and scaling charging infrastructure to accommodate growing demand. 21\n\n4.2.2. Dynamic simulation identifies optimal configurations for 30 k W and 11 k W chargers and solar energy Results from the 280 configuration experiments (Figure 8) reveal distinct performance trends across EV demand levels. For lo",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_59",
+    "text": "figuration experiments (Figure 8) reveal distinct performance trends across EV demand levels. For lower demand (50–100 EVs), increasing 11 k W chargers steadily improves satisfaction, reaching nearly 100% at 30 chargers (50 EVs) and 50 chargers (100 EVs). However, in higher demand scenarios (150–200 EVs), fast chargers (30 k W) become more critical, significantly enhancing satisfaction compared to adding more 11 k W units. Satisfaction peaked with 20 (11 k W) and 10 (30 k W) chargers. Adding more than 40 (11 k W) units resulted in diminishing returns, as congestion became uneven—some chargers were underused while others were overloaded. These findings emphasize the need for a balanced mix of slow and fast chargers to maximize station efficiency. Figure 8: Satisfaction scores for different",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_60",
+    "text": "slow and fast chargers to maximize station efficiency. Figure 8: Satisfaction scores for different 30 k W (horizontal axis) and 11 k W (vertical axis) charger combinations under two demand scenarios: 100 EVs (left) and 200 EVs (right). Regarding solar panel integration in the 50-EV scenario, Figure 9 shows that self-consumption remains consistently high (≥ 80%), indicating efficient solar energy utilization. However, self-sufficiency starts below 30% but rises to nearly 90% as panel capacity increases. Despite this improvement, economic trade-offs emerge: increasing solar capacity reduces payback efficiency, delaying profitability. With a payback period threshold of 60 months, the results demonstrate that beyond 500 solar panels, additional installations offer negligible financial returns",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_61",
+    "text": "emonstrate that beyond 500 solar panels, additional installations offer negligible financial returns, indicating that oversizing the PV system is not cost-effective. Similar trends are observed across all EV demand scenarios, 22\n\nreinforcing the importance of aligning solar deployment with charging station capacity to optimize investment. Figure 9: Relationship between number of solar panels and two key metrics: the normalized payback period (blue) and the self-sufficiency and self-consumption (orange and green, respectively) for the 50 EVs scenario. The optimal configurations derived from the Objective Function evaluation (Table 8) balance these trade-offs, ensuring high satisfaction, cost efficiency, and energy performance. The results underscore the importance of a well-balanced mix of",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_62",
+    "text": "efficiency, and energy performance. The results underscore the importance of a well-balanced mix of 30 k W and 11 k W chargers, along with an optimally sized solar array, to maximize station efficiency and economic sustainability. 4.2.3. Sensitivity analysis highlights 30 k W chargers and notifications boost satisfaction, while solar panels drive self-sufficiency and payback Sensitivity analysis identifies the most influential factors affecting EV satisfaction, station efficiency, and financial viability. As shown in Figure 10, results indicate that fast charger availability (30 k W) and the implementation of a notification system are the two most critical variables impacting satisfaction scores. The Total-Order Sobol Indices reveal that EV satisfaction is primarily influenced by the numbe",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_63",
+    "text": "ores. The Total-Order Sobol Indices reveal that EV satisfaction is primarily influenced by the number of 11 k W (ST = 0.38) and 30 k W chargers (ST = 0.34), with only a minor difference of 0.04. Despite their smaller range and step size (2–10 with step 2 vs. 20–50 with step 5 for 11 k W chargers), 23\n\nTable 8: Results from the full case scenario with 280 combinations, detailing the optimal setups for four electric vehicle demand scenarios (50, 100, 150, 200 EVs). Note: CS = Charging Station; CPs = Charging Ports. 50 EVs 100 EVs 150 EVs 200 EVs CS Configuration No. CPs 11 k W 35 50 20 20 No. CPs 30 k W 4 4 10 10 No. Solar Panels 500 900 600 600 Evaluation Metrics Satisfaction Score 1.00 0.99 0.94 0.89 Self-Consumption 0.99 0.98 0.95 0.93 Self-Sufficiency 0.67 0.60 0.59 0.57 Normalized Payba",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_64",
+    "text": "0.94 0.89 Self-Consumption 0.99 0.98 0.95 0.93 Self-Sufficiency 0.67 0.60 0.59 0.57 Normalized Payback 0.94 0.98 0.95 0.92 Objective Function 2.47 2.45 2.37 2.26 30 k W chargers demonstrate a comparable impact, reinforcing their efficiency in high-demand scenarios. Among policy interventions, the notification system (ST = 0.37) has the most substantial effect, dynamically improving slot allocation and reducing waiting times. Figure 10: Heatmap of the Total-Order Sobol Sensitivity Indices (ST) of key factors affecting EV satisfaction, station efficiency, and financial viability. For energy performance, solar panel capacity has the strongest influence 24\n\non self-sufficiency and payback period. Additionally, idle fees and relocation policies (both ST = 0.34) significantly enhance self-consum",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_65",
+    "text": ". Additionally, idle fees and relocation policies (both ST = 0.34) significantly enhance self-consumption by optimizing station utilization and aligning charging demand with solar availability. However, since their effects are nearly identical, forced relocation may offer little added value over idle fees, questioning its necessity given the additional enforcement effort required. These results align and reinforce the conclusions from Sections 4.2, emphasizing the critical role of fast chargers, notification systems, and optimal solar panel sizing in improving EV charging efficiency and financial sustainability. 4.3. Embedded optimization algorithms in digital twin enable efficient decisionmaking Our Digital Twin tool provides a comprehensive optimization environment, enabling both exhaust",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_66",
+    "text": "aking Our Digital Twin tool provides a comprehensive optimization environment, enabling both exhaustive batch experiments for small-scale scenarios and embedded optimization algorithms for efficiently finding near-optimal solutions in complex, high-dimensional cases. By integrating optimization directly into the Digital Twin framework, our tool significantly reduces computational time while maintaining solution quality. As shown in Section 4.2.2, exhaustive batch simulations allow for evaluating all possible configurations, providing key insights into optimal infrastructure setups, variable impacts, and system patterns. However, as the number of parameters increases, the computational burden grows exponentially, making exhaustive testing impractical. To address this, our tool directly embe",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_67",
+    "text": "grows exponentially, making exhaustive testing impractical. To address this, our tool directly embeds optimization algorithms within the simulation environment, unlike other studies that require external execution. Six widely used algorithms—hill climbing, simulated annealing, tabu search, reactive tabu search, genetic algorithm, and particle swarm optimization (PSO)—have been integrated to efficiently explore the solution space and identify near-optimal configurations for large-scale decision-making. The optimization algorithms generate solutions closely aligned with fullcase results, with minor deviations (at most one adjustment step): at most ±5 charging ports (11 k W), ±2 charging ports (30 k W), and ±100 solar panels. To illustrate the efficiency gains, we analyze a representative op",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_68",
+    "text": "(30 k W), and ±100 solar panels. To illustrate the efficiency gains, we analyze a representative optimization run using PSO, as shown in Figure 11 and Table 9. The Normalized Euclidean Distance values (ranging from 0.656 to 1.345) indicate minimal deviation between PSO and full-case solutions. For EV 50 and EV 200, distances of 1 and 0.656 show near-identical results. Slightly higher values for 25\n\nFigure 11: Comparison of PSO optimization vs. full-case results across solar panels and charging port configurations (11 k W & 30 k W). Each point represents configurations for 50 EVs, 100 EVs, 150 EVs, and 200 EVs, with PSO results shown as bigger markers. EV 100 and EV 150 (1.238 and 1.345) stem from the relative influence of solar panel quantities in the optimization process, as they contrib",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_69",
+    "text": "m from the relative influence of solar panel quantities in the optimization process, as they contribute more significantly to overall system performance compared to charging port variations. Since the full-case method only considers predefined discrete values, while PSO can optimize outside these constraints, some deviation is expected. However, the results confirm that PSO delivers near-optimal solutions while reducing computational time by 82%, as PSO only needs to evaluate around 50 configurations compared to the 280 combinations required in the full-case scenario. Table 9: Results comparison of PSO with full-case, highlighting configurations for different EV cases and their normalized Euclidean distances. EV Case No. 11 k W, No. 30 k W, No. Solar Norm. Euclidean Distance PSO Full-case",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_70",
+    "text": "clidean distances. EV Case No. 11 k W, No. 30 k W, No. Solar Norm. Euclidean Distance PSO Full-case EV 50 (35, 2, 500) (35, 4, 500) 1.000 EV 100 (50, 2, 827) (50, 4, 900) 1.238 EV 150 (25, 10, 690) (20, 10, 600) 1.345 EV 200 (22, 10, 548) (20, 10, 600) 0.656 26\n\nFinally, applying PSO to optimize charging configurations for both CParking and J-Parking, which involve 6,720 combinations—24 times more than cases without J-Parking variations—yields results after evaluating only about 50 configurations, as shown in Table 10. This optimization determines the optimal allocation of charging ports (11 k W & 30 k W) and solar panels for both locations. Table 10: Optimal setups determined by PSO for both C-Parking and J-Parking, showcasing the configurations for four EV demand scenarios (50, 100, 150,",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_71",
+    "text": "h C-Parking and J-Parking, showcasing the configurations for four EV demand scenarios (50, 100, 150, 200 EVs). Note: CS = Charging Station; CPs = Charging Ports; C = C-Parking; J = J-Parking. 50 EVs 100 EVs 150 EVs 200 EVs CS Configuration No. CPs 11 k W (C) 32 50 20 20 No. CPs 30 k W (C) 3 3 10 10 No. CPs 11 k W (J) 15 15 15 15 No. CPs 30 k W (J) 2 8 8 8 No. Solar Panels 604 900 543 600 Evaluation Metrics Satisfaction Score 1.00 0.97 0.93 0.95 Self-Sufficiency 0.75 0.61 0.56 0.57 Normalized Payback 0.86 0.97 0.90 0.93 Objective Function 2.46 2.43 2.28 2.34 No. Cases Tested 52 54 51 53 5. Discussion This study presents a Digital Twin framework that integrates real-time visualization, simulation, and optimization to enable data-driven decisionmaking for EV charging infrastructure. Implement",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_72",
+    "text": "ion, and optimization to enable data-driven decisionmaking for EV charging infrastructure. Implemented on a university campus in Hanoi, the framework facilitates scenario-based evaluations of policies, infrastructure configurations, and renewable energy integration. While developed at a localized scale, the model’s modular agent-based design and spatial flexibility allow seamless scaling to larger urban contexts such as innovation districts or emerging urban areas, where the expansion of EV infrastructure presents significant planning challenges. This provides a transferable template for integrating networked multi-station EV charging network across city zones without fundamental changes to the agent logic. The interactive dashboard supports decision-making by offering real-time visualizat",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_73",
+    "text": "the agent logic. The interactive dashboard supports decision-making by offering real-time visualizations, performance tracking, and scenario simulations. Our digital twin enables seasonal analysis, revealing a 21% decrease in solar efficiency 27\n\nfrom October to March and minimal wind contribution (≤ 5% of demand), despite a 28% investment increase. While hybrid systems enhance grid performance, our findings indicate that in low-wind regions like Hanoi, peak wind generation often occurs outside charging hours (7:00 PM–6:00 AM), limiting effectiveness. Optimizing BESS capacity and demand-response strategies becomes critical for intermittency management. Future research could expand on this by exploring dynamic pricing scenarios, such as peak-hour pricing, where optimizing BESS operations be",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_74",
+    "text": "exploring dynamic pricing scenarios, such as peak-hour pricing, where optimizing BESS operations becomes crucial for enhancing the system’s ability to integrate solar energy effectively. The proposed Digital Twin framework enables stakeholders to simulate, evaluate, and optimize EV charging configurations before deployment, ensuring efficient, sustainable networks. Our simulation shows that notification systems improve satisfaction by 10% during high demand, while gasoline bans and idle fees increase turnover. However, policy interventions alone are insufficient for long-term planning, highlighting the need for expanded capacity. The embedded optimization framework minimizes computational overhead, ensuring near-optimal configurations for fast (30 k W) and standard (11 k W) chargers integ",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_75",
+    "text": "verhead, ensuring near-optimal configurations for fast (30 k W) and standard (11 k W) chargers integrated with solar energy. Although agent-based modeling and optimization algorithms are well-established methods, this research advances the state of practice by embedding metaheuristic optimization directly into a dynamic simulation platform. This integration eliminates the traditional separation between simulation and post-simulation optimization phases, resulting in a unified framework with an interactive dashboard that is capable of evaluating infrastructure performance, user satisfaction, and energy outcomes in a single workflow. This methodological contribution enhances real-time adaptability, minimizes computational effort by over 80%, and provides a unified framework for exploring ope",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_76",
+    "text": "lity, minimizes computational effort by over 80%, and provides a unified framework for exploring operational policies and infrastructure strategies simultaneously. The model has certain limitations, particularly regarding dataset assumptions and the representativeness of local survey data. It assumes ideal user compliance with operational policies, which may not fully reflect behavioral variability in larger, less controlled environments. Focusing on a single site also limits the analysis of inter-station interactions across broader networks. However, the generalized framework holds promise for extension to multinode EVCS networks in complex urban settings. Future work will extend the digital twin to district- and city-scale networks, modeling interconnected stations across diverse zones a",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_77",
+    "text": "l twin to district- and city-scale networks, modeling interconnected stations across diverse zones and incorporating real-time operational data to improve accuracy. These extensions aim to support large-scale EV infras 28\n\ntructure planning and advance smart, sustainable transportation systems. Acknowledgement This work was supported by the Center for Environmental Intelligence (CEI) at Vin University under the research project “Digital Twin Platform to Empower Communities towards an Eco-friendly and Healthy Future” (Project Code: VUNI. CEI. FS_0001). References Al-Thani, H., Koç, M., Isaifan, R. J., Bicer, Y., 2022. A review of the integrated renewable energy systems for sustainable urban mobility. Sustainability (Switzerland) 14. doi:10.3390/su 141710517. Aldossary, M., Alharbi, H. A., A",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_78",
+    "text": "obility. Sustainability (Switzerland) 14. doi:10.3390/su 141710517. Aldossary, M., Alharbi, H. A., Ayub, N., 2024. Optimizing Electric Vehicle (EV) Charging with Integrated Renewable Energy Sources: A Cloud Based Forecasting Approach for Eco-Sustainability. Mathematics 12, 2627. doi:10.3390/math 12172627. Alhasan, A., Umar, D., Alkawsi, G., Alkahtani, A., Alomari, M., Aris, H., 2023. Towards wind energy-based charging stations: A review of optimization methods. Information Sciences Letters 12, 3013–3023. doi:10.18576/isl/120909. Aliedani, A., Loke, S. W., 2018. Cooperative car parking using vehicle-tovehicle communication: An agent-based analysis. Computers Environment and Urban Systems 77, 101256. doi:10.1016/j. compenvurbsys.2018.06. 002. Ambrosino, L., Do-Bui-Khanh, L., Nguyen-Manh, K.,",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_79",
+    "text": "101256. doi:10.1016/j. compenvurbsys.2018.06. 002. Ambrosino, L., Do-Bui-Khanh, L., Nguyen-Manh, K., Calafiore, G., El Ghaoui, L., Nguyen-Ngoc, D., 2025. Agent-based modelling approach to support strategic planning for ev charging stations in a university campus, in: Proceedings of the 13 th International Conference on Computational Data and Social Networks (CSo Net 2024). URL: https: //link. springer. com/book/9789819663880. accepted, to appear. Asna, M., Shareef, H., Achikkulath, P., Mokhlis, H., Errouissi, R., Wahyudie, A., 2021. Analysis of an optimal planning model for electric vehicle fastcharging stations in al ain city, united arab emirates. IEEE Access 9, 73678–73694. doi:10.1109/access.2021.3081020. 29\n\nBattiti, R., Tecchiolli, G., 1994. The reactive tabu search. INFORMS Journal",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_80",
+    "text": "cess.2021.3081020. 29\n\nBattiti, R., Tecchiolli, G., 1994. The reactive tabu search. INFORMS Journal on Computing 6, 126–140. doi:10.1287/ijoc.6.2.126. Belfadel, A., Hörl, S., Tapia, R. J., Politaki, D., Kureshi, I., Tavasszy, L., Puchinger, J., 2023. A conceptual digital twin framework for city logistics. Computers Environment and Urban Systems 103, 101989. doi:10.1016/ j. compenvurbsys.2023.101989. Bright, J. M., 2019. Solcast: Validation of a satellite-derived solar irradiance dataset. Solar Energy 189, 435–449. doi:10.1016/j. solener.2019.07. 086. Brihmat, F., Mekhtoub, S., 2014. Pv cell temperature / pv power output relationships homer methodology calculation. Journal of Renewable Energy Research 1, 0. Cao, J., Chen, X., Qiu, R., Hou, S., 2021. Electric vehicle industry sustainable dev",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_81",
+    "text": "Research 1, 0. Cao, J., Chen, X., Qiu, R., Hou, S., 2021. Electric vehicle industry sustainable development with a stakeholder engagement system. Technology in Society 67, 101771. doi:10.1016/j. techsoc.2021.101771. Caruso, M., Livreri, P., Miceli, R., Viola, F., Martino, M., 2017. Ev charging station at university campus, in: 2017 IEEE International Telecommunications Energy Conference (INTELEC), pp. 615–623. doi:10.1109/INTLEC. 2017.8214206. Cui, X., Zhang, Z., Liu, F., Liu, J., 2021. Layout evaluation for electric vehicle charging pile based on charging frequency. Journal of Intelligent & Fuzzy Systems 41, 4735–4747. doi:10.3233/jifs-189960. Davidov, S., Pantoš, M., 2018. Optimization model for charging infrastructure planning with electric power system reliability check. Energy 166, 8",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_82",
+    "text": "del for charging infrastructure planning with electric power system reliability check. Energy 166, 886–894. doi:10.1016/j. energy.2018.10.150. Diaz, W. F. S., Vargas, J. T., Martinez, F., 2024. Optimizing ev charging stations: a simulation-based approach to performance and grid integration. Bulletin of Electrical Engineering and Informatics 13, 2922–2939. doi:10. 11591/eei. v 13 i4.8027. Esmaeili, M., Anvari-Moghaddam, A., Muyeen, S. M., Peric, V. S., 2022. On the role of renewable energy policies and electric vehicle deployment incentives for a greener sector coupling. IEEE Access 10, 53873–53893. doi:10.1109/access.2022.3176012. 30\n\nFrancisco, A. M. B., Monteiro, J., Cardoso, P. J. S., 2023. A digital twin of charging stations for fleets of electric vehicles. IEEE Access 11, 125664– 1256",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_83",
+    "text": "3. A digital twin of charging stations for fleets of electric vehicles. IEEE Access 11, 125664– 125683. doi:10.1109/ACCESS.2023.3330833. Glover, F., 1989. Tabu Search—Part i. INFORMS Journal on Computing 1, 190–206. doi:10.1287/ijoc.1.3.190. Glover, F., 1990. Tabu Search—Part II. INFORMS Journal on Computing 2, 4–32. doi:10.1287/ijoc.2.1.4. Goldberg, D. E., Holland, J. H., 1988. Genetic algorithms and machine learning. Machine Learning 3, 95–99. doi:10.1023/a:1022602019183. Gorbunova, A. D., Anisimov, I. A., 2020. Assessment of the use of renewable energy sources for the charging infrastructure of electric vehicles. Emerging Science Journal 4, 539–550. doi:10.28991/esj-2020-01251. Holland, J. H., 1975. Adaptation in natural and artificial systems: An introductory analysis with applications",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_84",
+    "text": ". H., 1975. Adaptation in natural and artificial systems: An introductory analysis with applications to biology, control, and artificial intelligence. U Michigan. Hovet, S., Farley, B., Perry, J., Kirsche, K., Jerue, M., Tse, Z., 2018. Introduction of electric vehicle charging stations to university campuses: A case study for the university of georgia from 2014 to 2017. Batteries 4. doi:10.3390/batteries 4020027. Hussain, M. T., Sulaiman, N. B., Hussain, M. S., Jabir, M., 2021. Optimal management strategies to solve issues of grid having electric vehicles (ev): A review. Journal of Energy Storage 33, 102114. doi:10.1016/j. est. 2020.102114. IEA, 2024. Global ev outlook 2024. URL: https://www. iea. org/reports/ global-ev-outlook-2024. Kam, M., Peters, A., Alkemade, F., 2019. Agent-based mod",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_85",
+    "text": ". iea. org/reports/ global-ev-outlook-2024. Kam, M., Peters, A., Alkemade, F., 2019. Agent-based modelling of charging behaviour of electric vehicle drivers. Journal of Artificial Societies and Social Simulation 22. doi:10.18564/jasss.4133. Kennedy, J., Eberhart, R., 1995. Particle swarm optimization, in: Proceedings of ICNN’95 - International Conference on Neural Networks, pp. 1942–1948 vol.4. doi:10.1109/ICNN.1995.488968. 31\n\nKirkpatrick, S., Gelatt, C. D., Vecchi, M. P., 1983. Optimization by simulated annealing. Science 220, 671–680. doi:10.1126/science.220.4598.671. Lee, Z. J., Sharma, S., Johansson, D., Low, S. H., 2020. ACN-SIM: An Open Source Simulator for Data-Driven Electric Vehicle Charging Research. ar Xiv (Cornell University) doi:10.48550/arxiv.2012.02809. Lesquoy, B., Taillan",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_86",
+    "text": "e Charging Research. ar Xiv (Cornell University) doi:10.48550/arxiv.2012.02809. Lesquoy, B., Taillandier, P., Gaudou, B., Chapuis, K., Grignard, A., Huynh, N. Q., et al., 2024. Behind the scenes: An overview of the gama platform’s environment and development practices, in: Proceedings of GAMA Days 2024. Li, C., Zhang, L., Ou, Z., Wang, Q., Zhou, D., Ma, J., 2022. Robust model of electric vehicle charging station location considering renewable energy and storage equipment. Energy 238. doi:10.1016/j. energy.2021.121713. Li, H., Yu, L., Zhao, Y., Wu, H., Tu, H., 2024 a. Deployment of public charging stations for BEVs using an Agent-Based Modeling approach. International Journal of Transportation Science and Technology doi:10.1016/j. ijtst.2024.10.003. Li, J., Rombaut, E., Vanhaverbeke, L., 20",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_87",
+    "text": "n Science and Technology doi:10.1016/j. ijtst.2024.10.003. Li, J., Rombaut, E., Vanhaverbeke, L., 2021. A systematic review of agentbased models for autonomous vehicles in urban mobility and logistics: Possibilities for integrated simulation models. Computers Environment and Urban Systems 89, 101686. doi:10.1016/j. compenvurbsys.2021.101686. Li, J., Rombaut, E., Vanhaverbeke, L., 2024 b. How far are we towards sustainable Carfree cities combining shared autonomous vehicles with park-and-ride: An agent-based simulation assessment for Brussels. Computers Environment and Urban Systems 112, 102148. doi:10.1016/j. compenvurbsys.2024.102148. Liu, Z., Zhang, W., Ji, X., Li, K., 2012. Optimal planning of charging station for electric vehicle based on particle swarm optimization, in: IEEE PES Innov",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_88",
+    "text": "ng of charging station for electric vehicle based on particle swarm optimization, in: IEEE PES Innovative Smart Grid Technologies (ISGT-Asia), IEEE, Tianjin, China. pp. 1–5. doi:10.1109/ISGT-Asia.2012.6303112. Lopez, N. S., Allana, A., Biona, J. B. M., 2021. Modeling Electric Vehicle Charging Demand with the Effect of Increasing EVSEs: A Discrete Event Simulation-Based Model. Energies 14, 3734. doi:10.3390/en 14133734. 32\n\nMarcucci, E., Gatta, V., Pira, M. L., Hansson, L., Bråthen, S., 2020. Digital Twins: A critical discussion on their potential for supporting Policy-Making and Planning in urban Logistics. Sustainability 12, 10623. doi:10.3390/su 122410623. Marmaras, C., Xydas, E., Cipcigan, L., 2017. Simulation of electric vehicle driver behaviour in road transport and electric power net",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_89",
+    "text": ", L., 2017. Simulation of electric vehicle driver behaviour in road transport and electric power networks. Transportation Research Part C Emerging Technologies 80, 239–256. doi:10.1016/j. trc.2017.05.004. Mehrjerdi, H., Rakhshani, E., 2019. Vehicle-to-grid technology for cost reduction and uncertainty management integrated with solar power. Journal of Cleaner Production 229, 463–469. doi:10.1016/j. jclepro.2019.05.023. Merei, G., Moshövel, J., Magnor, D., Sauer, D. U., 2016. Optimization of self-consumption and techno-economic analysis of PV-battery systems in commercial applications. Applied Energy 168, 171–178. doi:10.1016/j. apenergy.2016.01.083. Minh Duc, P., Chapuis, K., Drogoul, A., Gaudou, B., Grignard, A., Marilleau, N., Tri, N. H., 2020. Hoankiemair: simulating impacts of urban ma",
+    "section": "unknown",
+    "char_start": 61600,
+    "char_end": 62400
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_90",
+    "text": "udou, B., Grignard, A., Marilleau, N., Tri, N. H., 2020. Hoankiemair: simulating impacts of urban management practices on traffic and air pollution using a tangible agentbased model, in: 2020 RIVF International Conference on Computing and Communication Technologies (RIVF), pp. 1–7. doi:10.1109/RIVF 48685. 2020.9140787. Mouhy-Ud-Din, M. A., Azeem, F., Memon, Z., Arshad, J., 2024. Comparative techno-economic assessment of electric vehicle charging preferences: A quantitative study for sustainable ev policy in pakistan. Energy for Sustainable Development 78, 101355. doi:10.1016/j. esd.2023.101355. Mudiyanselage, M., Aghdam, F., Kazemi-Razi, S., Chaudhari, K., Marzband, M., Ikpehai, A., Abusorrah, A., Harris, G., 2024. A multiagent framework for electric vehicles charging power forecast and sm",
+    "section": "unknown",
+    "char_start": 62300,
+    "char_end": 63100
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_91",
+    "text": "h, A., Harris, G., 2024. A multiagent framework for electric vehicles charging power forecast and smart planning of urban parking lots. IEEE Transactions on Transportation Electrification 10, 2844–2857. doi:10.1109/TTE.2023.3289196. Novosel, T., Perković, L., Ban, M., Keko, H., Pukšec, T., Krajačić, G., Duić, N., 2015. Agent based modelling and energy planning – Utilization of 33\n\nMATSim for transport energy demand modelling. Energy 92, 466–475. doi:10.1016/j. energy.2015.05.091. Pagani, M., Korosec, W., Chokani, N., Abhari, R. S., 2019. User behaviour and electric vehicle charging infrastructure: An agent-based model assessment. Applied Energy 254. doi:10.1016/j. apenergy.2019.113680. Pearl, J., 1984. Heuristics. Addison Wesley Publishing Company. Rai, V., Henry, A., 2016. Agent-based mod",
+    "section": "unknown",
+    "char_start": 63000,
+    "char_end": 63800
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_92",
+    "text": ", J., 1984. Heuristics. Addison Wesley Publishing Company. Rai, V., Henry, A., 2016. Agent-based modelling of consumer energy choices. Nature Climate Change 6, 556–562. doi:10.1038/nclimate 2967. Rasca, S. I., Hu, B., Biesinger, B., Prandtstetter, M., 2024. Agent-based decision-support model for bus route redesign in networks of small cities and towns: Case study of agder, norway. Public Transport 16, 583–618. doi:10.1007/s 12469-024-00358-7. Sa’adati, R., Jafari-Nokandi, M., Saebi, J., 2021. Allocation of ress and pev fast-charging station on coupled transportation and distribution networks. Sustainable Cities and Society 65, 102527. doi:10.1016/J. SCS. 2020.102527. Sun, B., 2020. A multi-objective optimization model for fast electric vehicle charging stations with wind, pv power and ener",
+    "section": "unknown",
+    "char_start": 63700,
+    "char_end": 64500
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_93",
+    "text": "bjective optimization model for fast electric vehicle charging stations with wind, pv power and energy storage. Journal of Cleaner Production 288, 125564. doi:10.1016/j. jclepro.2020.125564. Sun, J., Che, Y., Yang, T., Zhang, J., Cai, Y., 2022. Location and capacity determination method of electric vehicle charging station based on simulated annealing immune particle swarm optimization. Energy Engineering 120, 367–384. doi:10.32604/ee.2023.023661. Taillandier, P., Gaudou, P., Grignard, A., Huynh, Q. N., Marilleau, N., Caillou, P., Philippon, D., Drogoul, A., 2019. Building, composing and experimenting complex spatial models with the gama platform. Geoinformatica 23, 299–322. doi:10.1007/s 10707-018-00339-6. Wang, Y., Infield, D., 2018. Markov Chain Monte Carlo simulation of electric vehicl",
+    "section": "unknown",
+    "char_start": 64400,
+    "char_end": 65200
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_94",
+    "text": "707-018-00339-6. Wang, Y., Infield, D., 2018. Markov Chain Monte Carlo simulation of electric vehicle use for network integration studies. International Journal of Electrical Power and Energy Systems 99, 85–94. doi:10.1016/j. ijepes. 2018.01.008. 34\n\nWilcoxon, F., 1945. Individual comparisons by ranking methods. Biometrics Bulletin 1, 80. doi:10.2307/3001968. Xiao, H., Shu, Z., Guo, Y., 2023. Location and capacity determination model of electric vehicle charging station based on charging demand forecast, in: Proc. SPIE 12790, Eighth International Conference on Electromechanical Control Technology and Transportation (ICECTT 2023), p. 127902 U. doi:10.1117/12.2689424. Yan, C., Liu, N., 2024. Electric vehicle charging station siting planning model considering distribution grids. Journal of Ph",
+    "section": "unknown",
+    "char_start": 65100,
+    "char_end": 65900
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_95",
+    "text": "lectric vehicle charging station siting planning model considering distribution grids. Journal of Physics Conference Series 2849, 012012. doi:10.1088/1742-6596/2849/1/012012. Yi, Z., Chen, B., Liu, X. C., Wei, R., Chen, J., Chen, Z., 2023. An agent-based modeling approach for public charging demand estimation and charging station location optimization at urban scale. Computers Environment and Urban Systems 101, 101949. doi:10.1016/j. compenvurbsys.2023. 101949. Yu, G., Ye, X., Xia, X., Chen, Y., 2021. Towards cognitive ev charging stations enabled by digital twin and parallel intelligence, in: 2021 IEEE 1st International Conference on Digital Twins and Parallel Intelligence (DTPI), pp. 290–293. doi:10.1109/DTPI 52967.2021.9540103. Zeng, B., Dong, H., Xu, F., Zeng, M., 2020. Bilevel program",
+    "section": "unknown",
+    "char_start": 65800,
+    "char_end": 66600
+  },
+  {
+    "source_id": "DoBuiKhanh2025",
+    "chunk_id": "chunk_96",
+    "text": "93. doi:10.1109/DTPI 52967.2021.9540103. Zeng, B., Dong, H., Xu, F., Zeng, M., 2020. Bilevel programming approach for optimal planning design of ev charging station. IEEE Transactions on Industry Applications 56, 2314–2323. doi:10.1109/tia.2020.2973189. Zhang, C., Lian, J., Min, H., Li, M., 2024. Shanghai as a model: Research on the journey of transportation electrification and charging infrastructure development. Sustainability 17, 91. doi:10.3390/su 17010091. 35",
+    "section": "unknown",
+    "char_start": 66500,
+    "char_end": 67300
+  }
+]

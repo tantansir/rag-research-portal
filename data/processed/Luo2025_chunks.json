@@ -1,0 +1,1002 @@
+[
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_01",
+    "text": "Contents lists available at Science Direct International Journal of Applied Earth Observation and Geoinformation journal homepage: www. elsevier. com/locate/jag Urban digital twins for citizen-centric planning: A systematic review of built environment perception and public participation Junjie Luoa, b , Pengyuan Liuc , Xinya Kongb, Junru Shenb, Qiaoqiao Wub, Da Xua, b, d,∗ a Zhejiang Province Key Think Tank: Institute of Ecological Civilization, Zhejiang A&F University, Hangzhou, China b College of Landscape Architecture, Zhejiang A&F University, Hangzhou, China c Urban Analytics Subject Group, Urban Studies & Social Policy Division, University of Glasgow, United Kingdom d College of Humanities and Law, Zhejiang A&F University, Hangzhou, China A R T I C L E I N F O Keywords: Urban digital",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_02",
+    "text": "ies and Law, Zhejiang A&F University, Hangzhou, China A R T I C L E I N F O Keywords: Urban digital twins Citizen-centric planning Public participation Visualization technologies Sustainable development A B S T R A C T In the context of rapid urbanization, enhancing built environment perception and promoting public participation has become critical in urban planning. Urban digital twins (UDTs) have emerged as transformative tools, enabling real-time simulation, immersive visualization, and interactive engagement with complex urban systems. This systematic review examines 84 publications (2014–2024) on the application of UDTs for enhancing built-environment perception and facilitating public participation in urban planning. Results indicate a rapid increase in UDT research post-2020, partic",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_03",
+    "text": "participation in urban planning. Results indicate a rapid increase in UDT research post-2020, particularly in North America, Europe, and Asia, led by the United States, China, and Germany. However, significant gaps remain, notably the underrepresentation of rural and peri-urban contexts, highlighting geographic and contextual biases. UDT studies primarily focus on visual and functional perception, with limited attention to auditory and risk perception dimensions. Additionally, most research concentrates on meso-scale (neighbourhood or city-level) contexts, revealing scale-specific limitations. Public participation varied widely, with academia and government predominantly driving initiatives, while direct citizen engagement remained comparatively limited. Interactive participation through i",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_04",
+    "text": "while direct citizen engagement remained comparatively limited. Interactive participation through immersive visualization technologies (e. g., VR, AR) effectively enhanced stakeholder involvement and perceptual understanding, yet raised equity concerns regarding accessibility and technological inclusivity. Future UDT research should prioritize expanding into diverse geographic and contextual settings, incorporating overlooked perceptual dimensions, and developing equitable, accessible technologies. Embracing hybrid participatory models and interoperable, geospatially-aware frameworks will be crucial for leveraging UDTs as comprehensive tools for citizen-centric and sustainable urban planning. 1. Introduction The accelerating process of global urbanization has led to increasingly complex u",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_05",
+    "text": "g. 1. Introduction The accelerating process of global urbanization has led to increasingly complex urban environments and a growing array of challenges, placing growing demands on contemporary urban planning and governance (Wang et al., 2023 a; Ajjur and Al-Ghamdi, 2022). Understanding how people perceive the built environment and how they participate in decision-making has therefore become critical (Wu et al., 2024; Zhou et al., 2023 a). Traditional urban planning methods, such as static surveys and isolated consultations, often fail to capture dynamic public feedback, leading to outcomes that do not fully meet societal needs (Luo et al., 2025 b; Liu et al., 2023). Urban Digital Twins (UDTs) have arisen as a revolutionary solution to tackle these issues (Haraguchi et al., 2024 a). By crea",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_06",
+    "text": ") have arisen as a revolutionary solution to tackle these issues (Haraguchi et al., 2024 a). By creating dynamic, data-rich replicas of physical cities, UDTs enable planners to simulate urban dynamics (Lei et al., 2024), assess environmental qualities like aesthetics and safety (Luo ∗ Corresponding author. E-mail addresses: luojunjie@zafu. edu. cn (J. Luo), xwh 9593@163.com (D. Xu).et al., 2025 a), and facilitate public engagement through interactive platforms (White et al., 2021; Luo et al., 2022 a; Grieves and Vickers, 2017). Harnessing UDTs for citizen-centric outcomes, however, requires a systematic understanding of how they are used to operationalize two key human dimensions: built-environment perception (citizens’ cognitive-affective appraisal of urban space) and public participation",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_07",
+    "text": "ronment perception (citizens’ cognitive-affective appraisal of urban space) and public participation (activities from data co-production to decision co-creation) (Luo et al., 2022 b; Zhao et al., 2025). Existing reviews have clarified DT definitions (Abdelrahman et al., 2025), catalogued life-cycle challenges (Lei et al., 2023), or mapped enabling technologies (Lehtola et al., 2022; Geremicca and Bilec, 2024). Yet none of them ask which built-environment perception facets and participation functions are already operationalized in practice, nor how these choices shift across https://doi. org/10.1016/j. jag.2025.104746 Received 3 January 2025; Received in revised form 16 July 2025; Accepted 18 July 2025 International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 A",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_08",
+    "text": "July 2025 International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 Available online 5 August 2025 1569-8432/© 2025 The Authors. Published by Elsevier B. V. This is an open access article under the CC BY-NC license ( http://creativecommons. org/licenses/bync/4.0/ ).\n\nJ. Luo et al. Table 1 Representative reviews and the gap addressed here. Review study Primary focus Limitation for this study Abdelrahman et al. (2025) Cross-domain DT definitions via NLP meta-review No inventory of perception indicators or participation modes Lei et al. (2023) Technical & socio-technical challenges of UDTs Challenges mapped, but human perception/participation not classified Lehtola et al. (2022) Sensor, AI and data-model stacks for city DTs Tech-centric; lacks citizen-perception",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_09",
+    "text": "a et al. (2022) Sensor, AI and data-model stacks for city DTs Tech-centric; lacks citizen-perception and engagement synthesis Geremicca and Bilec (2024) Urban-metabolism methods and visualization in DT context Highlights visualization gap; does not analyse participation frameworks This study UDTs for built-environment perception and public participation First systematic mapping of 16 human-centric indicators across spatial contexts spatial contexts. Table 1 positions our work against these closest surveys. Addressing this gap, we conduct a PRISMA-guided systematic literature review (SLR) of 84 peer-reviewed UDT studies (2014–2024) and pursue three questions: • Which built-environment perception facets and public participation functions have been operationalized in current UDT applications?",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_10",
+    "text": "ion facets and public participation functions have been operationalized in current UDT applications? • How do key UDT implementation strategies (including data integration methods, platform types, and communication modes) differ across projects in different spatial contexts (varying by study area scale and urban/rural setting)? • What are the major gaps or open challenges in terms of both content and methodology in current citizen-centric UDT research, and what future studies are needed to address these gaps? Our SLR contributes by (i) establishing a unified 16-indicator framework linking perception and participation, (ii) revealing cross-tabulated patterns between methodological configurations and spatial contexts, and (iii) outlining a forward agenda to close identified gaps. By mapping",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_11",
+    "text": "ons and spatial contexts, and (iii) outlining a forward agenda to close identified gaps. By mapping human perception and participation onto the fast-evolving terrain of digital twins, this review moves the discourse beyond technologycentric narratives towards evidence-based, citizen-centric urban practice. 2. Background and related work 2.1. The role of urban digital twins in citizen-centric planning UDTs, as dynamic digital replicas of physical cities, are increasingly central to smart city initiatives worldwide (Tzachor et al., 2022; Weil et al., 2023). By enabling (near)-real-time monitoring, simulation, and analysis of urban systems, they provide robust support for predictive modelling and evidence-based decision-making (Jiang et al., 2022; Luna-Reyes, 2017). Globally, flagship project",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_12",
+    "text": "nd evidence-based decision-making (Jiang et al., 2022; Luna-Reyes, 2017). Globally, flagship projects like Singapore’s Virtual Singapore and national strategies in China and the UK demonstrate a strong policy commitment to leveraging UDTs for functions ranging from resource management and disaster response to infrastructure development (Gobeawan et al., 2018; Li et al., 2024; Bolton et al., 2018). These platforms typically integrate high-fidelity 3D models with multi-source data streams from Io T sensors and geospatial databases, turning continuous monitoring into actionable urban intelligence (Xu et al., 2022; Adade and de Vries, 2023). While the technical conceptualization of UDTs varies, from methodological frameworks to integrated technological systems, a consensus exists on their core",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_13",
+    "text": "from methodological frameworks to integrated technological systems, a consensus exists on their core components: 3D city models, sensor networks, and AI-driven analytics (Lei et al., 2023; Batty, 2024; Luo et al., 2022 a). These components collectively support sophisticated visualization and data-driven capabilities. Crucially for citizen-centric planning, UDTs offer powerful tools for assessing built environments and facilitating public engagement across the entire planning lifecycle (Ferré-Bigorra et al., 2022). For this review, we adopt a widely accepted definition: a UDT is a dynamic digital representation of the physical urban environment, integrating multi-source data and advanced technologies to simulate, monitor, and enhance urban systems in (near)-real-time (Haraguchi et al., 2024",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_14",
+    "text": "nologies to simulate, monitor, and enhance urban systems in (near)-real-time (Haraguchi et al., 2024 b; Lei et al., 2023; Luo et al., 2025 a). This definition underscores their potential not only for urban management but also for empowering citizen-centric decision-making. 2.2. The perception-powered urban studies Building on environmental psychology, built environment perception refers to how individuals and groups interpret and respond to their surroundings. It is a cognitive-affective appraisal of urban space encompassing sensory, psychological, and behavioural dimensions such as visual quality, perceived safety, accessibility, and social ambience (Zhou and Tan, 2024; Luo et al., 2022 b; Wang et al., 2019). Foundational works, such as Lynch’s The Image of the City (Lynch, 1964), highlig",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_15",
+    "text": "Wang et al., 2019). Foundational works, such as Lynch’s The Image of the City (Lynch, 1964), highlighted the importance of visual coherence, spatial organization, and functional elements in shaping urban perception (Filomena et al., 2019), while subsequent studies link built environment perception to safety, comfort and social interaction that shape mobility and place attachment (Zhang et al., 2021; Xu et al., 2023). Understanding these perceptions is critical because they directly inform urban design and policy (Liu et al., 2023). Frameworks from environmental psychology, cognitive science and landscape architecture all stress its multidimensional nature: visual appeal, social dynamics, functional convenience, and perceived risk (Gifford, 2014; Taupin et al., 2023). Spaces attuned to thes",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_16",
+    "text": "ctional convenience, and perceived risk (Gifford, 2014; Taupin et al., 2023). Spaces attuned to these dimensions foster belonging, enhance social cohesion, reduce safety concerns, and improve overall well-being (Navarrete-Hernandez et al., 2021; Avery et al., 2021; Mouratidis, 2021). Conversely, negative perceptions signal environmental stress and guide targeted interventions (Stanislav and Chin, 2019). As cities evolve, the role of built environment perception in urban planning has become increasingly significant (Jo and Jeon, 2020). Perception-oriented planning leverages the concept of ’humans as sensors,’ recognizing that citizens’ lived experiences provide significant insights into the functionality and quality of urban spaces (Liu et al., 2023; Ye et al., 2023). This approach strength",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_17",
+    "text": "unctionality and quality of urban spaces (Liu et al., 2023; Ye et al., 2023). This approach strengthens the connection between people and their environment and allows planners to identify sources of stress, such as poorly designed areas, to enable targeted interventions (Luo et al., 2022 a; White et al., 2021). UDTs provide an innovative pathway to operationalize these ideas. By coupling realtime data with immersive 3D visualization, they allow stakeholders to evaluate how design changes, such as new street layouts, might impact user experiences, including pedestrian comfort and perceived safety (Ferré-Bigorra et al., 2022; Luo et al., 2025 a). International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 2\n\nJ. Luo et al. Fig. 1. Database search and literature fil",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_18",
+    "text": "ion and Geoinformation 143 (2025) 104746 2\n\nJ. Luo et al. Fig. 1. Database search and literature filtering process. 2.3. Public participation in urban planning Public participation refers to the process through which citizens actively engage in urban planning and decision-making, contributing to shaping their living environments (Cui et al., 2022; Haklay et al., 2018). As highlighted by Arnstein’s Ladder of Citizen Participation (Arnstein, 1969), public involvement varies in form and degree but plays a central role in achieving democratic and inclusive planning. Theories of collaborative planning further emphasize that active engagement leads to more equitable and transparent decisions by addressing diverse stakeholder needs (Luo et al., 2022 a; Li et al., 2020). Consequently, effective pa",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_19",
+    "text": "dressing diverse stakeholder needs (Luo et al., 2022 a; Li et al., 2020). Consequently, effective participation is considered a cornerstone of contemporary urban planning, enhancing the legitimacy and feasibility of planning outcomes by aligning them with community aspirations (Bryson et al., 2013; Fung, 2015). However, traditional methods of public participation, such as public hearings and surveys, face notable limitations. These approaches often provide limited engagement opportunities, struggle to attract broad and representative participation, and suffer from asymmetric information, where citizens lack access to comprehensive planning data (Akmentina, 2023; Kingston, 2007). These challenges can result in low participation rates and suboptimal outcomes. The advent of digital technologi",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_20",
+    "text": "nges can result in low participation rates and suboptimal outcomes. The advent of digital technologies offers new avenues to overcome these barriers by enhancing both accessibility and interactivity (Adade and de Vries, 2023). Digital twin technology, in particular, offers a powerful means to revolutionize public engagement (Luo et al., 2022 a). UDTs serve as intuitive, interactive platforms where citizens can immerse themselves in planning proposals using technologies like augmented and virtual reality (AR/VR) to explore scenarios and provide real-time feedback (Luo et al., 2025 a; White et al., 2021). This approach not only broadens participation but also deepens it, enabling more meaningful contributions. Furthermore, UDTs facilitate a seamless integration of public participation with b",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_21",
+    "text": "ul contributions. Furthermore, UDTs facilitate a seamless integration of public participation with built environment perception. Citizens can share their perceptual insights through these digital platforms, which planners can then use to refine and optimize designs, fostering a more collaborative and human-centric planning process (Secinaro et al., 2022; Dembski et al., 2020; Abdeen et al., 2023). 3. Methodology This study employs a systematic literature review approach to investigate the theme of ‘citizen-centric urban digital twins’, systematically analysing the current applications and future prospects of digital twins in built environment perception and public participation. The review process adheres to the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) gu",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_22",
+    "text": "rocess adheres to the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines to ensure the systematicity, transparency, and reproducibility (Moher et al., 2009). The entire search and screening process is illustrated in Fig. 1. 3.1. Literature search and screening We conducted a comprehensive search in the Scopus and Web of Science databases for peer-reviewed articles and conference papers published in English between January 2014 and August 2024. Our search strategy was designed to retrieve literature at the intersection of three core themes: (1) UDTs and related 3D city models, (2) public participation, and (3) built environment perception. The detailed search strings used for the queries were iteratively refined and are provided in Supplementary Material",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_23",
+    "text": "ch strings used for the queries were iteratively refined and are provided in Supplementary Material A. To ensure the included literature is highly relevant and of high quality, this study established inclusion and exclusion criteria. The inclusion criteria were as follows: (1) Articles and conference papers published in peer-reviewed journals. (2) Studies involving urban digital twin technologies and their applications in built environment perception and public participation. (3) Articles written in English. The exclusion criteria were: (1) Studies that do not involve urban digital twin technologies or their related applications. (2) Non-peer-reviewed literature (e. g., news articles, blog posts, etc.). (3) Articles written in languages other than English. As shown in Fig. 1, our initial s",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_24",
+    "text": "osts, etc.). (3) Articles written in languages other than English. As shown in Fig. 1, our initial search produced 635 publications. Following the elimination of duplicates and the evaluation of titles and abstracts, 210 papers were chosen for full-text assessment. The quality of these articles was then evaluated using the Critical Appraisal Skills Programme (CASP) checklist, a standard tool for assessing the rigour and reliability of review studies (Long et al., 2020). This final quality assessment resulted in a core set of 84 publications for in-depth analysis. 3.2. Data processing and analysis We conducted a structured data extraction for each of the 84 selected studies using a standardized indicator system designed to ensure consistency and comparability. As illustrated in Fig. 2, this",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_25",
+    "text": "ed indicator system designed to ensure consistency and comparability. As illustrated in Fig. 2, this system comprises 16 indicators organized into four key dimensions: International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 3\n\nJ. Luo et al. Fig. 2. Standardized indicator system for citizen-centric UDT review. (1) Research Background, capturing contextual information such as study scale and environment type; (2) Public Participation, covering stakeholder types, engagement levels, and communication modes; (3) Technical Support, detailing the platforms, tools, and data sources used; and (4) Perception, identifying the specific perceptual facets and assessment methods employed. The detailed definitions and examples for all 16 indicators are provided in Supplemen",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_26",
+    "text": "hods employed. The detailed definitions and examples for all 16 indicators are provided in Supplementary Material B. Following the data extraction, we performed a multi-stage analysis. First, we conducted a descriptive analysis by compiling frequency statistics for each indicator to identify prevalent characteristics and trends in UDT research (e. g., common participant types, dominant perception themes). Subsequently, we carried out a comparative analysis using cross-tabulations to explore the relationships between different dimensions, such as how technological choices and participation modes vary across different spatial contexts (e. g., urban vs. rural settings). This systematic analysis of patterns and co-occurrences allowed us to identify key trends, gaps, and opportunities in curren",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_27",
+    "text": "of patterns and co-occurrences allowed us to identify key trends, gaps, and opportunities in current citizen-centric UDT applications, the results of which are presented in the subsequent section. 4. Results 4.1. Overview of selected studies The 84 publications span several regions, with the majority concentrated in North America, Europe, and Asia, where digital twin technologies are well-supported by infrastructure and policies (Fig. 3). The United States leads in North America with 14 studies, while China contributes the most globally with 18 studies. Europe shows diverse participation, with Germany (10) and France (4) as major contributors, alongside several other countries. In Asia, South Korea and Japan play active roles, and Singapore reflects its growing focus on smart cities. Emer",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_28",
+    "text": "th Korea and Japan play active roles, and Singapore reflects its growing focus on smart cities. Emerging contributions from the global south, such as Kenya in Africa (Onyimbi et al., 2018; Sabri et al., 2016), demonstrate increasing global engagement with urban digital twins. The majority of the studies (54 out of 84) were published between 2022 and 2024, with 23 studies in 2023 representing the peak. This upward trend reflects growing academic and practical attention towards the integration of DTs in urban planning. Earlier years, from 2014 to 2019, show relatively limited engagement, with only 13 studies across 6 years. The surge in studies from 2020 onward aligns with the increasing global focus on smart cities, digital governance, and citizen participation facilitated by advanced techn",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_29",
+    "text": "l focus on smart cities, digital governance, and citizen participation facilitated by advanced technologies (Eilola et al., 2023; Lahat and Nathansohn, 2023). The scope of the reviewed studies shows a clear bias towards singlesite investigations and specific spatial scales. Most research (61 studies) focuses on a single case study, with multi-site comparative analyses being rare. A dominant meso-level (neighbourhood or city-scale) focus is evident in 64 papers, featuring well-known urban centres like Shanghai and New York (Park et al., 2024). In contrast, fewer studies address the micro-scale (10 studies), such as individual precincts or parks (Luo et al., 2022 a), or the macro-scale (8 studies), which typically tackle regional or national infrastructure challenges (Adreani et al., 2024).",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_30",
+    "text": "ies), which typically tackle regional or national infrastructure challenges (Adreani et al., 2024). The reviewed articles are distributed across a range of journals, with Sustainable Cities and Society, ISPRS International Journal of Geo Information, and Journal of Management in Engineering being among the most frequent outlets. 4.2. Built environment perception in UDTs 4.2.1. Scope and dominant perception facets Across the reviewed studies, UDTs were widely applied to capture and analyse diverse human perceptions of the built environment (Fig. 4), notably emphasizing visual, functional, social, safety, and comfort dimensions. Visual perception was most frequently examined (55 studies, 65.5%), reflecting strong attention towards aesthetic quality, spatial openness, and visual appeal within",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_31",
+    "text": "), reflecting strong attention towards aesthetic quality, spatial openness, and visual appeal within urban spaces (Li et al., International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 4\n\nJ. Luo et al. Fig. 3. Overview of selected studies. (A) geographic areas covered in the selected studies, (B) publication years of these papers, (C) the number of case study areas and (D) the scale of research areas. Fig. 4. Distribution of (A) perception facets, (B) model-viewing modalities and (C) perception-assessment methods across 84 UDT studies. 2023). Aesthetic quality refers to the subjective evaluation of the beauty or attractiveness of urban environments, often measured by visual harmony, material textures, architectural styles, and colour schemes (Luo et al., 2022 c",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_32",
+    "text": "d by visual harmony, material textures, architectural styles, and colour schemes (Luo et al., 2022 c). Spatial openness pertains to the perceived spaciousness and openness of urban spaces, typically assessed through indicators such as sky-view factors, street width-to-building height ratios, and the presence of unobstructed views (Liu et al., 2023). Visual appeal encompasses broader visual satisfaction derived from urban environments, combining aesthetic beauty with factors such as greenery, landmark visibility, and overall spatial coherence (Jaalama et al., 2022). In over one-third of these publications (53 studies), functional perception was reported, used to assess the usability and accessibility of urban spaces. Key aspects include transportation convenience, infrastructure adequacy, a",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_33",
+    "text": "sibility of urban spaces. Key aspects include transportation convenience, infrastructure adequacy, and service availability, ensuring that environments meet the practical needs of users (Kavouras et al., 2023; Pastor et al., 2022). Social and safety perceptions also received considerable attention, appearing in 41 studies (48.8%) and 40 studies (47.6%) respectively. Social perception primarily focused on community cohesion, interaction opportunities, and how urban spaces facilitate meaningful social engagement (Onyimbi et al., 2018; Dembski et al., 2020). Safety perception encompassed both physical safety, including infrastructure stability and traffic management, and psychological aspects such as crime perception and general sense of security (Wang et al., 2022; Adeel et al., 2021). Other",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_34",
+    "text": "uch as crime perception and general sense of security (Wang et al., 2022; Adeel et al., 2021). Other perceptual dimensions were less prominent. Comfort perception (31 studies) focused on physical and psychological well-being, often related to thermal comfort and air quality (Qian et al., 2023; del Campo et al., 2024). Critically, auditory and risk perceptions were significantly underrepresented, each appearing in only two studies. This limited attention to factors like urban soundscapes or environmental hazards (e. g., flooding) reveals a major gap in current UDT research (Vogelbacher et al., 2019; Stempel et al., 2018). Furthermore, studies predominantly targeted high-density urban environments (71 studies, 84.5%), indicating that complex and densely built areas remain the primary focus d",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_35",
+    "text": "ents (71 studies, 84.5%), indicating that complex and densely built areas remain the primary focus due to pressing challenges in visual quality, functional usability, and environmental comfort (Lv et al., 2022). In contrast, low-density (5 studies, 6%) (Jaalama et al., 2022), rural (3 studies, 3.6%), and peri-urban settings (1 study, 1.2%) received considerably less attention (Thuvander et al., 2022; Qian et al., 2023), signifying an opportunity for expanding UDT applications to more varied contexts. 4.2.2. Perception facet and spatial scale To understand the application nuances of built environment perception in UDTs, we conducted a cross-tabulated analysis examining International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 5\n\nJ. Luo et al. Fig. 5. Cross-tabu",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_36",
+    "text": "f Applied Earth Observation and Geoinformation 143 (2025) 104746 5\n\nJ. Luo et al. Fig. 5. Cross-tabulation of perception types and spatial scale. how perceptual facets align with different spatial scales: micro (block or street), meso (neighbourhood or city), and macro (region or national). Fig. 5 provides an overview, revealing patterns of emphasis and gaps within the existing literature. Visual and functional perceptions dominate across all scales but vary in their specific application contexts. At the micro-scale, visual perception typically focuses on finegrained design features, such as facade aesthetics and streetscape appeal, whereas functional perception emphasizes immediate usability and accessibility. As spatial scale increases, functional perception grows more prominent, shiftin",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_37",
+    "text": "y and accessibility. As spatial scale increases, functional perception grows more prominent, shifting towards infrastructure networks, transportation efficiency, and city-wide usability. Social and safety perceptions are predominantly addressed at the meso-scale, reflecting community dynamics and urban security concerns. Comfort perception is frequently examined at the micro-scale through thermal comfort or noise analysis but less intensively at larger scales. Perception facets such as auditory and risk perception remain notably underrepresented, indicating potential areas for future UDT applications. This cross-tabulation reveals significant patterns. Visual perception remains consistently vital across scales, highlighting the universal importance of aesthetics in urban experiences (Muham",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_38",
+    "text": "vital across scales, highlighting the universal importance of aesthetics in urban experiences (Muhammad et al., 2019). Functional perception increases notably from micro to macro scales, reflecting growing complexity in larger urban systems. Social and safety perceptions are primarily concentrated at the mesolevel, aligning with typical urban governance and community planning scopes. Conversely, auditory and risk perceptions indicate clear research gaps, signalling future directions for integrating these perceptual dimensions into UDTs. 4.2.3. Data fusion and perception metrics To construct comprehensive perception metrics, UDTs rely on the effective fusion of multi-source datasets. Our review reveals that a majority of studies (69 out of 84) employed a mixed-methods approach (Fig. 4), int",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_39",
+    "text": "ew reveals that a majority of studies (69 out of 84) employed a mixed-methods approach (Fig. 4), integrating three primary data streams. The first is subjective data, typically qualitative feedback from surveys and interviews that captures residents’ attitudes and preferences (Luo et al., 2022 a). The second is objective data, comprising quantitative measurements from Io T sensors, GIS, and remote sensing platforms (e. g., Li DAR, UAVs) that describe the physical environment (Major et al., 2021). The third is behavioural data, derived from observational methods like pedestrian tracking, which provides insights into actual space usage (Kim et al., 2019). The fusion of these heterogeneous data streams is supported by a diverse technical stack (Fig. 6). This process involves using geospatial",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_40",
+    "text": "streams is supported by a diverse technical stack (Fig. 6). This process involves using geospatial analytics platforms (e. g., Arc GIS) for spatial data integration, visualization engines (e. g., Unity 3D) for creating immersive representations, and machine learning techniques for extracting nuanced insights, such as applying Natural Language Processing (NLP) to analyse sentiment in public feedback (Weil et al., 2023; Somanath et al., 2024; Kumi et al., 2023). The goal of this technical integration is to enable researchers to systematically correlate subjective human perceptions with objective environmental attributes. This synthesis of data and techniques allows for the development of holistic and actionable perception metrics. These are not individual data entries, but rather composite",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_41",
+    "text": "stic and actionable perception metrics. These are not individual data entries, but rather composite indicators that quantify complex human experiences. For example, a ‘perceived safety metric’ can be constructed by combining subjective survey ratings of safety with objective data like crime statistics, street lighting levels (from GIS), and visibility analysis within a 3D model (Wang et al., 2024). Similarly, a ‘thermal comfort metric’ could be developed by linking self-reported comfort levels with real-time microclimate data from Io T sensors and solar radiation models (Schrotter and Hürzeler, 2020). By creating such multidimensional metrics, UDTs move beyond simple data visualization to offer planners powerful analytical tools. These tools can identify areas needing improvement, test the",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_42",
+    "text": "fer planners powerful analytical tools. These tools can identify areas needing improvement, test the potential perceptual impact of interventions, and ultimately support more targeted and evidence-based urban planning. 4.2.4. Visualization and immersive experience Visualization and immersive interaction are critical components for analysing built-environment perception in UDTs, as they enhance model realism and deepen stakeholder engagement (Luo et al., 2025 b). Our review found a spectrum of visualization modes, from conventional desktop displays to advanced immersive technologies. The most predominant method involved traditional computer displays, often using web-based or desktop GIS dashboards (e. g., Arc GIS Online, City Engine). Their popularity stems from their practicality and ease",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_43",
+    "text": "oards (e. g., Arc GIS Online, City Engine). Their popularity stems from their practicality and ease of deployment in planning contexts, providing an accessible means for stakeholder interaction (Lei et al., 2023; Adreani et al., 2024). However, a growing number of studies (approx. one-third) employed immersive technologies to foster deeper cognitive and affective engagement. VR environments, for instance, allowed users to virtually ‘enter’ urban scenarios and experience proposed changes at a human scale, which reportedly enhanced their understanding of spatial aesthetics and safety compared to conventional methods (Dembski et al., 2020; Matthys et al., 2021). Less frequently, AR and MR technologies were used to overlay digital information onto physical settings, further strengthening spati",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_44",
+    "text": "ologies were used to overlay digital information onto physical settings, further strengthening spatial cognition (Kikuchi et al., 2022). The realism of digital twin models significantly affected user perceptions and experience quality. Our results show that realistic models are the most commonly employed (69 studies), indicating a preference for accurate representations that capture environmental details while balancing complexity and usability (Adreani et al., 2024). Following International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 6\n\nJ. Luo et al. Fig. 6. Technical stack supporting data fusion in the reviewed UDT studies. that, Abstract models (5 studies), focus on simplified, conceptual representations (e. g., white models) that emphasize structure and sp",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_45",
+    "text": "ocus on simplified, conceptual representations (e. g., white models) that emphasize structure and spatial relationships without detailed textures or colour (Park et al., 2024). Photorealistic models, identified in 4 studies, provide highly detailed visualizations that aim to replicate real-world appearance as closely as possible, enhancing user immersion and experience (Jaalama et al., 2022; Belaroussi et al., 2024; Iakovides et al., 2022). The preference for realistic models reflects the practical need for models that accurately represent urban environments without the computational load of photorealistic rendering (Luo et al., 2022 a). The presence of both abstract and photorealistic models highlights the versatility of DTs in addressing different project requirements, from conceptual pl",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_46",
+    "text": "s highlights the versatility of DTs in addressing different project requirements, from conceptual planning to immersive visualization. Several studies specifically highlighted the benefits of immersive technologies in eliciting nuanced perceptual feedback from participants. VR-enabled studies often reported enhanced understanding of spatial aesthetics, perceived safety, and functional usability compared to conventional visualizations (Matthys et al., 2021). Furthermore, immersive methods facilitated more effective participatory planning, as they allowed stakeholders, ranging from planners and policymakers to citizens, to experience urban environments at an experiential level, leading to richer discussions and feedback (Kavouras et al., 2023; Lee et al., 2024). 4.3. Public participation in",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_47",
+    "text": "er discussions and feedback (Kavouras et al., 2023; Lee et al., 2024). 4.3. Public participation in UDTs 4.3.1. Participants and scale spectrum The development and implementation of UDTs involve a diverse spectrum of actors with distinct roles (Indicator 5). Our review shows that academia is the primary driver, leading or substantially contributing to nearly all reviewed projects (82 of 84). Academic institutions typically focus on theoretical innovation and providing technical expertise (Jaalama et al., 2022). Government agencies also represent major stakeholders, actively participating in 43 studies (51.2%). These agencies typically provide critical public datasets, regulatory guidance, and policy alignment to ensure UDT applications conform to urban governance objectives and strategic p",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_48",
+    "text": "d policy alignment to ensure UDT applications conform to urban governance objectives and strategic planning priorities. The frequent involvement of government underscores the alignment of UDTs with public-sector initiatives on sustainable urban development and citizen engagement (Schrotter and Hürzeler, 2020). Private companies, identified in 20 studies (23.8%), commonly contribute technical capabilities, financial resources, or proprietary software platforms. Their role usually involves the commercial implementation of UDT systems or the integration of advanced digital technologies such as Io T sensors and real-time analytics. Such collaborations reflect a growing trend of public–private partnerships aimed at leveraging commercial innovation within urban planning contexts (Adreani et al.,",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_49",
+    "text": "rtnerships aimed at leveraging commercial innovation within urban planning contexts (Adreani et al., 2024). Citizens were explicitly listed as co-developers in 14 studies (16.7%), highlighting a recognized yet comparatively limited direct public engagement at the development stage. Citizen involvement typically manifests through participatory workshops, feedback mechanisms, and data crowdsourcing, directly embedding public insights into the UDT models (Dembski et al., 2020; Onyimbi et al., 2018). Additionally, NGOs and community organizations were mentioned in 10 studies (11.9%), playing pivotal roles in facilitating inclusive participation, advocating for marginalized communities, and ensuring equitable representation within urban projects (Ford and Wolf, 2020; Zhang et al., 2024). The di",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_50",
+    "text": "ing equitable representation within urban projects (Ford and Wolf, 2020; Zhang et al., 2024). The diversity of end-users further illustrates the multidimensional nature of UDT implementation (Indicator 6). Citizens emerge as the most frequently mentioned end-user group (67 studies, 79.8%), reflecting the emphasis on citizen-centric planning and the pivotal role of public engagement for validating and enhancing urban solutions (Liu et al., 2023). Urban planners were also prominently represented as end-users in 58 studies (69.0%), indicating their crucial role in operationalizing digital twin insights into actionable urban management and policy decisions (Schrotter and Hürzeler, 2020). Academics featured as end-users in 40 studies (47.6%), primarily utilizing digital twins as experimental pl",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_51",
+    "text": "cs featured as end-users in 40 studies (47.6%), primarily utilizing digital twins as experimental platforms or pedagogical tools (Wang et al., 2023 c). Government departments served as explicit end-users in 13 studies (15.5%), mainly focusing on regulatory compliance, resource allocation, and governance processes (Karren et al., 2024). Finally, other diverse stakeholder groups, including students, building managers, and heritage conservators, appeared in 17 studies (20.2%), demonstrating the wide-ranging applicability of UDT technologies across sectors (Qian et al., 2023; Ham and Kim, 2020; Vogelbacher et al., 2019). The reviewed studies also varied significantly in the scale of participant engagement, as reported in Indicator 8 (Fig. 7). Among the studies explicitly detailing participant",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_52",
+    "text": "engagement, as reported in Indicator 8 (Fig. 7). Among the studies explicitly detailing participant numbers (n=32), a broad spectrum emerges. Small-scale engagement (1–50 participants) characterized the majority of studies (16 studies, 50%), reflecting a targeted, in-depth approach to localized projects (Ng et al., 2023; Liu et al., 2023). Medium-scale participation (51–200 participants) was observed in 11 studies (34.4%), often involving broader stakeholder groups or more extensive community engagement strategies (Cheng et al., 2017; Al Jurdi et al., 2023). Large-scale participation (>200 participants) was relatively rare, documented in only 5 studies (15.6%), typically associated with extensive urban interventions requiring widespread International Journal of Applied Earth Observation an",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_53",
+    "text": "nsive urban interventions requiring widespread International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 7\n\nJ. Luo et al. Fig. 7. Stakeholder involvement across reviewed UDT projects: (A) Number of participants and (B) types of communication allowed. public input or comprehensive stakeholder networks (Würstle et al., 2021; Dembski et al., 2019). Collectively, these findings indicate that while UDT projects commonly mobilize diverse stakeholder groups, direct citizen participation remains relatively limited, and most projects focus on smaller, more manageable engagement scales (Kavouras et al., 2023). Expanding the depth and breadth of public involvement, particularly through largescale or inclusive methodologies, represents an important opportunity for enhanci",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_54",
+    "text": "larly through largescale or inclusive methodologies, represents an important opportunity for enhancing the effectiveness, legitimacy, and social impact of future UDT deployments (Masoumi et al., 2023; Fan et al., 2020). 4.3.2. Platform–interaction matrix The effectiveness of public participation within UDT projects strongly depends on the interaction modalities and digital platforms utilized (Indicators 9–13). Our analysis reveals distinct patterns linking communication methods, categorized as one-way, two-way, and group interactions (Fig. 7), to technological platforms, ranging from web-based GIS tools and desktop visualization to immersive virtual and augmented reality environments. Table 2 presents this platform– interaction matrix, summarizing their prevalence and associations across t",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_55",
+    "text": "2 presents this platform– interaction matrix, summarizing their prevalence and associations across the reviewed studies. One-way communication methods, involving unilateral data transmission such as surveys or comment submissions, appeared in a limited set of studies (6 cases). These typically employed web-based GIS platforms and conventional desktop interfaces, facilitating straightforward public data collection and basic user feedback (Vogelbacher et al., 2019). Although relatively limited in scope, such unidirectional modes proved effective for preliminary data-gathering or initial public consultations, particularly when scalability and simplicity were critical. Two-way communication, facilitating active dialogue between planners and citizens, was the most common interaction modality, r",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_56",
+    "text": "ilitating active dialogue between planners and citizens, was the most common interaction modality, reported in 63 studies. Interactive web platforms, such as Arc GIS Online and Arc GIS Experience Builder, frequently served as enabling technologies, offering intuitive, browser-based interfaces for stakeholders to explore urban scenarios and directly provide feedback (Lei et al., 2023). Desktop-based platforms (e. g., City Engine, SUMO, Unity 3D) further supported interactive dialogues by allowing users to engage dynamically with 3D models, visualizing the implications of proposed interventions in real-time or near-real-time scenarios (del Campo et al., 2024; Zhou et al., 2023 b). Notably, immersive environments, such as VR and AR, emerged as increasingly popular platforms for two-way commun",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_57",
+    "text": "ersive environments, such as VR and AR, emerged as increasingly popular platforms for two-way communication, featured in 42 studies. VR environments created via Unity 3D or Unreal Engine enabled immersive, eye-level experiences of urban scenarios, significantly enhancing spatial comprehension and stimulating richer dialogues between stakeholders (Dembski et al., 2020). Similarly, AR platforms using mobile devices or Holo Lens offered contextually enriched interactions (Kikuchi et al., 2022; Li et al., 2023), allowing users to overlay digital data directly onto physical spaces, thus facilitating immediate feedback and intuitive engagement (Heck et al., 2023). Group communication, characterized by collaborative dialogue involving multiple participants simultaneously, was evident in 33 studie",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_58",
+    "text": "d by collaborative dialogue involving multiple participants simultaneously, was evident in 33 studies. Table 2 Platform–Interaction matrix. Platform type One-way Two-way Group Web-based GIS dashboards Low Medium Low Desktop 3D/simulation toolsa Low High High Virtual-Reality headsets (VR) Low High Medium Collaborative env. (CAVE, Cesium JS) – Low Medium Legend: High (>20 studies); Medium (6–20); Low (1–5); ‘‘–’’ = no instance reported. a e. g. Unity 3D. This modality often leveraged immersive and interactive environments– most notably, collaborative virtual spaces such as the CAVE (Cave Automatic Virtual Environment)–which supported simultaneous multiuser interactions and joint scenario exploration (Kim et al., 2019). Platforms like Unreal Engine, Unity 3D, and web-based collaborative tools",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_59",
+    "text": "ration (Kim et al., 2019). Platforms like Unreal Engine, Unity 3D, and web-based collaborative tools (e. g., Cesium JS, Snap4City) were also extensively utilized to create shared virtual environments where groups could collectively assess urban planning alternatives (Ellul et al., 2024; Matthys et al., 2021; Dembski et al., 2020). This capability for collaborative visualization and synchronous decision-making notably enhanced stakeholder alignment, consensus-building, and participatory depth (Iakovides et al., 2022; Sabri et al., 2016). In summary, two-way and group communication modes dominated UDT applications, significantly outperforming one-way communication in terms of facilitating meaningful citizen engagement (Adreani et al., 2024). The technological platforms chosen often determine",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_60",
+    "text": "ingful citizen engagement (Adreani et al., 2024). The technological platforms chosen often determined the depth and quality of interactions, with immersive VR and AR tools distinctly enhancing participation experiences through realistic simulations and spatially contextualized dialogues (Lv et al., 2022; Würstle et al., 2021). Conversely, simpler web-based and desktop platforms provided essential accessibility and scalability, broadening participation reach across diverse stakeholder groups. Future research could further explore hybrid platform strategies, combining immersive technologies’ perceptual richness with the broad accessibility of web-based interfaces, thereby enhancing overall public participation effectiveness and inclusivity. 4.3.3. Levels of participation and case differences",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_61",
+    "text": "lic participation effectiveness and inclusivity. 4.3.3. Levels of participation and case differences Building on the interaction frequencies already reported in Table 2, this subsection maps those communication modes onto Arnstein’s classical ‘ladder’ of participation (Arnstein, 1969). Across the 84 publications we observe a spectrum that runs from passive informing to genuinely collaborative, group-based co-creation. Table 3 summarizes the distribution of cases across four operational tiers, cross-tabulated by urban versus rural/peri-urban context and by the visual/technical set-ups that enabled interaction. Only 5 urban cases rely on one-way information flows, typically static Web-GIS dashboards or 3D viewers that broadcast a proposed plan and solicit minimal feedback (Vogelbacher et al.",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_62",
+    "text": "boards or 3D viewers that broadcast a proposed plan and solicit minimal feedback (Vogelbacher et al., 2019). No rural or peri-urban study stopped at this purely ‘Informing’ stage, suggesting that even resource-constrained contexts attempt at least some form of dialogue once a digital-twin platform is deployed. The clear majority, International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 8\n\nJ. Luo et al. Table 3 Participation mode, context bias, and dominant technology in UDT studies. Participation mode Urban Rural/peri Typical visual devices (freq.) Main platforms (freq.) Informing 5 0 Desktop display (4); VR (1) Arc GIS (1); Context Capture (1) Two–way dialogue 60 4 Desktop (46); VR (24) Arc GIS (6); Unity (9) Group interaction 31 2 Desktop (29); VR (15) Unit",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_63",
+    "text": "60 4 Desktop (46); VR (24) Arc GIS (6); Unity (9) Group interaction 31 2 Desktop (29); VR (15) Unity (6); Sketch Up (1); Cesium JS (1) Not specified 10 0 Desktop (8); VR (1); AR (1) Unity (1) 64 projects (60 urban, 4 rural/peri-urban), move beyond information provision to bidirectional exchange. Most pair web-based GIS or desktop 3D twins with surveys, comment widgets, or live annotation tools (Lv and Fridenfalk, 2023; Lei et al., 2023). VR walk-throughs appear in almost 40% of these cases, providing richer spatial cues that catalyze discussion. Dialogue-oriented twins are therefore the defacto standard for citizen-centric UDT practice. Further, 33 studies enable synchronous multi-user sessions, either workshop-style meetings around a shared screen or fully immersive collaborative VR/CAVE",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_64",
+    "text": "ions, either workshop-style meetings around a shared screen or fully immersive collaborative VR/CAVE environments (Luo et al., 2025 a). While still urban-biased (31 vs 2 cases), this mode demonstrates the value of collective scenario exploration: participants jointly modify design parameters, observe instant visual updates, and negotiate trade-offs on the spot. Across all modes the evidence base is overwhelmingly urban (106 participation instances vs. 6 rural/peri-urban). Limited broadband connectivity, lower digital literacy, and the cost of immersive hardware curtail deep engagement outside metropolitan areas. Rural pilots also favour simpler desktop visualizations, whereas urban projects exploit VR more aggressively. Addressing this imbalance will require low-cost visualization alternat",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_65",
+    "text": "exploit VR more aggressively. Addressing this imbalance will require low-cost visualization alternatives (e. g. Web-XR on smartphones) and capacitybuilding programmes that democratize access to twin technologies. Quantifying participation by mode, context and technology clarifies two strategic priorities for future UDT deployments: (i) scale co-creation methods beyond elite urban pilots, especially in underserved regions; and (ii) develop lightweight, interoperable platforms that can flexibly support both basic dialogue and high-end immersive collaboration. 5. Discussion 5.1. Critical gaps and thematic challenges The systematic analysis reveals both the breadth and limitations of current UDT implementations in capturing built environment perception and enabling public participation. While",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_66",
+    "text": "implementations in capturing built environment perception and enabling public participation. While many projects address core perception dimensions like visual and functional aspects (Zhang et al., 2024; Fan et al., 2020), the integration of the full spectrum of human perceptions remains a challenge. A critical gap exists in multi-sensory integration; facets such as auditory and risk perceptions were largely absent from the reviewed studies (Irfan et al., 2024). This oversight, where visual aesthetics often dominate at the expense of soundscapes or a sense of risk, can lead to UDT models that provide an incomplete picture of citizens’ lived experiences (Lei et al., 2024). However, this is precisely where Earth Observation (EO) and insitu sensing technologies can play a transformative role",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_67",
+    "text": "recisely where Earth Observation (EO) and insitu sensing technologies can play a transformative role. For instance, dynamic 3D noise maps, crucial for auditory perception, require highresolution urban models that capture the complex geometry of buildings and vegetation. Recent advances in geospatial AI now enable the automated reconstruction of these critical urban elements from mobile Li DAR and high-resolution remote sensing (RS) imagery, providing the essential geometric foundation for such multi-sensory analysis (Chen et al., 2024; Wang et al., 2025; Zheng et al., 2023). Similarly, risk perception, particularly for hazards like flooding, can be greatly enriched by coupling citizen feedback with near-real-time inundation maps derived from Sentinel-1 Synthetic Aperture Radar (SAR) imager",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_68",
+    "text": "ck with near-real-time inundation maps derived from Sentinel-1 Synthetic Aperture Radar (SAR) imagery. This technique has become a standard practice in large-area disaster monitoring and is increasingly integrated into operational services (Roth et al., 2025; Cian et al., 2024). Equally significant is the fragmentation observed in participation models. While most studies emphasized end-user involvement, a notable subset relied on top-down, expert-driven approaches with minimal citizen input (Lei et al., 2023). Genuine co-creation or citizen empowerment remains the exception rather than the norm, with direct citizen co-development documented in merely 17% of studies (Luo et al., 2022 a; Kumi et al., 2023). This thematic inconsistency highlights a disconnect from established participatory pa",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_69",
+    "text": "et al., 2023). This thematic inconsistency highlights a disconnect from established participatory paradigms within geographic information science. Bridging this participation gap requires moving beyond bespoke UDT interfaces towards more scalable and inclusive frameworks inspired by Volunteered Geographic Information (VGI) and Public Participation GIS (PPGIS) (Jeansoulin, 2025). These fields have a long history of developing tools and methodologies that empower large, diverse communities to contribute geospatial data and local knowledge, fostering a more democratic form of data co-creation (Haklay, 2012; Luo et al., 2025 a). Integrating these proven participatory approaches into the UDT paradigm will be crucial for moving from basic consultation to genuine collaborative planning (Dembski e",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_70",
+    "text": "digm will be crucial for moving from basic consultation to genuine collaborative planning (Dembski et al., 2020; Abdeen et al., 2023). 5.2. Contextual blind spots: urban-rural bias and scale gaps Our analysis reveals a significant urban bias in UDT case studies, resulting in substantial geographic and scale-based blind spots. An overwhelming 94.6% of the surveyed projects were situated in urban environments, leaving rural and peri-urban communities largely underexplored (Fobiri et al., 2025). Existing studies in rural contexts often report challenges with digital infrastructure and technological readiness, suggesting that methodologies from tech-rich urban centres are not directly transferable (Tan and Cheng, 2024; Wang et al., 2023 b). This urban-rural gap represents a critical blind spot",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_71",
+    "text": "le (Tan and Cheng, 2024; Wang et al., 2023 b). This urban-rural gap represents a critical blind spot, where planning processes in less urbanized areas risk missing out on the benefits of UDTs. Addressing this urban bias is a primary strength of remote sensing. The creation of foundational geospatial layers for rural UDTs, once hindered by data scarcity, is now increasingly feasible through automated feature extraction from very-high-resolution (VHR) satellite imagery and wide-area UAV surveys (Sun et al., 2024). These RS technologies enable the systematic mapping of infrastructure, land use, and environmental quality at regional scales, providing the essential geospatial backbone to develop UDTs beyond dense urban cores. Scale-specific gaps were also evident. Most implementations (78%) hav",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_72",
+    "text": "UDTs beyond dense urban cores. Scale-specific gaps were also evident. Most implementations (78%) have been localized at a single meso-scale (neighbourhood or city), with very few studies tackling micro-scale sites or macro-scale regions (White et al., 2021; Abdelrahman et al., 2025). Cross-scale analyses and multi-site comparisons are particularly rare, which raises concerns about the generalizability and scalability of current UDT findings (Wang et al., 2023 b; Villanueva-Merino et al., 2024). This lack of cross-scalar research constitutes a major blind spot in understanding how UDTs function across different levels of urban complexity. International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 9\n\nJ. Luo et al. Thus, EO perspective is crucial. Bridging these s",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_73",
+    "text": "Geoinformation 143 (2025) 104746 9\n\nJ. Luo et al. Thus, EO perspective is crucial. Bridging these scale gaps requires leveraging the multi-scalar capabilities inherent in EO data to create nested UDT frameworks (Brocca et al., 2024). In such a framework, macro-scale environmental parameters derived from satellite platforms like Landsat or Sentinel-2 (e. g., land surface temperature, greenness indices) would provide the dynamic boundary conditions for meso-scale city models. These models, in turn, could be enriched with micro-scale details captured by street-level imagery and Li DAR, creating a seamless, cross-scalar analytical continuum that is currently missing in the domain Chen et al. (2024), Franzini et al. (2023). Without such efforts, UDTs risk remaining bespoke, isolated solutions",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_74",
+    "text": "024), Franzini et al. (2023). Without such efforts, UDTs risk remaining bespoke, isolated solutions rather than evolving into broadly applicable tools for diverse planning challenges (Lei et al., 2023; Weil et al., 2023). 5.3. Technology-participation coupling and equity concerns The coupling between technological choices and participatory outcomes emerged as a pivotal theme, carrying significant equity implications (White et al., 2021; Luo et al., 2025 a). On one hand, UDTs are increasingly designed to support richer forms of interaction, signalling an intentional linkage of technology and participation (Ham and Kim, 2020; Adade and de Vries, 2023). Our review shows a clear trend away from static 3D models towards interactive, collaborative environments, with 75% of studies facilitating t",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_75",
+    "text": "static 3D models towards interactive, collaborative environments, with 75% of studies facilitating two-way communication and roughly one-third employing immersive VR/AR interfaces to deepen user engagement (Adade and de Vries, 2023; del Campo et al., 2024). When properly implemented, these advanced visualization and interaction tools can amplify citizens’ ability to perceive, comprehend, and influence urban projects (Sabri et al., 2016; Kavouras et al., 2023). On the other hand, this reliance on sophisticated technology raises critical equity concerns. A significant number of projects still lack robust engagement mechanisms, and the high cost of specialized hardware like VR headsets can inadvertently exclude less advantaged communities, thus widening the digital divide (Li et al., 2023; Ta",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_76",
+    "text": "vertently exclude less advantaged communities, thus widening the digital divide (Li et al., 2023; Tan and Cheng, 2024). To mitigate these challenges and enhance accessibility, future UDTs could leverage geovisualization principles from PPGIS (Weng et al., 2024; Liu et al., 2023). This involves prioritizing lightweight, web-based platforms that deliver critical environmental insights, such as air quality data from Sentinel-5P or urban heat island effects mapped by Landsat, through intuitive, map-based interfaces accessible on standard devices (Mathew et al., 2024; Cetin et al., 2024). Such an approach lowers the technological barrier and aligns with the need for open standards and interoperable systems to ensure broad and equitable participation (Luo et al., 2025 a; Jeddoub et al., 2023). T",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_77",
+    "text": "le systems to ensure broad and equitable participation (Luo et al., 2025 a; Jeddoub et al., 2023). This paradigm of integrating advanced analytics with user-centric interaction is central to modern UDTs. The analytical toolkit is diverse, spanning geospatial simulation engines (e. g., SUMO) to model urban dynamics, AI-driven methods (e. g., NLP on public feedback) to extract perceptual insights, and real-time data dashboards (e. g., using Grafana) for monitoring (Nag et al., 2025; Kumi et al., 2023; del Campo et al., 2024). The true potential of UDTs lies in bridging the gap between these powerful analytical capabilities and broad-based public participation. This is not merely a technical endeavour; it is a social imperative to ensure all citizens can meaningfully partake in the digital tr",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_78",
+    "text": "deavour; it is a social imperative to ensure all citizens can meaningfully partake in the digital transformation of urban planning. 5.4. Research directions for next-generation UDTs In light of the above findings and gaps, we identify several key directions to guide the next generation of UDTs towards more holistic and inclusive citizen-centric planning: • Hybrid participatory models and VGI: Develop novel hybrid participation frameworks by integrating principles from VGI. This involves using UDTs as platforms that combine in-depth local engagement (e. g., community workshops, living labs) with broadscale, map-based crowdsourcing of perceptual data, thereby scaling up inclusivity to larger populations (Park et al., 2024; White et al., 2021). • Diverse context integration via RS: To address",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_79",
+    "text": "opulations (Park et al., 2024; White et al., 2021). • Diverse context integration via RS: To address the current urban bias, UDT deployments must be expanded to underrepresented peri-urban and rural areas. Remote sensing is critical here, providing workflows for creating foundational geospatial layers in data-scarce regions through automated feature extraction from VHR satellite imagery and UAV data, thus ensuring these tools are beneficial beyond high-density cities (Tan and Cheng, 2024; Sun et al., 2024; Zhang et al., 2025). • Multi-sensory data fusion with EO: The integration of less-studied perception facets, such as auditory comfort and risk perception, should be enhanced. This involves fusing citizen-reported data with geospatial environmental data derived from EO platforms, for exam",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_80",
+    "text": "fusing citizen-reported data with geospatial environmental data derived from EO platforms, for example, by correlating subjective thermal comfort ratings with land surface temperature data from Landsat or ECOSTRESS to create more holistic simulations of human experience (Irfan et al., 2024). • Accessible geovisualization for equity: To lower participation barriers, development should prioritize affordable and accessible technologies. This means creating lightweight, web-based geovisualization platforms based on PPGIS principles, which can deliver critical EO-derived environmental insights on standard devices, thus democratizing UDT adoption for resource-constrained communities (Adreani et al., 2024; Weng et al., 2024). • Smart integration of geospatial AI: The technology-participation nex",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_81",
+    "text": "l., 2024; Weng et al., 2024). • Smart integration of geospatial AI: The technology-participation nexus can be strengthened by embedding emerging technologies like Geo AI into UDTs. This involves using AI not only for sentiment analysis of text feedback but also for learning complex relationships between the built environment (as captured by RS data) and human perception, enabling more data-informed and proactive scenario exploration (Liu et al., 2023; Lee et al., 2024). • Interoperability with geospatial standards: Promote common standards to ensure UDTs can seamlessly integrate diverse data sources. This involves adopting geospatial standards (e. g., OGC APIs, Cloud Optimized Geo TIFF) and developing interoperable frameworks that can connect everything from citizen-contributed VGI to larg",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_82",
+    "text": "developing interoperable frameworks that can connect everything from citizen-contributed VGI to large-scale EO data cubes, fostering a more collaborative ecosystem for planners, data scientists, and social researchers (Abdelrahman et al., 2025; Schrotter and Hürzeler, 2020). Collectively, these research directions chart a course for a new generation of UDTs—ones that are not only citizen-centric but also deeply integrated with the principles and technologies of Earth Observation and geoinformation science. By pursuing these pathways, future UDTs can better fulfil their potential as dynamic, inclusive, and impactful tools for co-creating more responsive and resilient built environments. 6. Conclusion This systematic review examined 84 publications from 2014 to 2024 to assess how UDTs are em",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_83",
+    "text": "nclusion This systematic review examined 84 publications from 2014 to 2024 to assess how UDTs are employed to enhance built environment perception and facilitate public participation in urban planning. The review highlights a rapid growth in UDT research, particularly after 2020, coinciding with increasing global interest in smart city initiatives and digital governance (Abdelrahman et al., 2025). Geographically, research predominantly concentrates in North America, Europe, and Asia, with significant contributions from the United States, China, and Germany. Conversely, the limited representation of rural and periurban contexts reveals significant geographic and contextual biases in current UDT applications. UDTs were extensively utilized to analyse human perceptions across several dimensio",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_84",
+    "text": "DT applications. UDTs were extensively utilized to analyse human perceptions across several dimensions, with visual and functional perceptions receiving primary focus (Lei et al., 2023; Luo et al., 2025 a), followed by social, International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 10\n\nJ. Luo et al. safety, and comfort perceptions (Irfan et al., 2024). However, critical perceptual dimensions, including auditory quality and risk perception, were notably underrepresented, indicating significant gaps and opportunities for further exploration. Moreover, most studies adopted a meso-scale focus (neighbourhood or city level), with limited research addressing micro-scale sites or macro-scale regions, underscoring scalespecific gaps that may restrict the generalizabi",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_85",
+    "text": "ale sites or macro-scale regions, underscoring scalespecific gaps that may restrict the generalizability and cross-context applicability of existing findings. Public participation in UDT projects was found to vary considerably, with academia and government agencies frequently leading the initiatives, while direct citizen engagement was comparatively limited. The review reveals that interactive modalities, particularly two-way dialogues and group interactions supported by immersive visualization technologies (e. g., VR and AR), significantly enhanced stakeholder involvement and perceptual understanding (del Campo et al., 2024; Pirker et al., 2022). Nevertheless, technological equity concerns persist, as resource-intensive platforms risk excluding communities lacking robust infrastructure, b",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_86",
+    "text": "persist, as resource-intensive platforms risk excluding communities lacking robust infrastructure, broadband access, or digital literacy, thus widening the digital divide. To realize the full potential of UDTs as effective tools for citizencentric planning, future research must address these gaps. This requires expanding studies to diverse contexts, integrating a fuller spectrum of human sensory perceptions, and promoting equitable access through affordable and accessible technologies. The development of hybrid participation models and interoperable frameworks will be crucial. Ultimately, the evolution of UDTs towards more adaptive and sustainable urban futures will depend not only on technological innovation but also on a commitment to a more inclusive, human-centric, and geospatially-awa",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_87",
+    "text": "logical innovation but also on a commitment to a more inclusive, human-centric, and geospatially-aware approach to urban planning. CRedi T authorship contribution statement Junjie Luo: Writing – original draft, Software, Project administration, Methodology, Investigation, Funding acquisition, Formal analysis, Data curation, Conceptualization. Pengyuan Liu: Validation, Resources, Methodology, Investigation. Xinya Kong: Software, Investigation, Formal analysis, Data curation. Junru Shen: Visualization, Software, Formal analysis, Data curation. Qiaoqiao Wu: Visualization, Validation, Methodology, Formal analysis. Da Xu: Writing – review & editing, Supervision, Project administration, Investigation. Declaration of Generative AI and AI-assisted technologies in the writing process During the pre",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_88",
+    "text": "ion. Declaration of Generative AI and AI-assisted technologies in the writing process During the preparation of this work the authors used Chat GPT in order to check the grammar and improve readability. After using this tool, the authors reviewed and edited the content as needed and take full responsibility for the content of the publication. Declaration of competing interest The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. Acknowledgements We gratefully acknowledge the research assistants in this study. This research is part of the project (i) Visual Perception Analysis of Urban Riverscapes Using Computer Vision, which is supported by the Zhejiang A&F University Scient",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_89",
+    "text": "of Urban Riverscapes Using Computer Vision, which is supported by the Zhejiang A&F University Scientific Research Development Fund (Start Up Project, grant no. 2023 LFR 076); (ii) Research on the Teaching Reform of Landscape Planning and Design Driven by ‘Digital Twin + Ecological Education’, which is supported by the teaching reform project of Zhejiang A&F University (grant no. 2013110257). Appendix A. Supplementary data Supplementary material related to this article can be found online at https://doi. org/10.1016/j. jag.2025.104746. Data availability Data will be made available on request. References Abdeen, F. N., Shirowzhan, S., Sepasgozar, S. M., 2023. Citizen-centric digital twin development with machine learning and interfaces for maintaining urban infrastructure. Telemat. Inform. 1",
+    "section": "unknown",
+    "char_start": 61600,
+    "char_end": 62400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_90",
+    "text": "opment with machine learning and interfaces for maintaining urban infrastructure. Telemat. Inform. 102032. Abdelrahman, M., Macatulad, E., Lei, B., Quintana, M., Miller, C., Biljecki, F., 2025. What is a digital twin anyway? Deriving the definition for the built environment from over 15,000 scientific publications. Build. Environ. 274, 112748. Adade, D., de Vries, W. T., 2023. Digital twin for active stakeholder participation in land-use planning. Land 12 (3), 538. Adeel, A., Notteboom, B., Yasar, A., Scheerlinck, K., Stevens, J., 2021. Sustainable streetscape and built environment designs around brt stations: A stated choice experiment using 3d visualizations. Sustainability 13 (12), 6594. Adreani, L., Bellini, P., Fanfani, M., Nesi, P., Pantaleo, G., 2024. Smart city digital twin framewo",
+    "section": "unknown",
+    "char_start": 62300,
+    "char_end": 63100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_91",
+    "text": "Adreani, L., Bellini, P., Fanfani, M., Nesi, P., Pantaleo, G., 2024. Smart city digital twin framework for real-time multi-data integration and wide public distribution. IEEE Access. Ajjur, S. B., Al-Ghamdi, S. G., 2022. Exploring urban growth–climate change–flood risk nexus in fast growing cities. Sci. Rep. 12 (1), 12265. Akmentina, L., 2023. E-participation and engagement in urban planning: experiences from the Baltic cities. Urban Res. Pr. 16 (4), 624–657. Al Jurdi, M., Wehbe, R., Mroueh, H., 2023. Integration of citizens’ feelings and feedback into the city information modeling environment. Sustain. Cities Soc. 99, 104971. Arnstein, S. R., 1969. A ladder of citizen participation. J. Am. Inst. Planners 35 (4), 216–224. Avery, E. E., Hermsen, J. M., Kuhl, D. C., 2021. Toward a better und",
+    "section": "unknown",
+    "char_start": 63000,
+    "char_end": 63800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_92",
+    "text": "Inst. Planners 35 (4), 216–224. Avery, E. E., Hermsen, J. M., Kuhl, D. C., 2021. Toward a better understanding of perceptions of neighborhood social cohesion in rural and urban places. Soc. Indic. Res. 157 (2), 523–541. Batty, M., 2024. Digital twins in city planning. Nat. Comput. Sci. 4 (3), 192–199. Belaroussi, R., Issa, E., Cameli, L., Lantieri, C., Adelé, S., 2024. Exploring virtual environments to assess the quality of public spaces. Algorithms 17 (3), 124. Bolton, A., Enzer, M., Schooling, J., et al., 2018. The gemini principles: Guiding values for the national digital twin and information management framework. Cent. Digit. Built Br. Digit. Fram. Task Group. Brocca, L., Barbetta, S., Camici, S., Ciabatta, L., Dari, J., Filippucci, P., Massari, C., Modanesi, S., Tarpanelli, A., Bonacc",
+    "section": "unknown",
+    "char_start": 63700,
+    "char_end": 64500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_93",
+    "text": "amici, S., Ciabatta, L., Dari, J., Filippucci, P., Massari, C., Modanesi, S., Tarpanelli, A., Bonaccorsi, B., et al., 2024. A digital twin of the terrestrial water cycle: a glimpse into the future through high-resolution earth observations. Front. Sci. 1, 1190191. Bryson, J. M., Quick, K. S., Slotterback, C. S., Crosby, B. C., 2013. Designing public participation processes. Public Adm. Rev. 73 (1), 23–34. del Campo, G., Saavedra, E., Piovano, L., Luque, F., Santamaria, A., 2024. Virtual reality and internet of things based digital twin for smart city cross-domain interoperability. Appl. Sci. 14 (7), 2747. Cetin, M., Ozenen Kavlak, M., Senyel Kurkcuoglu, M. A., Bilge Ozturk, G., Cabuk, S. N., Cabuk, A., 2024. Determination of land surface temperature and urban heat island effects with remot",
+    "section": "unknown",
+    "char_start": 64400,
+    "char_end": 65200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_94",
+    "text": "Cabuk, A., 2024. Determination of land surface temperature and urban heat island effects with remote sensing capabilities: the case of Kayseri, Türkiye. Nat. Hazards 120 (6), 5509–5536. Chen, C., Wang, H., Wang, D., Wang, D., 2024. Towards the digital twin of urban forest: 3D modeling and parameterization of large-scale urban trees from close-range laser scanning. Int. J. Appl. Earth Obs. Geoinf. 127, 103695. Cheng, L., Chen, S., Chu, S., Li, S., Yuan, Y., Wang, Y., Li, M., 2017. Li DAR-based three-dimensional street landscape indices for urban habitability. Earth Sci. Inform. 10, 457–470. Cian, F., Blasco, J. M. D., Ivanescu, C., 2024. Improving rapid flood impact assessment: An enhanced multi-sensor approach including a new flood mapping method based on sentinel-2 data. J. Environ. Mana",
+    "section": "unknown",
+    "char_start": 65100,
+    "char_end": 65900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_95",
+    "text": "ulti-sensor approach including a new flood mapping method based on sentinel-2 data. J. Environ. Manag. 369, 122326. Cui, Q., Wei, R., Huang, R., Hu, X., Wang, G., 2022. The effect of perceived risk on public participation intention in smart city development: evidence from China. Land 11 (9), 1604. Dembski, F., Wössner, U., Letzgus, M., 2019. The digital twin tackling urban challenges with models, spatial analysis and numerical simulations in immersive virtual environments. In: Proceedings of the 37 ECAADe and XXIII SIGra Di Joint Conference:‘‘Architecture in the Age of the 4th Industrial Revolution’’, Porto, Portugal. pp. 11–13. Dembski, F., Wössner, U., Letzgus, M., Ruddat, M., Yamu, C., 2020. Urban digital twins for smart cities and citizens: The case study of herrenberg, Germany. Sustai",
+    "section": "unknown",
+    "char_start": 65800,
+    "char_end": 66600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_96",
+    "text": "20. Urban digital twins for smart cities and citizens: The case study of herrenberg, Germany. Sustainability 12 (6), 2307. International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 11\n\nJ. Luo et al. Eilola, S., Jaalama, K., Kangassalo, P., Nummi, P., Staffans, A., Fagerholm, N., 2023. 3D visualisations for communicative urban and landscape planning: What systematic mapping of academic literature can tell us of their potential? Landsc. Urban Plan. 234, 104716. Ellul, C., Hamilton, N., Pieri, A., Floros, G., 2024. Exploring data for construction digital twins: Building health and safety and progress monitoring twins using the unreal gaming engine. Buildings 14 (7), 2216. Fan, C., Jiang, Y., Mostafavi, A., 2020. Social sensing in disaster city digital twin: Integ",
+    "section": "unknown",
+    "char_start": 66500,
+    "char_end": 67300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_97",
+    "text": ", 2216. Fan, C., Jiang, Y., Mostafavi, A., 2020. Social sensing in disaster city digital twin: Integrated textual–visual–geo framework for situational awareness during built environment disruptions. J. Manag. Eng. 36 (3), 04020002. Ferré-Bigorra, J., Casals, M., Gangolells, M., 2022. The adoption of urban digital twins. Cities 131, 103905. Filomena, G., Verstegen, J. A., Manley, E., 2019. A computational approach to ‘the image of the city’. Cities 89, 14–25. Fobiri, G., Abaitey, B. A., Nyenku, E. A., Agyemang, E. A., Chikukwa, A., 2025. Digital village analytics using digital twins. In: Digital Twins for Smart Cities and Villages. Elsevier, pp. 149–167. Ford, D. N., Wolf, C. M., 2020. Smart cities with digital twin systems for disaster management. J. Manag. Eng. 36 (4), 04020027. Franzini,",
+    "section": "unknown",
+    "char_start": 67200,
+    "char_end": 68000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_98",
+    "text": "cities with digital twin systems for disaster management. J. Manag. Eng. 36 (4), 04020027. Franzini, M., Casella, V. M., Monti, B., 2023. Assessment of leica citymapper-2 lidar data within milan’s digital twin project. Remote. Sens. 15 (21), 5263. Fung, A., 2015. Putting the public back into governance: The challenges of citizen participation and its future. Public Adm. Rev. 75 (4), 513–522. Geremicca, F., Bilec, M. M., 2024. Searching for new urban metabolism techniques: A review towards future development for a city-scale urban metabolism digital twin. Sustain. Cities Soc. 107, 105445. Gifford, R., 2014. Environmental psychology matters. Annu. Rev. Psychol. 65 (1), 541–579. Gobeawan, L., Lin, E., Tandon, A., Yee, A., Khoo, V., Teo, S., Yi, S., Lim, C., Wong, S., Wise, D., et al., 2018. M",
+    "section": "unknown",
+    "char_start": 67900,
+    "char_end": 68700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_99",
+    "text": "in, E., Tandon, A., Yee, A., Khoo, V., Teo, S., Yi, S., Lim, C., Wong, S., Wise, D., et al., 2018. Modeling trees for virtual Singapore: From data acquisition to City GML models. Int. Arch. Photogramm. Remote. Sens. Spat. Inf. Sci. 42, 55–62. Grieves, M., Vickers, J., 2017. Digital twin: Mitigating unpredictable, undesirable emergent behavior in complex systems. Transdiscipl. Perspect. Complex Syst.: New Find. Approaches 85–113. Haklay, M., 2012. Citizen science and volunteered geographic information: Overview and typology of participation. Crowdsourcing Geogr. Knowl.: Volunt. Geogr. Inf. (VGI) Theory Pr. 105–122. Haklay, M., Jankowski, P., Zwoliński, Z., 2018. Selected modern methods and tools for public participation in urban planning–a review. Quaest. Geogr. 37 (3), 127–149. Ham, Y., Ki",
+    "section": "unknown",
+    "char_start": 68600,
+    "char_end": 69400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_100",
+    "text": "ols for public participation in urban planning–a review. Quaest. Geogr. 37 (3), 127–149. Ham, Y., Kim, J., 2020. Participatory sensing and digital twin city: Updating virtual city models for enhanced risk-informed decision-making. J. Manag. Eng. 36 (3), 04020005. Haraguchi, M., Funahashi, T., Biljecki, F., 2024 a. Assessing governance implications of city digital twin technology: A maturity model approach. Technol. Forecast. Soc. Change 204, 123409. http://dx. doi. org/10.1016/j. techfore.2024.123409. Haraguchi, M., Funahashi, T., Biljecki, F., 2024 b. Assessing governance implications of city digital twin technology: A maturity model approach. Technol. Forecast. Soc. Change 204, 123409. Heck, J. T., Dreier, C. G., Bofí, J. L., Vorländer, M., 2023. Studying Outdoor Impulse Responses at IHT",
+    "section": "unknown",
+    "char_start": 69300,
+    "char_end": 70100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_101",
+    "text": "k, J. T., Dreier, C. G., Bofí, J. L., Vorländer, M., 2023. Studying Outdoor Impulse Responses at IHTA Park: Simulated Vs. Measured. Universitätsbibliothek der RWTH Aachen. Iakovides, N., Lazarou, A., Kyriakou, P., Aristidou, A., 2022. Virtual library in the concept of digital twin. In: 2022 International Conference on Interactive Media, Smart Systems and Emerging Technologies. IMET, IEEE, pp. 1–8. Irfan, M. S., Dasgupta, S., Rahman, M., 2024. Towards transportation digital twin systems for traffic safety and mobility: A review. IEEE Internet Things J.. Jaalama, K., Rantanen, T., Julin, A., Fagerholm, N., Keitaanniemi, A., Virtanen, J. P., Handolin, H., Vaaja, M., Hyyppä, H., 2022. Auditing an urban park deck with 3D geovisualization—A comparison of in-situ and VR walk-along interviews. Urb",
+    "section": "unknown",
+    "char_start": 70000,
+    "char_end": 70800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_102",
+    "text": "n urban park deck with 3D geovisualization—A comparison of in-situ and VR walk-along interviews. Urban For. Urban Green. 76, 127712. Jeansoulin, R., 2025. A digital twin to promote and preserve the endangered volunteer geographic information. Multimedia Tools Appl. 1–27. Jeddoub, I., Nys, G. A., Hajji, R., Billen, R., 2023. Digital twins for cities: Analyzing the gap between concepts and current implementations with a specific focus on data integration. Int. J. Appl. Earth Obs. Geoinf. 122, 103440. Jiang, F., Ma, L., Broyd, T., Chen, W., Luo, H., 2022. Digital twin enabled sustainable urban road planning. Sustain. Cities Soc. 78, 103645. Jo, H. I., Jeon, J. Y., 2020. The influence of human behavioral characteristics on soundscape perception in urban parks: Subjective and observational appr",
+    "section": "unknown",
+    "char_start": 70700,
+    "char_end": 71500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_103",
+    "text": "ehavioral characteristics on soundscape perception in urban parks: Subjective and observational approaches. Landsc. Urban Plan. 203, 103890. Karren, K., Schmitz, M., Schaffer, S., 2024. Improving conversational user interfaces for citizen complaint management through enhanced contextual feedback. In: Proceedings of the 6th ACM Conference on Conversational User Interfaces. pp. 1–11. Kavouras, I., Sardis, E., Protopapadakis, E., Rallis, I., Doulamis, A., Doulamis, N., 2023. A low-cost gamified urban planning methodology enhanced with co-creation and participatory approaches. Sustainability 15 (3), 2297. Kikuchi, N., Fukuda, T., Yabuki, N., 2022. Future landscape visualization using a city digital twin: Integration of augmented reality and drones with implementation of 3D model-based occlusio",
+    "section": "unknown",
+    "char_start": 71400,
+    "char_end": 72200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_104",
+    "text": "tal twin: Integration of augmented reality and drones with implementation of 3D model-based occlusion handling. J. Comput. Des. Eng. 9 (2), 837–856. Kim, J., Kim, H., Ham, Y., 2019. Mapping local vulnerabilities into a 3D city model through social sensing and the CAVE system toward digital twin city. In: ASCE International Conference on Computing in Civil Engineering 2019. American Society of Civil Engineers Reston, VA, pp. 451–458. Kingston, R., 2007. Public participation in local policy decision-making: the role of web-based mapping. Cartogr. J. 44 (2), 138–144. Kumi, S., Lomotey, R. K., Deters, R., 2023. Integrating machine learning and social sensing in smart city digital twin for citizen feedback. In: 2023 IEEE International Conference on High Performance Computing & Communications, D",
+    "section": "unknown",
+    "char_start": 72100,
+    "char_end": 72900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_105",
+    "text": "n feedback. In: 2023 IEEE International Conference on High Performance Computing & Communications, Data Science & Systems, Smart City & Dependability in Sensor, Cloud & Big Data Systems & Application. HPCC/DSS/Smart City/Depend Sys, IEEE, pp. 980–987. Lahat, L., Nathansohn, R., 2023. Challenges and opportunities for equity in public management: Digital applications in multicultural smart cities. Public Manag. Rev. 1–24. Lee, G. b., Kim, G., Lee, J., Hong, Y., Lee, J. H., 2024. Perception graph for representing visuospatial behavior in virtual environments: A case study for daejeon city. Adv. Eng. Inform. 62, 102594. Lehtola, V. V., Koeva, M., Elberink, S. O., Raposo, P., Virtanen, J. P., Vahdatikhaki, F., Borsci, S., 2022. Digital twin of a city: Review of technology serving city needs. In",
+    "section": "unknown",
+    "char_start": 72800,
+    "char_end": 73600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_106",
+    "text": "datikhaki, F., Borsci, S., 2022. Digital twin of a city: Review of technology serving city needs. Int. J. Appl. Earth Obs. Geoinf. 102915. Lei, B., Janssen, P., Stoter, J., Biljecki, F., 2023. Challenges of urban digital twins: A systematic review and a Delphi expert survey. Autom. Constr. 147, 104716. Lei, B., Liang, X., Biljecki, F., 2024. Integrating human perception in 3D city models and urban digital twins. ISPRS Ann. Photogramm. Remote. Sens. Spat. Inf. Sci. 10, 211–218. Li, D., Wang, M., Guo, H., Jin, W., 2024. On China’s earth observation system: mission, vision and application. Geo-Spat. Inf. Sci. 1–19. Li, W., Wang, Y., Yang, H., Ye, Z., Li, P., Liu, Y. A., Wang, L., 2023. Development of a mixed reality method for underground pipelines in digital mechanics experiments. Tunn. Unde",
+    "section": "unknown",
+    "char_start": 73500,
+    "char_end": 74300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_107",
+    "text": "ent of a mixed reality method for underground pipelines in digital mechanics experiments. Tunn. Undergr. Space Technol. 132, 104833. Li, X., Zhang, F., Hui, E. C. m., Lang, W., 2020. Collaborative workshop and community participation: A new approach to urban regeneration in China. Cities 102, 102743. Liu, P., Zhao, T., Luo, J., Lei, B., Frei, M., Miller, C., Biljecki, F., 2023. Towards humancentric digital twins: leveraging computer vision and graph models to predict outdoor comfort. Sustain. Cities Soc. 93, 104480. Long, H. A., French, D. P., Brooks, J. M., 2020. Optimising the value of the critical appraisal skills programme (CASP) tool for quality appraisal in qualitative evidence synthesis. Res. Methods Med. Heal. Sci. 1 (1), 31–42. Luna-Reyes, L. F., 2017. Opportunities and challenges",
+    "section": "unknown",
+    "char_start": 74200,
+    "char_end": 75000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_108",
+    "text": "is. Res. Methods Med. Heal. Sci. 1 (1), 31–42. Luna-Reyes, L. F., 2017. Opportunities and challenges for digital governance in a world of digital participation. Inf. Polity 22 (2–3), 197–205. Luo, J., Liu, P., Cao, L., 2022 a. Coupling a physical replica with a digital twin: A comparison of participatory decision-making methods in an urban park environment. ISPRS Int. J. Geo-Inf. 11 (8), 452. Luo, J., Liu, P., Xu, W., Zhao, T., Biljecki, F., 2025 a. A perception-powered urban digital twin to support human-centered urban planning and sustainable city development. Cities 156, 105473. Luo, J., Yuan, Z., Xu, L., Xu, W., 2025 b. Assessing the impact of waterfront environments on public well-being through digital twin technology. IEEE J. Sel. Top. Appl. Earth Obs. Remote. Sens.. Luo, J., Zhao, T",
+    "section": "unknown",
+    "char_start": 74900,
+    "char_end": 75700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_109",
+    "text": "through digital twin technology. IEEE J. Sel. Top. Appl. Earth Obs. Remote. Sens.. Luo, J., Zhao, T., Cao, L., Biljecki, F., 2022 b. Semantic riverscapes: Perception and evaluation of linear landscapes from oblique imagery using computer vision. Landsc. Urban Plan. 228, 104569. Luo, J., Zhao, T., Cao, L., Biljecki, F., 2022 c. Water view imagery: Perception and evaluation of urban waterscapes worldwide. Ecol. Indic. 145, 109615. Lv, Z., Fridenfalk, M., 2023. Digital twins for building industrial metaverse. J. Adv. Res. Lv, Z., Shang, W. L., Guizani, M., 2022. Impact of digital twins and metaverse on cities: History, current situation, and application perspectives. Appl. Sci. 12 (24), 12820. Lynch, K., 1964. The Image of the City. MIT Press. Major, P., Li, G., Hildre, H. P., Zhang, H., 202",
+    "section": "unknown",
+    "char_start": 75600,
+    "char_end": 76400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_110",
+    "text": "Lynch, K., 1964. The Image of the City. MIT Press. Major, P., Li, G., Hildre, H. P., Zhang, H., 2021. The use of a data-driven digital twin of a smart city: A case study of ålesund, norway. IEEE Instrum. Meas. Mag. 24 (7), 39–49. Masoumi, H., Shirowzhan, S., Eskandarpour, P., Pettit, C. J., 2023. City digital twins: their maturity level and differentiation from 3D city models. Big Earth Data 7 (1), 1–36. Mathew, A., Shekar, P. R., Nair, A. T., Mallick, J., Rathod, C., Bindajam, A. A., Alharbi, M. M., Abdo, H. G., 2024. Unveiling urban air quality dynamics during COVID-19: a Sentinel-5P TROPOMI hotspot analysis. Sci. Rep. 14 (1), 21624. Matthys, M., De Cock, L., Vermaut, J., Van de Weghe, N., De Maeyer, P., 2021. An ‘‘animated spatial time machine’’ in co-creation: reconstructing history u",
+    "section": "unknown",
+    "char_start": 76300,
+    "char_end": 77100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_111",
+    "text": ", De Maeyer, P., 2021. An ‘‘animated spatial time machine’’ in co-creation: reconstructing history using gamification integrated into 3D city modelling, 4D web and transmedia storytelling. ISPRS Int. J. Geo-Inf. 10 (7), 460. Moher, D., Liberati, A., Tetzlaff, J., Altman, D. G., PRISMA Group*, t., 2009. Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. Ann. Intern. Med. 151 (4), 264–269. Mouratidis, K., 2021. Urban planning and quality of life: A review of pathways linking the built environment to subjective well-being. Cities 115, 103229. Muhammad, A. A., Yitmen, I., Alizadehsalehi, S., Celik, T., 2019. Adoption of virtual reality (VR) for site layout optimization of construction projects. Tek. Dergi 31 (2), 9833–9850. International Journal of Applie",
+    "section": "unknown",
+    "char_start": 77000,
+    "char_end": 77800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_112",
+    "text": "optimization of construction projects. Tek. Dergi 31 (2), 9833–9850. International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 12\n\nJ. Luo et al. Nag, D., Brandel-Tanis, F., Pramestri, Z. A., Pitera, K., Frøyen, Y. K., 2025. Exploring digital twins for transport planning: a review. Eur. Transp. Res. Rev. 17 (1), 15. Navarrete-Hernandez, P., Vetro, A., Concha, P., 2021. Building safer public spaces: Exploring gender difference in the perception of safety in public space through urban design interventions. Landsc. Urban Plan. 214, 104180. Ng, P., Li, Y., Zhu, S., Xu, B., van Ameijde, J., 2023. Digital common (s): the role of digital gamification in participatory design for the planning of high-density housing estates. Front. Virtual Real. 3, 1062336. Onyimbi, J.",
+    "section": "unknown",
+    "char_start": 77700,
+    "char_end": 78500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_113",
+    "text": "sign for the planning of high-density housing estates. Front. Virtual Real. 3, 1062336. Onyimbi, J. R., Koeva, M., Flacke, J., 2018. Public participation using 3D web-based city models: Opportunities for e-participation in Kisumu, Kenya. ISPRS Int. J. Geo-Inf. 7 (12), 454. Park, S., Kim, J., Kim, Y., Kang, J., 2024. Participatory framework for urban pluvial flood modeling in the digital twin era. Sustain. Cities Soc. 108, 105496. Pastor, A., Sureda, X., Valiente, R., Badland, H., García-Dorado, M., Escobar, F., 2022. Using geovisualization tools to examine attitudes towards alcohol exposure in urban environments: A pilot study in Madrid, Spain. Int. J. Environ. Res. Public Heal. 19 (15), 9192. Pirker, J., Loria, E., Safikhani, S., Künz, A., Rosmann, S., 2022. Immersive virtual reality for",
+    "section": "unknown",
+    "char_start": 78400,
+    "char_end": 79200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_114",
+    "text": "2. Pirker, J., Loria, E., Safikhani, S., Künz, A., Rosmann, S., 2022. Immersive virtual reality for virtual and digital twins: A literature review to identify state of the art and perspectives. In: 2022 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops. VRW, IEEE, pp. 114–115. Qian, Y., Leng, J., Chun, Q., Wang, H., Zhou, K., 2023. A year-long field investigation on the spatio-temporal variations of occupant’s thermal comfort in Chinese traditional courtyard dwellings. Build. Environ. 228, 109836. Roth, F., Tupas, M. E., Navacchi, C., Zhao, J., Wagner, W., Bauer-Marschallinger, B., 2025. Evaluating the robustness of Bayesian flood mapping with Sentinel-1 data: a multi-event validation study. Sci. Remote. Sens. 11, 100210. Sabri, S., Rajabifard, A., Ho, S., A",
+    "section": "unknown",
+    "char_start": 79100,
+    "char_end": 79900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_115",
+    "text": "a multi-event validation study. Sci. Remote. Sens. 11, 100210. Sabri, S., Rajabifard, A., Ho, S., Amirebrahimi, S., Bishop, I., 2016. Leveraging VGI integrated with 3D spatial technology to support urban intensification in Melbourne, Australia. Urban Plan. 1 (2), 32–48. Schrotter, G., Hürzeler, C., 2020. The digital twin of the city of Zurich for urban planning. PFG–J. Photogramm. Remote. Sens. Geoinf. Sci. 88 (1), 99–112. Secinaro, S., Brescia, V., Iannaci, D., Jonathan, G. M., 2022. Does citizen involvement feed on digital platforms? Int. J. Public Adm. 45 (9), 708–725. Somanath, S., Naserentin, V., Eleftheriou, O., Sjölie, D., Wästberg, B. S., Logg, A., 2024. Towards urban digital twins: A workflow for procedural visualization using geospatial data. Remote. Sens. 16 (11), 1939. Stanisl",
+    "section": "unknown",
+    "char_start": 79800,
+    "char_end": 80600
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_116",
+    "text": "A workflow for procedural visualization using geospatial data. Remote. Sens. 16 (11), 1939. Stanislav, A., Chin, J. T., 2019. Evaluating livability and perceived values of sustainable neighborhood design: New urbanism and original urban suburbs. Sustain. Cities Soc. 47, 101517. Stempel, P., Ginis, I., Ullman, D., Becker, A., Witkop, R., 2018. Real-time chronological hazard impact modeling. J. Mar. Sci. Eng. 6 (4), 134. Sun, X., Huang, X., Mao, Y., Sheng, T., Li, J., Wang, Z., Lu, X., Ma, X., Tang, D., Chen, K., 2024. GABLE: A first fine-grained 3D building model of China on a national scale from very high resolution satellite imagery. Remote Sens. Environ. 305, 114057. Tan, F., Cheng, Y., 2024. A digital twin framework for innovating rural ecological landscape control. Environ. Sci. Eur.",
+    "section": "unknown",
+    "char_start": 80500,
+    "char_end": 81300
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_117",
+    "text": "024. A digital twin framework for innovating rural ecological landscape control. Environ. Sci. Eur. 36 (1), 59. Taupin, M. L., Romeas, T., Juste, L., Labbé, D. R., 2023. Exploring the effects of 3D 360◦VR and 2D viewing modes on gaze behavior, head excursion, and workload during a boxing specific anticipation task. Front. Psychol. 14. Thuvander, L., Somanath, S., Hollberg, A., 2022. Procedural digital twin generation for co-creating in VR focusing on vegetation. Int. Arch. Photogramm. Remote. Sens. Spat. Inf. Sci. 48, 189–196. Tzachor, A., Sabri, S., Richards, C. E., Rajabifard, A., Acuto, M., 2022. Potential and limitations of digital twins to achieve the sustainable development goals. Nat. Sustain. 5 (10), 822–829. Villanueva-Merino, A., Urra-Uriarte, S., Izkara, J. L., Campos-Cordobes,",
+    "section": "unknown",
+    "char_start": 81200,
+    "char_end": 82000
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_118",
+    "text": "Sustain. 5 (10), 822–829. Villanueva-Merino, A., Urra-Uriarte, S., Izkara, J. L., Campos-Cordobes, S., Aranguren, A., Molina-Costa, P., 2024. Leveraging local digital twins for planning age-friendly urban environments. Cities 155, 105458. Vogelbacher, G., Finger, J., Häring, I., 2019. Towards visibility and audibility algorithms for assessing perceived safety and security in public areas based on digital 3D city models. In: Proceedings of the 29 th European Safety and Reliability Conference. ESREL 2019. ESREL. Hannover, Germany, pp. 22–26. Wang, R., Browning, M. H., Kee, F., Hunter, R. F., 2023 a. Exploring mechanistic pathways linking urban green and blue space to mental wellbeing before and after urban regeneration of a greenway: Evidence from the connswater community Greenway, Belfast,",
+    "section": "unknown",
+    "char_start": 81900,
+    "char_end": 82700
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_119",
+    "text": "nd after urban regeneration of a greenway: Evidence from the connswater community Greenway, Belfast, UK. Landsc. Urban Plan. 235, 104739. Wang, H., Chen, X., Jia, F., Cheng, X., 2023 b. Digital twin-supported smart city: Status, challenges and future research directions. Expert Syst. Appl. 119531. Wang, J., Chen, G., Zhang, X., Wang, T., Tan, X., Yang, Q., Zhou, W., Zhu, K., 2025. Roof Map Net: Utilizing geometric primitives for depicting planar building roof structure from high-resolution remote sensing imagery. Int. J. Appl. Earth Obs. Geoinf. 141, 104630. Wang, W., Guo, H., Li, X., Tang, S., Xia, J., Lv, Z., 2022. Deep learning for assessment of environmental satisfaction using BIM big data in energy efficient building digital twins. Sustain. Energy Technol. Assess. 50, 101897. Wang, W.",
+    "section": "unknown",
+    "char_start": 82600,
+    "char_end": 83400
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_120",
+    "text": "ta in energy efficient building digital twins. Sustain. Energy Technol. Assess. 50, 101897. Wang, W., He, F., Li, Y., Tang, S., Li, X., Xia, J., Lv, Z., 2023 c. Data information processing of traffic digital twins in smart cities using edge intelligent federation learning. Inf. Process. Manage. 60 (2), 103171. Wang, R., Liu, Y., Lu, Y., Zhang, J., Liu, P., Yao, Y., Grekousis, G., 2019. Perceptions of built environment and health outcomes for older Chinese in Beijing: A big data approach with street view images and deep learning technique. Comput. Environ. Urban Syst. 78, 101386. Wang, Y., Yue, Q., Lu, X., Gu, D., Xu, Z., Tian, Y., Zhang, S., 2024. Digital twin approach for enhancing urban resilience: A cycle between virtual space and the real world. Resilient Cities Struct. 3 (2), 34–45. W",
+    "section": "unknown",
+    "char_start": 83300,
+    "char_end": 84100
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_121",
+    "text": "silience: A cycle between virtual space and the real world. Resilient Cities Struct. 3 (2), 34–45. Weil, C., Bibri, S. E., Longchamp, R., Golay, F., Alahi, A., 2023. Urban digital twin challenges: A systematic review and perspectives for sustainable smart cities. Sustain. Cities Soc. 99, 104862. Weng, Q., Li, Z., Cao, Y., Lu, X., Gamba, P., Zhu, X., Xu, Y., Zhang, F., Qin, R., Yang, M. Y., et al., 2024. How will ai transform urban observing, sensing, imaging, and mapping? Npj Urban Sustain. 4 (1), 50. White, G., Zink, A., Codecá, L., Clarke, S., 2021. A digital twin smart city for citizen feedback. Cities 110, 103064. Wu, Y., Liu, Q., Hang, T., Yang, Y., Wang, Y., Cao, L., 2024. Integrating restorative perception into urban street planning: A framework using street view images, deep learni",
+    "section": "unknown",
+    "char_start": 84000,
+    "char_end": 84800
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_122",
+    "text": "restorative perception into urban street planning: A framework using street view images, deep learning, and space syntax. Cities 147, 104791. Würstle, P., Santhanavanich, T., Padsala, R., Coors, V., 2021. Development of a digital 3d participation platform–case study of Weilimdorf (Stuttgart, Germany). Int. Arch. Photogramm. Remote. Sens. Spat. Inf. Sci. 46, 123–129. Xu, Z., Jiang, T., Zheng, N., 2022. Developing and analyzing eco-driving strategies for on-road emission reduction in urban transport systems-A VR-enabled digital-twin approach. Chemosphere 305, 135372. Xu, J., Xiong, Q., Jing, Y., Xing, L., An, R., Tong, Z., Liu, Y., Liu, Y., 2023. Understanding the nonlinear effects of the street canyon characteristics on human perceptions with street view images. Ecol. Indic. 154, 110756. Ye",
+    "section": "unknown",
+    "char_start": 84700,
+    "char_end": 85500
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_123",
+    "text": "et canyon characteristics on human perceptions with street view images. Ecol. Indic. 154, 110756. Ye, X., Du, J., Han, Y., Newman, G., Retchless, D., Zou, L., Ham, Y., Cai, Z., 2023. Developing human-centered urban digital twins for community infrastructure resilience: A research agenda. J. Plan. Lit. 38 (2), 187–199. Zhang, J., Dong, Y., Liu, Y., Kang, Y., Xie, S., Xu, H., 2025. Knowledge domain and emerging trends in monitoring of forest fires using remote sensing: A scientometric review based on Cite Space analysis. Agric. Rural. Stud. 3 (2), 29. Zhang, F., Fan, Z., Kang, Y., Hu, Y., Ratti, C., 2021. ‘‘Perception bias’’: Deciphering a mismatch between urban crime and perception of safety. Landsc. Urban Plan. 207, 104003. Zhang, T., Yan, M., Yu, X., Liu, B., 2024. Visual assessment of hi",
+    "section": "unknown",
+    "char_start": 85400,
+    "char_end": 86200
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_124",
+    "text": "Landsc. Urban Plan. 207, 104003. Zhang, T., Yan, M., Yu, X., Liu, B., 2024. Visual assessment of historic landmarks based on GIS and survey: a study of view and viewing of Tiger Hill in Suzhou, China. J. Asian Archit. Build. Eng. 23 (3), 1079–1093. Zhao, T., Liang, X., Biljecki, F., Tu, W., Cao, J., Li, X., Yi, S., 2025. Quantifying seasonal bias in street view imagery for urban form assessment: A global analysis of 40 cities. Comput. Environ. Urban Syst. 120, 102302. Zheng, Y., Zhang, G., Tan, S., Feng, L., 2023. Research on progress of forest fire monitoring with satellite remote sensing. Agric. Rural. Stud. 1 (2), 14. Zhou, X., Cen, Q., Qiu, H., 2023 a. Effects of urban waterfront park landscape elements on visual behavior and public preference: Evidence from eye-tracking experiments.",
+    "section": "unknown",
+    "char_start": 86100,
+    "char_end": 86900
+  },
+  {
+    "source_id": "Luo2025",
+    "chunk_id": "chunk_125",
+    "text": "andscape elements on visual behavior and public preference: Evidence from eye-tracking experiments. Urban For. Urban Green. 82, 127889. Zhou, Y., Lei, H., Zhang, X., Wang, S., Xu, Y., Li, C., Zhang, J., 2023 b. Using the dual concept of evolutionary game and reinforcement learning in support of decisionmaking process of community regeneration—case study in Shanghai. Buildings 13 (1), 175. Zhou, K., Tan, R., 2024. Understanding the structure of public perceptions towards urban green spaces: A mixed-method investigation. Urban For. Urban Green. 101, 128496. International Journal of Applied Earth Observation and Geoinformation 143 (2025) 104746 13",
+    "section": "unknown",
+    "char_start": 86800,
+    "char_end": 87600
+  }
+]

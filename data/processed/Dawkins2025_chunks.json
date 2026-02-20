@@ -1,0 +1,698 @@
+[
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_01",
+    "text": "https://doi. org/10.1177/14614448251338280 new media & society 2025, Vol. 27(8) 4402 –4419 © The Author(s) 2025 Article reuse guidelines: sagepub. com/journals-permissions DOI: 10.1177/14614448251338280 journals. sagepub. com/home/nms Urban digital twins: Digital twins for participatory steering Oliver Dawkins Maynooth University, Ireland Rob Kitchin Maynooth University, Ireland Abstract Originating in the field of manufacturing, the Digital Twin (DT) concept is now being applied across a range of application domains, from personal healthcare to whole Earth observation. Despite enthusiasm for DTs, uncertainties have arisen concerning their lack of definition and technical specificity. This paper reassesses the concept with particular consideration for its application to cities in the form",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_02",
+    "text": "aper reassesses the concept with particular consideration for its application to cities in the form of Urban Digital Twins (UDTs). Rather than identifying DTs with a particular set of technologies, we instead understand them as embodying a core ‘conceptual model’ describing a mechanism for control based on the generation and feedback of information, elsewhere characterised as a ‘steering representation’. By aligning their use with more participatory forms of governance involving the ‘commoning’ of city information, we argue that UDTs might then provide powerful new means for participation in urban planning and governance through the support they provide for communication, collective sensemaking and shared oversight. Keywords City Digital Twins (CDTs), City Information Models (CIMs), Digita",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_03",
+    "text": "ing and shared oversight. Keywords City Digital Twins (CDTs), City Information Models (CIMs), Digital Twins (DTs), Urban Digital Twins (UDTs) Corresponding author: Oliver Dawkins, Maynooth University, Co Kildare, Ireland. W 23 NPY6. Email: oliver. dawkins@mu. ie 1338280 NMS 0010.1177/14614448251338280 new media & society Dawkins and Kitchin research-article 2025 Special Issue: Digital Twinning\n\nDawkins and Kitchin 4403 Introduction Digital Twins (DTs) were first conceived in the field of manufacturing, where the term signifies ‘a virtual, digital equivalent to a physical product’ (Grieves, 2014). The concept’s originator, Michael Grieves, dates its inception to 2002 when it was first presented and then taught in courses on lean production methods and product lifecycle management (PLM) (Gri",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_04",
+    "text": "ed and then taught in courses on lean production methods and product lifecycle management (PLM) (Grieves and Vickers, 2017). In PLM, DTs involve three essential components: ‘(a) physical products in Real Space, (b) virtual products in Virtual Space, and (c) the connections of data and information that ties the virtual and real products together’ (Grieves, 2014: 1). It is the reciprocal connection of physical and virtual components or counterparts that enables the DT to fulfil its main function as a mechanism for iterative feedback and control of the production process. The flow of data from physical to virtual enables the virtual system to match or ‘mirror’ the current state of its physical counterpart. New information generated through the application of computer modelling, simulation, an",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_05",
+    "text": "counterpart. New information generated through the application of computer modelling, simulation, and analysis performed on the virtual model can then be fed back into the physical manufacturing process to effect desired changes. During early development, the concept was described using several different terminologies including ‘mirrored spaces’, ‘information mirroring’, and the ‘virtual doppelganger’ (Grieves, 2023). The term ‘digital twin’ was adopted more recently in the 2010 s after Grieves met his colleague John Vickers at NASA, who coined it during their collaboration. DTs can be linked to a range of other concepts involving the creation of digital representations and their communication with physical entities. These might include computer-aided design (CAD) from Sketchpad (Sutherlan",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_06",
+    "text": "on with physical entities. These might include computer-aided design (CAD) from Sketchpad (Sutherland, 1963) onward, responsive environments (Krueger, 1977), ubiquitous computing (Weiser, 1991), mirror worlds (Gelernter, 1992), Digital Earth (Gore, 1998), computer simulated microworlds (Brehmer and Dörner, 1993), and cyber-physical systems (Lee, 2008). Each of these share conceptual overlaps and are often implemented using similar technologies. However, each also has its own distinct origin, motivation, and developmental trajectory. Rather than undertake a comparative study, we instead offer a close re-reading of Grieves’ and Vicker’s canonical descriptions of DTs to better understand this specific concept’s motivations and implications when adopted in new contexts. Here we focus on the ca",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_07",
+    "text": "pecific concept’s motivations and implications when adopted in new contexts. Here we focus on the case of urban planning and governance. We begin by outlining the conceptual development of DTs within the originating context of PLM. We then discuss their reception within the field of urban planning and modelling, paying particular attention to the use of mirroring and twinning metaphors to illustrate the concept. In doing so, we outline their insufficiency for grounding a definition of DTs that applies universally across different application domains and propose an alternative. Our primary contribution is to reorientate the general understanding of DTs by reference to Grieves’ own framing of them as a ‘conceptual model’ and ‘ideal’ rather than a particular technology (Grieves, 2014, 2023; G",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_08",
+    "text": "them as a ‘conceptual model’ and ‘ideal’ rather than a particular technology (Grieves, 2014, 2023; Grieves and Vickers, 2017). We also highlight another overlooked facet of the model, stated unequivocally: ‘Digital Twin is about information’ (Grieves and Vickers, 2017: 101). This, we argue, can be grasped independently of the metaphors typically deployed to illustrate the concept. Based on this reading, we associated DTs with a particular form of control mechanism, identified elsewhere as a ‘steering representation’ (Korenhof et al., 2021). From this perspective DTs involve\n\n4404 new media & society 27(8) the operationalisation of digital media for sensemaking and action. Our second contribution involves the elaboration of this conceptual paradigm and its application to the field of urban",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_09",
+    "text": "tion involves the elaboration of this conceptual paradigm and its application to the field of urban planning. Our third contribution recommends the harnessing of this capability for more collective and participatory ends through the sociotechnical ‘commoning’ of urban data associated with UDTs (Calzati and Van Loenen, 2023). Combining these perspectives affords a critical model for the understanding of DTs that remains sensitive to their challenges and limitations as mechanisms of control, but is cautiously optimistic regarding their potential for advancing participation in relation to the planning and governance of cities. DTs for manufacturing and PLM The original concerns motivating the development of DTs first arose in the context of lean production and PLM. These are methodologies for",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_10",
+    "text": "evelopment of DTs first arose in the context of lean production and PLM. These are methodologies for controlling the production of manufactured goods using processes of iterative review and feedback to maximise productivity and minimise the waste of resources, including materials, time, and effort. PLM seeks to extend the benefits of lean production to the whole product lifecycle by better utilising information generated during design and manufacture to make the product’s subsequent use and eventual disposal more sustainable. The basic idea was to use CAD to construct and update a modifiable digital representation that could be used to test and ‘virtually perfect’ products prior to manufacture using experimental computer simulation (Grieves, 2011). A DT’s ability to fulfil this function is",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_11",
+    "text": "re using experimental computer simulation (Grieves, 2011). A DT’s ability to fulfil this function is premised on the ‘extensiveness’ and ‘fidelity’ of the virtual component’s representation of its physical counterpart (Grieves and Vickers, 2017). Grieves (2014) further proposed that DTs should be ‘indistinguishable from their physical counterparts’ (p. 1). This is achieved by ensuring that the state of the virtual counterpart is updated using data to representationally ‘mirror’ the current state and behaviour of its physical counterpart. Hence, ‘[a]t its optimum, any information that could be obtained from inspecting a physical manufactured product can be obtained from its Digital Twin’ (Grieves and Vickers, 2017: 94). Grieves and Vickers (2017) also proposed that the ability to ‘front-run",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_12",
+    "text": "eves and Vickers, 2017: 94). Grieves and Vickers (2017) also proposed that the ability to ‘front-run’ simulations alongside real-time feeds of data would provide situational awareness for human operators while simultaneously enabling them to test alternative situations and system configurations, facilitating the detection of ‘undesirable and unpredicted’ behaviours as they unfold and the ability to take pre-emptive measures. The prototypical sites for the application of DTs are the crash test laboratory and the factory floor. During design, products can be tested virtually rather than physically: ‘in physical space, the car that is crash tested is destroyed and cannot be used again. In these virtual spaces, we can crash test that same vehicle repeatedly’ (Grieves, 2023: 100). Here, the use",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_13",
+    "text": "virtual spaces, we can crash test that same vehicle repeatedly’ (Grieves, 2023: 100). Here, the use of DTs enable the same car design to undergo a theoretically infinite number of design modifications and crashes with minimal use of physical resources and time. If you need to run more experiments faster, you can create more copies of the car and run those experiments in parallel. Similarly, the entire car factory and production process could also be represented as DTs and made accessible via the Internet in near real-time: ‘This provides a window onto the factory floor for anyone at any time from any place’\n\nDawkins and Kitchin 4405 (Grieves, 2014: 6). In principle, these advantages can be extended to any system or process that can be represented in silico. In this way, DTs offer an unpar",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_14",
+    "text": "extended to any system or process that can be represented in silico. In this way, DTs offer an unparalleled means for collective oversight and collaboration in the production process. These advantages can be further exploited when the product goes into operational use through real-time tracking, visualisation, and data analysis. NASA was an early adopter of the DT concept, incorporating it into its manufacturing roadmap in the 2010 s (Piascik et al., 2012). NASA defined DTs as ‘ultra-realistic’ digital representations of systems that could integrate a ‘multiphysics, multiscale, probabilistic simulation of an as-built vehicle or system’, such as one of NASA’s space shuttles. This would use ‘the best available physical models, sensor updates, fleet history, and so on, to mirror the life of i",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_15",
+    "text": "he best available physical models, sensor updates, fleet history, and so on, to mirror the life of its corresponding flying twin’, exploiting real-time sensor telemetry to continuously monitor the ‘health’ of the system and estimate probabilities of ‘mission success’ (Glaessgen and Stargel, 2012: 13). For NASA, the benefit is the ability to monitor and manage dependencies in highly complex systems-of-systems where minor issues can have cascading effects, such as in the Challenger and Columbia shuttle disasters (Grieves and Vickers, 2017). NASA’s deployment of the concept helped its wider dissemination. However, the concept has regularly drawn criticism regarding uncertainty of definition, technical specificity, suitable applications, standards, and established best practices (Broo and Scho",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_16",
+    "text": "chnical specificity, suitable applications, standards, and established best practices (Broo and Schooling, 2023; Kritzinger et al., 2018; Lu et al., 2020; Trauer et al., 2020). This hinders wider adoption, particularly when those seeking to emulate NASA’s vision do not share similar mission-critical requirements regarding structural information, real-time telemetry, or operational context. Vehicles like NASA’s shuttles are self-contained by necessity because of the need to protect their components and provide life support for their crews in the vacuum of space. They are internally very complex, but the wider environment in which they operate can be understood relatively simplistically. In contrast to cars and shuttles, cities do not roll off the production line as finished products. They a",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_17",
+    "text": "ntrast to cars and shuttles, cities do not roll off the production line as finished products. They are open systems that evolve over time, constantly mediating complex social and technical interactions which, arising either internally or externally, cross infrastructures and boundaries and operate at multiple scales. In this sense, cities are not a product but a medium (Kittler, 1996). Despite these differences, DTs are now being proposed for the management of cities and urban districts across the globe, with examples including Singapore, Kalatasama in Helsinki, Vienna, Zurich, Amsterdam, New South Wales, and Victoria (Jeddoub et al., 2023). Urban DTs The practical development of DTs began with the creation of sparse, static 3D CAD models in car, boat, and aircraft design. In time, it beca",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_18",
+    "text": "ith the creation of sparse, static 3D CAD models in car, boat, and aircraft design. In time, it became possible to incorporate additional information about an object’s material properties, enabling dynamic new forms of structural and performance analyses. Similarly, traditional CAD design in architecture is being succeeded by Building Information Modelling (BIM), which combines 3D models with ever more detailed information about materials, structural properties, costs, schedules for construction, and even real-time sensor feeds (Deutsch, 2017). This convergence of building information is encouraging new PLM-like methodologies for managing buildings by aggregating BIM data from architects and construction companies and\n\n4406 new media & society 27(8) transferring it to building owners and f",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_19",
+    "text": "construction companies and\n\n4406 new media & society 27(8) transferring it to building owners and facilities managers. These models can be used for building maintenance, but also for tasks like monitoring, simulating, and improving energy use (Peters and Peters, 2018). Such approaches are now being scaled to entire districts through emerging urban building energy modelling (UBEM) techniques (Reinhart and Cerezo Davila, 2016). There is growing expectation that such models might be aggregated to form more general city information models (CIM) (Khemlani, 2005; Thompson et al., 2016). Alongside buildings and their attributes, CIMs are intended to integrate diverse information relevant to the planning, operation, and administration of cities, including demographic, transport, environmental, an",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_20",
+    "text": "anning, operation, and administration of cities, including demographic, transport, environmental, and economic variables. To achieve this, CIMs need to combine the capabilities of traditional 2D Geographic Information Systems (GIS) with new data management infrastructures capable of incorporating 3D information and semantics, producing new forms of Geo BIM for visualisation and analysis (Cureton and Hartley, 2023). CIMs can facilitate a wide range of use cases, including urban planning, visual assessment, energy modelling, and emergency response. Once realised, advocates contend that CIMs will provide valuable shared views of a city and single source of ‘truth’ to support more effective collaboration between urban stakeholders. Several cities have already taken steps to develop CIMs based",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_21",
+    "text": "aboration between urban stakeholders. Several cities have already taken steps to develop CIMs based on a range of interface technologies and spatial media (Kitchin et al., 2021). These include game engines Unity and Unreal, web-based virtual globes like Cesium, and 3D GIS products such as Arc GIS Pro. Existing CIMs provide relatively basic interaction, analytic, and querying functionalities: the user can explore a representation of the city in 3D space by moving and rotating a virtual camera, using point and click to display object attributes in a 2D table or popup, and sometimes visualising the results of analysis as texture overlays or 3D objects in the scene. CIMs can be differentiated not only by the interface technologies they employ but also by the underlying data models they use and",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_22",
+    "text": "t only by the interface technologies they employ but also by the underlying data models they use and their approach to standardisation. A putative standard for CIMs exists in the form of the OGC’s City GML data model for 3D city models. Initiatives using this standard have typically been city-led, emphasising the use of open-source technologies and the release of models as open data. While City GML is able to represent the physical characteristics and semantic properties of the urban environment in great detail, its full capabilities are often underutilised. Most City GML models to date have offered simple block models of buildings with basic attributes attached. Virtual Singapore and the Kalatasama DT both incorporated photorealistic textures and aerial imagery for visualisation (see Figu",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_23",
+    "text": "latasama DT both incorporated photorealistic textures and aerial imagery for visualisation (see Figure 1). Recent CIMs for Amsterdam and Zurich prioritised geometric modelling of roof structures over photorealism to better support spatial analysis and energy modelling. Commercial efforts to create CIMs usually develop custom data models to support their own visualisation platforms, typically utilising game engines for interaction. This approach has been particularly popular with startup companies that offer their platforms as paid services for cities like VU. CITY in the United Kingdom, 51 World in China, and Cityzenith in the United States (ceased to trade 2023). Lacking the built-in functionalities for spatial analysis associated with GIS, game engines are better optimised for the develo",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_24",
+    "text": "onalities for spatial analysis associated with GIS, game engines are better optimised for the development of high-quality visualisations involving dynamic, real-time representations of changing weather patterns, sensor updates, traffic flows, pedestrian movements, social media interactions, and live video feeds. They also readily integrate with technologies\n\nDawkins and Kitchin 4407 like VR and AR, which can help with public engagement. Platforms like VU. CITY also demonstrated the ability to incorporate much higher level of detail (LOD) architectural models. However, access to the data held by commercial platforms is typically restricted as they do not share the same commitments to open data publication as city-led initiatives. This can also lead to difficulty ascertaining the quality, de",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_25",
+    "text": "a publication as city-led initiatives. This can also lead to difficulty ascertaining the quality, depth, and accuracy of the information their systems hold. Nascent CIMs are now being promoted as City Digital Twins (CDTs) or Urban Digital Twins (UDTs). The terms have been used interchangeably, but researchers increasingly distinguish the two on several axes (Cureton and Hartley, 2023). Jeddoub et al. (2023) have observed CDTs referring to static 3D models of the built environment, while UDTs refer more broadly to underlying platforms. UDTs incorporate multiple datasets from diverse sources alongside outputs from analytical models and simulations. Such platforms have a social dimension due to the need for coordination between service providers, platform operators, local government, and othe",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_26",
+    "text": "the need for coordination between service providers, platform operators, local government, and other stakeholders to maintain the platform, update data, and participate in decision-making. They also register the everyday activities of people through monitored interactions with urban infrastructure. This raises concerns about surveillance and requires appropriate governance and oversight. Increasingly, CDTs are associated with ‘tech-centered and practice-first’ aspects of CIMs as products, while UDTs are understood to embody active, sociotechnically determined, and politically inflected processes of ‘twinning’ that are more ‘contextual, iterative, and participatory’ (Calzati and Van Loenen, 2023: 37). Based on our interest in DTs as platforms and their sociotechnical implications, we focus",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_27",
+    "text": "2023: 37). Based on our interest in DTs as platforms and their sociotechnical implications, we focus on the discussion of UDTs for the remainder of the article. Figure 1. (Top left) virtual Singapore–https://youtu. be/Qn Lyy0ow GL0; (Top right) Helsinki Urban data mode–https://kartta. hel. fi/3d/; (Bottom Left) 51 World–https://youtu. be/ UAp Datc P3Wo; (Bottom right) VU. CITY–https://youtu. be/NNd QIDjf1y8.\n\n4408 new media & society 27(8) Visualising and interacting with UDTs has great potential value for urban design, public engagement, and consultation in the planning process (Kitchin et al., 2021). As well as aiding professional planners to conduct strategic forward planning, and assess planning applications, they enable people from different places and backgrounds to achieve a common",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_28",
+    "text": "planning applications, they enable people from different places and backgrounds to achieve a common understanding of a place and reach agreement on design and planning decisions. The value proposition for cities and citizens is particularly high when they combine open data with open-source technologies (Dembski et al., 2019). This aligns with Grieves (2014) own views about the collaborative potential for 3D visualisation with DTs in contexts like virtual representations of the factory floor. However, these possibilities have existed for some time and do not necessarily require the development of UDTs over and above the capabilities already provided by existing 3D city models and CIMs. Recently, Cureton and Hartley (2023) employed a ‘backcasting’ methodology to extrapolate the most desirabl",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_29",
+    "text": "ly, Cureton and Hartley (2023) employed a ‘backcasting’ methodology to extrapolate the most desirable potential futures for the development of UDTs based on the developmental trajectories of their precursors. Drawing a developmental line for UDTs back to the inception of CAD and GIS in the 1960 s, they found that many precursors already possessed components associated with cutting-edge CIMs and UDTs, somewhat blunting more recent claims for their novelty and innovation. Nonetheless, in the context of urban modelling, Batty (2018) identified a tension between the characteristics of urban models and the requirement for mirroring and verisimilitude proposed by Grieves. Urban models are mathematical abstractions of urban phenomena that usually select a subset of the most relevant variables and",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_30",
+    "text": "ical abstractions of urban phenomena that usually select a subset of the most relevant variables and make simplifying assumptions about their behaviours. They are not necessarily concerned with the appearance of cities or certain aspects of their dynamics; they seek explanatory outcomes, not visual or operational twinning. Furthermore, the expectation of real-time simulation and feedback between virtual and physical systems is constrained by the practical concerns of computer latencies and model run-times. For Batty, these tensions suggested an apparent paradox: that a computer model of a physical system could never form the basis for a DT because ‘[t]he closer one gets to the real system with a digital representation, the more the twins merge to become one’. Hence, he concluded, ‘it is mo",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_31",
+    "text": "th a digital representation, the more the twins merge to become one’. Hence, he concluded, ‘it is more likely that digital twins are not identical twins and the notion of an exact mirror is an idealization that will never be achieved’. (Batty, 2018: 819; original emphasis). Batty seems to suppose that a DT cannot simultaneously represent both the current and the simulated future states of the same entity while remaining an identical twin. However, in Grieves’ and Vicker’s account of DTs, there is no technical or philosophical commitment to maintaining identity between physical and digital components; it is indeed a philosophical impossibility as they are materially distinct, one made of atoms, the other represented by bits. However, on that basis, Batty identifies DTs with the kinds of mod",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_32",
+    "text": "s, the other represented by bits. However, on that basis, Batty identifies DTs with the kinds of models and simulations with which he is already familiar. Accordingly, on this understanding, a DT might be viewed as a ‘container’ for models, data, and simulations operating at varying levels of abstraction (Dembski et al., 2019). Tomko and Winter (2019) went further in their rejection of the twin metaphor, proposing an alternative based on the concept of cyber-physical-systems, likened to the ‘tight coupling’ between the brain and body of biological organisms. Their proposed model emphasised sensing, agency, and the need for an immune system, forming a ‘cyberphysical-social ecosystem’ with its own ‘nerve system of sensors’ (p. 398). Arguably,\n\nDawkins and Kitchin 4409 their position replaces",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_33",
+    "text": "own ‘nerve system of sensors’ (p. 398). Arguably,\n\nDawkins and Kitchin 4409 their position replaces one set of conceptual problems with another. For example, they have a very particular conception of decision-making and agency: capable ‘not only of reaction and prediction, but increasingly also of action (rather than being the passive reflection of a mirror)’ (p. 395). Acting cyber-physical systems as they conceive them might be thought of as autonomous software agents or robots of varying forms, scales, and functions. They liken these agents to the immersed and embodied minds of living organisms, though this analogy seems question-begging. While DTs are intended to facilitate certain forms of automation, it is by no means necessary or even desirable that DTs act autonomously in many case",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_34",
+    "text": "of automation, it is by no means necessary or even desirable that DTs act autonomously in many cases. The agency granted to DTs might instead be purposely limited to very specific determinations or actuations and might warrant review and validation by human decision-makers. Fotheringham (2023) has recently complained that discussions of DTs have tended to emphasise ‘aesthetics over processes’, particularly in relation to 3D visualisations of the built environment, which are felt to be ‘essentially sterile’ as they don’t engage with the representation and modelling of human activity that would give DTs their meaning and value. Fotheringham argues that the twinning metaphor implies a degree of ‘veracity’ that is likely to be missing when a DT seeks to incorporate the less predictable ‘messi",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_35",
+    "text": "f ‘veracity’ that is likely to be missing when a DT seeks to incorporate the less predictable ‘messiness’ of how human beings utilise buildings and urban infrastructure, particularly when relying on forms of 3D visualisation that suggest precision by way of visual fidelity but in fact lack established means of representing error and uncertainty. For Fotheringham (2023: 1020), as for Batty, the DT analogy and the metaphorics of mirroring and twinning it is taken to rest on simply starts to ‘unravel’ when queried in detail. This unravelling is partly due to their reduction of DTs to the kinds of analytical models they are already familiar with, and then compounded by their failure to engage with the Grieves’ conceptual model beyond the terms suggested by the application of the mirroring and",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_36",
+    "text": "th the Grieves’ conceptual model beyond the terms suggested by the application of the mirroring and twinning metaphors to analytical models. This generates a false paradox whereby a DT both is and is not an analytical model. For our own part, while we expect analytical models and simulations to play a key role in UDTs of the future, we also see key benefits in other areas such as visualisation for enhancing collective sensemaking at scale, public participation, and support for wider efforts to integrate the organisation and management of urban planning and operations. Negotiating the metaphorics of DTs These initial engagements with DTs posed two problems. First, they interpreted the concept purely in terms of their own disciplines, such that non-aligning assumptions were treated as ancill",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_37",
+    "text": "purely in terms of their own disciplines, such that non-aligning assumptions were treated as ancillary or ignored. Second, they sought to derive strict definitions of DTs based on the metaphors of mirroring and twinning, which really only serve as illustrative heuristics. Recently, Grieves’ (2023) has offered a warning about attempts to engage DTs that over-specify the metaphors: ‘Metaphors are not simply comparisons, but generative devices that allow rich understandings, new perspectives, and generative ideas that open up areas of opportunities that had not previously been thought of’ (p. 110). For Grieves (2023), the metaphor of twinning has just two key attributes: ‘duality and strong similarity’ (p. 110). Even so, ‘language matters’ (Lupton, 2021). It produces material effects and\n\n44",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_38",
+    "text": "milarity’ (p. 110). Even so, ‘language matters’ (Lupton, 2021). It produces material effects and\n\n4410 new media & society 27(8) affects by conditioning the ways that technology is perceived and understood, with concepts that work well in one context having different connotations in others. By way of illustration, early figurations of DTs as doppelgangers might cast twins as uncanny and malevolent doubles. Through the perceived immateriality of the digital, this double might be taken as a ghostly, phantasmatic, or spectral presence. Given that the physical counterpart itself is only ever present within the twinning relation via the mediation of sensors, data, and the flow of bits, not as the thing itself, perhaps the physical counterpart might itself assume a similarly spectral presence as",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_39",
+    "text": "thing itself, perhaps the physical counterpart might itself assume a similarly spectral presence as mediated by the DT. The mirroring metaphor implies a relation that can occur without material contact or connection, or perhaps even by coincidence. Twinning at least implies shared filiation or lineage, which the mirroring relation lacks. We might suppose that DTs participate in the logic of the stand-in, substitute, or proxy (Mulvin, 2021). Through simulation, the DT undergoes transformations on behalf of its physical counterpart. However, the intended relationship between virtual and physical counterparts is perhaps more intimate, mediated by a reciprocal transfer of data and information, and materially grounded in the transfer of binary 0 s and 1 s or ‘bits’ (Dourish, 2017). Emphasising",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_40",
+    "text": "and materially grounded in the transfer of binary 0 s and 1 s or ‘bits’ (Dourish, 2017). Emphasising the necessity of this material connection between counterparts, the DT might instead be taken to imply a form of symbiosis, a ‘tight coupling’ as it is referred to in the literature, perhaps suggesting something more like the dependency experienced by conjoined twins. Speculations such as these may be generative, but they can also misdirect, as seems to be the case in relation to cities. Regarding the medical field, Lupton (2021: 409) asks, ‘[s]hould the term ‘digital twins’ be used in medical care?’ and responds, ‘[w]hy not use the terms simulation or computerised model instead?’. There is certainly value in Lupton’s attempt to say it like it is; however, as our prior discussion illustrate",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_41",
+    "text": "ertainly value in Lupton’s attempt to say it like it is; however, as our prior discussion illustrates, it is by no means clear that they can be reduced solely to collections of simulations and computer models. Rather than be helped by the twinning metaphor, efforts to specify DTs for different domains have struggled with their attempts to maintain fidelity to the conditions suggested by the metaphor versus the practicalities of its application. The conceptual challenge facing the reception of DTs to date has been twofold. DTs have been conceptually over-specified by the metaphors used to describe them, suggesting relationships and characteristics that do not readily transfer to new contexts without contradiction. DTs are simultaneously underspecified from a technical standpoint, not requir",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_42",
+    "text": "without contradiction. DTs are simultaneously underspecified from a technical standpoint, not requiring any particular elements or implementation beyond the coupling of physical and digital counterparts, the flow of data to synchronise the digital counterpart, and the reciprocal flow of information generated through simulation and analysis. Furthermore, there is no apparent necessity for the exclusion of non-physical systems, processes, and services from this relation (Trauer et al., 2020). Responses to the concept naturally reflect the concerns, interests, opportunities, and constraints associated with the applications to which they are applied (Van der Valk et al., 2020). Hence, ‘there is no specific example for Digital Twins’ but rather ‘a collection of use cases contributing to an over",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_43",
+    "text": "no specific example for Digital Twins’ but rather ‘a collection of use cases contributing to an overall strategy with a vision’, hence, ‘it is not purposeful limiting the twinning principles to specific applications or technologies’ (Trauer et al., 2020: 762). It is precisely this degree of ‘technical flexibility’ (Korenhof et al., 2021) that facilitates wider diffusion of DTs. Korenhof et al. (2021) propose a Wittgensteinian set of ‘family resemblances’ between use cases centred on five commonly identified characteristics: real-time, high-fidelity,\n\nDawkins and Kitchin 4411 predictive, prescriptive, feedback: ‘A ‘regular’ model or simulation may share one or more of these traits, but when all are present, it is likely that a Digital Twin is at play’ (Korenhof et al., 2021: 1755). However,",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_44",
+    "text": "ll are present, it is likely that a Digital Twin is at play’ (Korenhof et al., 2021: 1755). However, within a specific application domain, this criterion may be too weak. The development of DTs within specific domains should not be considered a technological free-for-all. For example, for DTs to be adopted by cities, we do need to be able to develop standards and best practices that help determine which technologies and techniques are most appropriate for their proposed use. DTs as participatory steering Setting aside the metaphorics of DTs, we find that Grieves and Vickers do articulate a coherent ‘conceptual model’ and ‘conceptual ideal’ articulated within the context of PLM (Grieves and Vickers, 2017). At their core, DTs involve a digital coupling of counterpart systems involving a mate",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_45",
+    "text": "ickers, 2017). At their core, DTs involve a digital coupling of counterpart systems involving a material system (physical or otherwise), linked to a digital representation, and reciprocally communicating in ways that iteratively, perhaps continuously, match their states. Communication occurs through the generation of data by sensing technologies and its exchange for new information, facilitated by appropriate forms of analysis, simulation, and visualisation, as required. Their original purpose was to support more sustainable outcomes from the process of industrial manufacture, but fundamentally, DTs are control mechanisms. Korenhof et al. (2021) observe their resemblance to the kinds of self-regulating systems associated with mid-20 th century cybernetics and systems theories. In relation",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_46",
+    "text": "-regulating systems associated with mid-20 th century cybernetics and systems theories. In relation to urban planning, Jay Forrester set out a cybernetic approach to planning in 1969, which cast the city as a system of systems. Like contemporary urban modelling, the theory supposed that by breaking down urban systems into their component parts, those systems and processes could be mathematically modelled and simulated to predict the outcomes of different policy interventions. This kind of thinking re-emerged in the 2000 s with the development of big data and advancements in computing that enabled new forms of real-time data processing and analysis alongside advancements in artificial intelligence (Kitchin et al., 2019). Placed in relation to the kinds of ‘governing’ or ‘steering’ associate",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_47",
+    "text": "gence (Kitchin et al., 2019). Placed in relation to the kinds of ‘governing’ or ‘steering’ associated with cybernetics, DTs appear to be the latest instantiation of a ‘control revolution’ (Beniger, 1989), which, beginning in the 19 th century, now structures our ascendant regime of control through digital technologies and big data. From a technical perspective, DTs are exemplary datadriven technologies. Korenhof et al. (2021) emphasise their ‘performative’ capacity as a ‘steering technique’ or ‘steering representation’ that is used to direct a system towards desired goals. Leveraging high-fidelity and real-time data as inputs for simulation, the technical attraction of DTs is their ability to drive system optimisations and efficiencies in ways that are explicitly predictive but also implic",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_48",
+    "text": "o drive system optimisations and efficiencies in ways that are explicitly predictive but also implicitly prescriptive. Far from a neutral mirror of reality, DTs embody ‘materialised norms’ that may escape our attention, be reductionist in nature, and work to ‘call into life a phantasmal objectivity of the Digital Twin’, reflecting not only what the twinned system actually is but also what it ‘ideally should be’ (Korenhof et al., 2021: 1760). The concern here is that the ability of DTs to automatically determine and enact certain outcomes might effect a ‘norm reversal’ whereby the digital representation becomes an ‘essential supplement’ ensuring that its physical counterpart be ‘transparent, predictable, and the best possible version of itself’\n\n4412 new media & society 27(8) (Korenhof et a",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_49",
+    "text": "predictable, and the best possible version of itself’\n\n4412 new media & society 27(8) (Korenhof et al., 2021: 1761–1762). In this way, impulses towards optimisation and efficiency might become reified through the creation of DTs as essential conditions for determining what a ‘normal’ physical entity ‘truly’ is. The implication is that DTs might generate a self-referential dependence where the physical entity relies on the DT for validation and completeness, while the DT relies on the physical entity for its very existence, reinforcing the process of perfectibility, and ceding the original’s capacity for agency and self-determination to its digital counterpart. In opposition to this, they propose that while ‘techno-optimistic’ narratives regarding DTs gesture towards undesirable forms of po",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_50",
+    "text": "pose that while ‘techno-optimistic’ narratives regarding DTs gesture towards undesirable forms of power relationships and control, DTs capacities as steering techniques and representations might instead be employed for more empowering and participatory forms of collaborative steering or governance. Indeed, Grieves and Vickers’ intention for DTs wasn’t to provide a mechanism for societal control but rather to help humans better manage and mitigate risks arising in the design, manufacture, and operation of complex systems. DTs were proposed to identify and mitigate the undesirable and unpredicted behaviours that they identified as arising, primarily, through ‘human inconsistency, both deliberate and accidental, in following rules, processes, and procedures and a lack of sensemaking’ (Grieves",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_51",
+    "text": "te and accidental, in following rules, processes, and procedures and a lack of sensemaking’ (Grieves and Vickers, 2017: 88). While the information produced by DTs can certainly be used to support automation, its main addressee is not the machine but the human in the loop, and the technical enhancement of their capacities for information processing, sensemaking and collaboration: The digital twin capability with its conceptualization, comparison, and collaboration capability frees us from the physical realm where humans operate relatively inefficiently. We can now move to [the] virtual realm where physical location is irrelevant, and humans from across the globe can have common visualization, engage in comparisons identifying the difference between what is and what should be, and collaborat",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_52",
+    "text": "engage in comparisons identifying the difference between what is and what should be, and collaborating together. This is extremely powerful and only occurs if we can match the physical product with the virtual product. (Grieves, 2014: 6) On one level, DTs are a cognitive aid that helps us translate visual information into symbolic information and back again to aid the process of decision-making. DTs externalise this process, providing a ‘common perspective’ from which to assess and compare both the actual (physical) state of a system and a desired (virtual) state, thus providing opportunities to test options and decide on the best means to intervene to close the gap between expectation and reality (Grieves, 2014). More than purely descriptive representations, DTs are said to be ‘actionabl",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_53",
+    "text": "reality (Grieves, 2014). More than purely descriptive representations, DTs are said to be ‘actionable’ (Grieves and Vickers, 2017: 85). A useful comparison can be made to the ‘operative models’ developed by Eyel Weizman and the Forensic Architecture (FA) team, specifically created to ‘do things in the world’ (Davidson et al., 2020). FA’s practice involves the digital modelling and reconstruction of physical environments as a means to forensically investigate crimes and injustices. Their work usually involves the collection of large amounts of media, whether from official outlets or crowd-sourced, which are then spatially referenced and temporally sequenced within the context provided by digital 3D reconstructions of relevant sites. These models become operative by spatially assembling the",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_54",
+    "text": "tal 3D reconstructions of relevant sites. These models become operative by spatially assembling the gathered evidence, animating the sequence of events, and providing a means of communicating their\n\nDawkins and Kitchin 4413 findings to lawmakers in court rooms and public audiences via exhibitions (Weizman, 2017). DTs are similarly operative in the way they operationalise data and digital media to enhance human sensemaking through analysis and informational feedback. However, while FA’s models share informational characteristics with DTs, they differ in that they are typically created on a one-off basis to further the understanding of exceptional situations. By contrast, DTs are intended for everyday applications, updated on an ongoing basis, and at the frequency required. In the case of ci",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_55",
+    "text": "everyday applications, updated on an ongoing basis, and at the frequency required. In the case of cities, the operation of UDTs aspires to the monitoring and management of the entire system, not only isolated sites. In this regard, perhaps the greatest challenge to the concept of UDTs is that posed by Bettencourt (2024), who argues that they will remain ‘shallow explanations of urban processes’, despite growing representational detail and assimilation of data, because ‘while digital twins disaggregate, cities aggregate’ (p. 151). From a modelling perspective, cities are understood as statistical aggregations. Their most important properties are emergent, appearing at greater spatial and temporal scales than the processes driving them. This challenge resonates with Grieves and Vicker’s (201",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_56",
+    "text": "oral scales than the processes driving them. This challenge resonates with Grieves and Vicker’s (2017: 89) own reservations about extending the application of DTs beyond ‘static emergent behavior’ that is built into a final system but unforeseen, to ‘evolutionary emergence’ that arises through the interplay of a system’s internal dynamics and those of its environment. The former describes issues like operational defects that arise in completed products like cars and shuttles. They may be accidental, but they are nonetheless part of the final product. The latter describes highly dynamic and even random behaviours in open and evolving systems like cities, arising through the interplay of diverse social, technological, and environmental factors, driven both from the top down and the bottom up",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_57",
+    "text": "se social, technological, and environmental factors, driven both from the top down and the bottom up, from within and without. From the modelling perspective, dealing with urban complexity in this way strongly limits prospects for optimisation and prediction because ‘it becomes impossible to search the space of possibilities to identify best choices associated with desirable urban trajectories’ (Bettencourt, 2024: 152). Bettencourt poses a significant challenge to the value of implementing DTs at urban scale, assuming that their primary value is their capacity for optimisation through prediction of the urban system as a whole. However, at urban scale, their value might instead lie in consolidation and collective oversight, a form of seeing at scale. Instead of attempting to manage and stee",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_58",
+    "text": "dation and collective oversight, a form of seeing at scale. Instead of attempting to manage and steer the urban system unilaterally as a whole, multiple DTs might instead address different components and layers of the system separately, but in concert, decisions being made locally within agreed thresholds and tolerances acceptable to the wider system. This requires the design and implementation of policy frameworks. In the first instance, Cureton and Hartley recommend the United Kingdom’s Gemini Principles for guidance (Cureton and Hartley, 2023). Rather than adopt a ‘purism’ towards DTs, the Gemini Principles (Bolton et al., 2018) recognise the practical need for variety of purpose, spatial and temporal scales, and approaches to modelling, within an intercommunicating ecosystem of DTs. Fo",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_59",
+    "text": "and temporal scales, and approaches to modelling, within an intercommunicating ecosystem of DTs. For example, they recognise that the value of detailed 3D structural information and photorealistic visuals are entirely dependent on the required use case. Many uses may not require 3D representation or real-time updates at all. They also accommodate differences between the temporalities of urban planning and operational management. Planning and policymaking involve long-term negotiations and collaboration. Meanwhile, operational decisions required\n\n4414 new media & society 27(8) for the management of road networks, public transport infrastructure, and emergency services increasingly require real-time situational awareness. The Gemini Principles recognise that systems like UDTs may never be c",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_60",
+    "text": "al-time situational awareness. The Gemini Principles recognise that systems like UDTs may never be complete, whole, or ‘fully federated’ precisely because the urban systems they represent are evolving. What these recommendations don’t address in great detail are wider issues about how systems like UDTs might be steered towards more socially equitable and just outcomes. In particular, UDTs need to address the issue of ‘governance by technology’ which poses wide-ranging challenges including: manipulation, diminishing variety, constraints on the freedom of communication and expression, surveillance and threats to privacy, social discrimination, violation of intellectual property rights, abuse of market power, impact on cognitive capabilities and the brain, and growing heteronomy and loss of c",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_61",
+    "text": "f market power, impact on cognitive capabilities and the brain, and growing heteronomy and loss of controllability (Nochta et al., 2019: 2). Technological advancement necessitates the development of new knowledge about the risks they pose and appropriate governance structures to ensure safe operation and equitable distribution of their benefits. This is particularly important for systems like CIMS and UDTs, where decisions concerning appropriate forms of governance involve collaboration between different agencies and the development of legislation and regulations that are properly directed towards addressing the needs of citizens. To understand and meet these needs, there is growing expectation for the involvement of individual citizens, activists, resident’s associations, and lobbying gro",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_62",
+    "text": "ion for the involvement of individual citizens, activists, resident’s associations, and lobbying groups in urban decision making. Local participation and democracy are increasingly advocated to help address gaps that might emerge by failing to mediate and reconcile the differing interests of particular groups and stakeholders. These failures can result in fragmented policy outcomes, which undermine the potential and value of systems like UDTs for supporting more holistic approaches to urban governance through their integration of sectors like transport, energy, and planning for the built environment (Nochta et al., 2019). It is primarily through the sharing of resources like data and information and the processes and institutions that form around them that such integrations occur. Calzati",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_63",
+    "text": "tion and the processes and institutions that form around them that such integrations occur. Calzati and Van Loenen (2023) argue that ‘as soon as a (new) technology creates or seizes a resource, this can effectively be managed as a commons’ (p. 11). However, the technology itself doesn’t describe the sociotechnical process of ‘commoning’ by which these resources are created and made available to citizens through their inscription in this wider system of resources, users, and those processes and institutions bind them. Hence: ‘If we are to commonise technologised urban environments, it is necessary to adopt a procedural standpoint’ (Calzati and Van Loenen, 2023: 12). From this perspective, the earlier distinction between CDTs as a technical resource or product and UDTs as a commoning process",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_64",
+    "text": "earlier distinction between CDTs as a technical resource or product and UDTs as a commoning process of governance entails acknowledgement of the ‘in-the-making (i. e. never completed) and always-partial (i. e. DT as one possible modelling of the city) nature of any digitalization’ (Calzati and Van Loenen, 2023: 13). Given that the city is an open and evolving system, UDTs as commoning representations should be ‘(1) context-based, (2) iterative, and (3) participatory’ (Calzati and Van Loenen, 2023: 13). Participation in relation to UDTs can be encouraged by simple measures such as providing the convenience of access from home for members of the community who might not\n\nDawkins and Kitchin 4415 otherwise be inclined or able to participate in more traditional forms of public participation (S",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_65",
+    "text": "15 otherwise be inclined or able to participate in more traditional forms of public participation (Schrotter and Hürzeler, 2020). It has also been proposed that the gamification of planning may provide a key area for articulating the sociotechnical relationships required between planning platforms, planners, and the public in engagement (Cureton and Hartley, 2023). In this way, DTs are seen as having great potential for mobilising the direct involvement of a growing ‘virtual public sphere’ in planning and local government (Charitonidou, 2022). This will be especially valuable when combined with efforts to achieve more just, equitable and environmentally sustainable outcomes for cities and wider society. Despite their potential benefits, the process for mainstreaming UDTs has been unclear (",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_66",
+    "text": "der society. Despite their potential benefits, the process for mainstreaming UDTs has been unclear (Wan et al., 2019) and remains incomplete (Calzati, 2023). Efforts to create UDTs to date have often been ‘artisanal’ in nature, resulting in the creation of ‘bespoke technical solutions’ that provide barriers to scaling and wider adoption due to resulting limitations on interoperability and reproducibility (Niederer et al., 2021). Not all UDT initiatives are successful due to issues with the availability of data, its representativeness, or a lack of updates and maintenance (Cureton and Dunn, 2021). The underlying vision for UDTs is also important. For these reasons, it is important that the discourse on UDTs be reoriented around harnessing their potential and steering towards better societal",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_67",
+    "text": "scourse on UDTs be reoriented around harnessing their potential and steering towards better societal outcomes. To best achieve these aims, cities will need to avoid the potential for centralisation and technical determinism inherent in smart city and platform urbanisms and move through and beyond their existing concerns and technical challenges by communing through the opening of data, adopting open-source technologies, improving interoperability, developing standards, and integrating these in wider governance processes. Ultimately, there needs to be a roadmap for the development and adoption of UDTs. Cureton and Dunn (2021) identify the development and consolidation of CIMs as an important first step. From a technical perspective, several new maturity models have been proposed to guide th",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_68",
+    "text": "first step. From a technical perspective, several new maturity models have been proposed to guide the further development of UDTs (Haraguchi et al., 2024; Masoumi et al., 2023). At the same time, cities need to engage the with societal impacts of UDTs and negotiate them collaboratively with citizens. One practical means to achieve this might be through the use of UDTs in mass participation and citizen science initiatives similar to Singapore’s national science experiments of the mid-2010 s (National Research Foundation Singapore, 2016). Conclusion In this article, we’ve examined DTs using their application to cities and urban environments as a means to explore the practical and conceptual challenges in application of the concept to new operational contexts. After summarising the concept’s",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_69",
+    "text": "allenges in application of the concept to new operational contexts. After summarising the concept’s development within the field of PLM, we then considered its reception by researchers in planning and urban modelling. Focusing on the metaphors of mirroring and twinning, which are typically assumed to provide definitive criteria for the implementation of DTs, we found that while these metaphors can be generative, they also lead to contradictions when used to provide rigorous criteria for the specification of DTs across different domains of application. Their value is illustrative rather than definitive and diminishes as assumptions about the spatiotemporal scale and the fixed integrity of resulting products or outcomes diverge.\n\n4416 new media & society 27(8) We have developed an alternativ",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_70",
+    "text": "ulting products or outcomes diverge.\n\n4416 new media & society 27(8) We have developed an alternative understanding of DTs based on Grieves’ and Vickers’ (2017) own indication that the concept be treated as a ‘conceptual model’ and ‘ideal’, providing several clearly distinguishable core features: the combination of a material entity (physical or otherwise), its digital representation, an information-generating mechanism, and the flows of data and informational feedback between each counterpart, used to alter and match their state. In essence, DTs provide a data-driven mechanism for monitoring and control, primarily intended to enhance human sensemaking and action through the operationalisation of digital media, using different forms of visualisation, modelling, simulation, and analysis to",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_71",
+    "text": "on of digital media, using different forms of visualisation, modelling, simulation, and analysis to produce new information. This information is expressly intended to help determine the most ‘desirable’ possible outcomes, which are then enacted through automation or human intervention. In this regard, DTs offer a form of ‘steering representation’ (Korenhof et al., 2021). In the case of cities, the kinds of monitoring and sensing infrastructures employed for these purposes can further the centralisation and intensification of control in ways already associated with smart cities and platform capitalism. However, with appropriate governance and participation, they could instead be directed to better serve the collective benefit of citizens and society as a whole. Following Calzati and Van Loe",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_72",
+    "text": "etter serve the collective benefit of citizens and society as a whole. Following Calzati and Van Loenen (2023), we suggested that this might best be achieved through the use of UDTs to institute a ‘commoning’ process of urban data for the collective good. In this way, DTs have great potential for facilitating better outcomes for society by providing an additional point of contact for citizens to engage and participate in the process of urban governance alongside other stakeholders. Hence, ‘buil[t] on an interplay of human choices, technological affordances, while being employed to serve humanly chosen goals’, urban societies might find themselves ‘together behind the steering wheel’ (Korenhof et al., 2021: 1766). For this to become a reality, cities will need to move beyond technology-cent",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_73",
+    "text": "f et al., 2021: 1766). For this to become a reality, cities will need to move beyond technology-centred approaches to more fully engage wider socio-technical aspects of UDT construction and operation. This requires the development of robust policy frameworks, responsible development, sharing of data and information, and provision of access in ways that enable meaningful engagement and participation by citizens. Funding The author(s) disclosed receipt of the following financial support for the research, authorship, and/or publication of this article: The research was funded by the European Research Council (101052998: Data Stories: Telling Stories About and With Planning and Property Data). ORCID i Ds Oliver Dawkins https://orcid. org/0000-0002-5294-4375 Rob Kitchin https://orcid. org/0000-",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_74",
+    "text": "RCID i Ds Oliver Dawkins https://orcid. org/0000-0002-5294-4375 Rob Kitchin https://orcid. org/0000-0003-4458-7299 References Batty M (2018) Digital twins. Environment and Planning B: Urban Analytics and City Science 45(5): 817–820. Beniger, JR (1989) The Control Revolution: Technological and Economic Origins of the Information Society. Cambridge, MA: Harvard University Press.\n\nDawkins and Kitchin 4417 Bettencourt LMA (2024) Recent achievements and conceptual challenges for urban digital twins. Nature Computational Science 4(3): 150–153. Bolton A, Butler L, Dabson I, et al. (2018) Gemini Principles. Cambridge: CDBB. Brehmer B and Dörner D (1993) Experiments with computer-simulated microworlds: escaping both the narrow straits of the laboratory and the deep blue sea of the field study. Comp",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_75",
+    "text": "s: escaping both the narrow straits of the laboratory and the deep blue sea of the field study. Computers in Human Behavior 9(2–3): 171–184. Broo DG and Schooling J (2023) Digital twins in infrastructure: definitions, current practices, challenges and strategies. International Journal of Construction Management 23(7): 1254–1263. Calzati S (2023) No longer hype, not yet mainstream? Recalibrating city digital twins’ expectations and reality: a case study perspective. Frontiers in Big Data 6: 1–12. Calzati S and Van Loenen B (2023) Towards a citizen- and citizenry-centric digitalization of the urban environment: urban digital twinning as commoning. Digital Society 2(3): 38. Charitonidou M (2022) Urban scale digital twins in data-driven society: challenging digital universalism in urban planni",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_76",
+    "text": ") Urban scale digital twins in data-driven society: challenging digital universalism in urban planning decision-making. International Journal of Architectural Computing 20(2): 238–253. Cureton P and Dunn N (2021) Digital twins of cities and evasive futures. In: Aurigi A and Odendaal N (eds) Shaping Smart for Better Cities. Amsterdam: Elsevier, pp. 267–282. Cureton P and Hartley E (2023) City Information Models (CIMs) as precursors for Urban Digital Twins (UDTs): a case study of Lancaster. Frontiers in Built Environment 9: 1–8. Davidson C, Weizman E and Varvia C (2020) Operative Models. LOG 50: Model Behavior: 217–226. Dembski F, Wössner U and Letzgus M (2019) The digital twin tackling urban challenges with models, spatial analysis and numerical simulations in immersive virtual environments",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_77",
+    "text": "challenges with models, spatial analysis and numerical simulations in immersive virtual environments. In: Blucher design proceedings, São Paulo, Brazil: pp. 795–804. Deutsch R (2017) Convergence: The Redesign of Design. Hoboken, NJ: John Wiley & Sons. Dourish P (2017) The Stuff of Bits: An Essay on the Materialities of Information. Cambridge, MA: MIT Press. Fotheringham AS (2023) Digital twins: the current ‘Krays’ of urban analytics? Environment and Planning B: Urban Analytics and City Science 50(4): 1020–1022. Gelernter D (1992) Mirror Worlds or the Day Software Puts the Universe in a Shoebox: How It Will Happen and What It Will Mean. Oxford: Oxford University Press. Glaessgen EH and Stargel DS (2012) The digital twin paradigm for future NASA and U. S. air force vehicles. In: Collection o",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_78",
+    "text": "l DS (2012) The digital twin paradigm for future NASA and U. S. air force vehicles. In: Collection of technical papers – AIAA/ ASME/ASCE/AHS/ASC structures, structural dynamics and materials conference, Honolulu, HI, 23–26 April, pp. 1–14. Reston, VA: American Institute of Aeronautics and Astronautics. Gore A (1998) The digital earth. Australian Surveyor 43(2): 89–91. Grieves M (2011) Virtually Perfect: Driving innovative and lean products through Product Lifecycle Management. Cocoa Beach, Florida: Space Coast Press. Grieves M (2014) Digital twin: manufacturing excellence through virtual factory replication. White Paper 1: 1–7. Grieves M (2023) Digital twins: past, present, and future. In: Crespi N, Drobot AT and Minerva R (eds) The Digital Twin. Cham: Springer, pp. 97–121. Grieves M and V",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_79",
+    "text": "respi N, Drobot AT and Minerva R (eds) The Digital Twin. Cham: Springer, pp. 97–121. Grieves M and Vickers J (2017) Digital twin: mitigating unpredictable, undesirable emergent behavior in complex systems. In: Kahlen FJ, Flumerfelt S and Alves A (eds) Transdisciplinary Perspectives on Complex Systems: New Findings and Approaches. Cham: Springer, pp. 85–113. Haraguchi M, Funahashi T and Biljecki F (2024) Assessing governance implications of city digital twin technology: a maturity model approach. Technological Forecasting and Social Change 204: 1–16. Jeddoub I, Nys GA, Hajji R, et al. (2023) Digital twins for cities: analyzing the gap between concepts and current implementations with a specific focus on data integration. International Journal of Applied Earth Observation and Geoinformation",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_80",
+    "text": "ic focus on data integration. International Journal of Applied Earth Observation and Geoinformation 122: 1–23.\n\n4418 new media & society 27(8) Khemlani L (2005) Hurricanes and their aftermath, how can technology help? Aecbytes. Available at: https://www. aecbytes. com/feature/2005/Hurricane Tech Help. html Kitchin R, Dawkins O and Young G (2019) Prospects for an intelligent planning system. Planning Theory and Practice 20(4): 595–599. Kitchin R, Young GW and Dawkins O (2021) Planning and 3D spatial media: progress, prospects, and the knowledge and experiences of local government planners in Ireland. Planning Theory & Practice 22(3): 349–367. Kittler FA (1996) The city is a Medium. New Literary History 27(4): 717–729. Korenhof P, Blok V and Kloppenburg S (2021) Steering representations – to",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_81",
+    "text": "ry History 27(4): 717–729. Korenhof P, Blok V and Kloppenburg S (2021) Steering representations – towards a critical understanding of digital twins. Philosophy & Technology 34(4): 1751–1773. Kritzinger W, Karner M, Traar G, et al. (2018) Digital twin in manufacturing: a categorical literature review and classification. IFAC-Papers On Line 51(11): 1016–1022. Krueger MW (1977) Responsive environments. In: Bentley I (ed.) Responsive Environments. London: Routledge, pp. 423–433. Lee EA (2008) Cyber physical systems: design challenges. In: 2008 11 th IEEE international symposium on object and component-oriented real-time distributed computing (ISORC), Orlando, FL, 5–7 May, 363–369. New York: IEEE. Lu Q, Parlikad AK, Woodall P, et al. (2020) Developing a digital twin at building and city levels:",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_82",
+    "text": ". Lu Q, Parlikad AK, Woodall P, et al. (2020) Developing a digital twin at building and city levels: case study of west Cambridge campus. Journal of Management in Engineering 36(3): 1–19. Lupton D (2021) Language matters: the ‘digital twin’ metaphor in health and medicine. Journal of Medical Ethics 47(6): 409–409. Masoumi H, Shirowzhan S, Eskandarpour P, et al. (2023) City digital twins: their maturity level and differentiation from 3D city models. Big Earth Data 7(1): 1–36. Mulvin D (2021) Proxies: The Cultural Work of Standing In. Cambridge, MA: MIT Press. National Research Foundation Singapore (2016) National science experiment 2016 results [Video]. You Tube. Available at: https://youtu. be/rz Ehhko D9Ds Niederer SA, Sacks MS, Girolami M and Willcox K (2021) Scaling digital twins from t",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_83",
+    "text": "be/rz Ehhko D9Ds Niederer SA, Sacks MS, Girolami M and Willcox K (2021) Scaling digital twins from the artisanal to the industrial. Nature Computational Science 1(5): 313–320. Nochta T, Badstuber N and Wahby N (2019) On the Governance of City Digital Twins - Insights from the Cambridge Case Study. University of Cambridge. Peters B and Peters T (2018) Computing the Environment: Digital Design Tools for Simulation and Visualisation of Sustainable Architecture. Hoboken, NJ: Wiley. Piascik B, Vickers J, Lowry D, et al. (2012) Materials, structures, mechanical systems, and manufacturing roadmap. NASA TA. Available at: https://nap. nationalacademies. org/read/13354/ chapter/22 Reinhart CF and Cerezo Davila C (2016) Urban building energy modeling – a review of a nascent field. Building and Enviro",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_84",
+    "text": "zo Davila C (2016) Urban building energy modeling – a review of a nascent field. Building and Environment 97: 196–202. Schrotter G and Hürzeler C (2020) The Digital Twin of the City of Zurich for Urban Planning. PFG – Journal of Photogrammetry, Remote Sensing and Geoinformation Science 88(1): 99–112. Sutherland IE (1963) Sketchpad: a man-machine graphical communication system. Proceedings of the SHARE Design Automation Workshop 6: 329–346. Thompson EM, Greenhalgh P, Muldoon-Smith K, et al. (2016) Planners in the future city: using city information modelling to support planners as market actors. Urban Planning 1(1): 79–94. Tomko M and Winter S (2019) Beyond digital twins – a commentary. Environment and Planning B: Urban Analytics and City Science 46(2): 395–399. Trauer J, Schweigert-Recksie",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_85",
+    "text": "onment and Planning B: Urban Analytics and City Science 46(2): 395–399. Trauer J, Schweigert-Recksiek S, Engel C, et al. (2020) What is a digital twin? – Definitions and insights from an industrial case study in technical product development. Proceedings of the Design Society: DESIGN Conference 1: 757–766.\n\nDawkins and Kitchin 4419 Van der Valk H, Haße H, Möller F, et al. (2020) A Taxonomy of Digital Twins. In Proceedings of the 26 th Americas conference on information systems (AMCIS): 1–10. Wan L, Nochta T and Schooling JM (2019) Developing a city-level digital twin – Propositions and a case study. International Conference on Smart Infrastructure and Construction 2019 (ICSIC): 187–194. Weiser M (1991) The computer for the 21 st century. Scientific American 265: 94–104. Weizman E (2017) Fo",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_86",
+    "text": "er M (1991) The computer for the 21 st century. Scientific American 265: 94–104. Weizman E (2017) Forensic Architecture: Violence at the Threshold of Detectability. New York: Zone Books. Author biographies Oliver Dawkins is Creative Technologist on the Data Stories project at Maynooth University. His work focuses on the use of 3D visualisation, mixed realities, digital twins, urban sensing, and the Internet of Things for communication and engagement in the built environment. Rob Kitchin is a professor in the Maynooth University Social Sciences Institute and principal investigator of the ERC-funded Data Stories project. He has published widely on the inter-relationship between digital technologies, society and space.",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Dawkins2025",
+    "chunk_id": "chunk_87",
+    "text": "ogies, society and space.",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  }
+]

@@ -1,0 +1,1050 @@
+[
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_01",
+    "text": "https://doi. org/10.1177/0739456 X 241260887 Journal of Planning Education and Research 2025, Vol. 45(4) 773 –789 © The Author(s) 2024 Article reuse guidelines: sagepub. com/journals-permissions DOI: 10.1177/0739456 X 241260887 journals. sagepub. com/home/jpe Special Series Planning Research Introduction With rapid urbanization and increasing complexities, modern cities face various challenges, from persistent issues like congestion to emergent threats like climate change. In response, digital twin technology, already proven in sectors such as construction, manufacturing, and healthcare, is now being adapted to urban contexts (Fuller et al. 2020). This adaptation aligns with the broader digital transformation trend and smart city initiatives. Urban Digital Twins (UDTs), as digital represen",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_02",
+    "text": "tal transformation trend and smart city initiatives. Urban Digital Twins (UDTs), as digital representations of cities characterized by their higher fidelity, synchronicity, comprehensiveness, and interactivity, offer cities a promising tool to address complex urban problems. Thus, cities worldwide are integrating UDTs into their digital strategies. In the meantime, the academic literature around UDTs has experienced substantial growth. However, this rapid proliferation of publications has also caused several problems. A notable one is the lack of consensus on terminology and definitions of UDTs, leading to confusion and constant debates. Also, despite the vast array of applications, the benefits of UDTs often remain unclear or unsubstantiated, contributing to a growing skepticism of their",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_03",
+    "text": "fits of UDTs often remain unclear or unsubstantiated, contributing to a growing skepticism of their practical value. Furthermore, while discussions on the challenges associated with UDTs are common, they tend to become superficial and cliché, overshadowing the recent progress and innovations. Finally, the efforts on the standardization of UDT are sporadic and lack coordination. As a result, the current landscape of UDT research is multifaceted yet fragmented, and the path to future research is shrouded in uncertainty and ambiguity. This review sets out to address these gaps in the literature. First, it provides an operational definition of UDTs through an analysis of the literature and proposes a new typology as a useful framework to understand the evolution of UDTs. Second, the review sum",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_04",
+    "text": "ses a new typology as a useful framework to understand the evolution of UDTs. Second, the review summarizes the various application domains and use cases of existing UDTs, identifying their benefits and achievements. Third, it organizes the main challenges of UDTs into three interconnected yet distinct categories and offers insights into the latest progress in each category. Finally, the review examines the early efforts of standardizing UDTs and discusses the potential future paths and opportunities for research. By tackling these four key areas, the review aims to provide an up-to-date and more structured understanding of UDTs’ current role and future potential. The rest of this paper is structured as follows. Following this introduction, the “Methodology and Theoretical Framework” secti",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_05",
+    "text": "tructured as follows. Following this introduction, the “Methodology and Theoretical Framework” section delineates our systematic review method and lays the 1260887 JPEXXX 10.1177/0739456 X 241260887 Journal of Planning Education and Research Wu and Guan research-article 2024 Initial submission, January 2024; revised submission, April 2024; final acceptance, May 2024 1Robert F. Wagner Graduate School of Public Service, New York University, New York, NY, USA 2Shanghai Key Laboratory of Urban Design and Urban Science, NYU Shanghai, Shanghai, China 3Division of Arts and Sciences, NYU Shanghai, Shanghai, China Corresponding Author: Cheng He Guan, NYU Shanghai, 567 West Yangsi Road, Pudong New District, Shanghai 200122, China. Email: cg 157@nyu. edu Advancing Intra and Inter-City Urban Digital T",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_06",
+    "text": "trict, Shanghai 200122, China. Email: cg 157@nyu. edu Advancing Intra and Inter-City Urban Digital Twins: An Updated Review Tim Guangyu Wu1,2 and Cheng He Guan1,2,3 Abstract Urban digital twins (UDTs) hold promise for solving complex urban problems. However, the current research landscape is fragmented and lacks clarity. This article aims to (1) promote consensus on UDT definition and illustrate their development from domain-specific to intra-city and inter-city models; (2) synthesize current applications to uncover untapped potential; (3) categorize challenges into a triangulated framework and report the latest progress; and (4) discuss standardization and emerging opportunities in technology. This review advocates establishing comprehensive databases, exploring cross-domain interactions,",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_07",
+    "text": "gy. This review advocates establishing comprehensive databases, exploring cross-domain interactions, and enhancing human-AI collaboration. Ultimately, it envisions UDTs as central to advancing sustainability and livability in future urban planning. Keywords domain-specific, human-AI collaboration, intra- and inter-city, standardization, urban digital twin\n\n774 Journal of Planning Education and Research 45(4) foundation for understanding the nature and variety of UDTs. “Applications and Achievements: Domain UDT” dives into where, how, and why UDTs are used across various urban domains, highlighting their benefits in specific use cases. In “Challenges and Progress: Intra-city UDT,” we review the main challenges hindering UDT development and deployment and report the recent progress in overco",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_08",
+    "text": "he main challenges hindering UDT development and deployment and report the recent progress in overcoming these challenges. “A Path Toward Standardization: Inter-city UDT” examines the rationales and early efforts to standardize UDTs, opportunities in emerging technologies, and priorities for future research. The final section concludes by summarizing the key findings of our review and offering an outlook on the future trajectories of UDT research and application. Methodology and Theoretical Framework Review Method This review adheres to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines to ensure a rigorous and reproducible methodology. Our search strategy focused on the terms “urban (or city)” and “digital twin” within the title, abstract, and keywo",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_09",
+    "text": "tegy focused on the terms “urban (or city)” and “digital twin” within the title, abstract, and keywords fields. As shown in Figure 1, we conducted this search across three widely recognized academic databases: Scopus, Web of Science, and Google Scholar. We set the time frame to be January 2015 to November 2023 and restricted our review to works published in English. During the screening process, we read the full texts to filter out papers that do not primarily focus on the city scale (district or neighborhood and above), or only mention UDTs tangentially without substantial discussion. We also included a small number of related papers to support the discussions and provide contextual understanding in our review. A total of 186 records met our criteria and were included in this systematic r",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_10",
+    "text": "anding in our review. A total of 186 records met our criteria and were included in this systematic review, as shown in the Supplementary Material Table S1: List of screened literature. More details on review methods are available in Appendix A. Definition: What Are UDTs? From the analysis of the definitions in collected papers, we found that UDTs are conceptually similar to Digital Twins (DTs), sharing simulation as one of the primary functions and featuring real-time links between the physical and digital realms. However, UDTs’ definitions distinguish themselves by highlighting human elements, emphasizing usability, and mentioning adaptive complex systems, reflecting urban environments’ dynamic nature (Charitonidou 2022; Lei et al. 2023; Mohammadi and Taylor 2021; B. Wang 2021). Some stud",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_11",
+    "text": "amic nature (Charitonidou 2022; Lei et al. 2023; Mohammadi and Taylor 2021; B. Wang 2021). Some studies use system architecture diagrams to implicitly define a UDT, which often depict a multi-layered architecture embedded within a city’s digital infrastructure, such as its smart city data platform (Botín-Sanabria et al. 2022; Deng, Zhang, and Shen 2021; Ferré-Bigorra, Casals, and Gangolells 2022; Lu et al. 2020). Identification Screening Eligibility Inclusion Records identified through Scopus (n=652) Records identified through Web of Science (n=491) Records identified through Google Scholar (n=412) Records screened by title and abstract (n=910) Full text articles assessed for eligibility (n=331) Full text articles included (n=186) Repeated records excluded (n=645) Excluded records (n=724)",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_12",
+    "text": "331) Full text articles included (n=186) Repeated records excluded (n=645) Excluded records (n=724) Figure 1. PRISMA diagram of the identification, screening, eligibility, and inclusion process of texts.\n\nWu and Guan 775 Two common approaches emerge in UDT definitions and architectures: one based on data sources and the other on functionalities. The data-source approach refers to sensors and Internet of Things (Io T) technology that track the physical components of the city infrastructure or the integration of building information models (BIM) with Geographic Information Systems (GIS) (Ivanov et al. 2020; Ketzler et al. 2020; Visconti et al. 2021). The functionality-based approach defines UDTs through their capabilities, such as monitoring, analysis, simulation, and prediction (Alva, Bilje",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_13",
+    "text": "Ts through their capabilities, such as monitoring, analysis, simulation, and prediction (Alva, Biljecki, and Stouffs 2022; Deng, Zhang, and Shen 2021; Ferré-Bigorra, Casals, and Gangolells 2022; Lu et al. 2020). Detailed discussions of how we analyze definitions and architectures are provided in Appendix B. Scholarly debates on UDTs concentrate on two questions. The first pertains to the required levels of fidelity and synchronicity. The common opinion is that achieving perfect fidelity and synchronicity is neither feasible nor necessary for most applications (Batty 2018; Fotheringham 2024; Tomko and Winter 2018). Instead, the demand for these features and the thresholds that define a UDT should be contingent upon use cases. The second debate revolves around the necessity of data linkage.",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_14",
+    "text": "ould be contingent upon use cases. The second debate revolves around the necessity of data linkage. While most scholars believe bi-directional data linkage is theoretically crucial, its practical implementation is often limited, typically requiring human-in-the-loop (Batty 2018; Saeed et al. 2022; Visconti et al. 2021). These discussions highlight the need for flexibility and pragmatism in defining UDTs in various urban contexts. To align with existing literature and anticipate the needs of future studies, we operationalize the definition of UDTs as the digital representations of cities that possess the necessary level of fidelity, synchronicity, comprehensiveness, and interactivity to perform the functions they are designed for. This definition acknowledges the variability in requirements",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_15",
+    "text": "rm the functions they are designed for. This definition acknowledges the variability in requirements across different applications and contexts, emphasizing the adaptability and versatility of UDTs. It aims to provide a coherent and flexible framework for understanding and furthering the development and application of UDTs in urban management and planning. Typology: What Are the Different Categories of UDTs? Several typologies of UDT exist in the literature, such as classification by business models, design philosophies, and other thematic angles (Al-Sehrawy, Kumar, and Watson 2023; D’Hauwers, Walravens, and Ballon 2021). Yet, the most prevalent classifications are based on integration and maturity levels. The integration level typology examines the presence of bi-directional data linkages",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_16",
+    "text": "aturity levels. The integration level typology examines the presence of bi-directional data linkages, categorizing UDTs into digital models, digital shadows, and digital twins according to the direction of data flows between physical, as described in the work by Sepasgozar (2021). The maturity level typology assesses the fidelity and comprehensiveness of the UDT, ranking them from basic to exhaustive, as seen in Botín-Sanabria et al. (2022). These common typologies align with the central debates in UDT definitions and emphasize the inherent nature of UDTs as digital twins. Building on existing classifications, we propose a new typology grounded in the interpretation of “urban” in the concept of UDT. “Urban” may signify that the DT operates within an urban setting, focusing on a specific ci",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_17",
+    "text": "of UDT. “Urban” may signify that the DT operates within an urban setting, focusing on a specific city subsystem to address domain-specific challenges, which we classify as domain UDTs (DT within the city). Alternatively, it may imply that the scope of the digital twin encompasses the entire city, modeling interdisciplinary and cross-domain processes, termed intra-city UDTs (DT of the city). Finally, “urban” might denote a comparative approach, treating cities as units for benchmarking, coordination, and setting standards, which we recognize as inter-city UDTs (DT across the city). We argue that this progression from domain-specific UDTs to intra-city and inter-city UDTs provides a valuable framework for understanding the evolution and scaling of UDTs. This typology will guide the organiza",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_18",
+    "text": "framework for understanding the evolution and scaling of UDTs. This typology will guide the organization of literature analysis in the remainder of this review, offering a structured approach to understanding the multifaceted nature of UDTs. Figure 2 illustrates the conceptual relationships among domain UDT, intra-city UDT, and inter-city UDT. Applications and Achievements: Domain UDT Application Domains: In Which Domains Are UDTs Used? Existing UDTs are mainly employed to model specific subsystems of cities, with common application domains being mobility, energy, and water management, among others (Botín-Sanabria et al. 2022; Callcut et al. 2021; Castelli et al. 2019; Ferré-Bigorra, Casals, and Gangolells 2022; Li, Yu, and Shao 2021; Mylonas et al. 2021; H. Wang et al. 2023; S. Yang and K",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_19",
+    "text": "and Gangolells 2022; Li, Yu, and Shao 2021; Mylonas et al. 2021; H. Wang et al. 2023; S. Yang and Kim 2021). For instance, Callcut et al. (2021) identified transportation and energy as the most common domains, followed by water, telecommunications, and broader smart city initiatives. Expanding on smart city applications, Li, Yu, and Shao (2021) discussed UDTs in various contexts, including smart city operation brains, smart grid digital twin services, traffic management, public health services during epidemics, and flood monitoring. Ferré-Bigorra, Casals, and Gangolells (2022) observed that mobility, water, energy, and atmospheric monitoring are the subsystems frequently represented in UDTs. A recent study by H. Wang et al. (2023) affirmed the predominance of transportation and energy in",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_20",
+    "text": ". A recent study by H. Wang et al. (2023) affirmed the predominance of transportation and energy in UDT research, as well as in public infrastructure and resource management. The same application domains emerge as the most prevalent in our literature review. In the mobility domain, UDT research spans various transportation modes—cars, logistics, shuttles, and aerial transport—and infrastructure types such\n\n776 Journal of Planning Education and Research 45(4) as roads, highways, and traffic corridors. Research focuses on optimizing last-mile operations, coordinating infrastructure, and improving data collection hardware. The overarching aim is to transform urban mobility, prioritizing efficiency, security, and immersive planning for future developments. Within the energy domain, UDT researc",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_21",
+    "text": "ncy, security, and immersive planning for future developments. Within the energy domain, UDT research extends across multiple scales from individual buildings to entire regions and covers various energy types, including electricity, thermal, and renewables. Key focus areas include real-time energy conservation, site selection, and climate change adaptation. The objective is to foster adaptive and resilient urban energy systems that promote sustainability, operational efficiency, and informed decision-making. In water management, UDT research covers diverse systems such as water distribution, drainage, and nature-based solutions. Subtopics include enhancing operational and maintenance reliability and applying predictive analytics for water demand forecasting. The goal is to create efficient",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_22",
+    "text": "lity and applying predictive analytics for water demand forecasting. The goal is to create efficient water management systems, optimize distribution, and adapt to fluctuating demands for resource conversation. In our review process, we also observed applications of UDTs in broader urban planning contexts, such as disaster response and community renovation (Bocullo et al. 2023; Ford and Wolf 2020; Ye et al. 2022). However, most of these papers draw on insights from models from a single domain. For instance, UDT research on disaster response often centers on analyzing water drainage systems integrated with 3D city models, thereby aligning closely with the water management domain (Langenheim et al. 2022; Truu et al. 2021). Similarly, studies on community renovation predominantly concentrate o",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_23",
+    "text": "al. 2022; Truu et al. 2021). Similarly, studies on community renovation predominantly concentrate on enhancing energy efficiency through local energy system updates, situating them within the energy domain (Bocullo et al. 2023; Hosseini Haghighi et al. 2022). The fact that UDTs without a predetermined domain focus are rare points to a gap in the research landscape, where more holistic and interdisciplinary approaches might provide comprehensive solutions to complex urban challenges. Use Cases: How Are Domain UDTs Used? UDTs serve a variety of use cases. Callcut et al. (2021) and Alva, Biljecki, and Stouffs (2022) identified the primary aspects as optimization, forecasting, resilience, policy development, scenario modeling, and participatory planning, which demonstrate the versatility of U",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_24",
+    "text": "y development, scenario modeling, and participatory planning, which demonstrate the versatility of UDTs, from enhancing operational efficiencies and predicting urban dynamics to fostering resilience against disruptions and facilitating inclusive urban planning. In addition, Li, Yu, and Shao (2021) highlighted UDTs’ capabilities in accurate mapping, virtualreal interaction, software definition, and intelligent feedback, underscoring their roles as tools for precise urban representation, interactive management, and AI-supported planning. These diverse use cases demonstrate UDTs’ adaptability and utility in solving diverse urban problems. Other scholars have proposed more systematic classification schemes to organize UDT use cases. Ferré-Bigorra, Casals, and Gangolells (2022) approached the c",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_25",
+    "text": "ion schemes to organize UDT use cases. Ferré-Bigorra, Casals, and Gangolells (2022) approached the classification through the lens of project lifecycle stages: planning, construction, operation and maintenance, and end-of-life. H. Wang et al. (2023) focused on the data processes involved in UDT applications, dividing use cases into data collection and storage, data modeling and visualization, data connectivity, and data utilization, reflecting the data-driven nature of UDTs. Shahat, Hyun, and Yeom (2021) proposed a two-layer functionality framework with top-level categories such as data management, visualization, situation awareness, planning and prediction, and integration and collaboration. Similarly, Al-Sehrawy, Kumar, and Watso (2021) employed a simplified ontology development methodol",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_26",
+    "text": ". Similarly, Al-Sehrawy, Kumar, and Watso (2021) employed a simplified ontology development methodology to create a two-layer taxonomy with top-level categories including mirror, analyze, communicate, and control. Though approaching from different angles, these systematic classification schemes contributed to a more structured understanding of UDT use cases. The classification and terminology of UDT use cases are significantly shaped by the domain they are intended to serve, Figure 2. Diagram illustrating the conceptual relationships among domain UDT, intra-city UDT, and inter-city UDT.\n\nWu and Guan 777 which in turn perpetuates domain silos that hinder interdisciplinary collaboration. For instance, S. Yang and Kim (2021) delineated unique use cases for different domains such as transporta",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_27",
+    "text": "nstance, S. Yang and Kim (2021) delineated unique use cases for different domains such as transportation, environment & energy, disaster response, planning & design, and management & operation. Similarly, Xia et al. (2022) have cataloged specialized use cases within domains such as urban operations, governance, urban design, and the fields of architecture, construction, and engineering (ACE). In an effort to harmonize these disparate approaches, Callcut et al. (2021) adopted a uniform set of use cases and tabulated their applicability in various domain-specific implementations of UDTs. By bringing attention to these domainspecific classifications of use cases, we underscore the need for standardized terminology to facilitate communication and collaboration across domains. Anticipated and R",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_28",
+    "text": "dardized terminology to facilitate communication and collaboration across domains. Anticipated and Realized Benefits: Why Are Domain UDTs Used? Understanding the anticipated benefits of UDTs is crucial for making the best use of their full potential. Drawing from the successes of DTs in other fields, Jones et al. (2020) outlined a range of benefits, including reductions in costs, risks, design time, complexity, and reconfiguration time. They also listed anticipated benefits such as improvements in efficiency, maintenance decision-making, security, safety, and reliability. Wright and Davidson (2020) reviewed existing use cases in the literature, suggesting UDTs are particularly beneficial in high-value or safety-critical areas. Callcut et al. (2021) added that the value of UDTs is often gre",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_29",
+    "text": "high-value or safety-critical areas. Callcut et al. (2021) added that the value of UDTs is often greatest in generating insights over shorter temporal scales due to the higher certainty and relevance of the results. Lehtola et al. (2022) proposed that the main advantage of UDT is economical, saving time and money in everyday city functions. These anticipated benefits underscore the wide-ranging impact UDTs could have on cities, particularly in operational efficiencies, safety, and cost savings. UDTs have achieved great benefits in many domains, demonstrating substantial advantages over previous methods. Take the three common domains as examples. Mobility UDTs enhance urban transport systems with fine-grained analysis for individual trajectories, intelligent support for networks like ITS, a",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_30",
+    "text": "with fine-grained analysis for individual trajectories, intelligent support for networks like ITS, and eco-friendly solutions such as eco-routing (Aguiar et al. 2022; Chaalal et al. 2023; Z. Fan et al. 2022). Energy UDTs provide both reactive and anticipatory benefits, enabling anomaly detection and forecasting for power demand and climate adaptation strategies (Buckley et al. 2021; Francisco, Mohammadi, and Taylor 2020). Water UDTs enhance system transparency and scalability, especially in managing complex, hard-to-inspect underground systems (Bartos and Kerkez 2021; Conejos et al. 2020; Ramos et al. 2023). These benefits align with the prioritized characteristics of UDTs in each domain: Mobility UDTs focus on synchronicity and fidelity for real-time, spatially-fine-grained insights; Ener",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_31",
+    "text": "bility UDTs focus on synchronicity and fidelity for real-time, spatially-fine-grained insights; Energy UDTs focus on comprehensiveness and synchronicity for large-scale and responsive energy management; and Water UDTs focus on fidelity and comprehensiveness for in-depth and expansive water system modeling. In addition, in domains like resilience planning, the interactivity and comprehensiveness of UDTs facilitate timely responses and inclusive decision-making. These actualized benefits across domains collectively demonstrate UDTs’ role in enhancing urban infrastructure and services, tailoring their capabilities to meet each sector’s specific needs and objectives. Understanding why mobility, energy, and water management are domains that have benefited from UDTs the most requires a closer lo",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_32",
+    "text": "energy, and water management are domains that have benefited from UDTs the most requires a closer look at both demand and supply-side influences. On the demand side, these domains are characterized by high stakes in safety and economic value, addressing urgent urban issues such as climate change adaptation, making the investment in UDT technology especially compelling (Callcut et al. 2021). Key stakeholders, including governmental agencies and major service-provider companies, possess the required financial and human capital to fund these innovative solutions. At present, the civil sector and individual citizens can only indirectly benefit, lacking the resources necessary to actively participate in the design and operation of domain UDTs. The emphasis on short-term operational optimization",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_33",
+    "text": "pate in the design and operation of domain UDTs. The emphasis on short-term operational optimization and prediction in these areas fits well with UDTs’ capabilities, offering quicker and more certain benefits that are highly visible and impactful to policymakers and the public. From the supply-side perspective, the problems in these domains are predominantly physics and rule-based, making them inherently suitable for UDT modeling (Ramos et al. 2023; Sun, Puig, and Cembrano 2020). Existing infrastructures for sensing and data processing lower barriers to UDT adoption, while a robust theoretical foundation and availability of domain experts ensure that UDT applications are economically and practically feasible. The applications of UDT in domains with more human elements and socio-economic pr",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_34",
+    "text": "ctically feasible. The applications of UDT in domains with more human elements and socio-economic processes remain scarce yet imperative. Public health, previously a domain with lower feasibility for UDTs due to its complexity and lack of detailed datasets and models, saw an accelerated development during the recent COVID-19 pandemic, driven by urgent demand for real-time tracking and coordinated responses (Pang et al. 2021). This shift underscores the potential for UDTs to make significant impacts in similarly complex domains, such as social services, where outcomes are subjective and data sensitivity is high (Yossef Ravid and Aharon-Gutman 2023). There is a crucial need for urban planners to advocate for and contribute to the development and adoption of UDTs in a more diverse range of do",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_35",
+    "text": "to advocate for and contribute to the development and adoption of UDTs in a more diverse range of domains. Building upon the understanding of the prevalence of single-domain UDTs, it’s important to explore the additional, often untapped potential of cross-domain or intra-city UDTs. Intra-city UDTs offer comprehensive, interdisciplinary solutions that align with sustainability and urban development goals (Corrado et al. 2022). From the demand side, they are instrumental in meeting the broad objectives of Sustainable\n\n778 Journal of Planning Education and Research 45(4) Development Goals, facilitating integrated strategies that consider various urban systems and objectives, thus avoiding suboptimal outcomes focused on singular domains (Caprari et al. 2022; Topping et al. 2021). From the supp",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_36",
+    "text": "timal outcomes focused on singular domains (Caprari et al. 2022; Topping et al. 2021). From the supply side, they encourage the efficient use of resources through shared infrastructure, reducing redundant construction and fostering more cohesive infrastructure development (Ferré-Bigorra, Casals, and Gangolells 2022). Furthermore, by modeling and analyzing the interdependencies between different urban systems, intra-city UDTs can provide more accurate, realistic predictions of target outcomes (Bujari et al. 2021; Meta et al. 2021). However, despite these benefits, intra-city UDTs are not yet commonly addressed in the existing literature and practical applications. The subsequent section further explores the challenges, shedding light on the progress made to overcome them and realize the ful",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_37",
+    "text": "er explores the challenges, shedding light on the progress made to overcome them and realize the full potential of intra-city UDTs. Challenges and Progress: Intra-City UDT Challenges and Categorization Many studies on UDTs have noted challenges in their discussion and future research directions. Some studies prioritize technical challenges (Barcik et al. 2022; Botín-Sanabria et al. 2022; Deng, Zhang, and Shen 2021; Lu et al. 2020), while others emphasize social challenges (Caprari et al. 2022; Charitonidou 2022; B. Wang 2021; Yossef Ravid and Aharon-Gutman 2023). A third group addresses both types of challenges (Bozeman et al. 2023; Caldarelli et al. 2023; Fuller et al. 2020). The main challenges highlighted in these papers are summarized in Appendix C. The choice of challenges discussed o",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_38",
+    "text": "enges highlighted in these papers are summarized in Appendix C. The choice of challenges discussed often mirrors the thematic focus of each study, resulting in a lack of comprehensive and organized analysis. Although a limited number of studies have undertaken a more systematic examination of these challenges, they typically adopt a dichotomy of technical versus social challenges, which does not fully encompass challenges that started in technology but mainly have social ramifications (Lei et al. 2023; Nochta et al. 2021; Weil et al. 2023). This review categorizes challenges around UDTs into three categories: technological, data-ethical, and social. Technological challenges encompass the limitations of current technology that restrict the realization of UDTs’ full potential. The goal is to",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_39",
+    "text": "itations of current technology that restrict the realization of UDTs’ full potential. The goal is to achieve scalability in sensing and modeling physical and social spaces of cities by extending UDT capabilities to cover larger and more complex urban environments without compromising detail and accuracy. Data-ethical challenges address what is technically feasible but may lead to adverse social effects, including concerns around data security, privacy, transparency, and uncertainty. The objective is to cultivate trust through transparent practices and robust protection measures, maintaining public confidence and support in UDTs. Finally, social challenges revolve around the societal factors influencing UDT usage and adoption, with an emphasis on stakeholder engagement and public participat",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_40",
+    "text": "influencing UDT usage and adoption, with an emphasis on stakeholder engagement and public participation. These involve balancing diverse interests and promoting inclusive decision-making. The goal is to foster collaboration and ensure UDT initiatives are widely accepted and equitably used. It should be acknowledged that there are interdependencies among the technological, data-ethical, and social challenges, which is why we refer to them as the “Triangle of Challenges.” Progress in addressing one challenge may alleviate or aggravate another challenge. For instance, enhancing trust in data collection might promote public collaboration, a positive synergy. Conversely, advancements in scalable and granular sensing technology might intensify concerns about data privacy, illustrating a potentia",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_41",
+    "text": "and granular sensing technology might intensify concerns about data privacy, illustrating a potential negative repercussion. Despite these interdependencies, distinguishing these challenges into separate categories is beneficial for clarity and targeted problem-solving since each category demands a unique mitigation approach. Recognizing them as interconnected yet distinct invites multidisciplinary collaboration on UDTs. Figure 3 illustrates the triangle of challenges, showing respective scopes and interdependencies. Another barrier to multidisciplinary collaboration on UDTs is that the perceived severity of challenges can vary significantly based on sectoral and geographical context. Academic researchers perceive data integration and model interoperability as the most severe challenges, w",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_42",
+    "text": "ic researchers perceive data integration and model interoperability as the most severe challenges, while industry practitioners might emphasize business models and practical application values more (Lei et al. 2023). Since the private sector is driven by immediate application and return on investment, the UDTs developed by the industry may lack the necessary granularity for researchers to have a comprehensive understanding and perform validation and extension. The public sector aims to use UDTs for improved decision-making and citizen engagement, yet Technical Scalability Sensing and Modeling of Physical and Social Space Ethical Trust Data Security, Privacy Transparency, Accuracy Social Collaboration Stakeholder Engagement Public Participation Figure 3. Diagram illustrating the triangle of",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_43",
+    "text": "aboration Stakeholder Engagement Public Participation Figure 3. Diagram illustrating the triangle of challenges.\n\nWu and Guan 779 this demand varies by the required level of data openness and the degree of technological autonomy to avoid vendor lock-in (D’Hauwers, Walravens, and Ballon 2021). The different priorities of various actors can lead to misaligned UDT objectives, complicating the synthesis of rigorous research, practical application, and public policy goals into a unified framework. Geographically, the emphasis on different challenges also varies greatly. For instance, UDT projects in Europe put a greater emphasis on privacy protection (Raes et al. 2022; Van de Vyvere and Colpaert 2022); Latin America initiatives often grapple with financing digital infrastructures (Ketzler et al",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_44",
+    "text": "2022); Latin America initiatives often grapple with financing digital infrastructures (Ketzler et al. 2020); In Malaysia, the barriers to UDT adoption are mainly the lack of visionary leadership and trust (Waqar et al. 2023). Charitonidou (2022) also reported different challenges with urban-scale digital twins based on six case studies in multiple countries. These variations highlight the importance of understanding the stakeholder perspective and the local context when identifying UDT challenges. Progress from Latest Literature Technological challenges. Regarding physical sensing, recent advancements have significantly increased the speed and scope of urban data collection. The widespread adoption of Li DAR technology, along with innovative sensor platforms such as unmanned aerial vehicle",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_45",
+    "text": "doption of Li DAR technology, along with innovative sensor platforms such as unmanned aerial vehicles (UAVs) and autonomous vehicles, has expanded the capacity to gather detailed urban data at scale and higher temporal frequency (Botín-Sanabria et al. 2022; Kikuchi, Fukuda, and Yabuki 2022). Furthermore, there has been notable progress in the granularity and scalability of modeling thanks to improvements in point cloud segmentation and microscopic simulation (Argota Sánchez-Vaquerizo 2022; Döllner 2020; Xue et al. 2020). These improvements have enhanced the precision and extent of urban digital representations, contributing to higher fidelity and more comprehensive UDTs. Regarding social sensing, recent research has broadened the scope of participatory sensing by incorporating multimodal d",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_46",
+    "text": "sing, recent research has broadened the scope of participatory sensing by incorporating multimodal data sources, including text and imagery from realtime location-based social media and mobile phone GPS traces (Abdeen, Shirowzhan, and Sepasgozar 2023; C. Fan, Jiang, and Mostafavi 2020; Ham and Kim 2020; Kim, Kim, and Ham 2019; Supangkat, Ragajaya, and Setyadji 2023) and human perception data such as physiological measurements (Ahn et al. 2020; Gholami et al. 2022; P. Liu et al. 2023). Social sensing is essential in capturing the nuanced social dynamics and human-centric perception of the urban environment. In addition, research in modeling social processes witnesses a growing use of advanced multi-agent models and online learning strategies for real-time calibration, enhancing traditional",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_47",
+    "text": "multi-agent models and online learning strategies for real-time calibration, enhancing traditional models such as agent-based models (ABM) (Clemen et al. 2021; Lenfers et al. 2021). These innovations lead to more realistic representations of cities as complex adaptive systems with human elements. Data-ethical challenges. To address the security challenge, existing literature has discussed the different mitigation strategies to address hacking risks across the spectrum of cyber-physical systems (Tomko and Winter 2018). One prominent approach involves using blockchain technology to prevent malicious tampering with data, which is particularly prevalent in the mobility and public health domain (Allam and Jones 2021; Liao et al. 2022; Lu et al. 2023; Pang et al. 2021). Federated learning has e",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_48",
+    "text": "(Allam and Jones 2021; Liao et al. 2022; Lu et al. 2023; Pang et al. 2021). Federated learning has emerged as a common solution to address privacy concerns, supporting the training of data mining and machine learning models while keeping data localized to its collection device (Ramu et al. 2022; Zhao et al. 2023). In addition, techniques for anonymization and synthetic data generation have been developed for data that must be centralized to maintain privacy in fine-grained individual data (Lee et al. 2022; Van de Vyvere and Colpaert 2022). Beyond securing and anonymizing data, gaining public trust requires transparency in how UDTs collect and use data. Proposals for UDTs to serve as open data platforms have gained traction, allowing citizens to engage with open data and promote accountabil",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_49",
+    "text": "a platforms have gained traction, allowing citizens to engage with open data and promote accountability in urban management (Bononi et al. 2023; Eom 2022; Schrotter and Hürzeler 2020). There is also a small but growing discourse on how to measure and communicate the accuracy of data measures and the uncertainty of UDT outputs (Ghaith, Yosri, and El-Dakhakhni 2022; Major et al. 2021). These measures allow users to assess the reliability of UDTs better and make informed decisions, thereby fostering a more trustful relationship between UDTs and their users. Social challenges. To address social challenges, existing literature has discussed strategies like mapping stakeholder relationships, organizing workshops, and developing inclusive protocols to engage various stakeholders with differing ba",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_50",
+    "text": "izing workshops, and developing inclusive protocols to engage various stakeholders with differing backgrounds and objectives (Lu et al. 2020; Nochta et al. 2021). Recent studies have also made Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR) experiences more immersive and vivid by integrating higherfidelity modeling and real-time data (Michalik, Kohl, and Kummert 2022; Mohammadi and Taylor 2020; White et al. 2021). Additional efforts are directed toward customizing user experiences to make complex, high-dimensional data more comprehensible and accessible (Du et al. 2020; Najafi et al. 2023). In addition, to support collaboration and situation-aware discussions among groups of participants, interaction technologies for UDTs have been developed in online, offline, and mix",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_51",
+    "text": "s of participants, interaction technologies for UDTs have been developed in online, offline, and mixed reality settings (Dembski, Yamu, and Wössner 2019; S.-M. Wang and Vu 2023; Yavo-Ayalon et al. 2023). A relatively new branch of research explores the business models behind UDTs to ensure long-term viability for these systems. This exploration includes charting possible development scenarios and mapping collaborative relationships across the public, private, civic sectors, and academic\n\n780 Journal of Planning Education and Research 45(4) entities (Cho and Kim 2022; D’Hauwers, Walravens, and Ballon 2021; Hämäläinen 2021). UDTs are also used to optimize cross-agency and multi-stakeholder workflows, such as disaster response, to discover more agile and efficient protocols (C. Fan et al. 201",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_52",
+    "text": "kflows, such as disaster response, to discover more agile and efficient protocols (C. Fan et al. 2019; Wolf et al. 2022). To help avoid the pitfalls of over-optimization in single domains, multidisciplinary optimization (MDO) and Inter Model Broker framework are used to ensure that decisionmaking balances the diverse needs of all involved parties (Castelli et al. 2019; Lohman et al. 2023). A Path toward Standardization: Inter City UDT Benefits and Feasibility As progresses have been made in addressing the challenges of UDT, it becomes imperative to solidify the emerging best practices into standards. Standardization facilitates transferable and interoperable implementations, paving the way for inter-city UDTs. Inter-city UDTs provide several strategic benefits. One of the primary advantage",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_53",
+    "text": "or inter-city UDTs. Inter-city UDTs provide several strategic benefits. One of the primary advantages is benchmarking, allowing cities to compare their infrastructure, services, and policies against others to identify areas for improvement and adopt best practices. This benchmarking is particularly beneficial for cities aiming to enhance their sustainability, efficiency, and livability. In addition, inter-city UDTs facilitate regional planning and coordination, crucial for addressing issues that cross city boundaries, such as transportation optimization, environmental protection, and economic development. They also support disaster management efforts by enabling cities to share real-time data during emergencies, leading to coordinated responses and resource sharing. Furthermore, inter-city",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_54",
+    "text": "a during emergencies, leading to coordinated responses and resource sharing. Furthermore, inter-city UDTs can significantly reduce the financial and resource burdens associated with developing digital twins from scratch. For cities lacking the necessary human, technical, or financial resources, leveraging a foundational UDT model that can be customized to eliminate the need to reinvent the wheel. Finally, by fostering a standardized approach to urban digital representation, inter-city UDTs can help streamline regulatory and compliance processes, making it easier for cities to implement new technologies and policies. Building inter-city UDTs presents several feasibility challenges due to the diversity in infrastructure, governance, data availability, and technical capabilities across differ",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_55",
+    "text": "diversity in infrastructure, governance, data availability, and technical capabilities across different cities. Achieving generalizability in new cities and interoperability between UDTs requires standardized data formats and models, which can be difficult to establish given the varying stages of digital infrastructure development in different cities. Furthermore, although inter-city UDT models can lower the burden of setting up the initial foundational model, the resources and skills required to customize and maintain UDTs are still a barrier for smaller or less developed cities. However, these challenges are not insurmountable. Collaborative efforts between different sectors can provide the necessary momentum and resources. Pilot projects focusing on common challenges or shared regional",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_56",
+    "text": "e necessary momentum and resources. Pilot projects focusing on common challenges or shared regional issues can act as valuable testing beds for broader implementation. The next section will review some early but significant strides in standardization. Early Efforts in Standardization A key area in standardization is to improve the interoperability of data formats and models. One of the mainstream data formats for UDT is City GML. Initially designed for 3D city modeling, it has increasingly been enriched with geospatial attributes and semantic data (Beil et al. 2020; Lei, Stouffs, and Biljecki 2022; Visconti et al. 2021; Yan et al. 2022). However, the literature has noted issues such as cumbersome initialization and limited customization (Knezevic et al. 2022; Major et al. 2021). A mainstre",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_57",
+    "text": "rsome initialization and limited customization (Knezevic et al. 2022; Major et al. 2021). A mainstream approach to creating interoperable models is semantic web and ontology technologies, which are evolving into dynamic urban knowledge graphs. Despite their potential, these technologies are criticized for their technical complexity and remain largely in the proof of concept stage (Akroyd et al. 2021; Austin et al. 2020). Another notable open-source technology standard is the FIWARE ecosystem, which has been applied in UDT and demonstrated potential for cross-domain and cross-border interoperability (Bauer et al. 2021; Conde et al. 2022). Another area of standardization aims to create frameworks for evaluation and comparison. Such efforts include assessing the technological and societal rea",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_58",
+    "text": "rks for evaluation and comparison. Such efforts include assessing the technological and societal readiness levels of UDTs based on the implementation phase and public acceptance (Botín-Sanabria et al. 2022). However, these measures are often qualitative, leading to potential subjectivity and difficulty in inter-city comparison. Another work introduced a system of city service indicators named Digital Twin DNA, developed based on ISO standards and allowed city service comparison across different cities (Badawi, Laamarti, and El Saddik 2021). Yet, these indicators often lack real-time updates and may not provide sufficiently fine-grained measurements outside strategic planning. There are also efforts in creating standards for data security to verify the authenticity of digital twin data, suc",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_59",
+    "text": "efforts in creating standards for data security to verify the authenticity of digital twin data, such as the Smart c Ity di Gital twi N v Erifiable Data Framework, or SIGNED (Pervez et al. 2023). Finally, measurement errors were reported in Major et al. (2021) to help users evaluate the uncertainty, but how these errors propagate through downstream analyses was not discussed. Standardization is also observed in studies focusing on collaboration and implementation workflow, addressing the social challenges of UDTs. Initiatives for cross-border collaboration, such as Digital Urban European Twins (DUET) and Urban Open Platform (UOP), have been pioneering international cooperation toward a vision of inter-city UDT (Raes et al. 2022; Soe, Ruohomäki, and Patzig 2022). One limitation of these ini",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_60",
+    "text": "n of inter-city UDT (Raes et al. 2022; Soe, Ruohomäki, and Patzig 2022). One limitation of these initiatives is that they are currently in Europe only and lack publicly available resources and sustained investments. Another research branch offers standardized protocols for\n\nWu and Guan 781 building UDT, including the six-phase Social Urban Digital Twin Protocol and the four-phase UDT design framework (Human, Basson, and Kruger 2023; Yossef Ravid and Aharon Gutman 2023). However, these protocols have seen slow adoption in newer research. The standardization of UDTs involves diverse players with unique strengths and limitations. Industry players are expected to accelerate model iterations and deployments, leveraging their technological expertise and financial incentives. Academic institution",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_61",
+    "text": "deployments, leveraging their technological expertise and financial incentives. Academic institutions add scientific rigor and broaden the applicability of standards, while government agencies align these standards with public policies and regulations to ensure ethical adoption and protection of public interests. In addition, the civic sector, including community organizations and individual citizens, ensures that UDT implementations are responsive to community needs and considerate of local contexts. This collaborative approach was effectively demonstrated in a study on UDT in Cambridge, UK, where successful cross-sector collaboration brought together researchers, technology providers, urban planners, city managers, and residents (Nochta et al. 2021). Opportunities from Emergent Technolog",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_62",
+    "text": "n planners, city managers, and residents (Nochta et al. 2021). Opportunities from Emergent Technologies The literature has already begun to explore the potential of metaverse in enhancing planning processes (Hudson-Smith 2022). As the next evolutionary stage of VR/AR/MR technology, metaverse offers immersive environments that can simulate real urban scenes or test out alternative urban design plans (Allam et al. 2022; Kikuchi, Fukuda, and Yabuki 2022; Kumalasari et al. 2023; Kuru 2023). Stakeholders can visualize, interact, and participate in these scenarios in real time, providing enhanced in-situ awareness and data affordance (Grübel et al. 2022). Furthermore, the metaverse is creating new demands for UDTs by opening up previously less explored application domains, such as cultural prese",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_63",
+    "text": "demands for UDTs by opening up previously less explored application domains, such as cultural preservation and tourism (Litavniece et al. 2023; Luther et al. 2023). These emerging applications not only broaden the scope of UDTs but also support the development of innovative business models, potentially easing the financial burden associated with creating and maintaining UDTs. It is worth noting that the metaverse could increase the risk of the digital divide; thus, prioritizing equitable access and mitigating digital literacy disparities is essential to the responsible integration of metaverse into UDTs (Tzachor et al. 2022). Advancements in artificial general intelligence (AGI), especially in large language models (LLMs), present exciting opportunities for UDTs. Despite limitations such",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_64",
+    "text": "in large language models (LLMs), present exciting opportunities for UDTs. Despite limitations such as lack of creative thinking and hallucination of facts, researchers have found LLMs helpful as assistants to planners that can improve human productivity (Ching and Chua 2023). While AI has long been used in urban planning for data mining and draft plan generation tasks, AGI, such as LLMs, provides several new capabilities, including data conversion, pattern recognition, and process optimization (Peng et al. 2023; Z. Yang et al. 2023; Ye et al. 2023). AGI can harmonize and link urban data, alleviating the burdensome task of reformatting and converting data. When combined with existing research on knowledge graphs and UDTs, AGI promises to continually discover patterns from vast amounts of u",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_65",
+    "text": "h on knowledge graphs and UDTs, AGI promises to continually discover patterns from vast amounts of urban data and add to our knowledge (Akroyd et al. 2021; Wan, Nochta, and Schooling 2019; Zheng, Lu, and Kiritsis 2022). Finally, AGI can simulate the behaviors of intelligent agents, which could contribute to existing research on stakeholder interactions that currently employ game theory (Mohammadi and Taylor 2019; Zhou et al. 2023). Avenues of Future Research Build a comprehensive database for UDT implementations. In light of the diversity of UDTs encountered in our review, it is evident that UDTs could and should have different feature thresholds and architectures, depending on their specific use cases and contextual environments. Instead of pushing for one formal definition, it is more us",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_66",
+    "text": "c use cases and contextual environments. Instead of pushing for one formal definition, it is more useful to build a comprehensive database of UDT implementations under a compatible and extensible definition framework. Such a database would enable standardization and comparative studies, enriching the academic discourse. In addition, it would serve as a valuable resource for practitioners, providing a repository of best practices and a searchable knowledge base to inform and guide new UDT initiatives, fostering a collaborative and informed UDT community. Understand cross-domain interactions for holistic city modeling. While UDTs are useful within individual domains, future research should pivot toward studying the mechanisms of cross-domain interactions and constructing intracity UDTs. Unde",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_67",
+    "text": "ot toward studying the mechanisms of cross-domain interactions and constructing intracity UDTs. Understanding how different urban systems interact holds great potential, yet current theoretical and practical knowledge is scarce. Academia should promote interdisciplinary cooperation, employing UDTs as the shared data foundation for domain experts to collaborate. Urban planners and practitioners should advocate for resource allocation to support innovative UDT applications in underexplored domains that involve socio-economic processes and coordinate the collaboration between the public and private sectors. This approach will pave the way for a more holistic intra-city UDT, which has great potential to address complex, multifaceted urban challenges that involve diverse stakeholder interests.",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_68",
+    "text": "ntial to address complex, multifaceted urban challenges that involve diverse stakeholder interests. Systematically classify challenges and quantify progress. To enhance clarity to the myriad challenges in previous literature, the academic community should strive for a systematic classification of challenges to reduce ambiguity. In addition, it is essential to measure progress in these challenges quantitatively. By transforming abstract challenges into quantifiable metrics with established benchmarks, research on UDT will achieve better reproducibility and\n\n782 Journal of Planning Education and Research 45(4) comparability, creating a positive feedback loop that leads us closer to the vision of inter-city UDTs. This shift will clarify the scope and scale of each challenge in academic resear",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_69",
+    "text": "of inter-city UDTs. This shift will clarify the scope and scale of each challenge in academic research and guide targeted improvements in real-world implementation. Leverage human-AI collaboration for productivity. As emergent technologies such as LLMs continue to advance, the UDT research community should explore human-AI collaboration to harness these opportunities effectively. For instance, we can leverage LLMs’ capabilities in data conversion, pattern recognition, and process optimization to enhance the productivity of human researchers, especially in the standardization process. However, it’s crucial to stay aware of and mitigate the limitations of AI, such as potential factual inaccuracies and lack of critical thinking. Responsible human-AI collaboration will drive the UDT field forw",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_70",
+    "text": "cies and lack of critical thinking. Responsible human-AI collaboration will drive the UDT field forward with efficient and ethical solutions. Conclusion In this paper, we systematically reviewed the burgeoning field of UDTs. We began by providing an operational definition and proposing a new typology for UDTs, clarifying their scope and charting one possible evolutionary path. We then examined various application domains and use cases of existing UDTs, demonstrating their significant impact on urban sustainability, efficiency, and resilience in mobility, energy, and water management. We discussed the multifaceted challenges of implementing UDTs, categorizing them into technical, data-ethical, and social challenges, and reported progress in overcoming these barriers. Finally, we reviewed th",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_71",
+    "text": ", and social challenges, and reported progress in overcoming these barriers. Finally, we reviewed the current efforts in standardization and the potential of emergent technologies such as AGI and the Metaverse to advance the field. Our review has made several unique findings and contributions. We articulated an operational definition of UDTs derived from a comprehensive analysis of existing literature, reflecting their adaptability and versatility. Our new typology sheds light on the often-overlooked urban dimension of UDTs, charting their progression from domain-specific implementations that tackle singular aspects of the city to comprehensive intra-city models that integrate multiple urban systems, and further to inter-city frameworks that enable comparative urban analysis and benchmarki",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_72",
+    "text": "systems, and further to inter-city frameworks that enable comparative urban analysis and benchmarking. Through our synthesis of prevalent application domains and use cases, we revealed the concentration of existing research in high-stakes, resource-intensive, traditional domains and pointed out the untapped potential for cross-domain and intra-city UDTs. In addressing the terminological ambiguities in challenges, we introduced a “triangle of challenges” categorization framework to foster a multidisciplinary approach to problem-solving. Following this framework, we updated the academic community with recent progress and ongoing issues in each category of challenges. Finally, our exploration into standardization efforts highlighted emerging best practices, and we discussed how to use state-",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_73",
+    "text": "into standardization efforts highlighted emerging best practices, and we discussed how to use state-of-the-art technologies such as LLMs to fast-track UDT research and application responsibly. Reflecting on the findings of our review, we propose key priorities for future research. Firstly, we should build a comprehensive UDT database to serve as the foundation for standardization and knowledge sharing both in academia and practice. We also call for more research on cross-domain interaction mechanisms to promote a shift toward more integrated and holistic city modeling. In addition, adopting a systematic approach to classify challenges and quantify progress will bring much-needed clarity and comparability into the field. Moreover, responsible human-AI collaboration will become an important",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_74",
+    "text": "comparability into the field. Moreover, responsible human-AI collaboration will become an important driver for innovation and efficiency in UDT research and application. Pursuing these research directions, we envision a future where UDTs are integral to urban planning and management, marking a new era characterized by enhanced urban sustainability, resilience, and livability. Appendix A Detailed Methods for Literature Review In conducting this review, we adhere to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines, ensuring a rigorous and transparent approach to literature analysis. Our methodology encompasses the following key aspects: Databases Used: We selected Scopus, Web of Science, and Google Scholar for our literature search, recognizing them",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_75",
+    "text": "We selected Scopus, Web of Science, and Google Scholar for our literature search, recognizing them as some of the most comprehensive and widely used academic databases. These platforms offer extensive coverage of relevant publications. Time Frame: We have limited the scope of our review to publications dated between January 1, 2018, and November 1, 2023. We chose this timeframe to reflect that the concept of UDT was only recently introduced and that this paper aims to provide an updated review. Keyword Strategy: To identify pertinent articles, we employed a specific search query: TITLE-ABS-KEY (urban AND “digital twin”) OR (city AND “digital twin”). Our preliminary search experiments guided our decision to focus on the term “digital twin” exclusively rather than incorporating related but",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_76",
+    "text": "our decision to focus on the term “digital twin” exclusively rather than incorporating related but broader terms, such as “3D city model” or “digital city model,” to maintain a sharp focus on the specific concept of UDT. In addition, we narrowed our search to include only the terms “urban” and “city,” excluding broader terminologies like “built environment” or “civil infrastructure,” to ensure the relevance of the studies to city-level UDT research instead of buildinglevel DT research. Publication Type and Publication Language: Given the nascent nature of this field, we focus on journal articles\n\nWu and Guan 783 but also include highly cited and novel conference proceedings. Publications are limited to those written in English. Our database search results show very few publications writte",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_77",
+    "text": "e limited to those written in English. Our database search results show very few publications written in other languages. Exclusion Criteria: We established specific exclusion criteria to refine our search: 1. Papers must primarily focus on urban digital twins or use them as the main methodological framework. 2. The study area should be at the neighborhood level and above, ideally city-scale. 3. We excluded papers focusing solely on sensing and communication technologies (including algorithms and hardware) without addressing their integration or impact within the broader context of UDT applications. Inclusion Criteria: Besides the publications collected from the database searches, we conducted cross-referencing to ensure a comprehensive and multi-faceted discussion of the UDT literature. S",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_78",
+    "text": "ed cross-referencing to ensure a comprehensive and multi-faceted discussion of the UDT literature. Some additional papers that are not directly focused on UDT are included, including: 1. Papers that discuss the definition, development, and framework of UDTs. 2. Studies exploring smart city platforms and initiatives in relation to UDTs. 3. Research on emerging AI technologies with potential applications in UDTs. Appendix B Detailed Methods for Analyzing UDT Definitions and Architectures We identified a set of 12 explicit definitions of Urban Digital Twins (UDT) and conducted a comparative analysis to identify commonalities and differences between UDT and generic Digital Twin (DT) definitions as well as shared features within UDT definitions. Our methodology involved utilizing a keyword freq",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_79",
+    "text": "as well as shared features within UDT definitions. Our methodology involved utilizing a keyword frequency analysis derived from Sepasgozar (2021) to identify key terms recurring in generic DT definitions such as “real-time,” “simulation,” “control,” and “bi-directional.” Notably, the concept of “simulation” is in nearly all UDT definitions, with approximately half incorporating the notions of “real-time” or “near-real-time.” Conversely, references to “control” and “bi-directional” attributes are less common in UDT definitions. What is unique to UDT definitions is the emphasis on “human elements” such as “urban occupants” and “social and economic functions,” and “usability” aspects like “cooperation and accessibility” and “user-friendly” interfaces (Alva, Biljecki, and Stouffs 2022; Lei et",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_80",
+    "text": "eration and accessibility” and “user-friendly” interfaces (Alva, Biljecki, and Stouffs 2022; Lei et al. 2023; Mohammadi and Taylor 2021; B. Wang 2021). In addition, a subset of papers suggested that UDTs are adaptive complex systems comprising interconnected sub DTs, although most stopped at theoretical discussion and do not have real-world implementations (Caldarelli et al. 2023; Ivanov et al. 2020; Mylonas et al. 2021; Taylor, Bennett, and Mohammadi 2021). We also reviewed 21 UDT architecture diagrams from our collected literature, which provide a visual understanding of UDT functionality and operational emphasis. These diagrams predominantly illustrate data and information flow, with about half depicting the bi-directional exchange between the physical and virtual realms, often represen",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_81",
+    "text": "t half depicting the bi-directional exchange between the physical and virtual realms, often represented by bi-directional arrows. However, merely four of these diagrams explicitly describe the bi-directional interaction process. For instance, Castelli et al. (2019) describe the link as a process that enhances policy-making through collaborative, crossdisciplinary feedback. In addition, our analysis found that nearly half of the UDT architectures use a layered approach, typically comprising layers for data collection, data processing, application, and occasionally human-computer interaction. This structure is reminiscent of smart city architectures, where various urban components, including the digital twin layer, are organized hierarchically (Dani et al. 2023). Such layered architectures s",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_82",
+    "text": "he digital twin layer, are organized hierarchically (Dani et al. 2023). Such layered architectures suggest that UDTs are envisioned as a series of parallel sub-models or a centralized data backend. Only a minority of the diagrams depict a non-linear or network design, representing the adaptive complex system perspective of UDTs (C. Liu and Tian 2023; Meta et al. 2021).\n\n784 Journal of Planning Education and Research 45(4) Appendix C Summaries and Focuses of Challenges Presented in Selected Literature Authors (year) Highlighted challenges Focus Barcik et al. (2022) Cybersecurity risk including physical and technical threats, threats to resource and personnel Technical Botín-Sanabria et al. (2022) Data issues; standardization; hardware costs; AI integration; communication network obstacles T",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_83",
+    "text": "022) Data issues; standardization; hardware costs; AI integration; communication network obstacles Technical Deng, Zhang, and Shen (2021) Build efficient, reliable data centers; develop CIM, urban brain; protect information security Technical Lu et al. (2020) Data integration; sources heterogeneity; data synchronization; data quality Technical Caprari et al. (2022) Transparency, privacy, and democracy; multi-level governance; big company dominance Social Charitonidou (2022) Digital and data universalism; lack of social perspective; temporal scale mismatch Social Yossef Ravid and Aharon-Gutman (2023) Develop protocol for data sharing, algorithms for social issues; test applicability to more issues Social B. Wang (2021) Dataveillance; lack of transparency and accountability in decision-makin",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_84",
+    "text": "ssues Social B. Wang (2021) Dataveillance; lack of transparency and accountability in decision-making Social Bozeman et al. (2023) Reduce complexity; integrate model and system components; reduce barriers to data access Mixed Caldarelli et al. (2023) Choose and obtain data on system components interactions; reflect human behaviors Mixed Fuller et al. (2020) Infrastructure; data quality; privacy and security; trust; expectations; standardization Mixed Lei et al. (2023) Overall dichotomy of technical and non-technical challenges, each with subcategories Mixed Nochta et al. (2021) Coordinate sectoral models; break silos to collect data; multi-scale modeling Mixed Weil et al. (2023) Standardization; infrastructure; data issues; prediction; visualization; resources; social aspects Mixed Declara",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_85",
+    "text": "ion; infrastructure; data issues; prediction; visualization; resources; social aspects Mixed Declaration of Conflicting Interests The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article. Funding The author(s) disclosed receipt of the following financial support for the research, authorship, and/or publication of this article: This research is funded by the Shanghai Nature and Health Foundation (Grant No. 20230701 SNHF), Shanghai, China; Pudong Pearl Program Leading Scheme 2023, Pudong Talents Office; Program for Professor of Special Appointment (Eastern Scholar) at Shanghai Institutions of Higher Learning (Grant No. 20230111 SMEC); National Foreign Young Talents Program from the State Administration of Foreign E",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_86",
+    "text": "o. 20230111 SMEC); National Foreign Young Talents Program from the State Administration of Foreign Experts Affairs (Grant No. 10109_Special Grant); Pudong New District Development and Reform Commission (Grant No. 20221103257 PDRC); Pudong Comprehensive Economic Society (Grant No. 20230410 PCES); hanghai Tongmu Architecture Consulting and Shanghai Technology Exchange (Grant No. 20240529 TONGMU); the Spring 2022 Climate Change Initiative Seed Grants (Grant No. 22-2126), New York University. ORCID i Ds Tim Guangyu Wu https://orcid. org/0009-0001-8375-8364 Cheng He Guan https://orcid. org/0000-0002-5997-418 X Supplemental Material Supplemental material for this article is available online. References Abdeen, F. N., S. Shirowzhan, and S. M. E. Sepasgozar. 2023. “Citizen-Centric Digital Twin Dev",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_87",
+    "text": "ences Abdeen, F. N., S. Shirowzhan, and S. M. E. Sepasgozar. 2023. “Citizen-Centric Digital Twin Development with Machine Learning and Interfaces for Maintaining Urban Infrastructure.” Telematics and Informatics 84:102032. doi:10.1016/j. tele. 2023.102032. Aguiar, A., P. Fernandes, A. P. Guerreiro, R. Tomás, João Agnelo, José Luís Santos, Filipe Araújo, et al. 2022. “Mobi Wise: Eco Routing Decision Support Leveraging the Internet of Things.” Sustainable Cities and Society 87:104180. doi:10.1016/j. scs.2022.104180. Ahn, C., Y. Ham, J. Kim, and J. Kim. 2020. “A Digital Twin City Model for Age-Friendly Communities: Capturing Environmental Distress from Multimodal Sensory Data.”\n\nWu and Guan 785 scholarspace. manoa. hawaii. edu. https://scholarspace. manoa. hawaii. edu/handle/10125/63945. Akro",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_88",
+    "text": "scholarspace. manoa. hawaii. edu. https://scholarspace. manoa. hawaii. edu/handle/10125/63945. Akroyd, J., S. Mosbach, A. Bhave, and M. Kraft. 2021. “Universal Digital Twin—A Dynamic Knowledge Graph.” Data-Centric Engineering 2: e 14. doi:10.1017/dce.2021.10. Allam, Z., S. E. Bibri, D. S. Jones, D. Chabaud, and C. Moreno. 2022. “Unpacking the ‘15-Minute City’ via 6G, Io T, and Digital Twins: Towards a New Narrative for Increasing Urban Efficiency, Resilience, and Sustainability.” Sensors 22 (4): 1369. doi:10.3390/s 22041369. Allam, Z., and D. S. Jones. 2021. “Future (Post-COVID) Digital, Smart and Sustainable Cities in the Wake of 6G: Digital Twins, Immersive Realities and New Urban Economies.” Land Use Policy 101:105201. doi:10.1016/j. landusepol. 2020.105201. Al-Sehrawy, R., B. Kumar, a",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_89",
+    "text": "es.” Land Use Policy 101:105201. doi:10.1016/j. landusepol. 2020.105201. Al-Sehrawy, R., B. Kumar, and R. Watson. 2021. “A Digital Twin Uses Classification System for Urban Planning & City Infrastructure Management.” Journal of Information Technology in Construction 26:832–62. doi:10.36680/j. itcon.2021.045. Al-Sehrawy, R., B. Kumar, and R. Watson. 2023. “The Pluralism of Digital Twins for Urban Management: Bridging Theory and Practice.” Journal of Urban Management 12:16–32. doi:10.1016/j. jum.2023.01.002. Alva, P., F. Biljecki, and R. Stouffs. 2022. “Use Cases for District Scale Urban Digital Twins.” Paper presented at the 17 TH 3D Geo Info Conference, XLVIII-4/W4-2022. doi:10.5194/isprsarchives-xlviii-4-w4-2022-5-2022. Argota Sánchez-Vaquerizo, J. 2022. “Getting Real: The Challenge of Bu",
+    "section": "unknown",
+    "char_start": 61600,
+    "char_end": 62400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_90",
+    "text": "hives-xlviii-4-w4-2022-5-2022. Argota Sánchez-Vaquerizo, J. 2022. “Getting Real: The Challenge of Building and Validating a Large-Scale Digital Twin of Barcelona’s Traffic with Empirical Data.” ISPRS International Journal of Geo-Information 11 (1): 24. doi:10.3390/ ijgi 11010024. Austin, M., P. Delgoshaei, M. Coelho, and M. Heidarinejad. 2020. “Architecting Smart City Digital Twins: Combined Semantic Model and Machine Learning Approach.” Journal of Management in Engineering 36 (4): 04020026. doi:10.1061/ (asce)me.1943-5479.0000774. Badawi, H. F., F. Laamarti, and A. El Saddik. 2021. “Devising Digital Twins DNA Paradigm for Modeling ISO-Based City Services.” Sensors 21 (4): 1047. doi:10.3390/s 21041047. Barcik, P., A. Coufalikova, P. Frantis, and J. Vavra. 2022. “The Future Possibilities an",
+    "section": "unknown",
+    "char_start": 62300,
+    "char_end": 63100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_91",
+    "text": "s 21041047. Barcik, P., A. Coufalikova, P. Frantis, and J. Vavra. 2022. “The Future Possibilities and Security Challenges of City Digitalization.” Smart Cities 6 (1): 137–55. doi:10.3390/smartcities 6010008. Bartos, M., and B. Kerkez. 2021. “Pipedream: An Interactive Digital Twin Model for Natural and Urban Drainage Systems.” Environmental Modelling & Software 144:105120. doi:10.1016/j. envsoft.2021.105120. Batty, M. 2018. “Digital Twins.” Environment and Planning B: Urban Analytics and City Science 45 (5): 817–20. doi:10.1177/2399808318796416. Bauer, M., F. Cirillo, J. Fürst, G. Solmaz, and E. Kovacs. 2021. “Urban Digital Twins: A FIWARE-Based Model.” At— Automatisierungstechnik 69 (12): 1106–15. doi:10.1515/auto 2021-0083. Beil, C., R. Ruhdorfer, T. Coduro, and T. H. Kolbe. 2020. “Detail",
+    "section": "unknown",
+    "char_start": 63000,
+    "char_end": 63800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_92",
+    "text": "06–15. doi:10.1515/auto 2021-0083. Beil, C., R. Ruhdorfer, T. Coduro, and T. H. Kolbe. 2020. “Detailed Streetspace Modelling for Multiple Applications: Discussions on the Proposed City GML 3.0 Transportation Model.” ISPRS International Journal of Geo-Information 9 (10): 603. doi:10.3390/ijgi 9100603. Bocullo, Vytautas, Linas Martišauskas, Ramūnas Gatautis, Otilija Vonžudaitė, Rimantas Bakas, Darius Milčius, Rytis Venčaitis, and Darius Pupeikis. 2023. “A Digital Twin Approach to City Block Renovation Using RES Technologies.” Sustainability 15 (12): 9307. doi:10.3390/su 15129307. Bononi, L., L. Donatiello, D. Longo, M. Massari, F. Montori, L. Stacchio, and G. Marfia. 2023. “Digital Twin Collaborative Platforms: Applications to Humans-in-the-Loop Crafting of Urban Areas.” IEEE Consumer Electr",
+    "section": "unknown",
+    "char_start": 63700,
+    "char_end": 64500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_93",
+    "text": "orative Platforms: Applications to Humans-in-the-Loop Crafting of Urban Areas.” IEEE Consumer Electronics Magazine 12 (6): 38–46. doi:10.1109/mce.2022.3214944. Botín-Sanabria, D. M., A.-S. Mihaita, R. E. Peimbert-García, M. A. Ramírez-Moreno, R. A. Ramírez-Mendoza, and J. de J. Lozoya-Santos. 2022. “Digital Twin Technology Challenges and Applications: A Comprehensive Review.” Remote Sensing 14 (6): 1335. doi:10.3390/rs 14061335. Bozeman, J. F., S. S. Chopra, P. James, S. Muhammad, H. Cai, K. Tong, M. Carrasquillo, et al. 2023. “Three Research Priorities for Just and Sustainable Urban Systems: Now Is the Time to Refocus.” Journal of Industrial Ecology 27:382–94. doi:10.1111/jiec.13360. Buckley, N., G. Mills, S. Letellier-Duchesne, and K. Benis. 2021. “Designing an Energy-Resilient Neighbour",
+    "section": "unknown",
+    "char_start": 64400,
+    "char_end": 65200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_94",
+    "text": "y, N., G. Mills, S. Letellier-Duchesne, and K. Benis. 2021. “Designing an Energy-Resilient Neighbourhood Using an Urban Building Energy Model.” Energies 14 (15): 4445. doi:10.3390/en 14154445. Bujari, A., A. Calvio, L. Foschini, A. Sabbioni, and A. Corradi. 2021. “A Digital Twin Decision Support System for the Urban Facility Management Process.” Sensors 21 (24): 8460. doi:10.3390/s 21248460. Caldarelli, G., E. Arcaute, M. Barthelemy, M. Batty, C. Gershenson, D. Helbing, S. Mancuso, et al. 2023. “The Role of Complexity for Digital Twins of Cities.” Nature Computational Science 3 (5): 374–81. doi:10.1038/s 43588-023-00431-4. Callcut, M., J.-P. Cerceau Agliozzo, L. Varga, and L. Mc Millan. 2021. “Digital Twins in Civil Infrastructure Systems.” Sustainability 13 (20): 11549. doi:10.3390/su 132",
+    "section": "unknown",
+    "char_start": 65100,
+    "char_end": 65900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_95",
+    "text": ". “Digital Twins in Civil Infrastructure Systems.” Sustainability 13 (20): 11549. doi:10.3390/su 132011549. Caprari, G., G. Castelli, M. Montuori, M. Camardelli, and R. Malvezzi. 2022. “Digital Twin for Urban Planning in the Green Deal Era: A State of the Art and Future Perspectives.” Sustainability 14 (10): 6263. doi:10.3390/su 14106263. Castelli, G., G. Tognola, E. F. Campana, A. Cesta, M. Diez, M. Padula, Paolo Ravazzani, et al. 2019. “Urban Intelligence: A Modular, Fully Integrated, and Evolving Model for Cities Digital Twinning.” Paper presented at the 2019 IEEE 16 th International Conference on Smart Cities. doi:10.1109/honet.2019.8907962. Chaalal, E., Cindy Guerlain, Enric Pardo, and Sébastien Faye. 2023. “Integrating Connected and Automated Shuttles with Other Mobility Systems: Cha",
+    "section": "unknown",
+    "char_start": 65800,
+    "char_end": 66600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_96",
+    "text": "Sébastien Faye. 2023. “Integrating Connected and Automated Shuttles with Other Mobility Systems: Challenges and Future Directions.” IEEE Access 11:83081–83106. doi:10.1109/access.2023.3294110. Charitonidou, M. 2022. “Urban Scale Digital Twins in Data-Driven Society: Challenging Digital Universalism in Urban Planning Decision-Making.” International Journal of Architectural Computing 20:238–53. doi:10.1177/14780771211070005. Ching, T. Y., and A. Chua. 2023. “Early Exploration of GPT-4’s Abilities in the Context of Urban Planning and Design in Singapore.” Urban Redevelopment Authority. https://www. ura. gov. sg/Corporate/Resources/Ideas-and-Trends/AI-GPT4abilities-planning.\n\n786 Journal of Planning Education and Research 45(4) Cho, Y., and J. Kim. 2022. “A Study on Setting the Direction of Di",
+    "section": "unknown",
+    "char_start": 66500,
+    "char_end": 67300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_97",
+    "text": "ning Education and Research 45(4) Cho, Y., and J. Kim. 2022. “A Study on Setting the Direction of Digital Twin Implementation for Urban Regeneration Business.” International Journal of Advanced and Applied Sciences 9 (4): 147–54. doi:10.21833/ijaas.2022.04.018. Clemen, T., Nima Ahmady-Moghaddam, U. A. Lenfers, F. Ocker, D. Osterholz, J. Ströbele, and D. Glake. 2021. “Multi-Agent Systems and Digital Twins for Smarter Cities.” Proceedings of the 2021 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation. doi:10.1145/3437959.3459254. Conde, J., A. Munoz-Arcentales, A. Alonso, G. Huecas, and J. Salvachua. 2022. “Collaboration of Digital Twins Through Linked Open Data: Architecture with FIWARE as Enabling Technology.” IT Professional 24 (6): 41–46. doi:10.1109/ mitp.2022.3224826.",
+    "section": "unknown",
+    "char_start": 67200,
+    "char_end": 68000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_98",
+    "text": "with FIWARE as Enabling Technology.” IT Professional 24 (6): 41–46. doi:10.1109/ mitp.2022.3224826. Conejos, P. F., F. Martínez Alzamora, M. Hervás Carot, and J. C. Alonso Campos. 2020. “Building and Exploiting a Digital Twin for the Management of Drinking Water Distribution Networks.” Urban Water Journal 17 (8): 704–13. doi:10.1080 /1573062 x.2020.1771382. Corrado, C. R., S. M. De Long, E. G. Holt, E. Y. Hua, and A. Tolk. 2022. “Combining Green Metrics and Digital Twins for Sustainability Planning and Governance of Smart Buildings and Cities.” Sustainability 14 (20): 12988. doi:10.3390/ su 142012988. Dani, A. A. H., Suhono Harso Supangkat, Fetty Fitriyanti Lubis, I. Gusti Bagus Baskara Nugraha, Rezky Kinanda, and I. Rizkia. 2023. “Development of a Smart City Platform Based on Digital Twin",
+    "section": "unknown",
+    "char_start": 67900,
+    "char_end": 68700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_99",
+    "text": "aha, Rezky Kinanda, and I. Rizkia. 2023. “Development of a Smart City Platform Based on Digital Twin Technology for Monitoring and Supporting Decision-Making.” Sustainability 15 (18): 14002. doi:10.3390/ su 151814002. Dembski, F., C. Yamu, and Uwe Wössner. 2019. “Digital Twin, Virtual Reality and Space Syntax: Civic Engagement and Decision Support for Smart, Sustainable Cities.” Proceedings of the 12 th Space Syntax Symposium, Beijing, China, 2019. Deng, T., K. Zhang, and Z.-J. (Max) Shen. 2021. “A Systematic Review of a Digital Twin City: A New Pattern of Urban Governance toward Smart Cities.” Journal of Management Science and Engineering 6 (2): 125–34. doi:10.1016/j. jmse.2021.03.003. D’Hauwers, R., N. Walravens, and P. Ballon. 2021. “From an Inside-in Towards an Outside-Out Urban Digita",
+    "section": "unknown",
+    "char_start": 68600,
+    "char_end": 69400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_100",
+    "text": "uwers, R., N. Walravens, and P. Ballon. 2021. “From an Inside-in Towards an Outside-Out Urban Digital Twin Business Models and Implementation Challenges.” ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, VIII-4/W1-2021: 25–32. doi:10.5194/ isprs-annals-viii-4-w1-2021-25-2021. Döllner, J. 2020. “Geospatial Artificial Intelligence: Potentials of Machine Learning for 3D Point Clouds and Geospatial Digital Twins.” PFG—Journal of Photogrammetry, Remote Sensing and Geoinformation Science 88 (1): 15–24. doi:10.1007/ s 41064-020-00102-3. Du, J., Q. Zhu, Y. Shi, Q. Wang, Y. Lin, and D. Zhao. 2020. “Cognition Digital Twins for Personalized Information Systems of Smart Cities: Proof of Concept.” Journal of Management in Engineering 36 (2):04019052. doi:10.1061/(asc",
+    "section": "unknown",
+    "char_start": 69300,
+    "char_end": 70100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_101",
+    "text": "rt Cities: Proof of Concept.” Journal of Management in Engineering 36 (2):04019052. doi:10.1061/(asce)me.19435479.0000740. Eom, S.-J. 2022. “The Emerging Digital Twin Bureaucracy in the 21 st Century.” Perspectives on Public Management and Governance 5:174–86. doi:10.1093/ppmgov/gvac 005. Fan, C., Y. Jiang, and A. Mostafavi. 2020. “Social Sensing in Disaster City Digital Twin: Integrated Textual–Visual–Geo Framework for Situational Awareness during Built Environment Disruptions.” Journal of Management in Engineering 36 (3): 04020002. doi:10.1061/(asce)me.1943-5479.0000745. Fan, C., C. Zhang, A. Yahja, and A. Mostafavi. 2019. “Disaster City Digital Twin: A Vision for Integrating Artificial and Human Intelligence for Disaster Management.” International Journal of Information Management 56:10",
+    "section": "unknown",
+    "char_start": 70000,
+    "char_end": 70800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_102",
+    "text": "d Human Intelligence for Disaster Management.” International Journal of Information Management 56:102049. doi:10.1016/j. ijinfomgt.2019.102049. Fan, Z., X. Yang, W. Yuan, R. Jiang, Q. Chen, X. Song, and Ryosuke Shibasaki. 2022. “Online Trajectory Prediction for Metropolitan Scale Mobility Digital Twin.” SIGSPATIAL ’22: The 30 th International Conference on Advances in Geographic Information Systems. doi:10.1145/3557915.3561040. Ferré-Bigorra, J., M. Casals, and M. Gangolells. 2022. “The Adoption of Urban Digital Twins.” Cities 131:103905. doi:10.1016/j. cities.2022.103905. Ford, D. N., and C. M. Wolf. 2020. “Smart Cities with Digital Twin Systems for Disaster Management.” Journal of Management in Engineering 36 (4): 04020027. doi:10.1061/(asce)me.19435479.0000779. Fotheringham, A. S. 2024.",
+    "section": "unknown",
+    "char_start": 70700,
+    "char_end": 71500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_103",
+    "text": "nt in Engineering 36 (4): 04020027. doi:10.1061/(asce)me.19435479.0000779. Fotheringham, A. S. 2024. “Digital Twins: The Current ‘Krays’ of Urban Analytics?” Environment and Planning B: Urban Analytics and City Science 3:16. doi:10.1177/ 23998083231169159. Francisco, A., N. Mohammadi, and J. E. Taylor. 2020. “Smart City Digital Twin–Enabled Energy Management: Toward Real Time Urban Building Energy Benchmarking.” Journal of Management in Engineering 36 (2): 04019045. doi:10.1061/ (asce)me.1943-5479.0000741. Fuller, A., Z. Fan, C. Day, and C. Barlow. 2020. “Digital Twin: Enabling Technologies, Challenges and Open Research.” IEEE Access 8:108952–71. doi:10.1109/access.2020.2998358. Ghaith, M., A. Yosri, and W. El-Dakhakhni. 2022. “Synchronization-Enhanced Deep Learning Early Flood Risk Predic",
+    "section": "unknown",
+    "char_start": 71400,
+    "char_end": 72200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_104",
+    "text": "A. Yosri, and W. El-Dakhakhni. 2022. “Synchronization-Enhanced Deep Learning Early Flood Risk Predictions: The Core of Data-Driven City Digital Twins for Climate Resilience Planning.” Water 14 (22): 3619. doi:10.3390/w 14223619. Gholami, M., D. Torreggiani, P. Tassinari, and A. Barbaresi. 2022. “Developing a 3D City Digital Twin: Enhancing Walkability through a Green Pedestrian Network (GPN) in the City of Imola, Italy.” Land 11 (11): 1917. doi:10.3390/ land 11111917. Grübel, J., T. Thrash, L. Aguilar, M. Gath-Morad, J. Chatain, R. W. Sumner, C. Hölscher, and V. R. Schinazi. 2022. “The Hitchhiker’s Guide to Fused Twins: A Review of Access to Digital Twins in Situ in Smart Cities.” Remote Sensing 14 (13): 3095. doi:10.3390/rs 14133095. Ham, Y., and J. Kim. 2020. “Participatory Sensing and D",
+    "section": "unknown",
+    "char_start": 72100,
+    "char_end": 72900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_105",
+    "text": "sing 14 (13): 3095. doi:10.3390/rs 14133095. Ham, Y., and J. Kim. 2020. “Participatory Sensing and Digital Twin City: Updating Virtual City Models for Enhanced Risk Informed Decision-Making.” Journal of Management in Engineering 36 (3): 04020005. doi:10.1061/(asce)me.19435479.0000748. Hämäläinen, M. 2021. “Urban Development with Dynamic Digital Twins in Helsinki City.” IET Smart Cities 3:201–10. doi:10.1049/smc2.12015. Hosseini Haghighi, Seyedeh Rabeeh, Pilar Monsalvete Álvarez de Uribarri, Rushikesh Padsala, and Ursula Eicker. 2021. “Characterizing and Structuring Urban GIS Data for Housing Stock Energy Modelling and Retrofitting.” Energy and Buildings 256:111706. doi:10.1016/j. enbuild.2021.111706.\n\nWu and Guan 787 Hudson-Smith, A. 2022. “Incoming Metaverses: Digital Mirrors for Urban Pl",
+    "section": "unknown",
+    "char_start": 72800,
+    "char_end": 73600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_106",
+    "text": "1.111706.\n\nWu and Guan 787 Hudson-Smith, A. 2022. “Incoming Metaverses: Digital Mirrors for Urban Planning.” Urban Planning 7 (2): 343–54. doi:10.17645/ up. v7i2.5193. Human, C., A. Basson, and K. Kruger. 2023. “A Design Framework for a System of Digital Twins and Services.” Computers in Industry 144:103796. doi:10.1016/j. compind.2022.103796. Ivanov, S., K. Nikolskaya, G. Radchenko, L. Sokolinsky, and M. Zymbler. 2020. “Digital Twin of City: Concept Overview.” Global Smart Industry Conference. doi:10.1109/ Glo SIC 50886.2020.9267879. Jones, D., C. Snider, A. Nassehi, J. Yon, and B. Hicks. 2020. “Characterising the Digital Twin: A Systematic Literature Review.” CIRP Journal of Manufacturing Science and Technology 29 (1755–5817): 36–52. doi:10.1016/j. cirpj. 2020.02.002. Ketzler, B., V. Nas",
+    "section": "unknown",
+    "char_start": 73500,
+    "char_end": 74300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_107",
+    "text": "Science and Technology 29 (1755–5817): 36–52. doi:10.1016/j. cirpj. 2020.02.002. Ketzler, B., V. Naserentin, F. Latino, C. Zangelidis, L. Thuvander, and A. Logg. 2020. “Digital Twins for Cities: A State of the Art Review.” Built Environment 46 (4): 547–73. doi:10.2148/ benv.46.4.547. Kikuchi, N., T. Fukuda, and N. Yabuki. 2022. “Future Landscape Visualization Using a City Digital Twin: Integration of Augmented Reality and Drones with Implementation of 3D Model-Based Occlusion Handling.” Journal of Computational Design and Engineering 9 (2): 837–56. doi:10.1093/jcde/ qwac 032. Kim, J., H. Kim, and Y. Ham. 2019. “Mapping Local Vulnerabilities into a 3D City Model through Social Sensing and the CAVE System toward Digital Twin City.” Computing in Civil Engineering 2019: Smart Cities, Sustainab",
+    "section": "unknown",
+    "char_start": 74200,
+    "char_end": 75000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_108",
+    "text": "CAVE System toward Digital Twin City.” Computing in Civil Engineering 2019: Smart Cities, Sustainability, and Resilience—Selected Papers from the ASCE International Conference on Computing in Civil Engineering 2019. doi:10.1061/9780784482445.058. Knezevic, M., A. Donaubauer, M. Moshrefzadeh, and T. H. Kolbe. 2022. “Managing Urban Digital Twins with an Extended Catalog Service.” ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, X-4/ W3-2022. doi:10.5194/isprs-annals-x-4-w3-2022-119-2022. Kumalasari, D., M. Koeva, F. Vahdatikhaki, D. Petrova Antonova, and M. Kuffer. 2023. “Planning Walkable Cities: Generative Design Approach towards Digital Twin Implementation.” Remote Sensing 15 (4): 1088. doi:10.3390/rs 15041088. Kuru, K. 2023. “Meta Omni City: Toward Im",
+    "section": "unknown",
+    "char_start": 74900,
+    "char_end": 75700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_109",
+    "text": "on.” Remote Sensing 15 (4): 1088. doi:10.3390/rs 15041088. Kuru, K. 2023. “Meta Omni City: Toward Immersive Urban Metaverse Cyberspaces Using Smart City Digital Twins.” IEEE Access 11:43844–68. doi:10.1109/access.2023.3272890. Langenheim, N., S. Sabri, Y. Chen, A. Kesmanis, A. Felson, A. Mueller, A. Rajabifard, and Y. Zhang. 2022. “Adapting a Digital Twin to Enable Real-Time Water Sensitive Urban Design Decision-Making.” The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLVIII-4/W4-2022. doi:10.5194/isprs-archivesxlviii-4-w4-2022-95-2022. Lee, A., K.-W. Lee, K.-H. Kim, and S.-W. Shin. 2022. “A Geospatial Platform to Manage Large-Scale Individual Mobility for an Urban Digital Twin Platform.” Remote Sensing 14 (3): 723. doi:10.3390/rs 14030723",
+    "section": "unknown",
+    "char_start": 75600,
+    "char_end": 76400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_110",
+    "text": "al Mobility for an Urban Digital Twin Platform.” Remote Sensing 14 (3): 723. doi:10.3390/rs 14030723. Lehtola, V. V., M. Koeva, S. O. Elberink, P. Raposo, J.-P. Virtanen, F. Vahdatikhaki, and S. Borsci. 2022. “Digital Twin of a City: Review of Technology Serving City Needs.” International Journal of Applied Earth Observation and Geoinformation 114:102915. doi:10.1016/j. jag.2022.102915. Lei, B., P. Janssen, J. Stoter, and F. Biljecki. 2023. “Challenges of Urban Digital Twins: A Systematic Review and a Delphi Expert Survey.” Automation in Construction 147:104716. doi:10.1016/j. autcon.2022.104716. Lei, B., Rudi Stouffs, and Filip Biljecki. 2022. “Assessing and Benchmarking 3D City Models.” International Journal of Geographical Information Science 37 (4): 788–809. doi:10.1 080/13658816.2022.",
+    "section": "unknown",
+    "char_start": 76300,
+    "char_end": 77100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_111",
+    "text": "ternational Journal of Geographical Information Science 37 (4): 788–809. doi:10.1 080/13658816.2022.2140808. Lenfers, U. A., N. Ahmady-Moghaddam, D. Glake, F. Ocker, D. Osterholz, J. Ströbele, and T. Clemen. 2021. “Improving Model Predictions—Integration of Real-Time Sensor Data into a Running Simulation of an Agent-Based Model.” Sustainability 13 (13): 7000. doi:10.3390/su 13137000. Li, D., W. Yu, and Z. Shao. 2021. “Smart City Based on Digital Twins.” Computational Urban Science 1 (1): 4. doi:10.1007/ s 43762-021-00005-y. Liao, S., J. Wu, A. K. Bashir, W. Yang, J. Li, and U. Tariq. 2022. “Digital Twin Consensus for Blockchain-Enabled Intelligent Transportation Systems in Smart Cities.” IEEE Transactions on Intelligent Transportation Systems 23 (11): 22619–29. doi:10.1109/tits.2021.313400",
+    "section": "unknown",
+    "char_start": 77000,
+    "char_end": 77800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_112",
+    "text": "E Transactions on Intelligent Transportation Systems 23 (11): 22619–29. doi:10.1109/tits.2021.3134002. Litavniece, Lienite, Sergejs Kodors, Rūta Adamoniene, and Jelena Kijasko. 2023. “Digital Twin: An Approach to Enhancing Tourism Competitiveness.” Worldwide Hospitality and Tourism Themes 15:538–48. doi:10.1108/whatt-06-20230074. Liu, C., and Y. Tian. 2023. “Recognition of Digital Twin City from the Perspective of Complex System Theory: Lessons from Chinese Practice.” Journal of Urban Management 12:182–92. doi:10.1016/j. jum.2023.04.001. Liu, P., T. Zhao, J. Luo, B. Lei, M. Frei, C. Miller, and F. Biljecki. 2023. “Towards Human-Centric Digital Twins: Leveraging Computer Vision and Graph Models to Predict Outdoor Comfort.” Sustainable Cities and Society 93:104480. doi:10.1016/j. scs.2023.10",
+    "section": "unknown",
+    "char_start": 77700,
+    "char_end": 78500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_113",
+    "text": "ls to Predict Outdoor Comfort.” Sustainable Cities and Society 93:104480. doi:10.1016/j. scs.2023.104480. Lohman, W., H. Cornelissen, J. Borst, R. Klerkx, Y. Araghi, and E. Walraven. 2023. “Building Digital Twins of Cities Using the Inter Model Broker Framework.” Future Generation Computer Systems 148:501–13. doi:10.1016/j. future.2023.06.024. Lu, Q., L. Chen, X. Xie, Z.-L. Fang, Z. Ye, and M. Pitt. 2023. “Framing Blockchain-Integrated Digital Twins for Emergent Healthcare: A Proof of Concept.” Proceedings of the Institution of Civil Engineers 176 (4): 228–43. doi:10.1680/ jensu.22.00073. Lu, Q., A. K. Parlikad, P. Woodall, G. Don Ranasinghe, X. Xie, Z. Liang, E. Konstantinou, J. Heaton, and J. Schooling. 2020. “Developing a Digital Twin at Building and City Levels: Case Study of West Camb",
+    "section": "unknown",
+    "char_start": 78400,
+    "char_end": 79200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_114",
+    "text": "J. Schooling. 2020. “Developing a Digital Twin at Building and City Levels: Case Study of West Cambridge Campus.” Journal of Management in Engineering 36 (3): 05020004. doi:10.1061/(asce)me.19435479.0000763. Luther, W., N. Baloian, D. Biella, and D. Sacher. 2023. “Digital Twins and Enabling Technologies in Museums and Cultural Heritage: An Overview.” Sensors 23 (3): 1583. doi:10.3390/ s 23031583. Major, P., G. Li, H. P. Hildre, and H. Zhang. 2021. “The Use of a Data-Driven Digital Twin of a Smart City: A Case Study of Ålesund, Norway.” IEEE Instrumentation & Measurement Magazine 24 (7): 39–49. doi:10.1109/mim.2021.9549127. Meta, I., F. Serra-Burriel, J. C. Carrasco-Jiménez, F. M. Cucchietti, C. Diví-Cuesta, C. García Calatrava, D. García, et al. 2021.\n\n788 Journal of Planning Education an",
+    "section": "unknown",
+    "char_start": 79100,
+    "char_end": 79900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_115",
+    "text": ", C. Diví-Cuesta, C. García Calatrava, D. García, et al. 2021.\n\n788 Journal of Planning Education and Research 45(4) “The Camp Nou Stadium as a Testbed for City Physiology: A Modular Framework for Urban Digital Twins.” Complexity 2021:1–15. doi:10.1155/2021/9731180. Michalik, D., P. Kohl, and A. Kummert. 2022. “Smart Cities and Innovations: Addressing User Acceptance with Virtual Reality and Digital Twin City.” IET Smart Cities 4:292–307. doi:10.1049/smc2.12042. Mohammadi, N., and J. Taylor. 2019. “Devising a Game Theoretic Approach to Enable Smart City Digital Twin Analytics.” Proceedings of the 52 nd Hawaii International Conference on System Sciences. https://scholarspace. manoa. hawaii. edu/server/api/core/bitstreams/64 d5b3e5-6440-4d1f-93 f9d 20808 e0e0bc/content. Mohammadi, N., and J.",
+    "section": "unknown",
+    "char_start": 79800,
+    "char_end": 80600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_116",
+    "text": "du/server/api/core/bitstreams/64 d5b3e5-6440-4d1f-93 f9d 20808 e0e0bc/content. Mohammadi, N., and J. B. Taylor. 2020. “Knowledge Discovery in Smart City Digital Twins.” Proceedings of the Annual Hawaii International Conference on System Sciences. doi:10.24251/ hicss.2020.204. Mohammadi, N., and J. E. Taylor. 2021. “Thinking Fast and Slow in Disaster Decision-Making with Smart City Digital Twins.” Nature Computational Science 1 (12): 771–73. doi:10.1038/ s 43588-021-00174-0. Mylonas, G., A. Kalogeras, G. Kalogeras, C. Anagnostopoulos, C. Alexakos, and L. Munoz. 2021. “Digital Twins from Smart Manufacturing to Smart Cities: A Survey.” IEEE Access 99:1. doi:10.1109/access.2021.3120843. Najafi, P., M. Mohammadi, Pieter van Wesemael, and L. Blanc. 2023. “A User-Centred Virtual City Information",
+    "section": "unknown",
+    "char_start": 80500,
+    "char_end": 81300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_117",
+    "text": "P., M. Mohammadi, Pieter van Wesemael, and L. Blanc. 2023. “A User-Centred Virtual City Information Model for Inclusive Community Design: State-of-Art.” Cities 134:104203. doi:10.1016/j. cities.2023.104203. Nochta, T., L. Wan, J. M. Schooling, and A. K. Parlikad. 2021. “A Socio-Technical Perspective on Urban Analytics: The Case of City-Scale Digital Twins.” Journal of Urban Technology 28 (1–2): 263–87. doi:10.1080/10630732.2020.1798177. Pang, J., Y. Huang, Z. Xie, J. Li, and Z. Cai. 2021. “Collaborative City Digital Twin for the COVID-19 Pandemic: A Federated Learning Solution.” Tsinghua Science and Technology 26 (5): 759–71. doi:10.26599/tst.2021.9010026. Peng, Z.-R., K. Lu, Y. Liu, and W. Zhai. 2023. “The Pathway of Urban Planning AI: From Planning Support to Plan-Making.” Journal of Pla",
+    "section": "unknown",
+    "char_start": 81200,
+    "char_end": 82000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_118",
+    "text": "Zhai. 2023. “The Pathway of Urban Planning AI: From Planning Support to Plan-Making.” Journal of Planning Education and Research. doi:10.1177/07 39456 x 231180568. Pervez, Z., Z. Khan, A. Ghafoor, and K. Soomro. 2023. “SIGNED: Smart c Ity di Gital twi N v Erifiable Data Framework.” IEEE Access 11:29430–46. doi:10.1109/access.2023.3260621. Raes, L., P. Michiels, T. Adolphi, Chris M. J. Tampère, Thanasis Dalianis, Susie Ruston Mc Aleer, and P. Kogut. 2022. “DUET: A Framework for Building Interoperable and Trusted Digital Twins of Smart Cities.” IEEE Internet Computing 26 (3): 43– 50. doi:10.1109/mic.2021.3060962. Ramos, H. M., A. Kuriqi, O. E. Coronado-Hernández, P. A. López Jiménez, and M. Pérez-Sánchez. 2023. “Are Digital Twins Improving Urban-Water Systems Efficiency and Sustainable Devel",
+    "section": "unknown",
+    "char_start": 81900,
+    "char_end": 82700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_119",
+    "text": "rez-Sánchez. 2023. “Are Digital Twins Improving Urban-Water Systems Efficiency and Sustainable Development Goals?” Urban Water Journal 1–13. doi:10.1080/15 73062 X.2023.2180396. Ramu, S. P., Parimala Boopalan, Quoc-Viet Pham, Praveen Kumar Reddy Maddikunta, Thien Huynh-The, Mamoun Alazab, Thanh Thi Nguyen, and Thippa Reddy Gadekallu. 2022. “Federated Learning Enabled Digital Twins for Smart Cities: Concepts, Recent Advances, and Future Directions.” Sustainable Cities and Society 79:103663. doi:10.1016/j. scs.2021.103663. Saeed, Z., F. Mancini, T. Glusac, and P. Izadpanahi. 2022. “Future City, Digital Twinning and the Urban Realm: A Systematic Literature Review.” Buildings 12 (5): 685. doi:10.3390/buildings 12050685. Schrotter, G., and C. Hürzeler. 2020. “The Digital Twin of the City of Zur",
+    "section": "unknown",
+    "char_start": 82600,
+    "char_end": 83400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_120",
+    "text": ".3390/buildings 12050685. Schrotter, G., and C. Hürzeler. 2020. “The Digital Twin of the City of Zurich for Urban Planning.” PFG—Journal of Photogrammetry, Remote Sensing and Geoinformation Science 88 (1): 99–112. doi:10.1007/s 41064-020-00092-2. Sepasgozar, S. M. E. 2021. “Differentiating Digital Twin from Digital Shadow: Elucidating a Paradigm Shift to Expedite a Smart, Sustainable Built Environment.” Buildings 11 (4): 151. doi:10.3390/buildings 11040151. Shahat, E., C. T. Hyun, and C. Yeom. 2021. “City Digital Twin Potentials: A Review and Research Agenda.” Sustainability 13 (6): 3386. doi:10.3390/su 13063386. Soe, R.-M., T. Ruohomäki, and H. Patzig. 2022. “Urban Open Platform for Borderless Smart Cities.” Applied Sciences 12 (2): 700. doi:10.3390/app 12020700. Sun, C., V. Puig, and G.",
+    "section": "unknown",
+    "char_start": 83300,
+    "char_end": 84100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_121",
+    "text": "ess Smart Cities.” Applied Sciences 12 (2): 700. doi:10.3390/app 12020700. Sun, C., V. Puig, and G. Cembrano. 2020. “Real-Time Control of Urban Water Cycle under Cyber-Physical Systems Framework.” Water 12 (2): 406. doi:10.3390/w 12020406. Supangkat, S. H., R. Ragajaya, and A. B. Setyadji. 2023. “Implementation of Digital Geotwin-Based Mobile Crowdsensing to Support Monitoring System in Smart City.” Sustainability 15 (5): 3942. doi:10.3390/su 15053942. Taylor, J. E., G. Bennett, and N. Mohammadi. 2021. “Engineering Smarter Cities with Smart City Digital Twins.” Journal of Management in Engineering 37 (6): 02021001. doi:10.1061/ (asce)me.1943-5479.0000974. Tomko, M., and S. Winter. 2018. “Beyond Digital Twins—A Commentary.” Environment and Planning B: Urban Analytics and City Science 46 (2)",
+    "section": "unknown",
+    "char_start": 84000,
+    "char_end": 84800
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_122",
+    "text": "ond Digital Twins—A Commentary.” Environment and Planning B: Urban Analytics and City Science 46 (2): 395–99. doi:10.1177/ 2399808318816992. Topping, D., T. J. Bannan, H. Coe, J. Evans, C. Jay, E. Murabito, and N. Robinson. 2021. “Digital Twins of Urban Air Quality: Opportunities and Challenges.” Frontiers in Sustainable Cities 3:786563. doi:10.3389/frsc.2021.786563. Truu, M., I. Annus, J. Roosimägi, N. Kändler, A. Vassiljev, and K. Kaur. 2021. “Integrated Decision Support System for Pluvial Flood-Resilient Spatial Planning in Urban Areas.” Water 13 (23): 3340. doi:10.3390/w 13233340. Tzachor, A., S. Sabri, C. E. Richards, A. Rajabifard, and M. Acuto. 2022. “Potential and Limitations of Digital Twins to Achieve the Sustainable Development Goals.” Nature Sustainability 5:822–29. doi:10.1038",
+    "section": "unknown",
+    "char_start": 84700,
+    "char_end": 85500
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_123",
+    "text": "tal Twins to Achieve the Sustainable Development Goals.” Nature Sustainability 5:822–29. doi:10.1038/s 41893-022-00923-7. Van de Vyvere, B., and P. Colpaert. 2022. “Using ANPR Data to Create an Anonymized Linked Open Dataset on Urban Bustle.” European Transport Research Review 14 (1): 17. doi:10.1186/ s 12544-022-00538-1. Visconti, E., C. Tsigkanos, Z. Hu, and C. Ghezzi. 2021. “Model Driven Engineering City Spaces via Bidirectional Model Transformations.” Software and Systems Modeling 20:2003– 22. doi:10.1007/s 10270-020-00851-0. Wan, L., T. Nochta, and J. M. Schooling. 2019. “Developing a City—Level Digital Twin—Propositions and a Case Study.” International Conference on Smart Infrastructure and Construction 2019 (ICSIC). doi:10.1680/icsic.64669.187.\n\nWu and Guan 789 Wang, B. 2021. “The S",
+    "section": "unknown",
+    "char_start": 85400,
+    "char_end": 86200
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_124",
+    "text": "e and Construction 2019 (ICSIC). doi:10.1680/icsic.64669.187.\n\nWu and Guan 789 Wang, B. 2021. “The Seductive Smart City and the Benevolent Role of Transparency.” Interaction Design and Architecture(s) 48:100–21. doi:10.55612/s-5002-048-005. Wang, H., X. Chen, F. Jia, and X. Cheng. 2023. “Digital Twin Supported Smart City: Status, Challenges and Future Research Directions.” Expert Systems with Applications 217:119531. doi:10.1016/j. eswa.2023.119531. Wang, S.-M., and L. H. Vu. 2023. “The Integration of Digital Twin and Serious Game Framework for New Normal Virtual Urban Exploration and Social Interaction.” Journal of Urban Management 12 (2): 168–81. doi:10.1016/j. jum.2023.03.001. Waqar, A., I. Othman, H. Almujibah, M. B. Khan, S. Alotaibi, and A. A. M. Elhassan. 2023. “Factors Influencing",
+    "section": "unknown",
+    "char_start": 86100,
+    "char_end": 86900
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_125",
+    "text": "I. Othman, H. Almujibah, M. B. Khan, S. Alotaibi, and A. A. M. Elhassan. 2023. “Factors Influencing Adoption of Digital Twin Advanced Technologies for Smart City Development: Evidence from Malaysia.” Buildings 13 (3): 775. doi:10.3390/buildings 13030775. Weil, C., S. E. Bibri, R. Longchamp, F. Golay, and A. Alahi. 2023. “Urban Digital Twin Challenges: A Systematic Review and Perspectives for Sustainable Smart Cities.” Sustainable Cities and Society 99:104862. doi:10.1016/j. scs.2023.104862. White, G., Zink, A., Codecá, L., and Clarke, S. 2021. “A digital twin smart city for citizen feedback.” Cities 110: 103064. https://doi. org/10.1016/j. cities.2020.103064. Wolf, K., R. J. Dawson, J. P. Mills, P. Blythe, and J. Morley. 2022. “Towards a Digital Twin for Supporting Multi-Agency Incident Ma",
+    "section": "unknown",
+    "char_start": 86800,
+    "char_end": 87600
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_126",
+    "text": "lls, P. Blythe, and J. Morley. 2022. “Towards a Digital Twin for Supporting Multi-Agency Incident Management in a Smart City.” Scientific Reports 12 (1): 16221. doi:10.1038/s 41598-022-20178-8. Wright, L., and S. Davidson. 2020. “How to Tell the Difference between a Model and a Digital Twin.” Advanced Modeling and Simulation in Engineering Sciences 7 (1): 13. doi:10.1186/ s 40323-020-00147-4. Xia, H., Z. Liu, E. Maria, X. Liu, and C. Lin. 2022. “Study on City Digital Twin Technologies for Sustainable Smart City Design: A Review and Bibliometric Analysis of Geographic Information System and Building Information Modeling Integration.” Sustainable Cities and Society 84:104009. doi:10.1016/j. scs.2022.104009. Xue, F., W. Lu, Z. Chen, and C. J. Webster. 2020. “From Li DAR Point Cloud towards Di",
+    "section": "unknown",
+    "char_start": 87500,
+    "char_end": 88300
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_127",
+    "text": "s.2022.104009. Xue, F., W. Lu, Z. Chen, and C. J. Webster. 2020. “From Li DAR Point Cloud towards Digital Twin City: Clustering City Objects Based on Gestalt Principles.” ISPRS Journal of Photogrammetry and Remote Sensing 167:418–31. doi:10.1016/j. isprsjprs.2020.07.020. Yan, J., Q. Lu, Z. Fang, N. Li, L. Chen, and M. Pitt. 2022. “From Building to City Level Dynamic Digital Twin: A Review from Data Management Perspective.” IOP Conference Series: Earth and Environmental Science 1101 (9): 092033. doi:10.1088/1755-1315/1101/9/092033. Yang, S., and H. Kim. 2021. “Urban Digital Twin Applications as a Virtual Platform of Smart City.” International Journal of Sustainable Building Technology and Urban Development 12 (4): 363–79. doi:10.22712/susb.20210030. Yang, Z., P. Fu, K. Lin, J. Wang, C.-C. L",
+    "section": "unknown",
+    "char_start": 88200,
+    "char_end": 89000
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_128",
+    "text": "an Development 12 (4): 363–79. doi:10.22712/susb.20210030. Yang, Z., P. Fu, K. Lin, J. Wang, C.-C. Lin, Z. Liu, and L. Wang. 2023. “The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision).” ar Xiv. Cornell University. doi:10.48550/ arxiv.2309.17421. Yavo-Ayalon, S., S. Joshi, Y. (Adam) Zhang, R. (Albert) Han, N. Mahyar, and W. Ju. 2023. “Building Community Resiliency through Immersive Communal Extended Reality (CXR).” Multimodal Technologies and Interaction 7 (5): 43. doi:10.3390/mti 7050043. Ye, X., J. Du, Y. Han, G. Newman, D. Retchless, L. Zou, Y. Ham, and Z. Cai. 2022. “Developing Human-Centered Urban Digital Twins for Community Infrastructure Resilience: A Research Agenda.” Journal of Planning Literature 38 (2): 187–99. doi:10.1177/08854122221137861. Ye, X., G. Newman, C. Lee, S",
+    "section": "unknown",
+    "char_start": 88900,
+    "char_end": 89700
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_129",
+    "text": "l of Planning Literature 38 (2): 187–99. doi:10.1177/08854122221137861. Ye, X., G. Newman, C. Lee, Shannon Van Zandt, and X. Ye. 2023. “Toward Urban Artificial Intelligence for Developing Justice Oriented Smart Cities.” Journal of Planning Education and Research 43 (1): 6–7. doi:10.1177/0739456 x 231154002. Yossef Ravid, B., and M. Aharon-Gutman. 2023. “The Social Digital Twin: The Social Turn in the Field of Smart Cities.” Environment and Planning B: Urban Analytics and City Science 50:1455–70. doi:10.1177/23998083221137079. Zhao, C., X. Dai, Y. Lv, J. Niu, and Y. Lin. 2023. “Decentralized Autonomous Operations and Organizations in Trans Verse: Federated Intelligence for Smart Mobility.” IEEE Transactions on Systems, Man, and Cybernetics: Systems 53 (4): 2062–72. doi:10.1109/TSMC.2022.322",
+    "section": "unknown",
+    "char_start": 89600,
+    "char_end": 90400
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_130",
+    "text": "EE Transactions on Systems, Man, and Cybernetics: Systems 53 (4): 2062–72. doi:10.1109/TSMC.2022.3228914. Zheng, X., J. Lu, and D. Kiritsis. 2022. “The Emergence of Cognitive Digital Twin: Vision, Challenges and Opportunities.” International Journal of Production Research 60:7610–32. doi :10.1080/00207543.2021.2014591. Zhou, Y., H. Liang, X. Zhang, S. Wang, Y. Xu, C. Li, and J. Zhang. 2023. “Using the Dual Concept of Evolutionary Game and Reinforcement Learning in Support of Decision Making Process of Community Regeneration—Case Study in Shanghai.” Buildings 13 (1): 175–75. doi:10.3390/buildings 13010175. Author Biographies Tim Guangyu Wu is a doctoral researcher at NYU Wagner and a research associate at Shanghai Key Laboratory of Urban Design and Urban Science, NYU Shanghai. Cheng He Guan",
+    "section": "unknown",
+    "char_start": 90300,
+    "char_end": 91100
+  },
+  {
+    "source_id": "Wu2024",
+    "chunk_id": "chunk_131",
+    "text": "associate at Shanghai Key Laboratory of Urban Design and Urban Science, NYU Shanghai. Cheng He Guan is the co-director of Shanghai Key Laboratory of Urban Design and Urban Science, Assistant Professor of Urban Science and Policy at NYU Shanghai, and Global Network Assistant Professor at NYU Wagner.",
+    "section": "unknown",
+    "char_start": 91000,
+    "char_end": 91800
+  }
+]

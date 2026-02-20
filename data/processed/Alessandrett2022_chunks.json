@@ -1,0 +1,706 @@
+[
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_01",
+    "text": "a r X i v : 2 2 1 1 . 0 0 3 5 5 v 1 [ p h y s i c s . s o c - p h ] 1 N o v 2 0 2 2 Chapter 3 Urban Mobility Laura Alessandretti and Michael Szell Abstract In this chapter, we discuss urban mobility from a complexity science perspective. First, we give an overview of the datasets that enable this approach, such as mobile phone records, location-based social network traces, or GPS trajectories from sensors installed on vehicles. We then review the empirical and theoretical understanding of the properties of human movements, including the distribution of travel distances and times, the entropy of trajectories, and the interplay between exploration and exploitation of locations. Next, we explain generative and predictive models of individual mobility, and their limitations due to intrinsic li",
+    "section": "unknown",
+    "char_start": 0,
+    "char_end": 800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_02",
+    "text": "n generative and predictive models of individual mobility, and their limitations due to intrinsic limits of predictability. Finally, we discuss urban transport from a systemic perspective, including system-wide challenges like ridesharing, multimodality, and sustainable transport. 3.1 Introduction and history of quantitative mobility studies From commuting to work, running errands, to going on a leisure trip, mobility is an integral part of our daily lives. Humans allocate a significant amount of time, money and energy to travel, with the average US household spending on mobility a non-negligiblyhigh value of around 16% [1], and with commuting accounting on averagefor around 56 minutes per day [2]. Mobilityunderliessome of the most critical challengesof ourtimes, includingthe designof sust",
+    "section": "unknown",
+    "char_start": 700,
+    "char_end": 1500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_03",
+    "text": "ay [2]. Mobilityunderliessome of the most critical challengesof ourtimes, includingthe designof sustainableurbantransportation and the containment of epidemics. For example, a badly designed transport system can drive critical problems such as congestion, road deaths, and pollution. Transportation is estimated to account for around 27% of greenhouse gas emissions in Laura Alessandretti DTU Compute, Technical University of Denmark. e-mail: lauale@dtu. dk Michael Szell NEtwo Rks, Data, and Society (NERDS), ITU Copenhagen. e-mail: misz@itu. dk 1\n\n2 Laura Alessandretti and Michael Szell the US, out of which around 57% comes from light-duty on-road vehicles (cars, motorbikes, vans) [3]. People on the move drive social mixing which in turn can facilitate the spread of infectious diseases [4]. Im",
+    "section": "unknown",
+    "char_start": 1400,
+    "char_end": 2200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_04",
+    "text": "the move drive social mixing which in turn can facilitate the spread of infectious diseases [4]. Important societal issues are deeply intertwined with mobility patterns, and it has become critical to quantify and understandhumanmovements. Understandinghumanmobilityis importantnot onlyfrom a theoretical standpoint but also crucial to inform policy makers on how to improve urban transport and infrastructure, with the ultimate goal to invest into policies that improve the movement of people or that reduce the need for movement in the first place. The study of human movementshas a long history. The first rigorousapproaches to quantifyhuman movementpatterns can be traced back to the 19 th century, for example to Eduard Lill [5], statistician and chief inspector of the imperial-royal Austrian n",
+    "section": "unknown",
+    "char_start": 2100,
+    "char_end": 2900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_05",
+    "text": "y, for example to Eduard Lill [5], statistician and chief inspector of the imperial-royal Austrian north-west railway company, who noticed that the number of people traveling from a place decreases as a hyperbola, eventually giving rise to the gravity laws of travel discussed in Chapter 15. From this statistical perspective, the aggregate of many people can be described via simple mathematical laws, despite each individual having their individual, unique reasons for movement. This perspective is taken to the extreme in statistical physics, where large numbers of particles are easily described via their emergent properties, for example the temperature and pressure of a gas. This reductionist Ansatz, and the corresponding tools developed in statistical physics, are powerful ways to understan",
+    "section": "unknown",
+    "char_start": 2800,
+    "char_end": 3600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_06",
+    "text": "Ansatz, and the corresponding tools developed in statistical physics, are powerful ways to understand large numbers of interacting or moving entities statistically, whether they are particles or humans [6]. From these early studies on human mobility, we have come a long way. As an empirical science, the availability of high-resolution data has been crucial to drive evidence-based understanding. Such data have started to become available at the start of the 21 st century, with first the diffusion of mobile phones, smartcards, and GPS positioning systems installed on vehicles, then smartphones and wearable devices. Concurrently with the development of increasingly powerful computational tools, the data revolution has enabled a richer and richer understanding of human mobility patterns. First",
+    "section": "unknown",
+    "char_start": 3500,
+    "char_end": 4300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_07",
+    "text": "the data revolution has enabled a richer and richer understanding of human mobility patterns. First, scientists could shift focus from the collective to the individual level, by studying single trajectories that have increasingly high temporal and spatial resolution, to the point that we can now trace actual route choices. Second, we are achieving a better and better understandingof the mechanisms underlying mobility behavior, through enriching mobility data with additional information, such as the features of the visited locations, individuals’ social interactions, environmental and weather data, and features of the built environment [7]. In this chapter, we givean overviewon how the field of complexsystems, shaped considerably by statistical physicists, makes use of and adapts their too",
+    "section": "unknown",
+    "char_start": 4200,
+    "char_end": 5000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_08",
+    "text": "of complexsystems, shaped considerably by statistical physicists, makes use of and adapts their tools in the context of urban mobility. Our chapter does not claim completeness but is an introductory overview of the fundamental concepts with hand-picked highlights; for a comprehensive review see Ref. [8]. We outline the main aspects of the field by following largely the historical co-evolution of data and research. In Section 3.2 we discuss sources of data and issues of data quality. In Section 3.3 we introduce metrics and descriptive results about the statistical properties of individual empirical trajectories. In Section 3.4 we summarize the main statistical and mechanistic\n\n3 Urban Mobility 3 models about urban mobility patterns. Although we explicitly do not cover other approaches to u",
+    "section": "unknown",
+    "char_start": 4900,
+    "char_end": 5700
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_09",
+    "text": "ty 3 models about urban mobility patterns. Although we explicitly do not cover other approaches to urban mobility, for example from transport engineering, we follow up with an outlook in Section 3.5 on sustainable transport and urban livability due to the urgency of this topic in the context of the climate crisis, asking to which extent some of the long-range or high-speed movements in cities of today are actually necessary and how they could be avoided. Finally, we provide a list of important tools and further materials in Section 3.6 and end with conclusions in Section 3.7. 3.2 Data sources Since the early 2000 s, the development and widespread adoption of technologies that record the positions of individuals over time has driven a rapid growth of the fieldofhumanmobility, throughenablin",
+    "section": "unknown",
+    "char_start": 5600,
+    "char_end": 6400
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_10",
+    "text": "tions of individuals over time has driven a rapid growth of the fieldofhumanmobility, throughenablingaccess todata[7].Here, wedescribesome of the most widely used data sources. Data from mobile network operators. Mobile network operators gather location data for billing and operational purposes, through monitoring the cell towers that user devices connect to. These data have been widely used for human mobility research. Data collected by network operators has inherently limited spatial resolution, because the coverage of cell towers is quite wide, ranging from some tens of metersinurbanareasuptotens ofkilometersinruralareas. Intermsoftemporalresolution, there has been a rapid evolution over the last 20 years. Before the diffusion of smartphones, research was largely based on Call Detail Re",
+    "section": "unknown",
+    "char_start": 6300,
+    "char_end": 7100
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_11",
+    "text": "the last 20 years. Before the diffusion of smartphones, research was largely based on Call Detail Records (CDR), which captures the closest cell tower to individuals as they issue or receive calls and SMS. More recently, researchers have gained access to higher-frequency data. e Xtended Detail Records (XDR) are collected when users explicitly request an http address or when the phone downloads content from the Internet (e. g., emails, messages, app updates). Control Plane Records (CPRs) are network-triggered (e. g., assigning a new antenna, connecting new devices) and are used to monitor the cellphone network status. CDR, XDR, and CPR vary significantly in their time granularity and data sparsity [9]. Data from smartphone applications. Other useful data sources are represented by services",
+    "section": "unknown",
+    "char_start": 7000,
+    "char_end": 7800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_12",
+    "text": "rsity [9]. Data from smartphone applications. Other useful data sources are represented by services that collect GPS positions through smartphone applications or services. In the early years of human mobility research, these data would mostly be collected by Location Based Social Networks (LSBN) services, such as Foursquare or Twitter, which would gather location data only when individuals used the service. Nowadays, other applications, including navigation apps or apps that perform targeted advertising, collect GPS positions from user devices at higher frequency. In turn, these applications are often equipped with software development kits (SDK) that can send the GPS data from the user’s device to the company that produced the SDK. Throughusing several smartphone applications, SDK compani",
+    "section": "unknown",
+    "char_start": 7700,
+    "char_end": 8500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_13",
+    "text": "vice to the company that produced the SDK. Throughusing several smartphone applications, SDK companies can thus collect comprehensive geolocation data. Especially since the COVID-19 pandemic, SDK data has become widely used for mobility research [10, 11].\n\n4 Laura Alessandretti and Michael Szell Transport and mobile sensor data. The digitization of private and public transport services now allows tracking of citizens in the public transportation system, such as through public transport travel card, and analyzing/visualizing entire taxi systems and transportation fleets. Further, detailed records are being generated by novel mobility sharing systems, from car and bicycle sharing to e-stroller and ride sharing. Custom sensors, installed on vehicles, can provide the potential to sense ecologi",
+    "section": "unknown",
+    "char_start": 8400,
+    "char_end": 9200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_14",
+    "text": "and ride sharing. Custom sensors, installed on vehicles, can provide the potential to sense ecological urban variables and the sentiments of city dwellers in unprecedented detail. Most data sources come with a wide range of biases and measurement problems, such as missing (sub)trajectories, zigzagging, or GPS jitter. Mobility data usually originate from applications that were not developed for research purposes, leading to typically low data quality. Any serious movement data analysis therefore has to account for adequate data preprocessing, including assessment and mitigation of data quality issues, which is often an extensive task [12]. Further, stop and home detection are not trivial [13, 14]. 3.3 Statistical properties of individual trajectories Characterizing the statistical properti",
+    "section": "unknown",
+    "char_start": 9100,
+    "char_end": 9900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_15",
+    "text": ", 14]. 3.3 Statistical properties of individual trajectories Characterizing the statistical properties of individual trajectories is necessary to understand the underlying dynamics of human mobility and to design reliable predictive models. Generally, one can think of the movements of an individual as a trajectory consisting of displacements between locations and pauses at locations where the individual stops and spends time. Depending on the sampling frequency, the availability of spatio-temporal details, and the goal or scope of the analysis, trajectories can be studied either as sequences of locations, as sequences of locations embeddedinspaceandtime, oras high-frequencytrajectories. Inthissection, we reviewsome ofthefundamentalmetricsthat havebeenusedin theliteratureto characterize ind",
+    "section": "unknown",
+    "char_start": 9800,
+    "char_end": 10600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_16",
+    "text": "issection, we reviewsome ofthefundamentalmetricsthat havebeenusedin theliteratureto characterize individual trajectories and the resulting empirical findings. We will introduce richer and richer representations of individual trajectories. The entropy measures that we introduce here swiftly can be well motivated from statistical mechanics, and can be extended or applied to many additional questions in urban science, see Chapter 5. 3.3.1 Trajectories as sequences of locations In the simplest form, a trajectory can be represented as a sequence of locations, discarding aspects related to the position of locations in physical space. A large stream of literature has focused on the characteristics of these sequences of places. Onefirstkeyquestionis: Howpredictablearethesesequencesoflocations?Or,",
+    "section": "unknown",
+    "char_start": 10500,
+    "char_end": 11300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_17",
+    "text": "of these sequences of places. Onefirstkeyquestionis: Howpredictablearethesesequencesoflocations?Or, in other words, to what extent is human mobility repetitive? This question is important for modeling purposes, to understand how simple we can make our models, and for\n\n3 Urban Mobility 5 privacy considerations. A key metric to address these questions is entropy, which can be thought of as a measure of uncertainty. The most naive way of assessing predictabilityof an individuali is by examining their visited number of unique locations N i. In the trivial case N i = 1 there is no uncertainty about the individual’s location and it is fully predictable. However, the larger N i gets, the more uncertain the location and the less predictablethe individual becomes. A measure for the uncertainty of a",
+    "section": "unknown",
+    "char_start": 11200,
+    "char_end": 12000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_18",
+    "text": "tain the location and the less predictablethe individual becomes. A measure for the uncertainty of an individual’s location which considers only N i was introduced by Ref. [15] as the random entropy: Definition 1 (Random entropy) The random entropy Srand i of an individual i’s trajectory, given their visited number of unique locations N i, is Srand i = log 2N i. (3.1) Example: Person1 visited2locations. Therefore, Srand 1 =log 2N 1 =log 22=1. Example: Person2 visited4locations. Therefore, Srand 2 =log 2N 2 =log 24=2. Coming from thermodynamics and statistical physics, entropy more formally measures the degree to which the probability of a system is spread out over different possible microstates. In information theory it is called Shannon entropy: Definition 2 (Shannon entropy, temporal-unc",
+    "section": "unknown",
+    "char_start": 11900,
+    "char_end": 12700
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_19",
+    "text": "tes. In information theory it is called Shannon entropy: Definition 2 (Shannon entropy, temporal-uncorrelated entropy) The Shannon entropy H(X) of a discrete random variable X is H(X) = −∑p(x)log 2 p(x), (3.2) where ∑ denotes the sum over all possible values x of X. In mobility research, the Shannon entropy of an individual i’s trajectory has been called “temporaluncorrelated entropy” [15] Sunc i = − Ni ∑ j=1p i(j)log 2 p i(j), (3.3) where p i(j) denotes the fraction of individual i’s visits to location j.\n\n6 Laura Alessandretti and Michael Szell Example: Person 1 visited location A 270 times and location B 30 times. Then p 1(A) = 0.9, p 1(B) = 0.1, and Sunc 1 = − N1 ∑ j=1p 1(j)log 2 p 1(j) = − (cid:0)p 1(A)log 2 p 1(A)+ p 1(B)log 2 p 1(B) (cid:1) = − (cid:0)0.9log 20.9+0.1log 20.1 (cid:1)",
+    "section": "unknown",
+    "char_start": 12600,
+    "char_end": 13400
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_20",
+    "text": "= − (cid:0)p 1(A)log 2 p 1(A)+ p 1(B)log 2 p 1(B) (cid:1) = − (cid:0)0.9log 20.9+0.1log 20.1 (cid:1) ≈ 0.47 Example: Person 2 visited location A 200 times, location B 300 times, location C 300 times, location D 200 times, meaning p 2(A) = 0.2, p 2(B) = 0.3, p 2(C) = 0.2, and p 2(D) = 0.2. Then Sunc 2 ≈ 1.97. The random and temporal-uncorrelated entropies of an individual are identical, Srand = Sunc, when all locations are visited with equal probability. However, Sunc becomes smaller the more unequal, or skewed, the distribution probabilities of different locations are. From the examples above, Srand 2 = 2 which is almost the same as Sunc 2 =1.97 because all fours locations were visited with similar frequency. However, for individual 1, Srand 1 = 1 is much larger than Sunc 1 = 0.47 because",
+    "section": "unknown",
+    "char_start": 13300,
+    "char_end": 14100
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_21",
+    "text": "similar frequency. However, for individual 1, Srand 1 = 1 is much larger than Sunc 1 = 0.47 because in this case the visitation frequencies were much more skewed, 270 to 30. These two concepts of entropy, random and temporal-uncorrelated, are thus useful to assess how much the skew in visiting probabilities affects the uncertainty of locations. Extending the concept of entropy one step further adds the aspect of ordering, asking: How heterogeneousare visitations not only across locations but also in their time-ordering? Definition 3 (Real entropy) The “real” entropy Sreal i of an individual i’s trajectory is given by Sreal i = − ∑ T′ i ⊂Ti P(T′ i )log 2P(T′ i ) (3.4) where P(T′ i ) is the probability of finding a particular time-ordered subsequence T′ i in the trajectory T i [15]. Thus, an",
+    "section": "unknown",
+    "char_start": 14000,
+    "char_end": 14800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_22",
+    "text": "obability of finding a particular time-ordered subsequence T′ i in the trajectory T i [15]. Thus, an individual with a trajectory of repeating or regular patterns, such as ABACDCABACDCABACDC will have a much lower real entropy than an individual who has an identical number and visitation distribution of locations but a less regular order of visitations, for example ABCDACABCDCABACACD. Similarly as Srand was an upper limit for Sunc, here Sunc is an upper limit for Sreal. The identity Sunc = Sreal is given when the order of locations in the trajectory is randomized, thereby destroying all time-correlated information. A measure associated to the entropy S is the predictability Π, derived from information theory [15], which is the probability that an optimal predictive algorithm can predict co",
+    "section": "unknown",
+    "char_start": 14700,
+    "char_end": 15500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_23",
+    "text": "nformation theory [15], which is the probability that an optimal predictive algorithm can predict correctly the individual’s future whereabouts. Every type of entropy has\n\n3 Urban Mobility 7 a respective predictability measure, for which the inequality relation between entropies Srand ≥ Sunc ≥ Sreal is inverted:Πrand ≤Πunc ≤Πreal. The more uncertainty, the less predictability. As Ref. [15] have shown, a significant share of predictability is encoded in the time ordering which make the trips of most individuals highly predictable. This high predictability of human trajectories has strong privacy implications. For example, it was shown that for the trajectories of 1.5 million individuals, with hourly sampling and spatial aggregation to 6500 cell phone towers, only 4 random spatio-temporalpoi",
+    "section": "unknown",
+    "char_start": 15400,
+    "char_end": 16200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_24",
+    "text": "hourly sampling and spatial aggregation to 6500 cell phone towers, only 4 random spatio-temporalpoints are needed to identify 95% of individuals[16]. Such insights have profoundlegal and ethical consequences on the sharing and tracking of micromobility data, and have spurred research on privacy-enhancement techniques such as cloaking, suppression, aggregation, swapping, or differential privacy [17]. While the statistical characterization of trajectories, either individually or in aggregate, is crucial for fundamental predictability and privacy considerations, two important practical questions remain: 1) What are those regular sequences of locations, and 2) What is the relation with other people’s movements in the city? The first question can be tackled via motif analysis, where the most c",
+    "section": "unknown",
+    "char_start": 16100,
+    "char_end": 16900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_25",
+    "text": "ople’s movements in the city? The first question can be tackled via motif analysis, where the most common trips of individuals are interpreted as a network of trips between locations [18]. Motifs in complex networks are generally small subgraphs that appear with significantly higher than expected probability [19]. Analyzing both surveys and mobile phone data in different cities, Ref. [18] found that half of the daily mobility networks are just describedby two trivial motifs, consisting of one node (no movement)or of two nodes (back and forth movement, typically home-work). The vast majority of all other daily movements are described by remaining 15 motifs. The second question – the relation with other people’s movements– has been investigatedfor example in the context of bus transit patter",
+    "section": "unknown",
+    "char_start": 16800,
+    "char_end": 17600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_26",
+    "text": "with other people’s movements– has been investigatedfor example in the context of bus transit patterns of 5 million individuals in Singapore [20]. Due to the striking regularity of daily commutes, the emergence of “familiar strangers” in a tight-knit contact network was observed, with crucial consequences on the impact of humanbehavioron diffusion/spreadingprocesses. More recentstudies havecompared explicitly social relations with mobility behavior [21, 22]. For example, the Copenhagen network study [21] has found striking differences in geospatial versus social entropy in a population of 1000 university students, for example uncovering “party nights” that are characterized by geospatial exploration but conservative social behavior. The reason why sequences of human locations are highly pr",
+    "section": "unknown",
+    "char_start": 17500,
+    "char_end": 18300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_27",
+    "text": "loration but conservative social behavior. The reason why sequences of human locations are highly predictable is rooted in the high level of regularity of day-to-day routines, with mobility highly dominated byhome-workcommuting. Moreover, theway humansvisitplaces andallocatetime among them is characterized by universal properties, as shown by several empirical studies. Some notable properties include: Heterogeneous distribution of visits. Humans allocate their time in a heterogeneous way across places, implying they spend most of their time within a small set of favorite locations. Ranking locations from the most visited to the least visited, the number of visits for a location with rank L follows a power-law P ∼ L−α with exponentα∼ 1.2 [15, 23].\n\n8 Laura Alessandretti and Michael Szell Su",
+    "section": "unknown",
+    "char_start": 18200,
+    "char_end": 19000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_28",
+    "text": "ollows a power-law P ∼ L−α with exponentα∼ 1.2 [15, 23].\n\n8 Laura Alessandretti and Michael Szell Sublinearexploration. Thenumberofdistinctlocations S visitedbyanindividual grows over time (t) as S ∼βt, with β ∼ 0.6, implying that there is a decreasing tendency to explore new locations [15]. Periodicity. The probability to return to a location visited n hours before is characterized by peaks at 24 h, 48 h and 72 h, due to the recurrence and temporal periodicity inherent to human mobility, which is driven by circadian and weekly patterns. [15] Conservation of the number of visited places. It was shown that, despite the fact that our routines change and evolve over long time-scales, some properties of the set of visited locations, including their size remain approximately conserved at the le",
+    "section": "unknown",
+    "char_start": 18900,
+    "char_end": 19700
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_29",
+    "text": "rties of the set of visited locations, including their size remain approximately conserved at the level of the single individual [23]. 3.3.2 Trajectories in space and time If the data are available, realism can be increased by considering trajectories as sequences of locations embedded in space and time. Two key properties that characterize these sequences are the waiting time and the displacement distributions. Definition 4 (Waiting time distribution) The waiting time distribution P(∆t) describes probabilistically the time ∆t that an individual pauses after a move. Definition 5 (Displacement distribution) The displacement distribution P(∆r) describes probabilistically the distance ∆r that an individual moves after a pause. The distribution of waiting times (or pause durations), ∆t, betwee",
+    "section": "unknown",
+    "char_start": 19600,
+    "char_end": 20400
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_30",
+    "text": "n individual moves after a pause. The distribution of waiting times (or pause durations), ∆t, between movements and the distribution of distances, ∆r, travelled between pauses are useful to quantitatively assess the dynamics of human mobility. For example, specific probability distributions of distances and waiting times characterise different types of diffusion processes. Thanks to the recent availability of data used as proxy for human trajectories, the characteristic distributions of distances and waiting times between consecutive locations have been widely investigated. There is no agreement, however, on which distribution best describes these empirical datasets. Pioneer studies, based on CDR [15, 24] and banknote records [25], found that the distribution of displacement ∆r is well app",
+    "section": "unknown",
+    "char_start": 20300,
+    "char_end": 21100
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_31",
+    "text": "n CDR [15, 24] and banknote records [25], found that the distribution of displacement ∆r is well approximated by a power-law, P(∆r) ∼ ∆r−β, (or “L´ evy distribution”[26], typically with 1 < β < 3), and that an exponential cut-off in the distribution may control boundary effects [24]. These findings were confirmed by studies based on GPS trajectories of individuals [27, 28, 29] and vehicles [30, 31], as well as online social networks data [32, 33, 34]. It has been noted, however, that power-law behaviour may fail to describe intra-urban displacements [35]. Other analyses, based on online social network data [36, 37, 38] and GPS trajectories [39, 40, 41, 42] showedthat the distributionofdisplacements is well fitted byan exponential curve, P(∆r) ∼ e−λ∆r, in particular at short distances. Fina",
+    "section": "unknown",
+    "char_start": 21000,
+    "char_end": 21800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_32",
+    "text": "cements is well fitted byan exponential curve, P(∆r) ∼ e−λ∆r, in particular at short distances. Finally, analyses based on Taxi GPS [43, 44] suggested that displacements may also obey log-normal\n\n3 Urban Mobility 9 distributions, P(∆r) ∼ (1/∆r)∗e−(log∆r−µ)2/2σ2 . In Another study found that this is the case also for single-transportation trips [28]. Fewer studies have explored the distribution of waiting times between displacements, ∆t, as trajectory sampling is often uneven; e. g., in CDR data location is recorded only when the phone user makes a call or sends an SMS, and LBSN data includethepositionsof individualswhoactively“check-in”at specificplaces. Analyses based on evenly sampled trajectories from mobile phone call records [15, 18], and individuals GPS trajectories [27, 29] foundtha",
+    "section": "unknown",
+    "char_start": 21700,
+    "char_end": 22500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_33",
+    "text": "ectories from mobile phone call records [15, 18], and individuals GPS trajectories [27, 29] foundthat the distribution of waiting times can also be approximated by a power-law. A recent study based on GPS trajectories of vehicles, however, suggests that for waiting times larger than 4 hours, this distribution is best approximated by a log-normal function [45]. Several studies have highlighted the presence of natural temporal scales in individual routines: distributions of waiting times display peaks that correspond to the typical times spent home on a typical day (around 14 hours) and at work (3-4 hours for a part-time job and 8-9 hours for a full-time job) [18, 46, 47]. The datasets considered have different spatial resolution and coverage, and few studies have so far considered the whole",
+    "section": "unknown",
+    "char_start": 22400,
+    "char_end": 23200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_34",
+    "text": "red have different spatial resolution and coverage, and few studies have so far considered the whole range of displacements occurring between 101 m and 107 m (10,000 km). Another issue for comparability concerns the temporal sampling in the datasets analysed so far. Uneven sampling typical of CDR and LBSN data (i) does not allow to distinguish phases of displacement and pause, since individuals could be active also while transiting between locations, and (ii) may fail to capture patterns other than regular ones [48, 49], because individuals’ voice-call/SMS/data activity may be higher in certain preferred locations. Finally, studies focusing on displacements effectuated using one or several specific transportation modalities (private car [45, 50], taxi [42], public transportation [51], or w",
+    "section": "unknown",
+    "char_start": 23100,
+    "char_end": 23900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_35",
+    "text": "pecific transportation modalities (private car [45, 50], taxi [42], public transportation [51], or walking [29]) capture only a specific aspect of human mobility behaviour. Nevertheless, an aggregate measure of diffusion over many individuals, which describes how fast an area is explored, is given by the mean square displacement: Definition 6 (Mean square displacement) The mean square displacement MSD(t) measures the deviation of the position of N individuals from a reference position over a timespan t as an (ensemble) average over all the individuals j: MSD(t) = hr j(t)−r j(0)i = 1 N N ∑ j=1(r j(t)−r j(0))2, (3.5) where r j(t) is the position of individual j at timet and r j(0) is their initial reference position. The mean squared displacement is a measure introduced in statistical mechan",
+    "section": "unknown",
+    "char_start": 23800,
+    "char_end": 24600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_36",
+    "text": "tial reference position. The mean squared displacement is a measure introduced in statistical mechanics to study diffusion processes, and can be thought of as measuring the portion of the system “explored” by an ensemble of individuals. Empirical research has shown that human mobility patterns follows a slow diffusion process, in which the MSD grows logarithmically [15].\n\n10 Laura Alessandretti and Michael Szell To distinguish whether individuals all sample from the same displacement or waiting time distributions, or whether individuals have different movement behaviors, it is useful to define the radius of gyration: Definition 7 (Radius of gyration) The radius of gyration r g is the typical distance travelled by an individual over a fixed timespan t, r g = s1 n n ∑ i=1|r i−r cm|2, (3.6) w",
+    "section": "unknown",
+    "char_start": 24500,
+    "char_end": 25300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_37",
+    "text": "distance travelled by an individual over a fixed timespan t, r g = s1 n n ∑ i=1|r i−r cm|2, (3.6) where n is the number of jumps within timespan t, r i represents the position at step i, and r cm = 1 n ∑n i=1r i is the center of mass of the trajectory. Ref. [24] have introduced this metric to human mobility studies, showing that individuals have different typical travel distances. In particular, it has been shown that the distribution of the radius of gyration across individuals is broad and can be well described by a truncated power-law [24]. 3.4 Modeling urban mobility patterns To study the movements of humans, the field of complex systems adapts models from statistical physics, which studies the movements of particles. Central to this approach is the concept of random walk. A random wa",
+    "section": "unknown",
+    "char_start": 25200,
+    "char_end": 26000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_38",
+    "text": "dies the movements of particles. Central to this approach is the concept of random walk. A random walk describes the random, Brownian motion of particles suspended in a liquid or gas, and can be taken as the simplest model for a moving individual. Definition 8 (Random walk) A randomwalk is a randomprocess describinga path of random steps on a mathematical space. Example: Random walk on the integer number line Z which starts at 0 and at each step moves −1 or +1 with equal probability, for example decided by a coin flip. Thus, after two coin flips, the following outcomes are possible: • −2, after 0−1−1 • 0, after 0−1+1or 0+1−1 • 2, after 0+1+1 In the above example, the random walk describes a trajectory on Z with a fixed jump distance of 1 and an arbitrary waiting time – for repeated coin fl",
+    "section": "unknown",
+    "char_start": 25900,
+    "char_end": 26700
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_39",
+    "text": "trajectory on Z with a fixed jump distance of 1 and an arbitrary waiting time – for repeated coin flipping this could be for example 3 seconds. Further, this random walk is memoryless, as the coin flip is a random process independent of previous outcomes. There are several ways to extend the behavior of random walkers, adding complexity to more realistically model human mobility. For example, in continuous-time random walk\n\n3 Urban Mobility 11 (CTRW) models, jump lengths and waiting times can follow arbitrary distributions. This model was suggested as one of the first models able to capture the probability distributionsofdisplacementsandwaitingtimes, wherethestep-lengthsandwaiting times werecalibratedfromheavy-tailedprobabilitydistributionsobservedin human mobility [25]. However, human mob",
+    "section": "unknown",
+    "char_start": 26600,
+    "char_end": 27400
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_40",
+    "text": "calibratedfromheavy-tailedprobabilitydistributionsobservedin human mobility [25]. However, human mobility is not completely random, and researchers quickly realized that more realistic mechanisms were needed to capture the properties of human trajectories. An ingredient to make trajectories more realistic is memory, i. e. individualscanrememberandbeinfluencedbyvisitstopreviousplaces. In 2010, Song et al. [15] proposed an agent-based model with memory that could capture many of the observed properties of mobility. Definition 9 (EPR model) The Exploration and Preferential Return model (EPR) proposes that whenever individuals visit a location, they either (i) explore with probability P new = S−γ, where S is the number of distinct locations previously visited, or (ii) return to a previously vi",
+    "section": "unknown",
+    "char_start": 27300,
+    "char_end": 28100
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_41",
+    "text": "γ, where S is the number of distinct locations previously visited, or (ii) return to a previously visited location with complimentary probability P ret =1−P new. When returningto a previouslyvisited location, the probability p i to visit location i is proportional to the number of visits the individual previously had to that location, an effect known as preferential return. Several variations of the EPR model have been proposed to account for other aspects ofhumanmobilityincludingmorememoryandrecencyeffects [23, 52, 53], social interactions [54], and heterogeneities across individuals [55]. An important development of the EPR model is the Preferential Exploration and Preferential Return (PEPR) model, developed by Schl¨ apfer et al. [54]. Definition 10 (PEPR model) The PEPR model couples th",
+    "section": "unknown",
+    "char_start": 28000,
+    "char_end": 28800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_42",
+    "text": "R) model, developed by Schl¨ apfer et al. [54]. Definition 10 (PEPR model) The PEPR model couples the movements of agents, so that, when exploring new locations, they are preferentially attracted towards highly frequented areas. Importantly, this model is able not only to reproduce the individual mobility, but also collective patterns of mobility, thus linking the literature streams on individual and collective mobility (collective mobility is covered in Chapter 14 of this book). In particular, the PEPR model accounts for an important empirical discovery made by Schl¨ apfer et al. [54], related to the frequency at which individuals visit different locations. By studying mobility traces extracted from phones the authors had revealed that the number of users who visit a location at distance",
+    "section": "unknown",
+    "char_start": 28700,
+    "char_end": 29500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_43",
+    "text": "cted from phones the authors had revealed that the number of users who visit a location at distance r, exactly n times in a period of length T, decreases as N ∼ r−2f−2, where f = n/T. While capturing many properties of human movements, preferential return models arestill unabletoexplainthepower-lawdistributionofdisplacementsinmobility data. The observationthat mobility patterns are captured by power-lawdistributions seemed to show that human mobility is scale-free in a truly fundamental sense. But concurrently, it was known that the natural and built environment is rich in spatial scales, from neighbourhoods, to cities, regions, countries and continents [56]. The notion of scale is fundamental within the fields of geography and spatial cognition, because we think of space in a hierarchical",
+    "section": "unknown",
+    "char_start": 29400,
+    "char_end": 30200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_44",
+    "text": "al within the fields of geography and spatial cognition, because we think of space in a hierarchical fashion characterized by typical scales [57]. In this sense, there appeared to be an important schism between traditional\n\n12 Laura Alessandretti and Michael Szell geography and the data-driven work on human mobility. This divide got explicitly addressedin 2020 by Ref. [58] workingwith a verylargedataset of GPS traces. This study showedthat typical scales are indeedembeddedwithinthe same typeof scalefree trajectories analyzed by previous researchers. The explanation is that scales manifest as containers of mobility behavior. Neighborhoods have typical sizes, but the distance between the neighborhoodsa certain individualvisits is unrelatedto the size of neighborhoods (it is rather set by the",
+    "section": "unknown",
+    "char_start": 30100,
+    "char_end": 30900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_45",
+    "text": "borhoodsa certain individualvisits is unrelatedto the size of neighborhoods (it is rather set by the city scale). Similarly with cities which also tend to have a typical geographicalsize, but the cities a certain individual tends to visit may be close – or located in opposite ends of their home country. A similar logic is true for scales across neighborhoods, cities, regions, countries, continents, and the entire world. The authors use a model-based approach to infer the typical sizes of these containers across millions of individuals. Definition 11 (Container model) Physical space is modelled as a hierarchy of L levels, ordered from the smallest to largest (e. g. individual locations to countries). At anylevell, space is partitionedinto compactcontainerswith a characteristicsize. Each geo",
+    "section": "unknown",
+    "char_start": 30800,
+    "char_end": 31600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_46",
+    "text": "ntries). At anylevell, space is partitionedinto compactcontainerswith a characteristicsize. Each geographical location k can be identified as a sequence of nested containers, k = (k 1,..., k l,..., k L) that contains it. The level-distance d(j, k) between locations j and k is defined as the highest index at which the two sequences of containers describing j and k differ. For an agent located in j, the probability of moving to k is the product of two factors: P(j → k) = p d(j, k), d(j, h)∏ l≤d(j, k)a(k l). The first factor, p d(j, k), is the probability of traveling at level-distance d(j, k). The second factor ∏ l≤d(j, k)a(k l) is the probabilityof choosinga specific location k at that leveldistance, where a(k l) is the attractiveness of a container at level l including location k. 3.5 Impr",
+    "section": "unknown",
+    "char_start": 31500,
+    "char_end": 32300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_47",
+    "text": "istance, where a(k l) is the attractiveness of a container at level l including location k. 3.5 Improving urban transport systems The research described so far focuses mostly on understanding where and when people move, statistically describing individual trajectories or emerging aggregate patterns. The question of how people get to their destinations – which transport mode they use, which route they take and why, and the role of the underlying transport system – has remained largely uncharted from a quantitative perspective, also due to the limited availability of data with high enough resolution. For example, how individuals choose routes through balancing the interplay between public and private forms of transportation such as walking, driving and cycling remains poorly characterized. T",
+    "section": "unknown",
+    "char_start": 32200,
+    "char_end": 33000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_48",
+    "text": "private forms of transportation such as walking, driving and cycling remains poorly characterized. The existing empirical research using a systemic and long-term view on urban transport systems, including shared travel, multimodal travel, or system dynamics like induced demand is thus quite limited [59]. In this section we review first on the one hand some microscopic and mode-specific wayfinding mechanisms, on the other hand more systems-level approaches of how to think about the dynamics of urban transport systems with the aim to improve them. We discuss the importance of different urban transport modes, to help design more efficient and sustainable urban transportation.\n\n3 Urban Mobility 13 3.5.1 Wayfinding Apart from a statistical, quantitative description of human mobility, it is impo",
+    "section": "unknown",
+    "char_start": 32900,
+    "char_end": 33700
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_49",
+    "text": "13 3.5.1 Wayfinding Apart from a statistical, quantitative description of human mobility, it is important to understand the mechanisms of how humans are navigating in cities to find their ways. While pathfinding on a graph (such as a street network) is a solved problem in computer science via Dijkstra’s shortest path algorithm and its modern replacements [60], the implementation of routing on multimodal networks can be challenging [61, 62], and an array of cognitive peculiarities have to be accounted for such as upbringing [63], vector-based navigation [64], information overload [65], or mode-specific travel behavior [66]. Recent findings have established that pedestrians, cyclists, and motorists do not tend to follow optimal routes, and are instead influenced by urban features and goal di",
+    "section": "unknown",
+    "char_start": 33600,
+    "char_end": 34400
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_50",
+    "text": "rists do not tend to follow optimal routes, and are instead influenced by urban features and goal distance and direction [67, 68, 64, 69]. 3.5.2 Shareability networks Existing urban transport systems are highly inefficient, such as the individualized transportmodeoftaxis. In New Yorkcity, forexample, alargefleetofaround 13,500 taxicabs serves individualizedmobility needs, but with a high fraction of idle or low occupation runs. To quantify how much such a localized fleet could be improved, Ref. [70] introduced the concept of shareability network in 2014 using methods from network science. The idea of shareability networksis to view a vehicle fleet froma global perspective and to optimize for the whole system with global knowledge instead of locally. For example, instead of having two taxis",
+    "section": "unknown",
+    "char_start": 34300,
+    "char_end": 35100
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_51",
+    "text": "the whole system with global knowledge instead of locally. For example, instead of having two taxis deliver two individuals in parallel from the same starting point to the same end point, the routes of the two passengers could have been bundled with just one taxi with small inconvenience to both. Taking this idea to the extreme, towards k-sharing with k >2, would lead to a system of dynamically routed “taxi buses”. As Ref. [70] showed, in New York City indeed a large fraction of trips could be shared with relatively low discomfort, with cumulativetrip length cut by 40% or more. Trip-sharingsystems wereintroducedlater by UBER(called UBERPool), andby similar ride hailing companies, leading to a claimed short-term reduction of driven kilometers [71]. However, in total, companies like UBER ha",
+    "section": "unknown",
+    "char_start": 35000,
+    "char_end": 35800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_52",
+    "text": "a claimed short-term reduction of driven kilometers [71]. However, in total, companies like UBER have later shown to have generated more traffic and congestion due to rebound effects and their competition with public transport [72, 73, 74]. This example shows how long-term systems thinking is necessary to understand the full impact and possible unintended consequences of short-term optimization, see Section 3.5.3. The research on shareability networks was later expanded with a focus on fleet size and vehicle-sharing networks [75], finding a potential to reduce the New York city taxi fleet size by 30 percent. Such a potential reduction follows directly from a reorganization of taxi dispatching that could be implemented with a mobile phone app and does not assume ride sharing, nor requires",
+    "section": "unknown",
+    "char_start": 35700,
+    "char_end": 36500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_53",
+    "text": "ng that could be implemented with a mobile phone app and does not assume ride sharing, nor requires changes to regulations, business\n\n14 Laura Alessandretti and Michael Szell models, or human attitudes towards mobility to become effective. Finally, further research uncovered scaling effects in ride-sharing [76, 77]. 3.5.3 Sustainable, multimodal transport and systems thinking Understanding urban mobility is impossible without understanding its history and the complex socio-technical system it is part of. This history shows a transition towards car-centricity in the 20 th century for most cities, entailing critical consequences on the whole system, for example: over 1.3 Mio. people die on the road every year [78], vehicular pollution causes millions of more yearly deaths [79], and vehicular",
+    "section": "unknown",
+    "char_start": 36400,
+    "char_end": 37200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_54",
+    "text": "road every year [78], vehicular pollution causes millions of more yearly deaths [79], and vehicular traffic noise has shown to cause dementia-relateddiseases on a large scale [80]. Further, cars come with massive inefficiencies due to their skewed space requirements and usage patterns [81]. Apart from empirical evidence that this is unsustainable[82], alsomathematicalmodelsfromcomplexityscienceshowthatcities as (car-centric) transport monocultures are not sustainable [83, 84], and that a mere replacement of fossil fuel cars with electric vehicles is not an adequate solution [85, 86, 87, 88], especially when time-tested, much more efficient and economic, solutions such as mass transit or bicycles are available. To fix such monocultures, the biggest question in urban transport is how to rev",
+    "section": "unknown",
+    "char_start": 37100,
+    "char_end": 37900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_55",
+    "text": "ycles are available. To fix such monocultures, the biggest question in urban transport is how to reverse car dependency[89], i. e. how to best replace unsustainablemodes of transport and to prioritizesustainable ones. In particular, active travel such as walking and cycling has the highest societal benefits [90]: Cost-benefit analysis which accounts for the environment and public health reveals that each kilometer walked or cycled in the European Union provides e0.37 or e0.18 to society, respectively, while each kilometer driven by car incurs a cost of e0.11 [91]. Overcoming transportation monocultures is also possible with a focus on more multimodal transport, i. e. the combinationof multiple transportmodes promisingall of their benefits while avoiding their weaknesses. For an overview of",
+    "section": "unknown",
+    "char_start": 37800,
+    "char_end": 38600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_56",
+    "text": "le transportmodes promisingall of their benefits while avoiding their weaknesses. For an overview of state of the art complex systems based approaches to multimodal mobility see Ref. [59]. Systemsthinkingistheappropriatemethodofunderstandinghow(un)sustainable urbanmobilityemergesovertime [92]: Thereis a complexco-evolutionbetweenurban transport infrastructure, land use, and socio-political/cultural factors with longterm feedback loops. Complex systems dynamics are crucially dependent on the interactions between its parts and not just on the parts themselves. Example: Increased traffic volume creates pressure to invest into road infrastructure, which drives more traffic volume. This is the well-known phenomenonofinduceddemand. Dueto increasedroadwaycapacities, catchment areas increase, lead",
+    "section": "unknown",
+    "char_start": 38500,
+    "char_end": 39300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_57",
+    "text": "ll-known phenomenonofinduceddemand. Dueto increasedroadwaycapacities, catchment areas increase, leading to urban sprawl, which in turn increases traffic volume and erodes active modes of transport due to increased distances and lack of adequate transport infrastructure.\n\n3 Urban Mobility 15 The general phenomenon of car-dependence can be thought of as a dynamic reinforced through different socio-technical systems such as the automotive industry, land use, or car culture [93]. Therefore, long-term urban planning cannot detach transport planning from the planning of land-use, housing, parking [94], etc., but the whole system must be understood as being shaped by strong, non-linear, longterm interactions. Although the opposite of systems thinking, namely short-term engineering thinking, has i",
+    "section": "unknown",
+    "char_start": 39200,
+    "char_end": 40000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_58",
+    "text": "teractions. Although the opposite of systems thinking, namely short-term engineering thinking, has its use cases, it is inadequate to apply to most problems in complex systems, because the optimization or control of sub-systems can lead to unintended consequences (such as induced demand or urban sprawl) [92]. Using short-term traffic engineering thinking has lead to the outdated “predict and provide” logic, where e. g. traffic volumes are predicted from past flows and the role of policy makers is to react by providing a short-term solution. On the contrary, following systems thinking, this logic is replaced with the more adequate “decide and provide” principle, which aims to pro-actively shape the future [95]. It acknowledges that e. g. the choice to drive a car is not solely the result of",
+    "section": "unknown",
+    "char_start": 39900,
+    "char_end": 40700
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_59",
+    "text": "pe the future [95]. It acknowledges that e. g. the choice to drive a car is not solely the result of people’s individual preferences, i. e. exogenous to the system, but determined largely by transport and urbansystems organisedaroundcar driving, which can be changedwith appropriate policies. Such policies can leverage long-term systems dynamics, allowing to re-shape transport systems for the better [92]. For example, the reversal of induced demand, namely disappearing traffic, happens when public space is reallocated from private cars to space-efficient modes of transport. As research shows [96, 89], significant reductions in overall traffic levels can occur in the right conditions, because mode choiceis moreelastic thancommonlybelieved: Manyindividualsarewilling to give up traveling by ca",
+    "section": "unknown",
+    "char_start": 40600,
+    "char_end": 41400
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_60",
+    "text": "mode choiceis moreelastic thancommonlybelieved: Manyindividualsarewilling to give up traveling by car if there are appropriate alternatives. To succeed, it is also important to consider the right communication strategies and the strong psychological aspect of car attachment [97]. Apart from policies to develop multimodal networks and street redesign, a large array of further policies can address a variety of system dynamics: From market-based instruments such as carbon-prices, road pricing, to abolishing minimum parking requirements, or financial support to increase the attractiveness of micromobility [92]. For all these policies, it is important to prioritize correctly, for example following an “avoid-shift-improve” approach [98, 99]: First, focus on avoiding the need for mobility, for ex",
+    "section": "unknown",
+    "char_start": 41300,
+    "char_end": 42100
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_61",
+    "text": "g an “avoid-shift-improve” approach [98, 99]: First, focus on avoiding the need for mobility, for example through planning for proximity such as the 15-minute city [100]. Second, aim for a shift from unsustainable to sustainable modes of transport. Only as a last third step aim to improve existing components of the system such as making vehicle technology more efficient. 3.6 Tools Over the years, computational tools have become more and more important for studying urban systems and human mobility. For an overview of the available tools in geographic analysis and transport planning see Ref. [101]. Here we focus on open-source tools as they allow fully reproducible research or analysis. There is\n\n16 Laura Alessandretti and Michael Szell a plethora of tools specialized on various purposes, in",
+    "section": "unknown",
+    "char_start": 42000,
+    "char_end": 42800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_62",
+    "text": "is\n\n16 Laura Alessandretti and Michael Szell a plethora of tools specialized on various purposes, including network analysis (single-layer or multilayer), routing and access (unimodal or multimodal), or mobility analysis. We classify these computational tools into three groups. 3.6.1 Transport and mobility tools We first describe the most general tools for mobility and transport analysis. To work with public transportation data, the Python library transitfeed [102] is suitedto parse, validateandbuild GTFS files. This toolis particularlyusefulto those interested in the manipulation of the raw data. However, to convert the data into a network, some additional steps are needed, such as using Peartree (see below). Movingpandas [103] is a Python package that provides trajectory data structures",
+    "section": "unknown",
+    "char_start": 42700,
+    "char_end": 43500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_63",
+    "text": "artree (see below). Movingpandas [103] is a Python package that provides trajectory data structures and functions for the analysis and visualisation of mobility data. In a similar sense, and also developed in Python, scikit-mobility [104] is a library that implements a framework for analyzing statistical patterns and modeling mobility, including functions for estimating movement between zones using spatial interaction models, and tools to asses privacy risks related to the analysis of mobility datasets. 3.6.2 Transport network tools In this section we cover tools for studying transportation networks. Multiple tools were developed to obtain data on transportation and multimodal infrastructures. Oneofthebestknownis OSMnx[105], a Pythonpackagethatdownloads street networks from Open Street Map",
+    "section": "unknown",
+    "char_start": 43400,
+    "char_end": 44200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_64",
+    "text": "s. Oneofthebestknownis OSMnx[105], a Pythonpackagethatdownloads street networks from Open Street Map into Python objects. OSMnx can further be used to download other transportation networks, and build its multimodal transport networks. Another reliable Python library to read data from Open Street Map and extract transportationnetworksis Pyrosm [106].Differentlyfrom OSMnx, Pyrosmreadsthe data directlyfrom Open Street Map’s Protocol Buffer Formatfiles (*.osm. pbf), while OSMnx downloads the data from the Overpass API [107]. For this reason Pyrosm is a particularly good alternative when working with large urban areas, states, and even countries, while OSMnx typically offers a more precise way to collect data from specific points in a city. Finally, an alternative to transitfeed’s functionalit",
+    "section": "unknown",
+    "char_start": 44100,
+    "char_end": 44900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_65",
+    "text": "o collect data from specific points in a city. Finally, an alternative to transitfeed’s functionality of reading GTFS feeds is Peartree [108], a Python library allowing to convert GTFS feed schedules into the corresponding directed network graph.\n\n3 Urban Mobility 17 3.6.3 Tools for routing or access on transport networks In this section we cover tools that can be used for routing and navigation. On one hand there are established general, high-performancetools for unimodal routing such as graphhopper [109] and OSRM [110]. These tools were developed for routing on one network type but could in principle be extended to multimodal routing. Explicit multimodal routing is provided by Open Trip Planner (OTP) [111] and R5 [112]. Both tools exist as fast R implementations, r5r [113] and OTP for R",
+    "section": "unknown",
+    "char_start": 44800,
+    "char_end": 45600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_66",
+    "text": "anner (OTP) [111] and R5 [112]. Both tools exist as fast R implementations, r5r [113] and OTP for R [114]; the Python implementation of R5 is R5py [115]. The R package dodgr [116], thanks to an efficient algorithm for computing distances between pairs of nodes in a street network, further enables the aggregation of flows on network links from a set of origin and destination points, a matrix of pairwise flow densities, and the underlying street network. Finally, several open source packages focus on computing accessibility metrics, e. g. the ease by which people can reach points of interests, such as those offering employment, shopping, medical care or recreation [117]. Pandana [118, 119] is a Python library that enables to compute the accessibility of places by retrieving points of interes",
+    "section": "unknown",
+    "char_start": 45500,
+    "char_end": 46300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_67",
+    "text": "a Python library that enables to compute the accessibility of places by retrieving points of interest and street network data from Open Street Map [120] and by efficiently computing shortest paths along the street network. Access [121] is a Python library that computes a wide range of spatial accessibility metrics from a set of origins and destinations, and travel times or distances between them. Built on top of Pandana, Urban Access [122] integrates the creation of multi-modal transport networks (transit and pedestrian)using GTFS data and the computationof accessibility metrics. Similar functionalities are offered in R and Python by r5r [113] and R5py [115], respectively. 3.7 Conclusions In this chapter we gave a brief, introductory overview of quantitative urban mobility research from a",
+    "section": "unknown",
+    "char_start": 46200,
+    "char_end": 47000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_68",
+    "text": "this chapter we gave a brief, introductory overview of quantitative urban mobility research from a complexity science perspective with hand-picked highlights. We covered history, statistical analysis of trajectories, the systemic perspective, and a collection of state of the art software tools. Our chapter could serve as a basis for teaching the topic to an advanced audience (master level or higher); much of the discussed material is covered in open teaching resources available at: https://github. com/mszell/geospatialdatascience. References 1. Transportation economic trends: Transportation spending - average household. URL https://data. bts. gov/stories/s/Transportation-Economic-Trends-Transportation-Spen/ida7-k 95 k/\n\n18 Laura Alessandretti and Michael Szell 2. C. Burd, M. Burrows, B. M",
+    "section": "unknown",
+    "char_start": 46900,
+    "char_end": 47700
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_69",
+    "text": "nsportation-Spen/ida7-k 95 k/\n\n18 Laura Alessandretti and Michael Szell 2. C. Burd, M. Burrows, B. Mc Kenzie, American Community Survey Reports, United States Census Bureau 2, 2021 (2021) 3. URLhttps://www. epa. gov/ghgemissions/sources-greenhouse-gas-emissions 4. L. Alessandretti, Nature Reviews Physics 4(1), 12 (2022) 5. E. Lill, Die Grundgesetze des Personenverkehrs: Eine Studie (Hartleben’s Verlag, Vienna, 1889) 6. P. Ball, Complexus 1(4), 190 (2003) 7. B. Resch, M. Szell, ISPRS International Journal of Geo-Information 8(584) (2019). DOI 10.3390/ijgi 8120584 8. H. Barbosa, M. Barthelemy, G. Ghoshal, C. R. James, M. Lenormand, T. Louail, R. Menezes, J. J. Ramasco, F. Simini, M. Tomasini, Physics Reports 734, 1 (2018) 9. L. Pappalardo, L. Ferres, M. Sacasa, C. Cattuto, L. Bravo, EPJ data",
+    "section": "unknown",
+    "char_start": 47600,
+    "char_end": 48400
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_70",
+    "text": "Physics Reports 734, 1 (2018) 9. L. Pappalardo, L. Ferres, M. Sacasa, C. Cattuto, L. Bravo, EPJ data science 10(1), 29 (2021) 10. A. Aleta, D. Martin-Corral, A. Pastore y Piontti, M. Ajelli, M. Litvinova, M. Chinazzi, N. E. Dean, M. E. Halloran, I. M. Longini Jr, S. Merler, et al., Nature Human Behaviour 4(9), 964 (2020) 11. S. Chang, E. Pierson, P. W. Koh, J. Gerardin, B. Redbird, D. Grusky, J. Leskovec, Nature 589(7840), 82 (2021) 12. G. Andrienko, N. Andrienko, G. Fuchs, Journal of location Based services 10(1), 31 (2016) 13. F. Calabrese, M. Diao, G. Di Lorenzo, J. Ferreira Jr, C. Ratti, Transportation research part C: emerging technologies 26, 301 (2013) 14. L. Pappalardo, F. Simini, G. Barlacchi, R. Pellungrini, Journal of Statistical Software 103(4), 1–38 (2022). DOI 10.18637/jss. v",
+    "section": "unknown",
+    "char_start": 48300,
+    "char_end": 49100
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_71",
+    "text": "Barlacchi, R. Pellungrini, Journal of Statistical Software 103(4), 1–38 (2022). DOI 10.18637/jss. v 103.i 04. URL https://www. jstatsoft. org/index. php/jss/article/view/v 103 i 04 15. C. Song, T. Koren, P. Wang, A. L. Barab´ asi, Nature Physics 6(10), 818 (2010) 16. Y. A. De Montjoye, C. A. Hidalgo, M. Verleysen, V. D. Blondel, Scientific reports 3(1), 1 (2013) 17. M. Fiore, P. Katsikouli, E. Zavou, M. Cunche, F. Fessant, D. Le Hello, U. Aivodji, B. Olivier, T. Quertier, R. Stanica, Transactions on Data Privacy 13, 91 (2020) 18. C. M. Schneider, V. Belik, T. Couronn´ e, Z. Smoreda, M. C. Gonz´ alez, Journal of The Royal Society Interface 10(84), 20130246 (2013) 19. R. Milo, S. Shen-Orr, S. Itzkovitz, N. Kashtan, D. Chklovskii, U. Alon, Science 298(5594), 824 (2002) 20. L. Sun, K. W. Axha",
+    "section": "unknown",
+    "char_start": 49000,
+    "char_end": 49800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_72",
+    "text": "Itzkovitz, N. Kashtan, D. Chklovskii, U. Alon, Science 298(5594), 824 (2002) 20. L. Sun, K. W. Axhausen, D. H. Lee, X. Huang, Proceedings of the National Academy of Sciences 110(34), 13774 (2013) 21. V. Sekara, A. Stopczynski, S. Lehmann, Proceedings of the national academy of sciences 113(36), 9977 (2016) 22. Z. Chen, S. Kelty, A. G. Evsukoff, B. F. Welles, J. Bagrow, R. Menezes, G. Ghoshal, Nature communications 13(1), 1 (2022) 23. L. Alessandretti, P. Sapiezynski, V. Sekara, S. Lehmann, A. Baronchelli, Nature human behaviour 2(7), 485 (2018) 24. M. C. Gonzalez, C. A. Hidalgo, A. L. Barabasi, Nature 453(7196), 779 (2008) 25. D. Brockmann, L. Hufnagel, T. Geisel, Nature 439(7075), 462 (2006) 26. A. Baronchelli, F. Radicchi, Chaos, Solitons & Fractals 56, 101 (2013) 27. X. W. Wang, X. P.",
+    "section": "unknown",
+    "char_start": 49700,
+    "char_end": 50500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_73",
+    "text": "6) 26. A. Baronchelli, F. Radicchi, Chaos, Solitons & Fractals 56, 101 (2013) 27. X. W. Wang, X. P. Han, B. H. Wang, Plo S one 9(1), e 84954 (2014) 28. K. Zhao, M. Musolesi, P. Hui, W. Rao, S. Tarkoma, Scientific reports 5 (2015) 29. I. Rhee, M. Shin, S. Hong, K. Lee, S. J. Kim, S. Chong, IEEE/ACM transactions on networking (TON) 19(3), 630 (2011) 30. B. Jiang, J. Yin, S. Zhao, Physical Review E 80(2), 021136 (2009) 31. Y. Liu, C. Kang, S. Gao, Y. Xiao, Y. Tian, Journal ofgeographical systems 14(4), 463 (2012) 32. M. G. Beir´ o, A. Panisson, M. Tizzoni, C. Cattuto, ar Xiv preprint ar Xiv:1601.04560 (2016) 33. Z. Cheng, J. Caverlee, K. Lee, D. Z. Sui, ICWSM 2011, 81 (2011) 34. B. Hawelka, I. Sitko, E. Beinat, S. Sobolevsky, P. Kazakopoulos, C. Ratti, Cartography and Geographic Information S",
+    "section": "unknown",
+    "char_start": 50400,
+    "char_end": 51200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_74",
+    "text": "Sitko, E. Beinat, S. Sobolevsky, P. Kazakopoulos, C. Ratti, Cartography and Geographic Information Science 41(3), 260 (2014) 35. A. Noulas, S. Scellato, R. Lambiotte, M. Pontil, C. Mascolo, Plo S one 7(5), e 37027 (2012)\n\n3 Urban Mobility 19 36. L. Wu, Y. Zhi, Z. Sui, Y. Liu, Plo S one 9(5), e 97010 (2014) 37. Y. Liu, Z. Sui, C. Kang, Y. Gao, Plo S one 9(1), e 86026 (2014) 38. R. Jurdak, K. Zhao, J. Liu, M. Abou Jaoude, M. Cameron, D. Newth, Plo S one 10(7), e 0131469 (2015) 39. H. Liu, Y. H. Chen, J. S. Lih, The European Physical Journal B 88(5), 1 (2015) 40. X. Liang, X. Zheng, W. Lv, T. Zhu, K. Xu, Physica A: Statistical Mechanics and its Applications 391(5), 2135 (2012) 41. L. Gong, X. Liu, L. Wu, Y. Liu, Cartography and Geographic Information Science 43(2), 103 (2016) 42. K. Zhao, M.",
+    "section": "unknown",
+    "char_start": 51100,
+    "char_end": 51900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_75",
+    "text": "iu, L. Wu, Y. Liu, Cartography and Geographic Information Science 43(2), 103 (2016) 42. K. Zhao, M. Chinnasamy, S. Tarkoma, in 2015 IEEE International Conference on Data Mining Workshop (ICDMW) (IEEE, 2015), pp. 1136–1142 43. W. Wang, L. Pan, N. Yuan, S. Zhang, D. Liu, Physica A: Statistical Mechanics and its Applications 420, 134 (2015) 44. J. Tang, F. Liu, Y. Wang, H. Wang, Physica A: Statistical Mechanics and its Applications 438, 140 (2015) 45. R. Gallotti, A. Bazzani, S. Rambaldi, M. Barthelemy, Nature Communications 7, 12600 (2016) 46. S. Hasan, C. M. Schneider, S. V. Ukkusuri, M. C. Gonz´ alez, Journal of Statistical Physics 151(1-2), 304 (2013) 47. A. Bazzani, B. Giorgini, S. Rambaldi, R. Gallotti, L. Giovannini, Journal of Statistical Mechanics: Theory and Experiment 2010(05), P 0",
+    "section": "unknown",
+    "char_start": 51800,
+    "char_end": 52600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_76",
+    "text": "i, R. Gallotti, L. Giovannini, Journal of Statistical Mechanics: Theory and Experiment 2010(05), P 05001 (2010) 48. S. C¸olak, L. P. Alexander, B. G. Alvim, S. R. Mehndiratta, M. C. Gonz´ alez, Transportation Research Record 2526(1), 126 (2015) 49. G. Ranjan, H. Zang, Z. L. Zhang, J. Bolot, ACM SIGMOBILE Mobile Computing and Communications Review 16(3), 33 (2012) 50. R. Gallotti, A. Bazzani, S. Rambaldi, EPJ Data Science 4(1), 1 (2015) 51. C. Roth, S. M. Kang, M. Batty, M. Barth´ elemy, Plo S one 6(1), e 15923 (2011) 52. M. Szell, R. Sinatra, G. Petri, S. Thurner, V. Latora, Scientific reports 2(1), 1 (2012) 53. H. Barbosa, F. B. de Lima-Neto, A. Evsukoff, R. Menezes, EPJ Data Science 4(1), 1 (2015) 54. M. Schl¨ apfer, L. Dong, K. O’Keeffe, P. Santi, M. Szell, H. Salat, S. Anklesaria, M. V",
+    "section": "unknown",
+    "char_start": 52500,
+    "char_end": 53300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_77",
+    "text": "1 (2015) 54. M. Schl¨ apfer, L. Dong, K. O’Keeffe, P. Santi, M. Szell, H. Salat, S. Anklesaria, M. Vazifeh, C. Ratti, G. B. West, Nature 593(7860), 522 (2021) 55. L. Pappalardo, F. Simini, S. Rinzivillo, D. Pedreschi, F. Giannotti, A. L. Barab´ asi, Nature communications 6(1), 1 (2015) 56. D. Pumain, Hierarchy in natural and social sciences (Springer, 2006) 57. S. Grauwin, M. Szell, S. Sobolevsky, P. H¨ ovel, F. Simini, M. Vanhoof, b. Smoreda, A. L. Barab´ asi, C. Ratti, Scientific Reports 7(46677) (2017). DOI 10.1038/srep 46677 58. L. Alessandretti, U. Aslak, S. Lehmann, Nature 587(7834), 402 (2020) 59. L. Alessandretti, L. G. Natera Orozco, M. Saberi, M. Szell, F. Battiston, Environment and Planning B: Urban Analytics and City Science 0(0), 1 (2022). DOI 10.1177/ 23998083221108190 60. D.",
+    "section": "unknown",
+    "char_start": 53200,
+    "char_end": 54000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_78",
+    "text": "d Planning B: Urban Analytics and City Science 0(0), 1 (2022). DOI 10.1177/ 23998083221108190 60. D. Delling, P. Sanders, D. Schultes, D. Wagner, in Algorithmics of large and complex networks (Springer, 2009), pp. 117–139 61. F. Poletti, P. M. B¨ osch, F. Ciari, K. W. Axhausen, ISPRS International Journal of Geo Information 6(9), 268 (2017) 62. J. Q. Li, K. Zhou, L. Zhang, W. B. Zhang, Journal of Intelligent Transportation Systems 16(2), 60 (2012) 63. A. Coutrot, E. Manley, S. Goodroe, C. Gahnstrom, G. Filomena, D. Yesiltepe, R. Dalton, J. M. Wiener, C. H¨ olscher, M. Hornberger, et al., Nature 604(7904), 104 (2022) 64. C. Bongiorno, Y. Zhou, M. Kryven, D. Theurel, A. Rizzo, P. Santi, J. Tenenbaum, C. Ratti, Nature Computational Science 1(10), 678 (2021) 65. R. Gallotti, M. A. Porter, M. B",
+    "section": "unknown",
+    "char_start": 53900,
+    "char_end": 54700
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_79",
+    "text": "enbaum, C. Ratti, Nature Computational Science 1(10), 678 (2021) 65. R. Gallotti, M. A. Porter, M. Barthelemy, Science advances 2(2), e 1500445 (2016) 66. J. Broach, J. Dill, J. Gliebe, Transportation Research Part A: Policy and Practice 46(10), 1730 (2012)\n\n20 Laura Alessandretti and Michael Szell 67. E. J. Manley, J. D. Addison, T. Cheng, Journal of Transport Geography 43, 123 (2015). DOI 10.1016/j. jtrangeo.2015.01.006. URL https://www. sciencedirect. com/science/article/pii/S 0966692315000083 68. N. Malleson, A. Vanky, B. Hashemian, P. Santi, S. K. Verma, T. K. Courtney, C. Ratti, Transactions in GIS 22(2), 616 (2018). DOI 10.1111/tgis.12336. URL https://onlinelibrary. wiley. com/doi/abs/10.1111/tgis.12336. eprint: https://onlinelibrary. wiley. com/doi/pdf/10.1111/tgis.12336 69. A. Lim",
+    "section": "unknown",
+    "char_start": 54600,
+    "char_end": 55400
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_80",
+    "text": "/10.1111/tgis.12336. eprint: https://onlinelibrary. wiley. com/doi/pdf/10.1111/tgis.12336 69. A. Lima, R. Stanojevic, D. Papagiannaki, P. Rodriguez, M. C. Gonz´ alez, Journalof The Royal Society Interface 13(116), 20160021 (2016) 70. P. Santi, G. Resta, M. Szell, S. Sobolevsky, S. H. Strogatz, C. Ratti, Proceedings of the National Academy of Sciences 111(37), 13290 (2014). DOI 10.1073/pnas.1403657111 71. Uber Editor. Earth Day is Sunday. And every day. — uber. com. https://www. uber. com/blog/earth-day-2018/ (2018). [Accessed 06 Oct-2022] 72. A. Henao, W. E. Marshall, Transportation 46(6), 2173 (2019) 73. A. Tirachini, Transportation 47(4), 2011 (2020) 74. M. Diao, H. Kong, J. Zhao, Nature Sustainability 4(6), 494 (2021) 75. M. M. Vazifeh, P. Santi, G. Resta, S. H. Strogatz, C. Ratti, Natu",
+    "section": "unknown",
+    "char_start": 55300,
+    "char_end": 56100
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_81",
+    "text": "ustainability 4(6), 494 (2021) 75. M. M. Vazifeh, P. Santi, G. Resta, S. H. Strogatz, C. Ratti, Nature 557(7706), 534 (2018) 76. R. Tachet, O. Sagarra, P. Santi, G. Resta, M. Szell, S. H. Strogatz, C. Ratti, Scientific Reports 7(42868) (2017). DOI 10.1038/srep 42868 77. N. Molkenthin, M. Schr¨ oder, M. Timme, Physical Review Letters 125(24), 248302 (2020) 78. W. H. Organization, (2018) 79. F. Caiazzo, A. Ashok, I. A. Waitz, S. H. Yim, S. R. Barrett, Atmospheric Environment 79, 198 (2013) 80. M. L. Cantuaria, F. B. Waldorff, L. Wermuth, E. R. Pedersen, A. H. Poulsen, J. D. Thacher, O. Raaschou-Nielsen, M. Ketzel, J. Khan, V. H. Valencia, et al., bmj 374 (2021) 81. M. Szell, Urban Planning 3, 1 (2018). DOI 10.17645/up. v3i1.1209 82. D. Banister, Unsustainable transport: city transport in the",
+    "section": "unknown",
+    "char_start": 56000,
+    "char_end": 56800
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_82",
+    "text": "1 (2018). DOI 10.17645/up. v3i1.1209 82. D. Banister, Unsustainable transport: city transport in the new century (Routledge, 2005) 83. R. Louf, M. Barthelemy, Physical review letters 111(19), 198702 (2013) 84. R. Prieto Curiel, H. Gonz´ alez Ram´ırez, M. Qui˜ nones Dom´ınguez, J. P. Orjuela Mendoza, Royal Society Open Science 8 (2021) 85. F. Creutzig, P. Jochem, O. Y. Edelenbosch, L. Mattauch, D. P. van Vuuren, D. Mc Collum, J. Minx, Science 350(6263), 911 (2015) 86. A. Milovanoff, I. D. Posen, H. L. Mac Lean, Nature Climate Change 10(12), 1102 (2020) 87. C. Brand, E. Dons, E. Anaya-Boig, I. Avila-Palencia, A. Clark, A. de Nazelle, M. Gascon, M. Gaupp-Berghausen, R. Gerike, T. G¨ otschi, et al., Transportation Research Part D: Transport and Environment 93, 102764 (2021) 88. J. Henderson, A",
+    "section": "unknown",
+    "char_start": 56700,
+    "char_end": 57500
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_83",
+    "text": "al., Transportation Research Part D: Transport and Environment 93, 102764 (2021) 88. J. Henderson, Annals of the American Association of Geographers 110(6), 1993 (2020) 89. I. T. Forum, Reversing Car Dependency (2021). DOI https://doi. org/https://doi. org/10.1787/bebe3b6e-en. URL https://www. oecd-ilibrary. org/content/publication/bebe3b6e-en 90. Walkingandcycling: latestevidencetosupportpolicy-makingandpractice. Tech. rep., WHO (2022) 91. S. G¨ ossling, A. Choi, K. Dekker, D. Metzler, Ecological Economics 158, 65 (2019) 92. Transport strategies for net-zero systems by design. Tech. rep., OECD Publishing (2021) 93. G. Mattioli, C. Roberts, J. K. Steinberger, A. Brown, Energy Research & Social Science 66, 101486 (2020) 94. D. C. Shoup, The high cost of free parking (Routledge, 2021) 95. G.",
+    "section": "unknown",
+    "char_start": 57400,
+    "char_end": 58200
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_84",
+    "text": "al Science 66, 101486 (2020) 94. D. C. Shoup, The high cost of free parking (Routledge, 2021) 95. G. Lyons, C. Davidson, Transportation Research Part A: Policy and Practice 88, 104 (2016) 96. S. Cairns, S. Atkins, P. Goodwin, in Proceedings of the Institution of Civil Engineers Municipal Engineer, vol. 151 (Thomas Telford Ltd, 2002), vol. 151, pp. 13–22 97. S. G¨ ossling, Journal of Urban Design 25(4), 443 (2020) 98. D. Bongardt, L. Stiller, A. Swart, A. Wagner, Transformative Urban Mobility Initiative (2019)\n\n3 Urban Mobility 21 99. E. Holden, D. Banister, S. G¨ ossling, G. Gilpin, K. Linnerud, Energy Research & Social Science 65, 101454 (2020) 100. C. Moreno, Z. Allam, D. Chabaud, C. Gall, F. Pratlong, Smart Cities 4(1), 93 (2021) 101. R. Lovelace, Journal of Geographical Systems (2021).",
+    "section": "unknown",
+    "char_start": 58100,
+    "char_end": 58900
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_85",
+    "text": "F. Pratlong, Smart Cities 4(1), 93 (2021) 101. R. Lovelace, Journal of Geographical Systems (2021). DOI 10.1007/s 10109-020-00342-2 102. Google. transitfeed. V.1.2.16 https://github. com/google/transitfeed (2018). URL https://github. com/google/transitfeed 103. A. Graser, GIForum 1, 54 (2019) 104. L. Pappalardo, F. Simini, G. Barlacchi, R. Pellungrini. scikit-mobility: a python library for the analysis, generation and risk assessment of mobility data (2021) 105. G. Boeing, Computers, Environment and Urban Systems 65, 126 (2017). DOI 10.1016/j. compenvurbsys.2017.05.004 106. H. Tenkanen. pyrosm. V.0.5.0 https://github. com/HTenkanen/pyrosm (2020). DOI 10.5281/ZENODO.3818244. URL https://github. com/HTenkanen/pyrosm 107. Open Street Map contributors. Overpass API. https://overpass-api. de/",
+    "section": "unknown",
+    "char_start": 58800,
+    "char_end": 59600
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_86",
+    "text": "ub. com/HTenkanen/pyrosm 107. Open Street Map contributors. Overpass API. https://overpass-api. de/ (2017) 108. K. Butts. Peartree. Peartree, V0.6.4, https://github. com/kuanb/peartree/releases/tag/0.6.4 (2021) 109. Graph Hopper. Graph Hopper. https://www. graphhopper. com/ (2022) 110. OSRM. Open source routing machine. http://project-osrm. org/ (2021) 111. OTP. Open Trip Planner. http://www. opentripplanner. org/ (2022) 112. M. W. Conway, A. Byrd, M. van der Linden, Transportation Research Record 2653(1), 45 (2017) 113. R. H. Pereira, M. Saraiva, D. Herszenhut, C. K. V. Braga, M. W. Conway, Findings p. 21262 (2021) 114. M. Morgan, M. Young, R. Lovelace, L. Hama, Journal of Open Source Software 4(44), 1926 (2019) 115. C. Fink, W. Klumpenhouwer, R. Saraiva, M. Pereira, H. Tenkanen. r5py: Ra",
+    "section": "unknown",
+    "char_start": 59500,
+    "char_end": 60300
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_87",
+    "text": "are 4(44), 1926 (2019) 115. C. Fink, W. Klumpenhouwer, R. Saraiva, M. Pereira, H. Tenkanen. r5py: Rapid Realistic Routing with R5 in Python. (2022). DOI 10.5281/zenodo.7060437 116. M. Padgham, Findings p. 6945 (2019) 117. P. Rietveld, Transportation Research Part D: Transport and Environment 5(1), 71 (2000) 118. F. Foti, P. Waddell, D. Luxen, in Proceedings of the 4th TRB Conference on Innovations in Travel Modeling. Transportation Research Board (2012) 119. Pandana. Pandana. V.0.6.1 https://github. com/UDST/pandana (2021). URL https://github. com/UDST/pandana 120. Open Street Map contributors. Planet dump retrieved from https://planet. osm. org . https://www. openstreetmap. org (2017) 121. J. Saxon, J. Koschinsky, K. Acosta, V. Anguiano, L. Anselin, S. Rey, Journal of Computational Social",
+    "section": "unknown",
+    "char_start": 60200,
+    "char_end": 61000
+  },
+  {
+    "source_id": "Alessandrett2022",
+    "chunk_id": "chunk_88",
+    "text": "J. Saxon, J. Koschinsky, K. Acosta, V. Anguiano, L. Anselin, S. Rey, Journal of Computational Social Science pp. 1–20 (2021) 122. S. D. Blanchard, P. Waddell, Transportation research record 2653(1), 35 (2017)",
+    "section": "unknown",
+    "char_start": 60900,
+    "char_end": 61700
+  }
+]

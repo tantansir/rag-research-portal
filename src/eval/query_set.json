@@ -1,0 +1,139 @@
+[
+  {
+    "id": "Q01",
+    "type": "direct",
+    "query": "What architectural components are critical for operational city digital twins?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q02",
+    "type": "direct",
+    "query": "What benchmark datasets exist for evaluating city digital twin systems?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q03",
+    "type": "direct",
+    "query": "How is real-time sensor data integrated into digital twin platforms?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q04",
+    "type": "direct",
+    "query": "What human-centered design practices are used in digital twin interfaces?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q05",
+    "type": "direct",
+    "query": "What are the most common use cases for city digital twins in urban planning?",
+    "difficulty": "easy"
+  },
+  {
+    "id": "Q06",
+    "type": "direct",
+    "query": "How do digital twins handle model drift and recalibration over time?",
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q07",
+    "type": "direct",
+    "query": "What evaluation protocols are used to validate digital twin predictions?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q08",
+    "type": "direct",
+    "query": "How do city digital twins support resilience and emergency response?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q09",
+    "type": "direct",
+    "query": "What data pipeline architectures are commonly used in digital twin systems?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q10",
+    "type": "direct",
+    "query": "What methods are used for uncertainty quantification in digital twin predictions?",
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q11",
+    "type": "synthesis",
+    "query": "Compare the evaluation methodologies used for digital twin systems across different application domains",
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q12",
+    "type": "synthesis",
+    "query": "How do participatory design approaches differ across reported digital twin implementations?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q13",
+    "type": "synthesis",
+    "query": "What are the key differences between building-level and city-level digital twin architectures?",
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q14",
+    "type": "synthesis",
+    "query": "What tensions exist between real-time responsiveness and prediction accuracy in digital twin systems?",
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q15",
+    "type": "synthesis",
+    "query": "How do different sources define the boundary between a digital twin and a traditional urban simulation?",
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q16",
+    "type": "edge_case",
+    "query": "Do city digital twins use blockchain for data provenance?",
+    "difficulty": "hard",
+    "expected_behavior": "Should acknowledge if evidence is absent"
+  },
+  {
+    "id": "Q17",
+    "type": "edge_case",
+    "query": "What privacy concerns are raised about digital twin surveillance?",
+    "difficulty": "medium",
+    "expected_behavior": "May have limited evidence, should cite what exists"
+  },
+  {
+    "id": "Q18",
+    "type": "edge_case",
+    "query": "Are there standardized APIs for interoperability between different digital twin platforms?",
+    "difficulty": "hard",
+    "expected_behavior": "Should check for standards/frameworks"
+  },
+  {
+    "id": "Q19",
+    "type": "edge_case",
+    "query": "What is the typical computational cost of running a city-scale digital twin?",
+    "difficulty": "hard",
+    "expected_behavior": "Specific metrics may be sparse"
+  },
+  {
+    "id": "Q20",
+    "type": "edge_case",
+    "query": "How do digital twins incorporate citizen-generated data from social media?",
+    "difficulty": "medium",
+    "expected_behavior": "Should note if evidence is limited"
+  },
+  {
+    "id": "Q21",
+    "type": "direct",
+    "query": "What visualization techniques are used in digital twin dashboards?",
+    "difficulty": "easy"
+  },
+  {
+    "id": "Q22",
+    "type": "synthesis",
+    "query": "What validation strategies are recommended across multiple sources?",
+    "difficulty": "medium"
+  }
+]
