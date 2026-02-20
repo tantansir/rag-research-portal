@@ -1,0 +1,194 @@
+{
+  "thread_id": "90ef6a09-ee4f-47e0-b7b0-eb8397cf84be",
+  "title": "[Gap follow-up] Specific operational examples for broad use cases",
+  "query": "specific public services urban digital twin use cases",
+  "timestamp": "2026-02-19T21:22:08.154567",
+  "answer": "Urban digital twins have various use cases across multiple domains.\n\nOne primary application area is urban planning, design, and management, encompassing public services or management, community development, and intelligent buildings (WEF2022, chunk_70). Specific use cases include urban operations, governance, urban design, and the fields of architecture, construction, and engineering (Wu2024, chunk_27). Digital twins aid in metro planning and construction, which can significantly reduce construction costs (WEF2022, chunk_96). They also help infrastructure builders make sound digital planning decisions prior to project implementation (WEF2022, chunk_96). Furthermore, they enable digital supervision throughout the entire life cycle of a city, including planning, construction, management, use, and maintenance (WEF2022, chunk_96), (WEF2022, chunk_95). A significant function of an urban digital twin is the 3-Dimensional visualisation of the city or region (Apeldoorn2025, chunk_97).\n\nIn the realm of environmental sustainability and energy management, urban digital twins are used for environmental and low-carbon development (WEF2022, chunk_70). This includes monitoring energy consumption and economic returns to help with low-carbon development (WEF2022, chunk_70). They optimize urban lighting by simulating light and shadow intensity to achieve a balance between safety requirements and energy-saving targets (WEF2022, chunk_69). Digital twins also allow urban planners to refine the use, operation, and maintenance of energy systems, record a city’s carbon trajectory, and promote carbon neutrality (WEF2022, chunk_69). They contribute to the more efficient and rational use of resources (WEF2022, chunk_41) and help achieve cleaner cities and reduced carbon emissions (WEF2022, chunk_95).\n\nFor transportation, digital twins are applied in smart transportation initiatives (WEF2022, chunk_70) and urban traffic management (WEF2022, chunk_96). They have been used in smart ports, such as the Mawan Smart Port (WEF2022, chunk_96). These technologies can monitor and predict the movement of people, places, and objects within a city, enabling comprehensive and systematic advance planning and design (WEF2022, chunk_69).\n\nUrban digital twins also enhance resilience and public safety. They can improve the resilience of urban areas against, for example, natural disasters and pandemics (Apeldoorn2025, chunk_97). Specific applications include mitigating the impact of events like the COVID-19 pandemic (WEF2022, chunk_95) and protecting citizens’ personal safety (WEF2022, chunk_41).\n\nIn terms of quality of life and services, digital twins can significantly improve residents’ quality of life and enhance the inclusiveness of cities (WEF2022, chunk_41). They enhance citizens’ sense of happiness through the integration of virtual and real scenarios, providing full-range, full-time, customized services in digital twin hospitals, classrooms, and nursing homes (WEF2022, chunk_41). Furthermore, they can help achieve urban economic recovery (WEF2022, chunk_95) and reduce the cost of urban innovation by serving as a cloud service for enterprises and citizens (WEF2022, chunk_41).",
+  "retrieved_chunks": [
+    {
+      "source_id": "WEF2022",
+      "chunk_id": "chunk_70",
+      "text": "ons due to problematic construction. From the cases collected for this report, the top three application scenarios in digital twin city construction are: 1) public services or management; 2) community development; and 3) intelligent buildings, accounting for 55.6%, 44.4% and 40.7% respectively. Of all Chinese digital twin practices, 54% are related to smart transportation and 31% to smart communities. In global terms, more than 40% of practices focus on environmental and low-carbon development. Cities such as Orlando, New York City and Sydney apply digital twin technology to monitor energy consumption and economic returns to help with the low-carbon development of cities. Digital Twin Cities: Framework and Global Practices 21\n\nPercentage of different applications in digital twin city FIGUR",
+      "score": 0.007363998230871296,
+      "section": "unknown",
+      "char_start": 48300,
+      "char_end": 49100
+    },
+    {
+      "source_id": "Wu2024",
+      "chunk_id": "chunk_27",
+      "text": "nstance, S. Yang and Kim (2021) delineated unique use cases for different domains such as transportation, environment & energy, disaster response, planning & design, and management & operation. Similarly, Xia et al. (2022) have cataloged specialized use cases within domains such as urban operations, governance, urban design, and the fields of architecture, construction, and engineering (ACE). In an effort to harmonize these disparate approaches, Callcut et al. (2021) adopted a uniform set of use cases and tabulated their applicability in various domain-specific implementations of UDTs. By bringing attention to these domainspecific classifications of use cases, we underscore the need for standardized terminology to facilitate communication and collaboration across domains. Anticipated and R",
+      "score": 0.00819672131147541,
+      "section": "unknown",
+      "char_start": 18200,
+      "char_end": 19000
+    },
+    {
+      "source_id": "WEF2022",
+      "chunk_id": "chunk_96",
+      "text": "eve urban economic recovery. Rennes, France: The digital twin city has been used in metro planning and construction, which significantly reduces construction costs. Shenzhen, China: Digital twin technology has been applied in the Mawan Smart Port. Kunming, China: The traffic database is used in urban traffic management. New South Wales, Australia: Digital twins help infrastructure builders make sound digital planning decisions prior to project implementation and promote the development of the regional economy. Source: Cases Collated by CAICT Xiong’an New Area, China: digital supervision of the whole life cycle of the city using the BIM Management Platform 3.1 Case overview The Xiong’an New Area is the first area in China to propose the construction of a digital twin city. According to the",
+      "score": 0.008442982456140351,
+      "section": "unknown",
+      "char_start": 66500,
+      "char_end": 67300
+    },
+    {
+      "source_id": "Apeldoorn2025",
+      "chunk_id": "chunk_97",
+      "text": "ban Digital Twins can improve the resilience of urban areas against, for example, natural disasters and pandemics. 1 0 (cid:0) 2 In1 25 One of the most important functions of an urban digital twin is a 3-Dimensional visualisation of the city or region. (cid:0) 1 0 2 In4 26 One of the most important characteristics of an urban digital twin is that user interaction is as easy as in a computer game. (cid:0) 1 0 1 T2 27 A digital twin is a digital copy of a physical object or artifact that exists in the real world. (cid:0) 2 (cid:0) 2 3 Vn6 28 Urban Digital Twins are hampered by a lack of coordination between public and private organisations. 0 1 (cid:0) 2 Vn7 29 Urban Digital Twins are hampered by a lack of transparency and openness to non-experts. (cid:0) 1 1 0 Vp1 30 Urban Digital Twins bec",
+      "score": 0.00798611111111111,
+      "section": "unknown",
+      "char_start": 67200,
+      "char_end": 68000
+    },
+    {
+      "source_id": "WEF2022",
+      "chunk_id": "chunk_69",
+      "text": "ing life to the digital twin city. For example, through digital twins, light and shadow intensity can be simulated. This allows urban lighting to be optimized to achieve the balance between safety requirements and energy-saving targets, which contributes to the low-carbon transformation and liveability of cities. Urban planners can also refine the use, operation and maintenance of energy systems, record the city’s carbon trajectory and promote carbon neutrality. At the same time, digital twin technology can help monitor and predict the movement of people, places and objects within the city, enabling comprehensive and systematic advance planning and design, avoiding costly and random demolitions due to problematic construction. From the cases collected for this report, the top three applica",
+      "score": 0.008093225052842363,
+      "section": "unknown",
+      "char_start": 47600,
+      "char_end": 48400
+    },
+    {
+      "source_id": "WEF2022",
+      "chunk_id": "chunk_41",
+      "text": "s could contribute to the more efficient and rational use of resources. Third, digital twin technologies could reduce the cost of urban innovation; the digital twin city model could also be used as a cloud service for enterprises and citizens to improve urban innovation. Digital twin technology could significantly improve residents’ quality of life and enhance the inclusiveness of cities. First, it enhances citizens’ sense of happiness. Through the integration of virtual and real, as well as by integrating multiple possible scenarios, digital twin hospitals, classrooms and nursing homes could provide full-range, full-time, customized services and follow-up services for individuals, thus optimizing their experience. Second, digital twin technology could protect citizens’ personal safety and",
+      "score": 0.012574404761904762,
+      "section": "unknown",
+      "char_start": 28000,
+      "char_end": 28800
+    },
+    {
+      "source_id": "WEF2022",
+      "chunk_id": "chunk_95",
+      "text": "ses are presented in sections that detail case overview, typical scenarios and case summary. It is hoped that this chapter will contribute to the development of digital twin cities in China and abroad. Cases of global digital twin cities FIGURE 20 Xiong’an New Area, China: A BIM management platform has been built for the digital supervision of the whole life cycle of city management, which includes “planning, construction, management, use and maintenance” of the city. New Mexico, USA: The digital twin city has been used to work towards a cleaner city and reduce carbon emissions. Georgetown, Malaysia: The digital twin city has been used to mitigate the impact of the COVID-19 pandemic and achieve urban economic recovery. Rennes, France: The digital twin city has been used in metro planning a",
+      "score": 0.009249281609195402,
+      "section": "unknown",
+      "char_start": 65800,
+      "char_end": 66600
+    },
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_84",
+      "text": "is highlighted as one of the most severe nontechnical challenges, indicating a demand for best practices and use cases to better adopt digital twins. Many panellists state that financing also requires efforts in practice, i. e. determining costs and benefits. Furthermore, we map the aggregated challenges into the life cycle of digital twins. At each phase, urban digital twins has been hampered by different challenges. The mapping provides insight into what challenges are mainly experienced during the different stages. Therefore, it can reflect the current development of digital twins and facilitate stakeholders to understand the status quo. The results indicate that technical and non-technical issues challenge digital twins in the urban and geospatial spatial domains to different degrees.",
+      "score": 0.013575490735644836,
+      "section": "unknown",
+      "char_start": 58100,
+      "char_end": 58900
+    }
+  ],
+  "citations_used": [
+    [
+      "WEF2022",
+      "chunk_70"
+    ],
+    [
+      "Wu2024",
+      "chunk_27"
+    ],
+    [
+      "WEF2022",
+      "chunk_96"
+    ],
+    [
+      "WEF2022",
+      "chunk_96"
+    ],
+    [
+      "WEF2022",
+      "chunk_96"
+    ],
+    [
+      "WEF2022",
+      "chunk_95"
+    ],
+    [
+      "Apeldoorn2025",
+      "chunk_97"
+    ],
+    [
+      "WEF2022",
+      "chunk_70"
+    ],
+    [
+      "WEF2022",
+      "chunk_70"
+    ],
+    [
+      "WEF2022",
+      "chunk_69"
+    ],
+    [
+      "WEF2022",
+      "chunk_69"
+    ],
+    [
+      "WEF2022",
+      "chunk_41"
+    ],
+    [
+      "WEF2022",
+      "chunk_95"
+    ],
+    [
+      "WEF2022",
+      "chunk_70"
+    ],
+    [
+      "WEF2022",
+      "chunk_96"
+    ],
+    [
+      "WEF2022",
+      "chunk_96"
+    ],
+    [
+      "WEF2022",
+      "chunk_69"
+    ],
+    [
+      "Apeldoorn2025",
+      "chunk_97"
+    ],
+    [
+      "WEF2022",
+      "chunk_95"
+    ],
+    [
+      "WEF2022",
+      "chunk_41"
+    ],
+    [
+      "WEF2022",
+      "chunk_41"
+    ],
+    [
+      "WEF2022",
+      "chunk_41"
+    ],
+    [
+      "WEF2022",
+      "chunk_95"
+    ],
+    [
+      "WEF2022",
+      "chunk_41"
+    ]
+  ],
+  "model": "gemini-2.5-flash",
+  "prompt_version": "phase3_strict_citations_v3",
+  "retrieval_config": {
+    "k": 12,
+    "k_raw": 72,
+    "use_hybrid": true,
+    "use_reranking": true,
+    "top_k_after_rerank": 8,
+    "vector_weight": 0.5,
+    "bm25_weight": 0.5,
+    "year_min": null,
+    "year_max": null,
+    "source_types": null
+  },
+  "run_id": "87ee603f-719d-4d18-97ca-69f4523461f6"
+}

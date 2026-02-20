@@ -1,0 +1,164 @@
+{
+  "thread_id": "afa76f56-769f-4167-993a-b06eb5e6936e",
+  "title": "What are the similarities and differences between ",
+  "query": "What are the similarities and differences between Silvia Mazzetto’s and Binyu Lei’s views on the challenges of urban digital twins?",
+  "timestamp": "2026-02-19T19:58:43.760731",
+  "answer": "Binyu Lei and colleagues have extensively identified and described challenges related to urban digital twins from both technical and nontechnical perspectives (Lei2023, chunk_10). Their research highlights fundamental issues such as widely varied definitions of urban digital twins, which can lead to different understandings and problems when practitioners begin projects without a consensus on what a digital twin should be (Lei2023, chunk_85). Practical values, end-user demands, and the purposes of urban digital twins are also considered main issues (Lei2023, chunk_85). Financing, specifically determining costs and benefits, is noted as one of the most severe nontechnical challenges (Lei2023, chunk_84). Other challenges include data-related issues like quality and integration (Lei2023, chunk_07), and the need for public engagement and consensus among various groups (Lei2023, chunk_81). Lei et al. also emphasize the necessity of deep discussions to synchronize understanding of digital twins among clients and partners before starting a project (Lei2023, chunk_65). Their work reveals a lengthy list of challenges pertaining to the design and implementation of urban digital twins, with technical challenges often discussed in more detail in recent papers (Lei2023, chunk_81).\n\nIn contrast, the provided evidence regarding Silvia Mazzetto's views focuses on the role of digital twins in urban design and planning, and descriptions of specific initiatives (Mazzetto2024, chunk_116). Mazzetto's work, as presented in the evidence, discusses pioneering projects like Dubai's Digital Twin and the UK's National Digital Twin Program (NDTp), which aim to facilitate integrating and sharing data to improve infrastructure management and decision-making (Mazzetto2024, chunk_116). However, the evidence does not explicitly state challenges identified by Silvia Mazzetto regarding urban digital twins.\n\nTherefore, a key difference is that Lei and colleagues explicitly detail a comprehensive list of technical and nontechnical challenges hindering the operation, design, and implementation of urban digital twins (Lei2023, chunk_10), while the provided evidence for Mazzetto focuses on describing the application and goals of urban digital twin initiatives rather than identifying or discussing specific challenges (Mazzetto2024, chunk_116). There are no direct similarities in their explicitly stated views on challenges within the provided evidence.",
+  "retrieved_chunks": [
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_10",
+      "text": "to: (1) understand urban digital twins in a comprehensive and critical manner; (2) identify and describe urban digital twins’ challenges from technical and nontechnical perspectives; (3) demonstrate the severity of each challenge; (4) offer diverse insights from research and industry. Such reflections motivate us to conduct a systematic review to identify challenges in the literature considering both technical and non-technical perspectives. However, such a topic is novel in the research community, leading to a relatively small corpus of papers. Thus, the literature review gives rather an outline of challenges and falls short in gauging how severe each challenge is. To enhance our review, we include a multiple-round Delphi survey distributed to a panel of experts to collect deep insights f",
+      "score": 0.33785629427865593,
+      "section": "unknown",
+      "char_start": 6300,
+      "char_end": 7100
+    },
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_12",
+      "text": "ping, the classification of identified challenges will be a necessary piece of the jigsaw and enrich the understanding of such topic. The robust research method enables us to augment the results from our systematic review and provideamulti-dimensionalandcomprehensiveoverviewofchallenges to the operation of digital twins. This paper is the first one on the challengesthathindertheoperationofurbandigitaltwinsandprovides multidisciplinary insights across all domains where digital twins are employed. Therefore, we consider it not purely a review paper, but a comprehensive overview reinforced with an expert survey to deliver multi-dimensional viewpoints, involving different stakeholders and disciplines. It will benefit the discussions of digital twins within various groups even beyond the urban",
+      "score": 0.22836198170559238,
+      "section": "unknown",
+      "char_start": 7700,
+      "char_end": 8500
+    },
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_85",
+      "text": "cal issues challenge digital twins in the urban and geospatial spatial domains to different degrees. Some challenges, e. g. definitions and purposes, are fundamental issues that need to be clarified at the beginning. Although current research has defined urban digital twins in many ways, widely varied definitions may generate different situation awareness on this topic. Such ambiguity will pose problems when practitioners start a practical project on urban digital twins without a consensus on what a digital twin should be. Similarly, many panellists consider the practical values of urban digital twins as the main issues. e. g. who the endusers are, their demands, and the purposes of urban digital twins. In general, the needs of urban digital twins vary in different cases. For example, in t",
+      "score": 0.3099221401944258,
+      "section": "unknown",
+      "char_start": 58800,
+      "char_end": 59600
+    },
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_84",
+      "text": "is highlighted as one of the most severe nontechnical challenges, indicating a demand for best practices and use cases to better adopt digital twins. Many panellists state that financing also requires efforts in practice, i. e. determining costs and benefits. Furthermore, we map the aggregated challenges into the life cycle of digital twins. At each phase, urban digital twins has been hampered by different challenges. The mapping provides insight into what challenges are mainly experienced during the different stages. Therefore, it can reflect the current development of digital twins and facilitate stakeholders to understand the status quo. The results indicate that technical and non-technical issues challenge digital twins in the urban and geospatial spatial domains to different degrees.",
+      "score": 0.4519066563746909,
+      "section": "unknown",
+      "char_start": 58100,
+      "char_end": 58900
+    },
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_65",
+      "text": "23)104716 8 B. Lei et al. Fig. 5. The frequency of challenges mentioned in the responses. The top plot refers to technical challenges, and the bottom plot presents the frequency of non-technical challenges. but many want to use this term/concept as it is currently widely used in the industry. Deep discussions are required with clients and partners to synchronise the understanding of digital twin before actually starting to work on a project’. Regarding specific disciplines, such as urban planning, ‘there seems to be little awareness/low interest among students and researchers regarding why urban planners need (to use) digital twins’. Apart from the issue of understanding, the practical value of digital twins is also widely discussed by many participants. The discourse mainly concerns purpo",
+      "score": 0.5,
+      "section": "unknown",
+      "char_start": 44800,
+      "char_end": 45600
+    },
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_81",
+      "text": "anges happening in the real world’ and ‘revise workflow to update digital twin models regularly’. From the social perspective, public engagement is highlighted, e. g. reflecting feedback on the digital models. Furthermore, it is significant to reach a consensus by determining the interests of various groups — what new understanding should be generated before beginning another cycle of digital twins. 5 Discussion Our results, combining the results of the systematic review and the Delphi survey, reveal a lengthy list of challenges pertaining to the design and implementation of urban digital twins. One of the key results is that the challenges identified in the literature and survey are mostly consistent. Reviewing recent papers exposes that technical challenges are discussed in more detail.",
+      "score": 0.43868585813057165,
+      "section": "unknown",
+      "char_start": 56000,
+      "char_end": 56800
+    },
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_07",
+      "text": "is context, technology vendors lead many ongoing digital twin efforts, working with governments and other actors [18]. Accordingly, challenges identified in the current discussion are mainly data-related, such as quality and integration [19,20]. Moreover, in the operation of digital twins, relevant challenges and their interpretation primarily depend on use cases and context. Specific challenges may be highlighted, while at the same time some aspects may be neglected. For example, some digital twins are developed as an internal platform to which the public has no access. In this case, public participation and openness may not get attention. Concerning the interpretation of challenges in a certain context, one example is understanding the idea and scope of digital twins. Developing an urban",
+      "score": 0.3794963178049751,
+      "section": "unknown",
+      "char_start": 4200,
+      "char_end": 5000
+    },
+    {
+      "source_id": "Lei2023",
+      "chunk_id": "chunk_90",
+      "text": "ssions on urban digital twins remain embryonic, the size of corpus is rather small. Accordingly, it may lead to quality issues propagated in the analysis process. Another limitation\n\nAutomationin Construction 147(2023)104716 12 B. Lei et al. is related to the composition of panellists in the survey. Nearly half of the participants are from academic sectors, while 26.9% of expert panellists from industry and 23.1% from government. More perspectives from practice will largely improve our research and validate the findings as well. It could better balance insights from literature and industry, enabling more significant comparison between these two fields. 6 Conclusion Digital twins have drawn widespread attention in the urban and geospatial domains. While the benefits of developing urban digi",
+      "score": 0.22169452371237297,
+      "section": "unknown",
+      "char_start": 62300,
+      "char_end": 63100
+    },
+    {
+      "source_id": "Mazzetto2024",
+      "chunk_id": "chunk_116",
+      "text": "s. As cities continue to evolve, the insights gained from these pioneering projects will undoubtedly shape the next generation of urban design and planning, emphasizing the role of DTs in creating more sustainable, efficient, and inclusive urban environments (Figure 10). Figure 10. Dubai’s Digital Twin [149](Credit: https://www. youtube. com/watch?app=desktop&v=qkla Jt OITu E accessed on 17 September 2024). 4.4.6. NDTp The National Digital Twin Program (NDTp) in the UK [150] aims to pioneer a comprehensive approach to digital twinning in the built environment, facilitating integrating, and sharing data across various sectors to improve infrastructure management and decision making. Central to this initiative is the development of UDTs, which are sophisticated digital models of urban areas",
+      "score": 0.2058128180331394,
+      "section": "unknown",
+      "char_start": 80500,
+      "char_end": 81300
+    },
+    {
+      "source_id": "Apeldoorn2025",
+      "chunk_id": "chunk_38",
+      "text": "Research objective 1: Understanding UDT as a Boundary Object and its interpretative flexibility, in an actor-network. RQ 1: What are the socially constructed perspectives on UDTs among the actors in the regional urban network in the Netherlands? RQ2: What are the similarities and differences between these actor perspectives? Research objective 2: Understanding the Q-method as a form of Boundary Spanning in an actor-network. RQ 3: To what extent can a Q study be used to support a UDT innovation in the regional urban network in the Netherlands? 3.3. General procedures In this study, the Q methodology's digitalised processes and online procedures include the following stages as indicated in Fig. 2 (Zhou et al., 2024): 1. Use clustered keywords to search for academic publications and various c",
+      "score": 0.3713350274834318,
+      "section": "unknown",
+      "char_start": 25900,
+      "char_end": 26700
+    }
+  ],
+  "citations_used": [
+    [
+      "Lei2023",
+      "chunk_10"
+    ],
+    [
+      "Lei2023",
+      "chunk_85"
+    ],
+    [
+      "Lei2023",
+      "chunk_85"
+    ],
+    [
+      "Lei2023",
+      "chunk_84"
+    ],
+    [
+      "Lei2023",
+      "chunk_07"
+    ],
+    [
+      "Lei2023",
+      "chunk_81"
+    ],
+    [
+      "Lei2023",
+      "chunk_65"
+    ],
+    [
+      "Lei2023",
+      "chunk_81"
+    ],
+    [
+      "Mazzetto2024",
+      "chunk_116"
+    ],
+    [
+      "Mazzetto2024",
+      "chunk_116"
+    ],
+    [
+      "Lei2023",
+      "chunk_10"
+    ],
+    [
+      "Mazzetto2024",
+      "chunk_116"
+    ]
+  ],
+  "model": "gemini-2.5-flash",
+  "prompt_version": "phase2_strict_citations_v2",
+  "retrieval_config": {
+    "k": 15,
+    "k_raw": 90,
+    "use_hybrid": true,
+    "use_reranking": true,
+    "top_k_after_rerank": 10,
+    "vector_weight": 0.5,
+    "bm25_weight": 0.5,
+    "year_min": null,
+    "year_max": null,
+    "source_types": null
+  },
+  "run_id": "70f612f0-2b14-4975-8e07-fc1d4c59113e"
+}
